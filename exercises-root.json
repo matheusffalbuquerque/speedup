@@ -3,636 +3,635 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Como se diz 'Ontem' em inglês?",
-      "options": ["Yesterday", "Tomorrow", "Today", "Last night"],
-      "correctAnswer": "Yesterday"
+      "question": "Which sentence is grammatically correct?",
+      "options": ["She didn't went to the party.", "She didn't go to the party.", "She not go to the party.", "She didn't gone to the party."],
+      "correctAnswer": "She didn't go to the party."
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: I _____ to the beach yesterday. (fui)",
-      "correctAnswer": "went"
+      "question": "Complete: 'They _____ (travel) to another city last month.'",
+      "correctAnswer": "travelled|traveled"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza para inglês: 'Eu visitei minha avó semana passada'",
-      "correctAnswer": "i visited my grandmother last week|i visited my grandma last week"
+      "type": "complete",
+      "question": "Complete: '_____ he see that movie last night?'",
+      "correctAnswer": "Did"
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "Complete: She _____ a movie last night. (assistiu)",
-      "correctAnswer": "watched"
+      "type": "translate",
+      "question": "Translate 'I'd love to, but I can't make it.' to Portuguese.",
+      "correctAnswer": "Adoraria, mas não consigo ir.|Eu adoraria, mas não posso comparecer."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Qual é o passado de 'eat'?",
-      "options": ["Ate", "Eated", "Eaten", "Eating"],
-      "correctAnswer": "Ate"
+      "question": "Choose the correct form: 'My parents _____ at home yesterday.'",
+      "options": ["was", "were", "is", "are"],
+      "correctAnswer": "were"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Traduza: 'Experiência'",
-      "correctAnswer": "experience"
-    },
-    {
-      "id": 7,
       "type": "fill-blank",
-      "question": "Complete: We _____ pizza two days ago. (comemos)",
+      "question": "Complete: 'I _____ (eat) a delicious meal at that restaurant last week.'",
       "correctAnswer": "ate"
     },
     {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete with the correct form of the verb: 'He didn't _____ (come) to class yesterday.'",
+      "correctAnswer": "come"
+    },
+    {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "O que significa 'ago'?",
-      "options": ["Atrás (tempo)", "Agora", "Depois", "Antes"],
-      "correctAnswer": "Atrás (tempo)"
+      "type": "translate",
+      "question": "What does 'Count me in!' mean in Portuguese?",
+      "correctAnswer": "Pode me incluir!|Conte comigo!|Estou dentro!"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: They _____ at home yesterday. (estavam)",
-      "correctAnswer": "were"
+      "type": "multiple-choice",
+      "question": "What is the correct negative form of 'She went to the gym'?",
+      "options": ["She didn't went to the gym.", "She not went to the gym.", "She didn't go to the gym.", "She wasn't go to the gym."],
+      "correctAnswer": "She didn't go to the gym."
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: I _____ my homework last night. (fiz)",
-      "correctAnswer": "did"
+      "question": "Complete: 'We _____ going to have a barbecue this weekend.'",
+      "correctAnswer": "are"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Como se diz 'Semana passada' em inglês?",
-      "options": ["Last week", "Past week", "Yesterday week", "Week ago"],
-      "correctAnswer": "Last week"
+      "type": "complete",
+      "question": "Complete with 'was' or 'were': 'The concert _____ amazing last Saturday.'",
+      "correctAnswer": "was"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Traduza: 'Ela comprou um carro novo'",
-      "correctAnswer": "she bought a new car"
+      "question": "Translate 'Unfortunately, I can't make it.' to Portuguese.",
+      "correctAnswer": "Infelizmente, não consigo ir.|Infelizmente, não posso comparecer."
     },
     {
       "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: He _____ soccer yesterday afternoon. (jogou)",
-      "correctAnswer": "played"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'going to' correctly?",
+      "options": ["She is go to visit her friend.", "She going to visit her friend.", "She is going to visit her friend.", "She is going visit her friend."],
+      "correctAnswer": "She is going to visit her friend."
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "O que é 'memory'?",
-      "options": ["Memória", "Momento", "Experiência", "Passado"],
-      "correctAnswer": "Memória"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ (write) a letter to his friend two days ago.'",
+      "correctAnswer": "wrote"
     },
     {
       "id": 15,
       "type": "complete",
-      "question": "Complete: I _____ in Paris last year. (estava)",
-      "correctAnswer": "was"
+      "question": "Complete the time expression: 'Did you study for the exam _____ night?'",
+      "correctAnswer": "last"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Traduza: 'Passado'",
-      "correctAnswer": "past"
+      "question": "Translate 'What did you do last weekend?' to Portuguese.",
+      "correctAnswer": "O que você fez no fim de semana passado?|O que você fez no último fim de semana?"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: They _____ the exam three days ago. (passaram/fizeram)",
-      "correctAnswer": "took|passed"
+      "type": "multiple-choice",
+      "question": "Which is the correct question form?",
+      "options": ["Did she bought a new phone?", "Did she buy a new phone?", "Did she buys a new phone?", "She did buy a new phone?"],
+      "correctAnswer": "Did she buy a new phone?"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Qual a tradução de 'last night'?",
-      "options": ["Ontem à noite", "Última noite", "Noite passada", "Hoje à noite"],
-      "correctAnswer": "Ontem à noite"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ (cook) dinner for everyone last night.'",
+      "correctAnswer": "cooked"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete: We _____ happy yesterday. (estávamos)",
-      "correctAnswer": "were"
+      "type": "complete",
+      "question": "Complete the suggestion: 'Why don't we _____ to the concert tonight?'",
+      "correctAnswer": "go"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Traduza: 'Eles viram um filme ontem'",
-      "correctAnswer": "they saw a movie yesterday|they watched a movie yesterday"
+      "question": "Translate 'I felt exhausted after the trip.' to Portuguese.",
+      "correctAnswer": "Eu me senti exausto depois da viagem.|Fiquei exausto após a viagem."
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "Complete: She _____ to music last night. (ouviu)",
-      "correctAnswer": "listened"
+      "type": "multiple-choice",
+      "question": "Choose the correct past tense of 'take':",
+      "options": ["taked", "took", "token", "takeed"],
+      "correctAnswer": "took"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Como se diz 'Há muito tempo' em inglês?",
-      "options": ["A long time ago", "Long time past", "Much time ago", "Many time ago"],
-      "correctAnswer": "A long time ago"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ (visit) her grandparents last Sunday.'",
+      "correctAnswer": "visited"
     },
     {
       "id": 3,
       "type": "translate",
-      "question": "Traduza: 'Nós estudamos inglês ontem'",
-      "correctAnswer": "we studied english yesterday"
+      "question": "Translate 'Would you like to come to my party?' to Portuguese.",
+      "correctAnswer": "Você gostaria de vir à minha festa?|Você quer vir à minha festa?"
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Complete: He _____ a book last weekend. (leu)",
-      "correctAnswer": "read"
-    },
-    {
-      "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: I _____ tired yesterday. (estava)",
+      "question": "Complete with the past of 'be': 'I _____ very surprised when I heard the news.'",
       "correctAnswer": "was"
     },
     {
-      "id": 6,
+      "id": 5,
       "type": "multiple-choice",
-      "question": "Qual é o passado de 'go'?",
-      "options": ["Went", "Goed", "Gone", "Going"],
-      "correctAnswer": "Went"
+      "question": "Which reply correctly accepts the invitation: 'Would you like to join us for dinner?'",
+      "options": ["Yes, I would liked.", "That sounds great!", "I am loving to.", "Yes, I like it."],
+      "correctAnswer": "That sounds great!"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ (get) lost on the way to the restaurant last night.'",
+      "correctAnswer": "got"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Traduza: 'Memória'",
-      "correctAnswer": "memory"
+      "type": "complete",
+      "question": "Complete the question: '_____ they have a good time at the concert?'",
+      "correctAnswer": "Did"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: They _____ at the party last Saturday. (dançaram)",
-      "correctAnswer": "danced"
+      "type": "translate",
+      "question": "Translate 'Let me check my schedule.' to Portuguese.",
+      "correctAnswer": "Deixa eu verificar minha agenda.|Deixe-me checar minha agenda."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "O que significa 'experience'?",
-      "options": ["Experiência", "Experimento", "Exposição", "Explicação"],
-      "correctAnswer": "Experiência"
+      "question": "Choose the correct sentence about a future plan:",
+      "options": ["I am going study tomorrow.", "I going to study tomorrow.", "I am going to study tomorrow.", "I will going to study tomorrow."],
+      "correctAnswer": "I am going to study tomorrow."
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: I _____ my friend yesterday morning. (encontrei)",
-      "correctAnswer": "met|saw"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ (meet) an old friend at the café three weeks ago.'",
+      "correctAnswer": "met"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Traduza: 'Ele teve uma experiência incrível'",
-      "correctAnswer": "he had an amazing experience|he had an incredible experience"
+      "type": "complete",
+      "question": "Complete with the past of 'be': 'How _____ your trip last week?'",
+      "correctAnswer": "was"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: We _____ dinner at 7pm yesterday. (jantamos)",
-      "correctAnswer": "had|ate"
+      "type": "translate",
+      "question": "Translate 'I'll let you know.' to Portuguese.",
+      "correctAnswer": "Eu te aviso.|Vou te dizer.|Eu te conto."
     },
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "Como se diz 'Dois dias atrás'?",
-      "options": ["Two days ago", "Two days past", "Before two days", "Two past days"],
-      "correctAnswer": "Two days ago"
+      "question": "Which sentence has the correct negative form?",
+      "options": ["They didn't watched the game.", "They didn't watch the game.", "They not watched the game.", "They not watch the game."],
+      "correctAnswer": "They didn't watch the game."
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "Complete: She _____ very excited last week. (estava)",
-      "correctAnswer": "was"
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ to start a new job next week.'",
+      "correctAnswer": "going"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Traduza: 'Nós viajamos para o Rio mês passado'",
-      "correctAnswer": "we traveled to rio last month|we travelled to rio last month"
+      "type": "complete",
+      "question": "Complete with the correct past form: 'I _____ (drink) too much coffee yesterday and couldn't sleep.'",
+      "correctAnswer": "drank"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: I _____ my keys yesterday. (perdi)",
-      "correctAnswer": "lost"
+      "type": "translate",
+      "question": "Translate 'Maybe next time.' to Portuguese.",
+      "correctAnswer": "Talvez da próxima vez.|Quem sabe da próxima."
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "Qual é o passado de 'have'?",
-      "options": ["Had", "Haved", "Have", "Having"],
-      "correctAnswer": "Had"
+      "question": "Choose the correct short answer to: 'Did you enjoy the barbecue?'",
+      "options": ["No, I enjoyed.", "Yes, I did.", "Yes, I enjoyed it very much, thanks.", "Yes, I do."],
+      "correctAnswer": "Yes, I did."
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "Complete: They _____ English three years ago. (estudaram)",
-      "correctAnswer": "studied"
+      "question": "Complete: 'We _____ (play) volleyball at the beach last Saturday.'",
+      "correctAnswer": "played"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "Traduza: 'Ontem à noite'",
-      "correctAnswer": "last night|yesterday night"
+      "type": "complete",
+      "question": "Complete the suggestion: 'How about _____ a movie tonight?'",
+      "correctAnswer": "watching"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Complete: We _____ at the beach last summer. (estávamos)",
-      "correctAnswer": "were"
+      "type": "translate",
+      "question": "Translate 'The movie was really boring.' to Portuguese.",
+      "correctAnswer": "O filme foi muito chato.|O filme era muito entediante."
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Como se diz 'Ver' (no passado) em inglês?",
-      "options": ["Saw", "Seed", "Seen", "Seeing"],
-      "correctAnswer": "Saw"
+      "question": "Choose the correct past tense of 'find':",
+      "options": ["finded", "fund", "found", "findded"],
+      "correctAnswer": "found"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: I _____ a great time yesterday. (tive)",
-      "correctAnswer": "had"
+      "question": "Complete: 'She _____ (make) a cake for her friend's birthday yesterday.'",
+      "correctAnswer": "made"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza: 'Ela trabalhou ontem'",
-      "correctAnswer": "she worked yesterday"
+      "type": "complete",
+      "question": "Complete the polite decline: 'I'm sorry, I _____.' (one word)",
+      "correctAnswer": "can't"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: He _____ his friend last month. (visitou)",
-      "correctAnswer": "visited"
+      "type": "translate",
+      "question": "Translate 'Do you want to go to the beach this weekend?' to Portuguese.",
+      "correctAnswer": "Você quer ir à praia este fim de semana?|Quer ir à praia neste fim de semana?"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "O que é 'ago' em português?",
-      "options": ["Atrás/há", "Agora", "Antes", "Após"],
-      "correctAnswer": "Atrás/há"
+      "question": "Choose the correct forms of 'be' in the past: 'I _____ tired. You _____ not there.'",
+      "options": ["was / was", "was / were", "were / were", "were / was"],
+      "correctAnswer": "was / were"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: We _____ at home two hours ago. (estávamos)",
-      "correctAnswer": "were"
+      "question": "Complete: 'They _____ (leave) the party early because they were tired.'",
+      "correctAnswer": "left"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Traduza: 'Eles comeram pizza na sexta-feira passada'",
-      "correctAnswer": "they ate pizza last friday"
+      "type": "complete",
+      "question": "Complete the question: 'What _____ you do last Saturday?'",
+      "correctAnswer": "did"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: She _____ to school by bus yesterday. (foi)",
-      "correctAnswer": "went"
+      "type": "translate",
+      "question": "Translate 'Can I get back to you?' to Portuguese.",
+      "correctAnswer": "Posso te responder depois?|Posso te dar uma resposta depois?"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Qual preposição usamos com 'ago'?",
-      "options": ["Nenhuma (three days ago)", "In", "On", "At"],
-      "correctAnswer": "Nenhuma (three days ago)"
+      "question": "Which sentence uses 'going to' to express a plan (not a current action)?",
+      "options": ["They are going to the store right now.", "They are going to visit us next week.", "They went to the park last night.", "They will going to arrive soon."],
+      "correctAnswer": "They are going to visit us next week."
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: I _____ the answer last week. (sabia)",
+      "question": "Complete: 'He _____ (know) the answer, but he forgot to say it.'",
       "correctAnswer": "knew"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Traduza: 'Nós fizemos o trabalho de casa'",
-      "correctAnswer": "we did the homework|we did our homework"
+      "type": "complete",
+      "question": "Complete with 'was' or 'were': 'You _____ not at the gym yesterday.'",
+      "correctAnswer": "were"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: They _____ very happy at the party. (estavam)",
-      "correctAnswer": "were"
+      "type": "translate",
+      "question": "Translate 'I'd like to invite you to my get-together.' to Portuguese.",
+      "correctAnswer": "Eu gostaria de te convidar para o meu encontro.|Quero te convidar para minha reunião."
     },
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "Como se diz 'Comprar' no passado?",
-      "options": ["Bought", "Buyed", "Buy", "Buying"],
-      "correctAnswer": "Bought"
+      "question": "What is the correct question tag? 'They had a great time, _____?'",
+      "options": ["didn't they", "weren't they", "haven't they", "don't they"],
+      "correctAnswer": "didn't they"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: She _____ in São Paulo five years ago. (morava)",
-      "correctAnswer": "lived"
+      "question": "Complete: 'She _____ (study) for her English test all night.'",
+      "correctAnswer": "studied"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Traduza: 'Eu fui ao cinema semana passada'",
-      "correctAnswer": "i went to the cinema last week|i went to the movies last week"
+      "type": "complete",
+      "question": "Complete the invitation: 'Let's _____ to a new restaurant this weekend!'",
+      "correctAnswer": "go"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: We _____ our friends yesterday. (vimos)",
-      "correctAnswer": "saw|met"
+      "type": "translate",
+      "question": "Translate 'She was really excited about the trip.' to Portuguese.",
+      "correctAnswer": "Ela estava muito animada com a viagem.|Ela ficou muito empolgada com a viagem."
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "O que significa 'last year'?",
-      "options": ["Ano passado", "Último ano", "Este ano", "Próximo ano"],
-      "correctAnswer": "Ano passado"
+      "question": "Choose the correct form: 'We _____ dinner at the new restaurant last Friday.'",
+      "options": ["have", "had", "has", "haved"],
+      "correctAnswer": "had"
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "Complete: I _____ sick last Monday. (estava)",
-      "correctAnswer": "was"
+      "question": "Complete: 'He _____ (speak) to the manager about the problem yesterday.'",
+      "correctAnswer": "spoke"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "Traduza: 'Ele jogou futebol ontem'",
-      "correctAnswer": "he played soccer yesterday|he played football yesterday"
+      "type": "complete",
+      "question": "Complete: 'She is going _____ cook dinner for us tonight.'",
+      "correctAnswer": "to"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Complete: They _____ a new house last year. (compraram)",
-      "correctAnswer": "bought"
+      "type": "translate",
+      "question": "Translate 'How was your day?' to Portuguese.",
+      "correctAnswer": "Como foi o seu dia?|Como foi seu dia?"
     }
   ],
   "thursday": [
     {
       "id": 1,
-      "type": "translate",
-      "question": "Traduza: 'Nós tivemos uma ótima experiência'",
-      "correctAnswer": "we had a great experience|we had an amazing experience"
+      "type": "multiple-choice",
+      "question": "Choose the correct past tense of 'think':",
+      "options": ["thinked", "thought", "thunk", "thinkt"],
+      "correctAnswer": "thought"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Como se diz 'Fazer' no passado?",
-      "options": ["Did", "Doed", "Done", "Do"],
-      "correctAnswer": "Did"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ (watch) a documentary about the ocean last night.'",
+      "correctAnswer": "watched"
     },
     {
       "id": 3,
-      "type": "fill-blank",
-      "question": "Complete: She _____ late yesterday morning. (acordou)",
-      "correctAnswer": "woke|woke up"
+      "type": "complete",
+      "question": "Complete with the correct past form of 'be': '_____ you at the school event two days ago?'",
+      "correctAnswer": "Were"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: I _____ breakfast at 8am yesterday. (tomei)",
-      "correctAnswer": "had|ate"
+      "type": "translate",
+      "question": "Translate 'I'd love to, but I already have plans.' to Portuguese.",
+      "correctAnswer": "Adoraria, mas já tenho planos.|Eu adoraria, mas já tenho compromissos."
     },
     {
       "id": 5,
-      "type": "translate",
-      "question": "Traduza: 'Eles foram à festa ontem à noite'",
-      "correctAnswer": "they went to the party last night"
+      "type": "multiple-choice",
+      "question": "Which sentence is NOT grammatically correct?",
+      "options": ["I didn't see her yesterday.", "He didn't buy anything.", "They didn't went to the game.", "She didn't call me."],
+      "correctAnswer": "They didn't went to the game."
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Qual é o passado de 'see'?",
-      "options": ["Saw", "Seed", "Seen", "Seeing"],
-      "correctAnswer": "Saw"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ (give) me a surprise gift on my birthday last year.'",
+      "correctAnswer": "gave"
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "Complete: We _____ at the mall yesterday. (estávamos)",
-      "correctAnswer": "were"
+      "type": "complete",
+      "question": "Complete with the correct verb form: 'He didn't _____ (tell) her the truth.'",
+      "correctAnswer": "tell"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: He _____ his car last week. (vendeu)",
-      "correctAnswer": "sold"
+      "type": "translate",
+      "question": "Translate 'That sounds great!' to Portuguese.",
+      "correctAnswer": "Isso parece ótimo!|Que ótimo!|Parece incrível!"
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Traduza: 'Eu estava cansado ontem'",
-      "correctAnswer": "i was tired yesterday"
+      "type": "multiple-choice",
+      "question": "Choose the sentence that makes an invitation:",
+      "options": ["I went to the concert last week.", "Did she enjoy the party?", "Would you like to join us for coffee?", "They were at the barbecue."],
+      "correctAnswer": "Would you like to join us for coffee?"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "O que significa 'yesterday'?",
-      "options": ["Ontem", "Hoje", "Amanhã", "Antes"],
-      "correctAnswer": "Ontem"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ (wake) up very late on Sunday morning.'",
+      "correctAnswer": "woke"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: They _____ TV last night. (assistiram)",
-      "correctAnswer": "watched"
+      "type": "complete",
+      "question": "Complete with the correct auxiliary: '_____ she going to call you tonight?'",
+      "correctAnswer": "Is"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Traduza: 'Ela teve uma memória incrível'",
-      "correctAnswer": "she had an amazing memory|she had an incredible memory"
+      "question": "Translate 'He was very tired after the long trip.' to Portuguese.",
+      "correctAnswer": "Ele estava muito cansado depois da longa viagem.|Ele ficou muito cansado após a viagem."
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: I _____ a new job last month. (comecei)",
-      "correctAnswer": "started|began"
+      "type": "multiple-choice",
+      "question": "Which question is correctly formed?",
+      "options": ["Where did she went yesterday?", "Where she went yesterday?", "Where did she go yesterday?", "Where went she yesterday?"],
+      "correctAnswer": "Where did she go yesterday?"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Como dizemos 'três dias atrás'?",
-      "options": ["Three days ago", "Three past days", "Past three days", "Before three days"],
-      "correctAnswer": "Three days ago"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ (buy) a new dress for the party last weekend.'",
+      "correctAnswer": "bought"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: She _____ to London last summer. (viajou)",
-      "correctAnswer": "traveled|travelled"
+      "type": "complete",
+      "question": "Complete: 'I am going to _____ my family next month.' (use 'visit')",
+      "correctAnswer": "visit"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Traduza: 'Nós fomos ao parque no domingo passado'",
-      "correctAnswer": "we went to the park last sunday"
+      "question": "Translate 'Did you have a good time at the barbecue?' to Portuguese.",
+      "correctAnswer": "Você se divertiu no churrasco?|Você passou bem no churrasco?"
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "Complete: They _____ in a big house when they were children. (moravam)",
-      "correctAnswer": "lived"
+      "type": "multiple-choice",
+      "question": "Choose the correct form for the blank: 'I _____ the news on TV three days ago.'",
+      "options": ["watched", "watch", "am watching", "watches"],
+      "correctAnswer": "watched"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Qual é o passado de 'write'?",
-      "options": ["Wrote", "Writed", "Written", "Writing"],
-      "correctAnswer": "Wrote"
+      "type": "fill-blank",
+      "question": "Complete: 'They are _____ to organize a get-together next Friday.'",
+      "correctAnswer": "going"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete: I _____ my grandmother two weeks ago. (visitei)",
-      "correctAnswer": "visited"
+      "type": "complete",
+      "question": "Complete the negative sentence: 'We _____ at the concert — we were at home.' (past of 'be' + negative, contracted)",
+      "correctAnswer": "weren't"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Traduza: 'Ele estudou para o teste'",
-      "correctAnswer": "he studied for the test"
+      "question": "Translate 'I'm sorry, I can't make it tonight.' to Portuguese.",
+      "correctAnswer": "Desculpe, não consigo ir esta noite.|Sinto muito, não posso esta noite."
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "complete",
-      "question": "Complete: I _____ a message to my friend yesterday. (enviei)",
-      "correctAnswer": "sent"
+      "type": "multiple-choice",
+      "question": "Which is the correct past tense of 'say'?",
+      "options": ["sayed", "said", "sayd", "sed"],
+      "correctAnswer": "said"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Como se diz 'Mês passado' em inglês?",
-      "options": ["Last month", "Past month", "Month ago", "Previous month"],
-      "correctAnswer": "Last month"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ (come) back from her trip last Tuesday.'",
+      "correctAnswer": "came"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza: 'Ela cantou uma música ontem'",
-      "correctAnswer": "she sang a song yesterday"
+      "type": "complete",
+      "question": "Complete with the correct form: 'Did he _____ (read) the book before the class?'",
+      "correctAnswer": "read"
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "Complete: We _____ the game last Saturday. (ganhamos)",
-      "correctAnswer": "won"
+      "type": "translate",
+      "question": "Translate 'I'd love to!' to Portuguese.",
+      "correctAnswer": "Adoraria!|Eu adoraria!|Com muito prazer!"
     },
     {
       "id": 5,
-      "type": "complete",
-      "question": "Complete: He _____ at the restaurant yesterday. (trabalhou)",
-      "correctAnswer": "worked"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly declines an invitation?",
+      "options": ["I'd love to, but I have to work.", "Yes, I'd love to!", "Count me in!", "That sounds amazing!"],
+      "correctAnswer": "I'd love to, but I have to work."
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Qual a forma contraída de 'was not'?",
-      "options": ["Wasn't", "Weren't", "Didn't", "Hadn't"],
-      "correctAnswer": "Wasn't"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ (do) his homework right after dinner yesterday.'",
+      "correctAnswer": "did"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Traduza: 'Eles estavam felizes ontem'",
-      "correctAnswer": "they were happy yesterday"
+      "type": "complete",
+      "question": "Complete the negative sentence: 'She _____ happy about the result.' (past of 'be' + negative, contracted)",
+      "correctAnswer": "wasn't"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: She _____ Spanish five years ago. (aprendeu)",
-      "correctAnswer": "learned|learnt"
+      "type": "translate",
+      "question": "Translate 'He went to the beach last summer and had an amazing time.' to Portuguese.",
+      "correctAnswer": "Ele foi à praia no verão passado e se divertiu muito.|Ele foi à praia no último verão e teve um ótimo tempo."
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: I _____ some water an hour ago. (bebi)",
-      "correctAnswer": "drank"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'going to' correctly for a future plan?",
+      "options": ["I am going cook tomorrow.", "I going to cook tomorrow.", "I am going to cook tomorrow.", "I will going cook tomorrow."],
+      "correctAnswer": "I am going to cook tomorrow."
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "O que significa 'past'?",
-      "options": ["Passado", "Presente", "Futuro", "Momento"],
-      "correctAnswer": "Passado"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ (stay) at a beautiful hotel when we visited the city.'",
+      "correctAnswer": "stayed"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Traduza: 'Nós nadamos na piscina ontem'",
-      "correctAnswer": "we swam in the pool yesterday"
-    },
-    {
-      "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: They _____ in New York last December. (estavam)",
+      "type": "complete",
+      "question": "Complete with the correct past form of 'be': 'You and I _____ at the same school five years ago.'",
       "correctAnswer": "were"
     },
     {
+      "id": 12,
+      "type": "translate",
+      "question": "Translate 'She is going to organize a party next Saturday.' to Portuguese.",
+      "correctAnswer": "Ela vai organizar uma festa no próximo sábado.|Ela está planejando organizar uma festa no sábado que vem."
+    },
+    {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: She _____ her birthday last week. (comemorou)",
-      "correctAnswer": "celebrated"
+      "type": "multiple-choice",
+      "question": "Choose the correct auxiliary: '_____ they have dinner together last night?'",
+      "options": ["Were", "Did", "Do", "Have"],
+      "correctAnswer": "Did"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Como se pergunta 'Onde você estava?'",
-      "options": ["Where were you?", "Where was you?", "Where you were?", "Where did you?"],
-      "correctAnswer": "Where were you?"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ (tell) me a funny story at the party.'",
+      "correctAnswer": "told"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Traduza: 'Eu li um livro interessante'",
-      "correctAnswer": "i read an interesting book"
+      "type": "complete",
+      "question": "Complete the invitation: '_____ you like to come to my barbecue this Sunday?'",
+      "correctAnswer": "Would"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: We _____ coffee this morning. (tomamos)",
-      "correctAnswer": "had|drank"
+      "type": "translate",
+      "question": "Translate 'The trip was exciting and fun.' to Portuguese.",
+      "correctAnswer": "A viagem foi emocionante e divertida.|A viagem foi animada e divertida."
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "Complete: He _____ a doctor ten years ago. (era)",
-      "correctAnswer": "was"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses a time expression with the simple past?",
+      "options": ["She visits her friend yesterday.", "She visited her friend last week.", "She is visiting her friend last night.", "She was visit her friend ago."],
+      "correctAnswer": "She visited her friend last week."
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Qual preposição usamos com 'yesterday'?",
-      "options": ["Nenhuma (yesterday)", "In", "On", "At"],
-      "correctAnswer": "Nenhuma (yesterday)"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ (find) my keys right after I stopped looking for them.'",
+      "correctAnswer": "found"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "Traduza: 'Ela escreveu uma carta'",
-      "correctAnswer": "she wrote a letter"
+      "type": "complete",
+      "question": "Complete the uncertain response to an invitation: 'Can I _____ back to you?' (two words, use 'get')",
+      "correctAnswer": "get back"
     },
     {
       "id": 20,
-      "type": "fill-blank",
-      "question": "Complete: I _____ my phone yesterday. (encontrei)",
-      "correctAnswer": "found"
+      "type": "translate",
+      "question": "Translate 'What are you going to do this weekend?' to Portuguese.",
+      "correctAnswer": "O que você vai fazer neste fim de semana?|O que você vai fazer no fim de semana?"
     }
   ]
 }

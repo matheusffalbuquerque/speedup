@@ -13,5 +13,10 @@
     "code": "leaf03",
     "name": "Leaf - Lesson 01",
     "description": "Intermediate Conversations"
+  },
+  "fruit": {
+    "code": "fruit04",
+    "name": "Fruit - Lesson 01",
+    "description": "Advanced Conversations"
   }
 }

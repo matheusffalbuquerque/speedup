@@ -1,0 +1,638 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Ontem' em inglês?",
+      "options": ["Yesterday", "Tomorrow", "Today", "Last night"],
+      "correctAnswer": "Yesterday"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Complete: I _____ to the beach yesterday. (fui)",
+      "correctAnswer": "went"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza para inglês: 'Eu visitei minha avó semana passada'",
+      "correctAnswer": "i visited my grandmother last week|i visited my grandma last week"
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "Complete: She _____ a movie last night. (assistiu)",
+      "correctAnswer": "watched"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Qual é o passado de 'eat'?",
+      "options": ["Ate", "Eated", "Eaten", "Eating"],
+      "correctAnswer": "Ate"
+    },
+    {
+      "id": 6,
+      "type": "translate",
+      "question": "Traduza: 'Experiência'",
+      "correctAnswer": "experience"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: We _____ pizza two days ago. (comemos)",
+      "correctAnswer": "ate"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "O que significa 'ago'?",
+      "options": ["Atrás (tempo)", "Agora", "Depois", "Antes"],
+      "correctAnswer": "Atrás (tempo)"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "Complete: They _____ at home yesterday. (estavam)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: I _____ my homework last night. (fiz)",
+      "correctAnswer": "did"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Semana passada' em inglês?",
+      "options": ["Last week", "Past week", "Yesterday week", "Week ago"],
+      "correctAnswer": "Last week"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Traduza: 'Ela comprou um carro novo'",
+      "correctAnswer": "she bought a new car"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: He _____ soccer yesterday afternoon. (jogou)",
+      "correctAnswer": "played"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "O que é 'memory'?",
+      "options": ["Memória", "Momento", "Experiência", "Passado"],
+      "correctAnswer": "Memória"
+    },
+    {
+      "id": 15,
+      "type": "complete",
+      "question": "Complete: I _____ in Paris last year. (estava)",
+      "correctAnswer": "was"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Traduza: 'Passado'",
+      "correctAnswer": "past"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: They _____ the exam three days ago. (passaram/fizeram)",
+      "correctAnswer": "took|passed"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Qual a tradução de 'last night'?",
+      "options": ["Ontem à noite", "Última noite", "Noite passada", "Hoje à noite"],
+      "correctAnswer": "Ontem à noite"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Complete: We _____ happy yesterday. (estávamos)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Traduza: 'Eles viram um filme ontem'",
+      "correctAnswer": "they saw a movie yesterday|they watched a movie yesterday"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "Complete: She _____ to music last night. (ouviu)",
+      "correctAnswer": "listened"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Há muito tempo' em inglês?",
+      "options": ["A long time ago", "Long time past", "Much time ago", "Many time ago"],
+      "correctAnswer": "A long time ago"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza: 'Nós estudamos inglês ontem'",
+      "correctAnswer": "we studied english yesterday"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Complete: He _____ a book last weekend. (leu)",
+      "correctAnswer": "read"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: I _____ tired yesterday. (estava)",
+      "correctAnswer": "was"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Qual é o passado de 'go'?",
+      "options": ["Went", "Goed", "Gone", "Going"],
+      "correctAnswer": "Went"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Traduza: 'Memória'",
+      "correctAnswer": "memory"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: They _____ at the party last Saturday. (dançaram)",
+      "correctAnswer": "danced"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "O que significa 'experience'?",
+      "options": ["Experiência", "Experimento", "Exposição", "Explicação"],
+      "correctAnswer": "Experiência"
+    },
+    {
+      "id": 10,
+      "type": "complete",
+      "question": "Complete: I _____ my friend yesterday morning. (encontrei)",
+      "correctAnswer": "met|saw"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Traduza: 'Ele teve uma experiência incrível'",
+      "correctAnswer": "he had an amazing experience|he had an incredible experience"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: We _____ dinner at 7pm yesterday. (jantamos)",
+      "correctAnswer": "had|ate"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Dois dias atrás'?",
+      "options": ["Two days ago", "Two days past", "Before two days", "Two past days"],
+      "correctAnswer": "Two days ago"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: She _____ very excited last week. (estava)",
+      "correctAnswer": "was"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Traduza: 'Nós viajamos para o Rio mês passado'",
+      "correctAnswer": "we traveled to rio last month|we travelled to rio last month"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: I _____ my keys yesterday. (perdi)",
+      "correctAnswer": "lost"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Qual é o passado de 'have'?",
+      "options": ["Had", "Haved", "Have", "Having"],
+      "correctAnswer": "Had"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: They _____ English three years ago. (estudaram)",
+      "correctAnswer": "studied"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Traduza: 'Ontem à noite'",
+      "correctAnswer": "last night|yesterday night"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete: We _____ at the beach last summer. (estávamos)",
+      "correctAnswer": "were"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Ver' (no passado) em inglês?",
+      "options": ["Saw", "Seed", "Seen", "Seeing"],
+      "correctAnswer": "Saw"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Complete: I _____ a great time yesterday. (tive)",
+      "correctAnswer": "had"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza: 'Ela trabalhou ontem'",
+      "correctAnswer": "she worked yesterday"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Complete: He _____ his friend last month. (visitou)",
+      "correctAnswer": "visited"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "O que é 'ago' em português?",
+      "options": ["Atrás/há", "Agora", "Antes", "Após"],
+      "correctAnswer": "Atrás/há"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: We _____ at home two hours ago. (estávamos)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Traduza: 'Eles comeram pizza na sexta-feira passada'",
+      "correctAnswer": "they ate pizza last friday"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: She _____ to school by bus yesterday. (foi)",
+      "correctAnswer": "went"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Qual preposição usamos com 'ago'?",
+      "options": ["Nenhuma (three days ago)", "In", "On", "At"],
+      "correctAnswer": "Nenhuma (three days ago)"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: I _____ the answer last week. (sabia)",
+      "correctAnswer": "knew"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Traduza: 'Nós fizemos o trabalho de casa'",
+      "correctAnswer": "we did the homework|we did our homework"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete: They _____ very happy at the party. (estavam)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Comprar' no passado?",
+      "options": ["Bought", "Buyed", "Buy", "Buying"],
+      "correctAnswer": "Bought"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: She _____ in São Paulo five years ago. (morava)",
+      "correctAnswer": "lived"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Traduza: 'Eu fui ao cinema semana passada'",
+      "correctAnswer": "i went to the cinema last week|i went to the movies last week"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "Complete: We _____ our friends yesterday. (vimos)",
+      "correctAnswer": "saw|met"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "O que significa 'last year'?",
+      "options": ["Ano passado", "Último ano", "Este ano", "Próximo ano"],
+      "correctAnswer": "Ano passado"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: I _____ sick last Monday. (estava)",
+      "correctAnswer": "was"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Traduza: 'Ele jogou futebol ontem'",
+      "correctAnswer": "he played soccer yesterday|he played football yesterday"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete: They _____ a new house last year. (compraram)",
+      "correctAnswer": "bought"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "translate",
+      "question": "Traduza: 'Nós tivemos uma ótima experiência'",
+      "correctAnswer": "we had a great experience|we had an amazing experience"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Fazer' no passado?",
+      "options": ["Did", "Doed", "Done", "Do"],
+      "correctAnswer": "Did"
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "Complete: She _____ late yesterday morning. (acordou)",
+      "correctAnswer": "woke|woke up"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Complete: I _____ breakfast at 8am yesterday. (tomei)",
+      "correctAnswer": "had|ate"
+    },
+    {
+      "id": 5,
+      "type": "translate",
+      "question": "Traduza: 'Eles foram à festa ontem à noite'",
+      "correctAnswer": "they went to the party last night"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Qual é o passado de 'see'?",
+      "options": ["Saw", "Seed", "Seen", "Seeing"],
+      "correctAnswer": "Saw"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: We _____ at the mall yesterday. (estávamos)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: He _____ his car last week. (vendeu)",
+      "correctAnswer": "sold"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Traduza: 'Eu estava cansado ontem'",
+      "correctAnswer": "i was tired yesterday"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "O que significa 'yesterday'?",
+      "options": ["Ontem", "Hoje", "Amanhã", "Antes"],
+      "correctAnswer": "Ontem"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: They _____ TV last night. (assistiram)",
+      "correctAnswer": "watched"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Traduza: 'Ela teve uma memória incrível'",
+      "correctAnswer": "she had an amazing memory|she had an incredible memory"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete: I _____ a new job last month. (comecei)",
+      "correctAnswer": "started|began"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Como dizemos 'três dias atrás'?",
+      "options": ["Three days ago", "Three past days", "Past three days", "Before three days"],
+      "correctAnswer": "Three days ago"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: She _____ to London last summer. (viajou)",
+      "correctAnswer": "traveled|travelled"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Traduza: 'Nós fomos ao parque no domingo passado'",
+      "correctAnswer": "we went to the park last sunday"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Complete: They _____ in a big house when they were children. (moravam)",
+      "correctAnswer": "lived"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Qual é o passado de 'write'?",
+      "options": ["Wrote", "Writed", "Written", "Writing"],
+      "correctAnswer": "Wrote"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Complete: I _____ my grandmother two weeks ago. (visitei)",
+      "correctAnswer": "visited"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Traduza: 'Ele estudou para o teste'",
+      "correctAnswer": "he studied for the test"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "complete",
+      "question": "Complete: I _____ a message to my friend yesterday. (enviei)",
+      "correctAnswer": "sent"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Mês passado' em inglês?",
+      "options": ["Last month", "Past month", "Month ago", "Previous month"],
+      "correctAnswer": "Last month"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza: 'Ela cantou uma música ontem'",
+      "correctAnswer": "she sang a song yesterday"
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "Complete: We _____ the game last Saturday. (ganhamos)",
+      "correctAnswer": "won"
+    },
+    {
+      "id": 5,
+      "type": "complete",
+      "question": "Complete: He _____ at the restaurant yesterday. (trabalhou)",
+      "correctAnswer": "worked"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Qual a forma contraída de 'was not'?",
+      "options": ["Wasn't", "Weren't", "Didn't", "Hadn't"],
+      "correctAnswer": "Wasn't"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Traduza: 'Eles estavam felizes ontem'",
+      "correctAnswer": "they were happy yesterday"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: She _____ Spanish five years ago. (aprendeu)",
+      "correctAnswer": "learned|learnt"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "Complete: I _____ some water an hour ago. (bebi)",
+      "correctAnswer": "drank"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "O que significa 'past'?",
+      "options": ["Passado", "Presente", "Futuro", "Momento"],
+      "correctAnswer": "Passado"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Traduza: 'Nós nadamos na piscina ontem'",
+      "correctAnswer": "we swam in the pool yesterday"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: They _____ in New York last December. (estavam)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete: She _____ her birthday last week. (comemorou)",
+      "correctAnswer": "celebrated"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Como se pergunta 'Onde você estava?'",
+      "options": ["Where were you?", "Where was you?", "Where you were?", "Where did you?"],
+      "correctAnswer": "Where were you?"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Traduza: 'Eu li um livro interessante'",
+      "correctAnswer": "i read an interesting book"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: We _____ coffee this morning. (tomamos)",
+      "correctAnswer": "had|drank"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Complete: He _____ a doctor ten years ago. (era)",
+      "correctAnswer": "was"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Qual preposição usamos com 'yesterday'?",
+      "options": ["Nenhuma (yesterday)", "In", "On", "At"],
+      "correctAnswer": "Nenhuma (yesterday)"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Traduza: 'Ela escreveu uma carta'",
+      "correctAnswer": "she wrote a letter"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Complete: I _____ my phone yesterday. (encontrei)",
+      "correctAnswer": "found"
+    }
+  ]
+}

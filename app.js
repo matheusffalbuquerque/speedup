@@ -108,14 +108,16 @@ async function selectLevel(level) {
 async function loadExercises() {
     try {
         // Determinar arquivo baseado no nível
-        let exerciseFile = 'exercises.json'; // padrão para seed
+        let exerciseFile = 'exercises-seed.json'; // padrão para seed
         
         if (currentLevel === 'root') {
             exerciseFile = 'exercises-root.json';
         } else if (currentLevel === 'leaf') {
             exerciseFile = 'exercises-leaf.json';
+        } else if (currentLevel === 'fruit') {
+            exerciseFile = 'exercises-fruit.json';
         }
-        
+
         // Tentar diferentes caminhos para compatibilidade com GitHub Pages
         const paths = [
             `./${exerciseFile}`,
