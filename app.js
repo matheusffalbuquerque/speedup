@@ -700,8 +700,16 @@ const podcastsList = {
             scriptFile: 'aulas/Seed/Podcasts/podcast_audioscript.md',
             duration: '5:00',
             level: 'seed'
+        },
+        {
+            id: 2,
+            title: 'Episode 02 - Numbers & Family',
+            description: 'Practice talking about numbers, ages, and family members.',
+            audioFile: 'aulas/Seed/Podcasts/podcast_episode02.wav',
+            scriptFile: 'aulas/Seed/Podcasts/podcast_audioscript02.md',
+            duration: '5:30',
+            level: 'seed'
         }
-        // Adicione mais podcasts do Seed aqui
     ],
     root: [
         {
@@ -712,20 +720,27 @@ const podcastsList = {
             scriptFile: 'aulas/Root/Podcasts/podcast_audioscript.md',
             duration: '5:00',
             level: 'root'
+        },
+        {
+            id: 2,
+            title: 'Episode 02 - Past Experiences & Future Plans',
+            description: 'Talk about what you did recently and discuss future plans using past and future tenses.',
+            audioFile: 'aulas/Root/Podcasts/podcast_episode02.wav',
+            scriptFile: 'aulas/Root/Podcasts/podcast_audioscript_02.md',
+            duration: '5:30',
+            level: 'root'
         }
-        // Adicione mais podcasts do Root aqui
     ],
     leaf: [
-        // Podcasts do Leaf - adicione quando estiverem disponíveis
-        // {
-        //     id: 1,
-        //     title: 'Episode 01 - Advanced Conversations',
-        //     description: 'Practice advanced conversation skills and expressions.',
-        //     audioFile: 'aulas/Leaf/Podcasts/podcast_episode01.wav',
-        //     scriptFile: 'aulas/Leaf/Podcasts/podcast_audioscript.md',
-        //     duration: '6:00',
-        //     level: 'leaf'
-        // }
+        {
+            id: 1,
+            title: 'Episode 01 - Career Advice & Modal Verbs',
+            description: 'Maya and Daniel discuss career changes and practice using modal verbs for advice and suggestions.',
+            audioFile: 'aulas/Leaf/Podcasts/podcast_episode01.wav',
+            scriptFile: 'aulas/Leaf/Podcasts/Podcast_audioscript.md',
+            duration: '6:00',
+            level: 'leaf'
+        }
     ]
 };
 

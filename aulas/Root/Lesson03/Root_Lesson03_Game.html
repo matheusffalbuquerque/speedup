@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVITE QUEST 🎴 | Root Lesson 3</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 16px 8px;
+      gap: 8px;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-size: 1.4em;
+      font-weight: 800;
+      background: linear-gradient(90deg,#f9ca24,#f0932b);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-right { display:flex; gap:8px; align-items:center; }
+    .round-badge {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 3px 14px;
+      font-size: 0.72em;
+      color: #dfe6e9;
+    }
+    .subtitle { font-size:0.65em; color:#a29bfe; }
+
+    /* ── MAIN ROW: decks + controls ── */
+    .main-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 220px;
+      gap: 10px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* ── DECK COLUMN ── */
+    .deck-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-height: 0;
+    }
+    .deck-label {
+      font-size: 0.65em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .char-color  { color: #f9ca24; }
+    .event-color { color: #a29bfe; }
+    .deck-counter { font-size: 0.6em; color: #b2bec3; margin-top:-4px; }
+
+    /* ── CARD FLIP ── */
+    .card-wrapper {
+      perspective: 800px;
+      width: 100%;
+      max-width: 220px;
+      flex: 1;
+      min-height: 0;
+      cursor: pointer;
+    }
+    .card-inner {
+      width: 100%; height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease;
+      border-radius: 14px;
+    }
+    .card-inner.flipped { transform: rotateY(180deg); }
+
+    .card-face {
+      position: absolute; width:100%; height:100%;
+      backface-visibility: hidden;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+    }
+    /* Deck back */
+    .face-back.char-deck  { background:linear-gradient(135deg,#f9ca24,#f0932b); box-shadow:0 6px 24px rgba(249,202,36,.3); }
+    .face-back.event-deck { background:linear-gradient(135deg,#6c5ce7,#a29bfe); box-shadow:0 6px 24px rgba(108,92,231,.3); }
+    .deck-icon  { font-size:2.4em; margin-bottom:6px; }
+    .deck-name  { font-size:0.9em; font-weight:700; color:rgba(255,255,255,0.95); }
+    .deck-hint  { font-size:0.6em; color:rgba(255,255,255,0.7); margin-top:3px; }
+
+    /* Card front */
+    .face-front {
+      transform: rotateY(180deg);
+      text-align: left;
+      justify-content: flex-start;
+    }
+    .face-front.char-card  { background:linear-gradient(145deg,#1e1b3a,#2d2a4a); border:2px solid #f9ca24; }
+    .face-front.event-card { background:linear-gradient(145deg,#1a1535,#261f4a); border:2px solid #6c5ce7; }
+
+    .c-emoji { font-size:2em; display:block; text-align:center; width:100%; margin-bottom:4px; }
+    .c-name  { font-size:0.85em; font-weight:800; text-align:center; width:100%; }
+    .char-card  .c-name { color:#f9ca24; }
+    .event-card .c-name { color:#a29bfe; }
+    .c-sub  { font-size:0.6em; color:#b2bec3; text-align:center; width:100%; margin-bottom:8px; }
+    .c-div  { width:100%; height:1px; background:rgba(255,255,255,0.1); margin:5px 0; }
+    .c-row  { display:flex; gap:5px; align-items:flex-start; font-size:0.62em; line-height:1.4; margin-bottom:4px; }
+    .c-row-icon { flex-shrink:0; }
+    .c-row-text { color:#dfe6e9; }
+    .c-bold { font-weight:700; color:#fff; }
+    .c-stars { font-size:0.6em; color:#fdcb6e; margin-top:3px; }
+    .c-phrase { font-size:0.58em; font-style:italic; color:#a29bfe; text-align:center; margin-top:6px; }
+
+    /* ── DRAW BUTTON ── */
+    .btn-draw {
+      border:none; border-radius:50px;
+      padding:7px 20px; font-size:0.72em; font-weight:700;
+      cursor:pointer; transition:transform 0.15s;
+      flex-shrink:0;
+    }
+    .btn-draw:hover { transform:translateY(-2px); }
+    .btn-char  { background:linear-gradient(90deg,#f9ca24,#f0932b); color:#1a1a2e; }
+    .btn-event { background:linear-gradient(90deg,#6c5ce7,#a29bfe); color:#fff; }
+    .btn-draw:disabled { opacity:0.4; cursor:not-allowed; transform:none; }
+
+    /* ── RIGHT COLUMN (timer + twist + scores) ── */
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 0;
+    }
+
+    /* Timer */
+    .timer-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .timer-display {
+      font-size: 2.2em;
+      font-weight: 800;
+      color: #55efc4;
+      line-height: 1;
+      transition: color 0.3s;
+    }
+    .timer-display.warning { color:#fdcb6e; }
+    .timer-display.danger  { color:#ff7675; animation:pulse .5s infinite alternate; }
+    @keyframes pulse { from{opacity:1} to{opacity:.35} }
+    .timer-row { display:flex; gap:5px; flex-wrap:wrap; justify-content:center; }
+    .btn-sm {
+      border:none; border-radius:50px;
+      padding:5px 12px; font-size:0.65em; font-weight:700;
+      cursor:pointer; transition:transform 0.1s;
+    }
+    .btn-sm:hover { transform:translateY(-1px); }
+    .btn-green  { background:#00b894; color:#fff; }
+    .btn-yellow { background:#fdcb6e; color:#1a1a2e; }
+    .btn-red    { background:#d63031; color:#fff; }
+    .btn-gray   { background:rgba(255,255,255,0.1); color:#dfe6e9; border:1px solid rgba(255,255,255,0.15); }
+    .timer-presets { display:flex; gap:4px; }
+
+    /* Twist */
+    .twist-box-wrap { flex-shrink:0; }
+    .btn-twist {
+      width:100%;
+      background:linear-gradient(90deg,#e17055,#d63031);
+      border:none; border-radius:8px;
+      padding:7px; font-size:0.72em; font-weight:700;
+      color:#fff; cursor:pointer; transition:transform 0.15s;
+    }
+    .btn-twist:hover { transform:translateY(-1px); }
+    .twist-result {
+      display:none;
+      margin-top:5px;
+      background:rgba(214,48,49,0.15);
+      border:1px solid rgba(214,48,49,0.35);
+      border-radius:8px;
+      padding:7px 10px;
+      font-size:0.63em;
+      color:#fab1a0;
+      line-height:1.4;
+      animation:fadeIn .3s ease;
+    }
+    .twist-result.show { display:block; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
+
+    /* Scoreboard */
+    .score-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 8px 10px;
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      overflow-y: auto;
+    }
+    .score-title { font-size:0.6em; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#a29bfe; text-align:center; }
+    .player-row { display:flex; align-items:center; gap:4px; }
+    .player-name {
+      width:72px; min-width:0; background:transparent; border:none;
+      border-bottom:1px dashed rgba(255,255,255,0.25);
+      color:#dfe6e9; font-family:'Poppins',sans-serif;
+      font-size:0.65em; font-weight:600;
+      outline:none; padding:1px 2px;
+    }
+    .score-controls { display:flex; align-items:center; gap:4px; margin-left:auto; }
+    .player-pts { font-size:1em; font-weight:800; color:#55efc4; min-width:20px; text-align:center; }
+    .btn-pt {
+      width:20px; height:20px; border:none; border-radius:50%;
+      font-size:0.85em; font-weight:700; cursor:pointer;
+      line-height:1; transition:transform 0.1s;
+      display:flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    }
+    .btn-pt:hover { transform:scale(1.2); }
+    .btn-plus  { background:#00b894; color:#fff; }
+    .btn-minus { background:#636e72; color:#fff; }
+
+    /* ── BOTTOM BAR ── */
+    .bottom-bar {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <h1>🎴 INVITE QUEST</h1>
+    <div class="subtitle">Root · Lesson 3 — Making Plans &amp; Invitations</div>
+  </div>
+  <div class="header-right">
+    <span class="round-badge" id="roundBadge">Round 1</span>
+  </div>
+</div>
+
+<!-- MAIN ROW -->
+<div class="main-row">
+
+  <!-- CHARACTER DECK -->
+  <div class="deck-col">
+    <div class="deck-label char-color">🎭 Character</div>
+    <div class="deck-counter" id="charCounter">8 cards</div>
+    <div class="card-wrapper" onclick="drawChar()">
+      <div class="card-inner" id="charCard">
+        <div class="card-face face-back char-deck">
+          <div class="deck-icon">🎭</div>
+          <div class="deck-name">Character Deck</div>
+          <div class="deck-hint">Click to draw</div>
+        </div>
+        <div class="card-face face-front char-card" id="charContent"></div>
+      </div>
+    </div>
+    <button class="btn-draw btn-char" onclick="drawChar()">Draw Character</button>
+  </div>
+
+  <!-- EVENT DECK -->
+  <div class="deck-col">
+    <div class="deck-label event-color">📍 Event</div>
+    <div class="deck-counter" id="eventCounter">20 cards</div>
+    <div class="card-wrapper" onclick="drawEvent()">
+      <div class="card-inner" id="eventCard">
+        <div class="card-face face-back event-deck">
+          <div class="deck-icon">📍</div>
+          <div class="deck-name">Event Deck</div>
+          <div class="deck-hint">Click to draw</div>
+        </div>
+        <div class="card-face face-front event-card" id="eventContent"></div>
+      </div>
+    </div>
+    <button class="btn-draw btn-event" onclick="drawEvent()">Draw Event</button>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right-col">
+
+    <!-- Timer -->
+    <div class="timer-box">
+      <div class="timer-display" id="timerDisplay">1:00</div>
+      <div class="timer-row">
+        <button class="btn-sm btn-green"  onclick="startTimer()">▶ Start</button>
+        <button class="btn-sm btn-yellow" onclick="pauseTimer()">⏸</button>
+        <button class="btn-sm btn-red"    onclick="resetTimer()">↺</button>
+      </div>
+      <div class="timer-row timer-presets">
+        <button class="btn-sm btn-gray" onclick="setTimer(90)">90s</button>
+        <button class="btn-sm btn-gray" onclick="setTimer(60)">60s</button>
+        <button class="btn-sm btn-gray" onclick="setTimer(45)">45s</button>
+      </div>
+    </div>
+
+    <!-- Twist -->
+    <div class="twist-box-wrap">
+      <button class="btn-twist" onclick="drawTwist()">🎲 Special Twist!</button>
+      <div class="twist-result" id="twistResult"></div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score-box">
+      <div class="score-title">🏆 Score</div>
+      <div id="playersGrid"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- BOTTOM BAR -->
+<div class="bottom-bar">
+  <button class="btn-sm btn-green"  onclick="nextRound()">➡ Next Round</button>
+  <button class="btn-sm btn-gray"   onclick="resetDecks()">🔀 Shuffle Decks</button>
+  <button class="btn-sm btn-red"    onclick="resetGame()">⚠ New Game</button>
+</div>
+
+<script>
+/* ── DATA ── */
+const CHARACTERS = [
+  {
+    emoji:"👩‍🎓", name:"The Student",
+    desc:"Always broke and a little lazy, but loves having fun.",
+    hint:"💡 Say it's cheap or free!",
+    phrase:'"Is it expensive? I\'m kind of broke..."'
+  },
+  {
+    emoji:"💼", name:"The Boss",
+    desc:"Always busy with work. Hard to get away from the office.",
+    hint:"💡 Call it a networking opportunity!",
+    phrase:'"I have meetings all week... maybe."'
+  },
+  {
+    emoji:"😴", name:"The Lazy One",
+    desc:"Would rather stay on the couch watching TV.",
+    hint:"💡 Promise it\'s easy and relaxing!",
+    phrase:'"Can\'t we just stay home instead?"'
+  },
+  {
+    emoji:"😰", name:"The Worrier",
+    desc:"Overthinks everything. Always imagining what could go wrong.",
+    hint:"💡 Reassure them it\'s safe and easy!",
+    phrase:'"But what if something goes wrong?"'
+  },
+  {
+    emoji:"🤑", name:"The Cheapskate",
+    desc:"Loves going out, but hates spending money.",
+    hint:"💡 Mention deals, discounts, or that you\'re paying!",
+    phrase:'"How much is it going to cost me?"'
+  },
+  {
+    emoji:"🏃", name:"The Sporty One",
+    desc:"Only interested if the activity involves moving or exercise.",
+    hint:"💡 Say it\'s active, fun, or burns calories!",
+    phrase:'"Is it at least a little physical?"'
+  },
+  {
+    emoji:"🤳", name:"The Social Media Fan",
+    desc:"Only goes places that look good on Instagram.",
+    hint:"💡 Say it\'s super photogenic and everyone will be jealous!",
+    phrase:'"Wait — will this look good on my feed?"'
+  },
+  {
+    emoji:"😎", name:"The Cool Friend",
+    desc:"Super easy-going, always up for something new.",
+    hint:"💡 Any invitation works — just make it sound fun!",
+    phrase:'"Sounds interesting... tell me more!"'
+  }
+];
+
+const EVENTS = [
+  { emoji:"🎤", name:"Karaoke Night",       when:"Friday, 8 PM",       where:"Blue Moon Bar",         diff:2 },
+  { emoji:"🏕️", name:"Camping Weekend",     when:"Saturday morning",   where:"Pine Forest",           diff:4 },
+  { emoji:"🎢", name:"Amusement Park",      when:"Sunday, all day",    where:"Funland Park",          diff:2 },
+  { emoji:"🍣", name:"All-You-Can-Eat Sushi",when:"Tomorrow, 7 PM",    where:"Tokyo Garden",          diff:1 },
+  { emoji:"🎸", name:"Heavy Metal Concert", when:"Next Saturday",      where:"Iron Dome Arena",       diff:5 },
+  { emoji:"🧘", name:"Sunrise Yoga",        when:"Tomorrow, 5 AM",     where:"Riverside Park",        diff:3 },
+  { emoji:"🪂", name:"Skydiving",           when:"Next weekend",       where:"SkyDrop Centre",        diff:5 },
+  { emoji:"🎃", name:"Halloween Party",     when:"Saturday, 9 PM",     where:"The Old Mansion",       diff:2 },
+  { emoji:"🎳", name:"Bowling & Pizza",     when:"Tonight, 7 PM",      where:"Lucky Strike Lanes",    diff:1 },
+  { emoji:"🏖️", name:"Beach BBQ & Bonfire", when:"Sunday afternoon",   where:"Sunset Beach",          diff:2 },
+  { emoji:"😂", name:"Stand-Up Comedy",     when:"Next Friday, 8 PM",  where:"The Laugh Factory",     diff:1 },
+  { emoji:"🌄", name:"Hot Air Balloon",     when:"Next Sunday, 6 AM",  where:"Green Valley",          diff:4 },
+  { emoji:"💃", name:"Salsa Dance Class",   when:"Wednesday, 7 PM",    where:"Havana Dance Studio",   diff:3 },
+  { emoji:"🍝", name:"Italian Cooking Class",when:"Saturday, 2 PM",    where:"La Cucina School",      diff:2 },
+  { emoji:"��", name:"Video Game Tournament",when:"Next Saturday",     where:"GameZone Arena",        diff:2 },
+  { emoji:"🌃", name:"Fancy Rooftop Dinner",when:"Friday, 8 PM",       where:"Sky Lounge, 32nd Floor",diff:3 },
+  { emoji:"🧩", name:"Escape Room",         when:"Sunday, 4 PM",       where:"Locked In Experience",  diff:3 },
+  { emoji:"🎬", name:"Rom-Com Marathon",    when:"Tonight, 7 PM",      where:"My apartment",          diff:1 },
+  { emoji:"🐬", name:"Swim with Dolphins",  when:"Saturday morning",   where:"Ocean Discovery Centre",diff:3 },
+  { emoji:"🎪", name:"Circus Show",         when:"This weekend",       where:"The Grand Big Top",     diff:1 }
+];
+
+const TWISTS = [
+  "⏱️ Speed Round! Only 30 seconds — start the timer now!",
+  "📚 Vocab Drop! Use at least 3 words from Lesson 3.",
+  "✉️ Formal Only! Use only formal invitation phrases.",
+  "🗣️ Informal Only! Use only casual phrases (Let's / Why don't we...)",
+  "💬 Two Reasons! Give 2 reasons why they should come.",
+  "📅 Going To! Every sentence must include 'going to'.",
+  "📞 Phone Call! Pretend you're calling — greet first, then invite.",
+  "🙅 Declined Once! Player B must say no the first time. Player A tries again!",
+  "🎁 Surprise! Tell Player B there's a special surprise at the event.",
+  "❓ 3 Questions! Player B must ask 3 questions before deciding.",
+  "😂 Funny Story! Add one funny made-up detail about the event.",
+  "🚫 No Fillers! No 'um', 'uh' or 'like' — lose a point if caught!"
+];
+
+/* ── STATE ── */
+let charDeck   = shuffle([...Array(CHARACTERS.length).keys()]);
+let eventDeck  = shuffle([...Array(EVENTS.length).keys()]);
+let round = 1;
+let timerSecs = 60, timerDefault = 60, timerInterval = null, timerRunning = false;
+
+/* ── INIT ── */
+window.onload = () => { buildScoreboard(); updateCounters(); renderTimer(); };
+
+/* ── SCOREBOARD ── */
+function buildScoreboard() {
+  const g = document.getElementById('playersGrid');
+  g.innerHTML = '';
+  for (let i = 1; i <= 5; i++) {
+    g.innerHTML += `
+      <div class="player-row">
+        <input class="player-name" id="pn${i}" value="Player ${i}" />
+        <div class="score-controls">
+          <button class="btn-pt btn-minus" onclick="pts(${i},-1)">−</button>
+          <div class="player-pts" id="ps${i}">0</div>
+          <button class="btn-pt btn-plus"  onclick="pts(${i}, 1)">+</button>
+        </div>
+      </div>`;
+  }
+}
+function pts(i, d) {
+  const el = document.getElementById(`ps${i}`);
+  el.textContent = Math.max(0, +el.textContent + d);
+}
+
+/* ── DRAW CARDS ── */
+function stars(n) { return '★'.repeat(n) + '☆'.repeat(5-n); }
+
+function drawChar() {
+  if (!charDeck.length) { alert('No more character cards! Reset decks.'); return; }
+  const c = CHARACTERS[charDeck.pop()];
+  document.getElementById('charContent').innerHTML = `
+    <span class="c-emoji">${c.emoji}</span>
+    <div class="c-name">${c.name}</div>
+    <div class="c-div"></div>
+    <div class="c-row"><span class="c-row-icon">💬</span><span class="c-row-text">${c.desc}</span></div>
+    <div class="c-row"><span class="c-row-icon">${c.hint.slice(0,2)}</span><span class="c-row-text" style="color:#f9ca24">${c.hint.slice(3)}</span></div>
+    <div class="c-phrase">${c.phrase}</div>`;
+  document.getElementById('charCard').classList.add('flipped');
+  updateCounters();
+}
+
+function drawEvent() {
+  if (!eventDeck.length) { alert('No more event cards! Reset decks.'); return; }
+  const e = EVENTS[eventDeck.pop()];
+  document.getElementById('eventContent').innerHTML = `
+    <span class="c-emoji">${e.emoji}</span>
+    <div class="c-name">${e.name}</div>
+    <div class="c-sub">${e.when}</div>
+    <div class="c-row"><span class="c-row-icon">📍</span><span class="c-row-text">${e.where}</span></div>
+    <div class="c-div"></div>
+    <div class="c-stars">Difficulty: ${stars(e.diff)}</div>`;
+  document.getElementById('eventCard').classList.add('flipped');
+  updateCounters();
+}
+
+function updateCounters() {
+  document.getElementById('charCounter').textContent  = `${charDeck.length} cards`;
+  document.getElementById('eventCounter').textContent = `${eventDeck.length} cards`;
+}
+
+/* ── TWIST ── */
+function drawTwist() {
+  const t = TWISTS[Math.floor(Math.random() * TWISTS.length)];
+  const el = document.getElementById('twistResult');
+  el.textContent = t;
+  el.classList.add('show');
+}
+
+/* ── TIMER ── */
+function renderTimer() {
+  const d = document.getElementById('timerDisplay');
+  d.textContent = `${Math.floor(timerSecs/60)}:${String(timerSecs%60).padStart(2,'0')}`;
+  d.className = 'timer-display' + (timerSecs<=10?' danger':timerSecs<=20?' warning':'');
+}
+function startTimer() {
+  if (timerRunning) return;
+  timerRunning = true;
+  timerInterval = setInterval(() => {
+    if (timerSecs > 0) { timerSecs--; renderTimer(); }
+    else { clearInterval(timerInterval); timerRunning=false; document.getElementById('timerDisplay').textContent='⏰ TIME!'; document.getElementById('timerDisplay').className='timer-display danger'; }
+  }, 1000);
+}
+function pauseTimer()  { clearInterval(timerInterval); timerRunning=false; }
+function resetTimer()  { pauseTimer(); timerSecs=timerDefault; renderTimer(); }
+function setTimer(s)   { pauseTimer(); timerDefault=timerSecs=s; renderTimer(); }
+
+/* ── ROUND / GAME ── */
+function nextRound() {
+  round++;
+  document.getElementById('roundBadge').textContent = `Round ${round}`;
+  document.getElementById('charCard').classList.remove('flipped');
+  document.getElementById('eventCard').classList.remove('flipped');
+  document.getElementById('charContent').innerHTML='';
+  document.getElementById('eventContent').innerHTML='';
+  const t = document.getElementById('twistResult');
+  t.textContent=''; t.classList.remove('show');
+  resetTimer();
+}
+function resetDecks() {
+  if (!confirm('Shuffle and reset both decks? Scores are kept.')) return;
+  charDeck  = shuffle([...Array(CHARACTERS.length).keys()]);
+  eventDeck = shuffle([...Array(EVENTS.length).keys()]);
+  updateCounters(); nextRound(); round=1;
+  document.getElementById('roundBadge').textContent='Round 1';
+}
+function resetGame() {
+  if (!confirm('New game? This resets all scores and decks.')) return;
+  resetDecks();
+  for (let i=1;i<=5;i++) { document.getElementById(`ps${i}`).textContent='0'; document.getElementById(`pn${i}`).value=`Player ${i}`; }
+}
+
+/* ── UTIL ── */
+function shuffle(a) {
+  for (let i=a.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+</script>
+</body>
+</html>

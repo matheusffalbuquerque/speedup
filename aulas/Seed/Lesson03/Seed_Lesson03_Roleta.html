@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roleta – Family & Relationships | Seed Lesson 03</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card: #16213e;
+      --accent: #e94560;
+      --gold: #f5a623;
+      --green: #27ae60;
+      --text: #eaeaea;
+      --muted: #a0a0b0;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    header h1 {
+      font-size: 1.9rem;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .game-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    /* ── WHEEL ── */
+    .wheel-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .wheel-container {
+      position: relative;
+      width: 380px;
+      height: 380px;
+    }
+
+    canvas#wheelCanvas {
+      border-radius: 50%;
+      box-shadow: 0 0 40px rgba(233, 69, 96, 0.35);
+    }
+
+    /* pointer / arrow above wheel */
+    .pointer {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 28px solid var(--gold);
+      filter: drop-shadow(0 2px 6px rgba(245,166,35,0.7));
+      z-index: 10;
+    }
+
+    #spinBtn {
+      padding: 14px 48px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(135deg, var(--accent), #c0392b);
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: transform .15s, box-shadow .15s;
+      box-shadow: 0 4px 20px rgba(233,69,96,.45);
+    }
+    #spinBtn:hover:not(:disabled) { transform: scale(1.05); }
+    #spinBtn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ── PHRASE CARD ── */
+    .phrase-section {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      flex: 1;
+      min-width: 280px;
+      max-width: 420px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.4);
+    }
+
+    .card-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    #phraseNumber {
+      font-size: 0.9rem;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    #phraseText {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.4;
+      min-height: 60px;
+    }
+
+    .placeholder-text {
+      color: var(--muted);
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    #revealBtn {
+      padding: 13px 32px;
+      font-size: 1rem;
+      font-weight: 700;
+      border: 2px solid var(--green);
+      border-radius: 50px;
+      background: transparent;
+      color: var(--green);
+      cursor: pointer;
+      transition: background .2s, color .2s;
+      align-self: flex-start;
+    }
+    #revealBtn:hover:not(:disabled) {
+      background: var(--green);
+      color: #fff;
+    }
+    #revealBtn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .answer-card {
+      background: linear-gradient(135deg, #0f3d1c, #1a5e2e);
+      border: 1.5px solid var(--green);
+      border-radius: var(--radius);
+      padding: 20px 28px;
+      display: none;
+    }
+    .answer-card.visible { display: block; }
+
+    #answerText {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #a8ffcb;
+      line-height: 1.4;
+    }
+
+    /* score */
+    .score-bar {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 14px 24px;
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      width: 100%;
+      max-width: 420px;
+    }
+    .score-item { text-align: center; }
+    .score-item span:first-child {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--gold);
+    }
+    .score-item span:last-child {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+    }
+
+    /* counter badge inside wheel section */
+    #segCounter {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    #segCounter strong { color: var(--gold); }
+
+    @media (max-width: 640px) {
+      .wheel-container { width: 300px; height: 300px; }
+      header h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎡 Family & Relationships</h1>
+  <p>Seed Level · Lesson 03 · Translate the sentence into English!</p>
+</header>
+
+<div class="game-layout">
+
+  <!-- WHEEL -->
+  <div class="wheel-section">
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <canvas id="wheelCanvas" width="380" height="380"></canvas>
+    </div>
+    <p id="segCounter">40 phrases · Spin the wheel!</p>
+    <button id="spinBtn">🎰 Spin the Wheel</button>
+  </div>
+
+  <!-- PHRASE + ANSWER -->
+  <div class="phrase-section">
+
+    <div class="score-bar">
+      <div class="score-item"><span id="totalSpins">0</span><span>Rodadas</span></div>
+      <div class="score-item"><span id="totalReveals">0</span><span>Respostas vistas</span></div>
+    </div>
+
+    <div class="card">
+      <p class="card-label">🇧🇷 Sentence in Portuguese</p>
+      <p id="phraseNumber">&nbsp;</p>
+      <p id="phraseText"><span class="placeholder-text">Spin the wheel to start…</span></p>
+    </div>
+
+    <button id="revealBtn" disabled>👁 View Answer in English</button>
+
+    <div class="answer-card" id="answerCard">
+      <p class="card-label">🇺🇸 Correct Translation</p>
+      <p id="answerText"></p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // ─── PHRASES ───────────────────────────────────────────────────────────────
+  const phrases = [
+    { pt: "Este é meu pai.",                      en: "This is my father." },
+    { pt: "Esta é minha mãe.",                    en: "This is my mother." },
+    { pt: "Eu tenho um irmão.",                   en: "I have one brother." },
+    { pt: "Ela é minha irmã.",                    en: "She is my sister." },
+    { pt: "Meus pais são professores.",           en: "My parents are teachers." },
+    { pt: "Eu amo minha família.",                en: "I love my family." },
+    { pt: "Ele é o marido dela.",                 en: "He is her husband." },
+    { pt: "Ela é a esposa dele.",                 en: "She is his wife." },
+    { pt: "Este é o filho deles.",                en: "This is their son." },
+    { pt: "Aquela é minha filha.",                en: "That is my daughter." },
+    { pt: "Meu avô é velho.",                     en: "My grandfather is old." },
+    { pt: "A avó dela é legal.",                  en: "Her grandmother is nice." },
+    { pt: "Nosso tio mora aqui.",                 en: "Our uncle lives here." },
+    { pt: "A tia deles é jovem.",                 en: "Their aunt is young." },
+    { pt: "Eu tenho muitos primos.",              en: "I have many cousins." },
+    { pt: "O bebê é fofo.",                       en: "The baby is cute." },
+    { pt: "Eles têm dois filhos.",                en: "They have two children." },
+    { pt: "Meu pai é alto.",                      en: "My father is tall." },
+    { pt: "Minha mãe é gentil.",                  en: "My mother is kind." },
+    { pt: "O irmão dele é médico.",               en: "His brother is a doctor." },
+    { pt: "Nossa família é grande.",              en: "Our family is big." },
+    { pt: "Os pais deles são legais.",            en: "Their parents are nice." },
+    { pt: "Estes são meus pais.",                 en: "These are my parents." },
+    { pt: "Aqueles são meus primos.",             en: "Those are my cousins." },
+    { pt: "Eu tenho dois irmãos.",                en: "I have two brothers." },
+    { pt: "Ela tem uma irmã.",                    en: "She has a sister." },
+    { pt: "Você tem irmãos?",                     en: "Do you have brothers?" },
+    { pt: "Ela tem filhos?",                      en: "Does she have children?" },
+    { pt: "Eu não tenho irmãos.",                 en: "I don't have brothers." },
+    { pt: "Ele não tem irmãs.",                   en: "He doesn't have sisters." },
+    { pt: "Eu tenho uma família pequena.",        en: "I have a small family." },
+    { pt: "Quantos irmãos você tem?",             en: "How many brothers do you have?" },
+    { pt: "Meu irmão é jovem.",                   en: "My brother is young." },
+    { pt: "Sua irmã é bonita.",                   en: "Your sister is beautiful." },
+    { pt: "O nome do meu pai é Paulo.",           en: "My father's name is Paulo." },
+    { pt: "Eu tenho três filhos.",                en: "I have three children." },
+    { pt: "Nós temos uma família grande.",        en: "We have a big family." },
+    { pt: "Este é o meu avô.",                    en: "This is my grandfather." },
+    { pt: "Minha família é muito grande.",        en: "My family is very big." },
+    { pt: "Estas são as minhas irmãs.",           en: "These are my sisters." },
+  ];
+
+  // ─── COLORS ────────────────────────────────────────────────────────────────
+  const COLORS = [
+    '#e74c3c','#e67e22','#f1c40f','#2ecc71','#1abc9c',
+    '#3498db','#9b59b6','#e91e63','#ff5722','#00bcd4',
+    '#8bc34a','#ff9800','#673ab7','#009688','#f44336',
+    '#03a9f4','#4caf50','#ff4081','#7c4dff','#00e676',
+  ];
+
+  // ─── CANVAS SETUP ──────────────────────────────────────────────────────────
+  const canvas  = document.getElementById('wheelCanvas');
+  const ctx     = canvas.getContext('2d');
+  const cx      = canvas.width / 2;
+  const cy      = canvas.height / 2;
+  const radius  = cx - 4;
+  const N       = phrases.length; // 40
+  const arc     = (2 * Math.PI) / N;
+
+  let currentAngle = 0; // radians – current rotation of the wheel
+  let spinning     = false;
+  let selectedIdx  = null;
+
+  // ─── DRAW WHEEL ────────────────────────────────────────────────────────────
+  function drawWheel(angle) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < N; i++) {
+      const startAngle = angle + i * arc;
+      const endAngle   = startAngle + arc;
+      const color      = COLORS[i % COLORS.length];
+
+      // segment
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, radius, startAngle, endAngle);
+      ctx.closePath();
+      ctx.fillStyle = color;
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      // number label
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(startAngle + arc / 2);
+      ctx.textAlign = 'right';
+      ctx.fillStyle = 'rgba(255,255,255,0.92)';
+      ctx.font = `bold ${N > 30 ? 11 : 13}px Segoe UI`;
+      ctx.fillText(i + 1, radius - 8, 4);
+      ctx.restore();
+    }
+
+    // center circle
+    ctx.beginPath();
+    ctx.arc(cx, cy, 28, 0, 2 * Math.PI);
+    ctx.fillStyle = '#1a1a2e';
+    ctx.fill();
+    ctx.strokeStyle = '#f5a623';
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    // star in center
+    ctx.fillStyle = '#f5a623';
+    ctx.font = 'bold 18px Segoe UI';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('★', cx, cy);
+  }
+
+  drawWheel(currentAngle);
+
+  // ─── SPIN LOGIC ────────────────────────────────────────────────────────────
+  // The pointer is at the TOP (270° / -π/2).
+  // We find which segment is under the pointer after spinning.
+
+  function getIndexAtPointer(angle) {
+    // Normalise angle to [0, 2π)
+    const norm = ((( -angle - Math.PI / 2) % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+    return Math.floor(norm / arc) % N;
+  }
+
+  const spinBtn  = document.getElementById('spinBtn');
+  const revealBtn = document.getElementById('revealBtn');
+  const phraseNumber = document.getElementById('phraseNumber');
+  const phraseText   = document.getElementById('phraseText');
+  const answerCard   = document.getElementById('answerCard');
+  const answerText   = document.getElementById('answerText');
+  const totalSpins   = document.getElementById('totalSpins');
+  const totalReveals = document.getElementById('totalReveals');
+
+  let spinsCount   = 0;
+  let revealsCount = 0;
+
+  spinBtn.addEventListener('click', () => {
+    if (spinning) return;
+    spinning = true;
+    spinBtn.disabled = true;
+    revealBtn.disabled = true;
+    answerCard.classList.remove('visible');
+    phraseText.innerHTML = '<span class="placeholder-text">Girando…</span>';
+    phraseNumber.innerHTML = '&nbsp;';
+
+    // Random full rotations (5–10) + random extra angle
+    const extraRotations = (5 + Math.random() * 5) * 2 * Math.PI;
+    const extraAngle     = Math.random() * 2 * Math.PI;
+    const totalDelta     = extraRotations + extraAngle;
+
+    const duration = 4000 + Math.random() * 1500; // ms
+    const startAngle = currentAngle;
+    const targetAngle = startAngle - totalDelta; // spin counter-clockwise visually
+    let startTime = null;
+
+    function easeOut(t) {
+      // Cubic ease-out
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    function animate(ts) {
+      if (!startTime) startTime = ts;
+      const elapsed = ts - startTime;
+      const t = Math.min(elapsed / duration, 1);
+      const easedT = easeOut(t);
+
+      currentAngle = startAngle + (targetAngle - startAngle) * easedT;
+      drawWheel(currentAngle);
+
+      if (t < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        currentAngle = targetAngle;
+        // Normalise to avoid float overflow over many spins
+        currentAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI) * -1;
+        // recalculate properly
+        currentAngle = targetAngle;
+        drawWheel(currentAngle);
+
+        spinning = false;
+        spinBtn.disabled = false;
+        revealBtn.disabled = false;
+
+        selectedIdx = getIndexAtPointer(currentAngle);
+        const phrase = phrases[selectedIdx];
+
+        phraseNumber.textContent = `Frase ${selectedIdx + 1} de ${N}`;
+        phraseText.textContent = phrase.pt;
+
+        spinsCount++;
+        totalSpins.textContent = spinsCount;
+      }
+    }
+
+    requestAnimationFrame(animate);
+  });
+
+  revealBtn.addEventListener('click', () => {
+    if (selectedIdx === null) return;
+    answerText.textContent = phrases[selectedIdx].en;
+    answerCard.classList.add('visible');
+    revealsCount++;
+    totalReveals.textContent = revealsCount;
+  });
+</script>
+</body>
+</html>

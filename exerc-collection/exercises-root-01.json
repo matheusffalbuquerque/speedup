@@ -1,0 +1,638 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Avião' em inglês?",
+      "options": ["Airplane", "Train", "Bus", "Boat"],
+      "correctAnswer": "Airplane"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Complete: I go to work _____ bus. (de ônibus)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza para inglês: 'Eu estou viajando para o Rio'",
+      "correctAnswer": "i am traveling to rio|i'm traveling to rio"
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "Complete: She is _____ the train right now. (no trem)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Qual preposição usamos com 'car'?",
+      "options": ["by car", "on car", "at car", "with car"],
+      "correctAnswer": "by car"
+    },
+    {
+      "id": 6,
+      "type": "translate",
+      "question": "Traduza: 'Passaporte'",
+      "correctAnswer": "passport"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: We are _____ to fly to New York tomorrow. (vamos)",
+      "correctAnswer": "going"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "O que significa 'luggage'?",
+      "options": ["Bagagem", "Passagem", "Portão", "Destino"],
+      "correctAnswer": "Bagagem"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "Complete: I'm _____ a taxi. (dentro de um táxi)",
+      "correctAnswer": "in"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: They _____ waiting at the airport now. (estão esperando)",
+      "correctAnswer": "are|'re"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Metrô' em inglês?",
+      "options": ["Subway", "Train", "Bus", "Taxi"],
+      "correctAnswer": "Subway"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Traduza: 'Ela vai visitar a família dela'",
+      "correctAnswer": "she is going to visit her family|she's going to visit her family"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: I walk to school _____ foot. (a pé)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "O que é 'boarding pass'?",
+      "options": ["Cartão de embarque", "Passaporte", "Bagagem", "Voo"],
+      "correctAnswer": "Cartão de embarque"
+    },
+    {
+      "id": 15,
+      "type": "complete",
+      "question": "Complete: She _____ flying to London tomorrow. (vai voar)",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Traduza: 'Viagem'",
+      "correctAnswer": "trip|journey"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: We travel _____ plane every year. (de avião)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Qual a tradução de 'destination'?",
+      "options": ["Destino", "Partida", "Chegada", "Portão"],
+      "correctAnswer": "Destino"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Complete: I _____ traveling to Paris next month. (vou viajar)",
+      "correctAnswer": "am|'m"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Traduza: 'Eles estão no ônibus agora'",
+      "correctAnswer": "they are on the bus now|they're on the bus now"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "Complete: How do I _____ to the airport? (chegar)",
+      "correctAnswer": "get"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Bicicleta' em inglês?",
+      "options": ["Bicycle", "Motorcycle", "Train", "Bus"],
+      "correctAnswer": "Bicycle"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza: 'Nós vamos pegar o trem'",
+      "correctAnswer": "we are going to take the train|we're going to take the train"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Complete: She rides _____ a bike. (de bicicleta)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: The bus _____ coming! Look! (está vindo)",
+      "correctAnswer": "is|'s"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "O que significa 'departure'?",
+      "options": ["Partida", "Chegada", "Destino", "Viagem"],
+      "correctAnswer": "Partida"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Traduza: 'Voo'",
+      "correctAnswer": "flight"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: Are you _____ the subway? (no metrô)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Qual forma usamos para planos futuros?",
+      "options": ["going to", "going by", "going on", "going with"],
+      "correctAnswer": "going to"
+    },
+    {
+      "id": 10,
+      "type": "complete",
+      "question": "Complete: I need to check _____ at the airport. (fazer check-in)",
+      "correctAnswer": "in"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Traduza: 'Ela está viajando de trem'",
+      "correctAnswer": "she is traveling by train|she's traveling by train"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: They prefer to travel _____ car. (de carro)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Mala' em inglês?",
+      "options": ["Suitcase", "Luggage", "Bag", "Package"],
+      "correctAnswer": "Suitcase"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: Where is my _____? (bagagem)",
+      "correctAnswer": "luggage|baggage"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Traduza: 'Quanto tempo é a viagem?'",
+      "correctAnswer": "how long is the journey|how long is the trip"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: We are _____ the car. (dentro do carro)",
+      "correctAnswer": "in"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "O que significa 'arrival'?",
+      "options": ["Chegada", "Partida", "Portão", "Passagem"],
+      "correctAnswer": "Chegada"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: I _____ going to visit my family next week. (vou)",
+      "correctAnswer": "am|'m"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Traduza: 'Turista'",
+      "correctAnswer": "tourist"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete: Which bus _____ to downtown? (vai)",
+      "correctAnswer": "goes"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Barco' em inglês?",
+      "options": ["Boat", "Ship", "Both are correct", "None"],
+      "correctAnswer": "Both are correct"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Complete: Right now, I _____ traveling to São Paulo. (estou viajando)",
+      "correctAnswer": "am|'m"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza: 'Aeroporto'",
+      "correctAnswer": "airport"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Complete: She traveled _____ boat to the island. (de barco)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "O que é 'gate' no aeroporto?",
+      "options": ["Portão de embarque", "Bagagem", "Passagem", "Voo"],
+      "correctAnswer": "Portão de embarque"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: Tomorrow, we _____ going to fly to Europe. (vamos)",
+      "correctAnswer": "are|'re"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Traduza: 'Ele está no avião agora'",
+      "correctAnswer": "he is on the plane now|he's on the plane now"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: I'm _____ a motorcycle. (de motocicleta)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Qual preposição para 'taxi'?",
+      "options": ["in a taxi", "on a taxi", "by a taxi", "at taxi"],
+      "correctAnswer": "in a taxi"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: Where is _____ 5? (portão)",
+      "correctAnswer": "gate"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Traduza: 'Viajante'",
+      "correctAnswer": "traveler|traveller"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete: They _____ taking the bus to school. (estão pegando)",
+      "correctAnswer": "are|'re"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Passagem' (ticket)?",
+      "options": ["Ticket", "Passport", "Baggage", "Gate"],
+      "correctAnswer": "Ticket"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: I go to work _____ foot. (a pé)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Traduza: 'Nós vamos viajar para o Japão'",
+      "correctAnswer": "we are going to travel to japan|we're going to travel to japan"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "Complete: Is this flight _____ London? (para)",
+      "correctAnswer": "to"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "O que significa 'vacation'?",
+      "options": ["Férias", "Viagem", "Destino", "Jornada"],
+      "correctAnswer": "Férias"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: She _____ waiting at gate 10. (está esperando)",
+      "correctAnswer": "is|'s"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Traduza: 'Ônibus'",
+      "correctAnswer": "bus"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete: We travel _____ train to work. (de trem)",
+      "correctAnswer": "by"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "translate",
+      "question": "Traduza: 'Ele vai pegar um táxi'",
+      "correctAnswer": "he is going to take a taxi|he's going to take a taxi"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Como se diz 'Trem' em inglês?",
+      "options": ["Train", "Subway", "Bus", "Taxi"],
+      "correctAnswer": "Train"
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "Complete: They are _____ the plane to Paris. (no avião)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Complete: I _____ flying to Tokyo tomorrow. (vou voar)",
+      "correctAnswer": "am|'m"
+    },
+    {
+      "id": 5,
+      "type": "translate",
+      "question": "Traduza: 'Check-in'",
+      "correctAnswer": "check-in|check in"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Qual é o Present Continuous de 'travel' para 'I'?",
+      "options": ["I am traveling", "I traveling", "I travel", "I travels"],
+      "correctAnswer": "I am traveling"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: She goes to school _____ bike. (de bicicleta)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: Where is my _____? (passaporte)",
+      "correctAnswer": "passport"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Traduza: 'Nós estamos esperando no aeroporto'",
+      "correctAnswer": "we are waiting at the airport|we're waiting at the airport"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "O que significa 'journey'?",
+      "options": ["Jornada", "Viajante", "Destino", "Partida"],
+      "correctAnswer": "Jornada"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: Look! The train _____ coming! (está vindo)",
+      "correctAnswer": "is|'s"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Traduza: 'Motocicleta'",
+      "correctAnswer": "motorcycle"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete: We are _____ to visit Rio next month. (vamos)",
+      "correctAnswer": "going"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Como dizemos 'dentro do carro'?",
+      "options": ["in the car", "on the car", "by the car", "at the car"],
+      "correctAnswer": "in the car"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: They traveled _____ plane last year. (de avião)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Traduza: 'Ela está de férias'",
+      "correctAnswer": "she is on vacation|she's on vacation"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Complete: How _____ is the flight? (quanto tempo)",
+      "correctAnswer": "long"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "O que é 'cab'?",
+      "options": ["Táxi", "Carro", "Ônibus", "Trem"],
+      "correctAnswer": "Táxi"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Complete: I'm _____ the subway right now. (no metrô)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Traduza: 'Destino'",
+      "correctAnswer": "destination"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "complete",
+      "question": "Complete: I need my boarding _____ to enter the plane. (cartão de embarque)",
+      "correctAnswer": "pass"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Como se diz 'A pé' em inglês?",
+      "options": ["On foot", "By foot", "In foot", "With foot"],
+      "correctAnswer": "On foot"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Traduza: 'Eu vou viajar amanhã'",
+      "correctAnswer": "i am going to travel tomorrow|i'm going to travel tomorrow"
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "Complete: She _____ traveling by bus tonight. (vai viajar)",
+      "correctAnswer": "is|'s"
+    },
+    {
+      "id": 5,
+      "type": "complete",
+      "question": "Complete: We go _____ subway every day. (de metrô)",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Qual a forma contraída de 'I am traveling'?",
+      "options": ["I'm traveling", "I'am traveling", "Im traveling", "I is traveling"],
+      "correctAnswer": "I'm traveling"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Traduza: 'Eles estão no táxi'",
+      "correctAnswer": "they are in the taxi|they're in the taxi"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: I'm going _____ take the train. (vou pegar)",
+      "correctAnswer": "to"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "Complete: The flight _____ 10 hours long. (é/dura)",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "O que significa 'trip'?",
+      "options": ["Viagem", "Viajante", "Viajar", "Turista"],
+      "correctAnswer": "Viagem"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Traduza: 'Táxi'",
+      "correctAnswer": "taxi|cab"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: They are _____ a boat trip. (fazendo)",
+      "correctAnswer": "taking"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete: She rides _____ a motorcycle. (de motocicleta)",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Como se pergunta 'Como eu chego lá?'",
+      "options": ["How do I get there?", "Where I get there?", "What I get there?", "When I get there?"],
+      "correctAnswer": "How do I get there?"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Traduza: 'Nós vamos de carro'",
+      "correctAnswer": "we go by car|we travel by car"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: Are you _____ on the bus? (viajando)",
+      "correctAnswer": "traveling|travelling"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Complete: This is my _____ to Paris. (passagem)",
+      "correctAnswer": "ticket"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Qual preposição usamos com 'plane'?",
+      "options": ["by plane / on the plane", "in plane", "at plane", "with plane"],
+      "correctAnswer": "by plane / on the plane"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Traduza: 'Ela vai visitar Londres'",
+      "correctAnswer": "she is going to visit london|she's going to visit london"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Complete: I love to _____ new places! (viajar/conhecer)",
+      "correctAnswer": "travel|visit|see"
+    }
+  ]
+}
