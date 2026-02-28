@@ -746,6 +746,27 @@ const podcastsList = {
 
 let currentPodcast = null;
 
+// Lista de slides disponíveis por nível
+const slidesList = {
+    seed: [
+        // Slides do Seed serão adicionados futuramente
+    ],
+    root: [
+        // Slides do Root serão adicionados futuramente
+    ],
+    leaf: [
+        {
+            id: 1,
+            title: 'Lesson 01 - Career Advice & Modal Verbs',
+            description: 'Introduction to career advice vocabulary and modal verbs usage',
+            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01_Slides.pdf'
+        }
+    ],
+    fruit: [
+        // Slides do Fruit serão adicionados futuramente
+    ]
+};
+
 // Função para mostrar a lista de podcasts
 function showPodcasts() {
     console.log('🎙️ Abrindo lista de podcasts...');
@@ -983,4 +1004,115 @@ function convertMarkdownToHTML(markdown) {
     }
     
     return result;
+}
+
+// ============================================
+// FUNÇÕES DE SLIDES
+// ============================================
+
+// Função para mostrar a tela de slides
+function showSlides() {
+    console.log('📊 Abrindo tela de slides...');
+    console.log('📊 Nível atual:', currentLevel);
+    
+    const menuScreen = document.getElementById('menu-screen');
+    const slidesScreen = document.getElementById('slides-screen');
+    const slidesContainer = document.getElementById('slides-container');
+    
+    if (!menuScreen || !slidesScreen || !slidesContainer) {
+        console.error('❌ Elementos da interface não encontrados');
+        return;
+    }
+    
+    // Salvar HTML original do menu
+    if (!originalMenuHTML) {
+        originalMenuHTML = menuScreen.innerHTML;
+        console.log('💾 HTML original do menu salvo');
+    }
+    
+    // Limpar container
+    slidesContainer.innerHTML = '';
+    
+    // Obter slides do nível atual
+    let slides = [];
+    
+    if (currentLevel === 'seed') {
+        slides = slidesList.seed || [];
+    } else if (currentLevel === 'root') {
+        slides = slidesList.root || [];
+    } else if (currentLevel === 'leaf') {
+        slides = slidesList.leaf || [];
+    } else if (currentLevel === 'fruit') {
+        slides = slidesList.fruit || [];
+    }
+    
+    // Verificar se há slides disponíveis
+    if (slides.length === 0) {
+        slidesContainer.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #666;">
+                <h3><i class="fas fa-presentation"></i> Coming Soon!</h3>
+                <p>Lesson slides for the <strong>${currentLevel.toUpperCase()}</strong> level will be available soon.</p>
+            </div>
+        `;
+    } else {
+        // Criar cards de slides
+        slides.forEach(slide => {
+            const slideCard = document.createElement('div');
+            slideCard.className = 'slide-card';
+            slideCard.innerHTML = `
+                <h3 class="slide-title">
+                    <i class="fas fa-file-powerpoint"></i>
+                    ${slide.title}
+                </h3>
+                <p style="color: #666; margin: 10px 0;">${slide.description}</p>
+                <div class="slide-buttons">
+                    <button class="view-slide-btn" onclick="viewSlide('${slide.pdfFile}')" style="width: 100%;">
+                        <i class="fas fa-eye"></i> View Slides
+                    </button>
+                </div>
+            `;
+            slidesContainer.appendChild(slideCard);
+        });
+    }
+    
+    // Esconder menu e mostrar slides
+    menuScreen.classList.add('hidden');
+    menuScreen.style.display = 'none';
+    
+    slidesScreen.classList.remove('hidden');
+    slidesScreen.style.display = 'block';
+    
+    console.log(`✅ Tela de slides exibida para nível: ${currentLevel}`);
+}
+
+// Função para visualizar slide em PDF (abre em nova aba)
+function viewSlide(pdfUrl) {
+    console.log('👁️ Abrindo slide:', pdfUrl);
+    window.open(pdfUrl, '_blank');
+}
+
+// Função para voltar dos slides ao menu
+function backFromSlides() {
+    console.log('🔙 Voltando dos slides ao menu...');
+    
+    const menuScreen = document.getElementById('menu-screen');
+    const slidesScreen = document.getElementById('slides-screen');
+    
+    if (!menuScreen || !slidesScreen) {
+        console.error('❌ Elementos da interface não encontrados');
+        return;
+    }
+    
+    // Esconder tela de slides
+    slidesScreen.classList.add('hidden');
+    slidesScreen.style.display = 'none';
+    
+    // Restaurar e mostrar menu
+    if (originalMenuHTML) {
+        menuScreen.innerHTML = originalMenuHTML;
+    }
+    menuScreen.classList.remove('hidden');
+    menuScreen.style.display = 'block';
+    
+    console.log('✅ Voltou ao menu com sucesso');
 }
