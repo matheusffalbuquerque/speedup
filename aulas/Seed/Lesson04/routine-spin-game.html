@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Routine Spin! – Seed Lesson 04</title>
+  <style>
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:   #4facfe;
+      --blue2:  #00c6fb;
+      --orange: #f7971e;
+      --yellow: #ffd200;
+      --purple: #a855f7;
+      --green:  #22c55e;
+      --red:    #ef4444;
+      --dark:   #1e1b2e;
+      --card:   rgba(255,255,255,.07);
+      --border: rgba(255,255,255,.12);
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      color: #f0f0f0;
+      padding: 20px;
+    }
+
+    /* ===== LAYOUT ===== */
+    .wrapper { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align: center;
+      padding: 26px 20px 18px;
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color: #0a1628;
+      font-weight: 800;
+      font-size: .72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+    header h1 { font-size: 2rem; font-weight: 900; }
+    header p  { opacity: .6; font-size: .9rem; margin-top: 5px; }
+
+    /* ===== GAME MODES ===== */
+    .mode-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .mode-tab {
+      padding: 16px;
+      text-align: center;
+      border-radius: var(--radius);
+      border: 2px solid var(--border);
+      background: var(--card);
+      cursor: pointer;
+      font-weight: 700;
+      font-size: .95rem;
+      transition: all .2s;
+      opacity: .55;
+    }
+    .mode-tab.active {
+      opacity: 1;
+      border-color: var(--blue);
+      background: rgba(79,172,254,.12);
+      color: var(--blue);
+    }
+    .mode-tab span { display: block; font-size: .75rem; font-weight: 400; opacity: .7; margin-top: 3px; }
+
+    /* ===== PLAYERS ===== */
+    #players-section {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+    }
+    #players-section h3 {
+      font-size: .8rem; font-weight: 700; opacity: .5;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .player-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .player-chip {
+      padding: 6px 14px; border-radius: 50px; font-size: .85rem; font-weight: 600;
+      background: rgba(255,255,255,.1); border: 2px solid transparent;
+      cursor: pointer; transition: all .2s;
+    }
+    .player-chip.active { background: var(--blue); color: #0a1628; border-color: var(--blue2); }
+    .add-row { display: flex; gap: 8px; }
+    .add-row input {
+      flex: 1; padding: 9px 14px; border-radius: 8px;
+      border: 2px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.07); color: #fff;
+      font-size: .9rem; font-family: inherit;
+    }
+    .add-row input:focus { outline: none; border-color: var(--blue); }
+    .add-row button {
+      padding: 9px 18px; border-radius: 8px; border: none;
+      background: var(--blue); color: #0a1628; font-weight: 700; cursor: pointer;
+    }
+
+    /* ===== TURN BAR ===== */
+    #turn-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--card); border-radius: var(--radius);
+      padding: 14px 20px; border: 1px solid var(--border);
+    }
+    #turn-bar .lbl  { font-size: .78rem; opacity: .5; text-transform: uppercase; letter-spacing: 1px; }
+    #turn-bar .name { font-size: 1.2rem; font-weight: 800; color: var(--yellow); }
+    #turn-bar .num  { font-size: .85rem; opacity: .4; }
+
+    /* ===== SLOT MACHINE ===== */
+    .slots-wrapper {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .slots-wrapper h3 {
+      font-size: .8rem; opacity: .5; letter-spacing: 1.5px;
+      text-transform: uppercase; margin-bottom: 18px;
+    }
+    .slots {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .slot {
+      border-radius: 12px;
+      padding: 18px 10px;
+      min-height: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 2px solid rgba(255,255,255,.1);
+      transition: transform .15s;
+      position: relative;
+      overflow: hidden;
+    }
+    .slot.spinning { animation: slotSpin .08s linear infinite; }
+    .slot.landed   { animation: slotLand .4s cubic-bezier(.36,1.4,.64,1) forwards; }
+
+    @keyframes slotSpin {
+      0%   { transform: translateY(0); opacity: 1; }
+      50%  { transform: translateY(-6px); opacity: .5; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slotLand {
+      0%   { transform: scale(1.18); }
+      60%  { transform: scale(.95); }
+      100% { transform: scale(1); }
+    }
+
+    .slot-person { background: linear-gradient(160deg, #2d1b69, #553c9a); }
+    .slot-action { background: linear-gradient(160deg, #1a3a5c, #1e5f8a); }
+    .slot-time   { background: linear-gradient(160deg, #3b1f00, #7c4a00); }
+
+    .slot .slot-label {
+      font-size: .65rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; opacity: .55;
+    }
+    .slot .slot-emoji { font-size: 2.4rem; line-height: 1; }
+    .slot .slot-text  { font-size: .95rem; font-weight: 700; line-height: 1.2; text-align: center; }
+    .slot .slot-sub   { font-size: .72rem; opacity: .55; font-style: italic; }
+
+    /* empty state */
+    .slot .slot-placeholder { font-size: 2.5rem; opacity: .15; }
+
+    /* ===== SPIN BUTTON ===== */
+    #spin-btn {
+      width: 100%;
+      padding: 18px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      color: #1a0a00;
+      cursor: pointer;
+      letter-spacing: .5px;
+      transition: transform .15s, box-shadow .15s;
+      box-shadow: 0 4px 20px rgba(247,151,30,.35);
+    }
+    #spin-btn:hover  { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(247,151,30,.45); }
+    #spin-btn:active { transform: scale(.98); }
+    #spin-btn:disabled { opacity: .35; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    /* ===== CHALLENGE BOX ===== */
+    #challenge-box {
+      background: rgba(255,255,255,.05);
+      border: 2px dashed rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: none;
+    }
+    .ch-lbl {
+      font-size: .72rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; opacity: .5; margin-bottom: 8px;
+    }
+    #challenge-text {
+      font-size: 1.05rem; line-height: 1.7; color: #fff;
+    }
+    #challenge-text strong { color: var(--yellow); }
+    #challenge-text em     { color: var(--blue); font-style: normal; font-weight: 600; }
+    #challenge-text .conj-hint {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: .82rem;
+      background: rgba(168,85,247,.2);
+      border: 1px solid rgba(168,85,247,.4);
+      border-radius: 8px;
+      padding: 6px 14px;
+      color: #d8b4fe;
+    }
+
+    /* ===== ANSWER INPUT ===== */
+    #input-area { display: none; flex-direction: column; gap: 12px; }
+    #answer-input {
+      width: 100%; padding: 16px 18px; font-size: 1.05rem;
+      border-radius: 12px; border: 2px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.08); color: #fff;
+      font-family: inherit; transition: border-color .2s;
+    }
+    #answer-input::placeholder { opacity: .35; }
+    #answer-input:focus { outline: none; border-color: var(--blue); }
+
+    .btn-row { display: flex; gap: 10px; }
+    .btn-tip {
+      flex: 1; padding: 13px; font-size: .9rem; font-weight: 600;
+      border: 2px solid rgba(255,255,255,.15); border-radius: 10px;
+      background: transparent; color: #eee; cursor: pointer; transition: all .2s;
+    }
+    .btn-tip:hover { background: rgba(255,255,255,.08); }
+    .btn-skip {
+      flex: 1; padding: 13px; font-size: .9rem; font-weight: 600;
+      border: 2px solid rgba(255,255,255,.15); border-radius: 10px;
+      background: transparent; color: #eee; cursor: pointer; transition: all .2s;
+    }
+    .btn-skip:hover { background: rgba(255,255,255,.08); }
+    .btn-check {
+      flex: 2; padding: 13px; font-size: .95rem; font-weight: 800;
+      border: none; border-radius: 10px;
+      background: var(--green); color: #fff; cursor: pointer; transition: all .2s;
+    }
+    .btn-check:hover { background: #16a34a; }
+
+    /* ===== FEEDBACK ===== */
+    #feedback {
+      display: none;
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+    #feedback.correct { background: rgba(34,197,94,.15); border: 2px solid rgba(34,197,94,.4); color: #86efac; }
+    #feedback.wrong   { background: rgba(239,68,68,.12);  border: 2px solid rgba(239,68,68,.35);  color: #fca5a5; }
+    #feedback.teacher { background: rgba(79,172,254,.12); border: 2px solid rgba(79,172,254,.35); color: #bae6fd; }
+
+    /* ===== GRAMMAR TIP ===== */
+    #grammar-tip {
+      background: rgba(168,85,247,.08);
+      border-left: 4px solid var(--purple);
+      border-radius: 0 12px 12px 0;
+      padding: 16px 18px;
+      font-size: .87rem;
+      line-height: 1.8;
+      display: none;
+    }
+    #grammar-tip .tip-title { font-weight: 800; color: #d8b4fe; margin-bottom: 8px; font-size: .95rem; }
+    #grammar-tip table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: .85rem; }
+    #grammar-tip th { background: rgba(168,85,247,.2); padding: 7px 10px; text-align: left; border-radius: 4px; }
+    #grammar-tip td { padding: 6px 10px; border-bottom: 1px solid rgba(255,255,255,.06); }
+    #grammar-tip code {
+      background: rgba(255,255,255,.1); border-radius: 4px;
+      padding: 1px 6px; font-family: 'Courier New', monospace; color: #fde68a;
+    }
+
+    /* ===== QUIZ MODE ===== */
+    #quiz-area { display: none; flex-direction: column; gap: 14px; }
+    .quiz-question {
+      background: var(--card); border-radius: var(--radius);
+      padding: 22px 24px; border: 1px solid var(--border);
+    }
+    .quiz-q-label {
+      font-size: .72rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; opacity: .4; margin-bottom: 10px;
+    }
+    .quiz-q-text {
+      font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 18px; line-height: 1.5;
+    }
+    .quiz-q-text .blank {
+      display: inline-block; min-width: 90px; border-bottom: 3px solid var(--yellow);
+      color: var(--yellow); text-align: center; font-size: 1rem;
+    }
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .opt-btn {
+      padding: 14px 16px; border-radius: 10px; text-align: left;
+      border: 2px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.05); color: #eee;
+      font-size: .95rem; font-weight: 600; cursor: pointer; transition: all .2s;
+    }
+    .opt-btn:hover:not(:disabled) { border-color: var(--blue); background: rgba(79,172,254,.1); }
+    .opt-btn.correct  { background: rgba(34,197,94,.2);  border-color: var(--green); color: #86efac; }
+    .opt-btn.wrong    { background: rgba(239,68,68,.15);  border-color: var(--red);   color: #fca5a5; }
+    .opt-btn:disabled { cursor: default; }
+
+    #quiz-next-btn {
+      padding: 14px; font-size: 1rem; font-weight: 700; border: none; border-radius: 10px;
+      background: var(--blue); color: #0a1628; cursor: pointer; display: none;
+    }
+    #quiz-progress { font-size: .85rem; opacity: .5; text-align: right; }
+
+    /* ===== SCHEDULE DISPLAY ===== */
+    #schedule-section { display: none; flex-direction: column; gap: 14px; }
+    .sch-header { display: flex; align-items: center; justify-content: space-between; }
+    .sch-header h3 { font-size: .9rem; font-weight: 700; opacity: .7; }
+    #clear-sch-btn {
+      font-size: .78rem; padding: 5px 12px; border-radius: 6px;
+      border: 1px solid rgba(255,80,80,.4); background: transparent;
+      color: #f87171; cursor: pointer; transition: background .2s;
+    }
+    #clear-sch-btn:hover { background: rgba(255,80,80,.12); }
+    #schedule-list { display: flex; flex-direction: column; gap: 10px; }
+    .sch-item {
+      display: flex; gap: 14px; align-items: flex-start;
+      background: var(--card); border-radius: 10px;
+      padding: 12px 16px; border-left: 4px solid transparent;
+      animation: fadeUp .35s ease;
+    }
+    .sch-item:nth-child(6n+1) { border-left-color: var(--purple); }
+    .sch-item:nth-child(6n+2) { border-left-color: var(--blue);   }
+    .sch-item:nth-child(6n+3) { border-left-color: var(--orange); }
+    .sch-item:nth-child(6n+4) { border-left-color: var(--green);  }
+    .sch-item:nth-child(6n+5) { border-left-color: var(--yellow); }
+    .sch-item:nth-child(6n+6) { border-left-color: var(--red);    }
+    .sch-emoji { font-size: 1.6rem; flex-shrink: 0; margin-top: 2px; }
+    .sch-body .sch-meta { font-size: .7rem; opacity: .4; margin-bottom: 3px; }
+    .sch-body .sch-sentence { font-size: .97rem; color: #fff; line-height: 1.4; }
+    .sch-pts {
+      margin-left: auto; flex-shrink: 0;
+      font-size: .8rem; font-weight: 700; color: var(--yellow);
+      background: rgba(255,210,0,.1); border-radius: 6px; padding: 3px 8px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== SCOREBOARD ===== */
+    #score-section {
+      background: var(--card); border-radius: var(--radius);
+      padding: 18px 20px; border: 1px solid var(--border);
+    }
+    #score-section h3 {
+      font-size: .8rem; font-weight: 700; opacity: .5;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .score-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,.06);
+      font-size: .93rem;
+    }
+    .score-row:last-child { border-bottom: none; }
+    .sc-name { opacity: .85; }
+    .sc-pts  { font-weight: 800; color: var(--yellow); }
+    .sc-meta { font-size: .72rem; opacity: .38; margin-left: 10px; }
+
+    /* ===== TOAST ===== */
+    #toast {
+      position: fixed; bottom: 28px; left: 50%;
+      transform: translateX(-50%) translateY(60px);
+      background: rgba(20,20,35,.96); color: #fff;
+      padding: 11px 22px; border-radius: 50px;
+      font-size: .88rem; font-weight: 600;
+      z-index: 9999; transition: transform .28s, opacity .28s;
+      opacity: 0; pointer-events: none;
+      border: 1px solid rgba(255,255,255,.14);
+    }
+    #toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 560px) {
+      .slots { grid-template-columns: 1fr; }
+      .options-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.5rem; }
+      .btn-row { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <div class="badge">🌱 Seed · Lesson 04</div>
+    <h1>🔄 Routine Spin!</h1>
+    <p>Simple Present &amp; Daily Routine Verbs &nbsp;·&nbsp; Online Classroom Game</p>
+  </header>
+
+  <!-- MODE TABS -->
+  <div class="mode-tabs">
+    <div class="mode-tab active" id="tab-spin" onclick="switchMode('spin')">
+      🎰 Spin &amp; Speak
+      <span>Sorteio de rotina – forma frases</span>
+    </div>
+    <div class="mode-tab" id="tab-quiz" onclick="switchMode('quiz')">
+      ❓ Quick Quiz
+      <span>Conjugação com múltipla escolha</span>
+    </div>
+  </div>
+
+  <!-- PLAYERS -->
+  <div id="players-section">
+    <h3>👥 Players</h3>
+    <div class="player-list" id="player-list"></div>
+    <div class="add-row">
+      <input id="new-player-input" type="text" placeholder="Player name…" maxlength="20" />
+      <button onclick="addPlayer()">＋ Add</button>
+    </div>
+  </div>
+
+  <!-- TURN BAR -->
+  <div id="turn-bar">
+    <div>
+      <div class="lbl">Current Turn</div>
+      <div class="name" id="curr-name">—</div>
+    </div>
+    <div class="num" id="turn-num">Turn 0</div>
+  </div>
+
+  <!-- ══════════════════════════════════════ SPIN MODE ══════════════════════════════════════ -->
+  <div id="spin-mode">
+
+    <div class="slots-wrapper">
+      <h3>🎰 Spin the slots to get your challenge</h3>
+      <div class="slots">
+
+        <!-- PERSON SLOT -->
+        <div class="slot slot-person" id="slot-person">
+          <span class="slot-label">👤 Person</span>
+          <span class="slot-placeholder">?</span>
+        </div>
+
+        <!-- ACTION SLOT -->
+        <div class="slot slot-action" id="slot-action">
+          <span class="slot-label">🎬 Action</span>
+          <span class="slot-placeholder">?</span>
+        </div>
+
+        <!-- TIME SLOT -->
+        <div class="slot slot-time" id="slot-time">
+          <span class="slot-label">🕐 Time</span>
+          <span class="slot-placeholder">?</span>
+        </div>
+
+      </div>
+      <button id="spin-btn" onclick="spin()">🎰 Spin!</button>
+    </div>
+
+    <!-- CHALLENGE -->
+    <div id="challenge-box">
+      <div class="ch-lbl">📝 Your Challenge</div>
+      <div id="challenge-text"></div>
+    </div>
+
+    <!-- GRAMMAR TIP -->
+    <div id="grammar-tip">
+      <div class="tip-title">💡 Simple Present — Quick Guide</div>
+      <table>
+        <thead><tr><th>Subject</th><th>Verb Form</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>I / You / We / They</td><td>base form</td><td><code>I wake up early.</code></td></tr>
+          <tr><td>He / She / It</td><td>verb + <strong>-s / -es</strong></td><td><code>She wakes up early.</code></td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:10px;font-size:.82rem;opacity:.7">
+        ⚠️ Special: <code>go → goes</code> &nbsp;|&nbsp; <code>have → has</code> &nbsp;|&nbsp; <code>do → does</code> &nbsp;|&nbsp; <code>watch → watches</code>
+      </p>
+    </div>
+
+    <!-- INPUT -->
+    <div id="input-area">
+      <input id="answer-input" type="text"
+        placeholder="Write your sentence here… (e.g. She wakes up at 7 AM.)" />
+      <div class="btn-row">
+        <button class="btn-tip"  onclick="toggleTip()">💡 Grammar Tip</button>
+        <button class="btn-skip" onclick="skipSpin()">⏭ Skip</button>
+        <button class="btn-check" onclick="checkAnswer()">✅ Check</button>
+      </div>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div id="feedback"></div>
+
+    <!-- SCHEDULE (story of the day) -->
+    <div id="schedule-section">
+      <div class="sch-header">
+        <h3>📅 Today's Routine</h3>
+        <button id="clear-sch-btn" onclick="clearSchedule()">🗑 Clear</button>
+      </div>
+      <div id="schedule-list"></div>
+    </div>
+
+  </div><!-- end spin-mode -->
+
+  <!-- ══════════════════════════════════════ QUIZ MODE ══════════════════════════════════════ -->
+  <div id="quiz-area">
+    <div id="quiz-progress"></div>
+    <div class="quiz-question">
+      <div class="quiz-q-label">❓ Choose the correct form</div>
+      <div class="quiz-q-text" id="quiz-q-text"></div>
+      <div class="options-grid" id="options-grid"></div>
+    </div>
+    <button id="quiz-next-btn" onclick="nextQuizQ()">Next →</button>
+  </div>
+
+  <!-- SCOREBOARD -->
+  <div id="score-section">
+    <h3>🏆 Scoreboard</h3>
+    <div id="scoreboard"></div>
+  </div>
+
+</div><!-- end wrapper -->
+
+<div id="toast"></div>
+
+<script>
+/* =====================================================================
+   DATA
+===================================================================== */
+
+const PERSONS = [
+  { label: "I",          pronoun: "I",    third: false, emoji: "🙋" },
+  { label: "You",        pronoun: "You",  third: false, emoji: "👉" },
+  { label: "He (Alex)",  pronoun: "He",   third: true,  emoji: "👦" },
+  { label: "She (Maria)",pronoun: "She",  third: true,  emoji: "👩" },
+  { label: "We",         pronoun: "We",   third: false, emoji: "👫" },
+  { label: "They",       pronoun: "They", third: false, emoji: "👥" },
+];
+
+const ACTIONS = [
+  { verb: "wake up",      verb3: "wakes up",     emoji: "⏰", tip: "wake up → wakes up"  },
+  { verb: "brush teeth",  verb3: "brushes teeth",emoji: "🪥", tip: "brush → brushes (-es after sh)" },
+  { verb: "take a shower",verb3: "takes a shower",emoji: "🚿",tip: "take → takes"         },
+  { verb: "have breakfast",verb3:"has breakfast", emoji: "🍳", tip: "have → has (irregular!)" },
+  { verb: "go to school", verb3: "goes to school",emoji: "🏫",tip: "go → goes (-es ending)" },
+  { verb: "go to work",   verb3: "goes to work",  emoji: "💼",tip: "go → goes (-es ending)" },
+  { verb: "have lunch",   verb3: "has lunch",     emoji: "🥗", tip: "have → has (irregular!)" },
+  { verb: "study English",verb3: "studies English",emoji: "📚",tip: "study → studies (y→ies)" },
+  { verb: "watch TV",     verb3: "watches TV",    emoji: "📺", tip: "watch → watches (-es after ch)" },
+  { verb: "have dinner",  verb3: "has dinner",    emoji: "🍽️", tip: "have → has (irregular!)" },
+  { verb: "read a book",  verb3: "reads a book",  emoji: "📖", tip: "read → reads"         },
+  { verb: "walk the dog", verb3: "walks the dog", emoji: "🐕", tip: "walk → walks"          },
+  { verb: "exercise",     verb3: "exercises",     emoji: "🏃", tip: "exercise → exercises (-es)" },
+  { verb: "cook dinner",  verb3: "cooks dinner",  emoji: "👨‍🍳",tip: "cook → cooks"          },
+  { verb: "go to bed",    verb3: "goes to bed",   emoji: "😴", tip: "go → goes (-es ending)" },
+  { verb: "drink coffee", verb3: "drinks coffee", emoji: "☕", tip: "drink → drinks"         },
+  { verb: "check the phone",verb3:"checks the phone",emoji:"📱",tip:"check → checks"       },
+  { verb: "do homework",  verb3: "does homework", emoji: "✏️", tip: "do → does (irregular!)" },
+];
+
+const TIMES = [
+  { text: "every morning",    emoji: "🌅" },
+  { text: "at 6 AM",          emoji: "🕕" },
+  { text: "at 7 AM",          emoji: "🕖" },
+  { text: "in the morning",   emoji: "☀️" },
+  { text: "before school",    emoji: "🎒" },
+  { text: "at noon",          emoji: "🌞" },
+  { text: "in the afternoon", emoji: "🌤️" },
+  { text: "after school",     emoji: "🏠" },
+  { text: "in the evening",   emoji: "🌆" },
+  { text: "at night",         emoji: "🌙" },
+  { text: "every day",        emoji: "📅" },
+  { text: "on weekends",      emoji: "🎉" },
+  { text: "before dinner",    emoji: "⏰" },
+  { text: "after dinner",     emoji: "🌛" },
+  { text: "at 10 PM",         emoji: "🕙" },
+];
+
+// Quiz questions about Simple Present conjugation
+const QUIZ_QUESTIONS = [
+  {
+    template: 'She ___ (wake up) every morning at 6 AM.',
+    answer: 'wakes up',
+    options: ['wake up', 'wakes up', 'waking up', 'waked up'],
+    explanation: '<strong>She</strong> → 3rd person singular → <code>wake up</code> + <strong>s</strong> = <code>wakes up</code>'
+  },
+  {
+    template: 'They ___ (have) breakfast at 7 AM.',
+    answer: 'have',
+    options: ['has', 'have', 'haves', 'having'],
+    explanation: '<strong>They</strong> → plural → use base form <code>have</code>'
+  },
+  {
+    template: 'He ___ (go) to school every day.',
+    answer: 'goes',
+    options: ['go', 'goes', 'gos', 'going'],
+    explanation: '<strong>He</strong> → 3rd person singular → <code>go</code> + <strong>es</strong> = <code>goes</code>'
+  },
+  {
+    template: 'I ___ (study) English in the afternoon.',
+    answer: 'study',
+    options: ['study', 'studies', 'studys', 'studyed'],
+    explanation: '<strong>I</strong> → 1st person → use base form <code>study</code>'
+  },
+  {
+    template: 'Maria ___ (brush) her teeth every morning.',
+    answer: 'brushes',
+    options: ['brush', 'brushes', 'brushs', 'brusing'],
+    explanation: '<strong>Maria (she)</strong> → 3rd person → <code>brush</code> + <strong>es</strong> = <code>brushes</code> (verbs ending in -sh get -es)'
+  },
+  {
+    template: 'We ___ (watch) TV after dinner.',
+    answer: 'watch',
+    options: ['watches', 'watch', 'watchs', 'watching'],
+    explanation: '<strong>We</strong> → plural → use base form <code>watch</code>'
+  },
+  {
+    template: 'He ___ (have) lunch at noon.',
+    answer: 'has',
+    options: ['have', 'has', 'haves', 'having'],
+    explanation: '<strong>He</strong> → 3rd person → <code>have</code> is irregular! → <code>has</code>'
+  },
+  {
+    template: 'You ___ (do) homework in the evening.',
+    answer: 'do',
+    options: ['does', 'do', 'dos', 'doing'],
+    explanation: '<strong>You</strong> → 2nd person → use base form <code>do</code>'
+  },
+  {
+    template: 'She ___ (do) homework after school.',
+    answer: 'does',
+    options: ['do', 'does', 'doed', 'doing'],
+    explanation: '<strong>She</strong> → 3rd person → <code>do</code> is irregular! → <code>does</code>'
+  },
+  {
+    template: 'Alex ___ (exercise) every morning.',
+    answer: 'exercises',
+    options: ['exercise', 'exercises', 'exercices', 'exercising'],
+    explanation: '<strong>Alex (he)</strong> → 3rd person → <code>exercise</code> + <strong>s</strong> → <code>exercises</code>'
+  },
+  {
+    template: 'My parents ___ (cook) dinner at 7 PM.',
+    answer: 'cook',
+    options: ['cooks', 'cook', 'cooking', 'cooked'],
+    explanation: '<strong>My parents (they)</strong> → plural → base form <code>cook</code>'
+  },
+  {
+    template: 'She ___ (study) English on weekends.',
+    answer: 'studies',
+    options: ['study', 'studies', 'studys', 'studing'],
+    explanation: '<strong>She</strong> → 3rd person → <code>study</code> ends in consonant+y → <code>studies</code> (y → ies)'
+  },
+  {
+    template: 'He ___ (drink) coffee every morning.',
+    answer: 'drinks',
+    options: ['drink', 'drinks', 'drinkes', 'drinking'],
+    explanation: '<strong>He</strong> → 3rd person → <code>drink</code> + <strong>s</strong> = <code>drinks</code>'
+  },
+  {
+    template: 'I ___ (go) to bed at 10 PM.',
+    answer: 'go',
+    options: ['go', 'goes', 'gos', 'going'],
+    explanation: '<strong>I</strong> → 1st person → base form <code>go</code>'
+  },
+  {
+    template: 'She ___ (read) a book at night.',
+    answer: 'reads',
+    options: ['read', 'reads', 'reades', 'reading'],
+    explanation: '<strong>She</strong> → 3rd person → <code>read</code> + <strong>s</strong> = <code>reads</code>'
+  },
+];
+
+/* =====================================================================
+   STATE
+===================================================================== */
+let players   = [];
+let scores    = {};
+let turnIndex = 0;
+let turnCount = 0;
+let scheduleItems = [];
+let tipVisible = false;
+let currentPerson = null, currentAction = null, currentTime = null;
+let currentMode = 'spin';
+
+// Quiz state
+let quizQuestions = [];
+let quizIndex     = 0;
+let quizAnswered  = false;
+
+/* =====================================================================
+   PLAYERS
+===================================================================== */
+function addPlayer() {
+  const input = document.getElementById('new-player-input');
+  const name  = input.value.trim();
+  if (!name) return;
+  if (players.includes(name)) { showToast('Player already exists!'); return; }
+  if (players.length >= 6)    { showToast('Max 6 players!'); return; }
+  players.push(name);
+  scores[name] = { points: 0, correct: 0, turns: 0 };
+  input.value = '';
+  renderPlayers();
+  renderScoreboard();
+  updateTurnBar();
+}
+document.getElementById('new-player-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') addPlayer();
+});
+
+function renderPlayers() {
+  const list = document.getElementById('player-list');
+  list.innerHTML = '';
+  players.forEach((p, i) => {
+    const c = document.createElement('div');
+    c.className = 'player-chip' + (i === turnIndex ? ' active' : '');
+    c.textContent = p;
+    c.title = 'Click to remove';
+    c.onclick = () => { if (confirm(`Remove ${p}?`)) { players.splice(i,1); delete scores[p]; if (turnIndex >= players.length) turnIndex = 0; renderPlayers(); renderScoreboard(); updateTurnBar(); }};
+    list.appendChild(c);
+  });
+}
+
+/* =====================================================================
+   TURN
+===================================================================== */
+function currPlayer() { return players.length ? players[turnIndex] : null; }
+function updateTurnBar() {
+  document.getElementById('curr-name').textContent = currPlayer() || 'Add players above ↑';
+  document.getElementById('turn-num').textContent  = `Turn ${turnCount}`;
+}
+function nextTurn() {
+  if (!players.length) return;
+  turnIndex = (turnIndex + 1) % players.length;
+  turnCount++;
+  updateTurnBar();
+  renderPlayers();
+}
+
+/* =====================================================================
+   MODE SWITCH
+===================================================================== */
+function switchMode(mode) {
+  currentMode = mode;
+  document.getElementById('tab-spin').className = 'mode-tab' + (mode === 'spin' ? ' active' : '');
+  document.getElementById('tab-quiz').className = 'mode-tab' + (mode === 'quiz' ? ' active' : '');
+  document.getElementById('spin-mode').style.display = mode === 'spin' ? 'flex' : 'none';
+  document.getElementById('spin-mode').style.flexDirection = 'column';
+  document.getElementById('spin-mode').style.gap = '16px';
+  document.getElementById('quiz-area').style.display = mode === 'quiz' ? 'flex' : 'none';
+  document.getElementById('quiz-area').style.flexDirection = 'column';
+  document.getElementById('quiz-area').style.gap = '14px';
+  if (mode === 'quiz' && quizQuestions.length === 0) initQuiz();
+}
+
+/* =====================================================================
+   SPIN MODE
+===================================================================== */
+let lastPIdx = -1, lastAIdx = -1, lastTIdx = -1;
+function pickRnd(arr, last) {
+  let i; do { i = Math.floor(Math.random() * arr.length); } while (arr.length > 1 && i === last);
+  return { item: arr[i], idx: i };
+}
+
+function spin() {
+  if (!players.length) { showToast('Add players first! 👆'); return; }
+
+  // Reset UI
+  document.getElementById('challenge-box').style.display = 'none';
+  document.getElementById('input-area').style.display    = 'none';
+  document.getElementById('feedback').style.display      = 'none';
+  document.getElementById('grammar-tip').style.display   = 'none';
+  tipVisible = false;
+  document.getElementById('spin-btn').disabled = true;
+
+  const slotP = document.getElementById('slot-person');
+  const slotA = document.getElementById('slot-action');
+  const slotT = document.getElementById('slot-time');
+
+  // Spinning animation via interval
+  let ticks = 0;
+  const maxTicks = 14;
+  const interval = setInterval(() => {
+    const rp = pickRnd(PERSONS,  -1);
+    const ra = pickRnd(ACTIONS,  -1);
+    const rt = pickRnd(TIMES,    -1);
+    slotP.innerHTML = `<span class="slot-label">👤 Person</span><span class="slot-emoji">${rp.item.emoji}</span><span class="slot-text">${rp.item.label}</span>`;
+    slotA.innerHTML = `<span class="slot-label">🎬 Action</span><span class="slot-emoji">${ra.item.emoji}</span><span class="slot-text">${ra.item.verb}</span>`;
+    slotT.innerHTML = `<span class="slot-label">🕐 Time</span><span class="slot-emoji">${rt.item.emoji}</span><span class="slot-text">${rt.item.text}</span>`;
+    ticks++;
+    if (ticks >= maxTicks) {
+      clearInterval(interval);
+      landSlots();
+    }
+  }, 90);
+}
+
+function landSlots() {
+  const p = pickRnd(PERSONS, lastPIdx);
+  const a = pickRnd(ACTIONS, lastAIdx);
+  const t = pickRnd(TIMES,   lastTIdx);
+  lastPIdx = p.idx; lastAIdx = a.idx; lastTIdx = t.idx;
+  currentPerson = p.item; currentAction = a.item; currentTime = t.item;
+
+  const slotP = document.getElementById('slot-person');
+  const slotA = document.getElementById('slot-action');
+  const slotT = document.getElementById('slot-time');
+
+  slotP.innerHTML = `<span class="slot-label">👤 Person</span><span class="slot-emoji">${currentPerson.emoji}</span><span class="slot-text">${currentPerson.label}</span>`;
+  slotA.innerHTML = `<span class="slot-label">🎬 Action</span><span class="slot-emoji">${currentAction.emoji}</span><span class="slot-text">${currentAction.verb}</span><span class="slot-sub">${currentAction.tip}</span>`;
+  slotT.innerHTML = `<span class="slot-label">🕐 Time</span><span class="slot-emoji">${currentTime.emoji}</span><span class="slot-text">${currentTime.text}</span>`;
+
+  [slotP, slotA, slotT].forEach(s => { s.classList.add('landed'); setTimeout(() => s.classList.remove('landed'), 500); });
+
+  // Build challenge
+  const p2 = currPlayer();
+  const isThird = currentPerson.third;
+  const verbForm = isThird ? currentAction.verb3 : currentAction.verb;
+
+  let conjHint = '';
+  if (isThird) {
+    conjHint = `<span class="conj-hint">💡 ${currentPerson.pronoun} → use <strong>${currentAction.verb3}</strong> (${currentAction.tip})</span>`;
+  }
+
+  document.getElementById('challenge-text').innerHTML =
+    `<strong>${p2}</strong>, make a <strong>Simple Present</strong> sentence with:<br>
+    👤 <em>${currentPerson.label}</em> &nbsp;+&nbsp; 🎬 <em>${currentAction.verb}</em> &nbsp;+&nbsp; 🕐 <em>${currentTime.text}</em>
+    ${conjHint}`;
+
+  document.getElementById('challenge-box').style.display = 'block';
+  document.getElementById('input-area').style.display    = 'flex';
+  document.getElementById('answer-input').value = '';
+  document.getElementById('answer-input').focus();
+}
+
+/* ===== ANSWER CHECK ===== */
+function checkAnswer() {
+  const raw = document.getElementById('answer-input').value.trim();
+  if (!raw) { showToast('Write your sentence first! ✍️'); return; }
+
+  const pronoun  = currentPerson.pronoun.toLowerCase();
+  const verbOk   = currentPerson.third ? currentAction.verb3 : currentAction.verb;
+  const timeWord = currentTime.text.split(' ')[0].toLowerCase(); // first word of time expression
+
+  const lower = raw.toLowerCase();
+  const hasSubject = lower.includes(pronoun) ||
+    (currentPerson.label.toLowerCase().includes('alex') && lower.includes('alex')) ||
+    (currentPerson.label.toLowerCase().includes('maria') && lower.includes('maria'));
+  const hasVerb  = lower.includes(verbOk.toLowerCase()) ||
+    (verbOk.includes(' ') && lower.includes(verbOk.split(' ')[0].toLowerCase()));
+  const hasTime  = lower.includes(timeWord);
+
+  const score = (hasSubject ? 1 : 0) + (hasVerb ? 2 : 0) + (hasTime ? 1 : 0);
+  const p = currPlayer();
+  scores[p].turns += 1;
+
+  const fb = document.getElementById('feedback');
+  fb.style.display = 'block';
+
+  if (score >= 3) {
+    scores[p].points  += score;
+    scores[p].correct += 1;
+    fb.className = 'correct';
+    fb.innerHTML = `✅ Great job, ${p}! (+${score} points)<br>
+      <span style="font-size:.85rem;opacity:.8">
+        ${hasVerb ? '✔ Correct verb form' : '⚠ Check the verb'} &nbsp;|&nbsp;
+        ${hasTime ? '✔ Time expression included' : '⚠ Try to add the time expression'}
+      </span>`;
+    addToSchedule(raw, p, score);
+    showToast(`+${score} pts for ${p}! 🎉`);
+  } else if (score >= 1) {
+    scores[p].points += 1;
+    fb.className = 'wrong';
+    const correctSentence = `${currentPerson.pronoun} ${verbOk} ${currentTime.text}.`;
+    fb.innerHTML = `⚠️ Almost there! (+1 point)<br>
+      Correct sentence: <strong>"${correctSentence}"</strong><br>
+      <span style="font-size:.83rem;opacity:.8">
+        ${!hasVerb ? `💡 Remember: <em>${currentPerson.pronoun}</em> → use <strong>${verbOk}</strong>` : ''}
+      </span>`;
+    showToast(`Keep trying, ${p}! 💪`);
+  } else {
+    fb.className = 'wrong';
+    const correctSentence = `${currentPerson.pronoun} ${verbOk} ${currentTime.text}.`;
+    fb.innerHTML = `❌ Not quite. (+0 points)<br>
+      Correct sentence: <strong>"${correctSentence}"</strong><br>
+      💡 Remember: <em>${currentPerson.pronoun}</em> → use <strong>${verbOk}</strong>`;
+    showToast(`Try again next time, ${p}!`);
+  }
+
+  renderScoreboard();
+  document.getElementById('input-area').style.display = 'none';
+  document.getElementById('spin-btn').disabled = false;
+  nextTurn();
+}
+
+function skipSpin() {
+  const p = currPlayer();
+  if (p) { scores[p].turns += 1; }
+  document.getElementById('input-area').style.display    = 'none';
+  document.getElementById('challenge-box').style.display = 'none';
+  document.getElementById('feedback').style.display      = 'none';
+  document.getElementById('grammar-tip').style.display   = 'none';
+  document.getElementById('spin-btn').disabled = false;
+  tipVisible = false;
+  showToast('Turn skipped ⏭');
+  nextTurn();
+}
+
+function toggleTip() {
+  tipVisible = !tipVisible;
+  document.getElementById('grammar-tip').style.display = tipVisible ? 'block' : 'none';
+}
+
+document.getElementById('answer-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') checkAnswer();
+});
+
+/* ===== SCHEDULE ===== */
+function addToSchedule(sentence, player, pts) {
+  scheduleItems.push({ sentence, player, emoji: currentAction.emoji, action: currentAction.verb, pts });
+  renderSchedule();
+}
+
+function renderSchedule() {
+  const sec = document.getElementById('schedule-section');
+  const lst = document.getElementById('schedule-list');
+  sec.style.display = 'flex';
+  lst.innerHTML = '';
+  scheduleItems.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'sch-item';
+    div.innerHTML = `
+      <div class="sch-emoji">${item.emoji}</div>
+      <div class="sch-body">
+        <div class="sch-meta">${i+1}. ${item.player} · ${item.action}</div>
+        <div class="sch-sentence">${item.sentence}</div>
+      </div>
+      <div class="sch-pts">+${item.pts}</div>`;
+    lst.appendChild(div);
+  });
+  lst.lastElementChild?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function clearSchedule() {
+  if (!scheduleItems.length) return;
+  if (!confirm('Clear the routine board? (Scores kept)')) return;
+  scheduleItems = [];
+  document.getElementById('schedule-section').style.display = 'none';
+  document.getElementById('schedule-list').innerHTML = '';
+  showToast('Board cleared! 🗑');
+}
+
+/* =====================================================================
+   QUIZ MODE
+===================================================================== */
+function initQuiz() {
+  // Shuffle questions
+  quizQuestions = [...QUIZ_QUESTIONS].sort(() => Math.random() - .5);
+  quizIndex     = 0;
+  quizAnswered  = false;
+  renderQuizQ();
+}
+
+function renderQuizQ() {
+  if (quizIndex >= quizQuestions.length) {
+    document.getElementById('quiz-q-text').innerHTML =
+      '🎉 All questions done! Click "Restart Quiz" to play again.';
+    document.getElementById('options-grid').innerHTML =
+      `<button class="opt-btn" style="grid-column:1/-1" onclick="initQuiz()">🔄 Restart Quiz</button>`;
+    document.getElementById('quiz-next-btn').style.display = 'none';
+    document.getElementById('quiz-progress').textContent = '';
+    return;
+  }
+
+  const q = quizQuestions[quizIndex];
+  quizAnswered  = false;
+  document.getElementById('quiz-next-btn').style.display = 'none';
+  document.getElementById('quiz-progress').textContent =
+    `Question ${quizIndex + 1} / ${quizQuestions.length}`;
+
+  // Render question with blank
+  const parts = q.template.split('___');
+  document.getElementById('quiz-q-text').innerHTML =
+    parts[0] + `<span class="blank">___</span>` + (parts[1] || '');
+
+  // Shuffle options
+  const opts = [...q.options].sort(() => Math.random() - .5);
+  const grid = document.getElementById('options-grid');
+  grid.innerHTML = '';
+  opts.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className  = 'opt-btn';
+    btn.textContent = opt;
+    btn.onclick = () => answerQuiz(opt, q, btn);
+    grid.appendChild(btn);
+  });
+}
+
+function answerQuiz(chosen, q, btn) {
+  if (quizAnswered) return;
+  quizAnswered = true;
+  const p = currPlayer();
+
+  const allBtns = document.querySelectorAll('.opt-btn');
+  allBtns.forEach(b => {
+    b.disabled = true;
+    if (b.textContent === q.answer) b.classList.add('correct');
+  });
+
+  if (chosen === q.answer) {
+    btn.classList.add('correct');
+    if (p) { scores[p].points += 2; scores[p].correct += 1; scores[p].turns += 1; }
+    showToast(`✅ Correct! +2 pts for ${p || 'player'}! 🎉`);
+
+    // Show explanation inline
+    const qText = document.getElementById('quiz-q-text');
+    qText.innerHTML += `<br><span style="font-size:.82rem;color:#86efac;margin-top:8px;display:block">✅ ${q.explanation}</span>`;
+  } else {
+    btn.classList.add('wrong');
+    if (p) { scores[p].turns += 1; }
+    showToast(`❌ Wrong. The answer is: ${q.answer}`);
+
+    const qText = document.getElementById('quiz-q-text');
+    qText.innerHTML += `<br><span style="font-size:.82rem;color:#fca5a5;margin-top:8px;display:block">❌ ${q.explanation}</span>`;
+  }
+
+  renderScoreboard();
+  document.getElementById('quiz-next-btn').style.display = 'block';
+  nextTurn();
+}
+
+function nextQuizQ() {
+  quizIndex++;
+  renderQuizQ();
+}
+
+/* =====================================================================
+   SCOREBOARD
+===================================================================== */
+function renderScoreboard() {
+  const board = document.getElementById('scoreboard');
+  if (!players.length) {
+    board.innerHTML = '<div style="opacity:.38;font-size:.85rem">No players yet.</div>';
+    return;
+  }
+  const sorted = [...players].sort((a,b) => (scores[b]?.points??0) - (scores[a]?.points??0));
+  board.innerHTML = sorted.map((p, i) => `
+    <div class="score-row">
+      <span class="sc-name">${i===0?'🥇 ':i===1?'🥈 ':i===2?'🥉 ':'    '}${p}</span>
+      <span>
+        <span class="sc-pts">${scores[p]?.points??0} pts</span>
+        <span class="sc-meta">${scores[p]?.correct??0} correct · ${scores[p]?.turns??0} turns</span>
+      </span>
+    </div>`).join('');
+}
+
+/* =====================================================================
+   TOAST
+===================================================================== */
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+/* =====================================================================
+   INIT
+===================================================================== */
+// Default players
+['Player 1', 'Player 2', 'Player 3'].forEach(n => {
+  players.push(n);
+  scores[n] = { points: 0, correct: 0, turns: 0 };
+});
+renderPlayers();
+renderScoreboard();
+updateTurnBar();
+
+// Init layout
+document.getElementById('spin-mode').style.display = 'flex';
+document.getElementById('spin-mode').style.flexDirection = 'column';
+document.getElementById('spin-mode').style.gap = '16px';
+document.getElementById('quiz-area').style.display = 'none';
+</script>
+</body>
+</html>

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRAMMAR STORY DUEL 📖⚔️ | Fruit Lesson 1</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0d1f12, #162d1e, #0d1a12);
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 16px 8px;
+      gap: 8px;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-size: 1.4em;
+      font-weight: 800;
+      background: linear-gradient(90deg, #d4a017, #e8721b);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle { font-size: 0.65em; color: #55efc4; }
+    .header-right { display: flex; gap: 8px; align-items: center; }
+    .round-badge {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 3px 14px;
+      font-size: 0.72em;
+      color: #dfe6e9;
+    }
+    .turn-badge {
+      border-radius: 50px;
+      padding: 3px 14px;
+      font-size: 0.72em;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+    .turn-a { background: rgba(212,160,23,0.25); border: 1px solid #d4a017; color: #d4a017; }
+    .turn-b { background: rgba(85,239,196,0.2); border: 1px solid #55efc4; color: #55efc4; }
+
+    /* ── MAIN ROW ── */
+    .main-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 220px;
+      gap: 10px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* ── DECK COLUMN ── */
+    .deck-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-height: 0;
+    }
+    .deck-label {
+      font-size: 0.65em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .story-color  { color: #d4a017; }
+    .struct-color { color: #55efc4; }
+    .deck-counter { font-size: 0.6em; color: #b2bec3; margin-top: -4px; }
+
+    /* ── CARD FLIP ── */
+    .card-wrapper {
+      perspective: 800px;
+      width: 100%;
+      max-width: 240px;
+      flex: 1;
+      min-height: 0;
+      cursor: pointer;
+    }
+    .card-inner {
+      width: 100%; height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease;
+      border-radius: 14px;
+    }
+    .card-inner.flipped { transform: rotateY(180deg); }
+
+    .card-face {
+      position: absolute; width: 100%; height: 100%;
+      backface-visibility: hidden;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+    }
+    /* Deck backs */
+    .face-back.story-deck  { background: linear-gradient(135deg,#d4a017,#e8721b); box-shadow:0 6px 24px rgba(212,160,23,.35); }
+    .face-back.struct-deck { background: linear-gradient(135deg,#00b894,#00cec9); box-shadow:0 6px 24px rgba(0,184,148,.35); }
+    .deck-icon { font-size: 2.4em; margin-bottom: 6px; }
+    .deck-name { font-size: 0.9em; font-weight: 700; color: rgba(255,255,255,0.95); }
+    .deck-hint { font-size: 0.6em; color: rgba(255,255,255,0.7); margin-top: 3px; }
+
+    /* Card fronts */
+    .face-front {
+      transform: rotateY(180deg);
+      text-align: left;
+      justify-content: flex-start;
+    }
+    .face-front.story-card  { background: linear-gradient(145deg,#1e1a08,#2d2510); border: 2px solid #d4a017; }
+    .face-front.struct-card { background: linear-gradient(145deg,#081e1c,#0f2d28); border: 2px solid #00b894; }
+
+    .c-emoji   { font-size: 2em; display: block; text-align: center; width: 100%; margin-bottom: 4px; }
+    .c-name    { font-size: 0.82em; font-weight: 800; text-align: center; width: 100%; }
+    .story-card  .c-name { color: #d4a017; }
+    .struct-card .c-name { color: #55efc4; }
+    .c-sub     { font-size: 0.58em; color: #b2bec3; text-align: center; width: 100%; margin-bottom: 6px; }
+    .c-div     { width: 100%; height: 1px; background: rgba(255,255,255,0.1); margin: 5px 0; }
+    .c-row     { display: flex; gap: 5px; align-items: flex-start; font-size: 0.6em; line-height: 1.45; margin-bottom: 4px; }
+    .c-row-icon { flex-shrink: 0; }
+    .c-row-text { color: #dfe6e9; }
+    .c-bold    { font-weight: 700; color: #fff; }
+    .c-task    { font-size: 0.58em; color: #d4a017; line-height: 1.4; }
+    .struct-card .c-task { color: #55efc4; }
+    .c-example { font-size: 0.56em; font-style: italic; color: #a29bfe; text-align: center;
+                 margin-top: 6px; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .c-tag     { display: inline-block; font-size: 0.55em; font-weight: 700;
+                 padding: 1px 8px; border-radius: 20px; margin-bottom: 4px; }
+    .tag-mc    { background: rgba(253,203,110,.2); color: #fdcb6e; border: 1px solid rgba(253,203,110,.4); }
+    .tag-inv   { background: rgba(162,155,254,.2); color: #a29bfe; border: 1px solid rgba(162,155,254,.4); }
+    .tag-cl    { background: rgba(85,239,196,.2);  color: #55efc4; border: 1px solid rgba(85,239,196,.4); }
+
+    /* ── DRAW BUTTON ── */
+    .btn-draw {
+      border: none; border-radius: 50px;
+      padding: 7px 20px; font-size: 0.72em; font-weight: 700;
+      cursor: pointer; transition: transform 0.15s;
+      flex-shrink: 0;
+    }
+    .btn-draw:hover { transform: translateY(-2px); }
+    .btn-story  { background: linear-gradient(90deg,#d4a017,#e8721b); color: #1a1a2e; }
+    .btn-struct { background: linear-gradient(90deg,#00b894,#00cec9); color: #1a1a2e; }
+    .btn-draw:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+    /* ── RIGHT COLUMN ── */
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 0;
+    }
+
+    /* Timer */
+    .timer-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .timer-label { font-size: 0.58em; color: #b2bec3; letter-spacing: 1px; text-transform: uppercase; }
+    .timer-display {
+      font-size: 2.2em;
+      font-weight: 800;
+      color: #55efc4;
+      line-height: 1;
+      transition: color 0.3s;
+    }
+    .timer-display.warning { color: #fdcb6e; }
+    .timer-display.danger  { color: #ff7675; animation: pulse .5s infinite alternate; }
+    @keyframes pulse { from{opacity:1} to{opacity:.35} }
+    .timer-row { display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; }
+    .btn-sm {
+      border: none; border-radius: 50px;
+      padding: 5px 12px; font-size: 0.65em; font-weight: 700;
+      cursor: pointer; transition: transform 0.1s;
+    }
+    .btn-sm:hover { transform: translateY(-1px); }
+    .btn-green  { background: #00b894; color: #fff; }
+    .btn-yellow { background: #fdcb6e; color: #1a1a2e; }
+    .btn-red    { background: #d63031; color: #fff; }
+    .btn-gray   { background: rgba(255,255,255,0.1); color: #dfe6e9; border: 1px solid rgba(255,255,255,0.15); }
+    .timer-presets { display: flex; gap: 4px; }
+
+    /* Twist */
+    .twist-box-wrap { flex-shrink: 0; }
+    .btn-twist {
+      width: 100%;
+      background: linear-gradient(90deg,#6c5ce7,#a29bfe);
+      border: none; border-radius: 8px;
+      padding: 7px; font-size: 0.72em; font-weight: 700;
+      color: #fff; cursor: pointer; transition: transform 0.15s;
+    }
+    .btn-twist:hover { transform: translateY(-1px); }
+    .twist-result {
+      display: none;
+      margin-top: 5px;
+      background: rgba(108,92,231,0.15);
+      border: 1px solid rgba(108,92,231,0.35);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 0.62em;
+      color: #c9b8ff;
+      line-height: 1.45;
+      animation: fadeIn .3s ease;
+    }
+    .twist-result.show { display: block; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(-5px)} to{opacity:1;transform:translateY(0)} }
+
+    /* Scoreboard */
+    .score-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 8px 10px;
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      overflow-y: auto;
+    }
+    .score-title { font-size: 0.6em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #55efc4; text-align: center; }
+    .player-row { display: flex; align-items: center; gap: 4px; }
+    .player-name {
+      width: 72px; min-width: 0; background: transparent; border: none;
+      border-bottom: 1px dashed rgba(255,255,255,0.25);
+      color: #dfe6e9; font-family: 'Poppins', sans-serif;
+      font-size: 0.65em; font-weight: 600;
+      outline: none; padding: 1px 2px;
+    }
+    .score-controls { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+    .player-pts { font-size: 1em; font-weight: 800; color: #55efc4; min-width: 20px; text-align: center; }
+    .btn-pt {
+      width: 20px; height: 20px; border: none; border-radius: 50%;
+      font-size: 0.85em; font-weight: 700; cursor: pointer;
+      line-height: 1; transition: transform 0.1s;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .btn-pt:hover { transform: scale(1.2); }
+    .btn-plus  { background: #00b894; color: #fff; }
+    .btn-minus { background: #636e72; color: #fff; }
+
+    /* ── HOW TO PLAY PANEL ── */
+    .how-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50px;
+      padding: 3px 12px; font-size: 0.65em;
+      color: #dfe6e9; cursor: pointer;
+    }
+    .how-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+    .how-overlay.show { display: flex; }
+    .how-box {
+      background: linear-gradient(145deg,#0d1f12,#162d1e);
+      border: 1px solid rgba(85,239,196,0.3);
+      border-radius: 16px;
+      padding: 24px 28px;
+      max-width: 520px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      color: #dfe6e9;
+    }
+    .how-box h2 { color: #d4a017; font-size: 1.1em; margin-bottom: 14px; }
+    .how-box h3 { color: #55efc4; font-size: 0.8em; margin: 12px 0 5px; }
+    .how-box p, .how-box li { font-size: 0.72em; line-height: 1.6; }
+    .how-box ul { padding-left: 16px; }
+    .how-box li { margin-bottom: 4px; }
+    .how-box .close-btn {
+      margin-top: 16px; width: 100%;
+      background: linear-gradient(90deg,#d4a017,#e8721b);
+      border: none; border-radius: 8px;
+      padding: 8px; font-size: 0.75em; font-weight: 700;
+      color: #1a1a2e; cursor: pointer;
+    }
+    .step-num {
+      display: inline-block; background: #d4a017; color: #1a1a2e;
+      border-radius: 50%; width: 18px; height: 18px;
+      font-size: 0.65em; font-weight: 800;
+      text-align: center; line-height: 18px;
+      margin-right: 5px; flex-shrink: 0;
+    }
+
+    /* ── BOTTOM BAR ── */
+    .bottom-bar {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HOW TO PLAY OVERLAY -->
+<div class="how-overlay" id="howOverlay">
+  <div class="how-box">
+    <h2>📖⚔️ Grammar Story Duel — How to Play</h2>
+
+    <h3>🎯 Objective</h3>
+    <p>Build a collaborative story across rounds while using advanced grammar structures. Each round, two players duel to continue the narrative — the class votes on who used the grammar most naturally and creatively.</p>
+
+    <h3>🃏 The Decks</h3>
+    <ul>
+      <li><strong>📖 Story Card</strong> — Sets the narrative context. Story Seeds start a new arc; Chapter Cards continue it.</li>
+      <li><strong>⚡ Structure Card</strong> — The grammar structure the current player MUST use (Mixed Conditional, Inversion, or Cleft Sentence).</li>
+    </ul>
+
+    <h3>🔄 Each Round</h3>
+    <ul>
+      <li><span class="step-num">1</span> Draw a <strong>Story Card</strong> (shared — visible to both players).</li>
+      <li><span class="step-num">2</span> Draw a <strong>Structure Card</strong> for Player A.</li>
+      <li><span class="step-num">3</span> <strong>Player A</strong> speaks for <strong>75 seconds</strong>, continuing the story using their structure.</li>
+      <li><span class="step-num">4</span> Click <strong>"Next Turn"</strong> — a new Structure Card is drawn automatically for Player B.</li>
+      <li><span class="step-num">5</span> <strong>Player B</strong> speaks for <strong>75 seconds</strong>, continuing OR challenging A's narrative.</li>
+      <li><span class="step-num">6</span> The class discusses: Who used the structure correctly? Who was more coherent and creative? <strong>Award points!</strong></li>
+    </ul>
+
+    <h3>🎲 Plot Twist</h3>
+    <p>Draw a twist at any time to add a challenge — shorter timer, vocab requirements, register constraints, or special rules.</p>
+
+    <h3>🏆 Scoring Suggestions</h3>
+    <ul>
+      <li>+1 point — Structure used correctly</li>
+      <li>+1 point — Narrative is coherent and creative</li>
+      <li>+1 point — Used vocabulary from the lesson (syntax, nuance, register, etc.)</li>
+      <li>+1 bonus — Class votes as "best continuation of the round"</li>
+    </ul>
+
+    <button class="close-btn" onclick="closeHow()">Got it — Let's play! 🎉</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <h1>📖⚔️ GRAMMAR STORY DUEL</h1>
+    <div class="subtitle">Fruit · Lesson 01 — Advanced Grammar in Context</div>
+  </div>
+  <div class="header-right">
+    <button class="how-btn" onclick="openHow()">❓ How to Play</button>
+    <span class="round-badge" id="roundBadge">Round 1</span>
+    <span class="turn-badge turn-a" id="turnBadge">🎤 Player A</span>
+  </div>
+</div>
+
+<!-- MAIN ROW -->
+<div class="main-row">
+
+  <!-- STORY DECK -->
+  <div class="deck-col">
+    <div class="deck-label story-color">📖 Story Card</div>
+    <div class="deck-counter" id="storyCounter">28 cards</div>
+    <div class="card-wrapper" onclick="drawStory()">
+      <div class="card-inner" id="storyCard">
+        <div class="card-face face-back story-deck">
+          <div class="deck-icon">📖</div>
+          <div class="deck-name">Story Deck</div>
+          <div class="deck-hint">Click to draw</div>
+        </div>
+        <div class="card-face face-front story-card" id="storyContent"></div>
+      </div>
+    </div>
+    <button class="btn-draw btn-story" onclick="drawStory()">Draw Story Card</button>
+  </div>
+
+  <!-- STRUCTURE DECK -->
+  <div class="deck-col">
+    <div class="deck-label struct-color">⚡ Structure Card</div>
+    <div class="deck-counter" id="structCounter">30 cards</div>
+    <div class="card-wrapper" onclick="drawStruct()">
+      <div class="card-inner" id="structCard">
+        <div class="card-face face-back struct-deck">
+          <div class="deck-icon">⚡</div>
+          <div class="deck-name">Structure Deck</div>
+          <div class="deck-hint">Click to draw</div>
+        </div>
+        <div class="card-face face-front struct-card" id="structContent"></div>
+      </div>
+    </div>
+    <button class="btn-draw btn-struct" onclick="drawStruct()">Draw Structure</button>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right-col">
+
+    <!-- Timer -->
+    <div class="timer-box">
+      <div class="timer-label">speaking time</div>
+      <div class="timer-display" id="timerDisplay">1:15</div>
+      <div class="timer-row">
+        <button class="btn-sm btn-green"  onclick="startTimer()">▶ Start</button>
+        <button class="btn-sm btn-yellow" onclick="pauseTimer()">⏸</button>
+        <button class="btn-sm btn-red"    onclick="resetTimer()">↺</button>
+      </div>
+      <div class="timer-row timer-presets">
+        <button class="btn-sm btn-gray" onclick="setTimer(90)">90s</button>
+        <button class="btn-sm btn-gray" onclick="setTimer(75)">75s</button>
+        <button class="btn-sm btn-gray" onclick="setTimer(60)">60s</button>
+        <button class="btn-sm btn-gray" onclick="setTimer(45)">45s</button>
+      </div>
+    </div>
+
+    <!-- Twist -->
+    <div class="twist-box-wrap">
+      <button class="btn-twist" onclick="drawTwist()">🎲 Plot Twist!</button>
+      <div class="twist-result" id="twistResult"></div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score-box">
+      <div class="score-title">🏆 Score</div>
+      <div id="playersGrid"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- BOTTOM BAR -->
+<div class="bottom-bar">
+  <button class="btn-sm btn-yellow" onclick="nextTurn()">🎤 Next Turn (Player B)</button>
+  <button class="btn-sm btn-green"  onclick="nextRound()">➡ Next Round</button>
+  <button class="btn-sm btn-gray"   onclick="resetDecks()">🔀 Shuffle Decks</button>
+  <button class="btn-sm btn-red"    onclick="resetGame()">⚠ New Game</button>
+</div>
+
+<script>
+/* ── DATA ── */
+
+const STORY_CARDS = [
+  // 8 Story Seeds
+  {
+    type:'seed', emoji:'🕵️', name:'The Anonymous Tip',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'A detective receives an anonymous tip about a high-profile crime. The suspect is someone they trust completely...',
+    task:'Begin the story. Who is the detective? What is the implication of the tip?'
+  },
+  {
+    type:'seed', emoji:'🌍', name:'The Cover-Up',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'A journalist discovers evidence of a global cover-up. Publishing the story could ruin careers — or save lives...',
+    task:'Begin the story. Describe the precise moment the journalist finds the evidence.'
+  },
+  {
+    type:'seed', emoji:'🧬', name:'The Impossible Data',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'A scientist\'s decade-long experiment produces results that suggest something impossible. Nobody will believe it...',
+    task:'Begin the story. Set the scene. What does the data convey? What is the implication?'
+  },
+  {
+    type:'seed', emoji:'💼', name:'The Critical Negotiation',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'During a high-stakes negotiation, one executive makes a decision that will define the company\'s future for decades...',
+    task:'Begin the story. Establish the tension and the coherence — or lack of it — in the room.'
+  },
+  {
+    type:'seed', emoji:'🎭', name:'Storm-Bound Strangers',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'Two strangers meet at an airport during a storm. By the time it passes, nothing will be the same for either of them...',
+    task:'Begin the story. How do they meet? What is the nuance in their first exchange?'
+  },
+  {
+    type:'seed', emoji:'📜', name:'The Letter',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'An archivist finds a letter written 50 years ago. The implications are shocking — someone has been lying for decades...',
+    task:'Begin the story. Describe the moment of discovery. Keep the details deliberately ambiguous.'
+  },
+  {
+    type:'seed', emoji:'🏛️', name:'The Revealing Speech',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'A politician\'s public speech reveals more than was intended. The nuance is not lost on those listening carefully...',
+    task:'Begin the story. What register does the politician use? Who notices the slip?'
+  },
+  {
+    type:'seed', emoji:'🌟', name:'Roles Reversed',
+    sub:'🌱 Story Seed — Start a new arc',
+    prompt:'A mentor and their former student meet years later. Their roles have completely reversed. The tension is immediate...',
+    task:'Begin the story. Convey the shift in power through dialogue and precise word choice.'
+  },
+  // 20 Chapter Cards
+  {
+    type:'chapter', emoji:'⏩', name:'Time Jump',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'Fast-forward 3 years. The situation has changed completely — but one crucial thing remains unresolved.',
+    task:'What changed? What should have been different? Use the time gap to reflect on past decisions.'
+  },
+  {
+    type:'chapter', emoji:'💡', name:'The Hidden Truth',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'A hidden truth finally comes to light. The revelation challenges everything that seemed coherent before.',
+    task:'How does the main character react? What was the implication that nobody noticed earlier?'
+  },
+  {
+    type:'chapter', emoji:'🔄', name:'The Return',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'Someone who disappeared from the story returns unexpectedly, carrying information — or a motive — nobody anticipated.',
+    task:'Who returns? What do they bring? What is the implication of their reappearance?'
+  },
+  {
+    type:'chapter', emoji:'⚠️', name:'Stakes Double',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The stakes have suddenly doubled. A decision must be made right now — no room for ambiguity or hesitation.',
+    task:'Describe the precise moment when the pressure peaks. What will happen if no decision is made?'
+  },
+  {
+    type:'chapter', emoji:'🪤', name:'Past Consequences',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'A mistake made in the past now has serious consequences in the present. It was avoidable — but it wasn\'t avoided.',
+    task:'What was the original mistake? How does it affect the present situation?'
+  },
+  {
+    type:'chapter', emoji:'🤝', name:'Unexpected Ally',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'An unexpected ally appears — someone who was previously an obstacle. Their knowledge changes everything.',
+    task:'Why does this person help? What do they know that nobody else does? What is their register?'
+  },
+  {
+    type:'chapter', emoji:'💥', name:'The Plan Fails',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The plan fails spectacularly. The one thing nobody had anticipated was, ironically, the most obvious thing.',
+    task:'What went wrong? How do the characters convey their disbelief? Who is to blame?'
+  },
+  {
+    type:'chapter', emoji:'🤫', name:'The Silence',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'There is a long, significant silence. In that moment, more is communicated than any words could convey.',
+    task:'Describe what the silence means. What is each character thinking but not saying?'
+  },
+  {
+    type:'chapter', emoji:'🔍', name:'Contradictory Evidence',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'New evidence surfaces that directly contradicts everything assumed before. Someone has been imprecise — or lying.',
+    task:'What is the evidence? How does it challenge the existing narrative? Who is shaken by it?'
+  },
+  {
+    type:'chapter', emoji:'😰', name:'The Dreaded Moment',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The moment everyone was dreading has finally arrived. It is more nuanced — and more dangerous — than expected.',
+    task:'How does each character respond? What does each one\'s reaction reveal about who they really are?'
+  },
+  {
+    type:'chapter', emoji:'💬', name:'The Conversation',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'A single conversation changes the course of the story. What is said — and what is implied — matters enormously.',
+    task:'Recreate the conversation. Pay attention to register and what each character chooses not to say.'
+  },
+  {
+    type:'chapter', emoji:'🎭', name:'True Motive Revealed',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The real motive behind the events is finally revealed. It was always there — hidden in the syntax of every interaction.',
+    task:'What was the true motive? How does its revelation recontextualize everything that came before?'
+  },
+  {
+    type:'chapter', emoji:'🙏', name:'The Sacrifice',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'One character makes a significant sacrifice. Whether it was worth it remains deeply ambiguous.',
+    task:'What is sacrificed? Convey the emotional complexity without being explicit. Leave the audience to infer.'
+  },
+  {
+    type:'chapter', emoji:'🔥', name:'Point of No Return',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The climax is approaching. One action will push the story past the point of no return.',
+    task:'What is that action? Who takes it? What are the precise, irrevocable consequences?'
+  },
+  {
+    type:'chapter', emoji:'😔', name:'Forced Admission',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'A character must admit they were wrong. Their register shifts completely as they struggle to elaborate.',
+    task:'How does the character admit their mistake? What does it cost them emotionally and professionally?'
+  },
+  {
+    type:'chapter', emoji:'🌀', name:'Plot Twist',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The story takes an entirely unexpected turn. The implication of this twist was present from the very beginning.',
+    task:'Reveal the twist. How does it reframe everything the audience thought they knew?'
+  },
+  {
+    type:'chapter', emoji:'🤜', name:'Unlikely Alliance',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'Two characters who fundamentally disagreed must now work together. Their different registers create constant friction.',
+    task:'How do they navigate their differences? Who compromises first — and what does that reveal?'
+  },
+  {
+    type:'chapter', emoji:'🕰️', name:'Ticking Clock',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'Time is running out. Every decision must be precise — there is no room for ambiguity or hesitation.',
+    task:'Create tension through urgency. What is the deadline? What happens if they fail?'
+  },
+  {
+    type:'chapter', emoji:'🔑', name:'Missing Piece',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'The story is approaching its end, but one crucial piece is still missing. Without it, the coherence falls apart.',
+    task:'What is the missing piece? Who has it? Why have they kept it hidden?'
+  },
+  {
+    type:'chapter', emoji:'🌅', name:'New Opportunity',
+    sub:'📖 Chapter Card — Continue the story',
+    prompt:'An unexpected opportunity appears — one that wasn\'t there before. Whether to take it will define everything.',
+    task:'What is the opportunity? What is the nuance between taking it and letting it go?'
+  }
+];
+
+const STRUCT_CARDS = [
+  // Mixed Conditional A — Past → Present (6 cards)
+  { type:'mc-a', emoji:'🔀', name:'Mixed Conditional A', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Past Action → Present Consequence',
+    form:'If + Past Perfect ... would + base verb (now)',
+    example:'"If she had taken that role, she would be famous today."',
+    task:'Reflect on how a past decision still shapes the present. Use this structure as the emotional core of your turn.'
+  },
+  { type:'mc-a', emoji:'🔀', name:'Mixed Conditional A', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Past Action → Present Consequence',
+    form:'If + Past Perfect ... would + base verb (now)',
+    example:'"If they had resolved the conflict then, everything would be different now."',
+    task:'A character reflects on a pivotal mistake. Use this structure in at least 2 sentences to convey regret.'
+  },
+  { type:'mc-a', emoji:'🔀', name:'Mixed Conditional A', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Past Action → Present Consequence',
+    form:'If + Past Perfect ... would + base verb (now)',
+    example:'"If he hadn\'t lied, he would still be trusted today."',
+    task:'Narrate how a single past choice created the character\'s current reality. Make it the turning point of your narrative.'
+  },
+  { type:'mc-a', emoji:'🔀', name:'Mixed Conditional A', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Past Action → Present Consequence',
+    form:'If + Past Perfect ... would + base verb (now)',
+    example:'"If the evidence hadn\'t been destroyed, we would know the truth now."',
+    task:'Express regret about something that still causes problems today. Be precise about cause and effect.'
+  },
+  { type:'mc-a', emoji:'🔀', name:'Mixed Conditional A', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Past Action → Present Consequence',
+    form:'If + Past Perfect ... would + base verb (now)',
+    example:'"If the company had invested earlier, it would be the leader today."',
+    task:'One character blames another for a past decision. Frame the accusation using this structure.'
+  },
+  { type:'mc-a', emoji:'🔀', name:'Mixed Conditional A', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Past Action → Present Consequence',
+    form:'If + Past Perfect ... would + base verb (now)',
+    example:'"If I hadn\'t met her that night, my life would be completely different now."',
+    task:'A character reflects on a turning point. Convey the weight of that moment and its ongoing implications.'
+  },
+  // Mixed Conditional B — Present → Past (6 cards)
+  { type:'mc-b', emoji:'🔁', name:'Mixed Conditional B', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Present State → Past Consequence',
+    form:'If + Past Simple (present reality) ... would have + Past Participle',
+    example:'"If he were more careful, he would have caught the error in time."',
+    task:'Use a character\'s current trait or habit to explain why something went wrong in the past.'
+  },
+  { type:'mc-b', emoji:'🔁', name:'Mixed Conditional B', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Present State → Past Consequence',
+    form:'If + Past Simple (present reality) ... would have + Past Participle',
+    example:'"If she were more trusting, she would have shared the information sooner."',
+    task:'A personality flaw explains a past failure. Elaborate on how who the character is caused what happened.'
+  },
+  { type:'mc-b', emoji:'🔁', name:'Mixed Conditional B', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Present State → Past Consequence',
+    form:'If + Past Simple (present reality) ... would have + Past Participle',
+    example:'"If the system were more transparent, none of this would have happened."',
+    task:'Use the current state of a broken system to explain why a past event occurred. Be precise.'
+  },
+  { type:'mc-b', emoji:'🔁', name:'Mixed Conditional B', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Present State → Past Consequence',
+    form:'If + Past Simple (present reality) ... would have + Past Participle',
+    example:'"If he weren\'t so ambitious, he would never have made that deal."',
+    task:'Justify — or criticize — a past action based on who the character fundamentally is right now.'
+  },
+  { type:'mc-b', emoji:'🔁', name:'Mixed Conditional B', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Present State → Past Consequence',
+    form:'If + Past Simple (present reality) ... would have + Past Participle',
+    example:'"If the relationship were healthier, they would have communicated better."',
+    task:'Reflect on how the current dynamic between two characters explains their past mistakes.'
+  },
+  { type:'mc-b', emoji:'🔁', name:'Mixed Conditional B', tag:'MIXED COND.', tagClass:'tag-mc',
+    sub:'Present State → Past Consequence',
+    form:'If + Past Simple (present reality) ... would have + Past Participle',
+    example:'"If the evidence were more coherent, the investigation would have concluded sooner."',
+    task:'Use a present truth about the situation to explain why the past unfolded the way it did.'
+  },
+  // Inversion (6 cards)
+  { type:'inv', emoji:'🔊', name:'Inversion for Emphasis', tag:'INVERSION', tagClass:'tag-inv',
+    sub:'NEVER + auxiliary + subject + verb',
+    form:'Never + had/did/was/has + subject + ...',
+    example:'"Never had the team witnessed such ambiguity in the data."',
+    task:'Open a sentence with NEVER to emphasize the extraordinary nature of the event you\'re narrating.'
+  },
+  { type:'inv', emoji:'🔊', name:'Inversion for Emphasis', tag:'INVERSION', tagClass:'tag-inv',
+    sub:'NOT ONLY + auxiliary + subject + verb',
+    form:'Not only + had/did/was + subject + ... but also ...',
+    example:'"Not only had she discovered the truth, but she had also known it all along."',
+    task:'Use NOT ONLY to reveal two unexpected things about a character. Make it a dramatic revelation.'
+  },
+  { type:'inv', emoji:'🔊', name:'Inversion for Emphasis', tag:'INVERSION', tagClass:'tag-inv',
+    sub:'RARELY + auxiliary + subject + verb',
+    form:'Rarely + does/did/has + subject + ...',
+    example:'"Rarely does a story convey such coherence from beginning to end."',
+    task:'Use RARELY to highlight something exceptional — an action, quality, or event in the narrative.'
+  },
+  { type:'inv', emoji:'🔊', name:'Inversion for Emphasis', tag:'INVERSION', tagClass:'tag-inv',
+    sub:'HARDLY + auxiliary + subject ... WHEN ...',
+    form:'Hardly + had + subject + ... when + subject + ...',
+    example:'"Hardly had she spoken when the implications became clear to everyone."',
+    task:'Use HARDLY...WHEN to describe two events that happened in very rapid succession. Build the urgency.'
+  },
+  { type:'inv', emoji:'🔊', name:'Inversion for Emphasis', tag:'INVERSION', tagClass:'tag-inv',
+    sub:'NO SOONER + auxiliary + subject ... THAN ...',
+    form:'No sooner + had + subject + ... than + subject + ...',
+    example:'"No sooner had the document been signed than the problems began."',
+    task:'Use NO SOONER...THAN to narrate an event that immediately triggered another. Build narrative tension.'
+  },
+  { type:'inv', emoji:'🔊', name:'Inversion for Emphasis', tag:'INVERSION', tagClass:'tag-inv',
+    sub:'SELDOM + auxiliary + subject + verb',
+    form:'Seldom + does/did/has + subject + ...',
+    example:'"Seldom had such a precise plan failed so completely."',
+    task:'Use SELDOM to build dramatic irony — something rare happened at the worst possible moment.'
+  },
+  // Cleft IT (6 cards)
+  { type:'cl-it', emoji:'✂️', name:'Cleft Sentence — IT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'It was [X] who/that ...',
+    form:'It was/is + [emphasis] + who / that + rest of sentence',
+    example:'"It was the ambiguity of his words that revealed his true intention."',
+    task:'Emphasize who or what caused a key event. Use this as a turning point reveal in the narrative.'
+  },
+  { type:'cl-it', emoji:'✂️', name:'Cleft Sentence — IT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'It was [X] who/that ...',
+    form:'It was/is + [emphasis] + who / that + rest of sentence',
+    example:'"It was her silence, not her words, that conveyed the truth."',
+    task:'Redirect the audience\'s focus onto the true cause of the conflict. Challenge what seemed obvious.'
+  },
+  { type:'cl-it', emoji:'✂️', name:'Cleft Sentence — IT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'It was [X] who/that ...',
+    form:'It was/is + [emphasis] + who / that + rest of sentence',
+    example:'"It was precisely that moment that changed everything between them."',
+    task:'Pinpoint the exact moment, person, or detail responsible for the story\'s crisis. Be precise.'
+  },
+  { type:'cl-it', emoji:'✂️', name:'Cleft Sentence — IT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'It was [X] who/that ...',
+    form:'It was/is + [emphasis] + who / that + rest of sentence',
+    example:'"It is the implication, not the message itself, that matters here."',
+    task:'Shift focus from the obvious to the subtle. Reveal what was truly important all along.'
+  },
+  { type:'cl-it', emoji:'✂️', name:'Cleft Sentence — IT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'It was not until [X] that ...',
+    form:'It was not until + [time/event] + that + subject + ...',
+    example:'"It was not until she read the letter that she understood the coherence of it all."',
+    task:'Describe a delayed realization. Build suspense, then deliver the moment of understanding.'
+  },
+  { type:'cl-it', emoji:'✂️', name:'Cleft Sentence — IT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'It was [X] who/that ...',
+    form:'It was/is + [emphasis] + who / that + rest of sentence',
+    example:'"It was the way he elaborated on small details that made everyone suspicious."',
+    task:'Expose a character\'s behavior as suspicious or revealing. Focus on the nuance of how they speak.'
+  },
+  // Cleft WHAT (6 cards)
+  { type:'cl-wh', emoji:'🔎', name:'Cleft Sentence — WHAT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'What [subject] [verb] is/was ...',
+    form:'What + subject + verb + is/was + [emphasized element]',
+    example:'"What the team needed was precise, coherent communication."',
+    task:'State exactly what a character needs, wants, or lacks at this moment. Make it the core of your narrative turn.'
+  },
+  { type:'cl-wh', emoji:'🔎', name:'Cleft Sentence — WHAT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'What [subject] [verb] is/was ...',
+    form:'What + subject + verb + is/was + [emphasized element]',
+    example:'"What she never expected was the implication behind his final words."',
+    task:'Highlight an unexpected element of the story. Use this structure as the key revelation of your turn.'
+  },
+  { type:'cl-wh', emoji:'🔎', name:'Cleft Sentence — WHAT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'What [subject] [verb] is/was ...',
+    form:'What + subject + verb + is/was + [emphasized element]',
+    example:'"What matters now is not what was said, but how it was conveyed."',
+    task:'Reframe priorities. Shift the narrative focus from the obvious to the truly important.'
+  },
+  { type:'cl-wh', emoji:'🔎', name:'Cleft Sentence — WHAT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'What [subject] [verb] is/was ...',
+    form:'What + subject + verb + is/was + [emphasized element]',
+    example:'"What no one realized was the syntax of deception beneath every interaction."',
+    task:'Reveal hidden knowledge. What did nobody understand until this moment? Make it the breakthrough.'
+  },
+  { type:'cl-wh', emoji:'🔎', name:'Cleft Sentence — WHAT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'What [subject] [verb] is/was ...',
+    form:'What + subject + verb + is/was + [emphasized element]',
+    example:'"What strikes me about this situation is the complete absence of coherence."',
+    task:'A character expresses their reaction to the crisis. Use this structure to convey the emotional impact.'
+  },
+  { type:'cl-wh', emoji:'🔎', name:'Cleft Sentence — WHAT', tag:'CLEFT', tagClass:'tag-cl',
+    sub:'What [subject] [verb] is/was ...',
+    form:'What + subject + verb + is/was + [emphasized element]',
+    example:'"What changed everything was a single, precise sentence in that report."',
+    task:'Identify the exact turning point. What single element — word, action, detail — changed everything?'
+  }
+];
+
+const TWISTS = [
+  "📚 Vocab Lock! You must use at least 3 words from today's lesson: syntax / nuance / register / implication / coherence / precise / ambiguous / convey / elaborate",
+  "🎭 Formal Register Only! Speak as if presenting at a board meeting or academic conference. No casual language at all.",
+  "💬 Implication Only! Don't state your main point directly — imply it. Let the others infer the real meaning from your words.",
+  "⏱️ Speed Round! Both players get 45 seconds instead of 75. Set the timer now!",
+  "🔄 Structure Swap! Each player must use the OTHER player's assigned structure this round.",
+  "❓ 3 Questions Rule! Before speaking, your opponent asks you 3 questions. You must answer each one using the target structure.",
+  "🌀 Elaborate First! You must describe one detail in slow, precise, elaborate terms before making your main narrative point.",
+  "🎯 Stay Ambiguous! Your narrative conclusion must remain unresolved. Do not explain everything — leave implications open.",
+  "🔊 Echo & Build! Player B must begin by paraphrasing one key sentence from Player A (using their own words), then continue.",
+  "📝 Coherence Vote! After both players speak, the class votes on which version was more coherent. This round is worth double points!",
+  "💡 Nuance Focus! Focus entirely on the subtle emotional or motivational difference between two characters. Be precise.",
+  "🚫 No Fillers! Any 'um', 'uh', or 'like' costs 1 point immediately. The entire class is listening. Stay sharp!"
+];
+
+/* ── STATE ── */
+let storyDeck  = shuffle([...Array(STORY_CARDS.length).keys()]);
+let structDeck = shuffle([...Array(STRUCT_CARDS.length).keys()]);
+let round = 1;
+let currentTurn = 'A';
+let timerSecs = 75, timerDefault = 75, timerInterval = null, timerRunning = false;
+
+/* ── INIT ── */
+window.onload = () => { buildScoreboard(); updateCounters(); renderTimer(); };
+
+/* ── HOW TO PLAY ── */
+function openHow()  { document.getElementById('howOverlay').classList.add('show'); }
+function closeHow() { document.getElementById('howOverlay').classList.remove('show'); }
+
+/* ── SCOREBOARD ── */
+function buildScoreboard() {
+  const g = document.getElementById('playersGrid');
+  g.innerHTML = '';
+  for (let i = 1; i <= 5; i++) {
+    g.innerHTML += `
+      <div class="player-row">
+        <input class="player-name" id="pn${i}" value="Player ${i}" />
+        <div class="score-controls">
+          <button class="btn-pt btn-minus" onclick="pts(${i},-1)">−</button>
+          <div class="player-pts" id="ps${i}">0</div>
+          <button class="btn-pt btn-plus"  onclick="pts(${i}, 1)">+</button>
+        </div>
+      </div>`;
+  }
+}
+function pts(i, d) {
+  const el = document.getElementById(`ps${i}`);
+  el.textContent = Math.max(0, +el.textContent + d);
+}
+
+/* ── DRAW CARDS ── */
+function drawStory() {
+  if (!storyDeck.length) { alert('No more story cards! Shuffle decks to reset.'); return; }
+  const s = STORY_CARDS[storyDeck.pop()];
+  document.getElementById('storyContent').innerHTML = `
+    <span class="c-emoji">${s.emoji}</span>
+    <div class="c-name">${s.name}</div>
+    <div class="c-sub">${s.sub}</div>
+    <div class="c-div"></div>
+    <div class="c-row"><span class="c-row-icon">📝</span><span class="c-row-text">${s.prompt}</span></div>
+    <div class="c-div"></div>
+    <div class="c-row"><span class="c-row-icon">🎯</span><span class="c-row-text c-task">${s.task}</span></div>`;
+  document.getElementById('storyCard').classList.add('flipped');
+  updateCounters();
+}
+
+function drawStruct() {
+  if (!structDeck.length) { alert('No more structure cards! Shuffle decks to reset.'); return; }
+  const s = STRUCT_CARDS[structDeck.pop()];
+  document.getElementById('structContent').innerHTML = `
+    <span class="c-emoji">${s.emoji}</span>
+    <span class="c-tag ${s.tagClass}">${s.tag}</span>
+    <div class="c-name">${s.name}</div>
+    <div class="c-sub">${s.sub}</div>
+    <div class="c-div"></div>
+    <div class="c-row"><span class="c-row-icon">📐</span><span class="c-row-text"><span class="c-bold">Form:</span> ${s.form}</span></div>
+    <div class="c-div"></div>
+    <div class="c-row"><span class="c-row-icon">🎯</span><span class="c-row-text c-task">${s.task}</span></div>
+    <div class="c-example">${s.example}</div>`;
+  document.getElementById('structCard').classList.add('flipped');
+  updateCounters();
+}
+
+function updateCounters() {
+  document.getElementById('storyCounter').textContent  = `${storyDeck.length} cards`;
+  document.getElementById('structCounter').textContent = `${structDeck.length} cards`;
+}
+
+/* ── TWIST ── */
+function drawTwist() {
+  const t = TWISTS[Math.floor(Math.random() * TWISTS.length)];
+  const el = document.getElementById('twistResult');
+  el.textContent = t;
+  el.classList.add('show');
+}
+
+/* ── TIMER ── */
+function renderTimer() {
+  const d = document.getElementById('timerDisplay');
+  d.textContent = `${Math.floor(timerSecs/60)}:${String(timerSecs%60).padStart(2,'0')}`;
+  d.className = 'timer-display' + (timerSecs<=10?' danger':timerSecs<=20?' warning':'');
+}
+function startTimer() {
+  if (timerRunning) return;
+  timerRunning = true;
+  timerInterval = setInterval(() => {
+    if (timerSecs > 0) { timerSecs--; renderTimer(); }
+    else {
+      clearInterval(timerInterval); timerRunning = false;
+      document.getElementById('timerDisplay').textContent = '⏰ TIME!';
+      document.getElementById('timerDisplay').className = 'timer-display danger';
+    }
+  }, 1000);
+}
+function pauseTimer() { clearInterval(timerInterval); timerRunning = false; }
+function resetTimer() { pauseTimer(); timerSecs = timerDefault; renderTimer(); }
+function setTimer(s)  { pauseTimer(); timerDefault = timerSecs = s; renderTimer(); }
+
+/* ── TURN ── */
+function nextTurn() {
+  currentTurn = currentTurn === 'A' ? 'B' : 'A';
+  const badge = document.getElementById('turnBadge');
+  badge.textContent = `🎤 Player ${currentTurn}`;
+  badge.className = 'turn-badge ' + (currentTurn === 'A' ? 'turn-a' : 'turn-b');
+  resetTimer();
+  drawStruct();
+}
+
+/* ── ROUND / GAME ── */
+function nextRound() {
+  round++;
+  document.getElementById('roundBadge').textContent = `Round ${round}`;
+  ['storyCard','structCard'].forEach(id => document.getElementById(id).classList.remove('flipped'));
+  document.getElementById('storyContent').innerHTML = '';
+  document.getElementById('structContent').innerHTML = '';
+  const tw = document.getElementById('twistResult');
+  tw.textContent = ''; tw.classList.remove('show');
+  currentTurn = 'A';
+  document.getElementById('turnBadge').textContent = '🎤 Player A';
+  document.getElementById('turnBadge').className = 'turn-badge turn-a';
+  resetTimer();
+}
+function resetDecks() {
+  if (!confirm('Shuffle and reset both decks? Scores are kept.')) return;
+  storyDeck  = shuffle([...Array(STORY_CARDS.length).keys()]);
+  structDeck = shuffle([...Array(STRUCT_CARDS.length).keys()]);
+  updateCounters();
+  nextRound(); round = 1;
+  document.getElementById('roundBadge').textContent = 'Round 1';
+}
+function resetGame() {
+  if (!confirm('New game? This resets all scores and decks.')) return;
+  resetDecks();
+  for (let i = 1; i <= 5; i++) {
+    document.getElementById(`ps${i}`).textContent = '0';
+    document.getElementById(`pn${i}`).value = `Player ${i}`;
+  }
+}
+
+/* ── UTIL ── */
+function shuffle(a) {
+  for (let i = a.length-1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [a[i],a[j]] = [a[j],a[i]];
+  }
+  return a;
+}
+</script>
+</body>
+</html>
