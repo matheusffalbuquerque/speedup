@@ -3,790 +3,641 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'ought to' correctly to give formal advice?",
-      "options": [
-        "You ought to apologizing for what you said.",
-        "You ought to apologize for what you said.",
-        "You ought apologize for what you said.",
-        "You ought to apologized for what you said."
-      ],
-      "correctAnswer": "You ought to apologize for what you said."
+      "question": "What is the correct formula for Past Continuous?",
+      "options": ["Subject + was/were + verb-ing", "Subject + had + past participle", "Subject + did + verb", "Subject + was/were + past tense"],
+      "correctAnswer": "Subject + was/were + verb-ing"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'How about _____ (go) for a walk? Fresh air might help you feel better.'",
-      "correctAnswer": "going"
+      "question": "At 9pm last night, I _____ (study) for my English test.",
+      "correctAnswer": "was studying"
     },
     {
       "id": 3,
       "type": "complete",
-      "question": "Complete: 'If I _____ you, I would speak to your boss directly.' (Use the correct form of 'be' — subjunctive mood)",
-      "correctAnswer": "were"
+      "question": "When I walked into the room, everyone _____ and nobody noticed me come in.",
+      "correctAnswer": "was talking|was laughing|was chatting"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Express this idea in correct English using the noun 'advice': 'I want to offer someone a helpful suggestion.' (Remember: 'advice' is uncountable.)",
-      "correctAnswer": "give advice|give some advice|give a piece of advice|offer advice"
+      "type": "multiple-choice",
+      "question": "Which sentence is in the Past Continuous?",
+      "options": ["They were playing football in the park.", "They played football in the park.", "They have played football in the park.", "They play football in the park."],
+      "correctAnswer": "They were playing football in the park."
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Your friend has a flight in 30 minutes and hasn't left yet. Which advice is most appropriate?",
-      "options": [
-        "You should leave soon.",
-        "You could leave now if you want.",
-        "You'd better leave right now or you'll miss your flight.",
-        "Why don't you leave later?"
-      ],
-      "correctAnswer": "You'd better leave right now or you'll miss your flight."
+      "type": "fill-blank",
+      "question": "The children _____ (run) and _____ (laugh) in the garden all afternoon.",
+      "correctAnswer": "were running / were laughing"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'You _____ not stay up so late every night — your health is seriously suffering.' (Use the modal that implies a strong warning with consequences)",
-      "correctAnswer": "had better|'d better"
+      "type": "translate",
+      "question": "Rewrite in Past Continuous (at 8pm last night): \"He reads a book.\"",
+      "correctAnswer": "he was reading a book|at 8pm last night, he was reading a book"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete: 'Why don't you _____ (take) a break? You've been working for five hours straight.' (Write the correct verb form after 'Why don't you')",
-      "correctAnswer": "take"
+      "type": "multiple-choice",
+      "question": "\"Suddenly\" is used to describe...",
+      "options": ["An unexpected event that happens very quickly", "A gradual change over a long period", "A repeated past habit or routine", "A planned action that went well"],
+      "correctAnswer": "An unexpected event that happens very quickly"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "A student wrote: 'She gave me an advice about my career.' This sentence has a mistake. Write the corrected version.",
-      "correctAnswer": "She gave me advice about my career.|She gave me some advice about my career.|She gave me a piece of advice about my career."
+      "type": "fill-blank",
+      "question": "It was a busy morning. People _____ (walk) fast and taxis _____ (honk) everywhere.",
+      "correctAnswer": "were walking / were honking"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which sentence about 'advice' is grammatically correct?",
-      "options": [
-        "He gave me an advice about the situation.",
-        "He gave me advices about the situation.",
-        "He gave me some advice about the situation.",
-        "He gave me a lot of advices about the situation."
-      ],
-      "correctAnswer": "He gave me some advice about the situation."
+      "type": "complete",
+      "question": "The teacher was explaining the lesson. _____, the students _____ notes carefully.",
+      "correctAnswer": "Meanwhile / were taking"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'What about _____ (see) a financial advisor? Your debt situation sounds really serious.'",
-      "correctAnswer": "seeing"
+      "type": "multiple-choice",
+      "question": "Choose the correct form: \"At that time, we _____ for the results of the exam.\"",
+      "options": ["were waiting", "waited", "are waiting", "wait"],
+      "correctAnswer": "were waiting"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'You had better _____ late to the interview — first impressions matter a lot.' (Write the two-word negative form: 'not be')",
-      "correctAnswer": "not be"
+      "type": "fill-blank",
+      "question": "_____ she was sleeping, her phone rang three times.",
+      "correctAnswer": "While"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "How do you correctly say 'I suggest that she study more'? (Focus on the correct verb form after 'that' in a suggest-clause.)",
-      "correctAnswer": "I suggest that she study more.|I suggest that she studies more."
+      "question": "Put this sentence into Past Continuous: \"He listens to music while he makes dinner.\" (last night, at 7pm)",
+      "correctAnswer": "he was listening to music while he was making dinner|at 7pm, he was listening to music while he was making dinner"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Which sentence expresses a GENTLE suggestion rather than a strong warning?",
-      "options": [
-        "You'd better see a doctor immediately.",
-        "You should definitely see a doctor.",
-        "You could try drinking more water — it sometimes helps.",
-        "You ought to see a doctor right away."
-      ],
-      "correctAnswer": "You could try drinking more water — it sometimes helps."
+      "type": "fill-blank",
+      "question": "The sun _____ (shine) and birds _____ (sing) when I woke up that morning.",
+      "correctAnswer": "was shining / were singing"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'I recommend _____ (read) this book — it has excellent tips for managing work-related stress.'",
-      "correctAnswer": "reading"
+      "type": "multiple-choice",
+      "question": "\"Meanwhile\" is used to describe...",
+      "options": ["Two separate actions happening at the same time", "A sudden interruption of an ongoing action", "A completed action in the past", "The result of an unexpected event"],
+      "correctAnswer": "Two separate actions happening at the same time"
     },
     {
       "id": 15,
       "type": "complete",
-      "question": "Complete: 'If I were in your position, I _____ (not/accept) that offer without negotiating the salary first.' (Write the contracted negative form + verb)",
-      "correctAnswer": "wouldn't accept|would not accept"
+      "question": "At that _____, the whole team _____ hard on the final presentation.",
+      "correctAnswer": "moment / was working|time / was working"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Use the collocation 'seek advice' in a sentence about someone facing a difficult legal situation.",
-      "correctAnswer": "You should seek legal advice.|He decided to seek advice from a lawyer.|I recommend that you seek professional advice.|She needs to seek advice immediately."
+      "type": "fill-blank",
+      "question": "During the meeting, several people _____ (check) their phones under the table.",
+      "correctAnswer": "were checking"
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'suggest' correctly?",
-      "options": [
-        "I suggest you to talk to your parents about this.",
-        "I suggest you talking to your parents about this.",
-        "I suggest that you talk to your parents about this.",
-        "I suggest to you that you to talk to your parents."
-      ],
-      "correctAnswer": "I suggest that you talk to your parents about this."
+      "question": "Which sentence correctly uses Past Continuous to describe a scene?",
+      "options": ["People were rushing, cars were honking, and the city was waking up.", "People rushed, cars honked, and the city woke up.", "People rush, cars honk, and the city wakes up.", "People had rushed, cars had honked, and the city had woken up."],
+      "correctAnswer": "People were rushing, cars were honking, and the city was waking up."
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "Complete: 'If I were in your _____, I'd start looking for a new job immediately.' (Use the idiom body part meaning 'situation')",
-      "correctAnswer": "shoes"
+      "question": "_____ I arrived at the party, I noticed that everyone _____ (dance) and _____ (enjoy) themselves.",
+      "correctAnswer": "When / was dancing / was enjoying"
     },
     {
       "id": 19,
       "type": "complete",
-      "question": "Complete: '_____ if you talked to her directly? Maybe she doesn't know how you feel.' (Write the two-word expression to start this suggestion)",
-      "correctAnswer": "What if"
+      "question": "She _____ (wear) a red coat and _____ (carry) a large bag when I spotted her across the street.",
+      "correctAnswer": "was wearing / was carrying"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "Which word is the VERB form of the noun 'advice'?",
-      "options": [
-        "advisable",
-        "advisory",
-        "advise",
-        "advisement"
-      ],
-      "correctAnswer": "advise"
+      "question": "\"At that time\" is used to refer to...",
+      "options": ["A specific moment or period in the past being described", "A general truth about the present", "A future plan being made", "A repeated action in the past"],
+      "correctAnswer": "A specific moment or period in the past being described"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which modal verb is generally considered more FORMAL when giving advice?",
-      "options": [
-        "could",
-        "should",
-        "ought to",
-        "had better"
-      ],
-      "correctAnswer": "ought to"
+      "type": "fill-blank",
+      "question": "He _____ (not / sleep) — he was reading a book under the covers the whole time.",
+      "correctAnswer": "wasn't sleeping"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'You _____ exercise regularly if you want to improve your energy levels and overall health.' (Use the modal for general advice)",
-      "correctAnswer": "should"
+      "type": "multiple-choice",
+      "question": "Which is the correct negative form of Past Continuous?",
+      "options": ["wasn't / weren't + verb-ing", "didn't + verb-ing", "not was/were + verb", "wasn't / weren't + past tense"],
+      "correctAnswer": "wasn't / weren't + verb-ing"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Complete: 'How about _____ (try) meditation? Many people find it very helpful for managing stress.' (Write the correct verb form after 'How about')",
-      "correctAnswer": "trying"
+      "type": "translate",
+      "question": "Rewrite as a question: \"She was working very late last night.\"",
+      "correctAnswer": "was she working very late last night"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "How do you express 'seguir o conselho de alguém' in English? Use a common English collocation with the verb 'take'.",
-      "correctAnswer": "take someone's advice|take advice|follow someone's advice|take the advice"
+      "type": "complete",
+      "question": "_____ you _____ (listen) when the teacher explained that important rule?",
+      "correctAnswer": "Were / listening"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which is the correct structure for 'Why don't you' + verb?",
-      "options": [
-        "Why don't you to apply for the position?",
-        "Why don't you applying for the position?",
-        "Why don't you apply for the position?",
-        "Why don't you applied for the position?"
-      ],
-      "correctAnswer": "Why don't you apply for the position?"
+      "type": "fill-blank",
+      "question": "They _____ (not / pay) attention — they _____ (pass) notes to each other.",
+      "correctAnswer": "weren't paying / were passing"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'You'd _____ see a doctor — that cough has lasted more than two weeks now.'",
-      "correctAnswer": "better"
+      "type": "multiple-choice",
+      "question": "What is the correct -ing spelling of \"sit\"?",
+      "options": ["sitting", "siting", "seating", "siiting"],
+      "correctAnswer": "sitting"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete the second conditional advice: 'If I were you, I _____ not ignore those warning signs.' (Write the correct modal)",
-      "correctAnswer": "would"
+      "type": "fill-blank",
+      "question": "_____ she _____ (wear) a uniform when you saw her at the station?",
+      "correctAnswer": "Was / wearing"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "A student asked: 'Can you give me an advice?' This sentence has an error. Write the correct version of the question.",
-      "correctAnswer": "Can you give me some advice?|Can you give me a piece of advice?|Could you give me some advice?|Could you give me advice?"
+      "type": "complete",
+      "question": "I _____ (not / watch) the match — I _____ (study) all evening and I missed it.",
+      "correctAnswer": "wasn't watching / was studying"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "What is the correct structure after 'What about' to make a suggestion?",
-      "options": [
-        "What about you call him and explain?",
-        "What about calling him and explaining?",
-        "What about to call him and explain?",
-        "What about call him to explain?"
-      ],
-      "correctAnswer": "What about calling him and explaining?"
+      "question": "Which -ing spelling is correct?",
+      "options": ["driving", "driveing", "drivving", "drivng"],
+      "correctAnswer": "driving"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'You _____ try talking to a counselor — sometimes an outside perspective really helps.' (Use the modal for a gentle, non-pressuring suggestion)",
-      "correctAnswer": "could"
+      "type": "translate",
+      "question": "Rewrite in the negative: \"The students were paying attention during the whole lecture.\"",
+      "correctAnswer": "the students weren't paying attention during the whole lecture"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'I recommend that you _____ (get) your blood pressure checked at least once a year.' (Write the correct verb form in the that-clause)",
-      "correctAnswer": "get"
+      "type": "fill-blank",
+      "question": "What _____ he _____ (do) when the emergency alarm went off?",
+      "correctAnswer": "was / doing"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Use the collocation 'follow a recommendation' in a sentence. For example, about a patient who does what their doctor suggested.",
-      "correctAnswer": "She followed the doctor's recommendation.|He decided to follow the recommendation.|I always follow my doctor's recommendations.|follow a recommendation"
+      "type": "multiple-choice",
+      "question": "What happens to verbs ending in a silent -e before adding -ing?",
+      "options": ["Drop the -e and add -ing", "Keep the -e and add -ing", "Double the final letter then add -ing", "Change -e to -y then add -ing"],
+      "correctAnswer": "Drop the -e and add -ing"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "In the second conditional for giving advice, which form of 'be' is correct?",
-      "options": [
-        "If I was you, I would reconsider the offer.",
-        "If I were you, I would reconsider the offer.",
-        "If I am you, I would reconsider the offer.",
-        "If I be you, I would reconsider the offer."
-      ],
-      "correctAnswer": "If I were you, I would reconsider the offer."
+      "type": "complete",
+      "question": "_____ your parents _____ (wait) for you at the door when you finally got home?",
+      "correctAnswer": "Were / waiting"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'You ought _____ apologize to her — what you said was really hurtful.' (Write the preposition that follows 'ought')",
-      "correctAnswer": "to"
+      "question": "No, she _____ (not / cry) — she was just very tired and her eyes were red.",
+      "correctAnswer": "wasn't crying"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete: 'I suggest _____ (carry) an umbrella today — the forecast says heavy rain.' (Write the correct verb form after 'suggest')",
-      "correctAnswer": "carrying"
+      "type": "multiple-choice",
+      "question": "What is the correct -ing form of \"run\"?",
+      "options": ["running", "runing", "runeing", "runnes"],
+      "correctAnswer": "running"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Use the phrase 'ask for an opinion' in a complete sentence. For example, asking a trusted friend what they think about an important decision.",
-      "correctAnswer": "I'll ask for her opinion.|Could I ask for your opinion?|He asked for my opinion about the plan.|ask for an opinion"
+      "question": "Write the question that matches this answer: \"Yes, I was. I was cooking dinner when you called.\"",
+      "correctAnswer": "were you cooking dinner|were you cooking when i called"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'had better not' correctly?",
-      "options": [
-        "You had not better park there — it's a fire lane.",
-        "You better had not park there — it's a fire lane.",
-        "You had better not park there — it's a fire lane.",
-        "You had better to not park there — it's a fire lane."
-      ],
-      "correctAnswer": "You had better not park there — it's a fire lane."
+      "type": "fill-blank",
+      "question": "_____ they _____ (swim) when the lifeguard _____ (blow) the whistle?",
+      "correctAnswer": "Were / swimming / blew"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'What _____ you asked your supervisor for more time on the project?' (Use the word that turns this into a suggestion)",
-      "correctAnswer": "if"
+      "type": "multiple-choice",
+      "question": "What is the correct -ing form of \"lie\" (to lie down)?",
+      "options": ["lying", "lieing", "liing", "lie-ing"],
+      "correctAnswer": "lying"
     },
     {
       "id": 19,
       "type": "complete",
-      "question": "Complete: 'You _____ post personal information online — it can be very dangerous.' (Write the contracted negative form of 'should')",
-      "correctAnswer": "shouldn't"
+      "question": "She _____ (not / pay) attention in the meeting. That's why she _____ (miss) the main announcement.",
+      "correctAnswer": "wasn't paying / missed"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "'Had better' implies urgency and a possible consequence. In which situation is 'had better' clearly more appropriate than 'should'?",
-      "options": [
-        "You had better drink more water — it's generally healthy.",
-        "You had better call an ambulance — he's unconscious and not breathing.",
-        "You had better consider joining a gym at some point.",
-        "You had better try to read more books in general."
-      ],
-      "correctAnswer": "You had better call an ambulance — he's unconscious and not breathing."
+      "question": "Choose the correct short answer for: \"Were they arguing when you arrived?\"",
+      "options": ["Yes, they were.", "Yes, they did.", "Yes, they are.", "Yes, they had."],
+      "correctAnswer": "Yes, they were."
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'Why doesn't he' correctly to make a suggestion?",
-      "options": [
-        "Why doesn't he to look for a new apartment?",
-        "Why doesn't he looking for a new apartment?",
-        "Why doesn't he look for a new apartment?",
-        "Why doesn't he looks for a new apartment?"
-      ],
-      "correctAnswer": "Why doesn't he look for a new apartment?"
+      "question": "In \"I was cooking when the phone rang\", which action was already in progress?",
+      "options": ["Cooking", "Ringing", "Both equally", "Neither — both were completed"],
+      "correctAnswer": "Cooking"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'If I were in your position, I _____ hire a financial advisor to help manage the debt.' (Write the modal verb)",
-      "correctAnswer": "would"
+      "question": "She _____ (walk) to work when she _____ (run into) an old friend on the corner.",
+      "correctAnswer": "was walking / ran into"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Correct this sentence: 'She gave me an advice about my relationship problems.' Write the fully corrected version.",
-      "correctAnswer": "She gave me advice about my relationship problems.|She gave me some advice about my relationship problems.|She gave me a piece of advice about my relationship problems."
+      "type": "translate",
+      "question": "Rewrite starting with \"When\": \"While I was reading, my sister suddenly came in.\"",
+      "correctAnswer": "when my sister came in, i was reading|my sister came in when i was reading"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "How do you use the idiom 'in your shoes' to give advice? Write a complete sentence starting with 'If I were in your shoes...'",
-      "correctAnswer": "If I were in your shoes, I would reconsider.|If I were in your shoes, I'd talk to her directly.|If I were in your shoes, I wouldn't give up.|If I were in your shoes, I would ask for help."
+      "type": "complete",
+      "question": "While he _____ (drive) home on the highway, the engine _____ (stop) without warning.",
+      "correctAnswer": "was driving / stopped"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'suggest' with the correct structure?",
-      "options": [
-        "I suggest to take a day off — you look exhausted.",
-        "I suggest taking a day off — you look exhausted.",
-        "I suggest you to take a day off — you look exhausted.",
-        "I suggest took a day off — you look exhausted."
-      ],
-      "correctAnswer": "I suggest taking a day off — you look exhausted."
+      "question": "Which sentence correctly shows an interrupted past action?",
+      "options": ["I was sleeping when the alarm went off.", "I slept when the alarm went off.", "I was sleeping and I was dreaming of flying.", "I sleep when the alarm usually goes off."],
+      "correctAnswer": "I was sleeping when the alarm went off."
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'You'd better _____ (finish) that report before your boss arrives — she's very strict about deadlines.'",
-      "correctAnswer": "finish"
+      "question": "They _____ (have) dinner when someone _____ (knock) loudly and urgently on the door.",
+      "correctAnswer": "were having / knocked"
     },
     {
       "id": 7,
       "type": "complete",
-      "question": "Complete: 'How about _____ (join) a support group? Talking to people in the same situation can be very helpful.' (Write the correct form of the verb)",
-      "correctAnswer": "joining"
+      "question": "_____ he _____ (shower) when you called him? That's probably why he didn't pick up.",
+      "correctAnswer": "Was / showering"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Your friend is overwhelmed by work pressure. Write advice using 'should' and the phrase 'set boundaries'.",
-      "correctAnswer": "You should set boundaries at work.|She should set boundaries with her colleagues.|You should learn to set boundaries.|He should set some boundaries."
+      "type": "multiple-choice",
+      "question": "Which word typically introduces the ongoing background action in a sentence?",
+      "options": ["While", "When", "Suddenly", "After"],
+      "correctAnswer": "While"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'recommend' with the correct structure?",
-      "options": [
-        "I recommend you to see a specialist about this.",
-        "I recommend you seeing a specialist about this.",
-        "I recommend seeing a specialist about this.",
-        "I recommend to see a specialist about this."
-      ],
-      "correctAnswer": "I recommend seeing a specialist about this."
+      "type": "translate",
+      "question": "Rewrite starting with \"While\": \"She fell and hurt her knee when she was running in the park.\"",
+      "correctAnswer": "while she was running in the park, she fell and hurt her knee"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'You _____ not procrastinate — the earlier you start, the less stressed you'll feel.' (Use the modal for general advice)",
-      "correctAnswer": "should"
+      "question": "The boss _____ (not / expect) everyone to arrive so early — he _____ (look) genuinely surprised.",
+      "correctAnswer": "wasn't expecting / looked"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'What about _____ (ask) your landlord for an extension on the rent payment?' (Write the correct verb form)",
-      "correctAnswer": "asking"
+      "type": "multiple-choice",
+      "question": "\"When she arrived, we were eating dinner.\" In this sentence, arriving is...",
+      "options": ["The interrupting action", "The background action", "Simultaneous with eating", "The result of eating"],
+      "correctAnswer": "The interrupting action"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "How do you give a formal suggestion using 'propose'? Write a sentence proposing that someone take a well-deserved vacation.",
-      "correctAnswer": "I propose that you take a vacation.|I propose taking a vacation.|I'd like to propose that she takes a vacation.|I propose that we all take a break."
+      "type": "complete",
+      "question": "While I _____ (wait) at the bus stop, I _____ (notice) something very unusual across the street.",
+      "correctAnswer": "was waiting / noticed"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses the second conditional to give advice?",
-      "options": [
-        "If I were you, I will look for a second opinion.",
-        "If I was you, I would look for a second opinion.",
-        "If I were you, I would look for a second opinion.",
-        "If I were you, I will be looking for a second opinion."
-      ],
-      "correctAnswer": "If I were you, I would look for a second opinion."
+      "type": "fill-blank",
+      "question": "He _____ (read) an important report when his computer _____ (crash) and he lost everything.",
+      "correctAnswer": "was reading / crashed"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'Why don't you _____ (speak) to a therapist? Talking about your feelings can really make a difference.'",
-      "correctAnswer": "speak"
+      "type": "translate",
+      "question": "Rewrite starting with \"When\": \"While she was getting dressed, the taxi arrived downstairs.\"",
+      "correctAnswer": "the taxi arrived when she was getting dressed|when the taxi arrived, she was still getting dressed"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete: 'You ought _____ start saving money now — retirement will come sooner than you think.' (Write the missing word between 'ought' and 'start')",
-      "correctAnswer": "to"
+      "type": "multiple-choice",
+      "question": "Choose the sentence that correctly combines Past Continuous and Simple Past:",
+      "options": ["We were watching a film when the lights went out.", "We watched a film when the lights were going out.", "We were watching a film when the lights were going out.", "We watched a film when the lights went out completely."],
+      "correctAnswer": "We were watching a film when the lights went out."
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Use 'had better' to give a strong warning about procrastination — tell someone they need to stop putting off their work immediately.",
-      "correctAnswer": "You'd better stop procrastinating.|You had better stop putting off your work.|You'd better start working now or you'll miss the deadline.|You'd better not keep delaying."
+      "type": "fill-blank",
+      "question": "I _____ (just / leave) the house when my phone _____ (ring) for the second time.",
+      "correctAnswer": "was just leaving / rang"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses a collocation with the noun 'advice'?",
-      "options": [
-        "She decided to follow an advice from her mentor.",
-        "She decided to take the advice from her mentor.",
-        "She decided to make an advice with her mentor.",
-        "She decided to do an advice from her mentor."
-      ],
-      "correctAnswer": "She decided to take the advice from her mentor."
+      "type": "complete",
+      "question": "_____ they _____ (argue) when you walked in? I could hear raised voices from the hallway.",
+      "correctAnswer": "Were / arguing"
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "Complete: 'You _____ try taking a different route to work — it might save you a lot of time.' (Use the modal for a gentle suggestion)",
-      "correctAnswer": "could"
+      "question": "While the mechanic _____ (fix) my car, I _____ (wait) at a café nearby.",
+      "correctAnswer": "was fixing / waited|was fixing / was waiting"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete the negative second conditional: 'If I were you, I _____ sign that contract without reading every clause carefully.' (Write the contracted negative modal + verb)",
-      "correctAnswer": "wouldn't sign|would not sign"
+      "type": "translate",
+      "question": "Combine into one sentence using \"when\": \"She was giving a speech. The microphone suddenly stopped working.\"",
+      "correctAnswer": "she was giving a speech when the microphone suddenly stopped working|when the microphone stopped working, she was giving her speech"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "Which discourse marker is most appropriate for introducing the SINGLE most important piece of advice?",
-      "options": [
-        "However",
-        "Nevertheless",
-        "Above all",
-        "On the other hand"
-      ],
-      "correctAnswer": "Above all"
+      "question": "Which sentence uses WHEN correctly with Past Continuous?",
+      "options": ["I was sleeping when the door slammed shut.", "I was sleeping when she was also cooking.", "When I was sleeping suddenly happened a noise.", "When the door slammed, I was sleep."],
+      "correctAnswer": "I was sleeping when the door slammed shut."
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Your colleague hasn't slept properly in two days and is about to operate heavy machinery. Which advice is most appropriate?",
-      "options": [
-        "You could maybe rest a little bit.",
-        "You should probably sleep at some point today.",
-        "You'd better get some rest before you cause a serious accident.",
-        "Why don't you consider sleeping eventually?"
-      ],
-      "correctAnswer": "You'd better get some rest before you cause a serious accident."
+      "question": "Which sentence describes two simultaneous past actions?",
+      "options": ["While she was reading, he was cooking.", "She was reading when he cooked.", "She read while he was cooking at the time.", "She read and he cooked that evening."],
+      "correctAnswer": "While she was reading, he was cooking."
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'I suggest that she _____ (not/ignore) the symptoms any longer — they could indicate something serious.'",
-      "correctAnswer": "not ignore|doesn't ignore"
+      "question": "While the teacher _____ (explain) the grammar point, the students _____ (take) careful notes.",
+      "correctAnswer": "was explaining / were taking"
     },
     {
       "id": 3,
       "type": "complete",
-      "question": "Complete: 'Why don't you _____ (ask) your professor for an extension? You have a valid reason.' (Write only the base verb)",
-      "correctAnswer": "ask"
+      "question": "Tom was making coffee in the kitchen. _____, Sara _____ (set) the table for breakfast.",
+      "correctAnswer": "Meanwhile / was setting"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Use the adjective 'advisable' correctly in a sentence warning someone about the risks of driving when exhausted.",
-      "correctAnswer": "It is not advisable to drive when you are exhausted.|It is advisable to rest before driving.|Driving when tired is not advisable."
+      "type": "multiple-choice",
+      "question": "Which verb CANNOT normally be used in the Past Continuous?",
+      "options": ["know", "run", "talk", "play"],
+      "correctAnswer": "know"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'What if' correctly to introduce a suggestion?",
-      "options": [
-        "What if to try a completely different approach?",
-        "What if trying a different approach altogether?",
-        "What if you tried a completely different approach?",
-        "What if you to try a different approach entirely?"
-      ],
-      "correctAnswer": "What if you tried a completely different approach?"
+      "type": "fill-blank",
+      "question": "It was a cold winter night. The wind _____ (blow) strongly and snow _____ (fall) heavily outside.",
+      "correctAnswer": "was blowing / was falling"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'If I were in your _____, I would take the promotion — it's a fantastic opportunity.' (Use the idiom meaning 'in your situation')",
-      "correctAnswer": "shoes|position|place"
+      "type": "complete",
+      "question": "While she _____ (study) upstairs, her younger brother _____ (play) video games downstairs.",
+      "correctAnswer": "was studying / was playing"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete: 'I recommend _____ (cut) down on caffeine if you're having trouble sleeping at night.' (Write the correct verb form)",
-      "correctAnswer": "cutting"
+      "type": "translate",
+      "question": "Rewrite using \"meanwhile\": \"He was writing emails. At the same time, she was preparing the presentation.\"",
+      "correctAnswer": "he was writing emails. meanwhile, she was preparing the presentation"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Write a complete sentence using the expression 'seek professional advice' for someone facing a complicated legal issue.",
-      "correctAnswer": "You should seek professional advice.|He needs to seek professional advice from a lawyer.|I strongly recommend that you seek professional advice.|You ought to seek professional advice immediately."
+      "type": "multiple-choice",
+      "question": "Which sentence correctly sets the scene for a story using Past Continuous?",
+      "options": ["It was a busy Monday morning. People were rushing and cars were honking.", "It is a busy Monday morning. People rush and cars honk.", "It was a busy Monday morning. People rushed and cars honked.", "It was busy and people will rush to work."],
+      "correctAnswer": "It was a busy Monday morning. People were rushing and cars were honking."
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which word correctly completes: 'She _____ the advice of a financial expert before making any major investments.'?",
-      "options": [
-        "asked to",
-        "turned for",
-        "sought",
-        "demanded"
-      ],
-      "correctAnswer": "sought"
+      "type": "fill-blank",
+      "question": "_____ one team _____ (defend), the other _____ (attack) relentlessly from the opposite side.",
+      "correctAnswer": "While / was defending / was attacking"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'You ought to _____ more careful with your spending — you're running very low on savings.' (Write the base form of 'be')",
-      "correctAnswer": "be"
+      "type": "complete",
+      "question": "The street market was vibrant. Vendors _____ (sell) food, children _____ (play), and music _____ (fill) the air.",
+      "correctAnswer": "were selling / were playing / was filling"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'You had better _____ to back up your files before running the system update.' (Write the two-word negative form)",
-      "correctAnswer": "not forget"
+      "type": "multiple-choice",
+      "question": "Why can't we say \"I was knowing the answer\"?",
+      "options": ["\"Know\" is a state verb not used in continuous forms", "\"Know\" must always be in the present tense", "\"Knowing\" is not a valid word in English", "State verbs always use the future tense"],
+      "correctAnswer": "\"Know\" is a state verb not used in continuous forms"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Use 'ought to' formally to advise someone about a challenging relationship. Write a complete, natural-sounding sentence.",
-      "correctAnswer": "You ought to communicate more openly with your partner.|She ought to set clear boundaries in the relationship.|He ought to seek couples counseling.|You ought to address these issues before they get worse."
+      "type": "fill-blank",
+      "question": "I _____ (want) to call you earlier, but I _____ (have) so much to deal with all day.",
+      "correctAnswer": "wanted / had"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "What is true about the difference between 'How about' and 'What about' in making suggestions?",
-      "options": [
-        "'How about' takes a base verb; 'What about' takes a gerund.",
-        "They have the same meaning and both require a gerund or noun.",
-        "'How about' is formal; 'What about' is informal.",
-        "'What about' requires a full clause; 'How about' does not."
-      ],
-      "correctAnswer": "They have the same meaning and both require a gerund or noun."
+      "type": "translate",
+      "question": "Set the scene using Past Continuous: \"A man / stand / at the window. He / look / out at the empty street below.\"",
+      "correctAnswer": "a man was standing at the window. he was looking out at the empty street below|a man was standing at the window, looking at the empty street below"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'You _____ eat more vegetables — your diet is far too high in processed food.' (Use the modal for general, non-urgent advice)",
-      "correctAnswer": "should"
+      "type": "complete",
+      "question": "She _____ (not / understand) the instructions because she _____ (not / pay) attention at all.",
+      "correctAnswer": "didn't understand / wasn't paying"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete: 'You _____ try journaling to help manage your anxiety — it works for a lot of people.' (Use the modal for a gentle suggestion with no pressure)",
-      "correctAnswer": "could"
+      "type": "multiple-choice",
+      "question": "Which sentence INCORRECTLY uses a state verb in continuous form?",
+      "options": ["She was believing everything he said.", "She was running very fast.", "They were laughing at the joke.", "He was writing a letter to his friend."],
+      "correctAnswer": "She was believing everything he said."
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Use 'most importantly' as a discourse marker to introduce the key piece of advice about managing work stress.",
-      "correctAnswer": "Most importantly, make sure you get enough sleep.|Most importantly, you should take regular breaks throughout the day.|Most importantly, don't ignore the early signs of burnout.|Most importantly, talk to someone you trust."
+      "type": "fill-blank",
+      "question": "While the adults _____ (chat) in the living room, the kids _____ (chase) each other around the garden.",
+      "correctAnswer": "were chatting / were chasing"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "What is the NOUN form of the verb 'suggest'?",
-      "options": [
-        "suggestment",
-        "suggestive",
-        "suggestion",
-        "suggestance"
-      ],
-      "correctAnswer": "suggestion"
+      "type": "complete",
+      "question": "It _____ a dark and stormy night. Thunder _____ (rumble) in the distance and rain _____ (hit) the windows hard.",
+      "correctAnswer": "was / was rumbling / was hitting"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'If I were you, I _____ apply for that scholarship — you have an outstanding academic record.' (Write the full modal + base verb)",
-      "correctAnswer": "would apply"
+      "type": "multiple-choice",
+      "question": "\"Meanwhile\" connects two actions that are...",
+      "options": ["Happening at the same time but involving different people or things", "Happening one directly after the other", "In conflict with each other", "Describing the same person doing two things in sequence"],
+      "correctAnswer": "Happening at the same time but involving different people or things"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete: 'Why _____ she join a language exchange program? It would really improve her speaking skills.' (Write the one word needed to complete 'Why doesn't')",
-      "correctAnswer": "doesn't"
+      "type": "translate",
+      "question": "Rewrite as two simultaneous actions: \"He exercised. At the same time, she was listening to a podcast.\"",
+      "correctAnswer": "while he was exercising, she was listening to a podcast|he was exercising while she was listening to a podcast"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'above all' in an advice context?",
-      "options": [
-        "Above all, you should exercising regularly and eating well.",
-        "Above all, make sure you get enough rest and take care of yourself.",
-        "Above all try to sleep but not really that much.",
-        "Above all you had better to rest and exercise."
-      ],
-      "correctAnswer": "Above all, make sure you get enough rest and take care of yourself."
+      "type": "fill-blank",
+      "question": "They _____ (not / argue) — they _____ (have) a calm and constructive discussion about the project.",
+      "correctAnswer": "weren't arguing / were having"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "A friend says: 'I'm really overwhelmed by my exams.' Which response is most natural and grammatically correct?",
-      "options": [
-        "You had better to study harder immediately.",
-        "Why don't you making a study plan and sticking to it?",
-        "How about creating a study schedule and taking short breaks between sessions?",
-        "You ought studying more and relaxing less."
-      ],
-      "correctAnswer": "How about creating a study schedule and taking short breaks between sessions?"
+      "type": "fill-blank",
+      "question": "I _____ (have) breakfast when I _____ (hear) a very strange noise coming from outside.",
+      "correctAnswer": "was having / heard"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'I strongly _____ (recommend) that you see a specialist before making any decisions about the surgery.'",
-      "correctAnswer": "recommend"
+      "type": "multiple-choice",
+      "question": "Which is the correct question form?",
+      "options": ["Were they sleeping when you arrived?", "Was they sleeping when you arrived?", "Did they sleeping when you arrived?", "Are they sleeping when you arrived?"],
+      "correctAnswer": "Were they sleeping when you arrived?"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Complete the formal advice: 'You ought to _____ a lawyer before signing any legal agreement.' (Write the base verb meaning 'to speak with professionally')",
-      "correctAnswer": "consult"
+      "type": "translate",
+      "question": "Rewrite starting with \"While\": \"He was typing an email when his laptop battery suddenly died.\"",
+      "correctAnswer": "while he was typing an email, his laptop battery suddenly died"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Write a sentence using 'first of all' as a discourse marker combined with a modal verb to give structured advice to someone starting a new job.",
-      "correctAnswer": "First of all, you should introduce yourself to your colleagues.|First of all, you ought to learn the company's policies.|First of all, you could observe how things work before making changes.|First of all, you should ask your manager about your main responsibilities."
+      "type": "complete",
+      "question": "No, she _____ (not / watch) TV. She _____ (study) quietly in her room the whole evening.",
+      "correctAnswer": "wasn't watching / was studying"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Identify the sentence that contains a grammatical error:",
-      "options": [
-        "You should get more sleep — it affects everything.",
-        "If I were you, I would reconsider that decision.",
-        "How about to go for a run this evening?",
-        "You could try a completely different approach."
-      ],
-      "correctAnswer": "How about to go for a run this evening?"
+      "type": "fill-blank",
+      "question": "_____ the storm hit the coastline, the whole town _____ (sleep) peacefully.",
+      "correctAnswer": "When / was sleeping"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'It is extremely _____ to drive when you're severely sleep-deprived — many fatal accidents happen this way.' (Choose: 'beneficial', 'advisable', or 'risky')",
-      "correctAnswer": "risky"
+      "type": "multiple-choice",
+      "question": "Choose the sentence that correctly combines WHILE and the two tenses:",
+      "options": ["While they were waiting, the train arrived.", "While they waited, the train was arriving.", "While they were waiting, the train was arrived.", "They were waiting while suddenly the train arrived."],
+      "correctAnswer": "While they were waiting, the train arrived."
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete the second conditional advice: 'If I were you, I _____ look for a therapist to talk about these deeper issues.' (Write the full modal + base verb)",
-      "correctAnswer": "would look"
+      "type": "translate",
+      "question": "Describe the scene using Past Continuous: \"A woman / stand / at the bus stop. She / read / a book. It / rain / lightly.\"",
+      "correctAnswer": "a woman was standing at the bus stop. she was reading a book. it was raining lightly.|a woman was standing at the bus stop, reading a book while it was raining lightly."
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Use 'follow a recommendation' in a complete sentence about a patient who does exactly what their doctor advised.",
-      "correctAnswer": "She followed the doctor's recommendation.|He decided to follow the recommendation and rest for a week.|I always follow my doctor's recommendations.|The patient followed the recommendation and recovered quickly."
+      "type": "fill-blank",
+      "question": "He _____ (drive) at full speed on the motorway when the police _____ (stop) him.",
+      "correctAnswer": "was driving / stopped"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "You're in a formal business meeting and want to propose an idea tactfully. Which is the most appropriate expression?",
-      "options": [
-        "Why don't you guys just try doing it differently?",
-        "You'd better try a completely different approach.",
-        "I would like to suggest that we reconsider our current strategy.",
-        "How about totally overhauling everything we've done?"
-      ],
-      "correctAnswer": "I would like to suggest that we reconsider our current strategy."
+      "type": "complete",
+      "question": "_____ you doing anything important at 6pm yesterday? I _____ (try) to reach you for over an hour!",
+      "correctAnswer": "Were / was trying"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: '_____ about taking a few days off? You clearly need to recharge your energy.' (Write the word that begins this suggestion structure)",
-      "correctAnswer": "What"
+      "type": "multiple-choice",
+      "question": "\"She was wanting a coffee.\" Why is this sentence incorrect?",
+      "options": ["\"Want\" is a state verb and is not used in continuous forms", "\"Was\" should be \"were\" in this sentence", "The -ing form of \"want\" is spelled incorrectly", "This is the correct Past Continuous form"],
+      "correctAnswer": "\"Want\" is a state verb and is not used in continuous forms"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'You _____ better not ignore those chest pains — please call a doctor right away.' (Write the contracted form of 'had')",
-      "correctAnswer": "'d"
+      "type": "fill-blank",
+      "question": "While some students _____ (write) their answers, others _____ (stare) out of the window.",
+      "correctAnswer": "were writing / were staring"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Write a recommendation for someone who wants to improve their English fluency. Use 'recommend' followed by a gerund.",
-      "correctAnswer": "I recommend watching English movies.|I recommend practicing every single day.|I recommend reading books in English.|I recommend speaking with native speakers as often as possible."
+      "question": "Combine into one sentence using \"when\": \"She was walking home alone. It suddenly started to rain heavily.\"",
+      "correctAnswer": "she was walking home when it suddenly started to rain heavily|when it suddenly started to rain heavily, she was walking home"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "What is the correct NOUN form of the verb 'recommend'?",
-      "options": [
-        "recommendment",
-        "recommendation",
-        "recommendance",
-        "recommendal"
-      ],
-      "correctAnswer": "recommendation"
+      "type": "complete",
+      "question": "Everyone _____ (laugh) and _____ (enjoy) the party when the host _____ (make) a very unexpected announcement.",
+      "correctAnswer": "was laughing / was enjoying / made"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'You'd better _____ (save) your work frequently — the system has been crashing without warning lately.'",
-      "correctAnswer": "save"
+      "question": "_____, a car _____ (speed) past and nearly hit a cyclist who was crossing the road.",
+      "correctAnswer": "Suddenly / sped"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete: 'I suggest that everyone _____ at least 15 minutes before the meeting begins.' (Write the correct verb form of 'arrive' in the that-clause)",
-      "correctAnswer": "arrive|arrives"
+      "type": "multiple-choice",
+      "question": "Which sentence uses \"meanwhile\" correctly?",
+      "options": ["She was cooking dinner. Meanwhile, he was helping the kids with homework.", "She was cooking dinner meanwhile interrupted by the phone.", "Meanwhile she cooked, he was helping with everything.", "She cooked meanwhile he was helping at the same time."],
+      "correctAnswer": "She was cooking dinner. Meanwhile, he was helping the kids with homework."
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Use 'in addition' as a discourse marker to add a second piece of advice after: 'You should exercise more.' Write the follow-up sentence.",
-      "correctAnswer": "In addition, you should improve your diet.|In addition, you could try to sleep earlier.|In addition, you ought to reduce your caffeine intake.|In addition, you should drink more water throughout the day."
+      "type": "fill-blank",
+      "question": "I _____ (not / know) what to say at that moment — I was completely stunned.",
+      "correctAnswer": "didn't know"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence about the second conditional advice structure is INCORRECT?",
-      "options": [
-        "If I were you, I'd apologize to her immediately.",
-        "If I were you, I would ask for professional help.",
-        "If I were you, I will reconsider that risky decision.",
-        "If I were you, I wouldn't take that unnecessary risk."
-      ],
-      "correctAnswer": "If I were you, I will reconsider that risky decision."
+      "type": "complete",
+      "question": "At the time of the incident, three people _____ (stand) nearby and _____ (watch) exactly what _____ (happen).",
+      "correctAnswer": "were standing / were watching / was happening"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'You _____ try setting a daily routine — it would really help with your procrastination problem.' (Use the modal for a gentle, optional suggestion)",
-      "correctAnswer": "could"
+      "type": "translate",
+      "question": "Rewrite starting with \"When\": \"While she was giving her speech, the microphone stopped working completely.\"",
+      "correctAnswer": "the microphone stopped working when she was giving her speech|when the microphone stopped working, she was giving her speech"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete: 'What about _____ (switch) to a plant-based diet? There is strong evidence that it improves long-term health.' (Write the correct verb form)",
-      "correctAnswer": "switching"
+      "type": "multiple-choice",
+      "question": "\"They were having dinner, and she was preparing dessert.\" These two actions are...",
+      "options": ["Simultaneous past actions", "An interrupted action", "A completed past sequence", "Two unrelated events in the past"],
+      "correctAnswer": "Simultaneous past actions"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'besides' as a discourse marker in an advice context?",
-      "options": [
-        "Besides, you should also take care of your mental health, not just your physical health.",
-        "Besides you should considering your mental health too.",
-        "Besides, you should to consider your mental health as well.",
-        "Besides to that, you should consider your mental well-being."
-      ],
-      "correctAnswer": "Besides, you should also take care of your mental health, not just your physical health."
+      "type": "complete",
+      "question": "It was a peaceful Sunday afternoon. The kids _____ (play) in the yard, the dog _____ (sleep) on the porch, and my parents _____ (read) in the garden.",
+      "correctAnswer": "were playing / was sleeping / were reading"
     }
   ]
 }

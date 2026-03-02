@@ -3,644 +3,778 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'have' or 'has'?",
-      "options": ["My parents has two cars.", "My parents have two cars.", "My parents is have two cars.", "My parents haves two cars."],
-      "correctAnswer": "My parents have two cars."
+      "question": "O que significa 'wake up'?",
+      "options": [
+        "Dormir",
+        "Trabalhar",
+        "Acordar",
+        "Estudar"
+      ],
+      "correctAnswer": "Acordar"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'I have three ___.' (plural of child)",
-      "correctAnswer": "children"
+      "question": "Complete: 'I _____ up at 7 AM' (eu acordo)",
+      "correctAnswer": "wake"
     },
     {
       "id": 3,
       "type": "translate",
-      "question": "What does 'avó' mean in English?",
-      "correctAnswer": "grandmother"
+      "question": "Traduza para inglês: 'Esta é minha mãe'",
+      "correctAnswer": "this is my mother"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: '___ brother is very tall.' (Use the correct possessive for 'he')",
-      "correctAnswer": "His"
+      "type": "multiple-choice",
+      "question": "Como se diz 'tomar banho' em inglês?",
+      "options": [
+        "Brush teeth",
+        "Go to bed",
+        "Take a shower",
+        "Wake up"
+      ],
+      "correctAnswer": "Take a shower"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which word describes the father of your father?",
-      "options": ["uncle", "grandfather", "cousin", "stepfather"],
-      "correctAnswer": "grandfather"
+      "type": "fill-blank",
+      "question": "Complete: 'I eat _____ at 8 AM' (café da manhã)",
+      "correctAnswer": "breakfast"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'She is twenty-___ years old.' (Write the missing word for the number 25)",
-      "correctAnswer": "five"
+      "type": "translate",
+      "question": "Traduza: 'Eu acordo de manhã'",
+      "correctAnswer": "i wake up in the morning"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "What is the correct demonym for someone from Japan?",
-      "options": ["Japanish", "Japanesse", "Japanese", "Japanean"],
-      "correctAnswer": "Japanese"
+      "question": "O que significa 'study'?",
+      "options": [
+        "Comer",
+        "Estudar",
+        "Dormir",
+        "Trabalhar"
+      ],
+      "correctAnswer": "Estudar"
     },
     {
       "id": 8,
       "type": "complete",
-      "question": "Complete: 'My grandmother ___ two sisters.' (has or have)",
-      "correctAnswer": "has"
+      "question": "Complete: 'I go to _____ at 10 PM' (vou para a cama)",
+      "correctAnswer": "bed"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Choose the correct sentence about a group of people:",
-      "options": ["Their parents is old.", "Their parents are old.", "Their parents be old.", "Their parents am old."],
-      "correctAnswer": "Their parents are old."
+      "question": "O que significa 'dinner'?",
+      "options": [
+        "Lanche",
+        "Almoço",
+        "Café da manhã",
+        "Jantar"
+      ],
+      "correctAnswer": "Jantar"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'Forty plus thirty ___.' (math word for the result)",
-      "correctAnswer": "equals"
+      "question": "Complete: 'I _____ TV at night' (assisto)",
+      "correctAnswer": "watch"
     },
     {
       "id": 11,
       "type": "translate",
-      "question": "What does 'inteligente' mean in English?",
-      "correctAnswer": "intelligent"
+      "question": "Traduza: 'Eu como almoço ao meio-dia'",
+      "correctAnswer": "i eat lunch at noon|i have lunch at noon"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'This is ___ mother.' (Use the correct possessive for 'I')",
-      "correctAnswer": "my"
+      "type": "multiple-choice",
+      "question": "Como se diz 'trabalhar' em inglês?",
+      "options": [
+        "Study",
+        "Cook",
+        "Sleep",
+        "Work"
+      ],
+      "correctAnswer": "Work"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "What is the correct plural of 'person'?",
-      "options": ["persons", "peoples", "personnes", "people"],
-      "correctAnswer": "people"
+      "type": "complete",
+      "question": "Complete: '_____ is my father' (Este é)",
+      "correctAnswer": "This"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Someone from Brazil is called a ___.",
-      "correctAnswer": "Brazilian"
+      "type": "multiple-choice",
+      "question": "O que significa 'sleep'?",
+      "options": [
+        "Comer",
+        "Trabalhar",
+        "Acordar",
+        "Dormir"
+      ],
+      "correctAnswer": "Dormir"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "What does 'sobrinha' mean in English?",
-      "correctAnswer": "niece"
+      "type": "fill-blank",
+      "question": "Complete: 'My _____ works at a school' (mãe)",
+      "correctAnswer": "mother"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'How old ___ you?' (correct form of verb 'to be')",
-      "correctAnswer": "are"
+      "type": "translate",
+      "question": "Traduza: 'Eu estudo inglês'",
+      "correctAnswer": "i study english"
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "Which adjective means the opposite of 'sad'?",
-      "options": ["quiet", "tired", "happy", "busy"],
-      "correctAnswer": "happy"
+      "question": "O que significa 'go to bed'?",
+      "options": [
+        "Tomar banho",
+        "Comer",
+        "Ir para a cama",
+        "Acordar"
+      ],
+      "correctAnswer": "Ir para a cama"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: '___ name is Maria.' (Use the correct possessive for 'she')",
-      "correctAnswer": "Her"
+      "type": "complete",
+      "question": "Complete: 'I _____ coffee every morning' (bebo/tomo)",
+      "correctAnswer": "drink"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "What does 'cunhado' mean in English?",
-      "correctAnswer": "brother-in-law"
+      "question": "Traduza: 'Eu tenho um irmão'",
+      "correctAnswer": "i have a brother"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "What is the result of fifty plus forty?",
-      "options": ["80", "90", "100", "85"],
-      "correctAnswer": "90"
+      "question": "O que significa 'lunch'?",
+      "options": [
+        "Café da manhã",
+        "Lanche",
+        "Almoço",
+        "Jantar"
+      ],
+      "correctAnswer": "Almoço"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which sentence uses the correct possessive adjective?",
-      "options": ["She loves his mother.", "She loves her mother.", "She loves their mother.", "She loves our mother."],
-      "correctAnswer": "She loves her mother."
+      "type": "translate",
+      "question": "Traduza: 'Você acorda cedo'",
+      "correctAnswer": "you wake up early"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'They are ___ friends.' (Use the correct possessive for 'we')",
-      "correctAnswer": "our"
+      "question": "Complete: 'They _____ English every day' (estudam)",
+      "correctAnswer": "study"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "What does 'tio' mean in English?",
-      "correctAnswer": "uncle"
+      "type": "multiple-choice",
+      "question": "Como se diz 'de manhã' em inglês?",
+      "options": [
+        "At night",
+        "In the evening",
+        "In the morning",
+        "On Monday"
+      ],
+      "correctAnswer": "In the morning"
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Complete: 'She ___ a daughter and two sons.' (has or have)",
-      "correctAnswer": "has"
+      "question": "Complete: 'I wake up _____ the morning' (preposição correta)",
+      "correctAnswer": "in"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "What is the correct demonym for someone from France?",
-      "options": ["Franceian", "Frenchish", "French", "Frances"],
-      "correctAnswer": "French"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ dinner at 7 PM' (jantamos)",
+      "correctAnswer": "eat|have"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'Ninety minus thirty equals ___.' (number in words)",
-      "correctAnswer": "sixty"
+      "type": "translate",
+      "question": "Traduza: 'Eles trabalham todo dia'",
+      "correctAnswer": "they work every day"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "What does 'neto' or 'neta' mean in English?",
-      "correctAnswer": "grandson|granddaughter|grandchild"
+      "type": "multiple-choice",
+      "question": "Qual preposição usamos com horas exatas? Ex: '___ 7 AM'",
+      "options": [
+        "On",
+        "In",
+        "By",
+        "At"
+      ],
+      "correctAnswer": "At"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "Which sentence about age is grammatically correct?",
-      "options": ["I am have 15 years.", "I have 15 years.", "I am 15 years old.", "My age is 15 years have."],
-      "correctAnswer": "I am 15 years old."
+      "type": "complete",
+      "question": "Complete: 'I go to work _____ 8 AM' (às 8h)",
+      "correctAnswer": "at"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: '___ parents live in Brazil.' (Use the correct possessive for 'they')",
-      "correctAnswer": "Their"
+      "type": "fill-blank",
+      "question": "Complete: 'You _____ to bed at 10 PM' (vai)",
+      "correctAnswer": "go"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "What is the correct plural of 'wife'?",
-      "options": ["wifes", "wives", "wive", "wifies"],
-      "correctAnswer": "wives"
+      "type": "translate",
+      "question": "Traduza: 'Nós comemos café da manhã juntos'",
+      "correctAnswer": "we eat breakfast together"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "What does 'alto/alta' mean in English when describing a person?",
-      "correctAnswer": "tall"
+      "type": "multiple-choice",
+      "question": "Como se diz 'todos os dias' em inglês?",
+      "options": [
+        "On Sunday",
+        "At night",
+        "In the morning",
+        "Every day"
+      ],
+      "correctAnswer": "Every day"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Someone from Germany is called a ___.",
-      "correctAnswer": "German"
+      "type": "complete",
+      "question": "Complete: 'I don't work _____ Sundays' (aos domingos)",
+      "correctAnswer": "on"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: 'We ___ three children.' (has or have)",
-      "correctAnswer": "have"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ TV in the evening' (assistem)",
+      "correctAnswer": "watch"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "What does 'primos' mean in English?",
-      "correctAnswer": "cousins"
+      "question": "Traduza: 'Eu tomo banho de manhã'",
+      "correctAnswer": "i take a shower in the morning|i shower in the morning"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'Her birthday is in ___.' (the 3rd month of the year)",
-      "correctAnswer": "March"
+      "type": "multiple-choice",
+      "question": "Como se diz 'à noite' (horário noturno específico)?",
+      "options": [
+        "By night",
+        "At night",
+        "On the night",
+        "In the night"
+      ],
+      "correctAnswer": "At night"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence:",
-      "options": ["His son have blue eyes.", "His son has blue eyes.", "His son haves blue eyes.", "His son are have blue eyes."],
-      "correctAnswer": "His son has blue eyes."
+      "type": "complete",
+      "question": "Complete: 'I exercise _____ the morning' (de manhã)",
+      "correctAnswer": "in"
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "Complete: 'How old is ___?' (Use the correct subject pronoun for a woman)",
-      "correctAnswer": "she"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ home at 8 AM' (saímos)",
+      "correctAnswer": "leave"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "What does 'amigável' mean in English?",
-      "correctAnswer": "friendly"
+      "question": "Traduza: 'Eu como jantar às 7'",
+      "correctAnswer": "i eat dinner at 7|i have dinner at 7|i eat dinner at 7 pm"
     },
     {
       "id": 19,
       "type": "multiple-choice",
-      "question": "Which country's demonym is 'Argentine'?",
-      "options": ["Brazil", "Mexico", "Spain", "Argentina"],
-      "correctAnswer": "Argentina"
+      "question": "Qual preposição usamos com dias da semana? Ex: '___ Monday'",
+      "options": [
+        "At",
+        "On",
+        "By",
+        "In"
+      ],
+      "correctAnswer": "On"
     },
     {
       "id": 20,
-      "type": "fill-blank",
-      "question": "Complete: 'My mother has a sister. She is my ___.' (family title)",
-      "correctAnswer": "aunt"
+      "type": "complete",
+      "question": "Complete: 'I eat lunch _____ noon' (ao meio-dia)",
+      "correctAnswer": "at"
     }
   ],
   "wednesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Choose the correct plural form:",
-      "options": ["I have two babys.", "I have two babiess.", "I have two babies.", "I have two babyes."],
-      "correctAnswer": "I have two babies."
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ up at 6 AM' (acorda — he/she)",
+      "correctAnswer": "wakes"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'My grandfather is my father's ___.' (the word for a male parent)",
-      "correctAnswer": "father"
+      "type": "translate",
+      "question": "Traduza: 'Ela trabalha todo dia'",
+      "correctAnswer": "she works every day"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "What does 'marido' mean in English?",
-      "correctAnswer": "husband"
+      "type": "multiple-choice",
+      "question": "Como conjugamos 'study' para she?",
+      "options": [
+        "Studys",
+        "Studiess",
+        "Studies",
+        "Study"
+      ],
+      "correctAnswer": "Studies"
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Complete: '___ daughter studies English.' (Use the correct possessive for 'they')",
-      "correctAnswer": "Their"
+      "question": "Complete: 'She _____ TV every night' (assiste — she)",
+      "correctAnswer": "watches"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "How do you write the number 58 in words?",
-      "options": ["forty-eight", "sixty-eight", "fifty-eight", "eighty-five"],
-      "correctAnswer": "fifty-eight"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ English at school' (estuda — he)",
+      "correctAnswer": "studies"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Someone from Australia is called ___.",
-      "correctAnswer": "Australian"
+      "type": "translate",
+      "question": "Traduza: 'Ele vai para a cama às 11'",
+      "correctAnswer": "he goes to bed at 11|he goes to bed at 11 pm"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "What does 'ocupado/ocupada' mean in English?",
-      "correctAnswer": "busy"
+      "type": "multiple-choice",
+      "question": "Como conjugamos 'go' para he?",
+      "options": [
+        "Goies",
+        "Goes",
+        "Gos",
+        "Go"
+      ],
+      "correctAnswer": "Goes"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["Our family are very big.", "Our family is very big.", "Our family am very big.", "Our family be very big."],
-      "correctAnswer": "Our family is very big."
+      "type": "complete",
+      "question": "Complete: 'She _____ breakfast at 7 AM' (come — she)",
+      "correctAnswer": "eats"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: 'She is my mother's mother. She is my ___.' (family title)",
-      "correctAnswer": "grandmother"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ at a hospital' (trabalha — he)",
+      "correctAnswer": "works"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'Thirty-five plus fifteen equals ___.' (number in words)",
-      "correctAnswer": "fifty"
+      "type": "translate",
+      "question": "Traduza: 'Ela toma banho de manhã'",
+      "correctAnswer": "she takes a shower in the morning|she showers in the morning"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Which possessive adjective matches the subject 'John and Mary'?",
-      "options": ["his", "her", "its", "their"],
-      "correctAnswer": "their"
+      "question": "Como conjugamos 'have' para she?",
+      "options": [
+        "Havies",
+        "Have",
+        "Has",
+        "Haves"
+      ],
+      "correctAnswer": "Has"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "What does 'forte' mean in English when describing a person?",
-      "correctAnswer": "strong"
+      "type": "complete",
+      "question": "Complete: 'He _____ his teeth every morning' (escova — he)",
+      "correctAnswer": "brushes"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: 'Is ___ your sister or your cousin?' (Use the correct subject pronoun for a woman)",
-      "correctAnswer": "she"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ coffee every morning' (bebe — she)",
+      "correctAnswer": "drinks"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "What is the correct demonym for someone from Portugal?",
-      "options": ["Portugish", "Portugese", "Portugueses", "Portuguese"],
-      "correctAnswer": "Portuguese"
+      "type": "translate",
+      "question": "Traduza: 'Ele acorda às 7 da manhã'",
+      "correctAnswer": "he wakes up at 7 am|he wakes up at 7 in the morning"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: '___ have a big family.' (Use the correct subject pronoun for 'my brother and I')",
-      "correctAnswer": "We"
+      "type": "multiple-choice",
+      "question": "Qual está correto para she + study?",
+      "options": [
+        "She studys at night",
+        "She study at night",
+        "She is study at night",
+        "She studies at night"
+      ],
+      "correctAnswer": "She studies at night"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "What does 'filha' mean in English?",
-      "correctAnswer": "daughter"
+      "type": "complete",
+      "question": "Complete: 'He _____ to work at 8 AM' (vai — he)",
+      "correctAnswer": "goes"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence uses the plural of 'child' correctly?",
-      "options": ["There are two childs in the park.", "There are two children in the park.", "There are two childrens in the park.", "There are two child in the park."],
-      "correctAnswer": "There are two children in the park."
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ dinner at 7 PM' (come/janta — she)",
+      "correctAnswer": "eats|has"
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "Complete: 'My father ___ a brother. He is my uncle.' (has or have)",
-      "correctAnswer": "has"
+      "type": "translate",
+      "question": "Traduza: 'Ela lê antes de dormir'",
+      "correctAnswer": "she reads before bed|she reads before sleeping"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "What does 'baixo/baixa' mean in English when describing a person?",
-      "correctAnswer": "short"
+      "type": "multiple-choice",
+      "question": "Complete: 'My father ___ up very early.'",
+      "options": [
+        "Wake",
+        "Wakeup",
+        "Wakees",
+        "Wakes"
+      ],
+      "correctAnswer": "Wakes"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "In which month do we celebrate Christmas?",
-      "options": ["November", "January", "December", "October"],
-      "correctAnswer": "December"
+      "type": "complete",
+      "question": "Complete: 'He _____ English after work' (estuda — he)",
+      "correctAnswer": "studies"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence is grammatically correct?",
-      "options": ["Their is my cousin.", "There is my cousin.", "They is my cousin.", "Them is my cousin."],
-      "correctAnswer": "There is my cousin."
+      "question": "Como formamos a negativa para I/You/We/They?",
+      "options": [
+        "doesn't + base verb",
+        "not + verb",
+        "no + verb",
+        "don't + base verb"
+      ],
+      "correctAnswer": "don't + base verb"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: '___ father works in the city.' (Use the correct possessive for 'I')",
-      "correctAnswer": "My"
+      "question": "Complete: 'I _____ wake up early' (não acordo cedo)",
+      "correctAnswer": "don't"
     },
     {
       "id": 3,
       "type": "translate",
-      "question": "What does 'bonito/bonita' mean in English?",
-      "correctAnswer": "beautiful|pretty"
+      "question": "Traduza: 'Eu não trabalho aos domingos'",
+      "correctAnswer": "i don't work on sundays"
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Complete: 'Twenty ___ thirty equals fifty.' (math vocabulary word)",
-      "correctAnswer": "plus"
+      "question": "Complete: 'She _____ study at night' (ela não estuda)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "What is the correct plural of 'brother-in-law'?",
-      "options": ["brother-in-laws", "brothers-in-law", "brother-in-lawes", "brothers-in-laws"],
-      "correctAnswer": "brothers-in-law"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ eat breakfast' (eles não comem)",
+      "correctAnswer": "don't"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Someone from Canada is called ___.",
-      "correctAnswer": "Canadian"
+      "type": "translate",
+      "question": "Traduza: 'Ele não assiste TV'",
+      "correctAnswer": "he doesn't watch tv"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "What does 'esposa' mean in English?",
-      "correctAnswer": "wife"
+      "type": "multiple-choice",
+      "question": "Qual forma está CORRETA?",
+      "options": [
+        "He don't work",
+        "He not works",
+        "He doesn't works",
+        "He doesn't work"
+      ],
+      "correctAnswer": "He doesn't work"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence:",
-      "options": ["My parents has a house.", "My parents have a house.", "My parents is have a house.", "My parents haves a house."],
-      "correctAnswer": "My parents have a house."
+      "type": "complete",
+      "question": "Complete: 'We _____ work on weekends' (não trabalhamos)",
+      "correctAnswer": "don't"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: 'He is funny and ___.' (adjective meaning 'caring and generous to others')",
-      "correctAnswer": "kind"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ eat dinner late' (não janta tarde)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'My birthday is in ___.' (the 8th month of the year)",
-      "correctAnswer": "August"
+      "type": "translate",
+      "question": "Traduza: 'Você não estuda todo dia'",
+      "correctAnswer": "you don't study every day"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Which word is NOT a family member?",
-      "options": ["nephew", "cousin", "neighbor", "aunt"],
-      "correctAnswer": "neighbor"
+      "question": "Como formamos a negativa para He/She?",
+      "options": [
+        "don't + base verb",
+        "doesn't + base verb",
+        "doesn't + verb-s",
+        "not + verb"
+      ],
+      "correctAnswer": "doesn't + base verb"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "What does 'jovem' mean in English?",
-      "correctAnswer": "young"
+      "type": "complete",
+      "question": "Complete: 'He _____ wake up early' (ele não acorda)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: '___ grandmother is 72 years old.' (Use the correct possessive for 'we')",
-      "correctAnswer": "Our"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ go to bed late' (não vou tarde para a cama)",
+      "correctAnswer": "don't"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "How do you write the number 100 in words?",
-      "options": ["one hundred", "ten tens", "hundred one", "one thousands"],
-      "correctAnswer": "one hundred"
+      "type": "translate",
+      "question": "Traduza: 'Ela não trabalha aos sábados'",
+      "correctAnswer": "she doesn't work on saturdays"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'She has two ___.' (plural of 'son')",
-      "correctAnswer": "sons"
+      "type": "multiple-choice",
+      "question": "Qual forma está INCORRETA?",
+      "options": [
+        "I don't work",
+        "She doesn't work",
+        "She doesn't works",
+        "He doesn't study"
+      ],
+      "correctAnswer": "She doesn't works"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "What does 'primo/prima' mean in English?",
-      "correctAnswer": "cousin"
+      "type": "complete",
+      "question": "Complete: 'They _____ drink coffee' (eles não tomam)",
+      "correctAnswer": "don't"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "What is the correct demonym for someone from Italy?",
-      "options": ["Italish", "Italian", "Italyan", "Italiean"],
-      "correctAnswer": "Italian"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ exercise in the morning' (não faz exercício)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "Complete: '___ is your birthday?' (question word used to ask about time)",
-      "correctAnswer": "When"
+      "type": "translate",
+      "question": "Traduza: 'Nós não jantamos tarde'",
+      "correctAnswer": "we don't eat dinner late|we don't have dinner late"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "What does 'com fome' mean in English?",
-      "correctAnswer": "hungry"
+      "type": "multiple-choice",
+      "question": "Complete: 'I _____ work on Sundays.'",
+      "options": [
+        "doesn't",
+        "don't",
+        "not",
+        "no"
+      ],
+      "correctAnswer": "don't"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence about age is correct?",
-      "options": ["She is 30 years.", "She is 30 years old.", "She has 30 years old.", "She am 30 years old."],
-      "correctAnswer": "She is 30 years old."
+      "type": "complete",
+      "question": "Complete: 'She _____ study on weekends' (ela não estuda)",
+      "correctAnswer": "doesn't"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Choose the correct possessive adjective:",
-      "options": ["This is me book.", "This is mine book.", "This is my book.", "This is I book."],
-      "correctAnswer": "This is my book."
+      "type": "translate",
+      "question": "Traduza: 'Você acorda cedo?'",
+      "correctAnswer": "do you wake up early"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'Eighty minus fifty equals ___.' (number in words)",
-      "correctAnswer": "thirty"
+      "question": "Complete: '_____ she work every day?' (Ela trabalha...?)",
+      "correctAnswer": "Does"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "What does 'quieto/quieta' mean in English?",
-      "correctAnswer": "quiet"
+      "type": "multiple-choice",
+      "question": "Como perguntamos sobre a rotina de He/She?",
+      "options": [
+        "Do + he/she + base verb",
+        "Does + he/she + verb-s",
+        "Is + he/she + verb",
+        "Does + he/she + base verb"
+      ],
+      "correctAnswer": "Does + he/she + base verb"
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Complete: 'My sister has a baby. ___ baby is very cute.' (possessive for 'she')",
-      "correctAnswer": "Her"
+      "question": "Complete: '_____ you eat breakfast?' (Você come...?)",
+      "correctAnswer": "Do"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "What is the correct demonym for someone from China?",
-      "options": ["Chinian", "Chinish", "Chinese", "Chinaian"],
-      "correctAnswer": "Chinese"
+      "type": "translate",
+      "question": "Traduza: 'Ela sempre estuda à noite'",
+      "correctAnswer": "she always studies at night"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'He is my father's brother. He is my ___.' (family title)",
-      "correctAnswer": "uncle"
+      "question": "Complete: 'I _____ wake up early' (sempre acordo cedo)",
+      "correctAnswer": "always"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "What does 'cansado/cansada' mean in English?",
-      "correctAnswer": "tired"
+      "type": "multiple-choice",
+      "question": "Qual palavra significa 'geralmente'?",
+      "options": [
+        "Sometimes",
+        "Always",
+        "Never",
+        "Usually"
+      ],
+      "correctAnswer": "Usually"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["This is my cousin.", "This are my cousin.", "These is my cousin.", "This be my cousin."],
-      "correctAnswer": "This is my cousin."
+      "type": "complete",
+      "question": "Complete: 'He _____ exercises in the morning' (geralmente)",
+      "correctAnswer": "usually"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: 'Japan is in Asia. People from Japan are ___.' (demonym)",
-      "correctAnswer": "Japanese"
+      "type": "translate",
+      "question": "Traduza: 'Às vezes eu assisto TV à noite'",
+      "correctAnswer": "i sometimes watch tv at night|sometimes i watch tv at night"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: '___ are happy to be here.' (Use the correct subject pronoun for 'Maria and Pedro')",
-      "correctAnswer": "They"
+      "question": "Complete: '_____ they study English?' (Eles estudam...?)",
+      "correctAnswer": "Do"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "What is the correct plural of 'family'?",
-      "options": ["familys", "families", "familyes", "familyies"],
-      "correctAnswer": "families"
+      "question": "Qual é a resposta curta correta para 'Do you work?'",
+      "options": [
+        "Yes, I work.",
+        "Yes, I does.",
+        "Yes, do I.",
+        "Yes, I do."
+      ],
+      "correctAnswer": "Yes, I do."
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "What does 'neto' mean in English?",
-      "correctAnswer": "grandson|grandchild"
+      "type": "complete",
+      "question": "Complete: 'Does he wake _____ early?' (acorda cedo)",
+      "correctAnswer": "up"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: 'How old ___ your father?' (correct form of verb 'to be')",
-      "correctAnswer": "is"
+      "type": "translate",
+      "question": "Traduza: 'Ela nunca dorme tarde'",
+      "correctAnswer": "she never sleeps late"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["She have an older sister.", "She has an older sister.", "She haves an older sister.", "She is has an older sister."],
-      "correctAnswer": "She has an older sister."
+      "type": "fill-blank",
+      "question": "Complete: '_____ your mother work?' (Sua mãe trabalha?)",
+      "correctAnswer": "Does"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Someone from Spain is called ___.",
-      "correctAnswer": "Spanish"
+      "type": "multiple-choice",
+      "question": "Qual é a resposta curta correta para 'Does she eat breakfast?'",
+      "options": [
+        "Yes, she do.",
+        "Yes, she does.",
+        "Yes, does she.",
+        "Yes, she eats."
+      ],
+      "correctAnswer": "Yes, she does."
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "What does 'pequeno/pequena' mean in English?",
-      "correctAnswer": "small|little"
+      "type": "complete",
+      "question": "Complete: 'I _____ study at night' (nunca estudo)",
+      "correctAnswer": "never"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which adjective best describes someone who makes you laugh?",
-      "options": ["tall", "funny", "quiet", "busy"],
-      "correctAnswer": "funny"
+      "type": "translate",
+      "question": "Traduza: 'Meu pai geralmente acorda às 6'",
+      "correctAnswer": "my father usually wakes up at 6|my father usually wakes up at 6 am"
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "Complete: '___ brothers play soccer together.' (Use the correct possessive for 'I')",
-      "correctAnswer": "My"
+      "type": "fill-blank",
+      "question": "Complete: 'Does he _____ to bed late?' (vai)",
+      "correctAnswer": "go"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "What does 'sobrinho' mean in English?",
-      "correctAnswer": "nephew"
+      "type": "multiple-choice",
+      "question": "Onde colocamos 'always / usually / never' na frase?",
+      "options": [
+        "No início sempre",
+        "Antes do verbo principal",
+        "Depois do verbo principal",
+        "No final da frase"
+      ],
+      "correctAnswer": "Antes do verbo principal"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "How do you say the number 76 in English?",
-      "options": ["seventy-six", "sixty-seven", "seventy-seven", "sixty-six"],
-      "correctAnswer": "seventy-six"
+      "type": "translate",
+      "question": "Traduza: 'O que você faz de manhã?'",
+      "correctAnswer": "what do you do in the morning"
     }
   ]
 }
