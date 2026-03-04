@@ -605,6 +605,7 @@ function showVideos() {
             { title: '📚 Seed - Lesson 02', url: 'https://www.youtube.com/embed/Sp_9i-j3Ryw' },
             { title: '📚 Seed - Lesson 02(Extra)', url: 'https://www.youtube.com/embed/ED1K6BJ8PoU?si=noBJM_2NaPzbOaTM' },
             { title: '📚 Seed - Lesson 03', url: 'https://www.youtube.com/embed/ihadFWLnAs8?si=-Q583abdczTiNkAp' },
+            { title: '📚 Seed - Lesson 05', url: 'https://www.youtube.com/embed/ySo1qYziThg?si=6SgSxd4P5w6NRB63' },
 
         ];
     } else if (currentLevel === 'root') {
@@ -613,6 +614,7 @@ function showVideos() {
             { title: '📚 Root - Lesson 01', url: 'https://www.youtube.com/embed/6DArC_SJ7Uw?si=C2ASh0RrQu2GWE-8' },
             { title: '📚 Root - Lesson 02', url: 'https://www.youtube.com/embed/4zqE4uznWxk?si=8JaDLu53E_ju0aa0' },
             { title: '📚 Root - Lesson 03', url: 'https://www.youtube.com/embed/hf_d0Mk6T_0?si=twOJYtRxyJvu1jMX' },
+            { title: '📚 Root - Lesson 05', url: 'https://www.youtube.com/embed/hv-ctQAtXrA?si=dbrLINCpIHg6SHIF' },
         ];
     } else if (currentLevel === 'leaf') {
         // Vídeos do Leaf - adicione os vídeos quando estiverem disponíveis
