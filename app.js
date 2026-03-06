@@ -751,10 +751,44 @@ let currentPodcast = null;
 // Lista de slides disponíveis por nível
 const slidesList = {
     seed: [
-        // Slides do Seed serão adicionados futuramente
+        {
+            id: 2,
+            title: 'Lesson 02 - Numbers & Age',
+            description: 'Learn numbers, ages, and how to talk about age in English',
+            pdfFile: 'aulas/Seed/slide/Seed_Lesson02.pdf'
+        },
+        {
+            id: 3,
+            title: 'Lesson 03 - Family & Relationships',
+            description: 'Vocabulary and expressions about family members and relationships',
+            pdfFile: 'aulas/Seed/slide/Seed_Lesson03.pdf'
+        },
+        {
+            id: 4,
+            title: 'Lesson 04 - Daily Routines',
+            description: 'Present simple tense and daily routine vocabulary',
+            pdfFile: 'aulas/Seed/slide/Seed_Lesson04.pdf'
+        }
     ],
     root: [
-        // Slides do Root serão adicionados futuramente
+        {
+            id: 2,
+            title: 'Lesson 02 - Past Experiences',
+            description: 'Simple past tense and talking about past events',
+            pdfFile: 'aulas/Root/slide/Root_Lesson02.pdf'
+        },
+        {
+            id: 3,
+            title: 'Lesson 03 - Travel & Adventures',
+            description: 'Travel vocabulary and past experiences with irregular verbs',
+            pdfFile: 'aulas/Root/slide/Root_Lesson03.pdf'
+        },
+        {
+            id: 4,
+            title: 'Lesson 04 - Technology & Communication',
+            description: 'Technology vocabulary and present perfect tense',
+            pdfFile: 'aulas/Root/slide/Root _Lesson04.pdf'
+        }
     ],
     leaf: [
         {
@@ -762,6 +796,12 @@ const slidesList = {
             title: 'Lesson 01 - Career Advice & Modal Verbs',
             description: 'Introduction to career advice vocabulary and modal verbs usage',
             pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01_Slides.pdf'
+        },
+        {
+            id: 2,
+            title: 'Lesson 02 - Advanced Conversations',
+            description: 'Complex sentence structures and conversational expressions',
+            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson02.pdf'
         }
     ],
     fruit: [
