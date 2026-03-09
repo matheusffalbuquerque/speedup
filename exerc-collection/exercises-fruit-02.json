@@ -1,0 +1,774 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "\"Ambiguous\" best describes a statement that...",
+      "options": [
+        "Contains no specific information",
+        "Is overly formal and complex",
+        "Can be interpreted in more than one way",
+        "Is clearly understood by everyone"
+      ],
+      "correctAnswer": "Can be interpreted in more than one way"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "If she _____ medicine instead of law, she would be a doctor now. (Mixed Conditional A)",
+      "correctAnswer": "had studied"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "\"Convey\" is most naturally used with which of the following?",
+      "options": [
+        "A question / an order / a rule",
+        "A message / an emotion / meaning",
+        "A number / a score / a result",
+        "A building / a machine / a law"
+      ],
+      "correctAnswer": "A message / an emotion / meaning"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "The professor asked the student to _____ on her argument — more detail and context were needed.",
+      "correctAnswer": "elaborate"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "If they _____ the project earlier, they would be celebrating success right now. (launch)",
+      "correctAnswer": "had launched|had started"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses Mixed Conditional Type A?",
+      "options": [
+        "If she had studied harder, she would have been fluent.",
+        "If she studies harder, she will be fluent now.",
+        "If she had studied harder, she would be fluent now.",
+        "If she studied harder, she would be fluent now."
+      ],
+      "correctAnswer": "If she had studied harder, she would be fluent now."
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "There is an important _____ between \"confident\" and \"arrogant\" — one is admired, the other is not.",
+      "correctAnswer": "nuance"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "His quiet tone _____ deep disappointment more clearly than any words could have.",
+      "correctAnswer": "conveyed"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Rewrite using Mixed Conditional Type A: \"He didn't practise. He isn't fluent now.\"",
+      "correctAnswer": "if he had practised, he would be fluent now"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Good academic writing requires both precision and _____ — ideas must connect logically throughout.",
+      "correctAnswer": "coherence"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "In a Mixed Conditional Type A, the if-clause uses...",
+      "options": [
+        "Would + base verb",
+        "Present Perfect",
+        "Past Simple",
+        "Past Perfect (had + past participle)"
+      ],
+      "correctAnswer": "Past Perfect (had + past participle)"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "The contract clause was entirely _____ — both parties had completely different interpretations of the same sentence.",
+      "correctAnswer": "ambiguous"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "If we _____ better decisions back then, our company wouldn't be struggling today.",
+      "correctAnswer": "had made"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "\"Register\" in linguistics refers to...",
+      "options": [
+        "The pronunciation of a specific accent",
+        "The level of formality or style used in different contexts",
+        "The vocabulary range of a speaker",
+        "The speed at which someone speaks"
+      ],
+      "correctAnswer": "The level of formality or style used in different contexts"
+    },
+    {
+      "id": 15,
+      "type": "complete",
+      "question": "A good speaker chooses _____ vocabulary — vague or general words lead to misunderstandings.",
+      "correctAnswer": "precise"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "If he _____ that early opportunity, he would be running his own business now.",
+      "correctAnswer": "had taken"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Rewrite using Mixed Conditional Type A: \"They didn't invest early. They aren't financially secure now.\"",
+      "correctAnswer": "if they had invested early, they would be financially secure now"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "\"Syntax\" refers to...",
+      "options": [
+        "The pronunciation of sounds in a language",
+        "The meaning of individual words",
+        "The arrangement of words and phrases to form sentences",
+        "The study of how languages change over time"
+      ],
+      "correctAnswer": "The arrangement of words and phrases to form sentences"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "The _____ of her long silence was clear — she was not satisfied with what had been proposed.",
+      "correctAnswer": "implication"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Academic writing demands a formal _____ — casual expressions and colloquial phrases are generally avoided.",
+      "correctAnswer": "register"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "If she _____ more patient by nature, she would have finished the project on time. (Mixed Conditional B)",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Mixed Conditional Type B expresses...",
+      "options": [
+        "A past action that still affects the present moment",
+        "A present state that explains why something did or didn't happen in the past",
+        "A habit that existed in the past but no longer exists",
+        "A future plan based on current conditions"
+      ],
+      "correctAnswer": "A present state that explains why something did or didn't happen in the past"
+    },
+    {
+      "id": 3,
+      "type": "complete",
+      "question": "If he _____ so impulsive by nature, he _____ quit his job without having another one lined up.",
+      "correctAnswer": "weren't / wouldn't have"
+    },
+    {
+      "id": 4,
+      "type": "fill-blank",
+      "question": "If I _____ harder during that course, I would be in a much stronger position now. (study)",
+      "correctAnswer": "had studied"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Identify the conditional type: \"If she were more organised, she would have met the deadline.\"",
+      "options": [
+        "Third Conditional",
+        "Mixed Conditional Type A",
+        "Mixed Conditional Type B",
+        "Second Conditional"
+      ],
+      "correctAnswer": "Mixed Conditional Type B"
+    },
+    {
+      "id": 6,
+      "type": "translate",
+      "question": "Rewrite using Mixed Conditional Type B: \"She is very shy. She didn't speak up at the meeting.\"",
+      "correctAnswer": "if she weren't so shy, she would have spoken up at the meeting"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "If I _____ a native speaker, I _____ understood that cultural reference immediately.",
+      "correctAnswer": "were / would have"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "The instruction was so _____ that even the most experienced team members couldn't agree on how to proceed.",
+      "correctAnswer": "ambiguous"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which sentence is Mixed Conditional Type A?",
+      "options": [
+        "If he had studied, he would have passed.",
+        "If he were smarter, he would pass easily.",
+        "If he hadn't dropped out, he would have better opportunities now.",
+        "If he doesn't study, he won't pass."
+      ],
+      "correctAnswer": "If he hadn't dropped out, he would have better opportunities now."
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "If they _____ more flexible as a team, they _____ reached an agreement at the very first meeting.",
+      "correctAnswer": "were / would have"
+    },
+    {
+      "id": 11,
+      "type": "complete",
+      "question": "She was able to _____ her passion for the project through her detailed, well-structured presentation.",
+      "correctAnswer": "convey"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Rewrite using Mixed Conditional Type A: \"We didn't plan carefully. We're in serious trouble now.\"",
+      "correctAnswer": "if we had planned carefully, we wouldn't be in trouble now"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "If he _____ so risk-averse by personality, he _____ accepted the partnership when it was first offered.",
+      "correctAnswer": "weren't / would have"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Choose the correct structure for Mixed Conditional Type B:",
+      "options": [
+        "If + simple past → would + base verb",
+        "If + had + pp → would + base verb",
+        "If + present simple → will + base verb",
+        "If + were/weren't → would have + past participle"
+      ],
+      "correctAnswer": "If + were/weren't → would have + past participle"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "His use of _____ vocabulary — never vague, always exact — made the essay truly outstanding.",
+      "correctAnswer": "precise"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "If I _____ a more experienced negotiator at the time, I _____ that situation very differently.",
+      "correctAnswer": "were / would have handled"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "In both types of mixed conditional, the result clause always contains...",
+      "options": [
+        "A specific time expression",
+        "\"Were\" or \"weren't\"",
+        "\"Would\" in some form",
+        "\"Had\" + past participle"
+      ],
+      "correctAnswer": "\"Would\" in some form"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "There is a subtle _____ between \"imply\" and \"suggest\" that advanced learners should be aware of.",
+      "correctAnswer": "nuance"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Rewrite using Mixed Conditional Type B: \"He's very direct. He probably offended them at the conference.\"",
+      "correctAnswer": "if he weren't so direct, he wouldn't have offended them at the conference"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "The _____ of her argument was remarkable — each idea followed naturally and logically from the last.",
+      "correctAnswer": "coherence"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What triggers inversion for emphasis in a sentence?",
+      "options": [
+        "Any adverb placed at the beginning",
+        "A conditional clause at the beginning",
+        "A negative or restrictive adverb placed at the beginning",
+        "A noun clause at the beginning"
+      ],
+      "correctAnswer": "A negative or restrictive adverb placed at the beginning"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "_____ have I seen such a coherent and well-structured argument from a first-year student.",
+      "correctAnswer": "Never"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Rewrite using inversion: \"I have never witnessed such a precise use of language in a student essay.\"",
+      "correctAnswer": "never have i witnessed such a precise use of language in a student essay"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Not only _____ she complete the assignment ahead of schedule, but she also added three thoroughly researched sources.",
+      "correctAnswer": "did"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Rarely _____ the committee approve a proposal on the very first submission.",
+      "correctAnswer": "does"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence uses inversion correctly?",
+      "options": [
+        "Rarely he makes such an error.",
+        "Rarely he does make such an error.",
+        "Rarely does he make such a careless error.",
+        "Rarely makes he such an error."
+      ],
+      "correctAnswer": "Rarely does he make such a careless error."
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Rewrite using inversion: \"She had barely sat down when the phone rang.\"",
+      "correctAnswer": "hardly had she sat down when the phone rang"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "No sooner _____ the meeting begun than someone raised an urgent and unexpected objection.",
+      "correctAnswer": "had"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "Seldom _____ we witnessed such a compelling combination of nuance and precision in a single speech.",
+      "correctAnswer": "have"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "When there is no auxiliary verb in the original sentence, what do we add to form inversion?",
+      "options": [
+        "Have / Has / Had",
+        "Do / Does / Did",
+        "Will / Would",
+        "Be / Am / Is / Are"
+      ],
+      "correctAnswer": "Do / Does / Did"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Not only _____ the plan fail spectacularly, but it also caused lasting damage to the company's reputation.",
+      "correctAnswer": "did"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Rewrite using inversion: \"The team has rarely encountered a challenge so ambiguous.\"",
+      "correctAnswer": "rarely has the team encountered a challenge so ambiguous"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Hardly _____ I arrived at the venue _____ the opening speech began without warning.",
+      "correctAnswer": "had / when"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "What effect does inversion typically create in formal writing or speech?",
+      "options": [
+        "A softer, more polite tone",
+        "A dramatic, emphatic, and formal tone",
+        "A more conversational and accessible tone",
+        "A tone of hesitation and uncertainty"
+      ],
+      "correctAnswer": "A dramatic, emphatic, and formal tone"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "_____ sooner had she submitted the final report than her supervisor requested extensive revisions.",
+      "correctAnswer": "No"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Rewrite using inversion: \"We have seldom encountered such a nuanced piece of academic writing.\"",
+      "correctAnswer": "seldom have we encountered such a nuanced piece of academic writing"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Not only _____ the researcher's findings challenge existing theories, but they also opened entirely new fields of inquiry.",
+      "correctAnswer": "did"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Seldom _____ a student demonstrate such a thorough understanding of advanced syntax in their first year.",
+      "correctAnswer": "does"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "\"No sooner... than\" is used to express...",
+      "options": [
+        "A hypothetical future event",
+        "A cause and its delayed consequence",
+        "Two events that happened almost simultaneously",
+        "A repeated past habit"
+      ],
+      "correctAnswer": "Two events that happened almost simultaneously"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Rewrite using inversion: \"The board has never approved such an ambiguous and poorly written proposal.\"",
+      "correctAnswer": "never has the board approved such an ambiguous and poorly written proposal"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What is a cleft sentence?",
+      "options": [
+        "A sentence with a missing subject or verb",
+        "A sentence beginning with a negative adverb",
+        "A sentence split into two clauses to emphasise one specific element",
+        "A conditional sentence combining two different time frames"
+      ],
+      "correctAnswer": "A sentence split into two clauses to emphasise one specific element"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "_____ was the team's extraordinary coherence that ultimately secured the contract.",
+      "correctAnswer": "It"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Rewrite as an It-cleft: \"The lack of preparation caused the presentation to fail.\"",
+      "correctAnswer": "it was the lack of preparation that caused the presentation to fail"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "What I _____ is more time to think — not more instructions to follow and memorise.",
+      "correctAnswer": "need"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence is a correct \"What-cleft\"?",
+      "options": [
+        "What we need it is clear communication.",
+        "It is what we need clear communication.",
+        "What we need are clear communication.",
+        "What we need is clear communication."
+      ],
+      "correctAnswer": "What we need is clear communication."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "It was her ability to _____ complex ideas in simple terms that made her such an effective communicator.",
+      "correctAnswer": "convey"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Rewrite using a What-cleft: \"She needs your complete honesty, not your approval.\"",
+      "correctAnswer": "what she needs is your complete honesty, not your approval"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "The reason _____ he resigned _____ that he felt his contributions were never properly acknowledged.",
+      "correctAnswer": "why / was"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "\"It was John who broke the window.\" Which element is being emphasised by this cleft structure?",
+      "options": [
+        "The action of breaking",
+        "The time the event occurred",
+        "The window — the object affected",
+        "John — the person responsible"
+      ],
+      "correctAnswer": "John — the person responsible"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "All I _____ is one clear, unambiguous answer — the matter has been left open for far too long.",
+      "correctAnswer": "want|need"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Rewrite as an It-cleft: \"Her precision impressed me most, not her speed.\"",
+      "correctAnswer": "it was her precision that impressed me most, not her speed"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "What _____ me most about this text is the _____ of the argument — every sentence builds on the last.",
+      "correctAnswer": "strikes / coherence"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "\"The reason why she left was that she felt undervalued.\" What type of cleft is this?",
+      "options": [
+        "A What-cleft using \"What... is...\"",
+        "An It-cleft using \"It was... that...\"",
+        "An All-cleft using \"All... is...\"",
+        "A reason-cleft using \"The reason why... was that...\""
+      ],
+      "correctAnswer": "A reason-cleft using \"The reason why... was that...\""
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "It was the _____ of the instructions — not their length — that left the entire team confused.",
+      "correctAnswer": "ambiguity"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Rewrite as a cleft sentence: \"His tone conveyed far more meaning than his actual words did.\"",
+      "correctAnswer": "it was his tone that conveyed far more meaning than his actual words did|what conveyed far more meaning than his words was his tone"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "What _____ most about advanced grammar is the way it allows speakers to _____ subtle meaning with real precision.",
+      "correctAnswer": "fascinates me / convey"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "\"All I want is a clear answer.\" What does this cleft structure emphasise?",
+      "options": [
+        "The frustration of a long wait",
+        "The identity of the person asking",
+        "The complexity of the answer required",
+        "The simplicity of the request — a clear answer is all that is wanted"
+      ],
+      "correctAnswer": "The simplicity of the request — a clear answer is all that is wanted"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "It _____ the subtle nuance of a single word _____ completely altered the meaning of the entire contract.",
+      "correctAnswer": "was / that"
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "What the data strongly _____ is that _____ use of language is directly correlated with academic performance.",
+      "correctAnswer": "suggests / precise"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Rewrite as a What-cleft: \"I believe that consistent, deliberate practice matters most.\"",
+      "correctAnswer": "what i believe matters most is consistent, deliberate practice|what i believe is that consistent practice matters most"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "If she _____ so hesitant by nature, she would have applied for the position when it was available. (Mixed B)",
+      "correctAnswer": "weren't"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Identify the structure: \"Never have I read such an ambiguous piece of legislation.\"",
+      "options": [
+        "Second Conditional",
+        "Mixed Conditional Type A",
+        "Inversion for emphasis",
+        "Cleft sentence"
+      ],
+      "correctAnswer": "Inversion for emphasis"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Rewrite using inversion: \"The researcher had barely published her findings when critics began responding.\"",
+      "correctAnswer": "hardly had the researcher published her findings when critics began responding"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "It was the speaker's remarkable ability to _____ nuance through tone — not just words — _____ captivated the entire audience.",
+      "correctAnswer": "convey / that"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "If they _____ more resources earlier in the process, the team _____ struggling with the workload today.",
+      "correctAnswer": "had allocated / wouldn't be"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence uses a cleft structure correctly?",
+      "options": [
+        "What she conveyed them was not the facts.",
+        "What conveyed she was not the facts themselves.",
+        "It were the facts that she not conveyed precisely.",
+        "What she conveyed was not the facts, but the implication behind them."
+      ],
+      "correctAnswer": "What she conveyed was not the facts, but the implication behind them."
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Rewrite using Mixed Conditional Type A: \"They didn't hire a specialist. The project is failing now.\"",
+      "correctAnswer": "if they had hired a specialist, the project wouldn't be failing now"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Not only _____ the professor challenge every assumption, but he also insisted students _____ on each point thoroughly.",
+      "correctAnswer": "did / elaborate"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "What the study reveals is that _____ in language is more difficult to achieve than grammatical accuracy — it requires genuine understanding.",
+      "correctAnswer": "coherence"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "\"If I were more extroverted, I would have made more connections at that conference.\" This is...",
+      "options": [
+        "Mixed Conditional Type A",
+        "Second Conditional",
+        "Mixed Conditional Type B",
+        "Third Conditional"
+      ],
+      "correctAnswer": "Mixed Conditional Type B"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "_____ sooner had the new policy been announced _____ employees began raising serious concerns.",
+      "correctAnswer": "No / than"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Rewrite as a cleft sentence: \"The way she elaborated her argument convinced the entire panel.\"",
+      "correctAnswer": "it was the way she elaborated her argument that convinced the entire panel"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "If I _____ better _____ awareness back then, I _____ my words far more carefully.",
+      "correctAnswer": "had / register / would have chosen"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which of the following CANNOT trigger inversion?",
+      "options": [
+        "Never",
+        "Seldom",
+        "Quickly",
+        "Not only"
+      ],
+      "correctAnswer": "Quickly"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "If he _____ a more _____ communicator by nature, he _____ that misunderstanding entirely.",
+      "correctAnswer": "were / precise / would have avoided"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "Seldom _____ a piece of writing manage to be both _____ in its vocabulary and deeply compelling in its argument.",
+      "correctAnswer": "does / precise"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "What is the \"implication\" of a statement?",
+      "options": [
+        "A grammatical error in the syntax of a sentence",
+        "A formal choice of register for academic writing",
+        "A nuanced pronunciation of a technical term",
+        "A meaning that is suggested but not directly stated"
+      ],
+      "correctAnswer": "A meaning that is suggested but not directly stated"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "What struck the examiner most _____ not the student's vocabulary range, but the _____ with which she used it.",
+      "correctAnswer": "was / precision"
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "It _____ the _____ of the clause that led to the dispute — both parties had interpreted the same sentence differently.",
+      "correctAnswer": "was / ambiguity"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly combines a cleft structure with vocabulary from this lesson?",
+      "options": [
+        "What the speaker it conveyed was a coherence sense of precise.",
+        "What the speaker conveyed was a sense of coherence — every idea was precise and well-connected.",
+        "The speaker conveyed what it was coherence and nuance.",
+        "It were coherence what the speaker conveyed precisely."
+      ],
+      "correctAnswer": "What the speaker conveyed was a sense of coherence — every idea was precise and well-connected."
+    }
+  ]
+}

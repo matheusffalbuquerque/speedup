@@ -1,780 +1,747 @@
 {
+  "lesson": 5,
+  "level": "seed",
+  "topic": "Food & Drinks",
   "monday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "O que significa 'wake up'?",
-      "options": [
-        "Dormir",
-        "Trabalhar",
-        "Acordar",
-        "Estudar"
-      ],
-      "correctAnswer": "Acordar"
+      "question": "What does 'apple' mean?",
+      "options": ["Banana", "Laranja", "Maçã", "Uva"],
+      "correctAnswer": "Maçã"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ up at 7 AM' (eu acordo)",
-      "correctAnswer": "wake"
+      "type": "multiple-choice",
+      "question": "What does 'bread' mean?",
+      "options": ["Leite", "Pão", "Manteiga", "Queijo"],
+      "correctAnswer": "Pão"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza para inglês: 'Esta é minha mãe'",
-      "correctAnswer": "this is my mother"
+      "type": "multiple-choice",
+      "question": "What does 'juice' mean?",
+      "options": ["Água", "Leite", "Café", "Suco"],
+      "correctAnswer": "Suco"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Como se diz 'tomar banho' em inglês?",
-      "options": [
-        "Brush teeth",
-        "Go to bed",
-        "Take a shower",
-        "Wake up"
-      ],
-      "correctAnswer": "Take a shower"
+      "question": "What does 'chicken' mean?",
+      "options": ["Peixe", "Carne", "Frango", "Porco"],
+      "correctAnswer": "Frango"
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: 'I eat _____ at 8 AM' (café da manhã)",
-      "correctAnswer": "breakfast"
+      "type": "multiple-choice",
+      "question": "What does 'vegetables' mean?",
+      "options": ["Frutas", "Legumes / Verduras", "Carnes", "Doces"],
+      "correctAnswer": "Legumes / Verduras"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Traduza: 'Eu acordo de manhã'",
-      "correctAnswer": "i wake up in the morning"
+      "type": "multiple-choice",
+      "question": "Which of the following is a drink?",
+      "options": ["Apple", "Rice", "Chicken", "Water"],
+      "correctAnswer": "Water"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "O que significa 'study'?",
-      "options": [
-        "Comer",
-        "Estudar",
-        "Dormir",
-        "Trabalhar"
-      ],
-      "correctAnswer": "Estudar"
+      "question": "Which of the following is NOT a food?",
+      "options": ["Bread", "Juice", "Rice", "Chicken"],
+      "correctAnswer": "Juice"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: 'I go to _____ at 10 PM' (vou para a cama)",
-      "correctAnswer": "bed"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ apples.' (I like apples)",
+      "correctAnswer": "like"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "O que significa 'dinner'?",
-      "options": [
-        "Lanche",
-        "Almoço",
-        "Café da manhã",
-        "Jantar"
-      ],
-      "correctAnswer": "Jantar"
+      "type": "fill-blank",
+      "question": "Complete: 'I don't _____ coffee.' (I don't like coffee)",
+      "correctAnswer": "like"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ TV at night' (assisto)",
-      "correctAnswer": "watch"
+      "question": "Complete: '_____ you like vegetables?' (question form)",
+      "correctAnswer": "Do"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Traduza: 'Eu como almoço ao meio-dia'",
-      "correctAnswer": "i eat lunch at noon|i have lunch at noon"
+      "type": "fill-blank",
+      "question": "Complete: 'Yes, I _____.' (short positive answer)",
+      "correctAnswer": "do"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Como se diz 'trabalhar' em inglês?",
-      "options": [
-        "Study",
-        "Cook",
-        "Sleep",
-        "Work"
-      ],
-      "correctAnswer": "Work"
+      "type": "fill-blank",
+      "question": "Complete: 'No, I _____.' (short negative answer)",
+      "correctAnswer": "don't"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: '_____ is my father' (Este é)",
-      "correctAnswer": "This"
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de maçã.'",
+      "correctAnswer": "i like apple|i like apples"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "O que significa 'sleep'?",
-      "options": [
-        "Comer",
-        "Trabalhar",
-        "Acordar",
-        "Dormir"
-      ],
-      "correctAnswer": "Dormir"
+      "type": "translate",
+      "question": "Translate to English: 'Eu não gosto de arroz.'",
+      "correctAnswer": "i don't like rice"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'My _____ works at a school' (mãe)",
-      "correctAnswer": "mother"
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de café?'",
+      "correctAnswer": "do you like coffee?"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Traduza: 'Eu estudo inglês'",
-      "correctAnswer": "i study english"
+      "question": "Translate to English: 'Ela gosta de pão.'",
+      "correctAnswer": "she likes bread"
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "O que significa 'go to bed'?",
+      "question": "Which sentence is correct?",
       "options": [
-        "Tomar banho",
-        "Comer",
-        "Ir para a cama",
-        "Acordar"
+        "I likes apples.",
+        "I like apples.",
+        "I am like apples.",
+        "I do like apples not."
       ],
-      "correctAnswer": "Ir para a cama"
+      "correctAnswer": "I like apples."
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "Complete: 'I _____ coffee every morning' (bebo/tomo)",
-      "correctAnswer": "drink"
+      "type": "multiple-choice",
+      "question": "What does 'rice' mean?",
+      "options": ["Feijão", "Trigo", "Arroz", "Milho"],
+      "correctAnswer": "Arroz"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "Traduza: 'Eu tenho um irmão'",
-      "correctAnswer": "i have a brother"
+      "type": "multiple-choice",
+      "question": "What does 'fruit' mean?",
+      "options": ["Verdura", "Fruta", "Carne", "Pão"],
+      "correctAnswer": "Fruta"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "O que significa 'lunch'?",
-      "options": [
-        "Café da manhã",
-        "Lanche",
-        "Almoço",
-        "Jantar"
-      ],
-      "correctAnswer": "Almoço"
+      "question": "What does 'water' mean?",
+      "options": ["Leite", "Suco", "Chá", "Água"],
+      "correctAnswer": "Água"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "translate",
-      "question": "Traduza: 'Você acorda cedo'",
-      "correctAnswer": "you wake up early"
+      "type": "multiple-choice",
+      "question": "How do you ask someone about their food preferences?",
+      "options": [
+        "Are you like pizza?",
+        "Do you like pizza?",
+        "Does you like pizza?",
+        "You like pizza?"
+      ],
+      "correctAnswer": "Do you like pizza?"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'They _____ English every day' (estudam)",
-      "correctAnswer": "study"
+      "type": "multiple-choice",
+      "question": "What is the correct short answer for 'Do you like juice?' when you do like it?",
+      "options": ["Yes, I like.", "Yes, I am.", "Yes, I do.", "Yes, I does."],
+      "correctAnswer": "Yes, I do."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Como se diz 'de manhã' em inglês?",
-      "options": [
-        "At night",
-        "In the evening",
-        "In the morning",
-        "On Monday"
-      ],
-      "correctAnswer": "In the morning"
+      "question": "What is the correct short answer for 'Do you like coffee?' when you don't like it?",
+      "options": ["No, I don't.", "No, I not.", "No, I doesn't.", "No, I am not."],
+      "correctAnswer": "No, I don't."
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'I wake up _____ the morning' (preposição correta)",
-      "correctAnswer": "in"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She like chicken.",
+        "She likes chicken.",
+        "She do like chicken.",
+        "She liking chicken."
+      ],
+      "correctAnswer": "She likes chicken."
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: 'We _____ dinner at 7 PM' (jantamos)",
-      "correctAnswer": "eat|have"
+      "type": "multiple-choice",
+      "question": "What does 'coffee' mean?",
+      "options": ["Chá", "Suco", "Café", "Leite"],
+      "correctAnswer": "Café"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Traduza: 'Eles trabalham todo dia'",
-      "correctAnswer": "they work every day"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like chicken.' (she likes — 3rd person)",
+      "correctAnswer": "likes"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Qual preposição usamos com horas exatas? Ex: '___ 7 AM'",
-      "options": [
-        "On",
-        "In",
-        "By",
-        "At"
-      ],
-      "correctAnswer": "At"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ like vegetables.' (he doesn't like)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: 'I go to work _____ 8 AM' (às 8h)",
-      "correctAnswer": "at"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ like fruit.' (they like)",
+      "correctAnswer": "like"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'You _____ to bed at 10 PM' (vai)",
-      "correctAnswer": "go"
+      "question": "Complete: '_____ she like rice?' (question — 3rd person)",
+      "correctAnswer": "Does"
     },
     {
       "id": 10,
-      "type": "translate",
-      "question": "Traduza: 'Nós comemos café da manhã juntos'",
-      "correctAnswer": "we eat breakfast together"
+      "type": "fill-blank",
+      "question": "Complete: 'Do you like _____?' (fill with a drink — e.g. juice)",
+      "correctAnswer": "juice|coffee|water"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Como se diz 'todos os dias' em inglês?",
-      "options": [
-        "On Sunday",
-        "At night",
-        "In the morning",
-        "Every day"
-      ],
-      "correctAnswer": "Every day"
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de fruta?'",
+      "correctAnswer": "do you like fruit?"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'I don't work _____ Sundays' (aos domingos)",
-      "correctAnswer": "on"
+      "type": "translate",
+      "question": "Translate to English: 'Ele não gosta de café.'",
+      "correctAnswer": "he doesn't like coffee"
     },
     {
       "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: 'They _____ TV in the evening' (assistem)",
-      "correctAnswer": "watch"
+      "type": "translate",
+      "question": "Translate to English: 'Eles gostam de suco.'",
+      "correctAnswer": "they like juice"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Traduza: 'Eu tomo banho de manhã'",
-      "correctAnswer": "i take a shower in the morning|i shower in the morning"
+      "question": "Translate to English: 'Eu gosto de frango e arroz.'",
+      "correctAnswer": "i like chicken and rice"
     },
     {
       "id": 15,
       "type": "multiple-choice",
-      "question": "Como se diz 'à noite' (horário noturno específico)?",
-      "options": [
-        "By night",
-        "At night",
-        "On the night",
-        "In the night"
-      ],
-      "correctAnswer": "At night"
+      "question": "Which word means 'legumes / verduras'?",
+      "options": ["Fruit", "Bread", "Vegetables", "Rice"],
+      "correctAnswer": "Vegetables"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'I exercise _____ the morning' (de manhã)",
-      "correctAnswer": "in"
+      "type": "multiple-choice",
+      "question": "Which word means 'frango'?",
+      "options": ["Beef", "Pork", "Fish", "Chicken"],
+      "correctAnswer": "Chicken"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'We _____ home at 8 AM' (saímos)",
-      "correctAnswer": "leave"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses 'don't like'?",
+      "options": [
+        "I don't likes apples.",
+        "I don't like apples.",
+        "I doesn't like apples.",
+        "I not like apples."
+      ],
+      "correctAnswer": "I don't like apples."
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Traduza: 'Eu como jantar às 7'",
-      "correctAnswer": "i eat dinner at 7|i have dinner at 7|i eat dinner at 7 pm"
+      "type": "multiple-choice",
+      "question": "How do you say 'Ela gosta de...' in English?",
+      "options": ["She like...", "She likes...", "She do like...", "She is like..."],
+      "correctAnswer": "She likes..."
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Qual preposição usamos com dias da semana? Ex: '___ Monday'",
-      "options": [
-        "At",
-        "On",
-        "By",
-        "In"
-      ],
-      "correctAnswer": "On"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ like bread.' (we don't like)",
+      "correctAnswer": "don't"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Complete: 'I eat lunch _____ noon' (ao meio-dia)",
-      "correctAnswer": "at"
+      "type": "fill-blank",
+      "question": "Complete: 'Does he like _____?' (fruit)",
+      "correctAnswer": "fruit"
     }
   ],
   "wednesday": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "Complete: 'He _____ up at 6 AM' (acorda — he/she)",
-      "correctAnswer": "wakes"
+      "type": "multiple-choice",
+      "question": "Is 'water' countable or uncountable?",
+      "options": ["Countable", "Uncountable", "Both", "Neither"],
+      "correctAnswer": "Uncountable"
     },
     {
       "id": 2,
-      "type": "translate",
-      "question": "Traduza: 'Ela trabalha todo dia'",
-      "correctAnswer": "she works every day"
+      "type": "multiple-choice",
+      "question": "Is 'apple' countable or uncountable?",
+      "options": ["Countable", "Uncountable", "Both", "Neither"],
+      "correctAnswer": "Countable"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Como conjugamos 'study' para she?",
+      "question": "Which sentence is correct?",
       "options": [
-        "Studys",
-        "Studiess",
-        "Studies",
-        "Study"
+        "I drink a water.",
+        "I drink the a water.",
+        "I drink water.",
+        "I drink waters."
       ],
-      "correctAnswer": "Studies"
+      "correctAnswer": "I drink water."
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'She _____ TV every night' (assiste — she)",
-      "correctAnswer": "watches"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I eat a rice.",
+        "I eat rice.",
+        "I eat rices.",
+        "I eat the rice a."
+      ],
+      "correctAnswer": "I eat rice."
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: 'He _____ English at school' (estuda — he)",
-      "correctAnswer": "studies"
+      "type": "multiple-choice",
+      "question": "Which article do we use before a countable noun starting with a vowel? (e.g. ___ apple)",
+      "options": ["A", "An", "The", "Some"],
+      "correctAnswer": "An"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Traduza: 'Ele vai para a cama às 11'",
-      "correctAnswer": "he goes to bed at 11|he goes to bed at 11 pm"
+      "type": "multiple-choice",
+      "question": "Which of the following is uncountable?",
+      "options": ["Apple", "Banana", "Rice", "Egg"],
+      "correctAnswer": "Rice"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Como conjugamos 'go' para he?",
-      "options": [
-        "Goies",
-        "Goes",
-        "Gos",
-        "Go"
-      ],
-      "correctAnswer": "Goes"
+      "question": "Which of the following is countable?",
+      "options": ["Water", "Coffee", "Juice", "Apple"],
+      "correctAnswer": "Apple"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: 'She _____ breakfast at 7 AM' (come — she)",
-      "correctAnswer": "eats"
+      "type": "fill-blank",
+      "question": "Complete: 'I eat _____ apple every day.' (article for countable, vowel)",
+      "correctAnswer": "an"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ at a hospital' (trabalha — he)",
-      "correctAnswer": "works"
+      "question": "Complete: 'Can I have _____ juice?' (some/a — uncountable)",
+      "correctAnswer": "some"
     },
     {
       "id": 10,
-      "type": "translate",
-      "question": "Traduza: 'Ela toma banho de manhã'",
-      "correctAnswer": "she takes a shower in the morning|she showers in the morning"
+      "type": "fill-blank",
+      "question": "Complete: 'I eat _____ bread every morning.' (some — uncountable)",
+      "correctAnswer": "some"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Como conjugamos 'have' para she?",
-      "options": [
-        "Havies",
-        "Have",
-        "Has",
-        "Haves"
-      ],
-      "correctAnswer": "Has"
+      "type": "fill-blank",
+      "question": "Complete: 'She drinks _____ coffee.' (uncountable — no article)",
+      "correctAnswer": "some|"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'He _____ his teeth every morning' (escova — he)",
-      "correctAnswer": "brushes"
+      "type": "fill-blank",
+      "question": "Complete: 'I want _____ apple.' (article — countable + vowel)",
+      "correctAnswer": "an"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ coffee every morning' (bebe — she)",
-      "correctAnswer": "drinks"
+      "question": "Complete: 'They eat _____ vegetables every day.' (some)",
+      "correctAnswer": "some"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Traduza: 'Ele acorda às 7 da manhã'",
-      "correctAnswer": "he wakes up at 7 am|he wakes up at 7 in the morning"
+      "question": "Translate to English: 'Eu bebo água todo dia.'",
+      "correctAnswer": "i drink water every day"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Qual está correto para she + study?",
-      "options": [
-        "She studys at night",
-        "She study at night",
-        "She is study at night",
-        "She studies at night"
-      ],
-      "correctAnswer": "She studies at night"
+      "type": "translate",
+      "question": "Translate to English: 'Você quer um pouco de arroz?'",
+      "correctAnswer": "do you want some rice?"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'He _____ to work at 8 AM' (vai — he)",
-      "correctAnswer": "goes"
+      "type": "translate",
+      "question": "Translate to English: 'Eu como uma maçã todo dia.'",
+      "correctAnswer": "i eat an apple every day"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ dinner at 7 PM' (come/janta — she)",
-      "correctAnswer": "eats|has"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I drink a coffee.",
+        "I drink an coffee.",
+        "I drink coffee.",
+        "I drink the coffee a."
+      ],
+      "correctAnswer": "I drink coffee."
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Traduza: 'Ela lê antes de dormir'",
-      "correctAnswer": "she reads before bed|she reads before sleeping"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I want a bread.",
+        "I want an bread.",
+        "I want some bread.",
+        "I want breads."
+      ],
+      "correctAnswer": "I want some bread."
     },
     {
       "id": 19,
       "type": "multiple-choice",
-      "question": "Complete: 'My father ___ up very early.'",
-      "options": [
-        "Wake",
-        "Wakeup",
-        "Wakees",
-        "Wakes"
-      ],
-      "correctAnswer": "Wakes"
+      "question": "Which word is countable?",
+      "options": ["Water", "Rice", "Chicken (as meat)", "Egg"],
+      "correctAnswer": "Egg"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Complete: 'He _____ English after work' (estuda — he)",
-      "correctAnswer": "studies"
+      "type": "multiple-choice",
+      "question": "What does 'some' mean in 'I want some juice'?",
+      "options": ["Nenhum", "Muito", "Um pouco de / alguns", "Todos"],
+      "correctAnswer": "Um pouco de / alguns"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Como formamos a negativa para I/You/We/They?",
+      "question": "Which sentence correctly uses 'doesn't like'?",
       "options": [
-        "doesn't + base verb",
-        "not + verb",
-        "no + verb",
-        "don't + base verb"
+        "He doesn't likes vegetables.",
+        "He doesn't like vegetables.",
+        "He don't like vegetables.",
+        "He not like vegetables."
       ],
-      "correctAnswer": "don't + base verb"
+      "correctAnswer": "He doesn't like vegetables."
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ wake up early' (não acordo cedo)",
-      "correctAnswer": "don't"
+      "type": "multiple-choice",
+      "question": "What does 'I like...' become when negative?",
+      "options": [
+        "I not like...",
+        "I likes not...",
+        "I don't like...",
+        "I doesn't like..."
+      ],
+      "correctAnswer": "I don't like..."
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza: 'Eu não trabalho aos domingos'",
-      "correctAnswer": "i don't work on sundays"
+      "type": "multiple-choice",
+      "question": "What does 'She likes...' become when negative?",
+      "options": [
+        "She don't like...",
+        "She not likes...",
+        "She doesn't like...",
+        "She doesn't likes..."
+      ],
+      "correctAnswer": "She doesn't like..."
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'She _____ study at night' (ela não estuda)",
-      "correctAnswer": "doesn't"
+      "type": "multiple-choice",
+      "question": "What is the correct answer to 'Does she like fruit?' when she does?",
+      "options": ["Yes, she do.", "Yes, she like.", "Yes, she does.", "Yes, she is."],
+      "correctAnswer": "Yes, she does."
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: 'They _____ eat breakfast' (eles não comem)",
-      "correctAnswer": "don't"
+      "type": "multiple-choice",
+      "question": "What is the correct answer to 'Do they like chicken?' when they don't?",
+      "options": [
+        "No, they doesn't.",
+        "No, they don't.",
+        "No, they not.",
+        "No, they do not like."
+      ],
+      "correctAnswer": "No, they don't."
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Traduza: 'Ele não assiste TV'",
-      "correctAnswer": "he doesn't watch tv"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ like vegetables.' (doesn't — 3rd person negative)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Qual forma está CORRETA?",
-      "options": [
-        "He don't work",
-        "He not works",
-        "He doesn't works",
-        "He doesn't work"
-      ],
-      "correctAnswer": "He doesn't work"
+      "type": "fill-blank",
+      "question": "Complete: '_____ she like chicken?' (3rd person question)",
+      "correctAnswer": "Does"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: 'We _____ work on weekends' (não trabalhamos)",
-      "correctAnswer": "don't"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like fruit.' (likes — 3rd person affirmative)",
+      "correctAnswer": "likes"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ eat dinner late' (não janta tarde)",
-      "correctAnswer": "doesn't"
+      "question": "Complete: 'I _____ coffee but I like tea.' (don't like)",
+      "correctAnswer": "don't like"
     },
     {
       "id": 10,
-      "type": "translate",
-      "question": "Traduza: 'Você não estuda todo dia'",
-      "correctAnswer": "you don't study every day"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ like rice.' (affirmative — they)",
+      "correctAnswer": "like"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Como formamos a negativa para He/She?",
-      "options": [
-        "don't + base verb",
-        "doesn't + base verb",
-        "doesn't + verb-s",
-        "not + verb"
-      ],
-      "correctAnswer": "doesn't + base verb"
+      "type": "fill-blank",
+      "question": "Complete: '_____ you like bread?' (question for I/you/we/they)",
+      "correctAnswer": "Do"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'He _____ wake up early' (ele não acorda)",
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like coffee.' (doesn't — negative 3rd person)",
       "correctAnswer": "doesn't"
     },
     {
       "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ go to bed late' (não vou tarde para a cama)",
-      "correctAnswer": "don't"
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de maçã, mas não gosto de pão.'",
+      "correctAnswer": "i like apple but i don't like bread|i like apples but i don't like bread"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Traduza: 'Ela não trabalha aos sábados'",
-      "correctAnswer": "she doesn't work on saturdays"
+      "question": "Translate to English: 'Ele gosta de suco de laranja.'",
+      "correctAnswer": "he likes orange juice"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Qual forma está INCORRETA?",
-      "options": [
-        "I don't work",
-        "She doesn't work",
-        "She doesn't works",
-        "He doesn't study"
-      ],
-      "correctAnswer": "She doesn't works"
+      "type": "translate",
+      "question": "Translate to English: 'Nós gostamos de legumes.'",
+      "correctAnswer": "we like vegetables"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'They _____ drink coffee' (eles não tomam)",
-      "correctAnswer": "don't"
+      "type": "translate",
+      "question": "Translate to English: 'Ela não gosta de água.'",
+      "correctAnswer": "she doesn't like water"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'He _____ exercise in the morning' (não faz exercício)",
-      "correctAnswer": "doesn't"
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de legumes?'",
+      "correctAnswer": "do you like vegetables?"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Traduza: 'Nós não jantamos tarde'",
-      "correctAnswer": "we don't eat dinner late|we don't have dinner late"
+      "type": "multiple-choice",
+      "question": "Which word means 'arroz'?",
+      "options": ["Bread", "Rice", "Chicken", "Fruit"],
+      "correctAnswer": "Rice"
     },
     {
       "id": 19,
       "type": "multiple-choice",
-      "question": "Complete: 'I _____ work on Sundays.'",
-      "options": [
-        "doesn't",
-        "don't",
-        "not",
-        "no"
-      ],
-      "correctAnswer": "don't"
+      "question": "Which word means 'maçã'?",
+      "options": ["Orange", "Banana", "Apple", "Grape"],
+      "correctAnswer": "Apple"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Complete: 'She _____ study on weekends' (ela não estuda)",
-      "correctAnswer": "doesn't"
+      "type": "multiple-choice",
+      "question": "Which sentence asks about preferences correctly for 'he/she/it'?",
+      "options": [
+        "Do he like coffee?",
+        "Does he like coffee?",
+        "Is he like coffee?",
+        "He like coffee?"
+      ],
+      "correctAnswer": "Does he like coffee?"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "translate",
-      "question": "Traduza: 'Você acorda cedo?'",
-      "correctAnswer": "do you wake up early"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I like rice and I doesn't like bread.",
+        "I like rice and I don't like bread.",
+        "I likes rice and I don't like bread.",
+        "I like rice and I am not like bread."
+      ],
+      "correctAnswer": "I like rice and I don't like bread."
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: '_____ she work every day?' (Ela trabalha...?)",
-      "correctAnswer": "Does"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Does she likes apples?",
+        "Do she like apples?",
+        "Does she like apples?",
+        "She does like apples?"
+      ],
+      "correctAnswer": "Does she like apples?"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Como perguntamos sobre a rotina de He/She?",
-      "options": [
-        "Do + he/she + base verb",
-        "Does + he/she + verb-s",
-        "Is + he/she + verb",
-        "Does + he/she + base verb"
-      ],
-      "correctAnswer": "Does + he/she + base verb"
+      "question": "Which food vocabulary word means 'pão'?",
+      "options": ["Butter", "Cheese", "Bread", "Cake"],
+      "correctAnswer": "Bread"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: '_____ you eat breakfast?' (Você come...?)",
-      "correctAnswer": "Do"
+      "type": "multiple-choice",
+      "question": "Which word means 'suco'?",
+      "options": ["Coffee", "Juice", "Tea", "Milk"],
+      "correctAnswer": "Juice"
     },
     {
       "id": 5,
-      "type": "translate",
-      "question": "Traduza: 'Ela sempre estuda à noite'",
-      "correctAnswer": "she always studies at night"
+      "type": "multiple-choice",
+      "question": "Which word means 'fruta'?",
+      "options": ["Vegetable", "Flower", "Fruit", "Food"],
+      "correctAnswer": "Fruit"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ wake up early' (sempre acordo cedo)",
-      "correctAnswer": "always"
+      "question": "Complete: '_____ he like water?' (question — 3rd person)",
+      "correctAnswer": "Does"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Qual palavra significa 'geralmente'?",
-      "options": [
-        "Sometimes",
-        "Always",
-        "Never",
-        "Usually"
-      ],
-      "correctAnswer": "Usually"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ like bread.' (negative — we)",
+      "correctAnswer": "don't"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: 'He _____ exercises in the morning' (geralmente)",
-      "correctAnswer": "usually"
+      "type": "fill-blank",
+      "question": "Complete: 'Do _____ like rice?' (they)",
+      "correctAnswer": "they"
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Traduza: 'Às vezes eu assisto TV à noite'",
-      "correctAnswer": "i sometimes watch tv at night|sometimes i watch tv at night"
+      "type": "fill-blank",
+      "question": "Complete: 'I like coffee but she _____ like it.' (doesn't — 3rd person negative)",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: '_____ they study English?' (Eles estudam...?)",
-      "correctAnswer": "Do"
+      "question": "Complete: 'She _____ vegetables but likes chicken.' (doesn't like)",
+      "correctAnswer": "doesn't like"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Qual é a resposta curta correta para 'Do you work?'",
-      "options": [
-        "Yes, I work.",
-        "Yes, I does.",
-        "Yes, do I.",
-        "Yes, I do."
-      ],
-      "correctAnswer": "Yes, I do."
+      "type": "fill-blank",
+      "question": "Complete: 'I like _____ and fruit.' (vegetables)",
+      "correctAnswer": "vegetables"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'Does he wake _____ early?' (acorda cedo)",
-      "correctAnswer": "up"
+      "type": "fill-blank",
+      "question": "Complete: 'Do you like _____?' (a food you enjoy — e.g. chicken)",
+      "correctAnswer": "chicken|rice|bread|vegetables|fruit|apples"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Traduza: 'Ela nunca dorme tarde'",
-      "correctAnswer": "she never sleeps late"
+      "question": "Translate to English: 'Eu gosto de café com leite.'",
+      "correctAnswer": "i like coffee with milk"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: '_____ your mother work?' (Sua mãe trabalha?)",
-      "correctAnswer": "Does"
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de maçã ou banana?'",
+      "correctAnswer": "do you like apple or banana?|do you like apples or bananas?"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Qual é a resposta curta correta para 'Does she eat breakfast?'",
-      "options": [
-        "Yes, she do.",
-        "Yes, she does.",
-        "Yes, does she.",
-        "Yes, she eats."
-      ],
-      "correctAnswer": "Yes, she does."
+      "type": "translate",
+      "question": "Translate to English: 'Ela gosta de fruta e suco.'",
+      "correctAnswer": "she likes fruit and juice"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'I _____ study at night' (nunca estudo)",
-      "correctAnswer": "never"
+      "type": "translate",
+      "question": "Translate to English: 'Eles não gostam de frango.'",
+      "correctAnswer": "they don't like chicken"
     },
     {
       "id": 17,
       "type": "translate",
-      "question": "Traduza: 'Meu pai geralmente acorda às 6'",
-      "correctAnswer": "my father usually wakes up at 6|my father usually wakes up at 6 am"
+      "question": "Translate to English: 'Ele gosta de pão com manteiga.'",
+      "correctAnswer": "he likes bread with butter"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'Does he _____ to bed late?' (vai)",
-      "correctAnswer": "go"
+      "type": "multiple-choice",
+      "question": "What is the correct positive short answer to 'Do you like water?'",
+      "options": ["Yes, I like.", "Yes, I does.", "Yes, I do.", "Yes, I am."],
+      "correctAnswer": "Yes, I do."
     },
     {
       "id": 19,
       "type": "multiple-choice",
-      "question": "Onde colocamos 'always / usually / never' na frase?",
+      "question": "Which sentence uses the vocabulary from this lesson correctly?",
       "options": [
-        "No início sempre",
-        "Antes do verbo principal",
-        "Depois do verbo principal",
-        "No final da frase"
+        "I like drink juice every morning.",
+        "I like to drinks juice every morning.",
+        "I like juice every morning.",
+        "I am like juice every morning."
       ],
-      "correctAnswer": "Antes do verbo principal"
+      "correctAnswer": "I like juice every morning."
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Traduza: 'O que você faz de manhã?'",
-      "correctAnswer": "what do you do in the morning"
+      "type": "multiple-choice",
+      "question": "What does 'I like / I don't like' express?",
+      "options": [
+        "What you are doing right now",
+        "Your personal preferences",
+        "What you did in the past",
+        "Your daily routine"
+      ],
+      "correctAnswer": "Your personal preferences"
     }
   ]
 }

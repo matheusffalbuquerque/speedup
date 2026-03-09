@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍽️ SpeakUp MasterChef – Lesson 05</title>
+  <style>
+    /* ── RESET & GLOBALS ───────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:    #f5c518;
+      --dark:    #1a1a1a;
+      --panel:   #2a2a2a;
+      --border:  #444;
+      --accent:  #e63946;
+      --green:   #2dc653;
+      --muted:   #999;
+      --white:   #f0f0f0;
+      --radius:  12px;
+      --shadow:  0 4px 24px rgba(0,0,0,.6);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--dark);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 12px 40px;
+    }
+
+    /* ── HEADER ────────────────────────────────────────── */
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.8rem);
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-shadow: 0 2px 12px rgba(245,197,24,.4);
+    }
+    header p { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+
+    /* ── SCREENS ───────────────────────────────────────── */
+    .screen {
+      display: none;
+      width: 100%;
+      max-width: 820px;
+      animation: fadeIn .35s ease;
+    }
+    .screen.active { display: block; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+
+    /* ── CARD ──────────────────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    /* ── INPUTS ────────────────────────────────────────── */
+    .player-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width:520px) { .player-inputs { grid-template-columns: 1fr; } }
+
+    .player-slot {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #333;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .player-slot .num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 700;
+      display: flex; align-items:center; justify-content:center;
+      font-size: .85rem; flex-shrink: 0;
+    }
+    .player-slot input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--white);
+      font-size: 1rem;
+      outline: none;
+    }
+    .player-slot input::placeholder { color: var(--muted); }
+
+    /* ── BUTTONS ───────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 26px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .12s, opacity .12s;
+    }
+    .btn:active { transform: scale(.96); }
+    .btn:disabled { opacity: .45; cursor: not-allowed; }
+    .btn-primary  { background: var(--gold);   color: var(--dark); }
+    .btn-accent   { background: var(--accent);  color: #fff; }
+    .btn-green    { background: var(--green);   color: var(--dark); }
+    .btn-outline  { background: transparent; border: 2px solid var(--gold); color: var(--gold); }
+
+    /* ── PLAYER COUNT PICKER ────────────────────────────── */
+    .count-picker {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .count-btn {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: #333;
+      color: var(--white);
+      font-size: 1.1rem; font-weight: 700;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+    }
+    .count-btn.selected {
+      border-color: var(--gold);
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    /* ── ANNOUNCEMENT ───────────────────────────────────── */
+    .announcement {
+      text-align: center;
+      padding: 32px 20px;
+    }
+    .announcement .big-emoji { font-size: 5rem; line-height: 1; margin-bottom: 12px; }
+    .announcement h2 { font-size: 1.8rem; color: var(--gold); }
+    .announcement p  { color: var(--muted); margin-top: 8px; }
+    .chef-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 10px 28px;
+      border-radius: 40px;
+      margin: 16px 0;
+      letter-spacing: 1px;
+    }
+
+    /* ── DISH TYPE ───────────────────────────────────────── */
+    .dish-options {
+      display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+      margin: 20px 0;
+    }
+    .dish-opt {
+      flex: 1; min-width: 160px; max-width: 220px;
+      background: #333;
+      border: 3px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+    }
+    .dish-opt:hover   { border-color: var(--gold); }
+    .dish-opt.chosen  { border-color: var(--gold); background: #3a3500; }
+    .dish-opt .icon   { font-size: 3rem; }
+    .dish-opt .label  { font-size: 1.1rem; font-weight: 700; margin-top: 8px; color: var(--gold); }
+    .dish-opt .desc   { font-size: .8rem; color: var(--muted); margin-top: 4px; }
+
+    /* ── INGREDIENT GRID ────────────────────────────────── */
+    .ing-section { margin-bottom: 20px; }
+    .ing-section h3 {
+      font-size: .9rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .ing-grid {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .ing-chip {
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 14px;
+      background: #333;
+      border: 2px solid var(--border);
+      border-radius: 40px;
+      cursor: pointer;
+      font-size: .9rem;
+      transition: border-color .12s, background .12s, transform .1s;
+      user-select: none;
+    }
+    .ing-chip:hover  { border-color: var(--gold); transform: scale(1.04); }
+    .ing-chip.picked { border-color: var(--green); background: #0f3a1c; color: #7fff9a; }
+    .ing-chip .em    { font-size: 1.1rem; }
+
+    /* ── SELECTED INGREDIENTS DISPLAY ──────────────────── */
+    .bowl-area {
+      background: #1e1e1e;
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      min-height: 80px;
+      margin-top: 8px;
+    }
+    .bowl-area p { color: var(--muted); font-size: .9rem; }
+    .bowl-chips  { display: flex; flex-wrap: wrap; gap: 8px; }
+    .bowl-chip   {
+      background: var(--gold);
+      color: var(--dark);
+      border-radius: 30px;
+      padding: 6px 14px;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    /* ── JUDGING ────────────────────────────────────────── */
+    .judge-header {
+      display: flex; align-items: center; gap: 12px;
+      background: #333;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+    }
+    .judge-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex; align-items:center; justify-content:center;
+      font-size: 1.3rem; font-weight: 700; flex-shrink:0;
+    }
+    .judge-name   { font-size: 1.1rem; font-weight: 700; }
+    .judge-role   { font-size: .8rem; color: var(--muted); }
+
+    /* Dish display in judge screen */
+    .dish-display {
+      background: #1e1e1e;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 20px;
+    }
+    .dish-display h3 { color: var(--gold); margin-bottom: 10px; font-size: 1rem; }
+    .dish-ing-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .dish-ing-tag {
+      background: #333;
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: .85rem;
+    }
+
+    /* opinion buttons */
+    .opinion-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .op-btn {
+      display: flex; align-items: center; gap: 6px;
+      padding: 7px 13px;
+      border-radius: 30px;
+      border: 2px solid var(--border);
+      background: #333;
+      color: var(--white);
+      font-size: .85rem;
+      cursor: pointer;
+      transition: border-color .12s, background .12s;
+    }
+    .op-btn:hover          { border-color: #888; }
+    .op-btn.like-selected  { border-color: var(--green); background: #0f3a1c; color: #7fff9a; }
+    .op-btn.dislike-selected { border-color: var(--accent); background: #3a0f0f; color: #ff9a9a; }
+
+    /* score slider */
+    .score-row { display: flex; align-items: center; gap: 16px; margin: 16px 0 20px; }
+    .score-row label { font-weight: 600; white-space: nowrap; }
+    .score-row input[type=range] {
+      flex: 1;
+      accent-color: var(--gold);
+      height: 6px;
+    }
+    .score-val {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--gold);
+      min-width: 40px;
+      text-align: center;
+    }
+
+    /* ── PROGRESS BAR ────────────────────────────────────── */
+    .progress { display: flex; gap: 6px; margin-bottom: 24px; }
+    .progress-step {
+      flex: 1; height: 6px;
+      border-radius: 3px;
+      background: var(--border);
+      transition: background .3s;
+    }
+    .progress-step.done { background: var(--gold); }
+
+    /* ── RESULTS ─────────────────────────────────────────── */
+    .final-score-circle {
+      width: 130px; height: 130px;
+      border-radius: 50%;
+      border: 6px solid var(--gold);
+      display: flex; flex-direction: column;
+      align-items:center; justify-content:center;
+      margin: 0 auto 24px;
+      box-shadow: 0 0 40px rgba(245,197,24,.35);
+    }
+    .final-score-circle .num { font-size: 2.8rem; font-weight: 700; color: var(--gold); line-height:1; }
+    .final-score-circle .lbl { font-size: .75rem; color: var(--muted); }
+
+    .result-card {
+      background: #333;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .result-card .rc-top { display: flex; align-items:center; justify-content:space-between; }
+    .result-card .rc-name { font-weight: 700; font-size: 1rem; }
+    .result-card .rc-score { font-size: 1.3rem; font-weight: 700; color: var(--gold); }
+    .result-card .rc-comments { font-size: .88rem; color: #ccc; font-style: italic; }
+    .result-card .rc-likes    { font-size: .82rem; color: #7fff9a; }
+    .result-card .rc-dislikes { font-size: .82rem; color: #ff9a9a; }
+
+    /* ── FOOTER ACTIONS ──────────────────────────────────── */
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+
+    /* ── UTIL ───────────────────────────────────────────── */
+    .center { text-align: center; }
+    .mt16 { margin-top: 16px; }
+    .mt8  { margin-top: 8px; }
+
+    /* star rating indicator */
+    .stars { font-size: 1.2rem; letter-spacing: 2px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍽️ SpeakUp MasterChef</h1>
+  <p>Lesson 05 – Food &amp; Drinks · Cooking Activity</p>
+</header>
+
+<!-- ═══════════════════════════════════════════════════
+     SCREEN 1 – SETUP
+═══════════════════════════════════════════════════ -->
+<div id="screen-setup" class="screen active">
+  <div class="card">
+    <h2>👥 How many players?</h2>
+    <div class="count-picker" id="countPicker"></div>
+    <h2>✏️ Enter player names</h2>
+    <div class="player-inputs" id="playerInputs"></div>
+  </div>
+  <div class="actions center">
+    <button class="btn btn-primary" id="btnStart" onclick="startGame()">
+      🎬 Start Game!
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SCREEN 2 – CHEF ANNOUNCEMENT
+═══════════════════════════════════════════════════ -->
+<div id="screen-chef" class="screen">
+  <div class="card announcement">
+    <div class="big-emoji">👨‍🍳</div>
+    <h2>Tonight's Chef is...</h2>
+    <div class="chef-badge" id="chefName">—</div>
+    <p id="judgesLine"></p>
+  </div>
+  <div class="actions center">
+    <button class="btn btn-primary" onclick="goToCooking()">
+      🍳 Let's Cook!
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SCREEN 3 – COOKING
+═══════════════════════════════════════════════════ -->
+<div id="screen-cooking" class="screen">
+  <div class="card">
+    <h2 id="cookingTitle">👨‍🍳 <span id="chefLabel">Chef</span>'s Kitchen</h2>
+
+    <!-- Step A: dish type -->
+    <div id="stepDish">
+      <p style="margin-bottom:14px; color:var(--muted)">Choose what you want to create:</p>
+      <div class="dish-options">
+        <div class="dish-opt" id="optSoup"    onclick="chooseDish('soup')">
+          <div class="icon">🍲</div>
+          <div class="label">Soup</div>
+          <div class="desc">Warm &amp; savory</div>
+        </div>
+        <div class="dish-opt" id="optDessert" onclick="chooseDish('dessert')">
+          <div class="icon">🍰</div>
+          <div class="label">Dessert</div>
+          <div class="desc">Sweet &amp; delicious</div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" id="btnNextIngredients" disabled onclick="showIngredients()">
+          Next: Pick Ingredients →
+        </button>
+      </div>
+    </div>
+
+    <!-- Step B: ingredients -->
+    <div id="stepIngredients" style="display:none">
+      <p style="color:var(--muted); margin-bottom:16px; font-size:.9rem">
+        Select the ingredients for your <strong id="dishTypeLabel" style="color:var(--gold)">dish</strong>!
+        Choose at least <strong style="color:var(--gold)">3</strong> ingredients.
+      </p>
+
+      <div id="ingredientSections"></div>
+
+      <h3 style="margin: 20px 0 10px; font-size:1rem;">🥣 Your dish so far:</h3>
+      <div class="bowl-area" id="bowlArea">
+        <p id="bowlEmpty">No ingredients yet. Start selecting!</p>
+        <div class="bowl-chips" id="bowlChips"></div>
+      </div>
+
+      <div class="actions mt16">
+        <button class="btn btn-outline" onclick="resetIngredients()">↩ Reset</button>
+        <button class="btn btn-primary" id="btnPresent" disabled onclick="presentDish()">
+          🎉 Present My Dish!
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SCREEN 4 – JUDGE
+═══════════════════════════════════════════════════ -->
+<div id="screen-judge" class="screen">
+  <div class="card">
+    <!-- progress -->
+    <div class="progress" id="judgeProgress"></div>
+
+    <div class="judge-header">
+      <div class="judge-avatar" id="judgeAvatar">J</div>
+      <div>
+        <div class="judge-name" id="judgeName">Judge Name</div>
+        <div class="judge-role">⭐ MasterChef Judge</div>
+      </div>
+    </div>
+
+    <!-- dish summary -->
+    <div class="dish-display">
+      <h3>🍽️ <span id="judgeChefName">Chef</span>'s
+          <span id="judgeDishType">dish</span>
+          — Ingredients:</h3>
+      <div class="dish-ing-list" id="judgeDishIngredients"></div>
+    </div>
+
+    <p style="margin-bottom:12px; font-weight:600; color:var(--gold)">
+      React to each ingredient: do you like it? 👍 / 👎
+    </p>
+    <div class="opinion-grid" id="opinionGrid"></div>
+
+    <div class="score-row">
+      <label for="scoreSlider">⭐ Your Score:</label>
+      <input type="range" id="scoreSlider" min="1" max="10" value="5" oninput="updateScoreVal(this.value)">
+      <div class="score-val" id="scoreVal">5</div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-green" id="btnSubmitJudge" onclick="submitJudge()">
+        ✔ Submit My Verdict
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SCREEN 5 – RESULTS
+═══════════════════════════════════════════════════ -->
+<div id="screen-results" class="screen">
+  <div class="card center">
+    <h2>🏆 Final Results</h2>
+    <p class="mt8" style="color:var(--muted)">
+      <strong id="resultChefName" style="color:var(--white)">Chef</strong>'s
+      <strong id="resultDishType" style="color:var(--gold)">dish</strong>
+    </p>
+
+    <div class="final-score-circle mt16" id="finalCircle">
+      <div class="num" id="finalScoreNum">–</div>
+      <div class="lbl">/ 10</div>
+    </div>
+    <div class="stars" id="finalStars"></div>
+    <p class="mt8" id="finalVerdict" style="font-size:1.1rem; font-weight:600;"></p>
+  </div>
+
+  <div class="card">
+    <h2>📋 Judges' Verdicts</h2>
+    <div id="verdictList"></div>
+  </div>
+
+  <div class="card">
+    <h2>📚 Lesson Practice</h2>
+    <p style="color:var(--muted); font-size:.9rem; margin-bottom:12px;">
+      Say these sentences out loud! Practice your English from Lesson 05.
+    </p>
+    <div id="practiceSentences"></div>
+  </div>
+
+  <div class="actions center">
+    <button class="btn btn-primary" onclick="resetGame()">🔄 Play Again!</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════ -->
+<script>
+/* ── DATA ───────────────────────────────────────────────── */
+const INGREDIENTS = {
+  "🍎 Fruits": [
+    { em:"🍎", name:"apple"      },
+    { em:"🍌", name:"banana"     },
+    { em:"🍊", name:"orange"     },
+    { em:"🍇", name:"grapes"     },
+    { em:"🍓", name:"strawberry" },
+  ],
+  "🥔 Vegetables": [
+    { em:"🥔", name:"potato"   },
+    { em:"🍅", name:"tomato"   },
+    { em:"🥕", name:"carrot"   },
+    { em:"🥗", name:"salad"    },
+    { em:"🧅", name:"onion"    },
+    { em:"🧄", name:"garlic"   },
+  ],
+  "🍗 Proteins": [
+    { em:"🍗", name:"chicken" },
+    { em:"🐟", name:"fish"    },
+    { em:"🥚", name:"egg"     },
+    { em:"🧀", name:"cheese"  },
+  ],
+  "🍞 Carbs": [
+    { em:"🍞", name:"bread" },
+    { em:"🍚", name:"rice"  },
+    { em:"🍝", name:"pasta" },
+  ],
+  "💧 Liquids": [
+    { em:"💧", name:"water" },
+    { em:"🥛", name:"milk"  },
+    { em:"🧃", name:"juice" },
+  ],
+  "🧂 Seasonings": [
+    { em:"🧂", name:"salt"   },
+    { em:"🌶️", name:"pepper" },
+    { em:"🧈", name:"butter" },
+    { em:"🍬", name:"sugar"  },
+  ],
+};
+
+/* ── STATE ───────────────────────────────────────────────── */
+let state = {
+  playerCount: 3,
+  players: [],
+  chefIdx: 0,
+  dishType: null,       // 'soup' | 'dessert'
+  pickedIngredients: [], // [{em, name}, ...]
+  currentJudgeIdx: 0,
+  verdicts: [],         // [{name, score, likes:[], dislikes:[]}]
+};
+
+/* ── INIT ────────────────────────────────────────────────── */
+window.onload = () => {
+  buildCountPicker();
+  buildPlayerInputs(3);
+};
+
+function buildCountPicker() {
+  const cp = document.getElementById('countPicker');
+  cp.innerHTML = '';
+  for (let i = 2; i <= 6; i++) {
+    const b = document.createElement('button');
+    b.className = 'count-btn' + (i === state.playerCount ? ' selected' : '');
+    b.textContent = i;
+    b.onclick = () => {
+      state.playerCount = i;
+      document.querySelectorAll('.count-btn').forEach(x => x.classList.remove('selected'));
+      b.classList.add('selected');
+      buildPlayerInputs(i);
+    };
+    cp.appendChild(b);
+  }
+}
+
+function buildPlayerInputs(n) {
+  const container = document.getElementById('playerInputs');
+  container.innerHTML = '';
+  for (let i = 1; i <= n; i++) {
+    container.innerHTML += `
+      <div class="player-slot">
+        <div class="num">${i}</div>
+        <input type="text" id="pname${i}" placeholder="Player ${i}" maxlength="20" />
+      </div>`;
+  }
+}
+
+/* ── SCREEN NAV ──────────────────────────────────────────── */
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ── GAME START ──────────────────────────────────────────── */
+function startGame() {
+  const n = state.playerCount;
+  const players = [];
+  for (let i = 1; i <= n; i++) {
+    const v = (document.getElementById('pname' + i)?.value || '').trim();
+    players.push(v || `Player ${i}`);
+  }
+  state.players = players;
+  state.chefIdx = Math.floor(Math.random() * n);
+
+  // reset other state
+  state.dishType = null;
+  state.pickedIngredients = [];
+  state.currentJudgeIdx = 0;
+  state.verdicts = [];
+
+  const chef = players[state.chefIdx];
+  const judges = players.filter((_, i) => i !== state.chefIdx);
+
+  document.getElementById('chefName').textContent = `👨‍🍳 ${chef}`;
+  document.getElementById('judgesLine').textContent =
+    judges.length
+      ? `Judges: ${judges.join(' · ')}`
+      : 'No judges — the chef evaluates their own dish!';
+
+  showScreen('screen-chef');
+}
+
+/* ── COOKING ─────────────────────────────────────────────── */
+function goToCooking() {
+  const chef = state.players[state.chefIdx];
+  document.getElementById('chefLabel').textContent = chef;
+
+  // reset cooking
+  state.dishType = null;
+  state.pickedIngredients = [];
+  document.getElementById('optSoup').classList.remove('chosen');
+  document.getElementById('optDessert').classList.remove('chosen');
+  document.getElementById('btnNextIngredients').disabled = true;
+  document.getElementById('stepDish').style.display = '';
+  document.getElementById('stepIngredients').style.display = 'none';
+
+  showScreen('screen-cooking');
+}
+
+function chooseDish(type) {
+  state.dishType = type;
+  document.getElementById('optSoup').classList.toggle('chosen', type === 'soup');
+  document.getElementById('optDessert').classList.toggle('chosen', type === 'dessert');
+  document.getElementById('btnNextIngredients').disabled = false;
+}
+
+function showIngredients() {
+  document.getElementById('stepDish').style.display = 'none';
+  document.getElementById('stepIngredients').style.display = '';
+  document.getElementById('dishTypeLabel').textContent =
+    state.dishType === 'soup' ? '🍲 Soup' : '🍰 Dessert';
+  buildIngredientGrid();
+  updateBowl();
+}
+
+function buildIngredientGrid() {
+  const container = document.getElementById('ingredientSections');
+  container.innerHTML = '';
+  for (const [category, items] of Object.entries(INGREDIENTS)) {
+    const section = document.createElement('div');
+    section.className = 'ing-section';
+    section.innerHTML = `<h3>${category}</h3><div class="ing-grid" id="grid_${slugify(category)}"></div>`;
+    container.appendChild(section);
+    const grid = section.querySelector('.ing-grid');
+    items.forEach(item => {
+      const chip = document.createElement('div');
+      chip.className = 'ing-chip';
+      chip.id = 'chip_' + item.name;
+      chip.innerHTML = `<span class="em">${item.em}</span>${item.name}`;
+      chip.onclick = () => toggleIngredient(item, chip);
+      grid.appendChild(chip);
+    });
+  }
+}
+
+function slugify(s) { return s.replace(/[^a-z0-9]/gi,'_'); }
+
+function toggleIngredient(item, chip) {
+  const idx = state.pickedIngredients.findIndex(i => i.name === item.name);
+  if (idx === -1) {
+    state.pickedIngredients.push(item);
+    chip.classList.add('picked');
+  } else {
+    state.pickedIngredients.splice(idx, 1);
+    chip.classList.remove('picked');
+  }
+  updateBowl();
+}
+
+function resetIngredients() {
+  state.pickedIngredients = [];
+  document.querySelectorAll('.ing-chip').forEach(c => c.classList.remove('picked'));
+  updateBowl();
+}
+
+function updateBowl() {
+  const picked = state.pickedIngredients;
+  const emptyEl  = document.getElementById('bowlEmpty');
+  const chipsEl  = document.getElementById('bowlChips');
+  const btnPres  = document.getElementById('btnPresent');
+
+  emptyEl.style.display = picked.length ? 'none' : '';
+  chipsEl.innerHTML = picked.map(i =>
+    `<span class="bowl-chip">${i.em} ${i.name}</span>`
+  ).join('');
+
+  btnPres.disabled = picked.length < 3;
+}
+
+/* ── PRESENT DISH ────────────────────────────────────────── */
+function presentDish() {
+  // build judge list (all except chef)
+  const judges = state.players
+    .map((name, idx) => ({ name, idx }))
+    .filter(p => p.idx !== state.chefIdx);
+
+  if (judges.length === 0) {
+    // no judges: chef judges own dish
+    state.judgeList = [{ name: state.players[state.chefIdx] + ' (Self)', idx: state.chefIdx }];
+  } else {
+    state.judgeList = judges;
+  }
+  state.currentJudgeIdx = 0;
+  state.verdicts = [];
+  loadJudge();
+}
+
+/* ── JUDGING ─────────────────────────────────────────────── */
+function loadJudge() {
+  const jl = state.judgeList;
+  const cur = jl[state.currentJudgeIdx];
+
+  // progress bar
+  const prog = document.getElementById('judgeProgress');
+  prog.innerHTML = jl.map((_, i) =>
+    `<div class="progress-step ${i < state.currentJudgeIdx ? 'done' : (i === state.currentJudgeIdx ? 'done' : '')}"></div>`
+  ).join('');
+  // light up current
+  prog.querySelectorAll('.progress-step').forEach((el, i) => {
+    if (i <= state.currentJudgeIdx) el.style.background = 'var(--gold)';
+  });
+
+  // judge info
+  document.getElementById('judgeAvatar').textContent = cur.name.charAt(0).toUpperCase();
+  document.getElementById('judgeName').textContent = cur.name;
+
+  // dish info
+  const chef = state.players[state.chefIdx];
+  document.getElementById('judgeChefName').textContent = chef;
+  document.getElementById('judgeDishType').textContent =
+    state.dishType === 'soup' ? '🍲 Soup' : '🍰 Dessert';
+
+  const ingContainer = document.getElementById('judgeDishIngredients');
+  ingContainer.innerHTML = state.pickedIngredients.map(i =>
+    `<span class="dish-ing-tag">${i.em} ${i.name}</span>`
+  ).join('');
+
+  // opinion buttons
+  const opinGrid = document.getElementById('opinionGrid');
+  opinGrid.innerHTML = '';
+  state.pickedIngredients.forEach(item => {
+    const btn = document.createElement('button');
+    btn.className = 'op-btn';
+    btn.id = 'op_' + item.name;
+    btn.setAttribute('data-item', item.name);
+    btn.setAttribute('data-state', 'neutral');
+    btn.innerHTML = `<span>${item.em}</span>${item.name}`;
+    btn.onclick = () => cycleOpinion(btn, item);
+    opinGrid.appendChild(btn);
+  });
+
+  // reset score
+  document.getElementById('scoreSlider').value = 5;
+  document.getElementById('scoreVal').textContent = '5';
+
+  showScreen('screen-judge');
+}
+
+function cycleOpinion(btn, item) {
+  const s = btn.getAttribute('data-state');
+  if (s === 'neutral') {
+    btn.setAttribute('data-state', 'like');
+    btn.className = 'op-btn like-selected';
+    btn.innerHTML = `<span>${item.em}</span>👍 I like ${item.name}!`;
+  } else if (s === 'like') {
+    btn.setAttribute('data-state', 'dislike');
+    btn.className = 'op-btn dislike-selected';
+    btn.innerHTML = `<span>${item.em}</span>👎 I don't like ${item.name}.`;
+  } else {
+    btn.setAttribute('data-state', 'neutral');
+    btn.className = 'op-btn';
+    btn.innerHTML = `<span>${item.em}</span>${item.name}`;
+  }
+}
+
+function updateScoreVal(v) {
+  document.getElementById('scoreVal').textContent = v;
+}
+
+function submitJudge() {
+  const score = parseInt(document.getElementById('scoreSlider').value);
+  const likes = [], dislikes = [];
+  document.querySelectorAll('.op-btn[data-state]').forEach(btn => {
+    const st   = btn.getAttribute('data-state');
+    const name = btn.getAttribute('data-item');
+    if (st === 'like')    likes.push(name);
+    if (st === 'dislike') dislikes.push(name);
+  });
+  state.verdicts.push({
+    name: state.judgeList[state.currentJudgeIdx].name,
+    score, likes, dislikes,
+  });
+
+  state.currentJudgeIdx++;
+  if (state.currentJudgeIdx < state.judgeList.length) {
+    loadJudge();
+  } else {
+    showResults();
+  }
+}
+
+/* ── RESULTS ─────────────────────────────────────────────── */
+function showResults() {
+  const verdicts = state.verdicts;
+  const avg = verdicts.reduce((s,v) => s + v.score, 0) / verdicts.length;
+  const avgRound = Math.round(avg * 10) / 10;
+
+  document.getElementById('resultChefName').textContent = state.players[state.chefIdx];
+  document.getElementById('resultDishType').textContent =
+    state.dishType === 'soup' ? '🍲 Soup' : '🍰 Dessert';
+
+  document.getElementById('finalScoreNum').textContent = avgRound;
+  document.getElementById('finalStars').textContent    = scoreToStars(avgRound);
+  document.getElementById('finalVerdict').textContent  = scoreToVerdict(avgRound);
+
+  // colour circle
+  const circle = document.getElementById('finalCircle');
+  circle.style.borderColor = avgRound >= 7 ? 'var(--green)' : avgRound >= 4 ? 'var(--gold)' : 'var(--accent)';
+
+  // verdicts list
+  const vl = document.getElementById('verdictList');
+  vl.innerHTML = verdicts.map(v => {
+    const likesHtml    = v.likes.length    ? `<div class="rc-likes">👍 I like: ${v.likes.join(', ')}</div>` : '';
+    const dislikesHtml = v.dislikes.length ? `<div class="rc-dislikes">👎 I don't like: ${v.dislikes.join(', ')}</div>` : '';
+    return `
+      <div class="result-card">
+        <div class="rc-top">
+          <span class="rc-name">⭐ ${v.name}</span>
+          <span class="rc-score">${v.score}/10</span>
+        </div>
+        ${likesHtml}
+        ${dislikesHtml}
+      </div>`;
+  }).join('');
+
+  // practice sentences
+  const chef = state.players[state.chefIdx];
+  const ings = state.pickedIngredients.map(i => i.name);
+  const first3 = ings.slice(0,3);
+  const sentences = [
+    `"${chef} likes ${first3[0]}${first3[1] ? ' and ' + first3[1] : ''}."`,
+    `"The dish has ${ings.slice(0,2).join(', ')}${ings[2] ? ' and ' + ings[2] : ''}."`,
+    `"Does ${chef} like ${ings[0]}? Yes, ${chef} does!"`,
+    ...verdicts.flatMap(v => [
+      ...v.likes.map(n    => `"${v.name} likes ${n}!"`),
+      ...v.dislikes.map(n => `"${v.name} doesn't like ${n}."`)
+    ]).slice(0, 4),
+  ];
+  document.getElementById('practiceSentences').innerHTML = sentences.map(s =>
+    `<p style="margin-bottom:8px; padding:10px 14px; background:#1e1e1e; border-radius:8px; font-style:italic; color:#ccc;">📢 ${s}</p>`
+  ).join('');
+
+  showScreen('screen-results');
+}
+
+function scoreToStars(n) {
+  const full  = Math.round(n);
+  const stars = '⭐'.repeat(Math.max(1, Math.min(10, full)));
+  return stars;
+}
+function scoreToVerdict(n) {
+  if (n >= 9)  return "🏆 Extraordinary! A masterpiece!";
+  if (n >= 7)  return "🎉 Delicious! Well done, Chef!";
+  if (n >= 5)  return "👍 Pretty good! Keep cooking!";
+  if (n >= 3)  return "😬 Needs work... Maybe more salt?";
+  return "😅 Interesting experiment!";
+}
+
+/* ── RESET ───────────────────────────────────────────────── */
+function resetGame() {
+  state = {
+    playerCount: state.playerCount,
+    players: [],
+    chefIdx: 0, dishType: null,
+    pickedIngredients: [],
+    currentJudgeIdx: 0, verdicts: [],
+  };
+  buildCountPicker();
+  buildPlayerInputs(state.playerCount);
+  showScreen('screen-setup');
+}
+</script>
+</body>
+</html>

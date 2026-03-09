@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CITY DISCOURSE 🏙️ | Fruit Lesson 2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+    :root {
+      --cell: 80px;
+      --gap: 3px;
+      --pad: 4px;
+      --c-interview: #4A90D9;
+      --c-podcast:   #9B59B6;
+      --c-pitch:     #E67E22;
+      --c-condo:     #27AE60;
+      --c-start:     #E74C3C;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family:'Poppins',sans-serif;
+      background: radial-gradient(ellipse at 30% 20%, #0d1a3a 0%, #060610 70%);
+      color:#fff;
+      min-height:100vh;
+      overflow:hidden;
+    }
+
+    /* ── SCREENS ── */
+    .screen { display:none; width:100vw; height:100vh; }
+    .screen.active { display:flex; }
+
+    /* ══════════════════════════════
+       SETUP SCREEN
+    ══════════════════════════════ */
+    #setup-screen {
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:20px;
+      padding:20px;
+    }
+
+    .game-logo { text-align:center; }
+    .game-logo h1 {
+      font-size:2.8em;
+      font-weight:900;
+      background:linear-gradient(135deg,#4A90D9 0%,#9B59B6 50%,#E67E22 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text;
+      letter-spacing:-1px;
+    }
+    .logo-sub { font-size:0.82em; color:#6677aa; margin-top:2px; }
+    .logo-badge {
+      display:inline-block;
+      background:rgba(74,144,217,0.15);
+      border:1px solid rgba(74,144,217,0.35);
+      color:#4A90D9; border-radius:50px;
+      padding:2px 14px; font-size:0.72em; margin-top:8px;
+    }
+
+    .setup-card {
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.09);
+      border-radius:20px;
+      padding:24px 32px;
+      width:100%; max-width:460px;
+    }
+
+    .setup-label {
+      font-size:0.65em; font-weight:700;
+      text-transform:uppercase; letter-spacing:2px;
+      color:#556688; margin-bottom:10px;
+    }
+
+    .count-row { display:flex; gap:8px; margin-bottom:22px; }
+    .count-btn {
+      flex:1; padding:11px;
+      border:2px solid rgba(255,255,255,0.12);
+      background:transparent; color:#fff;
+      border-radius:12px; font-family:inherit;
+      font-size:1.2em; font-weight:700; cursor:pointer;
+      transition:all 0.2s;
+    }
+    .count-btn:hover { background:rgba(255,255,255,0.07); }
+    .count-btn.active {
+      border-color:#4A90D9;
+      background:rgba(74,144,217,0.18); color:#4A90D9;
+    }
+
+    .player-inputs { display:flex; flex-direction:column; gap:9px; margin-bottom:20px; }
+    .prow { display:flex; align-items:center; gap:10px; }
+    .prow-dot { width:14px; height:14px; border-radius:50%; flex-shrink:0; }
+    .prow input {
+      flex:1; background:rgba(255,255,255,0.07);
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:10px; padding:9px 13px;
+      color:#fff; font-family:inherit; font-size:0.88em;
+      outline:none; transition:border 0.2s;
+    }
+    .prow input:focus { border-color:rgba(255,255,255,0.35); }
+
+    .start-btn {
+      width:100%; padding:13px;
+      background:linear-gradient(135deg,#4A90D9,#7b52d9);
+      border:none; border-radius:13px; color:#fff;
+      font-family:inherit; font-size:1em; font-weight:700;
+      cursor:pointer; letter-spacing:1px; transition:all 0.25s;
+    }
+    .start-btn:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(74,144,217,0.4); }
+
+    .setup-hint {
+      font-size:0.72em; color:#445566;
+      text-align:center; max-width:400px; line-height:1.7;
+    }
+
+    /* ══════════════════════════════
+       GAME SCREEN
+    ══════════════════════════════ */
+    #game-screen {
+      flex-direction:row;
+      align-items:stretch;
+    }
+
+    /* Board area */
+    .board-area {
+      flex:1; display:flex;
+      align-items:center; justify-content:center;
+      padding:16px;
+      overflow:hidden;
+    }
+
+    .board-wrapper { position:relative; }
+
+    .board {
+      display:grid;
+      grid-template-columns:repeat(6, var(--cell));
+      grid-template-rows:repeat(6, var(--cell));
+      gap:var(--gap);
+      background:#080d22;
+      border:2px solid rgba(74,144,217,0.25);
+      border-radius:16px;
+      padding:var(--pad);
+      position:relative;
+    }
+
+    /* City center — rows 2-5, cols 2-5 */
+    .city-center {
+      grid-column:2/6; grid-row:2/6;
+      background:linear-gradient(145deg,#0c1130,#161a42);
+      border-radius:10px;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:6px;
+      border:1px solid rgba(255,255,255,0.07);
+      position:relative; overflow:hidden;
+    }
+    .city-center::before {
+      content:'';
+      position:absolute; inset:0;
+      background:
+        repeating-linear-gradient(0deg,transparent,transparent 22px,rgba(255,255,255,0.018) 22px,rgba(255,255,255,0.018) 23px),
+        repeating-linear-gradient(90deg,transparent,transparent 22px,rgba(255,255,255,0.018) 22px,rgba(255,255,255,0.018) 23px);
+    }
+    .city-center .ci { font-size:2.6em; position:relative; z-index:1; }
+    .city-center .cn {
+      font-size:0.85em; font-weight:800;
+      letter-spacing:3px; color:rgba(255,255,255,0.5);
+      text-transform:uppercase; position:relative; z-index:1;
+    }
+    .city-center .cs {
+      font-size:0.55em; color:rgba(255,255,255,0.25);
+      letter-spacing:1px; position:relative; z-index:1;
+    }
+
+    /* Board spaces */
+    .space {
+      border-radius:7px;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:1px; position:relative;
+      border:1px solid rgba(255,255,255,0.07);
+      font-size:0.58em; text-align:center;
+      padding:3px 2px; overflow:hidden;
+      transition:box-shadow 0.3s;
+    }
+    .space-num {
+      position:absolute; top:3px; left:5px;
+      font-size:0.82em; font-weight:700; opacity:0.5;
+    }
+    .space-icon { font-size:1.9em; line-height:1; }
+    .space-lbl  { font-size:0.88em; font-weight:600; line-height:1.15; padding:0 2px; }
+
+    .space.type-start     { background:rgba(231,76,60,0.18);  border-color:rgba(231,76,60,0.45); }
+    .space.type-interview { background:rgba(74,144,217,0.14); border-color:rgba(74,144,217,0.38); }
+    .space.type-podcast   { background:rgba(155,89,182,0.14); border-color:rgba(155,89,182,0.38); }
+    .space.type-pitch     { background:rgba(230,126,34,0.14); border-color:rgba(230,126,34,0.38); }
+    .space.type-condo     { background:rgba(39,174,96,0.14);  border-color:rgba(39,174,96,0.38);  }
+
+    .space.highlight {
+      animation:pulseSpace 0.9s ease-in-out infinite;
+      z-index:2;
+    }
+    @keyframes pulseSpace {
+      0%,100% { box-shadow:0 0 0 0 rgba(255,230,50,0.5); }
+      50%      { box-shadow:0 0 0 7px rgba(255,230,50,0);  }
+    }
+
+    /* Token layer */
+    .tokens-layer {
+      position:absolute;
+      top:var(--pad); left:var(--pad);
+      pointer-events:none; z-index:10;
+    }
+    .token {
+      position:absolute;
+      width:21px; height:21px;
+      border-radius:50%;
+      border:2px solid rgba(255,255,255,0.85);
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.5em; font-weight:800; color:#fff;
+      text-shadow:0 1px 3px rgba(0,0,0,0.9);
+      transition:top 0.45s cubic-bezier(0.4,0,0.2,1),
+                 left 0.45s cubic-bezier(0.4,0,0.2,1);
+      box-shadow:0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    /* ── SIDE PANEL ── */
+    .side-panel {
+      width:270px;
+      background:rgba(255,255,255,0.025);
+      border-left:1px solid rgba(255,255,255,0.07);
+      display:flex; flex-direction:column;
+      overflow-y:auto; flex-shrink:0;
+    }
+    .p-sec { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,0.055); }
+    .p-title {
+      font-size:0.6em; font-weight:700;
+      text-transform:uppercase; letter-spacing:2px;
+      color:#556688; margin-bottom:10px;
+    }
+
+    /* Current player card */
+    .cp-card {
+      background:rgba(74,144,217,0.12);
+      border:1px solid rgba(74,144,217,0.28);
+      border-radius:12px; padding:11px 13px;
+      display:flex; align-items:center; gap:11px;
+    }
+    .cp-dot {
+      width:38px; height:38px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:800; font-size:0.85em; flex-shrink:0;
+    }
+    .cp-name { font-weight:700; font-size:0.93em; }
+    .cp-pos  { font-size:0.65em; color:#8899aa; }
+
+    /* Dice */
+    .dice-wrap { display:flex; flex-direction:column; align-items:center; gap:11px; }
+    .dice-face {
+      width:76px; height:76px;
+      background:linear-gradient(145deg,#182350,#222e6a);
+      border:2px solid rgba(74,144,217,0.38);
+      border-radius:14px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:2.4em; font-weight:900;
+      box-shadow:0 4px 18px rgba(0,0,0,0.45);
+    }
+    .dice-face.rolling { animation:shakeDice 0.55s ease-in-out; }
+    @keyframes shakeDice {
+      0%   { transform:rotate(0deg)   scale(1);    }
+      20%  { transform:rotate(14deg)  scale(1.12); }
+      45%  { transform:rotate(-14deg) scale(1.15); }
+      70%  { transform:rotate(9deg)   scale(1.1);  }
+      100% { transform:rotate(0deg)   scale(1);    }
+    }
+    .roll-btn {
+      width:100%; padding:11px;
+      background:linear-gradient(135deg,#4A90D9,#6644cc);
+      border:none; border-radius:10px; color:#fff;
+      font-family:inherit; font-size:0.82em; font-weight:700;
+      cursor:pointer; letter-spacing:1px; transition:all 0.2s;
+    }
+    .roll-btn:hover:not(:disabled) { transform:translateY(-1px); box-shadow:0 5px 18px rgba(74,144,217,0.4); }
+    .roll-btn:disabled { opacity:0.35; cursor:not-allowed; }
+    .roll-info { font-size:0.7em; color:#6677aa; text-align:center; min-height:1.2em; }
+
+    /* Players list */
+    .players-list { display:flex; flex-direction:column; gap:7px; }
+    .prow-game {
+      display:flex; align-items:center; gap:9px;
+      padding:7px 9px; border-radius:9px;
+      background:rgba(255,255,255,0.025);
+      border:1px solid rgba(255,255,255,0.05);
+      transition:all 0.2s;
+    }
+    .prow-game.is-current {
+      background:rgba(74,144,217,0.1);
+      border-color:rgba(74,144,217,0.3);
+    }
+    .ptok-mini {
+      width:26px; height:26px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.65em; font-weight:800; flex-shrink:0;
+    }
+    .pname-s  { font-size:0.78em; font-weight:600; }
+    .ppos-s   { font-size:0.6em;  color:#6677aa;   }
+    .pstars   { font-size:0.72em; margin-left:auto; }
+
+    /* Legend */
+    .legend { display:flex; flex-direction:column; gap:5px; }
+    .leg-row { display:flex; align-items:center; gap:7px; font-size:0.68em; color:#8899aa; }
+    .leg-dot { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
+
+    /* ══════════════════════════════
+       CHALLENGE MODAL
+    ══════════════════════════════ */
+    .modal-ov {
+      position:fixed; inset:0;
+      background:rgba(0,0,0,0.88);
+      backdrop-filter:blur(10px);
+      z-index:200;
+      display:flex; align-items:center; justify-content:center;
+      padding:16px;
+    }
+    .modal-ov.hidden { display:none; }
+
+    .ch-card {
+      background:linear-gradient(160deg,#0e1435,#131840);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:22px;
+      width:100%; max-width:650px;
+      max-height:92vh; overflow-y:auto;
+      box-shadow:0 28px 70px rgba(0,0,0,0.75);
+      animation:cardIn 0.28s cubic-bezier(0.2,0,0,1);
+    }
+    @keyframes cardIn {
+      from { transform:scale(0.88) translateY(18px); opacity:0; }
+      to   { transform:scale(1)    translateY(0);    opacity:1; }
+    }
+
+    .ch-header {
+      padding:18px 22px 14px;
+      border-bottom:1px solid rgba(255,255,255,0.07);
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    }
+    .type-badge {
+      display:inline-flex; align-items:center; gap:5px;
+      padding:4px 13px; border-radius:50px;
+      font-size:0.7em; font-weight:700; letter-spacing:0.5px;
+    }
+    .badge-interview { background:rgba(74,144,217,0.22);  color:#4A90D9; border:1px solid rgba(74,144,217,0.4);  }
+    .badge-podcast   { background:rgba(155,89,182,0.22);  color:#9B59B6; border:1px solid rgba(155,89,182,0.4);  }
+    .badge-pitch     { background:rgba(230,126,34,0.22);  color:#E67E22; border:1px solid rgba(230,126,34,0.4);  }
+    .badge-condo     { background:rgba(39,174,96,0.22);   color:#27AE60; border:1px solid rgba(39,174,96,0.4);   }
+
+    .ch-who { margin-left:auto; text-align:right; font-size:0.72em; color:#7788aa; }
+    .ch-who-name { font-weight:700; color:#fff; }
+
+    .ch-body { padding:18px 22px; }
+    .ch-title    { font-size:1.3em; font-weight:800; line-height:1.2; margin-bottom:3px; }
+    .ch-location { font-size:0.77em; color:#7788aa; margin-bottom:14px; }
+
+    .ch-scenario {
+      background:rgba(255,255,255,0.045);
+      border-left:3px solid;
+      border-radius:0 9px 9px 0;
+      padding:13px 15px; margin-bottom:15px;
+      font-size:0.83em; line-height:1.65; color:#c8d4e8;
+    }
+
+    .ch-tasks-lbl {
+      font-size:0.68em; font-weight:700;
+      text-transform:uppercase; letter-spacing:1px;
+      color:#7788aa; margin-bottom:8px;
+    }
+    .task-row {
+      display:flex; align-items:flex-start; gap:9px;
+      margin-bottom:9px; font-size:0.83em; line-height:1.55;
+    }
+    .task-n {
+      width:21px; height:21px; border-radius:50%;
+      background:rgba(255,255,255,0.08);
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.75em; font-weight:700; flex-shrink:0;
+    }
+
+    .lang-tip {
+      background:rgba(255,210,0,0.07);
+      border:1px solid rgba(255,210,0,0.2);
+      border-radius:11px;
+      padding:11px 14px; margin-top:14px;
+      font-size:0.79em; line-height:1.6; color:#ffd060;
+    }
+    .lang-tip-ttl { font-weight:700; margin-bottom:4px; }
+
+    /* Footer */
+    .ch-footer {
+      padding:14px 22px 18px;
+      border-top:1px solid rgba(255,255,255,0.07);
+      display:flex; flex-direction:column;
+      align-items:center; gap:13px;
+    }
+
+    .role-msg {
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.07);
+      border-radius:9px; padding:9px 14px;
+      font-size:0.74em; color:#7788aa;
+      text-align:center; width:100%;
+    }
+
+    /* Circular timer */
+    .timer-wrap { position:relative; width:94px; height:94px; }
+    .timer-svg { transform:rotate(-90deg); }
+    .timer-bg   { fill:none; stroke:rgba(255,255,255,0.08); stroke-width:6; }
+    .timer-prog { fill:none; stroke-width:6; stroke-linecap:round; transition:stroke-dashoffset 1s linear, stroke 0.8s; }
+    .timer-txt  {
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.45em; font-weight:800;
+    }
+
+    .foot-btns { display:flex; gap:8px; width:100%; }
+    .btn-start {
+      flex:1; padding:11px;
+      background:linear-gradient(135deg,#27AE60,#1abc9c);
+      border:none; border-radius:11px; color:#fff;
+      font-family:inherit; font-size:0.86em; font-weight:700;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .btn-start:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 5px 18px rgba(39,174,96,0.4); }
+    .btn-start:disabled { opacity:0.35; cursor:not-allowed; transform:none; box-shadow:none; }
+
+    .btn-done {
+      flex:1; padding:11px;
+      background:linear-gradient(135deg,#4A90D9,#9B59B6);
+      border:none; border-radius:11px; color:#fff;
+      font-family:inherit; font-size:0.86em; font-weight:700;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .btn-done:hover:not(:disabled) { transform:translateY(-2px); }
+    .btn-done:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+
+    .btn-skip {
+      padding:11px 16px;
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:11px; color:#7788aa;
+      font-family:inherit; font-size:0.82em; cursor:pointer;
+      transition:all 0.2s;
+    }
+    .btn-skip:hover { border-color:rgba(255,255,255,0.35); color:#fff; }
+
+    /* ── TOAST ── */
+    .toast {
+      position:fixed; top:18px; left:50%; transform:translateX(-50%);
+      background:rgba(39,174,96,0.96); border-radius:50px;
+      padding:9px 22px; font-weight:700; font-size:0.88em;
+      z-index:400; white-space:nowrap;
+      animation:toastIn 0.28s ease-out, toastOut 0.3s 2.6s forwards;
+    }
+    @keyframes toastIn  { from{transform:translateX(-50%) translateY(-14px);opacity:0} to{transform:translateX(-50%) translateY(0);opacity:1} }
+    @keyframes toastOut { to{opacity:0} }
+
+    /* ── WIN OVERLAY ── */
+    .win-ov {
+      position:fixed; inset:0;
+      background:rgba(0,0,0,0.93);
+      z-index:500;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:16px; text-align:center;
+    }
+    .win-ov.hidden { display:none; }
+    .win-emoji  { font-size:5em; }
+    .win-ttl    { font-size:2.2em; font-weight:900; }
+    .win-sub    { color:#6677aa; font-size:0.95em; }
+    .win-restart {
+      margin-top:8px; padding:12px 34px;
+      background:linear-gradient(135deg,#4A90D9,#9B59B6);
+      border:none; border-radius:13px; color:#fff;
+      font-family:inherit; font-size:0.95em; font-weight:700;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .win-restart:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(74,144,217,0.4); }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width:5px; }
+    ::-webkit-scrollbar-track { background:transparent; }
+    ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.15); border-radius:3px; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     SETUP SCREEN
+══════════════════════════════════════ -->
+<div id="setup-screen" class="screen active">
+  <div class="game-logo">
+    <h1>🏙️ CITY DISCOURSE</h1>
+    <div class="logo-sub">Board Game — Discourse &amp; Cohesion</div>
+    <div class="logo-badge">FRUIT Level · Lesson 2</div>
+  </div>
+
+  <div class="setup-card">
+    <div class="setup-label">Number of Players</div>
+    <div class="count-row" id="count-row">
+      <button class="count-btn" data-n="2">2</button>
+      <button class="count-btn active" data-n="3">3</button>
+      <button class="count-btn" data-n="4">4</button>
+    </div>
+    <div class="setup-label">Player Names</div>
+    <div class="player-inputs" id="player-inputs"></div>
+    <button class="start-btn" onclick="startGame()">🏁 &nbsp;Start Game</button>
+  </div>
+
+  <div class="setup-hint">
+    🎯 Each challenge lasts <strong>3 minutes</strong> &nbsp;·&nbsp;
+    All players participate &nbsp;·&nbsp;
+    First to earn <strong>5 ⭐</strong> wins
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     GAME SCREEN
+══════════════════════════════════════ -->
+<div id="game-screen" class="screen">
+
+  <!-- Board -->
+  <div class="board-area">
+    <div class="board-wrapper">
+      <div class="board" id="board">
+        <div class="city-center">
+          <div class="ci">🏙️</div>
+          <div class="cn">Discourse City</div>
+          <div class="cs">Fruit · Lesson 2</div>
+        </div>
+      </div>
+      <div class="tokens-layer" id="tokens-layer"></div>
+    </div>
+  </div>
+
+  <!-- Side panel -->
+  <div class="side-panel">
+
+    <div class="p-sec">
+      <div class="p-title">Current Turn</div>
+      <div class="cp-card">
+        <div class="cp-dot" id="cp-dot"></div>
+        <div>
+          <div class="cp-name" id="cp-name">—</div>
+          <div class="cp-pos"  id="cp-pos">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-sec">
+      <div class="p-title">Dice</div>
+      <div class="dice-wrap">
+        <div class="dice-face" id="dice-face">🎲</div>
+        <button class="roll-btn" id="roll-btn" onclick="rollDice()">ROLL DICE</button>
+        <div class="roll-info" id="roll-info"></div>
+      </div>
+    </div>
+
+    <div class="p-sec">
+      <div class="p-title">Players</div>
+      <div class="players-list" id="players-list"></div>
+    </div>
+
+    <div class="p-sec">
+      <div class="p-title">Legend</div>
+      <div class="legend">
+        <div class="leg-row"><div class="leg-dot" style="background:#E74C3C"></div>🏁 Start</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#4A90D9"></div>💼 Job Interview</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#9B59B6"></div>🎙️ Podcast</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#E67E22"></div>💡 Entrepreneur Pitch</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#27AE60"></div>🏠 Condo Meeting</div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- #game-screen -->
+
+<!-- ══════════════════════════════════════
+     CHALLENGE MODAL
+══════════════════════════════════════ -->
+<div id="challenge-modal" class="modal-ov hidden">
+  <div class="ch-card">
+
+    <div class="ch-header">
+      <div class="type-badge" id="mod-badge">—</div>
+      <div class="ch-who">
+        <div class="ch-who-name" id="mod-pname">—</div>
+        <div>landed here</div>
+      </div>
+    </div>
+
+    <div class="ch-body">
+      <div class="ch-title"    id="mod-title">—</div>
+      <div class="ch-location" id="mod-loc">—</div>
+      <div class="ch-scenario" id="mod-scenario"></div>
+      <div class="ch-tasks-lbl" id="mod-tasks-lbl">Your Challenge</div>
+      <div id="mod-tasks"></div>
+      <div class="lang-tip" id="mod-tip"></div>
+    </div>
+
+    <div class="ch-footer">
+      <div class="role-msg" id="mod-role">—</div>
+      <div class="timer-wrap">
+        <svg class="timer-svg" width="94" height="94" viewBox="0 0 94 94">
+          <circle class="timer-bg"   cx="47" cy="47" r="40"/>
+          <circle class="timer-prog" id="timer-prog" cx="47" cy="47" r="40"
+            stroke-dasharray="251.33" stroke-dashoffset="0" stroke="#27AE60"/>
+        </svg>
+        <div class="timer-txt" id="timer-txt">3:00</div>
+      </div>
+      <div class="foot-btns">
+        <button class="btn-start" id="btn-start" onclick="startTimer()">▶ Start 3 min</button>
+        <button class="btn-done"  id="btn-done"  onclick="completeChallenge()" disabled>✓ Done!</button>
+        <button class="btn-skip"  onclick="skipChallenge()">Skip</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- WIN -->
+<div id="win-ov" class="win-ov hidden">
+  <div class="win-emoji">🏆</div>
+  <div class="win-ttl" id="win-ttl">Winner!</div>
+  <div class="win-sub" id="win-sub">Incredible discourse skills!</div>
+  <button class="win-restart" onclick="location.reload()">🔄 Play Again</button>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCRIPT
+══════════════════════════════════════ -->
+<script>
+/* ─────────────────────────────────────────
+   CONSTANTS
+───────────────────────────────────────── */
+const COLORS   = ['#E74C3C','#4A90D9','#27AE60','#F39C12'];
+const DEFAULTS = ['Player 1','Player 2','Player 3','Player 4'];
+
+// Grid positions [row, col] (0-indexed) for the 20 board spaces
+// Path: clockwise from START at bottom-left corner
+const GRID_POS = [
+  [5,0],[5,1],[5,2],[5,3],[5,4],[5,5], // 0-5  bottom row →
+  [4,5],[3,5],[2,5],[1,5],             // 6-9  right col ↑
+  [0,5],[0,4],[0,3],[0,2],[0,1],[0,0], // 10-15 top row ←
+  [1,0],[2,0],[3,0],[4,0]              // 16-19 left col ↓
+];
+
+const SPACE_INFO = {
+  start:     { lbl:'START',    icon:'🏁' },
+  interview: { lbl:'Interview',icon:'💼' },
+  podcast:   { lbl:'Podcast',  icon:'🎙️' },
+  pitch:     { lbl:'Pitch',    icon:'💡' },
+  condo:     { lbl:'Meeting',  icon:'🏠' },
+};
+
+const CELL  = 80;  // px  (must match CSS --cell)
+const GAP   = 3;   // px  (must match CSS --gap)
+const PAD   = 4;   // px  (must match CSS --pad)
+const CIRC  = 2 * Math.PI * 40; // ≈ 251.33 — r=40
+const WIN_STARS = 5;
+const TIMER_SEC = 180;
+
+/* ─────────────────────────────────────────
+   CHALLENGE DATA
+───────────────────────────────────────── */
+const POOL = {
+
+  interview: [
+    {
+      title:    'Job Interview — Fine Dining Waiter',
+      location: '📍 Bistro Centrale — Upscale Restaurant, City Centre',
+      color:    '#4A90D9',
+      scenario: 'You are applying for a waiter position at one of the city\'s top fine dining restaurants. The other players are the interview panel — they will ask you the questions below and may add follow-ups.',
+      tasksLbl: 'Interview Questions (each player asks at least one):',
+      tasks: [
+        'Describe a time you handled a difficult or unreasonable customer. What did you do?',
+        'Our restaurant values storytelling through food. How would you describe a 5-course tasting menu to a first-time guest?',
+        'What does exceptional service look like to you, and how do you maintain it during a rush?'
+      ],
+      tip: '💬 Use <strong>hedging</strong> (tend to, appear to, might) when describing past situations. Use <strong>notwithstanding</strong> or <strong>albeit</strong> to acknowledge a challenge while showing strength. E.g. "Notwithstanding the pressure, I tend to remain composed..."'
+    },
+    {
+      title:    'Job Interview — Hotel Desk Receptionist',
+      location: '📍 Grand Meridian Hotel — 4-Star, Downtown',
+      color:    '#4A90D9',
+      scenario: 'You are interviewing for a desk receptionist position at a luxury hotel. The other players form the HR panel — they may challenge your answers and ask for clarification.',
+      tasksLbl: 'Interview Questions (each player asks at least one):',
+      tasks: [
+        'A VIP guest complains at check-in that their room isn\'t ready, though it\'s 30 minutes before official check-in. What do you do?',
+        'How do you ensure smooth communication between departments during a busy weekend?',
+        'Describe your approach to professionalism and multitasking in a fast-paced environment.'
+      ],
+      tip: '💬 Use <strong>reference devices</strong> (this approach, such situations, the former/the latter) to organise answers. Use <strong>boosting</strong> to express commitment (undoubtedly, clearly). E.g. "Clearly, communication is the cornerstone of hospitality..."'
+    },
+    {
+      title:    'Job Interview — Junior Software Engineer',
+      location: '📍 NexaCode Technologies — Tech Startup, Innovation District',
+      color:    '#4A90D9',
+      scenario: 'You are being interviewed for a junior developer role at a fast-growing startup. The panel (other players) is looking for problem-solvers who communicate with nuance and precision.',
+      tasksLbl: 'Interview Questions (each player asks at least one):',
+      tasks: [
+        'Tell us about a project — real or imagined — where you had to learn a new technology quickly. What was your approach?',
+        'How do you handle disagreements with a senior developer about the best technical solution?',
+        'Where do you see yourself in 3 years, and how does this role fit into that path?'
+      ],
+      tip: '💬 Use <strong>inasmuch as</strong> and <strong>to the extent that</strong> to show nuanced thinking. Use <strong>ellipsis</strong> naturally to avoid repetition. E.g. "Inasmuch as this role offers exposure to scalable systems, it aligns perfectly with my goals..."'
+    },
+    {
+      title:    'Job Interview — Marketing Manager',
+      location: '📍 BrandCraft Agency — Creative Hub, Westside',
+      color:    '#4A90D9',
+      scenario: 'You are applying to lead a marketing team at a creative agency. The other players are the agency\'s creative and client-relations team — they will challenge your ideas.',
+      tasksLbl: 'Interview Questions (each player asks at least one):',
+      tasks: [
+        'Pitch a marketing campaign for a local café with a €2,000 budget and 30 days to launch.',
+        'How do you balance data-driven decision-making with creative intuition?',
+        'One of your campaigns significantly underperformed. How do you present this outcome to a client?'
+      ],
+      tip: '💬 Use <strong>hedging</strong> for results (the data suggests, it appears that) and <strong>boosting</strong> to pitch ideas (undoubtedly, there is no question that). E.g. "There is no question that social media ROI tends to outperform traditional media for this demographic..."'
+    },
+    {
+      title:    'Job Interview — Event Coordinator',
+      location: '📍 City Convention Centre — Events Division',
+      color:    '#4A90D9',
+      scenario: 'You are interviewing for an event coordinator role managing large-scale professional conferences. The panel (other players) will push you on your problem-solving under pressure.',
+      tasksLbl: 'Interview Questions (each player asks at least one):',
+      tasks: [
+        'The keynote speaker cancels 2 hours before a 300-person conference. Walk us through your response.',
+        'How do you manage vendor relationships when something goes wrong on event day?',
+        'Describe your ideal team dynamic for high-pressure, time-sensitive situations.'
+      ],
+      tip: '💬 Use <strong>discourse management vocabulary</strong> (elaborate, resume, acknowledge) actively in your answers. Use <strong>the former / the latter</strong> to compare approaches. E.g. "Between proactive planning and reactive problem-solving, the former is undoubtedly more effective, albeit both are essential..."'
+    },
+    {
+      title:    'Job Interview — English Language Teacher',
+      location: '📍 GlobalTalk Language School — Central Branch',
+      color:    '#4A90D9',
+      scenario: 'You are applying to teach English as a foreign language. The other players are the school director and academic coordinator — they will probe your methodology and communication style.',
+      tasksLbl: 'Interview Questions (each player asks at least one):',
+      tasks: [
+        'How would you structure a 60-minute lesson on discourse and cohesion for B2 students?',
+        'A student consistently loses motivation mid-course. What strategies do you use to re-engage them?',
+        'What is your philosophy on error correction in spoken English?'
+      ],
+      tip: '💬 META challenge! Use ALL Lesson 2 structures: advanced connectors, hedging, boosting, and reference devices. Demonstrate discourse cohesion by teaching through your own example. Can you use <strong>notwithstanding, albeit, inasmuch as</strong> AND <strong>hedging + boosting</strong> in one answer?'
+    }
+  ],
+
+  podcast: [
+    {
+      title:    'Podcast Guest — "Discourse Daily"',
+      location: '🎙️ Topic: The Future of Work',
+      color:    '#9B59B6',
+      scenario: 'You are the special guest on "Discourse Daily," a podcast about ideas that shape society. The other players are the hosts — they may ask questions between your points. Cover all 3 subtopics in 3 minutes.',
+      tasksLbl: 'Your 3 Talking Points (cover them all):',
+      tasks: [
+        '🏠 How remote work has transformed professional culture and team dynamics',
+        '🤖 Whether AI automation is a threat to employment or an opportunity for growth',
+        '📚 What skills workers should prioritise to stay relevant in the next decade'
+      ],
+      tip: '💬 Use <strong>transitions</strong> between subtopics (Furthermore, notwithstanding this, in that regard). Use <strong>reference devices</strong> to link ideas (this shift, such changes, the latter). Use <strong>hedging</strong> when expressing opinions (tend to, arguably, it appears that).'
+    },
+    {
+      title:    'Podcast Guest — "Health Unlocked"',
+      location: '🎙️ Topic: Health in the Modern World',
+      color:    '#9B59B6',
+      scenario: 'You are a health and wellness expert on a popular podcast. The other players are co-hosts who may challenge your views and ask for elaboration. Cover all 3 subtopics.',
+      tasksLbl: 'Your 3 Talking Points (cover them all):',
+      tasks: [
+        '🧠 The growing importance of mental health awareness in the workplace',
+        '📵 The real benefits of digital detox and managing screen time',
+        '🥗 How nutrition science has evolved — and what actually works long-term'
+      ],
+      tip: '💬 Use <strong>boosting</strong> for established facts (it is widely accepted that, clearly, undoubtedly). Use <strong>ellipsis</strong> naturally in speech ("Screen time? More problematic than most people acknowledge [∅]."). Use <strong>albeit</strong> for concessions.'
+    },
+    {
+      title:    'Podcast Guest — "The Digital Age"',
+      location: '🎙️ Topic: Technology & Human Connection',
+      color:    '#9B59B6',
+      scenario: 'You are a tech commentator exploring whether technology connects or isolates us. The other players are hosts with opposing views. Develop your ideas across all 3 subtopics.',
+      tasksLbl: 'Your 3 Talking Points (cover them all):',
+      tasks: [
+        '📱 How social media has changed the way people form and maintain relationships',
+        '🔒 Growing concerns about digital privacy and data ownership',
+        '📖 How technology has transformed access to education globally'
+      ],
+      tip: '💬 Use <strong>inasmuch as</strong> to express precise reasoning ("Inasmuch as platforms collect personal data..."). Use <strong>the former / the latter</strong> to reference your own previous points without repeating them. Practise <strong>paraphrase / rephrase</strong> when a host asks for clarification.'
+    },
+    {
+      title:    'Podcast Guest — "Planet Forward"',
+      location: '🎙️ Topic: Living Sustainably',
+      color:    '#9B59B6',
+      scenario: 'You are an environmental advocate on a sustainability podcast. The other players include one sceptical host and one enthusiastic one. Balance evidence-based claims with honest uncertainty.',
+      tasksLbl: 'Your 3 Talking Points (cover them all):',
+      tasks: [
+        '🛍️ The real impact of individual consumer choices on sustainability',
+        '🏭 Corporate responsibility: greenwashing versus genuine systemic change',
+        '⚖️ The essential role of government policy and international agreements'
+      ],
+      tip: '💬 Use <strong>notwithstanding</strong> when acknowledging counterarguments. Use <strong>to the extent that</strong> to qualify claims precisely. Use <strong>such</strong> as a reference device ("Such policies tend to face..."). Practise <strong>digress → resume</strong> naturally during the conversation.'
+    },
+    {
+      title:    'Podcast Guest — "City Life"',
+      location: '🎙️ Topic: Urban Communities & Belonging',
+      color:    '#9B59B6',
+      scenario: 'You are an urban sociologist discussing what makes cities liveable and connected. The other players are hosts representing different lifestyles — urban, suburban, rural.',
+      tasksLbl: 'Your 3 Talking Points (cover them all):',
+      tasks: [
+        '🌆 The trade-offs between urban density and suburban or rural living',
+        '🚇 How commuting culture affects quality of life and mental health',
+        '🏘️ Why shared community spaces are essential for social cohesion'
+      ],
+      tip: '💬 Use <strong>in that</strong> to specify your reasoning with precision. Use the actual vocabulary from Lesson 2 — cohesion, coherence, transition — in context about communities. Use <strong>hedging</strong> consistently (appear to, tend to, seem to). Signal digressions explicitly: "I know I\'m digressing, but..." then resume.'
+    },
+    {
+      title:    'Podcast Guest — "Language Matters"',
+      location: '🎙️ Topic: The Power of Communication',
+      color:    '#9B59B6',
+      scenario: 'You are a communication expert on a show about how language shapes our world. The other players are hosts who may challenge your claims. This is the ultimate meta-challenge: talk about communication while demonstrating perfect discourse.',
+      tasksLbl: 'Your 3 Talking Points (cover them all):',
+      tasks: [
+        '💬 Digital vs. face-to-face communication: what\'s gained, what\'s lost',
+        '🌍 The advantages and real challenges of learning a second language as an adult',
+        '🤝 How tone, register, and body language shape meaning as much as words'
+      ],
+      tip: '💬 SUPER META! Use ALL structures from Lesson 2. You are talking about language while demonstrating sophisticated language use. Challenge: use <strong>notwithstanding, albeit, inasmuch as, hedging, boosting</strong> AND <strong>the former / the latter</strong> — all in 3 minutes!'
+    }
+  ],
+
+  pitch: [
+    {
+      title:    'Startup Pitch — EcoBox',
+      location: '💡 Innovation Summit — Investor Panel · Startup Stage',
+      color:    '#E67E22',
+      scenario: 'You are the founder of EcoBox — a subscription service that replaces household single-use plastics with biodegradable alternatives delivered monthly. Pitch to the investor panel (other players) in 3 minutes.',
+      tasksLbl: 'Your Pitch Must Cover:',
+      tasks: [
+        '📦 The problem: why single-use plastic is unsustainable and what market gap exists',
+        '🌱 Your solution: how EcoBox works, what customers receive, and the pricing model',
+        '📈 The opportunity: target market size, growth projections, and why now is the moment'
+      ],
+      tip: '💬 Use <strong>boosting</strong> to persuade (undoubtedly, there is no question that, clearly). Use <strong>notwithstanding</strong> to acknowledge competitors but maintain confidence ("Notwithstanding existing alternatives, our model is..."). Use <strong>to the extent that</strong> to define your value proposition precisely.'
+    },
+    {
+      title:    'Startup Pitch — LinguaAI',
+      location: '💡 Tech Ventures Expo — Investor Showcase',
+      color:    '#E67E22',
+      scenario: 'You are the founder of LinguaAI — an AI platform enabling language learners to practise real conversations with virtual native speakers, 24/7, personalised to their level. Pitch to the investors.',
+      tasksLbl: 'Your Pitch Must Cover:',
+      tasks: [
+        '🧠 The problem: language learners struggle to practise conversation outside the classroom',
+        '🤖 Your solution: how the AI creates realistic, adaptive conversation scenarios',
+        '💰 Business model: subscription tiers, B2B school licensing, and 3-year revenue projections'
+      ],
+      tip: '💬 Use <strong>inasmuch as</strong> to show your unique position ("LinguaAI is transformative inasmuch as it..."). Use <strong>hedging</strong> for projections (revenue may reach, the data suggests) and <strong>boosting</strong> for market need (undoubtedly, the demand for authentic practice is...)'
+    },
+    {
+      title:    'Startup Pitch — FarmConnect',
+      location: '💡 AgriTech Forum — Social Impact Track',
+      color:    '#E67E22',
+      scenario: 'You are the founder of FarmConnect — a digital marketplace connecting small local farmers directly to restaurants and households, eliminating supermarket middlemen. The investors (other players) care about both profit and social impact.',
+      tasksLbl: 'Your Pitch Must Cover:',
+      tasks: [
+        '🌾 The problem: small farmers currently receive only 15–20% of the final retail price',
+        '📲 Your solution: the app platform, logistics model, and farmer onboarding process',
+        '🤝 Social impact + business case: why this is both profitable and community-building'
+      ],
+      tip: '💬 Use <strong>reference devices</strong> (this inequity, such a model, the latter) to link arguments. Acknowledge investor concerns with <strong>albeit</strong> ("The logistics are complex, albeit manageable with our partner network"). Use <strong>arguably</strong> for strong but contested claims.'
+    },
+    {
+      title:    'Startup Pitch — MindPulse',
+      location: '💡 HealthTech Investors Roundtable',
+      color:    '#E67E22',
+      scenario: 'You are the founder of MindPulse — an AI-driven mental wellness app that provides daily personalised check-ins, mood tracking, and therapeutic micro-exercises. Pitch to healthcare investors (other players).',
+      tasksLbl: 'Your Pitch Must Cover:',
+      tasks: [
+        '🧘 The problem: mental health care is reactive, not preventive; access remains deeply unequal',
+        '📱 Your solution: how MindPulse works, its key features, and user engagement data',
+        '📊 Traction and ask: current users, clinical partnerships, and funding request breakdown'
+      ],
+      tip: '💬 Use <strong>hedging</strong> for clinical claims ("The data suggests...", "appear to reduce anxiety significantly"). Use <strong>boosting</strong> for market need ("There is no question that mental health is the defining health issue of our generation"). Use <strong>in that</strong> to explain precisely how the app differs.'
+    },
+    {
+      title:    'Startup Pitch — CoNomad',
+      location: '💡 Real Estate & Future of Work Expo',
+      color:    '#E67E22',
+      scenario: 'You are the founder of CoNomad — a global network of co-working spaces designed exclusively for digital nomads, with one membership valid across 50 cities worldwide. Pitch to the panel (other players).',
+      tasksLbl: 'Your Pitch Must Cover:',
+      tasks: [
+        '🌍 The opportunity: 35 million digital nomads globally with no dedicated workspace network',
+        '🏢 Your model: how CoNomad spaces work, the membership tiers, and partner location strategy',
+        '📈 Why now: post-pandemic remote work trends and your sustainable competitive advantage'
+      ],
+      tip: '💬 Use <strong>the former / the latter</strong> when comparing CoNomad to competitors. Use <strong>notwithstanding</strong> to address a risk while staying positive. Use <strong>discourse markers</strong> to structure the pitch — elaborate on each point, then resume after any digression.'
+    },
+    {
+      title:    'Startup Pitch — GreenCommute',
+      location: '💡 Smart City Innovation Forum',
+      color:    '#E67E22',
+      scenario: 'You are the founder of GreenCommute — an electric bike-sharing platform integrated with public transport apps, calculating carbon savings for users and offering green rewards. Pitch to city investors (other players).',
+      tasksLbl: 'Your Pitch Must Cover:',
+      tasks: [
+        '🚲 The problem: urban congestion and the last-mile transportation gap in cities',
+        '⚡ Your solution: the bike network, app integration with public transport, and rewards system',
+        '🌿 Partnership model: city council contracts, corporate partnerships, and scale-up strategy'
+      ],
+      tip: '💬 Use <strong>to the extent that</strong> to frame your impact precisely. Use <strong>such a platform</strong> as a reference device tying your pitch together. Close with strong <strong>boosters</strong>: "Undoubtedly, cities that invest in micro-mobility today will define the urban experience of tomorrow."'
+    }
+  ],
+
+  condo: [
+    {
+      title:    'Condo Meeting — Monthly Agenda',
+      location: '🏠 Residencial Harmony — Meeting Room, Ground Floor',
+      color:    '#27AE60',
+      scenario: 'You are chairing the monthly condo owners meeting. Introduce each agenda item, give your position, and moderate the debate. Other players are neighbours — they may agree, propose amendments, or challenge your views.',
+      tasksLbl: 'Agenda Items to Discuss:',
+      tasks: [
+        '💰 Proposal to increase monthly fees by 15% to fund urgent structural repairs',
+        '📹 Installing security cameras in all common areas and the car park',
+        '🏨 Banning Airbnb and short-term rentals in all residential units'
+      ],
+      tip: '💬 Use <strong>hedging</strong> to soften proposals ("It appears that a fee increase may be necessary..."). Use <strong>the former / the latter</strong> when comparing positions. Use <strong>acknowledge</strong> to respond to objections ("I acknowledge your concern; however, the data suggests..."). Use <strong>notwithstanding</strong> to maintain your position despite opposition.'
+    },
+    {
+      title:    'Condo Meeting — Sustainability Initiative',
+      location: '🏠 Edifício Verde — Residents Assembly',
+      color:    '#27AE60',
+      scenario: 'You are presenting a sustainability proposal to residents. Other players represent different attitudes — some enthusiastic, some cost-conscious, one resistant. Chair and moderate the discussion within 3 minutes.',
+      tasksLbl: 'Agenda Items to Present & Discuss:',
+      tasks: [
+        '🌿 Converting the rooftop into a community garden with a shared maintenance rota',
+        '☀️ Installing solar panels to reduce the building\'s electricity costs by up to 40%',
+        '📵 Creating a "digital-free" residents lounge on the ground floor'
+      ],
+      tip: '💬 Use <strong>boosting</strong> to advocate (clearly, there is no question that). Use <strong>notwithstanding</strong> to address cost concerns head-on. Use <strong>ellipsis</strong> naturally in dialogue ("Will it pay off in five years?" — "It will [∅], yes."). Use <strong>such</strong> as a reference device: "Such an investment is rarely regretted."'
+    },
+    {
+      title:    'Condo Meeting — Community Rules Update',
+      location: '🏠 Condominium Soleil — Annual General Meeting',
+      color:    '#27AE60',
+      scenario: 'Tonight\'s AGM covers contested rule changes. As chair, present each item fairly, give your opinion, and respond to all residents\' (other players\') objections while keeping the discussion productive.',
+      tasksLbl: 'Agenda Items:',
+      tasks: [
+        '🐾 Updating the pet policy: allowing cats, but restricting dogs over 15kg',
+        '🔇 Enforcing a noise curfew starting at 10pm weekdays and 11pm weekends',
+        '🛋️ Renovating the common lounge with €8,000 — residents vote on three design options'
+      ],
+      tip: '💬 Use <strong>reference devices</strong> throughout (this proposal, such restrictions, the former option). Use <strong>advanced connectors</strong> in your reasoning ("The noise curfew is fair in that it protects families, albeit somewhat restrictive for younger residents..."). Practise <strong>digress → resume</strong> naturally as the debate unfolds.'
+    },
+    {
+      title:    'Condo Meeting — Facilities & Leisure',
+      location: '🏠 Residências do Parque — Committee Meeting',
+      color:    '#27AE60',
+      scenario: 'The meeting focuses on quality-of-life improvements residents have requested. As chair, introduce each item, share your position, and lead a democratic discussion with the other residents (other players).',
+      tasksLbl: 'Agenda Items:',
+      tasks: [
+        '🏋️ Purchasing €5,000 of new gym equipment — residents vote: cardio machines vs. free weights',
+        '🏊 Changing pool hours from 9am–8pm to 7am–10pm — pros, cons, and compromise',
+        '🎉 Launching 4 community events per year — who organises them and what\'s the budget?'
+      ],
+      tip: '💬 Use <strong>the former / the latter</strong> when comparing cardio vs. weights, or schedule options. Use <strong>arguably</strong> when taking a position others might dispute. Use <strong>substitution</strong> naturally: "Should we put this to a vote?" — "I believe we should [∅]." Use <strong>hedging</strong> for proposed compromises.'
+    },
+    {
+      title:    'Condo Meeting — Emergency Session',
+      location: '🏠 Torre Central — Emergency Residents Meeting',
+      color:    '#27AE60',
+      scenario: 'You\'ve called an emergency meeting after a burst pipe flooded two floors. As chair, present the crisis clearly, propose solutions, and manage a tense, time-pressured discussion with the other residents (other players).',
+      tasksLbl: 'Items Requiring Urgent Decision:',
+      tasks: [
+        '🔧 Choosing between 3 contractors for immediate repairs (€9k / €12k / €18k — varying quality)',
+        '🏦 Funding: use the emergency reserve fund, or split costs equally among all residents?',
+        '📋 Prevention going forward: hire a full-time building maintenance supervisor, or not?'
+      ],
+      tip: '💬 HIGH-PRESSURE meeting — use <strong>hedging</strong> carefully ("The cheapest option may appear attractive, albeit potentially risky in terms of long-term quality"). Use <strong>inasmuch as</strong> to justify decisions. Manage chaos with cohesion markers: "Let me resume the key points", "To the extent that we have consensus on item one, let us move to..."'
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────
+   GAME STATE
+───────────────────────────────────────── */
+let G = {
+  players: [],
+  currentIdx: 0,
+  board: [],
+  rolling: false,
+  timerInterval: null,
+  timerLeft: 0,
+  activeChallenge: null,
+};
+
+/* ─────────────────────────────────────────
+   SETUP
+───────────────────────────────────────── */
+let setupCount = 3;
+
+(function initSetup() {
+  document.querySelectorAll('#count-row .count-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#count-row .count-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      setupCount = parseInt(btn.dataset.n);
+      renderPlayerInputs();
+    });
+  });
+  renderPlayerInputs();
+})();
+
+function renderPlayerInputs() {
+  const c = document.getElementById('player-inputs');
+  c.innerHTML = '';
+  for (let i = 0; i < setupCount; i++) {
+    const row = document.createElement('div');
+    row.className = 'prow';
+    row.innerHTML = `
+      <div class="prow-dot" style="background:${COLORS[i]}"></div>
+      <input type="text" id="pn-${i}" placeholder="${DEFAULTS[i]}" maxlength="18">
+    `;
+    c.appendChild(row);
+  }
+}
+
+function startGame() {
+  G.players = [];
+  for (let i = 0; i < setupCount; i++) {
+    const inp = document.getElementById(`pn-${i}`);
+    const name = inp.value.trim() || DEFAULTS[i];
+    G.players.push({
+      name, color: COLORS[i],
+      initials: name.slice(0, 2).toUpperCase(),
+      position: 0, stars: 0
+    });
+  }
+  G.currentIdx = 0;
+  G.board = makeBoard();
+
+  document.getElementById('setup-screen').classList.remove('active');
+  document.getElementById('game-screen').classList.add('active');
+
+  renderBoard();
+  renderTokens();
+  renderPlayersList();
+  refreshCurrentPlayer();
+}
+
+/* ─────────────────────────────────────────
+   BOARD
+───────────────────────────────────────── */
+function makeBoard() {
+  const types = [
+    ...Array(5).fill('interview'),
+    ...Array(5).fill('podcast'),
+    ...Array(5).fill('pitch'),
+    ...Array(4).fill('condo'),
+  ];
+  for (let i = types.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [types[i], types[j]] = [types[j], types[i]];
+  }
+  return ['start', ...types]; // 20 total
+}
+
+function renderBoard() {
+  const board = document.getElementById('board');
+  board.querySelectorAll('.space').forEach(s => s.remove());
+
+  for (let i = 0; i < 20; i++) {
+    const type = G.board[i];
+    const info = SPACE_INFO[type];
+    const [row, col] = GRID_POS[i];
+
+    const el = document.createElement('div');
+    el.className = `space type-${type}`;
+    el.id = `sp-${i}`;
+    el.style.gridRow    = row + 1;
+    el.style.gridColumn = col + 1;
+    el.innerHTML = `
+      <div class="space-num">${i}</div>
+      <div class="space-icon">${info.icon}</div>
+      <div class="space-lbl">${info.lbl}</div>
+    `;
+    board.appendChild(el);
+  }
+}
+
+/* ─────────────────────────────────────────
+   TOKENS
+───────────────────────────────────────── */
+function spaceCenter(id) {
+  const [row, col] = GRID_POS[id];
+  return {
+    x: PAD + col * (CELL + GAP) + CELL / 2,
+    y: PAD + row * (CELL + GAP) + CELL / 2,
+  };
+}
+
+function renderTokens() {
+  const layer = document.getElementById('tokens-layer');
+  layer.innerHTML = '';
+
+  // Group by position for offset calculation
+  const byPos = {};
+  G.players.forEach((p, i) => {
+    byPos[p.position] = byPos[p.position] || [];
+    byPos[p.position].push(i);
+  });
+
+  G.players.forEach((p, i) => {
+    const c = spaceCenter(p.position);
+    const group = byPos[p.position];
+    const sibIdx = group.indexOf(i);
+    const offset = (sibIdx - (group.length - 1) / 2) * 15;
+
+    const tok = document.createElement('div');
+    tok.className = 'token';
+    tok.id = `tok-${i}`;
+    tok.style.background = p.color;
+    tok.style.left = (c.x + offset - 10.5) + 'px';
+    tok.style.top  = (c.y - 10.5) + 'px';
+    tok.textContent = p.initials;
+    layer.appendChild(tok);
+  });
+}
+
+function repositionToken(idx) {
+  const byPos = {};
+  G.players.forEach((p, i) => {
+    byPos[p.position] = byPos[p.position] || [];
+    byPos[p.position].push(i);
+  });
+
+  const p = G.players[idx];
+  const c = spaceCenter(p.position);
+  const group = byPos[p.position];
+  const sibIdx = group.indexOf(idx);
+  const offset = (sibIdx - (group.length - 1) / 2) * 15;
+
+  const tok = document.getElementById(`tok-${idx}`);
+  if (tok) {
+    tok.style.left = (c.x + offset - 10.5) + 'px';
+    tok.style.top  = (c.y - 10.5) + 'px';
+  }
+}
+
+/* ─────────────────────────────────────────
+   SIDE PANEL
+───────────────────────────────────────── */
+function refreshCurrentPlayer() {
+  const p = G.players[G.currentIdx];
+  const dot = document.getElementById('cp-dot');
+  dot.style.background = p.color;
+  dot.textContent = p.initials;
+  document.getElementById('cp-name').textContent = `${p.name}'s Turn`;
+  document.getElementById('cp-pos').textContent  = `Space ${p.position} — roll the dice!`;
+  document.getElementById('roll-btn').disabled   = false;
+  document.getElementById('roll-info').textContent = '';
+  document.getElementById('dice-face').textContent = '🎲';
+}
+
+function renderPlayersList() {
+  const list = document.getElementById('players-list');
+  list.innerHTML = '';
+  G.players.forEach((p, i) => {
+    const type = G.board[p.position];
+    const info = SPACE_INFO[type];
+    const row = document.createElement('div');
+    row.className = `prow-game ${i === G.currentIdx ? 'is-current' : ''}`;
+    row.id = `pr-${i}`;
+    row.innerHTML = `
+      <div class="ptok-mini" style="background:${p.color}">${p.initials}</div>
+      <div style="flex:1">
+        <div class="pname-s">${p.name}</div>
+        <div class="ppos-s">Space ${p.position} — ${info.icon} ${info.lbl}</div>
+      </div>
+      <div class="pstars">${'⭐'.repeat(p.stars) || '—'}</div>
+    `;
+    list.appendChild(row);
+  });
+}
+
+/* ─────────────────────────────────────────
+   DICE & MOVEMENT
+───────────────────────────────────────── */
+const FACES = ['⚀','⚁','⚂','⚃','⚄','⚅'];
+
+function rollDice() {
+  if (G.rolling) return;
+  G.rolling = true;
+  document.getElementById('roll-btn').disabled = true;
+
+  const face = document.getElementById('dice-face');
+  let n = 0;
+  const total = 14;
+  const anim = setInterval(() => {
+    face.textContent = FACES[Math.floor(Math.random() * 6)];
+    n++;
+    if (n >= total) {
+      clearInterval(anim);
+      const result = Math.floor(Math.random() * 6) + 1;
+      face.textContent = FACES[result - 1];
+      face.classList.add('rolling');
+      setTimeout(() => face.classList.remove('rolling'), 580);
+
+      document.getElementById('roll-info').textContent = `Rolled ${result} — moving ${result} spaces…`;
+      setTimeout(() => advance(result), 480);
+    }
+  }, 75);
+}
+
+function advance(steps) {
+  const idx = G.currentIdx;
+  const p   = G.players[idx];
+  const oldPos = p.position;
+  const newPos = (oldPos + steps) % 20;
+  const looped = newPos <= oldPos && steps > 0 && oldPos !== 0;
+
+  p.position = newPos;
+  G.rolling  = false;
+
+  // Animate token
+  renderTokens(); // rebuild layer cleanly
+  setTimeout(() => repositionToken(idx), 20);
+
+  // Highlight destination
+  document.querySelectorAll('.space').forEach(s => s.classList.remove('highlight'));
+  const dest = document.getElementById(`sp-${newPos}`);
+  if (dest) dest.classList.add('highlight');
+
+  if (looped) toast('🏁 Passed START! Keep going!');
+
+  renderPlayersList();
+  document.getElementById('cp-pos').textContent = `Space ${newPos} — landed!`;
+
+  setTimeout(() => {
+    const type = G.board[newPos];
+    if (type === 'start') {
+      toast('🏁 Back to START — skip challenge this turn.');
+      setTimeout(nextTurn, 1600);
+    } else {
+      showChallenge(type, idx);
+    }
+  }, 700);
+}
+
+/* ─────────────────────────────────────────
+   CHALLENGE MODAL
+───────────────────────────────────────── */
+const BADGE_CLS  = { interview:'badge-interview', podcast:'badge-podcast', pitch:'badge-pitch', condo:'badge-condo' };
+const BADGE_LBL  = { interview:'💼 Job Interview', podcast:'🎙️ Podcast', pitch:'💡 Pitch', condo:'🏠 Condo Meeting' };
+const ROLE_MSG   = {
+  interview: '🎭 Other players: You are the interview panel — ask at least one question each!',
+  podcast:   '🎭 Other players: You are the podcast hosts — keep the conversation going!',
+  pitch:     '🎭 Other players: You are the investor panel — ask one tough question each!',
+  condo:     '🎭 Other players: You are the residents — debate, agree, or push back!',
+};
+
+function showChallenge(type, playerIdx) {
+  const pool = POOL[type];
+  const ch   = pool[Math.floor(Math.random() * pool.length)];
+  G.activeChallenge = { type, playerIdx, ch };
+
+  // Badge
+  const badge = document.getElementById('mod-badge');
+  badge.className = `type-badge ${BADGE_CLS[type]}`;
+  badge.innerHTML = BADGE_LBL[type];
+
+  document.getElementById('mod-pname').textContent = G.players[playerIdx].name;
+  document.getElementById('mod-title').textContent = ch.title;
+  document.getElementById('mod-loc').textContent   = ch.location;
+
+  const scen = document.getElementById('mod-scenario');
+  scen.textContent   = ch.scenario;
+  scen.style.borderColor = ch.color;
+
+  document.getElementById('mod-tasks-lbl').textContent = ch.tasksLbl;
+
+  const tasksDiv = document.getElementById('mod-tasks');
+  tasksDiv.innerHTML = '';
+  ch.tasks.forEach((t, i) => {
+    const row = document.createElement('div');
+    row.className = 'task-row';
+    row.innerHTML = `
+      <div class="task-n" style="background:${ch.color}22;color:${ch.color}">${i + 1}</div>
+      <div>${t}</div>
+    `;
+    tasksDiv.appendChild(row);
+  });
+
+  document.getElementById('mod-tip').innerHTML =
+    `<div class="lang-tip-ttl">🎯 Language Structure Tips</div>${ch.tip}`;
+
+  document.getElementById('mod-role').textContent = ROLE_MSG[type];
+
+  // Reset timer
+  resetTimer();
+  document.getElementById('btn-start').disabled = false;
+  document.getElementById('btn-done').disabled  = true;
+
+  document.getElementById('challenge-modal').classList.remove('hidden');
+}
+
+/* ─────────────────────────────────────────
+   TIMER
+───────────────────────────────────────── */
+function resetTimer() {
+  clearInterval(G.timerInterval);
+  G.timerLeft = TIMER_SEC;
+  document.getElementById('timer-txt').textContent = '3:00';
+  const prog = document.getElementById('timer-prog');
+  prog.style.strokeDashoffset = '0';
+  prog.style.stroke = '#27AE60';
+}
+
+function startTimer() {
+  document.getElementById('btn-start').disabled = false; // keep visible but disable after click
+  document.getElementById('btn-start').disabled = true;
+  document.getElementById('btn-done').disabled  = false;
+
+  G.timerLeft = TIMER_SEC;
+  G.timerInterval = setInterval(() => {
+    G.timerLeft--;
+    const m = Math.floor(G.timerLeft / 60);
+    const s = G.timerLeft % 60;
+    document.getElementById('timer-txt').textContent =
+      `${m}:${String(s).padStart(2, '0')}`;
+
+    const ratio  = G.timerLeft / TIMER_SEC;
+    const offset = CIRC * (1 - ratio);
+    const prog   = document.getElementById('timer-prog');
+    prog.style.strokeDashoffset = offset;
+    prog.style.stroke = ratio > 0.5 ? '#27AE60' : ratio > 0.2 ? '#E67E22' : '#E74C3C';
+
+    if (G.timerLeft <= 0) {
+      clearInterval(G.timerInterval);
+      document.getElementById('timer-txt').textContent = '0:00';
+      document.getElementById('mod-role').textContent  = '⏰ Time\'s up! Did the player complete the challenge?';
+    }
+  }, 1000);
+}
+
+function completeChallenge() {
+  clearInterval(G.timerInterval);
+  const idx = G.activeChallenge.playerIdx;
+  G.players[idx].stars++;
+
+  closeModal();
+  renderPlayersList();
+  toast(`⭐ ${G.players[idx].name} earned a star!`);
+
+  if (G.players[idx].stars >= WIN_STARS) {
+    setTimeout(() => showWin(idx), 600);
+    return;
+  }
+  setTimeout(nextTurn, 600);
+}
+
+function skipChallenge() {
+  clearInterval(G.timerInterval);
+  closeModal();
+  setTimeout(nextTurn, 300);
+}
+
+function closeModal() {
+  document.getElementById('challenge-modal').classList.add('hidden');
+  document.querySelectorAll('.space').forEach(s => s.classList.remove('highlight'));
+}
+
+/* ─────────────────────────────────────────
+   TURN
+───────────────────────────────────────── */
+function nextTurn() {
+  G.currentIdx = (G.currentIdx + 1) % G.players.length;
+  renderPlayersList();
+  refreshCurrentPlayer();
+}
+
+/* ─────────────────────────────────────────
+   WIN
+───────────────────────────────────────── */
+function showWin(idx) {
+  const p = G.players[idx];
+  document.getElementById('win-ttl').textContent =
+    `🏆 ${p.name} wins!`;
+  document.getElementById('win-sub').textContent =
+    `Completed ${WIN_STARS} challenges with outstanding discourse skills! 🌟`;
+  document.getElementById('win-ov').classList.remove('hidden');
+}
+
+/* ─────────────────────────────────────────
+   TOAST
+───────────────────────────────────────── */
+function toast(msg) {
+  const t = document.createElement('div');
+  t.className   = 'toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 3000);
+}
+</script>
+</body>
+</html>

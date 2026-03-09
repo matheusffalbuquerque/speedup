@@ -3,772 +3,850 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "\"Ambiguous\" best describes a statement that...",
+      "question": "\"Cohesion\" in a text refers to...",
       "options": [
-        "Contains no specific information",
-        "Is overly formal and complex",
-        "Can be interpreted in more than one way",
-        "Is clearly understood by everyone"
+        "The overall meaning and logical flow of ideas",
+        "The grammatical and lexical links that connect sentences and paragraphs",
+        "The vocabulary level of a written piece",
+        "The use of complex grammar structures"
       ],
-      "correctAnswer": "Can be interpreted in more than one way"
+      "correctAnswer": "The grammatical and lexical links that connect sentences and paragraphs"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "If she _____ medicine instead of law, she would be a doctor now. (Mixed Conditional A)",
-      "correctAnswer": "had studied"
+      "type": "multiple-choice",
+      "question": "\"Coherence\" is best described as...",
+      "options": [
+        "The use of connectors like 'however' and 'therefore'",
+        "Avoiding repetition through substitution",
+        "The logical consistency and clear flow of ideas throughout a text",
+        "Matching the register to the audience"
+      ],
+      "correctAnswer": "The logical consistency and clear flow of ideas throughout a text"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "\"Convey\" is most naturally used with which of the following?",
+      "question": "What is the function of a \"transition\" in written discourse?",
       "options": [
-        "A question / an order / a rule",
-        "A message / an emotion / meaning",
-        "A number / a score / a result",
-        "A building / a machine / a law"
+        "To introduce a new topic unrelated to the previous one",
+        "To signal a relationship between ideas — contrast, addition, or result",
+        "To summarise the entire text at the end",
+        "To express the writer's personal opinion"
       ],
-      "correctAnswer": "A message / an emotion / meaning"
+      "correctAnswer": "To signal a relationship between ideas — contrast, addition, or result"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "The professor asked the student to _____ on her argument — more detail and context were needed.",
-      "correctAnswer": "elaborate"
+      "type": "fill-blank",
+      "question": "_____ the severe weather conditions, the conference proceeded as planned.",
+      "correctAnswer": "Notwithstanding"
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "If they _____ the project earlier, they would be celebrating success right now. (launch)",
-      "correctAnswer": "had launched|had started"
+      "type": "multiple-choice",
+      "question": "\"Albeit\" is closest in meaning to...",
+      "options": [
+        "Therefore",
+        "Nevertheless",
+        "Although / even though",
+        "In addition to"
+      ],
+      "correctAnswer": "Although / even though"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses Mixed Conditional Type A?",
-      "options": [
-        "If she had studied harder, she would have been fluent.",
-        "If she studies harder, she will be fluent now.",
-        "If she had studied harder, she would be fluent now.",
-        "If she studied harder, she would be fluent now."
-      ],
-      "correctAnswer": "If she had studied harder, she would be fluent now."
+      "type": "fill-blank",
+      "question": "She was the first to _____ that the initial proposal had significant flaws — her honesty was appreciated by the team.",
+      "correctAnswer": "acknowledge"
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "There is an important _____ between \"confident\" and \"arrogant\" — one is admired, the other is not.",
-      "correctAnswer": "nuance"
+      "type": "multiple-choice",
+      "question": "To \"paraphrase\" means to...",
+      "options": [
+        "Translate a sentence into another language",
+        "Copy a text and cite the source",
+        "Express the same idea using different words without changing the meaning",
+        "Summarise only the main point of a long text"
+      ],
+      "correctAnswer": "Express the same idea using different words without changing the meaning"
     },
     {
       "id": 8,
       "type": "complete",
-      "question": "His quiet tone _____ deep disappointment more clearly than any words could have.",
-      "correctAnswer": "conveyed"
+      "question": "The professor asked her student to _____ on the point about climate change — a single sentence was not enough.",
+      "correctAnswer": "elaborate"
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Rewrite using Mixed Conditional Type A: \"He didn't practise. He isn't fluent now.\"",
-      "correctAnswer": "if he had practised, he would be fluent now"
+      "type": "multiple-choice",
+      "question": "\"Inasmuch as\" is used to...",
+      "options": [
+        "Introduce a contrast or unexpected result",
+        "Provide a reason or qualification — similar to 'in so far as'",
+        "Add emphasis to a previously stated idea",
+        "Indicate a time sequence between two events"
+      ],
+      "correctAnswer": "Provide a reason or qualification — similar to 'in so far as'"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Good academic writing requires both precision and _____ — ideas must connect logically throughout.",
-      "correctAnswer": "coherence"
+      "question": "The policy was considered a success _____ _____ _____ it reduced unemployment by 12% within two years.",
+      "correctAnswer": "to the extent that"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "In a Mixed Conditional Type A, the if-clause uses...",
+      "question": "To \"digress\" during a presentation means to...",
       "options": [
-        "Would + base verb",
-        "Present Perfect",
-        "Past Simple",
-        "Past Perfect (had + past participle)"
+        "Summarise the key points clearly",
+        "Move away from the main topic temporarily",
+        "Introduce a counter-argument",
+        "Use formal and academic vocabulary"
       ],
-      "correctAnswer": "Past Perfect (had + past participle)"
+      "correctAnswer": "Move away from the main topic temporarily"
     },
     {
       "id": 12,
       "type": "complete",
-      "question": "The contract clause was entirely _____ — both parties had completely different interpretations of the same sentence.",
-      "correctAnswer": "ambiguous"
+      "question": "After the brief digression, the speaker said: \"Let me _____ to the main argument I was making before.\"",
+      "correctAnswer": "resume"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "If we _____ better decisions back then, our company wouldn't be struggling today.",
-      "correctAnswer": "had made"
+      "question": "The project was approved, _____ several committee members had raised serious objections.",
+      "correctAnswer": "notwithstanding"
     },
     {
       "id": 14,
       "type": "multiple-choice",
-      "question": "\"Register\" in linguistics refers to...",
+      "question": "\"In that\" as a connector is used to...",
       "options": [
-        "The pronunciation of a specific accent",
-        "The level of formality or style used in different contexts",
-        "The vocabulary range of a speaker",
-        "The speed at which someone speaks"
+        "Introduce a time clause",
+        "Express a concession or contrast",
+        "Explain or specify the reason for something just stated",
+        "Add a new, unrelated point"
       ],
-      "correctAnswer": "The level of formality or style used in different contexts"
+      "correctAnswer": "Explain or specify the reason for something just stated"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "A good speaker chooses _____ vocabulary — vague or general words lead to misunderstandings.",
-      "correctAnswer": "precise"
+      "type": "fill-blank",
+      "question": "The new law was controversial, _____ it imposed restrictions that many citizens considered an infringement of personal freedom.",
+      "correctAnswer": "in that"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "If he _____ that early opportunity, he would be running his own business now.",
-      "correctAnswer": "had taken"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses \"albeit\"?",
+      "options": [
+        "The report was completed albeit quickly and thoroughly.",
+        "The film received positive reviews, albeit with some criticism of the ending.",
+        "She passed the exam albeit she studied very hard.",
+        "Albeit the rain, they enjoyed the outdoor event."
+      ],
+      "correctAnswer": "The film received positive reviews, albeit with some criticism of the ending."
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Rewrite using Mixed Conditional Type A: \"They didn't invest early. They aren't financially secure now.\"",
-      "correctAnswer": "if they had invested early, they would be financially secure now"
+      "type": "fill-blank",
+      "question": "A text has _____ when its ideas follow a logical sequence that the reader can easily follow — even without explicit connectors.",
+      "correctAnswer": "coherence"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "\"Syntax\" refers to...",
-      "options": [
-        "The pronunciation of sounds in a language",
-        "The meaning of individual words",
-        "The arrangement of words and phrases to form sentences",
-        "The study of how languages change over time"
-      ],
-      "correctAnswer": "The arrangement of words and phrases to form sentences"
+      "type": "complete",
+      "question": "In his closing remarks, the director _____ the team's concerns and promised to address them in the next meeting.",
+      "correctAnswer": "acknowledged"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "The _____ of her long silence was clear — she was not satisfied with what had been proposed.",
-      "correctAnswer": "implication"
+      "type": "multiple-choice",
+      "question": "Which word best completes the sentence? \"The budget cuts affected the department _____ _____ _____ several key projects had to be cancelled.\"",
+      "options": [
+        "albeit",
+        "notwithstanding",
+        "to the extent that",
+        "inasmuch as"
+      ],
+      "correctAnswer": "to the extent that"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Academic writing demands a formal _____ — casual expressions and colloquial phrases are generally avoided.",
-      "correctAnswer": "register"
+      "type": "translate",
+      "question": "Rewrite the sentence using \"notwithstanding\": \"Despite the high cost, the board approved the plan.\"",
+      "correctAnswer": "notwithstanding the high cost, the board approved the plan"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "If she _____ more patient by nature, she would have finished the project on time. (Mixed Conditional B)",
-      "correctAnswer": "were"
+      "type": "multiple-choice",
+      "question": "\"Ellipsis\" in grammar refers to...",
+      "options": [
+        "Using synonyms to avoid repeating the same word",
+        "Replacing a word or phrase with a pronoun",
+        "Omitting words that can be understood from context to avoid unnecessary repetition",
+        "Referring back to a previously mentioned idea"
+      ],
+      "correctAnswer": "Omitting words that can be understood from context to avoid unnecessary repetition"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Mixed Conditional Type B expresses...",
-      "options": [
-        "A past action that still affects the present moment",
-        "A present state that explains why something did or didn't happen in the past",
-        "A habit that existed in the past but no longer exists",
-        "A future plan based on current conditions"
-      ],
-      "correctAnswer": "A present state that explains why something did or didn't happen in the past"
+      "type": "fill-blank",
+      "question": "Complete using ellipsis: \"She can play the guitar, and her brother _____ too.\" (omit repeated words)",
+      "correctAnswer": "can"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "If he _____ so impulsive by nature, he _____ quit his job without having another one lined up.",
-      "correctAnswer": "weren't / wouldn't have"
+      "type": "multiple-choice",
+      "question": "In the sentence \"Both plans were presented. The former focused on cost reduction; the latter on market expansion.\", what does \"the former\" refer to?",
+      "options": [
+        "Market expansion",
+        "Cost reduction",
+        "The first plan mentioned",
+        "The second plan mentioned"
+      ],
+      "correctAnswer": "The first plan mentioned"
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "If I _____ harder during that course, I would be in a much stronger position now. (study)",
-      "correctAnswer": "had studied"
+      "type": "complete",
+      "question": "Rewrite to avoid repetition using substitution: \"Maria submitted her report. Maria's report was excellent.\" → Maria submitted her report. _____ was excellent.",
+      "correctAnswer": "It"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Identify the conditional type: \"If she were more organised, she would have met the deadline.\"",
-      "options": [
-        "Third Conditional",
-        "Mixed Conditional Type A",
-        "Mixed Conditional Type B",
-        "Second Conditional"
-      ],
-      "correctAnswer": "Mixed Conditional Type B"
+      "type": "fill-blank",
+      "question": "Two solutions were proposed: one involving tax reform and another involving public spending cuts. The _____ was rejected immediately; the _____ was debated at length.",
+      "correctAnswer": "former / latter"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Rewrite using Mixed Conditional Type B: \"She is very shy. She didn't speak up at the meeting.\"",
-      "correctAnswer": "if she weren't so shy, she would have spoken up at the meeting"
+      "type": "multiple-choice",
+      "question": "Which sentence demonstrates ellipsis correctly?",
+      "options": [
+        "He arrived late, and she arrived late too.",
+        "He arrived late, and she did too.",
+        "He arrived late, and she arrived as well.",
+        "He arrived late, and so she arrived."
+      ],
+      "correctAnswer": "He arrived late, and she did too."
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "If I _____ a native speaker, I _____ understood that cultural reference immediately.",
-      "correctAnswer": "were / would have"
+      "question": "The committee received two proposals. _____ proposals were reviewed carefully before the final decision was made.",
+      "correctAnswer": "Such"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "The instruction was so _____ that even the most experienced team members couldn't agree on how to proceed.",
-      "correctAnswer": "ambiguous"
+      "type": "multiple-choice",
+      "question": "In the sentence \"The results were surprising. This prompted the team to reanalyse the data.\", \"this\" refers to...",
+      "options": [
+        "The team",
+        "The data",
+        "The surprising results",
+        "The reanalysis"
+      ],
+      "correctAnswer": "The surprising results"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which sentence is Mixed Conditional Type A?",
-      "options": [
-        "If he had studied, he would have passed.",
-        "If he were smarter, he would pass easily.",
-        "If he hadn't dropped out, he would have better opportunities now.",
-        "If he doesn't study, he won't pass."
-      ],
-      "correctAnswer": "If he hadn't dropped out, he would have better opportunities now."
+      "type": "translate",
+      "question": "Rewrite using ellipsis: \"He didn't finish his homework, and she didn't finish her homework either.\"",
+      "correctAnswer": "he didn't finish his homework, and she didn't either"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "If they _____ more flexible as a team, they _____ reached an agreement at the very first meeting.",
-      "correctAnswer": "were / would have"
+      "type": "complete",
+      "question": "Two candidates were shortlisted: Dr. Hughes and Professor Carter. The _____ specialises in linguistics; the _____ in cognitive psychology.",
+      "correctAnswer": "former / latter"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "She was able to _____ her passion for the project through her detailed, well-structured presentation.",
-      "correctAnswer": "convey"
+      "type": "multiple-choice",
+      "question": "Which sentence uses \"substitution\" to avoid repetition?",
+      "options": [
+        "I bought a new car. The new car is very fast.",
+        "I bought a new car. It is very fast.",
+        "I bought a new car. A car that is very fast.",
+        "I bought a new car. New cars are generally fast."
+      ],
+      "correctAnswer": "I bought a new car. It is very fast."
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Rewrite using Mixed Conditional Type A: \"We didn't plan carefully. We're in serious trouble now.\"",
-      "correctAnswer": "if we had planned carefully, we wouldn't be in trouble now"
+      "type": "fill-blank",
+      "question": "Three strategies were tested. _____ strategies proved effective only under specific conditions.",
+      "correctAnswer": "Such"
     },
     {
       "id": 13,
-      "type": "fill-blank",
-      "question": "If he _____ so risk-averse by personality, he _____ accepted the partnership when it was first offered.",
-      "correctAnswer": "weren't / would have"
+      "type": "multiple-choice",
+      "question": "\"Substitution\" as a cohesion device involves...",
+      "options": [
+        "Omitting words that are already understood",
+        "Replacing a word or phrase with another item (pronoun, 'do so', 'one', etc.) to avoid repetition",
+        "Using discourse markers to link ideas logically",
+        "Paraphrasing a complex idea in simpler terms"
+      ],
+      "correctAnswer": "Replacing a word or phrase with another item (pronoun, 'do so', 'one', etc.) to avoid repetition"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Choose the correct structure for Mixed Conditional Type B:",
-      "options": [
-        "If + simple past → would + base verb",
-        "If + had + pp → would + base verb",
-        "If + present simple → will + base verb",
-        "If + were/weren't → would have + past participle"
-      ],
-      "correctAnswer": "If + were/weren't → would have + past participle"
+      "type": "complete",
+      "question": "\"Several policies were introduced. _____ policies had mixed results.\" Choose the reference device that creates cohesion without repeating 'policies': \"These\" or \"Such\"?",
+      "correctAnswer": "Such / These"
     },
     {
       "id": 15,
       "type": "fill-blank",
-      "question": "His use of _____ vocabulary — never vague, always exact — made the essay truly outstanding.",
-      "correctAnswer": "precise"
+      "question": "\"Would you like a biscuit?\" — \"No thanks, I've already had _____.\" (use substitution for 'a biscuit')",
+      "correctAnswer": "one"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "If I _____ a more experienced negotiator at the time, I _____ that situation very differently.",
-      "correctAnswer": "were / would have handled"
+      "type": "multiple-choice",
+      "question": "\"The latter\" always refers to...",
+      "options": [
+        "The first item mentioned in a list",
+        "Any item mentioned previously",
+        "The last item mentioned in a pair or list",
+        "A more important of two things"
+      ],
+      "correctAnswer": "The last item mentioned in a pair or list"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "In both types of mixed conditional, the result clause always contains...",
-      "options": [
-        "A specific time expression",
-        "\"Were\" or \"weren't\"",
-        "\"Would\" in some form",
-        "\"Had\" + past participle"
-      ],
-      "correctAnswer": "\"Would\" in some form"
+      "type": "fill-blank",
+      "question": "The meeting discussed two issues: funding and staffing. The former was resolved quickly; the resolution of _____ took considerably longer.",
+      "correctAnswer": "the latter"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "There is a subtle _____ between \"imply\" and \"suggest\" that advanced learners should be aware of.",
-      "correctAnswer": "nuance"
+      "type": "translate",
+      "question": "Rewrite using 'do so' to avoid repetition: \"She wanted to quit, but she couldn't quit because of her contract.\"",
+      "correctAnswer": "she wanted to quit, but she couldn't do so because of her contract"
     },
     {
       "id": 19,
-      "type": "translate",
-      "question": "Rewrite using Mixed Conditional Type B: \"He's very direct. He probably offended them at the conference.\"",
-      "correctAnswer": "if he weren't so direct, he wouldn't have offended them at the conference"
+      "type": "multiple-choice",
+      "question": "\"Anaphoric\" reference means...",
+      "options": [
+        "Pointing forward to something not yet mentioned",
+        "Referring back to something already mentioned in the text",
+        "Using a pronoun to avoid repeating a noun",
+        "Omitting words that can be inferred from context"
+      ],
+      "correctAnswer": "Referring back to something already mentioned in the text"
     },
     {
       "id": 20,
       "type": "complete",
-      "question": "The _____ of her argument was remarkable — each idea followed naturally and logically from the last.",
-      "correctAnswer": "coherence"
+      "question": "\"The CEO announced a new strategy. _____ decision came as a surprise to many shareholders.\" Fill in the best reference device.",
+      "correctAnswer": "This"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "What triggers inversion for emphasis in a sentence?",
+      "question": "\"Hedging\" in academic language is used to...",
       "options": [
-        "Any adverb placed at the beginning",
-        "A conditional clause at the beginning",
-        "A negative or restrictive adverb placed at the beginning",
-        "A noun clause at the beginning"
+        "Make a statement sound more certain and definitive",
+        "Express caution or uncertainty — avoiding absolute claims",
+        "Introduce a counter-argument to one's own position",
+        "Criticise another writer's methodology"
       ],
-      "correctAnswer": "A negative or restrictive adverb placed at the beginning"
+      "correctAnswer": "Express caution or uncertainty — avoiding absolute claims"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "_____ have I seen such a coherent and well-structured argument from a first-year student.",
-      "correctAnswer": "Never"
+      "question": "Research suggests that children _____ _____ learn languages more easily than adults, though individual variation is significant.",
+      "correctAnswer": "tend to"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Rewrite using inversion: \"I have never witnessed such a precise use of language in a student essay.\"",
-      "correctAnswer": "never have i witnessed such a precise use of language in a student essay"
+      "type": "multiple-choice",
+      "question": "Which sentence uses hedging appropriately?",
+      "options": [
+        "This study proves that diet is the only cause of obesity.",
+        "This study suggests that diet may be a contributing factor in obesity.",
+        "This study clearly shows that diet undoubtedly causes obesity.",
+        "This study confirms without doubt that diet is the main cause."
+      ],
+      "correctAnswer": "This study suggests that diet may be a contributing factor in obesity."
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Not only _____ she complete the assignment ahead of schedule, but she also added three thoroughly researched sources.",
-      "correctAnswer": "did"
+      "question": "The new approach is _____ the most effective strategy proposed this decade — no comparable method has achieved such results.",
+      "correctAnswer": "undoubtedly"
     },
     {
       "id": 5,
       "type": "fill-blank",
-      "question": "Rarely _____ the committee approve a proposal on the very first submission.",
-      "correctAnswer": "does"
+      "question": "The data is _____ insufficient to draw firm conclusions — further research is needed before any policy changes are made.",
+      "correctAnswer": "clearly"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence uses inversion correctly?",
+      "question": "\"Arguably\" is used by writers to...",
       "options": [
-        "Rarely he makes such an error.",
-        "Rarely he does make such an error.",
-        "Rarely does he make such a careless error.",
-        "Rarely makes he such an error."
+        "Present a fact that cannot be disputed",
+        "Express that a claim is strong but open to debate",
+        "Introduce a direct quotation from another source",
+        "Indicate that two ideas are equally valid"
       ],
-      "correctAnswer": "Rarely does he make such a careless error."
+      "correctAnswer": "Express that a claim is strong but open to debate"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Rewrite using inversion: \"She had barely sat down when the phone rang.\"",
-      "correctAnswer": "hardly had she sat down when the phone rang"
+      "type": "fill-blank",
+      "question": "The symptoms _____ _____ be caused by stress, though a full medical evaluation would be needed to confirm this.",
+      "correctAnswer": "appear to"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "No sooner _____ the meeting begun than someone raised an urgent and unexpected objection.",
-      "correctAnswer": "had"
+      "type": "complete",
+      "question": "Excessive social media use _____ _____ affect concentration levels in adolescents, according to several recent studies.",
+      "correctAnswer": "tends to"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Seldom _____ we witnessed such a compelling combination of nuance and precision in a single speech.",
-      "correctAnswer": "have"
+      "type": "multiple-choice",
+      "question": "Which of the following is a \"boosting\" expression?",
+      "options": [
+        "It appears that",
+        "It tends to",
+        "It may possibly",
+        "It is undoubtedly"
+      ],
+      "correctAnswer": "It is undoubtedly"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "When there is no auxiliary verb in the original sentence, what do we add to form inversion?",
-      "options": [
-        "Have / Has / Had",
-        "Do / Does / Did",
-        "Will / Would",
-        "Be / Am / Is / Are"
-      ],
-      "correctAnswer": "Do / Does / Did"
+      "type": "fill-blank",
+      "question": "This is _____ the most significant contribution to the field in the last twenty years.",
+      "correctAnswer": "arguably"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Not only _____ the plan fail spectacularly, but it also caused lasting damage to the company's reputation.",
-      "correctAnswer": "did"
+      "type": "multiple-choice",
+      "question": "Which sentence softens the claim most effectively using hedging?",
+      "options": [
+        "Remote work destroys team communication.",
+        "Remote work appears to have some impact on team communication.",
+        "Remote work undoubtedly destroys team communication entirely.",
+        "Remote work is clearly the worst thing for team communication."
+      ],
+      "correctAnswer": "Remote work appears to have some impact on team communication."
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Rewrite using inversion: \"The team has rarely encountered a challenge so ambiguous.\"",
-      "correctAnswer": "rarely has the team encountered a challenge so ambiguous"
+      "type": "complete",
+      "question": "_____ the results suggest a positive correlation, the sample size is too small to make a definitive claim.",
+      "correctAnswer": "Although / While / Even though"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Hardly _____ I arrived at the venue _____ the opening speech began without warning.",
-      "correctAnswer": "had / when"
+      "type": "translate",
+      "question": "Add hedging to make this statement more academic: \"Stress causes poor academic performance.\"",
+      "correctAnswer": "stress tends to / appears to / may contribute to poor academic performance"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "What effect does inversion typically create in formal writing or speech?",
-      "options": [
-        "A softer, more polite tone",
-        "A dramatic, emphatic, and formal tone",
-        "A more conversational and accessible tone",
-        "A tone of hesitation and uncertainty"
-      ],
-      "correctAnswer": "A dramatic, emphatic, and formal tone"
+      "type": "fill-blank",
+      "question": "Shakespeare is _____ the greatest playwright in the history of the English language.",
+      "correctAnswer": "arguably"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "_____ sooner had she submitted the final report than her supervisor requested extensive revisions.",
-      "correctAnswer": "No"
+      "type": "multiple-choice",
+      "question": "Which hedging phrase is most appropriate in a formal academic essay?",
+      "options": [
+        "I think maybe this could possibly be true",
+        "It would appear that further investigation is warranted",
+        "Probably this is what happens",
+        "Maybe things work this way"
+      ],
+      "correctAnswer": "It would appear that further investigation is warranted"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Rewrite using inversion: \"We have seldom encountered such a nuanced piece of academic writing.\"",
-      "correctAnswer": "seldom have we encountered such a nuanced piece of academic writing"
+      "type": "fill-blank",
+      "question": "This approach is _____ more efficient, though cost considerations must also be taken into account.",
+      "correctAnswer": "clearly"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Not only _____ the researcher's findings challenge existing theories, but they also opened entirely new fields of inquiry.",
-      "correctAnswer": "did"
+      "question": "_____ _____ _____ that the new regulations have had a significant effect on air quality in urban areas.",
+      "correctAnswer": "It would appear"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Seldom _____ a student demonstrate such a thorough understanding of advanced syntax in their first year.",
-      "correctAnswer": "does"
+      "type": "multiple-choice",
+      "question": "\"Boosting\" expressions are used to...",
+      "options": [
+        "Introduce an uncertain or tentative claim",
+        "Strengthen or reinforce the certainty of a statement",
+        "Add a contrast to the previous argument",
+        "Summarise the findings of a study"
+      ],
+      "correctAnswer": "Strengthen or reinforce the certainty of a statement"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "\"No sooner... than\" is used to express...",
-      "options": [
-        "A hypothetical future event",
-        "A cause and its delayed consequence",
-        "Two events that happened almost simultaneously",
-        "A repeated past habit"
-      ],
-      "correctAnswer": "Two events that happened almost simultaneously"
+      "type": "fill-blank",
+      "question": "The evidence _____ _____ support the hypothesis, though replication studies will be needed.",
+      "correctAnswer": "tends to"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Rewrite using inversion: \"The board has never approved such an ambiguous and poorly written proposal.\"",
-      "correctAnswer": "never has the board approved such an ambiguous and poorly written proposal"
+      "question": "Transform this boosted claim into a hedged one: \"This policy undoubtedly solves the housing crisis.\"",
+      "correctAnswer": "this policy appears to / may / tends to address some aspects of the housing crisis"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "What is a cleft sentence?",
+      "question": "What is the key difference between \"paraphrasing\" and \"quoting\"?",
       "options": [
-        "A sentence with a missing subject or verb",
-        "A sentence beginning with a negative adverb",
-        "A sentence split into two clauses to emphasise one specific element",
-        "A conditional sentence combining two different time frames"
+        "Quoting changes the original words; paraphrasing keeps them",
+        "Paraphrasing uses the exact original words; quoting changes them",
+        "Quoting keeps the exact words of the source; paraphrasing expresses the idea in your own words",
+        "There is no difference — they are the same technique"
       ],
-      "correctAnswer": "A sentence split into two clauses to emphasise one specific element"
+      "correctAnswer": "Quoting keeps the exact words of the source; paraphrasing expresses the idea in your own words"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "_____ was the team's extraordinary coherence that ultimately secured the contract.",
-      "correctAnswer": "It"
+      "question": "In other _____, the project failed because the team lacked clear communication and defined roles.",
+      "correctAnswer": "words"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Rewrite as an It-cleft: \"The lack of preparation caused the presentation to fail.\"",
-      "correctAnswer": "it was the lack of preparation that caused the presentation to fail"
+      "type": "multiple-choice",
+      "question": "\"To elaborate\" means to...",
+      "options": [
+        "Simplify a complex idea",
+        "Repeat the same point multiple times",
+        "Add more detail or explanation to something already stated",
+        "Contradict a point made by someone else"
+      ],
+      "correctAnswer": "Add more detail or explanation to something already stated"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "What I _____ is more time to think — not more instructions to follow and memorise.",
-      "correctAnswer": "need"
+      "type": "fill-blank",
+      "question": "The scientist was respected, _____ not widely known outside of academic circles.",
+      "correctAnswer": "albeit"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which sentence is a correct \"What-cleft\"?",
+      "question": "\"Inasmuch as\" is best replaced by which simpler expression?",
       "options": [
-        "What we need it is clear communication.",
-        "It is what we need clear communication.",
-        "What we need are clear communication.",
-        "What we need is clear communication."
+        "Even though",
+        "In so far as / to the degree that",
+        "As a result of",
+        "In contrast to"
       ],
-      "correctAnswer": "What we need is clear communication."
+      "correctAnswer": "In so far as / to the degree that"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "It was her ability to _____ complex ideas in simple terms that made her such an effective communicator.",
-      "correctAnswer": "convey"
+      "type": "translate",
+      "question": "Paraphrase this sentence: \"Children who grow up bilingual often have advantages in cognitive flexibility.\"",
+      "correctAnswer": "bilingual children / growing up with two languages may develop / tend to show greater cognitive flexibility / adaptability"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Rewrite using a What-cleft: \"She needs your complete honesty, not your approval.\"",
-      "correctAnswer": "what she needs is your complete honesty, not your approval"
+      "type": "fill-blank",
+      "question": "The programme was successful _____ _____ _____ it changed participants' long-term career prospects significantly.",
+      "correctAnswer": "to the extent that"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "The reason _____ he resigned _____ that he felt his contributions were never properly acknowledged.",
-      "correctAnswer": "why / was"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses \"inasmuch as\"?",
+      "options": [
+        "The decision was fair inasmuch as all parties had been consulted.",
+        "Inasmuch as, the results were unexpected.",
+        "She succeeded inasmuch as worked very hard.",
+        "Inasmuch as the meeting, we discussed the budget."
+      ],
+      "correctAnswer": "The decision was fair inasmuch as all parties had been consulted."
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "\"It was John who broke the window.\" Which element is being emphasised by this cleft structure?",
-      "options": [
-        "The action of breaking",
-        "The time the event occurred",
-        "The window — the object affected",
-        "John — the person responsible"
-      ],
-      "correctAnswer": "John — the person responsible"
+      "type": "complete",
+      "question": "\"To _____ my earlier point — what I was arguing is that communication, not technology, is the core issue.\"",
+      "correctAnswer": "elaborate on / rephrase / resume"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "All I _____ is one clear, unambiguous answer — the matter has been left open for far too long.",
-      "correctAnswer": "want|need"
+      "type": "multiple-choice",
+      "question": "Which phrase would a speaker use to signal they are about to \"digress\"?",
+      "options": [
+        "\"To conclude...\"",
+        "\"On a slightly different note...\" / \"I should mention, though it's not directly related...\"",
+        "\"Therefore...\"",
+        "\"As I was saying...\""
+      ],
+      "correctAnswer": "\"On a slightly different note...\" / \"I should mention, though it's not directly related...\""
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Rewrite as an It-cleft: \"Her precision impressed me most, not her speed.\"",
-      "correctAnswer": "it was her precision that impressed me most, not her speed"
+      "type": "fill-blank",
+      "question": "\"Let me _____ that — what I meant was that the data supports the theory, not that it proves it conclusively.\"",
+      "correctAnswer": "rephrase"
     },
     {
       "id": 12,
       "type": "complete",
-      "question": "What _____ me most about this text is the _____ of the argument — every sentence builds on the last.",
-      "correctAnswer": "strikes / coherence"
+      "question": "\"Sorry for the brief detour — let me _____ to the main point I was making before.\"",
+      "correctAnswer": "resume"
     },
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "\"The reason why she left was that she felt undervalued.\" What type of cleft is this?",
+      "question": "Which connector expresses concession most appropriately in a formal text?",
       "options": [
-        "A What-cleft using \"What... is...\"",
-        "An It-cleft using \"It was... that...\"",
-        "An All-cleft using \"All... is...\"",
-        "A reason-cleft using \"The reason why... was that...\""
+        "And also",
+        "Notwithstanding",
+        "Because of",
+        "In addition to"
       ],
-      "correctAnswer": "A reason-cleft using \"The reason why... was that...\""
+      "correctAnswer": "Notwithstanding"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "It was the _____ of the instructions — not their length — that left the entire team confused.",
-      "correctAnswer": "ambiguity"
+      "question": "The proposal was well-structured, _____ somewhat lacking in concrete financial projections.",
+      "correctAnswer": "albeit"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Rewrite as a cleft sentence: \"His tone conveyed far more meaning than his actual words did.\"",
-      "correctAnswer": "it was his tone that conveyed far more meaning than his actual words did|what conveyed far more meaning than his words was his tone"
+      "question": "Write a sentence using \"albeit\" to express: \"The experiment was a success, but on a very small scale.\"",
+      "correctAnswer": "the experiment was a success, albeit on a very small scale"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "What _____ most about advanced grammar is the way it allows speakers to _____ subtle meaning with real precision.",
-      "correctAnswer": "fascinates me / convey"
+      "type": "multiple-choice",
+      "question": "Which connector is most appropriate for ADDING information in academic writing?",
+      "options": [
+        "Notwithstanding",
+        "Furthermore",
+        "Albeit",
+        "In that"
+      ],
+      "correctAnswer": "Furthermore"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "\"All I want is a clear answer.\" What does this cleft structure emphasise?",
-      "options": [
-        "The frustration of a long wait",
-        "The identity of the person asking",
-        "The complexity of the answer required",
-        "The simplicity of the request — a clear answer is all that is wanted"
-      ],
-      "correctAnswer": "The simplicity of the request — a clear answer is all that is wanted"
+      "type": "fill-blank",
+      "question": "The law was considered unjust, _____ it disproportionately penalised lower-income households.",
+      "correctAnswer": "in that"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "It _____ the subtle nuance of a single word _____ completely altered the meaning of the entire contract.",
-      "correctAnswer": "was / that"
+      "type": "complete",
+      "question": "The company's strategy was innovative, _____ _____ _____ it completely disrupted the traditional market model.",
+      "correctAnswer": "to the extent that"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "What the data strongly _____ is that _____ use of language is directly correlated with academic performance.",
-      "correctAnswer": "suggests / precise"
+      "type": "multiple-choice",
+      "question": "What is the function of \"notwithstanding\" in the following sentence? \"Notwithstanding the criticism, the author continued with her original vision.\"",
+      "options": [
+        "It explains the reason for the author's decision",
+        "It introduces a contrast — something happened despite an obstacle",
+        "It adds extra information about the author",
+        "It indicates a time relationship between two events"
+      ],
+      "correctAnswer": "It introduces a contrast — something happened despite an obstacle"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Rewrite as a What-cleft: \"I believe that consistent, deliberate practice matters most.\"",
-      "correctAnswer": "what i believe matters most is consistent, deliberate practice|what i believe is that consistent practice matters most"
+      "question": "Rewrite using a cohesion device to avoid repeating \"the problem\": \"The problem was discussed for hours. The problem was not resolved.\"",
+      "correctAnswer": "the problem was discussed for hours, but it / this / such a matter was not resolved"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "If she _____ so hesitant by nature, she would have applied for the position when it was available. (Mixed B)",
-      "correctAnswer": "weren't"
+      "type": "multiple-choice",
+      "question": "\"To rephrase\" an idea means to...",
+      "options": [
+        "Quote it directly from the original source",
+        "Express it again in a different or clearer way",
+        "Summarise only the main point of a long argument",
+        "Introduce a contrasting perspective"
+      ],
+      "correctAnswer": "Express it again in a different or clearer way"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Identify the structure: \"Never have I read such an ambiguous piece of legislation.\"",
-      "options": [
-        "Second Conditional",
-        "Mixed Conditional Type A",
-        "Inversion for emphasis",
-        "Cleft sentence"
-      ],
-      "correctAnswer": "Inversion for emphasis"
+      "type": "fill-blank",
+      "question": "The funding was approved, _____ serious doubts about the project's long-term viability.",
+      "correctAnswer": "notwithstanding"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Rewrite using inversion: \"The researcher had barely published her findings when critics began responding.\"",
-      "correctAnswer": "hardly had the researcher published her findings when critics began responding"
+      "type": "complete",
+      "question": "A text has both _____ and _____ when its sentences are well-connected AND the ideas follow a clear logical progression.",
+      "correctAnswer": "cohesion / coherence"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "It was the speaker's remarkable ability to _____ nuance through tone — not just words — _____ captivated the entire audience.",
-      "correctAnswer": "convey / that"
+      "type": "translate",
+      "question": "Rewrite using \"the former... the latter...\": \"Both options were discussed. Option A was expensive; Option B was impractical.\"",
+      "correctAnswer": "both options were discussed: the former was expensive; the latter was impractical"
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "If they _____ more resources earlier in the process, the team _____ struggling with the workload today.",
-      "correctAnswer": "had allocated / wouldn't be"
+      "type": "multiple-choice",
+      "question": "Identify whether the underlined word is hedging (H) or boosting (B): \"The results are *undoubtedly* significant.\"",
+      "options": [
+        "H — it softens the claim",
+        "B — it strengthens the claim",
+        "Neither — it is a neutral connector",
+        "H — it makes the claim seem uncertain"
+      ],
+      "correctAnswer": "B — it strengthens the claim"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Which sentence uses a cleft structure correctly?",
-      "options": [
-        "What she conveyed them was not the facts.",
-        "What conveyed she was not the facts themselves.",
-        "It were the facts that she not conveyed precisely.",
-        "What she conveyed was not the facts, but the implication behind them."
-      ],
-      "correctAnswer": "What she conveyed was not the facts, but the implication behind them."
+      "type": "fill-blank",
+      "question": "\"They had hoped to finish the project by Friday, but they couldn't _____ because of the last-minute changes.\" (use 'do so' to avoid repetition)",
+      "correctAnswer": "do so"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Rewrite using Mixed Conditional Type A: \"They didn't hire a specialist. The project is failing now.\"",
-      "correctAnswer": "if they had hired a specialist, the project wouldn't be failing now"
+      "type": "complete",
+      "question": "Two theories were analysed. The _____ was proposed in the 1960s; the _____ emerged only in the 1990s.",
+      "correctAnswer": "former / latter"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Not only _____ the professor challenge every assumption, but he also insisted students _____ on each point thoroughly.",
-      "correctAnswer": "did / elaborate"
+      "type": "multiple-choice",
+      "question": "Which sentence uses an advanced connector correctly?",
+      "options": [
+        "The reform was partial, albeit it improved the situation somewhat.",
+        "The reform was partial, albeit improving the situation somewhat.",
+        "Albeit the reform was partial, it improved the situation.",
+        "The reform was partial albeit; it improved the situation."
+      ],
+      "correctAnswer": "The reform was partial, albeit improving the situation somewhat."
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "What the study reveals is that _____ in language is more difficult to achieve than grammatical accuracy — it requires genuine understanding.",
-      "correctAnswer": "coherence"
+      "type": "fill-blank",
+      "question": "He chose to _____ rather than admit the mistake — a decision that cost him the team's trust.",
+      "correctAnswer": "digress"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "\"If I were more extroverted, I would have made more connections at that conference.\" This is...",
-      "options": [
-        "Mixed Conditional Type A",
-        "Second Conditional",
-        "Mixed Conditional Type B",
-        "Third Conditional"
-      ],
-      "correctAnswer": "Mixed Conditional Type B"
+      "type": "translate",
+      "question": "Paraphrase: \"The inability to acknowledge one's errors is a significant obstacle to professional growth.\"",
+      "correctAnswer": "not being able to / failing to recognise / admit one's mistakes / errors can seriously hinder / limit professional development"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "_____ sooner had the new policy been announced _____ employees began raising serious concerns.",
-      "correctAnswer": "No / than"
+      "type": "multiple-choice",
+      "question": "In the sentence \"The report outlined two risks. These were discussed in detail.\", \"these\" functions as...",
+      "options": [
+        "A boosting device",
+        "An anaphoric reference device pointing back to 'two risks'",
+        "A discourse marker introducing a new topic",
+        "An example of ellipsis"
+      ],
+      "correctAnswer": "An anaphoric reference device pointing back to 'two risks'"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Rewrite as a cleft sentence: \"The way she elaborated her argument convinced the entire panel.\"",
-      "correctAnswer": "it was the way she elaborated her argument that convinced the entire panel"
+      "type": "fill-blank",
+      "question": "The treatment _____ _____ be effective for most patients, though results vary depending on age and overall health.",
+      "correctAnswer": "tends to"
     },
     {
       "id": 13,
       "type": "complete",
-      "question": "If I _____ better _____ awareness back then, I _____ my words far more carefully.",
-      "correctAnswer": "had / register / would have chosen"
+      "question": "The policy change was disruptive, _____ it redefined roles across every department in the organisation.",
+      "correctAnswer": "in that"
     },
     {
       "id": 14,
       "type": "multiple-choice",
-      "question": "Which of the following CANNOT trigger inversion?",
+      "question": "What is the purpose of using \"such\" as a reference device?",
       "options": [
-        "Never",
-        "Seldom",
-        "Quickly",
-        "Not only"
+        "To omit unnecessary repeated words",
+        "To refer back to a previously mentioned item or group with a degree of formal distance",
+        "To introduce a new argument",
+        "To express strong certainty about a claim"
       ],
-      "correctAnswer": "Quickly"
+      "correctAnswer": "To refer back to a previously mentioned item or group with a degree of formal distance"
     },
     {
       "id": 15,
       "type": "fill-blank",
-      "question": "If he _____ a more _____ communicator by nature, he _____ that misunderstanding entirely.",
-      "correctAnswer": "were / precise / would have avoided"
+      "question": "She offered to help with the analysis, and he _____ _____ as well — the collaboration was productive.",
+      "correctAnswer": "did so"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Seldom _____ a piece of writing manage to be both _____ in its vocabulary and deeply compelling in its argument.",
-      "correctAnswer": "does / precise"
+      "type": "translate",
+      "question": "Add a cohesion device to link these sentences: \"Three solutions were proposed. [blank] solutions had both advantages and limitations.\"",
+      "correctAnswer": "such solutions / these solutions / all three solutions had both advantages and limitations"
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "What is the \"implication\" of a statement?",
+      "question": "\"Albeit\" differs from \"although\" in that...",
       "options": [
-        "A grammatical error in the syntax of a sentence",
-        "A formal choice of register for academic writing",
-        "A nuanced pronunciation of a technical term",
-        "A meaning that is suggested but not directly stated"
+        "\"Albeit\" introduces a full clause; \"although\" introduces a phrase",
+        "\"Albeit\" typically precedes an adjective or noun phrase, not a full clause; \"although\" introduces a full clause",
+        "\"Albeit\" is informal; \"although\" is formal",
+        "There is no meaningful difference between the two"
       ],
-      "correctAnswer": "A meaning that is suggested but not directly stated"
+      "correctAnswer": "\"Albeit\" typically precedes an adjective or noun phrase, not a full clause; \"although\" introduces a full clause"
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "What struck the examiner most _____ not the student's vocabulary range, but the _____ with which she used it.",
-      "correctAnswer": "was / precision"
+      "question": "The initiative was impactful _____ _____ _____ it became a model for similar programmes across the country.",
+      "correctAnswer": "to the extent that"
     },
     {
       "id": 19,
       "type": "complete",
-      "question": "It _____ the _____ of the clause that led to the dispute — both parties had interpreted the same sentence differently.",
-      "correctAnswer": "was / ambiguity"
+      "question": "The candidate was clearly qualified for the role, _____ inexperienced in managing large cross-functional teams.",
+      "correctAnswer": "albeit"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "Which sentence correctly combines a cleft structure with vocabulary from this lesson?",
+      "question": "Which of the following best demonstrates effective discourse organisation?",
       "options": [
-        "What the speaker it conveyed was a coherence sense of precise.",
-        "What the speaker conveyed was a sense of coherence — every idea was precise and well-connected.",
-        "The speaker conveyed what it was coherence and nuance.",
-        "It were coherence what the speaker conveyed precisely."
+        "A text where each sentence introduces a completely new topic",
+        "A text that uses only short, simple sentences without connectors",
+        "A text where ideas are logically sequenced, linked with transitions, and free from unnecessary repetition",
+        "A text that repeats key words in every sentence to maintain clarity"
       ],
-      "correctAnswer": "What the speaker conveyed was a sense of coherence — every idea was precise and well-connected."
+      "correctAnswer": "A text where ideas are logically sequenced, linked with transitions, and free from unnecessary repetition"
     }
   ]
 }

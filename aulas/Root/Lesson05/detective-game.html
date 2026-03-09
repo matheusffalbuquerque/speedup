@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔍 SpeakUp Detective – Root Lesson 05</title>
+  <style>
+    /* ── RESET ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --amber:   #d4a017;
+      --amber2:  #f0c040;
+      --dark:    #0e0d0b;
+      --panel:   #1c1a14;
+      --surface: #252318;
+      --border:  #3a3620;
+      --red:     #c0392b;
+      --green:   #27ae60;
+      --muted:   #888070;
+      --white:   #f5f0e0;
+      --radius:  10px;
+      --shadow:  0 6px 32px rgba(0,0,0,.7);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--dark);
+      color: var(--white);
+      min-height: 100vh;
+      padding: 20px 12px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+      position: relative;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      color: var(--amber2);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px rgba(240,192,64,.4);
+    }
+    header p { color: var(--muted); font-size: .85rem; margin-top: 4px; letter-spacing: 1px; }
+    .tagline {
+      font-size: .78rem;
+      color: var(--amber);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 6px;
+      opacity: .75;
+    }
+
+    /* ── SCREEN ─────────────────────────────────────────── */
+    .screen { display: none; width: 100%; max-width: 860px; animation: fadeIn .4s ease; }
+    .screen.active { display: block; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:none; } }
+
+    /* ── CARD ───────────────────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+    .card h2 {
+      color: var(--amber2);
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── DECORATIVE RULE ────────────────────────────────── */
+    .deco-rule {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 14px 0;
+    }
+    .amber { color: var(--amber2); }
+    .muted { color: var(--muted); font-size: .85rem; }
+    .center { text-align: center; }
+
+    /* ── BUTTONS ────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 24px;
+      border: none; border-radius: 8px;
+      font-size: .95rem; font-weight: 700;
+      cursor: pointer;
+      transition: transform .1s, opacity .1s;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .btn:active { transform: scale(.96); }
+    .btn:disabled { opacity:.4; cursor:not-allowed; }
+    .btn-amber   { background: var(--amber); color: #1a1500; }
+    .btn-red     { background: var(--red);   color: #fff; }
+    .btn-green   { background: var(--green); color: #fff; }
+    .btn-outline { background: transparent; border: 2px solid var(--amber); color: var(--amber); }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    .actions.center { justify-content: center; }
+
+    /* ── SETUP ──────────────────────────────────────────── */
+    .count-picker { display: flex; gap: 10px; margin-bottom: 22px; }
+    .cnt-btn {
+      width: 50px; height: 50px; border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--surface);
+      color: var(--white); font-size: 1.2rem; font-weight: 700;
+      cursor: pointer; transition: border-color .15s, background .15s;
+    }
+    .cnt-btn.sel { border-color: var(--amber2); background: #3a2e00; color: var(--amber2); }
+    .player-slots { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    @media (max-width:520px) { .player-slots { grid-template-columns: 1fr; } }
+    .pslot {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 10px 14px;
+    }
+    .pslot .num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--amber); color: #1a1500;
+      font-weight: 700; font-size: .85rem;
+      display: flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    }
+    .pslot input {
+      flex:1; background:transparent; border:none;
+      color: var(--white); font-size: .95rem; outline:none;
+    }
+    .pslot input::placeholder { color: var(--muted); }
+
+    /* ── BRIEFING ───────────────────────────────────────── */
+    .briefing-header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .briefing-header::before {
+      content: 'CLASSIFIED';
+      position: absolute; top: 8px; right: 12px;
+      font-size: .65rem; letter-spacing: 3px;
+      color: var(--red); border: 1px solid var(--red);
+      padding: 2px 8px; border-radius: 3px; opacity: .7;
+    }
+    .case-title {
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--amber2); letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .case-body { color: var(--white); line-height: 1.7; font-size: .95rem; }
+
+    /* ── SUSPECT CARDS ──────────────────────────────────── */
+    .suspects-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px; margin-bottom: 20px;
+    }
+    .suspect-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 12px;
+      text-align: center;
+      transition: border-color .15s, transform .12s;
+      cursor: pointer;
+    }
+    .suspect-card:hover { border-color: var(--amber); transform: translateY(-2px); }
+    .suspect-card.highlighted { border-color: var(--amber2); background: #2a2200; }
+    .suspect-card.cleared     { border-color: var(--green);  opacity: .7; }
+    .suspect-card.suspicious  { border-color: var(--red);    background: #200a08; }
+    .suspect-emoji { font-size: 2.5rem; margin-bottom: 8px; }
+    .suspect-name  { font-weight: 700; font-size: .9rem; color: var(--amber2); }
+    .suspect-role  { font-size: .75rem; color: var(--muted); margin-top: 2px; }
+    .s-tag {
+      display: inline-block; font-size: .7rem;
+      padding: 2px 8px; border-radius: 10px;
+      margin: 2px; border: 1px solid var(--border);
+      background: #1e1c14; color: var(--white);
+    }
+    .s-tags { margin-top: 8px; }
+
+    /* ── BOARD LAYOUT ───────────────────────────────────── */
+    .board-grid {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 16px;
+    }
+    @media (max-width: 680px) { .board-grid { grid-template-columns: 1fr; } }
+
+    /* ── TURN BANNER ────────────────────────────────────── */
+    .turn-banner {
+      background: linear-gradient(135deg, #2a2200, #1c1600);
+      border: 1px solid var(--amber);
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 16px;
+    }
+    .turn-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--amber); color: #1a1500;
+      font-size: 1.2rem; font-weight: 700;
+      display: flex; align-items:center; justify-content:center;
+      flex-shrink:0;
+    }
+    .turn-name  { font-weight: 700; font-size: 1rem; }
+    .turn-label { font-size: .78rem; color: var(--muted); }
+
+    /* ── CLUE DECK ──────────────────────────────────────── */
+    .clue-deck-btn {
+      background: linear-gradient(135deg, #2a1500, #1a0e00);
+      border: 2px dashed var(--amber);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+      width: 100%;
+    }
+    .clue-deck-btn:hover { border-color: var(--amber2); background: #3a2000; }
+    .clue-deck-btn .deck-icon { font-size: 2.5rem; margin-bottom: 8px; }
+    .clue-deck-btn .deck-label { font-weight: 700; color: var(--amber); font-size: .95rem; }
+    .clue-deck-btn .deck-sub   { font-size: .8rem; color: var(--muted); margin-top: 4px; }
+    .clue-deck-btn:disabled { opacity:.4; cursor:not-allowed; }
+
+    /* ── EVIDENCE BOARD ─────────────────────────────────── */
+    .evidence-board {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      min-height: 200px;
+    }
+    .evidence-board h3 {
+      font-size: .8rem; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--amber);
+      margin-bottom: 12px;
+    }
+    .evidence-item {
+      background: var(--panel);
+      border-left: 3px solid var(--amber);
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+      font-size: .82rem;
+    }
+    .evidence-item.clear { border-left-color: var(--green); }
+    .evidence-item.sus   { border-left-color: var(--red); }
+    .evidence-icon { margin-right: 6px; }
+    .evidence-empty { color: var(--muted); font-size: .82rem; font-style: italic; }
+
+    /* ── PROGRESS DOTS ──────────────────────────────────── */
+    .progress-dots { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+    .pdot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--border);
+      transition: background .3s;
+    }
+    .pdot.done   { background: var(--amber); }
+    .pdot.active { background: var(--amber2); }
+
+    /* player scores */
+    .score-bar {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px;
+    }
+    .score-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: .82rem;
+    }
+    .score-chip .sc-name { color: var(--muted); }
+    .score-chip .sc-val  { color: var(--amber2); font-weight: 700; margin-left: 4px; }
+
+    /* ── CLUE CHALLENGE SCREEN ──────────────────────────── */
+    .clue-card-display {
+      background: linear-gradient(135deg, #1a0e00, #130c00);
+      border: 2px solid var(--amber);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      position: relative;
+      margin-bottom: 18px;
+    }
+    .clue-number {
+      position: absolute; top: -1px; left: -1px;
+      background: var(--amber); color: #1a1500;
+      font-size: .72rem; font-weight: 700;
+      padding: 3px 12px; border-radius: var(--radius) 0 var(--radius) 0;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .clue-icon-big { font-size: 3rem; text-align: center; margin: 10px 0 8px; }
+    .clue-title-big { font-size: 1.2rem; font-weight: 700; color: var(--amber2); margin-bottom: 8px; }
+    .clue-desc      { font-size: .95rem; line-height: 1.6; color: var(--white); }
+
+    /* challenge */
+    .challenge-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+    .challenge-box h3 {
+      color: var(--amber); text-transform: uppercase;
+      font-size: .8rem; letter-spacing: 2px; margin-bottom: 14px;
+    }
+    .challenge-type-badge {
+      display: inline-block;
+      background: #2a1500;
+      border: 1px solid var(--amber);
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: .72rem; color: var(--amber2);
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .ch-question {
+      font-size: 1.05rem; font-weight: 600;
+      color: var(--white); margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .ch-options { display: flex; flex-direction: column; gap: 10px; }
+    .ch-opt {
+      background: var(--panel);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      padding: 13px 16px;
+      cursor: pointer;
+      font-size: .92rem;
+      transition: border-color .15s, background .15s;
+      text-align: left;
+      color: var(--white);
+    }
+    .ch-opt:hover:not(:disabled)   { border-color: var(--amber); background: #252000; }
+    .ch-opt.correct  { border-color: var(--green); background: #0d2a14; color: #7fff9a; }
+    .ch-opt.wrong    { border-color: var(--red);   background: #2a0d0d; color: #ff9a9a; }
+    .ch-opt:disabled { cursor: not-allowed; }
+    .feedback-box {
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-size: .92rem;
+      line-height: 1.5;
+    }
+    .feedback-box.correct { background: #0d2a14; border: 1px solid var(--green); }
+    .feedback-box.wrong   { background: #2a0d0d; border: 1px solid var(--red); }
+    .feedback-box .reveal {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      color: var(--amber2);
+      font-style: italic;
+    }
+
+    /* grammar tip */
+    .grammar-tip {
+      background: #1a1000;
+      border: 1px solid #3a2800;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: .82rem;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+    .grammar-tip strong { color: var(--amber2); }
+
+    /* ── SUSPECT PROFILE MODAL ──────────────────────────── */
+    .modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.8);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: var(--panel);
+      border: 2px solid var(--amber);
+      border-radius: var(--radius);
+      padding: 28px 30px;
+      max-width: 480px; width: 100%;
+      max-height: 90vh; overflow-y: auto;
+      position: relative;
+      animation: fadeIn .25s ease;
+    }
+    .modal-close {
+      position: absolute; top: 12px; right: 14px;
+      background: none; border: none; color: var(--muted);
+      font-size: 1.3rem; cursor: pointer;
+    }
+    .modal-emoji { font-size: 4rem; text-align: center; margin-bottom: 10px; }
+    .modal-name  { font-size: 1.3rem; font-weight: 700; color: var(--amber2); text-align: center; }
+    .modal-role  { font-size: .85rem; color: var(--muted); text-align: center; margin-bottom: 14px; }
+    .profile-section { margin-bottom: 14px; }
+    .profile-section h4 {
+      font-size: .78rem; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--amber); margin-bottom: 8px;
+    }
+    .profile-row { font-size: .9rem; margin-bottom: 6px; }
+    .profile-row .lbl { color: var(--muted); margin-right: 6px; }
+    .adj-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .adj-pill {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 20px; padding: 4px 12px; font-size: .82rem;
+    }
+
+    /* ── ACCUSATION ──────────────────────────────────────── */
+    .accusation-intro {
+      text-align: center; padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 18px;
+    }
+    .accusation-intro .big { font-size: 2.5rem; margin-bottom: 8px; }
+    .player-vote-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+    .player-vote-section h3 {
+      font-size: .85rem; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--amber); margin-bottom: 12px;
+    }
+    .vote-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .vote-btn {
+      background: var(--panel);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+      cursor: pointer; font-size: .88rem;
+      color: var(--white);
+      transition: border-color .15s, background .15s;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .vote-btn:hover     { border-color: var(--amber); }
+    .vote-btn.voted     { border-color: var(--amber2); background: #2a2200; color: var(--amber2); }
+
+    /* ── VERDICT ─────────────────────────────────────────── */
+    .verdict-reveal {
+      text-align: center;
+      padding: 28px 20px;
+      background: var(--surface);
+      border: 2px solid var(--amber);
+      border-radius: var(--radius);
+      margin-bottom: 18px;
+    }
+    .verdict-reveal .vr-big  { font-size: 4rem; margin-bottom: 10px; }
+    .verdict-reveal .vr-name { font-size: 1.6rem; font-weight: 700; color: var(--amber2); }
+    .verdict-reveal .vr-role { color: var(--muted); margin-top: 4px; }
+    .verdict-reveal .vr-confession {
+      background: var(--panel); border-radius: 8px;
+      padding: 14px; margin-top: 16px;
+      font-style: italic; font-size: .92rem; line-height: 1.6;
+      border-left: 3px solid var(--amber);
+    }
+    .score-podium {
+      display: flex; gap: 12px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .podium-card {
+      background: var(--panel); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px 20px;
+      text-align: center; min-width: 120px;
+    }
+    .podium-card .pod-name { font-weight: 700; margin-bottom: 4px; }
+    .podium-card .pod-score { font-size: 1.8rem; font-weight: 700; color: var(--amber2); }
+    .podium-card .pod-correct { font-size: .75rem; color: var(--green); }
+    .podium-card .pod-wrong   { font-size: .75rem; color: var(--red); }
+    .podium-card.winner { border-color: var(--amber2); background: #252000; }
+
+    /* ── PRACTICE SENTENCES ─────────────────────────────── */
+    .practice-sent {
+      background: var(--surface); border-radius: 8px;
+      padding: 10px 14px; margin-bottom: 8px;
+      font-size: .9rem; font-style: italic;
+      border-left: 3px solid var(--amber);
+      line-height: 1.5;
+    }
+
+    /* ── UTILITY ─────────────────────────────────────────── */
+    .mt8  { margin-top: 8px; }
+    .mt16 { margin-top: 16px; }
+    .badge {
+      display: inline-block; font-size: .7rem; font-weight: 700;
+      padding: 2px 8px; border-radius: 10px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .badge-red   { background: #4a0e0a; border: 1px solid var(--red);   color: #ff9a9a; }
+    .badge-green { background: #0a2a14; border: 1px solid var(--green); color: #7fff9a; }
+    .badge-amber { background: #2a1a00; border: 1px solid var(--amber); color: var(--amber2); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔍 SpeakUp Detective</h1>
+  <p>Root Level · Lesson 05 – Describing People &amp; Personality</p>
+  <div class="tagline">The Case of the Missing Microphone</div>
+</header>
+
+<!-- ═══════ SCREEN 1 – SETUP ═══════ -->
+<div id="screen-setup" class="screen active">
+  <div class="card">
+    <h2>👮 Detective Agency Registration</h2>
+    <p class="muted" style="margin-bottom:16px">How many detectives are investigating this case?</p>
+    <div class="count-picker" id="countPicker"></div>
+    <h2>✏️ Detectives' Names</h2>
+    <div class="player-slots" id="playerSlots"></div>
+  </div>
+  <div class="actions center">
+    <button class="btn btn-amber" onclick="startGame()">🔎 Open the Case File</button>
+  </div>
+</div>
+
+<!-- ═══════ SCREEN 2 – BRIEFING ═══════ -->
+<div id="screen-briefing" class="screen">
+  <div class="briefing-header">
+    <div class="case-title">📁 CASE #005 — The Missing Microphone</div>
+    <div class="case-body">
+      <p>The <strong>Golden Microphone</strong> — the City Music School's most prized trophy — has
+      <strong>disappeared</strong> from the Trophy Room overnight.</p>
+      <br>
+      <p>The principal found the display case empty this morning. There are
+      <strong>5 suspects</strong>, all of whom had access to the building.</p>
+      <br>
+      <p>Your mission: <strong>investigate the clues</strong>, describe and compare the suspects,
+      and <strong>identify the guilty person</strong> before time runs out!</p>
+      <br>
+      <p style="color:var(--amber2)">🔑 Each clue is locked by a <strong>language challenge</strong>.
+      Answer in English to reveal the evidence!</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🕵️ The Suspects</h2>
+    <div class="suspects-grid" id="briefingSuspects"></div>
+    <p class="muted mt8">Click on a suspect to see their full profile.</p>
+  </div>
+
+  <div class="actions center">
+    <button class="btn btn-amber" onclick="startInvestigation()">🔍 Begin Investigation</button>
+  </div>
+</div>
+
+<!-- ═══════ SCREEN 3 – INVESTIGATION BOARD ═══════ -->
+<div id="screen-board" class="screen">
+  <div class="turn-banner" id="turnBanner">
+    <div class="turn-avatar" id="turnAvatar">D</div>
+    <div>
+      <div class="turn-name" id="turnName">Detective —</div>
+      <div class="turn-label">It's your turn to draw a clue card!</div>
+    </div>
+  </div>
+
+  <div class="score-bar" id="scoreBar"></div>
+  <div class="progress-dots" id="progressDots"></div>
+
+  <div class="board-grid">
+    <!-- Left: suspects + deck -->
+    <div>
+      <div class="card" style="padding:16px">
+        <h2>🕵️ Suspects</h2>
+        <div class="suspects-grid" id="boardSuspects"></div>
+      </div>
+      <button class="clue-deck-btn" id="drawBtn" onclick="drawClue()">
+        <div class="deck-icon">🃏</div>
+        <div class="deck-label">Draw a Clue Card</div>
+        <div class="deck-sub" id="deckRemaining">— clues remaining</div>
+      </button>
+    </div>
+    <!-- Right: evidence board -->
+    <div>
+      <div class="evidence-board">
+        <h3>📌 Evidence Board</h3>
+        <div id="evidenceList"><p class="evidence-empty">No evidence yet...</p></div>
+      </div>
+      <div class="actions" style="margin-top:14px">
+        <button class="btn btn-red" id="btnAccuse" disabled onclick="goToAccusation()">
+          ⚖️ Make Accusation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SCREEN 4 – CLUE CHALLENGE ═══════ -->
+<div id="screen-clue" class="screen">
+  <div class="turn-banner" id="clueTurnBanner">
+    <div class="turn-avatar" id="clueTurnAvatar">D</div>
+    <div>
+      <div class="turn-name"  id="clueTurnName">Detective —</div>
+      <div class="turn-label">Answer the challenge to reveal the clue!</div>
+    </div>
+  </div>
+
+  <div class="clue-card-display" id="clueCardDisplay">
+    <div class="clue-number" id="clueNum">CLUE #1</div>
+    <div class="clue-icon-big" id="clueIcon">🃏</div>
+    <div class="clue-title-big" id="clueTitle">—</div>
+    <div class="clue-desc"      id="clueDesc">—</div>
+  </div>
+
+  <div class="challenge-box">
+    <h3>🔐 Language Challenge</h3>
+    <div class="challenge-type-badge" id="challengeBadge">—</div>
+    <p class="ch-question" id="chQuestion">—</p>
+    <div class="ch-options" id="chOptions"></div>
+    <div id="feedbackArea"></div>
+    <div class="grammar-tip" id="grammarTip" style="display:none"></div>
+  </div>
+
+  <div class="actions" id="clueActions" style="display:none">
+    <button class="btn btn-amber" onclick="returnToBoard()">← Back to Board</button>
+  </div>
+</div>
+
+<!-- ═══════ SCREEN 5 – ACCUSATION ═══════ -->
+<div id="screen-accusation" class="screen">
+  <div class="accusation-intro">
+    <div class="big">⚖️</div>
+    <h2 style="color:var(--amber2)">Time to Accuse!</h2>
+    <p class="muted mt8">Each detective must choose who they think is guilty. Choose carefully!</p>
+  </div>
+
+  <div id="votingSections"></div>
+
+  <div class="actions center">
+    <button class="btn btn-red" id="btnReveal" disabled onclick="showVerdict()">
+      🔨 Reveal the Truth!
+    </button>
+  </div>
+</div>
+
+<!-- ═══════ SCREEN 6 – VERDICT ═══════ -->
+<div id="screen-verdict" class="screen">
+  <div class="verdict-reveal" id="verdictReveal"></div>
+
+  <div class="card center">
+    <h2>🏆 Detective Scores</h2>
+    <div class="score-podium" id="scorePodium"></div>
+  </div>
+
+  <div class="card">
+    <h2>📚 Language Practice</h2>
+    <p class="muted" style="margin-bottom:14px">Read these sentences out loud — all from this case!</p>
+    <div id="practiceSentences"></div>
+  </div>
+
+  <div class="actions center">
+    <button class="btn btn-amber" onclick="resetGame()">🔄 New Case</button>
+  </div>
+</div>
+
+<!-- ═══════ SUSPECT PROFILE MODAL ═══════ -->
+<div class="modal-overlay" id="profileModal" onclick="closeModal(event)">
+  <div class="modal-box" id="profileBox">
+    <button class="modal-close" onclick="closeProfileModal()">✕</button>
+    <div id="profileContent"></div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════
+   DATA
+═══════════════════════════════════════════════════════ */
+const SUSPECTS = {
+  victor: {
+    id: 'victor', emoji: '👮',
+    name: 'Victor Stone', role: 'Security Guard',
+    appearance: {
+      height:  'tall',
+      build:   'heavy / stocky',
+      hair:    'straight, dark hair',
+      eyes:    'dark brown eyes',
+      age:     'elderly (around 60)',
+    },
+    looksLike: 'a retired military officer — strict and formal',
+    personality: ['serious', 'brave', 'kind'],
+    isLike: 'a guard dog — always watching, loyal, but not very warm at first',
+    daily: 'He works at the school every day. He arrives early, checks all the rooms, and drinks black coffee. He never leaves his post.',
+    alibi: 'He was guarding the main entrance all night and has camera footage.',
+    guilty: false,
+    status: 'neutral', // neutral | cleared | suspicious
+  },
+  clara: {
+    id: 'clara', emoji: '📚',
+    name: 'Clara Webb', role: 'School Librarian',
+    appearance: {
+      height:  'short',
+      build:   'slim',
+      hair:    'curly, blonde hair',
+      eyes:    'green eyes',
+      age:     'young (around 28)',
+    },
+    looksLike: 'a university student — casual, friendly face',
+    personality: ['shy', 'smart', 'friendly'],
+    isLike: 'a quiet river — calm and peaceful, but very deep',
+    daily: 'She opens the library every morning, drinks tea, and reads for one hour before students arrive. She is never late.',
+    alibi: 'She was at a book fair in another city that weekend.',
+    guilty: false,
+    status: 'neutral',
+  },
+  ravi: {
+    id: 'ravi', emoji: '🎓',
+    name: 'Dr. Ravi Patel', role: 'Music & Science Teacher',
+    appearance: {
+      height:  'tall',
+      build:   'thin / slim',
+      hair:    'straight, dark hair',
+      eyes:    'dark brown eyes',
+      age:     'middle-aged (around 45)',
+    },
+    looksLike: 'a professor — always carrying a notebook and a coffee cup',
+    personality: ['smart', 'generous', 'sometimes lazy'],
+    isLike: 'a mad scientist — brilliant ideas, but sometimes forgets everything else',
+    daily: 'He drinks coffee every morning at the music room. He works on research projects late at night. He often forgets to return things he borrows.',
+    alibi: 'He says he was home, but nobody can confirm it.',
+    guilty: true,
+    status: 'neutral',
+  },
+  sofia: {
+    id: 'sofia', emoji: '💃',
+    name: 'Sofia Cruz', role: 'Music & Dance Student',
+    appearance: {
+      height:  'average height',
+      build:   'athletic',
+      hair:    'curly, dark hair',
+      eyes:    'brown eyes',
+      age:     'young (around 20)',
+    },
+    looksLike: 'a performer — energetic and always moving',
+    personality: ['outgoing', 'funny', 'brave'],
+    isLike: 'a firework — loud, bright, and impossible to ignore',
+    daily: 'She practices dancing and singing every afternoon. She is the last to leave the music room on most days. She used the microphone the day before it disappeared.',
+    alibi: 'She was at a dance competition in the city — confirmed by 10 people.',
+    guilty: false,
+    status: 'neutral',
+  },
+  leo: {
+    id: 'leo', emoji: '🎵',
+    name: 'Leo Blake', role: 'Retired Music Teacher',
+    appearance: {
+      height:  'short',
+      build:   'slim',
+      hair:    'straight, grey hair',
+      eyes:    'blue eyes',
+      age:     'elderly (around 70)',
+    },
+    looksLike: 'a grandfather — warm smile and friendly eyes',
+    personality: ['kind', 'friendly', 'funny'],
+    isLike: 'sunshine on a cold day — he always makes people feel better',
+    daily: 'He walks in the park every morning, has coffee with old friends, and volunteers at the school twice a week.',
+    alibi: 'He was visiting his daughter in another state the entire weekend. Train tickets confirmed.',
+    guilty: false,
+    status: 'neutral',
+  },
+};
+
+const CLUES = [
+  {
+    id: 'c1', icon: '☕', num: 1,
+    title: 'Coffee Cup Found',
+    desc: 'A fresh coffee cup was found inside the trophy room at 7:30 AM — before the school opened.',
+    challenge: {
+      type: 'looks_like',
+      badge: '👁️ Physical Description',
+      question: 'A witness says the person looked like a professor. Which suspect LOOKS LIKE a professor?',
+      options: [
+        { text: 'Victor Stone — he looks like a military officer.', correct: false },
+        { text: 'Dr. Ravi Patel — he always carries a notebook and coffee cup.', correct: true },
+        { text: 'Sofia Cruz — she looks like a performer.', correct: false },
+        { text: 'Clara Webb — she looks like a student.', correct: false },
+      ],
+      tip: '<strong>Looks like</strong> = physical appearance (what you can <em>see</em>). "He <strong>looks like</strong> a professor" ≠ "He IS a professor."',
+    },
+    reveal: '☕ Dr. Ravi drinks coffee every morning in the music room — right next to the trophy room!',
+    suspect: 'ravi', suspicious: true,
+  },
+  {
+    id: 'c2', icon: '📏', num: 2,
+    title: 'Witness Testimony',
+    desc: 'A cleaner says: "The person I saw was tall and thin — taller than the security guard."',
+    challenge: {
+      type: 'comparative',
+      badge: '📊 Comparative Adjectives',
+      question: 'Complete the sentence correctly:\n"Dr. Ravi Patel is _____ Victor Stone."',
+      options: [
+        { text: 'more tall than', correct: false },
+        { text: 'taller than', correct: true },
+        { text: 'tall more than', correct: false },
+        { text: 'the tallest of', correct: false },
+      ],
+      tip: 'Short adjectives (1 syllable) use <strong>-er than</strong>: tall → tall<strong>er than</strong>. NOT "more tall than" ❌',
+    },
+    reveal: '📏 Dr. Ravi IS taller and thinner than Victor. The description matches him perfectly!',
+    suspect: 'ravi', suspicious: true,
+  },
+  {
+    id: 'c3', icon: '💇', num: 3,
+    title: 'Hair on the Floor',
+    desc: 'A strand of straight, dark hair was found near the display case.',
+    challenge: {
+      type: 'description',
+      badge: '👁️ Physical Description',
+      question: 'What does Clara Webb\'s hair look like? Choose the correct description.',
+      options: [
+        { text: 'She has straight, dark hair.', correct: false },
+        { text: 'She has curly, blonde hair.', correct: true },
+        { text: 'She has straight, grey hair.', correct: false },
+        { text: 'She has curly, dark hair.', correct: false },
+      ],
+      tip: 'When describing hair: "She has <strong>[curly/straight]</strong> <strong>[blonde/dark/grey]</strong> hair." Always adjective + adjective + hair.',
+    },
+    reveal: '✅ Clara has CURLY BLONDE hair — not straight dark hair. She\'s CLEARED!',
+    suspect: 'clara', suspicious: false,
+  },
+  {
+    id: 'c4', icon: '📓', num: 4,
+    title: 'Research Notebook',
+    desc: 'A notebook titled "Sound Wave Project" was found behind the display case.',
+    challenge: {
+      type: 'is_like',
+      badge: '❤️ Personality (Is Like)',
+      question: 'The notebook belongs to someone brilliant but forgetful. Complete correctly:\n"Dr. Ravi is like a mad scientist — he is _____ than most people, but he often forgets things."',
+      options: [
+        { text: 'more smart', correct: false },
+        { text: 'smarter', correct: true },
+        { text: 'most smart', correct: false },
+        { text: 'smartest of', correct: false },
+      ],
+      tip: 'Short adjectives → <strong>-er than</strong>: smart → smart<strong>er</strong>. Long adjectives → <strong>more... than</strong>.',
+    },
+    reveal: '📓 The notebook is Dr. Ravi\'s. He borrowed the microphone for his sound research!',
+    suspect: 'ravi', suspicious: true,
+  },
+  {
+    id: 'c5', icon: '🕺', num: 5,
+    title: 'Sofia\'s Alibi',
+    desc: 'Ten people confirm Sofia Cruz was at a dance competition the entire weekend.',
+    challenge: {
+      type: 'personality',
+      badge: '❤️ Personality (Is Like)',
+      question: 'What IS Sofia Cruz like? Choose the sentence that correctly describes her personality.',
+      options: [
+        { text: 'She is like a quiet river — calm and shy.', correct: false },
+        { text: 'She is like a firework — outgoing, funny, and impossible to ignore.', correct: true },
+        { text: 'She is like a guard dog — serious and always watching.', correct: false },
+        { text: 'She is like sunshine — kind and elderly.', correct: false },
+      ],
+      tip: '"She <strong>is like</strong> a firework" = her <em>personality</em> is energetic and loud. <strong>Is like</strong> = ❤️ personality, NOT physical appearance!',
+    },
+    reveal: '✅ Sofia is outgoing and brave — she was at the competition showing it! She\'s CLEARED.',
+    suspect: 'sofia', suspicious: false,
+  },
+  {
+    id: 'c6', icon: '📹', num: 6,
+    title: 'Security Camera',
+    desc: 'The camera shows the person entered at 6 AM — before Victor started his shift.',
+    challenge: {
+      type: 'comparative',
+      badge: '📊 Comparative Adjectives',
+      question: 'Victor always says: "I am more punctual than anyone!" But is he really? Choose the correct comparative:',
+      options: [
+        { text: 'The thief was more early than Victor.', correct: false },
+        { text: 'The thief arrived earlier than Victor.', correct: true },
+        { text: 'The thief was more earlier than Victor.', correct: false },
+        { text: 'The thief arrived more early than Victor.', correct: false },
+      ],
+      tip: 'Early ends in <strong>-y</strong> → change y→i + <strong>-er</strong>: earl<strong>ier</strong>. Same rule as funny → funnier, lazy → lazier.',
+    },
+    reveal: '✅ Victor arrived AFTER the thief. His alibi is solid — he wasn\'t in early enough!',
+    suspect: 'victor', suspicious: false,
+  },
+  {
+    id: 'c7', icon: '🚂', num: 7,
+    title: 'Leo\'s Train Ticket',
+    desc: 'A confirmed train ticket shows Leo Blake was in another state that entire weekend.',
+    challenge: {
+      type: 'looks_like_vs_is_like',
+      badge: '🔍 Looks Like vs Is Like',
+      question: 'Choose the CORRECT sentence to describe Leo Blake:',
+      options: [
+        { text: '"He looks like kind and friendly." ✏️', correct: false },
+        { text: '"He looks like a grandfather, and he is like sunshine." ✏️', correct: true },
+        { text: '"He is like a grandfather with grey hair." ✏️', correct: false },
+        { text: '"He looks like friendly and funny." ✏️', correct: false },
+      ],
+      tip: '<strong>Looks like</strong> → appearance: "He looks like a grandfather." <br><strong>Is like</strong> → personality: "He is like sunshine." Never mix them up! ❌ "He looks like friendly."',
+    },
+    reveal: '✅ Leo was far away. He\'s the friendliest person in the school — and he\'s CLEARED!',
+    suspect: 'leo', suspicious: false,
+  },
+  {
+    id: 'c8', icon: '🎤', num: 8,
+    title: 'Final Confession Note',
+    desc: 'A sticky note was found on the empty display case: "I only borrowed it for my project. I forgot to return it. Sorry! — R.P."',
+    challenge: {
+      type: 'daily_habits',
+      badge: '📅 Daily Habits & Personality',
+      question: '"R.P." — whose initials are these? Which suspect is described correctly below?',
+      options: [
+        { text: 'Victor Stone — he is serious and brave. He works every day as a guard.', correct: false },
+        { text: 'Dr. Ravi Patel — he is smart but sometimes lazy. He often forgets to return things he borrows.', correct: true },
+        { text: 'Leo Blake — he is kind and friendly. He walks in the park every day.', correct: false },
+        { text: 'Sofia Cruz — she is outgoing and funny. She practices music every afternoon.', correct: false },
+      ],
+      tip: 'Describing daily habits: "He often <strong>forgets</strong>." / "She <strong>practices</strong> every day." Use 3rd person -s with he/she!',
+    },
+    reveal: '🔍 R.P. = Dr. Ravi Patel! He borrowed the microphone and simply forgot to return it.',
+    suspect: 'ravi', suspicious: true,
+  },
+];
+
+/* ═══════════════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════════════ */
+let G = {
+  playerCount: 2,
+  players: [],
+  currentPlayerIdx: 0,
+  clueQueue: [],         // shuffled indices into CLUES
+  cluesDone: 0,
+  currentClueIdx: null,
+  answerGiven: false,
+  verdicts: {},          // { playerName: suspectId }
+  scores: {},            // { playerName: number }
+  suspectStates: {},     // copy of each suspect's status
+};
+
+/* ═══════════════════════════════════════════════════════
+   SETUP
+═══════════════════════════════════════════════════════ */
+window.onload = () => {
+  buildCountPicker();
+  buildPlayerSlots(2);
+};
+
+function buildCountPicker() {
+  const cp = document.getElementById('countPicker');
+  cp.innerHTML = '';
+  for (let i = 1; i <= 3; i++) {
+    const b = document.createElement('button');
+    b.className = 'cnt-btn' + (i === G.playerCount ? ' sel' : '');
+    b.textContent = i;
+    b.onclick = () => {
+      G.playerCount = i;
+      document.querySelectorAll('.cnt-btn').forEach(x => x.classList.remove('sel'));
+      b.classList.add('sel');
+      buildPlayerSlots(i);
+    };
+    cp.appendChild(b);
+  }
+}
+
+function buildPlayerSlots(n) {
+  const c = document.getElementById('playerSlots');
+  c.innerHTML = '';
+  // adjust grid if only 1 or 2 players
+  c.style.gridTemplateColumns = n === 1 ? '1fr' : n === 2 ? '1fr 1fr' : '1fr 1fr 1fr';
+  for (let i = 1; i <= n; i++) {
+    c.innerHTML += `
+      <div class="pslot">
+        <div class="num">${i}</div>
+        <input type="text" id="pname${i}" placeholder="Detective ${i}" maxlength="18"/>
+      </div>`;
+  }
+}
+
+function startGame() {
+  const n = G.playerCount;
+  G.players = [];
+  G.scores  = {};
+  G.verdicts = {};
+  for (let i = 1; i <= n; i++) {
+    const v = (document.getElementById(`pname${i}`)?.value || '').trim() || `Detective ${i}`;
+    G.players.push(v);
+    G.scores[v] = 0;
+  }
+  G.currentPlayerIdx = 0;
+
+  // shuffle clue queue
+  G.clueQueue = shuffle([...Array(CLUES.length).keys()]);
+  G.cluesDone = 0;
+  G.currentClueIdx = null;
+  G.answerGiven = false;
+
+  // reset suspect states
+  G.suspectStates = {};
+  Object.keys(SUSPECTS).forEach(k => { G.suspectStates[k] = 'neutral'; });
+
+  buildBriefingSuspects();
+  showScreen('screen-briefing');
+}
+
+/* ═══════════════════════════════════════════════════════
+   BRIEFING
+═══════════════════════════════════════════════════════ */
+function buildBriefingSuspects() {
+  const c = document.getElementById('briefingSuspects');
+  c.innerHTML = '';
+  Object.values(SUSPECTS).forEach(s => {
+    c.innerHTML += suspectCardHTML(s, false);
+  });
+}
+
+function suspectCardHTML(s, showStatus) {
+  let cls = 'suspect-card';
+  if (showStatus) {
+    if (G.suspectStates[s.id] === 'cleared')    cls += ' cleared';
+    if (G.suspectStates[s.id] === 'suspicious') cls += ' suspicious';
+  }
+  const tags = s.personality.map(p => `<span class="s-tag">${p}</span>`).join('');
+  return `
+    <div class="${cls}" onclick="openProfile('${s.id}')">
+      <div class="suspect-emoji">${s.emoji}</div>
+      <div class="suspect-name">${s.name}</div>
+      <div class="suspect-role">${s.role}</div>
+      <div class="s-tags">${tags}</div>
+      ${showStatus && G.suspectStates[s.id] !== 'neutral'
+        ? `<div class="mt8">${G.suspectStates[s.id] === 'cleared'
+            ? '<span class="badge badge-green">✅ Cleared</span>'
+            : '<span class="badge badge-red">⚠️ Suspicious</span>'}</div>`
+        : ''}
+    </div>`;
+}
+
+function startInvestigation() {
+  rebuildBoard();
+  showScreen('screen-board');
+}
+
+/* ═══════════════════════════════════════════════════════
+   BOARD
+═══════════════════════════════════════════════════════ */
+function rebuildBoard() {
+  // suspects
+  const bs = document.getElementById('boardSuspects');
+  bs.innerHTML = '';
+  Object.values(SUSPECTS).forEach(s => { bs.innerHTML += suspectCardHTML(s, true); });
+
+  // turn banner
+  const player = G.players[G.currentPlayerIdx];
+  document.getElementById('turnAvatar').textContent = player.charAt(0).toUpperCase();
+  document.getElementById('turnName').textContent   = `Detective ${player}`;
+
+  // progress dots
+  const pd = document.getElementById('progressDots');
+  pd.innerHTML = '';
+  for (let i = 0; i < CLUES.length; i++) {
+    const d = document.createElement('div');
+    d.className = 'pdot' + (i < G.cluesDone ? ' done' : (i === G.cluesDone ? ' active' : ''));
+    pd.appendChild(d);
+  }
+
+  // score bar
+  const sb = document.getElementById('scoreBar');
+  sb.innerHTML = G.players.map(p =>
+    `<div class="score-chip"><span class="sc-name">${p}:</span><span class="sc-val">${G.scores[p]} pts</span></div>`
+  ).join('');
+
+  // deck button
+  const rem = CLUES.length - G.cluesDone;
+  const drawBtn = document.getElementById('drawBtn');
+  document.getElementById('deckRemaining').textContent = `${rem} clue${rem !== 1 ? 's' : ''} remaining`;
+  drawBtn.disabled = rem === 0;
+
+  // accuse button — available after at least half the clues are done
+  document.getElementById('btnAccuse').disabled = G.cluesDone < Math.ceil(CLUES.length / 2);
+
+  // evidence
+  renderEvidence();
+}
+
+function renderEvidence() {
+  const el = document.getElementById('evidenceList');
+  const items = CLUES.slice(0, G.cluesDone).map(c => {
+    const cls = c.suspicious ? 'evidence-item sus' : 'evidence-item clear';
+    return `<div class="${cls}"><span class="evidence-icon">${c.icon}</span>${c.reveal}</div>`;
+  });
+  el.innerHTML = items.length
+    ? items.join('')
+    : '<p class="evidence-empty">No evidence yet...</p>';
+}
+
+/* ═══════════════════════════════════════════════════════
+   CLUE DRAW & CHALLENGE
+═══════════════════════════════════════════════════════ */
+function drawClue() {
+  if (G.cluesDone >= CLUES.length) return;
+
+  // get next clue in queue (sequential reveal for consistent story)
+  G.currentClueIdx = G.cluesDone; // always reveal in order for narrative
+  const clue = CLUES[G.currentClueIdx];
+  G.answerGiven = false;
+
+  const player = G.players[G.currentPlayerIdx];
+  document.getElementById('clueTurnAvatar').textContent = player.charAt(0).toUpperCase();
+  document.getElementById('clueTurnName').textContent = `Detective ${player}`;
+
+  document.getElementById('clueNum').textContent   = `CLUE #${clue.num}`;
+  document.getElementById('clueIcon').textContent  = clue.icon;
+  document.getElementById('clueTitle').textContent = clue.title;
+  document.getElementById('clueDesc').textContent  = clue.desc;
+
+  const ch = clue.challenge;
+  document.getElementById('challengeBadge').textContent = ch.badge;
+  document.getElementById('chQuestion').textContent     = ch.question;
+
+  // options
+  const opts = document.getElementById('chOptions');
+  opts.innerHTML = '';
+  ch.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'ch-opt';
+    btn.textContent = opt.text;
+    btn.onclick = () => answerChallenge(i, clue);
+    opts.appendChild(btn);
+  });
+
+  document.getElementById('feedbackArea').innerHTML = '';
+  document.getElementById('grammarTip').style.display = 'none';
+  document.getElementById('clueActions').style.display = 'none';
+
+  showScreen('screen-clue');
+}
+
+function answerChallenge(chosenIdx, clue) {
+  if (G.answerGiven) return;
+  G.answerGiven = true;
+
+  const ch      = clue.challenge;
+  const correct = ch.options[chosenIdx].correct;
+  const player  = G.players[G.currentPlayerIdx];
+
+  // style buttons
+  document.querySelectorAll('.ch-opt').forEach((btn, i) => {
+    btn.disabled = true;
+    if (ch.options[i].correct) btn.classList.add('correct');
+    else if (i === chosenIdx)  btn.classList.add('wrong');
+  });
+
+  // score
+  if (correct) G.scores[player] = (G.scores[player] || 0) + 10;
+  else         G.scores[player] = (G.scores[player] || 0) + 5; // partial for trying
+
+  // feedback
+  const fb = document.getElementById('feedbackArea');
+  fb.innerHTML = `
+    <div class="feedback-box ${correct ? 'correct' : 'wrong'}">
+      <strong>${correct ? '✅ Correct!' : '❌ Not quite...'}</strong>
+      ${!correct ? `<br><span style="color:var(--muted)">The correct answer was: <em>"${ch.options.find(o=>o.correct).text}"</em></span>` : ''}
+      <div class="reveal">🔍 Evidence revealed: ${clue.reveal}</div>
+    </div>`;
+
+  // grammar tip
+  const tipEl = document.getElementById('grammarTip');
+  tipEl.innerHTML = `📖 Grammar tip: ${ch.tip}`;
+  tipEl.style.display = '';
+
+  // update state
+  G.cluesDone++;
+  const newStatus = clue.suspicious ? 'suspicious' : 'cleared';
+  if (G.suspectStates[clue.suspect] !== 'suspicious') {
+    G.suspectStates[clue.suspect] = newStatus;
+  }
+
+  // advance player turn
+  G.currentPlayerIdx = (G.currentPlayerIdx + 1) % G.players.length;
+
+  document.getElementById('clueActions').style.display = '';
+}
+
+function returnToBoard() {
+  rebuildBoard();
+  showScreen('screen-board');
+}
+
+/* ═══════════════════════════════════════════════════════
+   ACCUSATION
+═══════════════════════════════════════════════════════ */
+function goToAccusation() {
+  G.verdicts = {};
+
+  const sections = document.getElementById('votingSections');
+  sections.innerHTML = '';
+
+  G.players.forEach(player => {
+    const div = document.createElement('div');
+    div.className = 'player-vote-section';
+    div.innerHTML = `<h3>🔎 ${player}'s accusation</h3><div class="vote-grid" id="votes_${sanitize(player)}"></div>`;
+    sections.appendChild(div);
+
+    const vg = div.querySelector('.vote-grid');
+    Object.values(SUSPECTS).forEach(s => {
+      const btn = document.createElement('button');
+      btn.className = 'vote-btn';
+      btn.id = `vote_${sanitize(player)}_${s.id}`;
+      btn.innerHTML = `${s.emoji} ${s.name}`;
+      btn.onclick = () => castVote(player, s.id);
+      vg.appendChild(btn);
+    });
+  });
+
+  document.getElementById('btnReveal').disabled = true;
+  showScreen('screen-accusation');
+}
+
+function castVote(player, suspectId) {
+  G.verdicts[player] = suspectId;
+  // highlight this player's vote
+  G.players.forEach(p => {
+    Object.values(SUSPECTS).forEach(s => {
+      const btn = document.getElementById(`vote_${sanitize(p)}_${s.id}`);
+      if (!btn) return;
+      if (p === player) btn.classList.toggle('voted', s.id === suspectId);
+    });
+  });
+
+  // enable reveal when all players have voted
+  const allVoted = G.players.every(p => G.verdicts[p]);
+  document.getElementById('btnReveal').disabled = !allVoted;
+}
+
+/* ═══════════════════════════════════════════════════════
+   VERDICT
+═══════════════════════════════════════════════════════ */
+function showVerdict() {
+  const culprit = Object.values(SUSPECTS).find(s => s.guilty);
+
+  // bonus score for correct vote
+  G.players.forEach(p => {
+    if (G.verdicts[p] === culprit.id) G.scores[p] = (G.scores[p] || 0) + 20;
+  });
+
+  // verdict reveal box
+  const vr = document.getElementById('verdictReveal');
+  vr.innerHTML = `
+    <div class="vr-big">${culprit.emoji}</div>
+    <div class="vr-name">🔨 ${culprit.name}</div>
+    <div class="vr-role">${culprit.role}</div>
+    <div class="vr-confession">
+      "I only borrowed the Golden Microphone for my Sound Wave research project.
+      I forgot to return it. I am very sorry — I am <em>smarter than most people</em>
+      about science, but <em>lazier than everyone</em> about paperwork!"
+      <br><br>— <strong>Dr. Ravi Patel</strong>
+    </div>
+    <div class="mt16">
+      <span class="badge badge-amber">Motive: Forgot to return borrowed item</span>
+    </div>`;
+
+  // podium
+  const sorted = [...G.players].sort((a, b) => G.scores[b] - G.scores[a]);
+  const podium = document.getElementById('scorePodium');
+  podium.innerHTML = sorted.map((p, i) => {
+    const correct = G.verdicts[p] === culprit.id;
+    return `
+      <div class="podium-card ${i === 0 ? 'winner' : ''}">
+        ${i === 0 ? '🏆 ' : ''}
+        <div class="pod-name">${p}</div>
+        <div class="pod-score">${G.scores[p]}</div>
+        <div class="pod-correct">${correct ? '✅ Correct accusation (+20)' : ''}</div>
+        <div class="pod-wrong">${!correct ? `❌ Accused ${SUSPECTS[G.verdicts[p]]?.name || '—'}` : ''}</div>
+      </div>`;
+  }).join('');
+
+  // practice sentences
+  const prac = document.getElementById('practiceSentences');
+  const culpritS = culprit;
+  const sentences = [
+    `"Dr. Ravi <strong>looks like</strong> a professor — he is tall and thin with straight dark hair."`,
+    `"Dr. Ravi <strong>is like</strong> a mad scientist — brilliant ideas, but he often forgets things."`,
+    `"He is <strong>taller than</strong> Victor Stone and <strong>thinner than</strong> most people."`,
+    `"Clara Webb has <strong>curly blonde hair</strong> — she <strong>looks like</strong> a student."`,
+    `"Sofia Cruz <strong>is like</strong> a firework — outgoing, funny, and impossible to ignore."`,
+    `"Leo Blake <strong>is like</strong> sunshine — he makes everyone feel better."`,
+    `"Victor <strong>is more serious than</strong> the other suspects, but he is also very brave."`,
+    `"What <strong>does</strong> Dr. Ravi <strong>look like</strong>? He looks like a professor."`,
+    `"What <strong>is</strong> Sofia <strong>like</strong>? She is outgoing, funny, and brave."`,
+  ];
+  prac.innerHTML = sentences.map(s =>
+    `<div class="practice-sent">📢 ${s}</div>`
+  ).join('');
+
+  showScreen('screen-verdict');
+}
+
+/* ═══════════════════════════════════════════════════════
+   PROFILE MODAL
+═══════════════════════════════════════════════════════ */
+function openProfile(id) {
+  const s  = SUSPECTS[id];
+  const st = G.suspectStates ? G.suspectStates[id] : 'neutral';
+
+  let statusBadge = '';
+  if (st === 'cleared')    statusBadge = '<span class="badge badge-green mt8" style="display:inline-block">✅ Cleared by evidence</span>';
+  if (st === 'suspicious') statusBadge = '<span class="badge badge-red   mt8" style="display:inline-block">⚠️ Under suspicion</span>';
+
+  const app = s.appearance;
+  const personalityPills = s.personality.map(p => `<span class="adj-pill">${p}</span>`).join('');
+
+  document.getElementById('profileContent').innerHTML = `
+    <div class="modal-emoji">${s.emoji}</div>
+    <div class="modal-name">${s.name}</div>
+    <div class="modal-role">${s.role}</div>
+    ${statusBadge}
+    <hr class="deco-rule">
+
+    <div class="profile-section">
+      <h4>👁️ What does ${s.name.split(' ')[0]} look like?</h4>
+      <div class="profile-row"><span class="lbl">Height:</span>${app.height}</div>
+      <div class="profile-row"><span class="lbl">Build:</span>${app.build}</div>
+      <div class="profile-row"><span class="lbl">Hair:</span>${app.hair}</div>
+      <div class="profile-row"><span class="lbl">Eyes:</span>${app.eyes}</div>
+      <div class="profile-row"><span class="lbl">Age:</span>${app.age}</div>
+      <div class="profile-row" style="margin-top:8px">
+        <span class="lbl">Looks like:</span>
+        <em style="color:var(--amber2)">"${s.name.split(' ')[0]} looks like ${s.looksLike}."</em>
+      </div>
+    </div>
+
+    <hr class="deco-rule">
+
+    <div class="profile-section">
+      <h4>❤️ What is ${s.name.split(' ')[0]} like?</h4>
+      <div class="adj-pills" style="margin-bottom:10px">${personalityPills}</div>
+      <div class="profile-row">
+        <em style="color:var(--amber2)">"${s.name.split(' ')[0]} is like ${s.isLike}."</em>
+      </div>
+    </div>
+
+    <hr class="deco-rule">
+
+    <div class="profile-section">
+      <h4>📅 Daily Habits</h4>
+      <div class="profile-row">${s.daily}</div>
+    </div>
+
+    <hr class="deco-rule">
+
+    <div class="profile-section">
+      <h4>🛡️ Alibi</h4>
+      <div class="profile-row" style="color:${st === 'cleared' ? '#7fff9a' : '#ccc'}">${s.alibi}</div>
+    </div>`;
+
+  document.getElementById('profileModal').classList.add('open');
+}
+
+function closeProfileModal() {
+  document.getElementById('profileModal').classList.remove('open');
+}
+function closeModal(e) {
+  if (e.target.id === 'profileModal') closeProfileModal();
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════════════════ */
+function resetGame() {
+  G = { playerCount: G.playerCount, players: [], currentPlayerIdx: 0,
+        clueQueue: [], cluesDone: 0, currentClueIdx: null,
+        answerGiven: false, verdicts: {}, scores: {}, suspectStates: {} };
+  buildCountPicker();
+  buildPlayerSlots(G.playerCount);
+  showScreen('screen-setup');
+}
+
+/* ═══════════════════════════════════════════════════════
+   UTILS
+═══════════════════════════════════════════════════════ */
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+function sanitize(s) { return s.replace(/[^a-z0-9]/gi, '_'); }
+</script>
+</body>
+</html>

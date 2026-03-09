@@ -1,0 +1,643 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What is the correct formula for Past Continuous?",
+      "options": ["Subject + was/were + verb-ing", "Subject + had + past participle", "Subject + did + verb", "Subject + was/were + past tense"],
+      "correctAnswer": "Subject + was/were + verb-ing"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "At 9pm last night, I _____ (study) for my English test.",
+      "correctAnswer": "was studying"
+    },
+    {
+      "id": 3,
+      "type": "complete",
+      "question": "When I walked into the room, everyone _____ and nobody noticed me come in.",
+      "correctAnswer": "was talking|was laughing|was chatting"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is in the Past Continuous?",
+      "options": ["They were playing football in the park.", "They played football in the park.", "They have played football in the park.", "They play football in the park."],
+      "correctAnswer": "They were playing football in the park."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "The children _____ (run) and _____ (laugh) in the garden all afternoon.",
+      "correctAnswer": "were running / were laughing"
+    },
+    {
+      "id": 6,
+      "type": "translate",
+      "question": "Rewrite in Past Continuous (at 8pm last night): \"He reads a book.\"",
+      "correctAnswer": "he was reading a book|at 8pm last night, he was reading a book"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "\"Suddenly\" is used to describe...",
+      "options": ["An unexpected event that happens very quickly", "A gradual change over a long period", "A repeated past habit or routine", "A planned action that went well"],
+      "correctAnswer": "An unexpected event that happens very quickly"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "It was a busy morning. People _____ (walk) fast and taxis _____ (honk) everywhere.",
+      "correctAnswer": "were walking / were honking"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "The teacher was explaining the lesson. _____, the students _____ notes carefully.",
+      "correctAnswer": "Meanwhile / were taking"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Choose the correct form: \"At that time, we _____ for the results of the exam.\"",
+      "options": ["were waiting", "waited", "are waiting", "wait"],
+      "correctAnswer": "were waiting"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "_____ she was sleeping, her phone rang three times.",
+      "correctAnswer": "While"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Put this sentence into Past Continuous: \"He listens to music while he makes dinner.\" (last night, at 7pm)",
+      "correctAnswer": "he was listening to music while he was making dinner|at 7pm, he was listening to music while he was making dinner"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "The sun _____ (shine) and birds _____ (sing) when I woke up that morning.",
+      "correctAnswer": "was shining / were singing"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "\"Meanwhile\" is used to describe...",
+      "options": ["Two separate actions happening at the same time", "A sudden interruption of an ongoing action", "A completed action in the past", "The result of an unexpected event"],
+      "correctAnswer": "Two separate actions happening at the same time"
+    },
+    {
+      "id": 15,
+      "type": "complete",
+      "question": "At that _____, the whole team _____ hard on the final presentation.",
+      "correctAnswer": "moment / was working|time / was working"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "During the meeting, several people _____ (check) their phones under the table.",
+      "correctAnswer": "were checking"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses Past Continuous to describe a scene?",
+      "options": ["People were rushing, cars were honking, and the city was waking up.", "People rushed, cars honked, and the city woke up.", "People rush, cars honk, and the city wakes up.", "People had rushed, cars had honked, and the city had woken up."],
+      "correctAnswer": "People were rushing, cars were honking, and the city was waking up."
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "_____ I arrived at the party, I noticed that everyone _____ (dance) and _____ (enjoy) themselves.",
+      "correctAnswer": "When / was dancing / was enjoying"
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "She _____ (wear) a red coat and _____ (carry) a large bag when I spotted her across the street.",
+      "correctAnswer": "was wearing / was carrying"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "\"At that time\" is used to refer to...",
+      "options": ["A specific moment or period in the past being described", "A general truth about the present", "A future plan being made", "A repeated action in the past"],
+      "correctAnswer": "A specific moment or period in the past being described"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "He _____ (not / sleep) — he was reading a book under the covers the whole time.",
+      "correctAnswer": "wasn't sleeping"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which is the correct negative form of Past Continuous?",
+      "options": ["wasn't / weren't + verb-ing", "didn't + verb-ing", "not was/were + verb", "wasn't / weren't + past tense"],
+      "correctAnswer": "wasn't / weren't + verb-ing"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Rewrite as a question: \"She was working very late last night.\"",
+      "correctAnswer": "was she working very late last night"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "_____ you _____ (listen) when the teacher explained that important rule?",
+      "correctAnswer": "Were / listening"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "They _____ (not / pay) attention — they _____ (pass) notes to each other.",
+      "correctAnswer": "weren't paying / were passing"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What is the correct -ing spelling of \"sit\"?",
+      "options": ["sitting", "siting", "seating", "siiting"],
+      "correctAnswer": "sitting"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "_____ she _____ (wear) a uniform when you saw her at the station?",
+      "correctAnswer": "Was / wearing"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "I _____ (not / watch) the match — I _____ (study) all evening and I missed it.",
+      "correctAnswer": "wasn't watching / was studying"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which -ing spelling is correct?",
+      "options": ["driving", "driveing", "drivving", "drivng"],
+      "correctAnswer": "driving"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Rewrite in the negative: \"The students were paying attention during the whole lecture.\"",
+      "correctAnswer": "the students weren't paying attention during the whole lecture"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "What _____ he _____ (do) when the emergency alarm went off?",
+      "correctAnswer": "was / doing"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What happens to verbs ending in a silent -e before adding -ing?",
+      "options": ["Drop the -e and add -ing", "Keep the -e and add -ing", "Double the final letter then add -ing", "Change -e to -y then add -ing"],
+      "correctAnswer": "Drop the -e and add -ing"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "_____ your parents _____ (wait) for you at the door when you finally got home?",
+      "correctAnswer": "Were / waiting"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "No, she _____ (not / cry) — she was just very tired and her eyes were red.",
+      "correctAnswer": "wasn't crying"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the correct -ing form of \"run\"?",
+      "options": ["running", "runing", "runeing", "runnes"],
+      "correctAnswer": "running"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Write the question that matches this answer: \"Yes, I was. I was cooking dinner when you called.\"",
+      "correctAnswer": "were you cooking dinner|were you cooking when i called"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "_____ they _____ (swim) when the lifeguard _____ (blow) the whistle?",
+      "correctAnswer": "Were / swimming / blew"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "What is the correct -ing form of \"lie\" (to lie down)?",
+      "options": ["lying", "lieing", "liing", "lie-ing"],
+      "correctAnswer": "lying"
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "She _____ (not / pay) attention in the meeting. That's why she _____ (miss) the main announcement.",
+      "correctAnswer": "wasn't paying / missed"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Choose the correct short answer for: \"Were they arguing when you arrived?\"",
+      "options": ["Yes, they were.", "Yes, they did.", "Yes, they are.", "Yes, they had."],
+      "correctAnswer": "Yes, they were."
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "In \"I was cooking when the phone rang\", which action was already in progress?",
+      "options": ["Cooking", "Ringing", "Both equally", "Neither — both were completed"],
+      "correctAnswer": "Cooking"
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "She _____ (walk) to work when she _____ (run into) an old friend on the corner.",
+      "correctAnswer": "was walking / ran into"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Rewrite starting with \"When\": \"While I was reading, my sister suddenly came in.\"",
+      "correctAnswer": "when my sister came in, i was reading|my sister came in when i was reading"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "While he _____ (drive) home on the highway, the engine _____ (stop) without warning.",
+      "correctAnswer": "was driving / stopped"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly shows an interrupted past action?",
+      "options": ["I was sleeping when the alarm went off.", "I slept when the alarm went off.", "I was sleeping and I was dreaming of flying.", "I sleep when the alarm usually goes off."],
+      "correctAnswer": "I was sleeping when the alarm went off."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "They _____ (have) dinner when someone _____ (knock) loudly and urgently on the door.",
+      "correctAnswer": "were having / knocked"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "_____ he _____ (shower) when you called him? That's probably why he didn't pick up.",
+      "correctAnswer": "Was / showering"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which word typically introduces the ongoing background action in a sentence?",
+      "options": ["While", "When", "Suddenly", "After"],
+      "correctAnswer": "While"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Rewrite starting with \"While\": \"She fell and hurt her knee when she was running in the park.\"",
+      "correctAnswer": "while she was running in the park, she fell and hurt her knee"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "The boss _____ (not / expect) everyone to arrive so early — he _____ (look) genuinely surprised.",
+      "correctAnswer": "wasn't expecting / looked"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "\"When she arrived, we were eating dinner.\" In this sentence, arriving is...",
+      "options": ["The interrupting action", "The background action", "Simultaneous with eating", "The result of eating"],
+      "correctAnswer": "The interrupting action"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "While I _____ (wait) at the bus stop, I _____ (notice) something very unusual across the street.",
+      "correctAnswer": "was waiting / noticed"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "He _____ (read) an important report when his computer _____ (crash) and he lost everything.",
+      "correctAnswer": "was reading / crashed"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Rewrite starting with \"When\": \"While she was getting dressed, the taxi arrived downstairs.\"",
+      "correctAnswer": "the taxi arrived when she was getting dressed|when the taxi arrived, she was still getting dressed"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Choose the sentence that correctly combines Past Continuous and Simple Past:",
+      "options": ["We were watching a film when the lights went out.", "We watched a film when the lights were going out.", "We were watching a film when the lights were going out.", "We watched a film when the lights went out completely."],
+      "correctAnswer": "We were watching a film when the lights went out."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "I _____ (just / leave) the house when my phone _____ (ring) for the second time.",
+      "correctAnswer": "was just leaving / rang"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "_____ they _____ (argue) when you walked in? I could hear raised voices from the hallway.",
+      "correctAnswer": "Were / arguing"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "While the mechanic _____ (fix) my car, I _____ (wait) at a café nearby.",
+      "correctAnswer": "was fixing / waited|was fixing / was waiting"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Combine into one sentence using \"when\": \"She was giving a speech. The microphone suddenly stopped working.\"",
+      "correctAnswer": "she was giving a speech when the microphone suddenly stopped working|when the microphone stopped working, she was giving her speech"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which sentence uses WHEN correctly with Past Continuous?",
+      "options": ["I was sleeping when the door slammed shut.", "I was sleeping when she was also cooking.", "When I was sleeping suddenly happened a noise.", "When the door slammed, I was sleep."],
+      "correctAnswer": "I was sleeping when the door slammed shut."
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which sentence describes two simultaneous past actions?",
+      "options": ["While she was reading, he was cooking.", "She was reading when he cooked.", "She read while he was cooking at the time.", "She read and he cooked that evening."],
+      "correctAnswer": "While she was reading, he was cooking."
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "While the teacher _____ (explain) the grammar point, the students _____ (take) careful notes.",
+      "correctAnswer": "was explaining / were taking"
+    },
+    {
+      "id": 3,
+      "type": "complete",
+      "question": "Tom was making coffee in the kitchen. _____, Sara _____ (set) the table for breakfast.",
+      "correctAnswer": "Meanwhile / was setting"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which verb CANNOT normally be used in the Past Continuous?",
+      "options": ["know", "run", "talk", "play"],
+      "correctAnswer": "know"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "It was a cold winter night. The wind _____ (blow) strongly and snow _____ (fall) heavily outside.",
+      "correctAnswer": "was blowing / was falling"
+    },
+    {
+      "id": 6,
+      "type": "complete",
+      "question": "While she _____ (study) upstairs, her younger brother _____ (play) video games downstairs.",
+      "correctAnswer": "was studying / was playing"
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Rewrite using \"meanwhile\": \"He was writing emails. At the same time, she was preparing the presentation.\"",
+      "correctAnswer": "he was writing emails. meanwhile, she was preparing the presentation"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly sets the scene for a story using Past Continuous?",
+      "options": ["It was a busy Monday morning. People were rushing and cars were honking.", "It is a busy Monday morning. People rush and cars honk.", "It was a busy Monday morning. People rushed and cars honked.", "It was busy and people will rush to work."],
+      "correctAnswer": "It was a busy Monday morning. People were rushing and cars were honking."
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "_____ one team _____ (defend), the other _____ (attack) relentlessly from the opposite side.",
+      "correctAnswer": "While / was defending / was attacking"
+    },
+    {
+      "id": 10,
+      "type": "complete",
+      "question": "The street market was vibrant. Vendors _____ (sell) food, children _____ (play), and music _____ (fill) the air.",
+      "correctAnswer": "were selling / were playing / was filling"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Why can't we say \"I was knowing the answer\"?",
+      "options": ["\"Know\" is a state verb not used in continuous forms", "\"Know\" must always be in the present tense", "\"Knowing\" is not a valid word in English", "State verbs always use the future tense"],
+      "correctAnswer": "\"Know\" is a state verb not used in continuous forms"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "I _____ (want) to call you earlier, but I _____ (have) so much to deal with all day.",
+      "correctAnswer": "wanted / had"
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Set the scene using Past Continuous: \"A man / stand / at the window. He / look / out at the empty street below.\"",
+      "correctAnswer": "a man was standing at the window. he was looking out at the empty street below|a man was standing at the window, looking at the empty street below"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "She _____ (not / understand) the instructions because she _____ (not / pay) attention at all.",
+      "correctAnswer": "didn't understand / wasn't paying"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence INCORRECTLY uses a state verb in continuous form?",
+      "options": ["She was believing everything he said.", "She was running very fast.", "They were laughing at the joke.", "He was writing a letter to his friend."],
+      "correctAnswer": "She was believing everything he said."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "While the adults _____ (chat) in the living room, the kids _____ (chase) each other around the garden.",
+      "correctAnswer": "were chatting / were chasing"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "It _____ a dark and stormy night. Thunder _____ (rumble) in the distance and rain _____ (hit) the windows hard.",
+      "correctAnswer": "was / was rumbling / was hitting"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "\"Meanwhile\" connects two actions that are...",
+      "options": ["Happening at the same time but involving different people or things", "Happening one directly after the other", "In conflict with each other", "Describing the same person doing two things in sequence"],
+      "correctAnswer": "Happening at the same time but involving different people or things"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Rewrite as two simultaneous actions: \"He exercised. At the same time, she was listening to a podcast.\"",
+      "correctAnswer": "while he was exercising, she was listening to a podcast|he was exercising while she was listening to a podcast"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "They _____ (not / argue) — they _____ (have) a calm and constructive discussion about the project.",
+      "correctAnswer": "weren't arguing / were having"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "fill-blank",
+      "question": "I _____ (have) breakfast when I _____ (hear) a very strange noise coming from outside.",
+      "correctAnswer": "was having / heard"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which is the correct question form?",
+      "options": ["Were they sleeping when you arrived?", "Was they sleeping when you arrived?", "Did they sleeping when you arrived?", "Are they sleeping when you arrived?"],
+      "correctAnswer": "Were they sleeping when you arrived?"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Rewrite starting with \"While\": \"He was typing an email when his laptop battery suddenly died.\"",
+      "correctAnswer": "while he was typing an email, his laptop battery suddenly died"
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "No, she _____ (not / watch) TV. She _____ (study) quietly in her room the whole evening.",
+      "correctAnswer": "wasn't watching / was studying"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "_____ the storm hit the coastline, the whole town _____ (sleep) peacefully.",
+      "correctAnswer": "When / was sleeping"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Choose the sentence that correctly combines WHILE and the two tenses:",
+      "options": ["While they were waiting, the train arrived.", "While they waited, the train was arriving.", "While they were waiting, the train was arrived.", "They were waiting while suddenly the train arrived."],
+      "correctAnswer": "While they were waiting, the train arrived."
+    },
+    {
+      "id": 7,
+      "type": "translate",
+      "question": "Describe the scene using Past Continuous: \"A woman / stand / at the bus stop. She / read / a book. It / rain / lightly.\"",
+      "correctAnswer": "a woman was standing at the bus stop. she was reading a book. it was raining lightly.|a woman was standing at the bus stop, reading a book while it was raining lightly."
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "He _____ (drive) at full speed on the motorway when the police _____ (stop) him.",
+      "correctAnswer": "was driving / stopped"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "_____ you doing anything important at 6pm yesterday? I _____ (try) to reach you for over an hour!",
+      "correctAnswer": "Were / was trying"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "\"She was wanting a coffee.\" Why is this sentence incorrect?",
+      "options": ["\"Want\" is a state verb and is not used in continuous forms", "\"Was\" should be \"were\" in this sentence", "The -ing form of \"want\" is spelled incorrectly", "This is the correct Past Continuous form"],
+      "correctAnswer": "\"Want\" is a state verb and is not used in continuous forms"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "While some students _____ (write) their answers, others _____ (stare) out of the window.",
+      "correctAnswer": "were writing / were staring"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Combine into one sentence using \"when\": \"She was walking home alone. It suddenly started to rain heavily.\"",
+      "correctAnswer": "she was walking home when it suddenly started to rain heavily|when it suddenly started to rain heavily, she was walking home"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Everyone _____ (laugh) and _____ (enjoy) the party when the host _____ (make) a very unexpected announcement.",
+      "correctAnswer": "was laughing / was enjoying / made"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "_____, a car _____ (speed) past and nearly hit a cyclist who was crossing the road.",
+      "correctAnswer": "Suddenly / sped"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence uses \"meanwhile\" correctly?",
+      "options": ["She was cooking dinner. Meanwhile, he was helping the kids with homework.", "She was cooking dinner meanwhile interrupted by the phone.", "Meanwhile she cooked, he was helping with everything.", "She cooked meanwhile he was helping at the same time."],
+      "correctAnswer": "She was cooking dinner. Meanwhile, he was helping the kids with homework."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "I _____ (not / know) what to say at that moment — I was completely stunned.",
+      "correctAnswer": "didn't know"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "At the time of the incident, three people _____ (stand) nearby and _____ (watch) exactly what _____ (happen).",
+      "correctAnswer": "were standing / were watching / was happening"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Rewrite starting with \"When\": \"While she was giving her speech, the microphone stopped working completely.\"",
+      "correctAnswer": "the microphone stopped working when she was giving her speech|when the microphone stopped working, she was giving her speech"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "\"They were having dinner, and she was preparing dessert.\" These two actions are...",
+      "options": ["Simultaneous past actions", "An interrupted action", "A completed past sequence", "Two unrelated events in the past"],
+      "correctAnswer": "Simultaneous past actions"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "It was a peaceful Sunday afternoon. The kids _____ (play) in the yard, the dog _____ (sleep) on the porch, and my parents _____ (read) in the garden.",
+      "correctAnswer": "were playing / was sleeping / were reading"
+    }
+  ]
+}

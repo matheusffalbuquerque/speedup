@@ -1,762 +1,745 @@
 {
+  "lesson": 5,
+  "level": "root",
+  "topic": "Describing People & Personality",
   "monday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "O que significa 'waiter'?",
-      "options": [
-        "Recepcionista",
-        "Cliente",
-        "Cozinheiro",
-        "Garçom"
-      ],
-      "correctAnswer": "Garçom"
+      "question": "What does 'shy' mean?",
+      "options": ["Extrovertido", "Animado", "Tímido", "Engraçado"],
+      "correctAnswer": "Tímido"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'I'd _____ the grilled chicken, please.' (gostaria de pedir)",
-      "correctAnswer": "like"
+      "type": "multiple-choice",
+      "question": "What does 'outgoing' mean?",
+      "options": ["Reservado", "Extrovertido / Sociável", "Sério", "Preguiçoso"],
+      "correctAnswer": "Extrovertido / Sociável"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza para inglês: 'Você gostaria de fazer uma reserva?'",
-      "correctAnswer": "would you like to make a reservation"
+      "type": "multiple-choice",
+      "question": "What does 'friendly' mean?",
+      "options": ["Rude", "Tímido", "Simpático / Amigável", "Chato"],
+      "correctAnswer": "Simpático / Amigável"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'Are you going to _____ to the party?' (ir)",
-      "correctAnswer": "come|go"
+      "type": "multiple-choice",
+      "question": "What does 'personality' mean?",
+      "options": ["Aparência física", "Personalidade / Jeito de ser", "Profissão", "Opinião"],
+      "correctAnswer": "Personalidade / Jeito de ser"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Como se diz 'conta' (em restaurante) em inglês?",
-      "options": [
-        "Menu",
-        "Tip",
-        "Bill / Check",
-        "Receipt"
-      ],
-      "correctAnswer": "Bill / Check"
+      "question": "What does 'appearance' mean?",
+      "options": ["Personalidade", "Comportamento", "Aparência / Jeito físico", "Reputação"],
+      "correctAnswer": "Aparência / Jeito físico"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: '_____ I have the menu, please?' (Posso ter)",
-      "correctAnswer": "Can"
+      "type": "multiple-choice",
+      "question": "What does 'smart' mean?",
+      "options": ["Bonito", "Inteligente", "Engraçado", "Alto"],
+      "correctAnswer": "Inteligente"
     },
     {
       "id": 7,
-      "type": "translate",
-      "question": "Traduza: 'Ela vai à festa hoje à noite'",
-      "correctAnswer": "she is going to go to the party tonight|she's going to go to the party tonight|she is going to the party tonight"
+      "type": "multiple-choice",
+      "question": "What does 'kind' mean?",
+      "options": ["Mau", "Estranho", "Gentil / Bondoso", "Nervoso"],
+      "correctAnswer": "Gentil / Bondoso"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "O que é 'appetizer'?",
-      "options": [
-        "Bebida",
-        "Prato principal",
-        "Entrada / Aperitivo",
-        "Sobremesa"
-      ],
-      "correctAnswer": "Entrada / Aperitivo"
+      "question": "Which adjective describes someone who talks easily with new people?",
+      "options": ["Shy", "Outgoing", "Serious", "Quiet"],
+      "correctAnswer": "Outgoing"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: 'I'd like to _____ a reservation for two.' (fazer)",
-      "correctAnswer": "make"
+      "type": "multiple-choice",
+      "question": "Which adjective describes someone's physical appearance (not personality)?",
+      "options": ["Kind", "Friendly", "Smart", "Tall"],
+      "correctAnswer": "Tall"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'What _____ you like to order?' (gostaria)",
-      "correctAnswer": "would"
+      "type": "multiple-choice",
+      "question": "What is the OPPOSITE of 'shy'?",
+      "options": ["Smart", "Friendly", "Outgoing", "Kind"],
+      "correctAnswer": "Outgoing"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Traduza: 'Vamos ao churrasco neste fim de semana!'",
-      "correctAnswer": "let's go to the barbecue this weekend|let's go to the bbq this weekend"
+      "type": "fill-blank",
+      "question": "Complete: 'She is very _____ and loves meeting new people.' (extrovertida)",
+      "correctAnswer": "outgoing"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Qual é a tradução de 'tip'?",
-      "options": [
-        "Desconto",
-        "Conta",
-        "Gorjeta",
-        "Troco"
-      ],
-      "correctAnswer": "Gorjeta"
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____, so he doesn't talk much in class.' (tímido)",
+      "correctAnswer": "shy"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: 'I _____ love to come to your party!' (adoraria)",
-      "correctAnswer": "'d|would"
+      "type": "fill-blank",
+      "question": "Complete: 'My neighbor is very _____. She always says hello.' (simpática)",
+      "correctAnswer": "friendly"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'Would you like to see the _____ menu?' (sobremesa)",
-      "correctAnswer": "dessert"
+      "question": "Complete: 'He is very _____. He always helps others.' (gentil)",
+      "correctAnswer": "kind"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Traduza: 'Adoraria, mas não posso ir'",
-      "correctAnswer": "i'd love to, but i can't|i would love to, but i can't"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like her mother — same eyes and smile.' (parece fisicamente)",
+      "correctAnswer": "looks"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "O que significa 'reservation'?",
-      "options": [
-        "Mesa",
-        "Reserva",
-        "Cardápio",
-        "Pedido"
-      ],
-      "correctAnswer": "Reserva"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é alta e simpática.'",
+      "correctAnswer": "she is tall and friendly"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ going to meet us tonight.' (está)",
-      "correctAnswer": "is"
+      "type": "translate",
+      "question": "Translate to English: 'Ele é tímido, mas muito inteligente.'",
+      "correctAnswer": "he is shy but very smart"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Traduza: 'O garçom trouxe o cardápio'",
-      "correctAnswer": "the waiter brought the menu"
+      "question": "Translate to English: 'Meu amigo é muito simpático.'",
+      "correctAnswer": "my friend is very friendly"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete: '_____ you like to join us for dinner?' (Gostaria de...)",
-      "correctAnswer": "Would"
+      "type": "translate",
+      "question": "Translate to English: 'Ela tem uma personalidade incrível.'",
+      "correctAnswer": "she has an amazing personality"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Como se diz 'sobremesa' em inglês?",
-      "options": [
-        "Appetizer",
-        "Main course",
-        "Side dish",
-        "Dessert"
-      ],
-      "correctAnswer": "Dessert"
+      "type": "translate",
+      "question": "Translate to English: 'Ele parece o pai — alto e de cabelo escuro.'",
+      "correctAnswer": "he looks like his father — tall and dark-haired|he looks like his dad — tall with dark hair"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "translate",
-      "question": "Traduza: 'Posso ver o cardápio, por favor?'",
-      "correctAnswer": "can i have the menu, please|can i see the menu, please"
+      "type": "multiple-choice",
+      "question": "How do we form the comparative of short one-syllable adjectives like 'tall'?",
+      "options": [
+        "more + adjective",
+        "adjective + -er",
+        "most + adjective",
+        "adjective + -est"
+      ],
+      "correctAnswer": "adjective + -er"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'I'd like _____ order the pasta.' (pedir)",
-      "correctAnswer": "to"
+      "type": "multiple-choice",
+      "question": "Which is the correct comparative of 'tall'?",
+      "options": ["More tall", "Tallest", "Taller", "Most tall"],
+      "correctAnswer": "Taller"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "O que significa 'dish'?",
-      "options": [
-        "Colher",
-        "Prato (refeição)",
-        "Cardápio",
-        "Ingrediente"
-      ],
-      "correctAnswer": "Prato (refeição)"
+      "question": "Which is the correct comparative of 'smart'?",
+      "options": ["More smart", "Smarter", "Smartest", "Most smart"],
+      "correctAnswer": "Smarter"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'Why don't we _____ to that new restaurant?' (ir)",
-      "correctAnswer": "go"
+      "type": "multiple-choice",
+      "question": "How do we form the comparative of longer adjectives like 'outgoing'?",
+      "options": [
+        "adjective + -er",
+        "most + adjective",
+        "more + adjective",
+        "adjective + -est"
+      ],
+      "correctAnswer": "more + adjective"
     },
     {
       "id": 5,
-      "type": "translate",
-      "question": "Traduza: 'O que você vai fazer neste fim de semana?'",
-      "correctAnswer": "what are you going to do this weekend"
+      "type": "multiple-choice",
+      "question": "Which is the correct comparative of 'friendly'?",
+      "options": ["Friendlier / More friendly", "Most friendly", "Friendliest", "More friendlier"],
+      "correctAnswer": "Friendlier / More friendly"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'Can I have the _____, please?' (conta)",
-      "correctAnswer": "bill|check"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She is more tall than her sister.",
+        "She is tallest than her sister.",
+        "She is taller than her sister.",
+        "She is tall than her sister."
+      ],
+      "correctAnswer": "She is taller than her sister."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Qual frase é usada para aceitar um convite com entusiasmo?",
+      "question": "Which sentence is correct?",
       "options": [
-        "I'd love to, but...",
-        "Maybe next time.",
-        "Count me in!",
-        "Let me check."
+        "He is more outgoing that his brother.",
+        "He is more outgoing than his brother.",
+        "He is outrgoing than his brother.",
+        "He is outgoingest than his brother."
       ],
-      "correctAnswer": "Count me in!"
+      "correctAnswer": "He is more outgoing than his brother."
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: 'She _____ like the fish dish, please.' (gostaria)",
-      "correctAnswer": "'d|would"
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ than her sister.' (tall → comparative)",
+      "correctAnswer": "taller"
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Traduza: 'Vamos dividir a conta'",
-      "correctAnswer": "let's split the bill"
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ than his classmate.' (smart → comparative)",
+      "correctAnswer": "smarter"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'Are you _____ to come to the concert?' (vai)",
-      "correctAnswer": "going"
+      "question": "Complete: 'My brother is _____ than me.' (young → comparative)",
+      "correctAnswer": "younger"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Como um garçom pergunta se você está pronto para pedir?",
-      "options": [
-        "Would you like to eat?",
-        "Are you ready to order?",
-        "Can you order now?",
-        "Do you want food?"
-      ],
-      "correctAnswer": "Are you ready to order?"
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ outgoing than her coworker.' (comparative marker for long adj.)",
+      "correctAnswer": "more"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'How _____ dinner tomorrow?' (que tal)",
-      "correctAnswer": "about"
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ patient than I expected.' (comparative — long adj.)",
+      "correctAnswer": "more"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Traduza: 'Eu gostaria de uma mesa para três, por favor'",
-      "correctAnswer": "i'd like a table for three, please|i would like a table for three, please"
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ kind than she looks.' (comparative — short adj.)",
+      "correctAnswer": "kinder"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'I'm sorry, I _____ make it tonight.' (não posso)",
-      "correctAnswer": "can't|cannot"
+      "question": "Complete: 'He is taller _____ his father.' (comparison word)",
+      "correctAnswer": "than"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "O que significa 'chef'?",
-      "options": [
-        "Recepcionista",
-        "Cozinheiro / Chef",
-        "Garçom",
-        "Gerente"
-      ],
-      "correctAnswer": "Cozinheiro / Chef"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais alta do que eu.'",
+      "correctAnswer": "she is taller than me|she is taller than i am"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'I'd love to, _____ I have plans.' (mas)",
-      "correctAnswer": "but"
+      "type": "translate",
+      "question": "Translate to English: 'Ele é mais inteligente do que o amigo dele.'",
+      "correctAnswer": "he is smarter than his friend"
     },
     {
       "id": 17,
       "type": "translate",
-      "question": "Traduza: 'Posso pedir agora?'",
-      "correctAnswer": "can i order now"
+      "question": "Translate to English: 'Minha irmã é mais simpática do que meu irmão.'",
+      "correctAnswer": "my sister is friendlier than my brother|my sister is more friendly than my brother"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'The _____ of the day is grilled salmon.' (prato especial)",
-      "correctAnswer": "special"
+      "type": "translate",
+      "question": "Translate to English: 'Ele é mais tímido do que parece.'",
+      "correctAnswer": "he is shyer than he looks|he is more shy than he looks"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Qual estrutura usamos para fazer convites formais?",
-      "options": [
-        "Why don't we...?",
-        "Let's...!",
-        "Would you like to...?",
-        "Do you want...?"
-      ],
-      "correctAnswer": "Would you like to...?"
+      "type": "translate",
+      "question": "Translate to English: 'João é mais alto do que Pedro.'",
+      "correctAnswer": "João is taller than Pedro|Joao is taller than Pedro"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Traduza: 'Pode contar comigo!'",
-      "correctAnswer": "count me in"
+      "question": "Translate to English: 'Ela é mais extrovertida do que a irmã.'",
+      "correctAnswer": "she is more outgoing than her sister"
     }
   ],
   "wednesday": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "Complete: 'I'd like to _____ a reservation for Saturday.' (fazer)",
-      "correctAnswer": "make"
+      "type": "multiple-choice",
+      "question": "What does 'She looks like her mother' mean?",
+      "options": [
+        "Ela age como a mãe.",
+        "Ela tem a aparência física da mãe.",
+        "Ela fala como a mãe.",
+        "Ela gosta da mãe."
+      ],
+      "correctAnswer": "Ela tem a aparência física da mãe."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "O que um garçom diz ao servir o prato?",
+      "question": "What does 'He is like his father' mean?",
       "options": [
-        "What would you like?",
-        "Can I help you?",
-        "Enjoy your meal!",
-        "Are you ready?"
+        "Ele se parece fisicamente com o pai.",
+        "Ele é igual ao pai em personalidade/comportamento.",
+        "Ele gosta do pai.",
+        "Ele trabalha com o pai."
       ],
-      "correctAnswer": "Enjoy your meal!"
+      "correctAnswer": "Ele é igual ao pai em personalidade/comportamento."
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Traduza: 'Ela não vai poder ir à reunião informal'",
-      "correctAnswer": "she is not going to come to the get-together|she isn't going to make it to the get-together"
+      "type": "multiple-choice",
+      "question": "Which sentence means 'Ela se parece com a irmã' (aparência física)?",
+      "options": [
+        "She is like her sister.",
+        "She looks as her sister.",
+        "She looks like her sister.",
+        "She is looking her sister."
+      ],
+      "correctAnswer": "She looks like her sister."
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'Is the _____ included?' (gorjeta)",
-      "correctAnswer": "tip"
+      "type": "multiple-choice",
+      "question": "Which sentence means 'Ele é como o irmão — muito engraçado'?",
+      "options": [
+        "He looks like his brother — very funny.",
+        "He is like his brother — very funny.",
+        "He seems his brother — very funny.",
+        "He is looking like his brother — very funny."
+      ],
+      "correctAnswer": "He is like his brother — very funny."
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: 'We _____ split the bill tonight.' (vamos)",
-      "correctAnswer": "will|'ll"
+      "type": "multiple-choice",
+      "question": "What is the irregular comparative of 'good'?",
+      "options": ["Gooder", "More good", "Goodest", "Better"],
+      "correctAnswer": "Better"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Traduza: 'Eu gostaria de um copo d'água, por favor'",
-      "correctAnswer": "i'd like a glass of water, please|i would like a glass of water, please"
+      "type": "multiple-choice",
+      "question": "What is the irregular comparative of 'bad'?",
+      "options": ["More bad", "Badder", "Worse", "Worst"],
+      "correctAnswer": "Worse"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Como se diz 'entrada' (de refeição) em inglês?",
+      "question": "Which sentence is correct?",
       "options": [
-        "Dessert",
-        "Main course",
-        "Appetizer",
-        "Side dish"
+        "She is more better at English than me.",
+        "She is gooder at English than me.",
+        "She is better at English than me.",
+        "She is best at English than me."
       ],
-      "correctAnswer": "Appetizer"
+      "correctAnswer": "She is better at English than me."
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Complete: '_____ me check my schedule.' (deixa)",
-      "correctAnswer": "Let"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like her grandmother — same smile and eyes.' (looks like)",
+      "correctAnswer": "looks"
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Traduza: 'Pode ficar com o troco'",
-      "correctAnswer": "keep the change"
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ his older brother — very confident and funny.' (is like)",
+      "correctAnswer": "like"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'What _____ you like to start with?' (gostaria — garçom perguntando)",
-      "correctAnswer": "would"
+      "question": "Complete: 'She is _____ at sports than her twin sister.' (better — irregular comparative)",
+      "correctAnswer": "better"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Qual é a forma contraída de 'I would'?",
-      "options": [
-        "I'm",
-        "I'd",
-        "I've",
-        "I'll"
-      ],
-      "correctAnswer": "I'd"
+      "type": "fill-blank",
+      "question": "Complete: 'My old phone was _____ than this one.' (worse — irregular comparative)",
+      "correctAnswer": "worse"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'I'll _____ you know tomorrow.' (avisar)",
-      "correctAnswer": "let"
+      "type": "fill-blank",
+      "question": "Complete: 'He is more _____ than his coworkers — he never gets angry.' (patient)",
+      "correctAnswer": "patient"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Traduza: 'O que você vai pedir de sobremesa?'",
-      "correctAnswer": "what are you going to order for dessert|what would you like for dessert"
+      "type": "fill-blank",
+      "question": "Complete: 'She is more _____ than anyone in the class.' (creative)",
+      "correctAnswer": "creative"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: '_____ this way, please.' (Por aqui — frase do garçom)",
-      "correctAnswer": "Right"
+      "type": "translate",
+      "question": "Translate to English: 'Ele se parece com o pai.'",
+      "correctAnswer": "he looks like his father|he looks like his dad"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "O que significa 'get-together'?",
-      "options": [
-        "Festa grande",
-        "Show",
-        "Churrasco",
-        "Reunião informal"
-      ],
-      "correctAnswer": "Reunião informal"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é como a mãe — muito paciente.'",
+      "correctAnswer": "she is like her mother — very patient|she is like her mom — very patient"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Traduza: 'Você gostaria de ver o menu de sobremesas?'",
-      "correctAnswer": "would you like to see the dessert menu"
+      "question": "Translate to English: 'Minha amiga parece uma modelo.'",
+      "correctAnswer": "my friend looks like a model"
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "Complete: 'Could we have a _____ more time to decide?' (um pouco)",
-      "correctAnswer": "little"
+      "type": "translate",
+      "question": "Translate to English: 'Ele é melhor em inglês do que eu.'",
+      "correctAnswer": "he is better at english than me|he is better at english than i am"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'I'm not _____ to come to the party.' (vou)",
-      "correctAnswer": "going"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais criativa do que qualquer um da turma.'",
+      "correctAnswer": "she is more creative than anyone in the class"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Como pedimos a conta de forma educada?",
-      "options": [
-        "Give me the bill!",
-        "I want the check.",
-        "Bill now!",
-        "Can I have the bill, please?"
-      ],
-      "correctAnswer": "Can I have the bill, please?"
+      "type": "translate",
+      "question": "Translate to English: 'Esse filme foi pior do que o último.'",
+      "correctAnswer": "this movie was worse than the last one|this film was worse than the last one"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Traduza: 'Talvez na próxima vez'",
-      "correctAnswer": "maybe next time"
+      "question": "Translate to English: 'Ela parece mais nova do que realmente é.'",
+      "correctAnswer": "she looks younger than she really is|she looks younger than she actually is"
     }
   ],
   "thursday": [
     {
       "id": 1,
-      "type": "complete",
-      "question": "Complete: 'I'd like _____ order the grilled chicken.' (para pedir)",
-      "correctAnswer": "to"
+      "type": "multiple-choice",
+      "question": "Which adjective describes PERSONALITY (not appearance)?",
+      "options": ["Tall", "Short", "Curly", "Confident"],
+      "correctAnswer": "Confident"
     },
     {
       "id": 2,
-      "type": "translate",
-      "question": "Traduza: 'O que você vai fazer hoje à noite?'",
-      "correctAnswer": "what are you going to do tonight"
+      "type": "multiple-choice",
+      "question": "Which adjective describes APPEARANCE (not personality)?",
+      "options": ["Funny", "Kind", "Slim", "Outgoing"],
+      "correctAnswer": "Slim"
     },
     {
       "id": 3,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ like the pasta, please.' (gostaria)",
-      "correctAnswer": "'d|would"
+      "type": "multiple-choice",
+      "question": "What does 'confident' mean?",
+      "options": ["Tímido", "Ansioso", "Confiante / Seguro de si", "Triste"],
+      "correctAnswer": "Confiante / Seguro de si"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "O que o garçom diz quando o cliente chega ao restaurante?",
-      "options": [
-        "Are you ready?",
-        "Can I order now?",
-        "What would you eat?",
-        "Do you have a reservation?"
-      ],
-      "correctAnswer": "Do you have a reservation?"
+      "question": "What does 'patient' mean?",
+      "options": ["Impaciente", "Paciente / Calmo", "Rápido", "Nervoso"],
+      "correctAnswer": "Paciente / Calmo"
     },
     {
       "id": 5,
-      "type": "translate",
-      "question": "Traduza: 'Vamos ao show semana que vem!'",
-      "correctAnswer": "let's go to the concert next week"
+      "type": "multiple-choice",
+      "question": "Which question asks about someone's APPEARANCE?",
+      "options": [
+        "What is she like?",
+        "What does she look like?",
+        "How is her personality?",
+        "Is she nice?"
+      ],
+      "correctAnswer": "What does she look like?"
     },
     {
       "id": 6,
-      "type": "complete",
-      "question": "Complete: 'The food was _____! Thank you.' (deliciosa)",
-      "correctAnswer": "delicious|excellent|amazing"
+      "type": "multiple-choice",
+      "question": "Which question asks about someone's PERSONALITY?",
+      "options": [
+        "What does he look like?",
+        "How tall is he?",
+        "What is he like?",
+        "Does he have blue eyes?"
+      ],
+      "correctAnswer": "What is he like?"
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you like to join us for lunch?' (Gostaria)",
-      "correctAnswer": "Would"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses a comparative adjective?",
+      "options": [
+        "She is more taller than her friend.",
+        "She is more tall than her friend.",
+        "She is taller than her friend.",
+        "She is tallest than her friend."
+      ],
+      "correctAnswer": "She is taller than her friend."
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Traduza: 'Posso ter mais água, por favor?'",
-      "correctAnswer": "can i have more water, please"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly combines appearance and personality?",
+      "options": [
+        "He is tall and he more outgoing.",
+        "He is tall and more outgoing than his brother.",
+        "He is taller and more outgoinger than his brother.",
+        "He is more tall and outgoing than his brother."
+      ],
+      "correctAnswer": "He is tall and more outgoing than his brother."
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Como se diz 'prato principal' em inglês?",
-      "options": [
-        "Dessert",
-        "Main course / Main dish",
-        "Appetizer",
-        "Side dish"
-      ],
-      "correctAnswer": "Main course / Main dish"
+      "type": "fill-blank",
+      "question": "Complete: 'Maria is _____ than Ana, but Ana is more outgoing.' (tall → comparative)",
+      "correctAnswer": "taller"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'I'd love to, _____ I have to work.' (mas)",
-      "correctAnswer": "but"
+      "question": "Complete: 'He is very _____. He never gets angry or raises his voice.' (patient)",
+      "correctAnswer": "patient"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'Are you going _____ invite her to the party?' (vai)",
-      "correctAnswer": "to"
+      "type": "fill-blank",
+      "question": "Complete: 'She is really _____. She makes everyone laugh.' (funny)",
+      "correctAnswer": "funny"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Traduza: 'Ela gostaria de fazer uma reserva para 4 pessoas'",
-      "correctAnswer": "she'd like to make a reservation for four people|she would like to make a reservation for four people"
+      "type": "fill-blank",
+      "question": "Complete: '— What does he look like? — He is _____ and has dark hair.' (tall)",
+      "correctAnswer": "tall"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Qual expressão significa 'adoraria'?",
-      "options": [
-        "That sounds okay",
-        "I'd like to",
-        "I'd love to",
-        "Count me in"
-      ],
-      "correctAnswer": "I'd love to"
+      "type": "fill-blank",
+      "question": "Complete: '— What is she like? — She is very _____ and always helps people.' (kind)",
+      "correctAnswer": "kind"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'Can I _____ the menu, please?' (ver/ter)",
-      "correctAnswer": "have|see"
+      "question": "Complete: 'He _____ like his grandfather — same nose and eyes.' (looks like)",
+      "correctAnswer": "looks"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Traduza: 'Que tal um churrasco neste sábado?'",
-      "correctAnswer": "how about a barbecue this saturday|how about a bbq this saturday"
+      "type": "fill-blank",
+      "question": "Complete: 'She is more _____ than her sister when it comes to art.' (creative)",
+      "correctAnswer": "creative"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Complete: 'I'll pay for _____.' (todos)",
-      "correctAnswer": "everyone"
+      "type": "translate",
+      "question": "Translate to English: 'Meu professor é alto, simpático e muito paciente.'",
+      "correctAnswer": "my teacher is tall, friendly and very patient"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'What _____ the special today?' (é — waiter perguntando)",
-      "correctAnswer": "is"
+      "type": "translate",
+      "question": "Translate to English: 'Ele é mais extrovertido do que eu.'",
+      "correctAnswer": "he is more outgoing than me|he is more outgoing than i am"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Traduza: 'Ainda não estou pronto para pedir'",
-      "correctAnswer": "i'm not ready to order yet|i am not ready to order yet"
+      "question": "Translate to English: 'Ela tem cabelo liso e é muito simpática.'",
+      "correctAnswer": "she has straight hair and is very friendly"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Qual é o significado de 'Would you like to...?'",
-      "options": [
-        "Você pode...?",
-        "Gostaria de...?",
-        "Você precisa...?",
-        "Você vai...?"
-      ],
-      "correctAnswer": "Gostaria de...?"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é confiante e muito inteligente.'",
+      "correctAnswer": "she is confident and very smart|she is confident and very intelligent"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Traduza: 'Posso me sentar aqui?'",
-      "correctAnswer": "can i sit here"
+      "question": "Translate to English: 'Quem é mais alto, você ou seu irmão?'",
+      "correctAnswer": "who is taller, you or your brother?"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "fill-blank",
-      "question": "Complete: 'I'd like a _____ for four, please.' (mesa)",
-      "correctAnswer": "table"
+      "type": "multiple-choice",
+      "question": "What does 'creative' mean?",
+      "options": ["Chato", "Criativo / Imaginativo", "Preguiçoso", "Rígido"],
+      "correctAnswer": "Criativo / Imaginativo"
     },
     {
       "id": 2,
-      "type": "translate",
-      "question": "Traduza: 'Eles vão fazer uma festa semana que vem'",
-      "correctAnswer": "they are going to have a party next week|they're going to have a party next week"
+      "type": "multiple-choice",
+      "question": "What does 'serious' mean?",
+      "options": ["Engraçado", "Tímido", "Sério", "Ansioso"],
+      "correctAnswer": "Sério"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "O que significa 'napkin'?",
+      "question": "Which sentence is correct?",
       "options": [
-        "Faca",
-        "Colher",
-        "Guardanapo",
-        "Garfo"
+        "She is more taller than him.",
+        "She is taller than him.",
+        "She is tallest than him.",
+        "She is the taller than him."
       ],
-      "correctAnswer": "Guardanapo"
+      "correctAnswer": "She is taller than him."
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Complete: 'Count _____ in!' (me)",
-      "correctAnswer": "me"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He is more funnier than his friend.",
+        "He is funniest than his friend.",
+        "He is funnier than his friend.",
+        "He is most funny than his friend."
+      ],
+      "correctAnswer": "He is funnier than his friend."
     },
     {
       "id": 5,
-      "type": "translate",
-      "question": "Traduza: 'Posso pedir o prato do dia?'",
-      "correctAnswer": "can i have the special of the day|can i order the special of the day"
+      "type": "multiple-choice",
+      "question": "What is 'good' in comparative form?",
+      "options": ["Gooder", "More good", "Goodest", "Better"],
+      "correctAnswer": "Better"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you like anything else?' (Gostaria de algo mais — garçom)",
-      "correctAnswer": "Would"
+      "type": "multiple-choice",
+      "question": "'What does she look like?' — Which answer is correct?",
+      "options": [
+        "She is very kind and funny.",
+        "She looks like a model — tall with long hair.",
+        "She likes music and sports.",
+        "She is from Brazil."
+      ],
+      "correctAnswer": "She looks like a model — tall with long hair."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Como um cliente reclama educadamente sobre um prato frio?",
+      "question": "'What is he like?' — Which answer is correct?",
       "options": [
-        "This is cold, change it!",
-        "The food is bad.",
-        "I don't want this.",
-        "I'm sorry, but this dish is cold. Could I have another one?"
+        "He is tall and has brown eyes.",
+        "He is from São Paulo.",
+        "He is really outgoing and very funny.",
+        "He looks like his father."
       ],
-      "correctAnswer": "I'm sorry, but this dish is cold. Could I have another one?"
+      "correctAnswer": "He is really outgoing and very funny."
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Traduza: 'Eu vou ao restaurante hoje à noite com meus amigos'",
-      "correctAnswer": "i am going to go to the restaurant tonight with my friends|i'm going to the restaurant tonight with my friends"
+      "type": "multiple-choice",
+      "question": "Which describes someone's personality correctly?",
+      "options": [
+        "She has curly hair and brown eyes.",
+        "She is kind, patient and very creative.",
+        "She is tall and slim.",
+        "She looks like her mother."
+      ],
+      "correctAnswer": "She is kind, patient and very creative."
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete: 'She _____ going to accept the invitation.' (está)",
-      "correctAnswer": "is"
+      "type": "fill-blank",
+      "question": "Complete: 'She is taller _____ her sister.' (comparison word)",
+      "correctAnswer": "than"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'I'd like to order the fish and _____, please.' (batatas fritas)",
-      "correctAnswer": "chips"
+      "question": "Complete: 'He is _____ at sports than his twin.' (better — irregular)",
+      "correctAnswer": "better"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Traduza: 'O serviço foi excelente'",
-      "correctAnswer": "the service was excellent|the service was great"
+      "type": "fill-blank",
+      "question": "Complete: 'She is very _____. She never says anything rude.' (kind)",
+      "correctAnswer": "kind"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Qual é a tradução de 'Would you like to come over tonight?'",
-      "options": [
-        "Você quer dormir aqui?",
-        "Você foi para casa ontem à noite?",
-        "Você gostaria de sair amanhã?",
-        "Você gostaria de vir aqui hoje à noite?"
-      ],
-      "correctAnswer": "Você gostaria de vir aqui hoje à noite?"
+      "type": "fill-blank",
+      "question": "Complete: 'My friend is _____ and always makes people feel welcome.' (friendly)",
+      "correctAnswer": "friendly"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete: 'Unfortunately, I _____ make it to the party.' (não posso)",
-      "correctAnswer": "can't|cannot"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like a young version of her mother.' (looks like)",
+      "correctAnswer": "looks"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'What _____ you going to bring to the BBQ?' (vai)",
-      "correctAnswer": "are"
+      "question": "Complete: '— What does your boss look like? — He is _____ and has short hair.' (tall / short / etc.)",
+      "correctAnswer": "tall|short|young|old"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Traduza: 'Posso ver o menu, por favor?'",
-      "correctAnswer": "can i see the menu, please|can i have the menu, please"
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ serious than his sister — he laughs all the time.' (less — opposite comparison)",
+      "correctAnswer": "less"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Como se diz 'recibo' em inglês?",
-      "options": [
-        "Check",
-        "Bill",
-        "Tip",
-        "Receipt"
-      ],
-      "correctAnswer": "Receipt"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais séria do que parece.'",
+      "correctAnswer": "she is more serious than she looks"
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "Complete: 'I'd like to make a _____ for Saturday evening.' (reserva)",
-      "correctAnswer": "reservation"
+      "type": "translate",
+      "question": "Translate to English: 'Você é mais extrovertido do que seu irmão?'",
+      "correctAnswer": "are you more outgoing than your brother?"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Traduza: 'Ela está animada com a festa de amanhã'",
-      "correctAnswer": "she is excited about the party tomorrow|she's excited about tomorrow's party"
+      "question": "Translate to English: 'Ele parece mais velho do que realmente é.'",
+      "correctAnswer": "he looks older than he really is|he looks older than he actually is"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete: 'The waiter _____ the bill at the end of dinner.' (trouxe)",
-      "correctAnswer": "brought"
+      "type": "translate",
+      "question": "Translate to English: 'Quem é mais simpático na sua família?'",
+      "correctAnswer": "who is the friendliest in your family?|who is friendlier in your family?"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Qual é o jeito correto e educado de pedir algo em um restaurante?",
-      "options": [
-        "Pasta for me.",
-        "I'd like the pasta, please.",
-        "I want the pasta.",
-        "Give me the pasta."
-      ],
-      "correctAnswer": "I'd like the pasta, please."
+      "type": "translate",
+      "question": "Translate to English: 'Meu melhor amigo é engraçado, criativo e muito gentil.'",
+      "correctAnswer": "my best friend is funny, creative and very kind"
     }
   ]
 }

@@ -3,760 +3,760 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence is grammatically correct?",
+      "question": "O que significa 'waiter'?",
       "options": [
-        "She didn't went to the party.",
-        "She didn't go to the party.",
-        "She not go to the party.",
-        "She didn't gone to the party."
+        "Recepcionista",
+        "Cliente",
+        "Cozinheiro",
+        "Garçom"
       ],
-      "correctAnswer": "She didn't go to the party."
+      "correctAnswer": "Garçom"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'They _____ (travel) to another city last month.'",
-      "correctAnswer": "travelled|traveled"
+      "question": "Complete: 'I'd _____ the grilled chicken, please.' (gostaria de pedir)",
+      "correctAnswer": "like"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Complete: '_____ he see that movie last night?'",
-      "correctAnswer": "Did"
+      "type": "translate",
+      "question": "Traduza para inglês: 'Você gostaria de fazer uma reserva?'",
+      "correctAnswer": "would you like to make a reservation"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Translate 'I'd love to, but I can't make it.' to Portuguese.",
-      "correctAnswer": "Adoraria, mas não consigo ir.|Eu adoraria, mas não posso comparecer."
+      "type": "complete",
+      "question": "Complete: 'Are you going to _____ to the party?' (ir)",
+      "correctAnswer": "come|go"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Choose the correct form: 'My parents _____ at home yesterday.'",
+      "question": "Como se diz 'conta' (em restaurante) em inglês?",
       "options": [
-        "was",
-        "were",
-        "is",
-        "are"
+        "Menu",
+        "Tip",
+        "Bill / Check",
+        "Receipt"
       ],
-      "correctAnswer": "were"
+      "correctAnswer": "Bill / Check"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ (eat) a delicious meal at that restaurant last week.'",
-      "correctAnswer": "ate"
+      "question": "Complete: '_____ I have the menu, please?' (Posso ter)",
+      "correctAnswer": "Can"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete with the correct form of the verb: 'He didn't _____ (come) to class yesterday.'",
-      "correctAnswer": "come"
+      "type": "translate",
+      "question": "Traduza: 'Ela vai à festa hoje à noite'",
+      "correctAnswer": "she is going to go to the party tonight|she's going to go to the party tonight|she is going to the party tonight"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "What does 'Count me in!' mean in Portuguese?",
-      "correctAnswer": "Pode me incluir!|Conte comigo!|Estou dentro!"
+      "type": "multiple-choice",
+      "question": "O que é 'appetizer'?",
+      "options": [
+        "Bebida",
+        "Prato principal",
+        "Entrada / Aperitivo",
+        "Sobremesa"
+      ],
+      "correctAnswer": "Entrada / Aperitivo"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "What is the correct negative form of 'She went to the gym'?",
-      "options": [
-        "She didn't went to the gym.",
-        "She not went to the gym.",
-        "She didn't go to the gym.",
-        "She wasn't go to the gym."
-      ],
-      "correctAnswer": "She didn't go to the gym."
+      "type": "complete",
+      "question": "Complete: 'I'd like to _____ a reservation for two.' (fazer)",
+      "correctAnswer": "make"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'We _____ going to have a barbecue this weekend.'",
-      "correctAnswer": "are"
+      "question": "Complete: 'What _____ you like to order?' (gostaria)",
+      "correctAnswer": "would"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete with 'was' or 'were': 'The concert _____ amazing last Saturday.'",
-      "correctAnswer": "was"
+      "type": "translate",
+      "question": "Traduza: 'Vamos ao churrasco neste fim de semana!'",
+      "correctAnswer": "let's go to the barbecue this weekend|let's go to the bbq this weekend"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate 'Unfortunately, I can't make it.' to Portuguese.",
-      "correctAnswer": "Infelizmente, não consigo ir.|Infelizmente, não posso comparecer."
+      "type": "multiple-choice",
+      "question": "Qual é a tradução de 'tip'?",
+      "options": [
+        "Desconto",
+        "Conta",
+        "Gorjeta",
+        "Troco"
+      ],
+      "correctAnswer": "Gorjeta"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'going to' correctly?",
-      "options": [
-        "She is go to visit her friend.",
-        "She going to visit her friend.",
-        "She is going to visit her friend.",
-        "She is going visit her friend."
-      ],
-      "correctAnswer": "She is going to visit her friend."
+      "type": "complete",
+      "question": "Complete: 'I _____ love to come to your party!' (adoraria)",
+      "correctAnswer": "'d|would"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ (write) a letter to his friend two days ago.'",
-      "correctAnswer": "wrote"
+      "question": "Complete: 'Would you like to see the _____ menu?' (sobremesa)",
+      "correctAnswer": "dessert"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete the time expression: 'Did you study for the exam _____ night?'",
-      "correctAnswer": "last"
+      "type": "translate",
+      "question": "Traduza: 'Adoraria, mas não posso ir'",
+      "correctAnswer": "i'd love to, but i can't|i would love to, but i can't"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate 'What did you do last weekend?' to Portuguese.",
-      "correctAnswer": "O que você fez no fim de semana passado?|O que você fez no último fim de semana?"
+      "type": "multiple-choice",
+      "question": "O que significa 'reservation'?",
+      "options": [
+        "Mesa",
+        "Reserva",
+        "Cardápio",
+        "Pedido"
+      ],
+      "correctAnswer": "Reserva"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which is the correct question form?",
-      "options": [
-        "Did she bought a new phone?",
-        "Did she buy a new phone?",
-        "Did she buys a new phone?",
-        "She did buy a new phone?"
-      ],
-      "correctAnswer": "Did she buy a new phone?"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ going to meet us tonight.' (está)",
+      "correctAnswer": "is"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'They _____ (cook) dinner for everyone last night.'",
-      "correctAnswer": "cooked"
+      "type": "translate",
+      "question": "Traduza: 'O garçom trouxe o cardápio'",
+      "correctAnswer": "the waiter brought the menu"
     },
     {
       "id": 19,
       "type": "complete",
-      "question": "Complete the suggestion: 'Why don't we _____ to the concert tonight?'",
-      "correctAnswer": "go"
+      "question": "Complete: '_____ you like to join us for dinner?' (Gostaria de...)",
+      "correctAnswer": "Would"
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Translate 'I felt exhausted after the trip.' to Portuguese.",
-      "correctAnswer": "Eu me senti exausto depois da viagem.|Fiquei exausto após a viagem."
+      "type": "multiple-choice",
+      "question": "Como se diz 'sobremesa' em inglês?",
+      "options": [
+        "Appetizer",
+        "Main course",
+        "Side dish",
+        "Dessert"
+      ],
+      "correctAnswer": "Dessert"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Choose the correct past tense of 'take':",
-      "options": [
-        "taked",
-        "took",
-        "token",
-        "takeed"
-      ],
-      "correctAnswer": "took"
+      "type": "translate",
+      "question": "Traduza: 'Posso ver o cardápio, por favor?'",
+      "correctAnswer": "can i have the menu, please|can i see the menu, please"
     },
     {
       "id": 2,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ (visit) her grandparents last Sunday.'",
-      "correctAnswer": "visited"
+      "question": "Complete: 'I'd like _____ order the pasta.' (pedir)",
+      "correctAnswer": "to"
     },
     {
       "id": 3,
-      "type": "translate",
-      "question": "Translate 'Would you like to come to my party?' to Portuguese.",
-      "correctAnswer": "Você gostaria de vir à minha festa?|Você quer vir à minha festa?"
+      "type": "multiple-choice",
+      "question": "O que significa 'dish'?",
+      "options": [
+        "Colher",
+        "Prato (refeição)",
+        "Cardápio",
+        "Ingrediente"
+      ],
+      "correctAnswer": "Prato (refeição)"
     },
     {
       "id": 4,
       "type": "complete",
-      "question": "Complete with the past of 'be': 'I _____ very surprised when I heard the news.'",
-      "correctAnswer": "was"
+      "question": "Complete: 'Why don't we _____ to that new restaurant?' (ir)",
+      "correctAnswer": "go"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which reply correctly accepts the invitation: 'Would you like to join us for dinner?'",
-      "options": [
-        "Yes, I would liked.",
-        "That sounds great!",
-        "I am loving to.",
-        "Yes, I like it."
-      ],
-      "correctAnswer": "That sounds great!"
+      "type": "translate",
+      "question": "Traduza: 'O que você vai fazer neste fim de semana?'",
+      "correctAnswer": "what are you going to do this weekend"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'We _____ (get) lost on the way to the restaurant last night.'",
-      "correctAnswer": "got"
+      "question": "Complete: 'Can I have the _____, please?' (conta)",
+      "correctAnswer": "bill|check"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete the question: '_____ they have a good time at the concert?'",
-      "correctAnswer": "Did"
+      "type": "multiple-choice",
+      "question": "Qual frase é usada para aceitar um convite com entusiasmo?",
+      "options": [
+        "I'd love to, but...",
+        "Maybe next time.",
+        "Count me in!",
+        "Let me check."
+      ],
+      "correctAnswer": "Count me in!"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Translate 'Let me check my schedule.' to Portuguese.",
-      "correctAnswer": "Deixa eu verificar minha agenda.|Deixe-me checar minha agenda."
+      "type": "complete",
+      "question": "Complete: 'She _____ like the fish dish, please.' (gostaria)",
+      "correctAnswer": "'d|would"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence about a future plan:",
-      "options": [
-        "I am going study tomorrow.",
-        "I going to study tomorrow.",
-        "I am going to study tomorrow.",
-        "I will going to study tomorrow."
-      ],
-      "correctAnswer": "I am going to study tomorrow."
+      "type": "translate",
+      "question": "Traduza: 'Vamos dividir a conta'",
+      "correctAnswer": "let's split the bill"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ (meet) an old friend at the café three weeks ago.'",
-      "correctAnswer": "met"
+      "question": "Complete: 'Are you _____ to come to the concert?' (vai)",
+      "correctAnswer": "going"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete with the past of 'be': 'How _____ your trip last week?'",
-      "correctAnswer": "was"
+      "type": "multiple-choice",
+      "question": "Como um garçom pergunta se você está pronto para pedir?",
+      "options": [
+        "Would you like to eat?",
+        "Are you ready to order?",
+        "Can you order now?",
+        "Do you want food?"
+      ],
+      "correctAnswer": "Are you ready to order?"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate 'I'll let you know.' to Portuguese.",
-      "correctAnswer": "Eu te aviso.|Vou te dizer.|Eu te conto."
+      "type": "complete",
+      "question": "Complete: 'How _____ dinner tomorrow?' (que tal)",
+      "correctAnswer": "about"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Which sentence has the correct negative form?",
-      "options": [
-        "They didn't watched the game.",
-        "They didn't watch the game.",
-        "They not watched the game.",
-        "They not watch the game."
-      ],
-      "correctAnswer": "They didn't watch the game."
+      "type": "translate",
+      "question": "Traduza: 'Eu gostaria de uma mesa para três, por favor'",
+      "correctAnswer": "i'd like a table for three, please|i would like a table for three, please"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'He is _____ to start a new job next week.'",
-      "correctAnswer": "going"
+      "question": "Complete: 'I'm sorry, I _____ make it tonight.' (não posso)",
+      "correctAnswer": "can't|cannot"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete with the correct past form: 'I _____ (drink) too much coffee yesterday and couldn't sleep.'",
-      "correctAnswer": "drank"
+      "type": "multiple-choice",
+      "question": "O que significa 'chef'?",
+      "options": [
+        "Recepcionista",
+        "Cozinheiro / Chef",
+        "Garçom",
+        "Gerente"
+      ],
+      "correctAnswer": "Cozinheiro / Chef"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate 'Maybe next time.' to Portuguese.",
-      "correctAnswer": "Talvez da próxima vez.|Quem sabe da próxima."
+      "type": "complete",
+      "question": "Complete: 'I'd love to, _____ I have plans.' (mas)",
+      "correctAnswer": "but"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Choose the correct short answer to: 'Did you enjoy the barbecue?'",
-      "options": [
-        "No, I enjoyed.",
-        "Yes, I did.",
-        "Yes, I enjoyed it very much, thanks.",
-        "Yes, I do."
-      ],
-      "correctAnswer": "Yes, I did."
+      "type": "translate",
+      "question": "Traduza: 'Posso pedir agora?'",
+      "correctAnswer": "can i order now"
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "Complete: 'We _____ (play) volleyball at the beach last Saturday.'",
-      "correctAnswer": "played"
+      "question": "Complete: 'The _____ of the day is grilled salmon.' (prato especial)",
+      "correctAnswer": "special"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete the suggestion: 'How about _____ a movie tonight?'",
-      "correctAnswer": "watching"
+      "type": "multiple-choice",
+      "question": "Qual estrutura usamos para fazer convites formais?",
+      "options": [
+        "Why don't we...?",
+        "Let's...!",
+        "Would you like to...?",
+        "Do you want...?"
+      ],
+      "correctAnswer": "Would you like to...?"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate 'The movie was really boring.' to Portuguese.",
-      "correctAnswer": "O filme foi muito chato.|O filme era muito entediante."
+      "question": "Traduza: 'Pode contar comigo!'",
+      "correctAnswer": "count me in"
     }
   ],
   "wednesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Choose the correct past tense of 'find':",
-      "options": [
-        "finded",
-        "fund",
-        "found",
-        "findded"
-      ],
-      "correctAnswer": "found"
+      "type": "fill-blank",
+      "question": "Complete: 'I'd like to _____ a reservation for Saturday.' (fazer)",
+      "correctAnswer": "make"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ (make) a cake for her friend's birthday yesterday.'",
-      "correctAnswer": "made"
+      "type": "multiple-choice",
+      "question": "O que um garçom diz ao servir o prato?",
+      "options": [
+        "What would you like?",
+        "Can I help you?",
+        "Enjoy your meal!",
+        "Are you ready?"
+      ],
+      "correctAnswer": "Enjoy your meal!"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Complete the polite decline: 'I'm sorry, I _____.' (one word)",
-      "correctAnswer": "can't"
+      "type": "translate",
+      "question": "Traduza: 'Ela não vai poder ir à reunião informal'",
+      "correctAnswer": "she is not going to come to the get-together|she isn't going to make it to the get-together"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Translate 'Do you want to go to the beach this weekend?' to Portuguese.",
-      "correctAnswer": "Você quer ir à praia este fim de semana?|Quer ir à praia neste fim de semana?"
+      "type": "complete",
+      "question": "Complete: 'Is the _____ included?' (gorjeta)",
+      "correctAnswer": "tip"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Choose the correct forms of 'be' in the past: 'I _____ tired. You _____ not there.'",
-      "options": [
-        "was / was",
-        "was / were",
-        "were / were",
-        "were / was"
-      ],
-      "correctAnswer": "was / were"
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ split the bill tonight.' (vamos)",
+      "correctAnswer": "will|'ll"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'They _____ (leave) the party early because they were tired.'",
-      "correctAnswer": "left"
+      "type": "translate",
+      "question": "Traduza: 'Eu gostaria de um copo d'água, por favor'",
+      "correctAnswer": "i'd like a glass of water, please|i would like a glass of water, please"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete the question: 'What _____ you do last Saturday?'",
-      "correctAnswer": "did"
+      "type": "multiple-choice",
+      "question": "Como se diz 'entrada' (de refeição) em inglês?",
+      "options": [
+        "Dessert",
+        "Main course",
+        "Appetizer",
+        "Side dish"
+      ],
+      "correctAnswer": "Appetizer"
     },
     {
       "id": 8,
-      "type": "translate",
-      "question": "Translate 'Can I get back to you?' to Portuguese.",
-      "correctAnswer": "Posso te responder depois?|Posso te dar uma resposta depois?"
+      "type": "complete",
+      "question": "Complete: '_____ me check my schedule.' (deixa)",
+      "correctAnswer": "Let"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'going to' to express a plan (not a current action)?",
-      "options": [
-        "They are going to the store right now.",
-        "They are going to visit us next week.",
-        "They went to the park last night.",
-        "They will going to arrive soon."
-      ],
-      "correctAnswer": "They are going to visit us next week."
+      "type": "translate",
+      "question": "Traduza: 'Pode ficar com o troco'",
+      "correctAnswer": "keep the change"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ (know) the answer, but he forgot to say it.'",
-      "correctAnswer": "knew"
+      "question": "Complete: 'What _____ you like to start with?' (gostaria — garçom perguntando)",
+      "correctAnswer": "would"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete with 'was' or 'were': 'You _____ not at the gym yesterday.'",
-      "correctAnswer": "were"
+      "type": "multiple-choice",
+      "question": "Qual é a forma contraída de 'I would'?",
+      "options": [
+        "I'm",
+        "I'd",
+        "I've",
+        "I'll"
+      ],
+      "correctAnswer": "I'd"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate 'I'd like to invite you to my get-together.' to Portuguese.",
-      "correctAnswer": "Eu gostaria de te convidar para o meu encontro.|Quero te convidar para minha reunião."
+      "type": "complete",
+      "question": "Complete: 'I'll _____ you know tomorrow.' (avisar)",
+      "correctAnswer": "let"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "What is the correct question tag? 'They had a great time, _____?'",
-      "options": [
-        "haven't they",
-        "don't they",
-        "weren't they",
-        "didn't they"
-      ],
-      "correctAnswer": "didn't they"
+      "type": "translate",
+      "question": "Traduza: 'O que você vai pedir de sobremesa?'",
+      "correctAnswer": "what are you going to order for dessert|what would you like for dessert"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ (study) for her English test all night.'",
-      "correctAnswer": "studied"
+      "question": "Complete: '_____ this way, please.' (Por aqui — frase do garçom)",
+      "correctAnswer": "Right"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete the invitation: 'Let's _____ to a new restaurant this weekend!'",
-      "correctAnswer": "go"
+      "type": "multiple-choice",
+      "question": "O que significa 'get-together'?",
+      "options": [
+        "Festa grande",
+        "Show",
+        "Churrasco",
+        "Reunião informal"
+      ],
+      "correctAnswer": "Reunião informal"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Translate 'She was really excited about the trip.' to Portuguese.",
-      "correctAnswer": "Ela estava muito animada com a viagem.|Ela ficou muito empolgada com a viagem."
+      "question": "Traduza: 'Você gostaria de ver o menu de sobremesas?'",
+      "correctAnswer": "would you like to see the dessert menu"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Choose the correct form: 'We _____ dinner at the new restaurant last Friday.'",
-      "options": [
-        "have",
-        "had",
-        "has",
-        "haved"
-      ],
-      "correctAnswer": "had"
+      "type": "complete",
+      "question": "Complete: 'Could we have a _____ more time to decide?' (um pouco)",
+      "correctAnswer": "little"
     },
     {
       "id": 18,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ (speak) to the manager about the problem yesterday.'",
-      "correctAnswer": "spoke"
+      "question": "Complete: 'I'm not _____ to come to the party.' (vou)",
+      "correctAnswer": "going"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete: 'She is going _____ cook dinner for us tonight.'",
-      "correctAnswer": "to"
+      "type": "multiple-choice",
+      "question": "Como pedimos a conta de forma educada?",
+      "options": [
+        "Give me the bill!",
+        "I want the check.",
+        "Bill now!",
+        "Can I have the bill, please?"
+      ],
+      "correctAnswer": "Can I have the bill, please?"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate 'How was your day?' to Portuguese.",
-      "correctAnswer": "Como foi o seu dia?|Como foi seu dia?"
+      "question": "Traduza: 'Talvez na próxima vez'",
+      "correctAnswer": "maybe next time"
     }
   ],
   "thursday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Choose the correct past tense of 'think':",
-      "options": [
-        "thinked",
-        "thought",
-        "thunk",
-        "thinkt"
-      ],
-      "correctAnswer": "thought"
+      "type": "complete",
+      "question": "Complete: 'I'd like _____ order the grilled chicken.' (para pedir)",
+      "correctAnswer": "to"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'We _____ (watch) a documentary about the ocean last night.'",
-      "correctAnswer": "watched"
+      "type": "translate",
+      "question": "Traduza: 'O que você vai fazer hoje à noite?'",
+      "correctAnswer": "what are you going to do tonight"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Complete with the correct past form of 'be': '_____ you at the school event two days ago?'",
-      "correctAnswer": "Were"
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like the pasta, please.' (gostaria)",
+      "correctAnswer": "'d|would"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Translate 'I'd love to, but I already have plans.' to Portuguese.",
-      "correctAnswer": "Adoraria, mas já tenho planos.|Eu adoraria, mas já tenho compromissos."
+      "type": "multiple-choice",
+      "question": "O que o garçom diz quando o cliente chega ao restaurante?",
+      "options": [
+        "Are you ready?",
+        "Can I order now?",
+        "What would you eat?",
+        "Do you have a reservation?"
+      ],
+      "correctAnswer": "Do you have a reservation?"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which sentence is NOT grammatically correct?",
-      "options": [
-        "I didn't see her yesterday.",
-        "He didn't buy anything.",
-        "They didn't went to the game.",
-        "She didn't call me."
-      ],
-      "correctAnswer": "They didn't went to the game."
+      "type": "translate",
+      "question": "Traduza: 'Vamos ao show semana que vem!'",
+      "correctAnswer": "let's go to the concert next week"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'They _____ (give) me a surprise gift on my birthday last year.'",
-      "correctAnswer": "gave"
+      "type": "complete",
+      "question": "Complete: 'The food was _____! Thank you.' (deliciosa)",
+      "correctAnswer": "delicious|excellent|amazing"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete with the correct verb form: 'He didn't _____ (tell) her the truth.'",
-      "correctAnswer": "tell"
+      "type": "fill-blank",
+      "question": "Complete: '_____ you like to join us for lunch?' (Gostaria)",
+      "correctAnswer": "Would"
     },
     {
       "id": 8,
       "type": "translate",
-      "question": "Translate 'That sounds great!' to Portuguese.",
-      "correctAnswer": "Isso parece ótimo!|Que ótimo!|Parece incrível!"
+      "question": "Traduza: 'Posso ter mais água, por favor?'",
+      "correctAnswer": "can i have more water, please"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Choose the sentence that makes an invitation:",
+      "question": "Como se diz 'prato principal' em inglês?",
       "options": [
-        "I went to the concert last week.",
-        "Did she enjoy the party?",
-        "Would you like to join us for coffee?",
-        "They were at the barbecue."
+        "Dessert",
+        "Main course / Main dish",
+        "Appetizer",
+        "Side dish"
       ],
-      "correctAnswer": "Would you like to join us for coffee?"
+      "correctAnswer": "Main course / Main dish"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ (wake) up very late on Sunday morning.'",
-      "correctAnswer": "woke"
+      "question": "Complete: 'I'd love to, _____ I have to work.' (mas)",
+      "correctAnswer": "but"
     },
     {
       "id": 11,
       "type": "complete",
-      "question": "Complete with the correct auxiliary: '_____ she going to call you tonight?'",
-      "correctAnswer": "Is"
+      "question": "Complete: 'Are you going _____ invite her to the party?' (vai)",
+      "correctAnswer": "to"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Translate 'He was very tired after the long trip.' to Portuguese.",
-      "correctAnswer": "Ele estava muito cansado depois da longa viagem.|Ele ficou muito cansado após a viagem."
+      "question": "Traduza: 'Ela gostaria de fazer uma reserva para 4 pessoas'",
+      "correctAnswer": "she'd like to make a reservation for four people|she would like to make a reservation for four people"
     },
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "Which question is correctly formed?",
+      "question": "Qual expressão significa 'adoraria'?",
       "options": [
-        "Where did she went yesterday?",
-        "Where she went yesterday?",
-        "Where did she go yesterday?",
-        "Where went she yesterday?"
+        "That sounds okay",
+        "I'd like to",
+        "I'd love to",
+        "Count me in"
       ],
-      "correctAnswer": "Where did she go yesterday?"
+      "correctAnswer": "I'd love to"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ (buy) a new dress for the party last weekend.'",
-      "correctAnswer": "bought"
+      "question": "Complete: 'Can I _____ the menu, please?' (ver/ter)",
+      "correctAnswer": "have|see"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete: 'I am going to _____ my family next month.' (use 'visit')",
-      "correctAnswer": "visit"
+      "type": "translate",
+      "question": "Traduza: 'Que tal um churrasco neste sábado?'",
+      "correctAnswer": "how about a barbecue this saturday|how about a bbq this saturday"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate 'Did you have a good time at the barbecue?' to Portuguese.",
-      "correctAnswer": "Você se divertiu no churrasco?|Você passou bem no churrasco?"
+      "type": "complete",
+      "question": "Complete: 'I'll pay for _____.' (todos)",
+      "correctAnswer": "everyone"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Choose the correct form for the blank: 'I _____ the news on TV three days ago.'",
-      "options": [
-        "watch",
-        "watched",
-        "am watching",
-        "watches"
-      ],
-      "correctAnswer": "watched"
+      "type": "fill-blank",
+      "question": "Complete: 'What _____ the special today?' (é — waiter perguntando)",
+      "correctAnswer": "is"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'They are _____ to organize a get-together next Friday.'",
-      "correctAnswer": "going"
+      "type": "translate",
+      "question": "Traduza: 'Ainda não estou pronto para pedir'",
+      "correctAnswer": "i'm not ready to order yet|i am not ready to order yet"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete the negative sentence: 'We _____ at the concert — we were at home.' (past of 'be' + negative, contracted)",
-      "correctAnswer": "weren't"
+      "type": "multiple-choice",
+      "question": "Qual é o significado de 'Would you like to...?'",
+      "options": [
+        "Você pode...?",
+        "Gostaria de...?",
+        "Você precisa...?",
+        "Você vai...?"
+      ],
+      "correctAnswer": "Gostaria de...?"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate 'I'm sorry, I can't make it tonight.' to Portuguese.",
-      "correctAnswer": "Desculpe, não consigo ir esta noite.|Sinto muito, não posso esta noite."
+      "question": "Traduza: 'Posso me sentar aqui?'",
+      "correctAnswer": "can i sit here"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which is the correct past tense of 'say'?",
-      "options": [
-        "sayed",
-        "said",
-        "sayd",
-        "sed"
-      ],
-      "correctAnswer": "said"
+      "type": "fill-blank",
+      "question": "Complete: 'I'd like a _____ for four, please.' (mesa)",
+      "correctAnswer": "table"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ (come) back from her trip last Tuesday.'",
-      "correctAnswer": "came"
+      "type": "translate",
+      "question": "Traduza: 'Eles vão fazer uma festa semana que vem'",
+      "correctAnswer": "they are going to have a party next week|they're going to have a party next week"
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "Complete with the correct form: 'Did he _____ (read) the book before the class?'",
-      "correctAnswer": "read"
+      "type": "multiple-choice",
+      "question": "O que significa 'napkin'?",
+      "options": [
+        "Faca",
+        "Colher",
+        "Guardanapo",
+        "Garfo"
+      ],
+      "correctAnswer": "Guardanapo"
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Translate 'I'd love to!' to Portuguese.",
-      "correctAnswer": "Adoraria!|Eu adoraria!|Com muito prazer!"
+      "type": "complete",
+      "question": "Complete: 'Count _____ in!' (me)",
+      "correctAnswer": "me"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly declines an invitation?",
-      "options": [
-        "That sounds amazing!",
-        "Yes, I'd love to!",
-        "I'd love to, but I have to work.",
-        "Count me in!"
-      ],
-      "correctAnswer": "I'd love to, but I have to work."
+      "type": "translate",
+      "question": "Traduza: 'Posso pedir o prato do dia?'",
+      "correctAnswer": "can i have the special of the day|can i order the special of the day"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ (do) his homework right after dinner yesterday.'",
-      "correctAnswer": "did"
+      "question": "Complete: '_____ you like anything else?' (Gostaria de algo mais — garçom)",
+      "correctAnswer": "Would"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Complete the negative sentence: 'She _____ happy about the result.' (past of 'be' + negative, contracted)",
-      "correctAnswer": "wasn't"
+      "type": "multiple-choice",
+      "question": "Como um cliente reclama educadamente sobre um prato frio?",
+      "options": [
+        "This is cold, change it!",
+        "The food is bad.",
+        "I don't want this.",
+        "I'm sorry, but this dish is cold. Could I have another one?"
+      ],
+      "correctAnswer": "I'm sorry, but this dish is cold. Could I have another one?"
     },
     {
       "id": 8,
       "type": "translate",
-      "question": "Translate 'He went to the beach last summer and had an amazing time.' to Portuguese.",
-      "correctAnswer": "Ele foi à praia no verão passado e se divertiu muito.|Ele foi à praia no último verão e teve um ótimo tempo."
+      "question": "Traduza: 'Eu vou ao restaurante hoje à noite com meus amigos'",
+      "correctAnswer": "i am going to go to the restaurant tonight with my friends|i'm going to the restaurant tonight with my friends"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'going to' correctly for a future plan?",
-      "options": [
-        "I am going cook tomorrow.",
-        "I going to cook tomorrow.",
-        "I am going to cook tomorrow.",
-        "I will going cook tomorrow."
-      ],
-      "correctAnswer": "I am going to cook tomorrow."
+      "type": "complete",
+      "question": "Complete: 'She _____ going to accept the invitation.' (está)",
+      "correctAnswer": "is"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'We _____ (stay) at a beautiful hotel when we visited the city.'",
-      "correctAnswer": "stayed"
+      "question": "Complete: 'I'd like to order the fish and _____, please.' (batatas fritas)",
+      "correctAnswer": "chips"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete with the correct past form of 'be': 'You and I _____ at the same school five years ago.'",
-      "correctAnswer": "were"
+      "type": "translate",
+      "question": "Traduza: 'O serviço foi excelente'",
+      "correctAnswer": "the service was excellent|the service was great"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate 'She is going to organize a party next Saturday.' to Portuguese.",
-      "correctAnswer": "Ela vai organizar uma festa no próximo sábado.|Ela está planejando organizar uma festa no sábado que vem."
+      "type": "multiple-choice",
+      "question": "Qual é a tradução de 'Would you like to come over tonight?'",
+      "options": [
+        "Você quer dormir aqui?",
+        "Você foi para casa ontem à noite?",
+        "Você gostaria de sair amanhã?",
+        "Você gostaria de vir aqui hoje à noite?"
+      ],
+      "correctAnswer": "Você gostaria de vir aqui hoje à noite?"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Choose the correct auxiliary: '_____ they have dinner together last night?'",
-      "options": [
-        "Were",
-        "Did",
-        "Do",
-        "Have"
-      ],
-      "correctAnswer": "Did"
+      "type": "complete",
+      "question": "Complete: 'Unfortunately, I _____ make it to the party.' (não posso)",
+      "correctAnswer": "can't|cannot"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ (tell) me a funny story at the party.'",
-      "correctAnswer": "told"
+      "question": "Complete: 'What _____ you going to bring to the BBQ?' (vai)",
+      "correctAnswer": "are"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Complete the invitation: '_____ you like to come to my barbecue this Sunday?'",
-      "correctAnswer": "Would"
+      "type": "translate",
+      "question": "Traduza: 'Posso ver o menu, por favor?'",
+      "correctAnswer": "can i see the menu, please|can i have the menu, please"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate 'The trip was exciting and fun.' to Portuguese.",
-      "correctAnswer": "A viagem foi emocionante e divertida.|A viagem foi animada e divertida."
+      "type": "multiple-choice",
+      "question": "Como se diz 'recibo' em inglês?",
+      "options": [
+        "Check",
+        "Bill",
+        "Tip",
+        "Receipt"
+      ],
+      "correctAnswer": "Receipt"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses a time expression with the simple past?",
-      "options": [
-        "She visits her friend yesterday.",
-        "She visited her friend last week.",
-        "She is visiting her friend last night.",
-        "She was visit her friend ago."
-      ],
-      "correctAnswer": "She visited her friend last week."
+      "type": "complete",
+      "question": "Complete: 'I'd like to make a _____ for Saturday evening.' (reserva)",
+      "correctAnswer": "reservation"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ (find) my keys right after I stopped looking for them.'",
-      "correctAnswer": "found"
+      "type": "translate",
+      "question": "Traduza: 'Ela está animada com a festa de amanhã'",
+      "correctAnswer": "she is excited about the party tomorrow|she's excited about tomorrow's party"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete the uncertain response to an invitation: 'Can I _____ back to you?' (two words, use 'get')",
-      "correctAnswer": "get back"
+      "type": "fill-blank",
+      "question": "Complete: 'The waiter _____ the bill at the end of dinner.' (trouxe)",
+      "correctAnswer": "brought"
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Translate 'What are you going to do this weekend?' to Portuguese.",
-      "correctAnswer": "O que você vai fazer neste fim de semana?|O que você vai fazer no fim de semana?"
+      "type": "multiple-choice",
+      "question": "Qual é o jeito correto e educado de pedir algo em um restaurante?",
+      "options": [
+        "Pasta for me.",
+        "I'd like the pasta, please.",
+        "I want the pasta.",
+        "Give me the pasta."
+      ],
+      "correctAnswer": "I'd like the pasta, please."
     }
   ]
 }
