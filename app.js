@@ -605,7 +605,9 @@ function showVideos() {
             { title: '📚 Seed - Lesson 02', url: 'https://www.youtube.com/embed/Sp_9i-j3Ryw' },
             { title: '📚 Seed - Lesson 02(Extra)', url: 'https://www.youtube.com/embed/ED1K6BJ8PoU?si=noBJM_2NaPzbOaTM' },
             { title: '📚 Seed - Lesson 03', url: 'https://www.youtube.com/embed/ihadFWLnAs8?si=-Q583abdczTiNkAp' },
+            { title: '📚 Seed - Lesson 04', url: 'https://www.youtube.com/embed/_cG368DlSEo?si=3r2HSCXHqVkedjfp' },
             { title: '📚 Seed - Lesson 05', url: 'https://www.youtube.com/embed/ySo1qYziThg?si=6SgSxd4P5w6NRB63' },
+            { title: '📚 Seed - Lesson 06', url: 'https://www.youtube.com/embed/HgLvdAD-Uu4?si=q9kCRXbJpJgUfy8l' },
 
         ];
     } else if (currentLevel === 'root') {
