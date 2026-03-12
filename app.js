@@ -770,7 +770,13 @@ const slidesList = {
             title: 'Lesson 04 - Daily Routines',
             description: 'Present simple tense and daily routine vocabulary',
             pdfFile: 'aulas/Seed/slide/Seed_Lesson04.pdf'
-        }
+        },
+        {
+            id: 5,
+            title: 'Lesson 05 - Foods & Meals',
+            description: 'Present continuous and food vocabulary',
+            pdfFile: 'aulas/Seed/slide/Seed_Lesson05.pdf'
+        },
     ],
     root: [
         {
@@ -790,20 +796,32 @@ const slidesList = {
             title: 'Lesson 04 - Technology & Communication',
             description: 'Technology vocabulary and present perfect tense',
             pdfFile: 'aulas/Root/slide/Root _Lesson04.pdf'
-        }
+        },
+        {
+            id: 5,
+            title: 'Lesson 05 - Appearance & Personality',
+            description: 'Vocabulary related to appearance and personality traits',
+            pdfFile: 'aulas/Root/slide/Root_Lesson05.pdf'
+        },
     ],
     leaf: [
         {
             id: 1,
             title: 'Lesson 01 - Career Advice & Modal Verbs',
             description: 'Introduction to career advice vocabulary and modal verbs usage',
-            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01_Slides.pdf'
+            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01.pdf'
         },
         {
             id: 2,
             title: 'Lesson 02 - Advanced Conversations',
             description: 'Complex sentence structures and conversational expressions',
             pdfFile: 'aulas/Leaf/slide/Leaf_Lesson02.pdf'
+        },
+        {
+            id: 3,
+            title: 'Lesson 03 - Comparisons and connectors',
+            description: 'Comparative forms, and connectors for complex sentences',
+            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson03.pdf'
         }
     ],
     fruit: [
