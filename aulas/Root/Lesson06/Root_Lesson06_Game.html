@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate Pitch Battle | Root Lesson 06</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #121a2b;
+      --panel-2: #17233a;
+      --panel-3: #20314f;
+      --line: rgba(255, 255, 255, 0.08);
+      --text: #edf3ff;
+      --muted: #9fb1d1;
+      --gold: #fbbf24;
+      --gold-2: #f59e0b;
+      --blue: #60a5fa;
+      --green: #34d399;
+      --red: #f87171;
+      --purple: #c084fc;
+      --shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(96, 165, 250, 0.22), transparent 28%),
+        radial-gradient(circle at top right, rgba(251, 191, 36, 0.18), transparent 25%),
+        linear-gradient(135deg, #07101d, #0d1424 38%, #10192b);
+    }
+
+    button, input, select {
+      font: inherit;
+    }
+
+    .hidden { display: none !important; }
+
+    .screen {
+      min-height: 100vh;
+      padding: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: min(1200px, 100%);
+      background: rgba(18, 26, 43, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .setup-card {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      padding: 28px;
+    }
+
+    .kicker {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.02;
+      margin-bottom: 14px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ffffff, #93c5fd, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .setup-copy p {
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 14px;
+      max-width: 58ch;
+    }
+
+    .setup-copy ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .setup-copy li {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 12px 14px;
+      color: #dce6fb;
+    }
+
+    .setup-panel {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 22px;
+      padding: 20px;
+    }
+
+    .setup-panel h2 {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.88rem;
+      margin-bottom: 7px;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(8, 13, 22, 0.65);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 12px 13px;
+    }
+
+    .player-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .player-input {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .player-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 11px 18px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+    .btn-primary { background: linear-gradient(90deg, var(--gold), var(--gold-2)); color: #231500; }
+    .btn-secondary { background: rgba(255, 255, 255, 0.08); color: var(--text); border: 1px solid rgba(255, 255, 255, 0.12); }
+    .btn-green { background: linear-gradient(90deg, #34d399, #10b981); color: #032117; }
+    .btn-blue { background: linear-gradient(90deg, #60a5fa, #3b82f6); color: white; }
+    .btn-red { background: linear-gradient(90deg, #f87171, #ef4444); color: white; }
+    .btn-purple { background: linear-gradient(90deg, #c084fc, #8b5cf6); color: white; }
+
+    #gameScreen {
+      display: none;
+      min-height: 100vh;
+      padding: 18px;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(18, 26, 43, 0.94);
+      box-shadow: var(--shadow);
+    }
+
+    .topbar h2 {
+      font-size: 1.35rem;
+      margin-bottom: 4px;
+    }
+
+    .topbar small { color: var(--muted); }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 280px 1fr 340px;
+      gap: 16px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .panel {
+      background: rgba(18, 26, 43, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .panel-head h3 {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .panel-head p {
+      font-size: 0.78rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .panel-body {
+      padding: 14px 16px 16px;
+    }
+
+    .scroll {
+      overflow-y: auto;
+      max-height: calc(100vh - 185px);
+    }
+
+    .player-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .player-card.active {
+      border-color: rgba(251, 191, 36, 0.55);
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .player-card.buyer {
+      border-color: rgba(96, 165, 250, 0.35);
+    }
+
+    .player-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .player-name {
+      flex: 1;
+      font-weight: 700;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .mini-badge {
+      font-size: 0.68rem;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-weight: 700;
+    }
+
+    .seller-badge { background: rgba(251, 191, 36, 0.18); color: #ffd66e; }
+    .buyer-badge { background: rgba(96, 165, 250, 0.18); color: #9cc7ff; }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      padding: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .property-card {
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.12), rgba(251, 191, 36, 0.12));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+
+    .property-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .property-tag {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+
+    .property-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .meta-box {
+      background: rgba(6, 10, 17, 0.25);
+      border-radius: 14px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .meta-box strong {
+      display: block;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+    }
+
+    .prompt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .hint-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .hint-card h4 {
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+    }
+
+    .hint-card ul {
+      padding-left: 18px;
+      color: #d9e5fb;
+      line-height: 1.55;
+      display: grid;
+      gap: 6px;
+      font-size: 0.86rem;
+    }
+
+    .rubric-list {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0 14px;
+    }
+
+    .rubric-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 14px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .rubric-item.active {
+      border-color: rgba(52, 211, 153, 0.45);
+      background: rgba(52, 211, 153, 0.08);
+    }
+
+    .rubric-meta {
+      flex: 1;
+    }
+
+    .rubric-meta strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.86rem;
+    }
+
+    .rubric-meta small {
+      color: var(--muted);
+      line-height: 1.45;
+      display: block;
+    }
+
+    .rubric-points {
+      color: #93f7ca;
+      font-weight: 800;
+      min-width: 38px;
+      text-align: right;
+    }
+
+    .teacher-note {
+      background: rgba(251, 191, 36, 0.1);
+      color: #ffe4a3;
+      border: 1px solid rgba(251, 191, 36, 0.22);
+      border-radius: 14px;
+      padding: 12px;
+      font-size: 0.82rem;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+
+    .control-group {
+      margin-bottom: 16px;
+    }
+
+    .control-group h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 8px;
+    }
+
+    .inline {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .timer-box,
+    .summary-box,
+    .log-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .timer-value {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .summary-box p,
+    .log-box p {
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.82rem;
+    }
+
+    .sale-line {
+      margin-top: 8px;
+      font-weight: 700;
+      color: #dffaf0;
+    }
+
+    #roundLog {
+      margin-top: 10px;
+      display: grid;
+      gap: 8px;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .log-entry {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: #dce7fb;
+    }
+
+    .ranking-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .rank-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 10px 12px;
+    }
+
+    .rank-row.top {
+      border-color: rgba(251, 191, 36, 0.4);
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .rank-pos {
+      font-size: 1.05rem;
+      width: 24px;
+      text-align: center;
+    }
+
+    .rank-name {
+      flex: 1;
+      font-weight: 700;
+    }
+
+    .rank-stats {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 14, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 50;
+    }
+
+    .overlay-card {
+      width: min(560px, 100%);
+      background: rgba(18, 26, 43, 0.98);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+      text-align: center;
+    }
+
+    .overlay-card h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .overlay-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .winner-box {
+      background: rgba(251, 191, 36, 0.08);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .winner-box strong {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: #ffe19e;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      padding: 11px 18px;
+      background: rgba(18, 26, 43, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.22s ease;
+      z-index: 60;
+      white-space: nowrap;
+    }
+
+    .toast.show { opacity: 1; }
+
+    @media (max-width: 1080px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .scroll {
+        max-height: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .setup-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .player-grid,
+      .prompt-grid,
+      .property-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .badge-row {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="screen" id="setupScreen">
+    <div class="card setup-card">
+      <div class="setup-copy">
+        <div class="kicker">SpeakUp Root · Lesson 06</div>
+        <h1><span class="gradient">Real Estate Pitch Battle</span></h1>
+        <p>
+          In each round, one student becomes the real estate agent and the others become buyers.
+          The agent must sell a house or apartment by describing the location, rooms, furniture,
+          and object positions using <strong>there is / there are</strong> and prepositions of place.
+        </p>
+        <p>
+          This game is designed for online classes with one shared screen. Only the teacher needs
+          to click buttons, control the timer, award points, and confirm whether the property was sold.
+        </p>
+        <ul>
+          <li><strong>Seller mission:</strong> explain where the property is, how many rooms it has, and what furniture is inside.</li>
+          <li><strong>Buyer mission:</strong> ask questions like “Is there a balcony?” or “Where is the sofa?”</li>
+          <li><strong>Scoring focus:</strong> longer, clearer descriptions earn more points. Sales give an extra bonus.</li>
+        </ul>
+      </div>
+
+      <div class="setup-panel">
+        <h2>Teacher Setup</h2>
+        <p class="sub">Add 2 to 5 players, choose the number of rounds, and start the online game.</p>
+
+        <div class="field">
+          <label for="roundCount">Rounds</label>
+          <select id="roundCount">
+            <option value="3">3 rounds</option>
+            <option value="4" selected>4 rounds</option>
+            <option value="5">5 rounds</option>
+            <option value="6">6 rounds</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="roundTimer">Pitch timer per round</label>
+          <select id="roundTimer">
+            <option value="60">60 seconds</option>
+            <option value="75">75 seconds</option>
+            <option value="90" selected>90 seconds</option>
+            <option value="120">120 seconds</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Players</label>
+          <div class="player-grid" id="playerInputs"></div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="removeBtn" type="button">− Remove</button>
+          <button class="btn btn-secondary" id="addBtn" type="button">+ Add Player</button>
+          <button class="btn btn-primary" id="startBtn" type="button">Start Game</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gameScreen">
+    <div class="topbar">
+      <div>
+        <h2>Real Estate Pitch Battle</h2>
+        <small>Teacher-controlled online speaking game for homes, rooms, furniture, and locations.</small>
+      </div>
+      <div class="badge-row">
+        <div class="badge" id="roundBadge">Round 1 / 6</div>
+        <div class="badge" id="sellerBadge">Seller: —</div>
+        <div class="badge" id="phaseBadge">Ready for the next property</div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <aside class="panel">
+        <div class="panel-head">
+          <h3>Leaderboard</h3>
+          <p>Score, sales, and seller turns update after every teacher action.</p>
+        </div>
+        <div class="panel-body scroll">
+          <div id="playerCards"></div>
+        </div>
+      </aside>
+
+      <main class="panel">
+        <div class="panel-head">
+          <h3>Property Board</h3>
+          <p>Show the new listing, let the seller pitch it, and use the checklist to score the speaking performance.</p>
+        </div>
+        <div class="panel-body scroll">
+          <div class="property-card">
+            <div class="property-top">
+              <div>
+                <div class="kicker" style="margin-bottom: 6px;">Current listing</div>
+                <h2 id="propertyTitle" style="font-size: 1.8rem; margin-bottom: 8px;">Click “Draw Property” to begin</h2>
+                <p id="propertyIntro" style="color: var(--muted); line-height: 1.6;">
+                  The teacher will reveal one property per round. Students then speak as sellers and buyers.
+                </p>
+              </div>
+              <div class="property-tag" id="propertyTypeTag">Waiting</div>
+            </div>
+
+            <div class="property-meta">
+              <div class="meta-box">
+                <strong>Location</strong>
+                <span id="propertyLocation">—</span>
+              </div>
+              <div class="meta-box">
+                <strong>Best for</strong>
+                <span id="propertyAudience">—</span>
+              </div>
+              <div class="meta-box">
+                <strong>Rooms</strong>
+                <span id="propertyRooms">—</span>
+              </div>
+              <div class="meta-box">
+                <strong>Special detail</strong>
+                <span id="propertySpecial">—</span>
+              </div>
+            </div>
+
+            <div>
+              <strong style="display:block; margin-bottom:8px;">Furniture and objects</strong>
+              <div class="chip-row" id="featureChips"></div>
+            </div>
+          </div>
+
+          <div class="prompt-grid">
+            <div class="hint-card">
+              <h4>Seller speaking goals</h4>
+              <ul id="sellerPrompts"></ul>
+            </div>
+            <div class="hint-card">
+              <h4>Buyer question prompts</h4>
+              <ul id="buyerPrompts"></ul>
+            </div>
+          </div>
+
+          <div class="hint-card" style="margin-top: 14px;">
+            <h4>Round score checklist</h4>
+            <div class="rubric-list" id="rubricList"></div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="panel">
+        <div class="panel-head">
+          <h3>Teacher controls</h3>
+          <p>Only the teacher clicks. Players just speak, negotiate, and react online.</p>
+        </div>
+        <div class="panel-body scroll">
+          <div class="teacher-note">
+            Suggested flow: draw one property, let the seller pitch it, invite buyer questions, click the checklist items,
+            and finish the round when the class decides whether the property was sold.
+          </div>
+
+          <div class="control-group">
+            <h4>Round actions</h4>
+            <div class="stack">
+              <button class="btn btn-primary" id="drawRoundBtn" type="button">Draw Property & Seller</button>
+              <button class="btn btn-blue" id="endRoundBtn" type="button" disabled>End Round</button>
+              <button class="btn btn-secondary" id="resetRoundBtn" type="button" disabled>Reset This Round</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h4>Pitch timer</h4>
+            <div class="timer-box">
+              <div class="timer-value" id="timerDisplay">01:30</div>
+              <p id="timerHint">Use the timer for the seller pitch and buyer questions.</p>
+              <div class="btn-row">
+                <button class="btn btn-green" id="timerStartBtn" type="button" disabled>Start</button>
+                <button class="btn btn-secondary" id="timerPauseBtn" type="button" disabled>Pause</button>
+                <button class="btn btn-secondary" id="timerResetBtn" type="button" disabled>Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h4>Buyer bonus</h4>
+            <div class="field">
+              <label for="buyerBonusSelect">Award +2 points to a buyer</label>
+              <select id="buyerBonusSelect"></select>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-purple" id="buyerBonusBtn" type="button" disabled>Give Buyer Bonus</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h4>Sale result</h4>
+            <div class="summary-box">
+              <p id="saleStatusText">No property on the market yet.</p>
+              <div class="field" style="margin-top: 10px;">
+                <label for="saleBuyerSelect">Who bought the property?</label>
+                <select id="saleBuyerSelect"></select>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-green" id="markSoldBtn" type="button" disabled>Mark as Sold (+5)</button>
+                <button class="btn btn-red" id="markUnsoldBtn" type="button" disabled>Keep Unsold</button>
+              </div>
+              <div class="sale-line" id="saleLine">Sale status: pending</div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h4>Ranking snapshot</h4>
+            <div class="ranking-list" id="rankingPreview"></div>
+          </div>
+
+          <div class="control-group">
+            <h4>Round log</h4>
+            <div class="log-box">
+              <p>Every finished round is saved here so the teacher can review performance and sales.</p>
+              <div id="roundLog"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="overlay" id="finalOverlay">
+    <div class="overlay-card">
+      <h2>Game Over</h2>
+      <p>The best real estate agent wins by total points, with sales as the main tie-breaker.</p>
+      <div class="winner-box" id="winnerBox"></div>
+      <div class="ranking-list" id="finalRanking"></div>
+      <div class="btn-row" style="justify-content:center; margin-top: 18px;">
+        <button class="btn btn-primary" id="playAgainBtn" type="button">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const COLORS = ['#f87171', '#60a5fa', '#34d399', '#fbbf24', '#c084fc'];
+
+    const PROPERTY_DECK = [
+      {
+        name: 'Sunny City Apartment',
+        type: 'Apartment',
+        location: 'Downtown, near the subway and a big supermarket',
+        audience: 'young professionals',
+        roomsText: '2 bedrooms, 1 bathroom, 1 living room, 1 kitchen, 1 balcony',
+        special: 'bright balcony with a city view',
+        intro: 'A practical apartment for people who want to live close to work and public transportation.',
+        features: ['gray sofa in front of the TV', 'small table between two chairs', 'bed next to the window', 'picture above the bed', 'plant behind the sofa'],
+        sellerPrompts: [
+          'Say where the apartment is and why the location is good.',
+          'Use there is / there are to describe the rooms.',
+          'Name at least four pieces of furniture.',
+          'Use two prepositions of place.',
+          'Add one extra detail about the balcony or the view.'
+        ],
+        buyerPrompts: [
+          'Is there a balcony?',
+          'Where is the sofa?',
+          'Are there two bedrooms?',
+          'What is above the bed?',
+          'Is it good for a family or one person?'
+        ]
+      },
+      {
+        name: 'Cozy Family House',
+        type: 'House',
+        location: 'A quiet neighborhood near a school and a park',
+        audience: 'small families',
+        roomsText: '3 bedrooms, 2 bathrooms, 1 living room, 1 kitchen, 1 dining room',
+        special: 'a small garden behind the house',
+        intro: 'A comfortable family house with more space and a peaceful location.',
+        features: ['large sofa in the living room', 'dining table between the kitchen and the living room', 'two lamps above the dining table', 'bed beside a closet', 'garden chairs behind the house'],
+        sellerPrompts: [
+          'Explain where the house is and who it is perfect for.',
+          'Tell the buyers how many rooms there are.',
+          'Describe the living room and the dining room.',
+          'Use between, behind, or above.',
+          'Mention the garden as a selling point.'
+        ],
+        buyerPrompts: [
+          'How many bathrooms are there?',
+          'Is there a garden?',
+          'Where is the dining table?',
+          'Are there lamps above the table?',
+          'Is the house near a school?'
+        ]
+      },
+      {
+        name: 'Modern Loft',
+        type: 'Loft',
+        location: 'In the arts district, above trendy cafes',
+        audience: 'creative renters',
+        roomsText: '1 bedroom area, 1 bathroom, 1 open living room, 1 kitchen',
+        special: 'industrial style and high ceilings',
+        intro: 'A stylish loft with an open layout and modern furniture.',
+        features: ['sofa in front of a brick wall TV', 'bed above a storage area', 'table behind the sofa', 'shelf next to the kitchen island', 'lamp above the dining table'],
+        sellerPrompts: [
+          'Describe the open layout clearly.',
+          'Use there is to describe singular furniture items.',
+          'Explain where the table, shelf, and lamp are.',
+          'Mention the style of the loft.',
+          'Say why artists might love this place.'
+        ],
+        buyerPrompts: [
+          'Is there a separate bedroom?',
+          'Where is the table?',
+          'What is above the dining table?',
+          'Is the loft modern or traditional?',
+          'Who is this place good for?'
+        ]
+      },
+      {
+        name: 'Beach House Escape',
+        type: 'Beach House',
+        location: 'Near the beach and in front of a long bike path',
+        audience: 'people who love weekends by the ocean',
+        roomsText: '2 bedrooms, 2 bathrooms, 1 living room, 1 kitchen, 1 terrace',
+        special: 'large terrace with sea air',
+        intro: 'A relaxing beach house with light furniture and plenty of space to host friends.',
+        features: ['white sofa in front of the window', 'table between two armchairs', 'bed under a ceiling fan', 'chairs on the terrace', 'surfboards behind the house'],
+        sellerPrompts: [
+          'Say where the house is and mention the beach.',
+          'Use there are for plural items.',
+          'Describe the terrace and the living room.',
+          'Use in front of and between.',
+          'Explain why it is a great weekend property.'
+        ],
+        buyerPrompts: [
+          'Is there a terrace?',
+          'Where is the sofa?',
+          'Are there chairs outside?',
+          'What is behind the house?',
+          'Is it close to the beach?'
+        ]
+      },
+      {
+        name: 'Compact Studio Apartment',
+        type: 'Studio',
+        location: 'In the city center, close to a university',
+        audience: 'students',
+        roomsText: '1 main room, 1 bathroom, 1 kitchenette',
+        special: 'small but practical furniture layout',
+        intro: 'A compact studio apartment that is easy to rent and easy to clean.',
+        features: ['bed next to the desk', 'lamp on the desk', 'chair in front of the desk', 'small table near the window', 'shelf above the bed'],
+        sellerPrompts: [
+          'Explain why the location is convenient for students.',
+          'Describe the main room in a clear order.',
+          'Use next to, in front of, and above.',
+          'Talk about practical furniture.',
+          'Mention that it is easy to rent.'
+        ],
+        buyerPrompts: [
+          'Is there a separate kitchen?',
+          'Where is the chair?',
+          'What is above the bed?',
+          'Is it good for students?',
+          'Is it easy to clean?'
+        ]
+      },
+      {
+        name: 'Green Suburban Townhouse',
+        type: 'Townhouse',
+        location: 'In a suburban area near shops and bus stops',
+        audience: 'young families',
+        roomsText: '3 bedrooms, 2 bathrooms, 1 living room, 1 kitchen, 1 home office',
+        special: 'quiet street and home office',
+        intro: 'A townhouse with balanced space for work, study, and family life.',
+        features: ['sofa in front of the TV', 'desk next to the window', 'bookshelf behind the desk', 'bed between two nightstands', 'kitchen table near the balcony door'],
+        sellerPrompts: [
+          'Describe the neighborhood first.',
+          'Explain how many rooms there are.',
+          'Use there is and there are naturally.',
+          'Describe the home office with prepositions.',
+          'Say why the townhouse is good for families.'
+        ],
+        buyerPrompts: [
+          'Is there a home office?',
+          'Where is the bookshelf?',
+          'How many bedrooms are there?',
+          'Is the townhouse on a quiet street?',
+          'Where is the bed?'
+        ]
+      },
+      {
+        name: 'Luxury Penthouse',
+        type: 'Penthouse',
+        location: 'On the top floor of a modern building downtown',
+        audience: 'buyers who want comfort and status',
+        roomsText: '3 bedrooms, 3 bathrooms, 1 living room, 1 kitchen, 1 large terrace',
+        special: 'panoramic city view and elegant furniture',
+        intro: 'A luxury penthouse with impressive views and premium furniture.',
+        features: ['large sofa in front of the glass wall', 'round table under a chandelier', 'art above the fireplace', 'bed facing the terrace', 'bar stools behind the kitchen island'],
+        sellerPrompts: [
+          'Use rich detail to make the pitch longer.',
+          'Describe the terrace and the city view.',
+          'Mention elegant furniture.',
+          'Use at least two prepositions of place.',
+          'Explain why the property feels luxurious.'
+        ],
+        buyerPrompts: [
+          'Is there a large terrace?',
+          'Where is the art?',
+          'What is in front of the glass wall?',
+          'How many bathrooms are there?',
+          'Why is it a luxury property?'
+        ]
+      },
+      {
+        name: 'Country Cottage',
+        type: 'Cottage',
+        location: 'In the countryside, near a lake and trees',
+        audience: 'people who want peace and nature',
+        roomsText: '2 bedrooms, 1 bathroom, 1 living room, 1 kitchen',
+        special: 'warm wooden furniture and lake views',
+        intro: 'A peaceful cottage for buyers who love quiet weekends and nature.',
+        features: ['rocking chair in front of the fireplace', 'small table between two chairs', 'bed under a wooden shelf', 'lamp above the reading corner', 'bench behind the cottage'],
+        sellerPrompts: [
+          'Start with the countryside location.',
+          'Describe the furniture in the living room.',
+          'Use there is / there are with confidence.',
+          'Use in front of, between, or behind.',
+          'Explain the peaceful feeling of the property.'
+        ],
+        buyerPrompts: [
+          'Is it near a lake?',
+          'Where is the rocking chair?',
+          'Is there a fireplace?',
+          'What is behind the cottage?',
+          'Who would enjoy this house?'
+        ]
+      },
+      {
+        name: 'Bright Duplex',
+        type: 'Duplex',
+        location: 'Near downtown, with quick access to shops and restaurants',
+        audience: 'couples who want more space',
+        roomsText: '2 floors, 2 bedrooms, 2 bathrooms, 1 living room, 1 kitchen',
+        special: 'stairs connecting a bright upper floor',
+        intro: 'A bright duplex that feels larger because it has two floors and open light.',
+        features: ['sofa below a wall picture', 'dining table near the stairs', 'bed next to a balcony door', 'plants in front of the kitchen window', 'chairs around the table'],
+        sellerPrompts: [
+          'Explain that the duplex has two floors.',
+          'Describe one room on each floor.',
+          'Use there are for plural nouns.',
+          'Use near, next to, and in front of.',
+          'Say why the light is a strong selling point.'
+        ],
+        buyerPrompts: [
+          'Are there two floors?',
+          'Where is the dining table?',
+          'What is next to the balcony door?',
+          'Are there plants in the kitchen area?',
+          'Is it bigger than a regular apartment?'
+        ]
+      },
+      {
+        name: 'Student Share Apartment',
+        type: 'Shared Apartment',
+        location: 'Close to a college campus and bus station',
+        audience: 'students and roommates',
+        roomsText: '3 bedrooms, 2 bathrooms, 1 living room, 1 kitchen',
+        special: 'good shared layout for roommates',
+        intro: 'A practical apartment where students can share rent and space comfortably.',
+        features: ['three desks in different bedrooms', 'sofa in front of the TV', 'table between the sofa and the kitchen', 'wardrobe behind each bed', 'microwave on the kitchen shelf'],
+        sellerPrompts: [
+          'Mention that the rent can be shared.',
+          'Talk about the three bedrooms clearly.',
+          'Describe the common area furniture.',
+          'Use between, behind, and on.',
+          'Explain why it works for roommates.'
+        ],
+        buyerPrompts: [
+          'How many bedrooms are there?',
+          'Where is the table?',
+          'Is there enough furniture for students?',
+          'Can roommates share the rent?',
+          'What is on the kitchen shelf?'
+        ]
+      },
+      {
+        name: 'Minimalist Smart Home',
+        type: 'Smart House',
+        location: 'In a modern neighborhood near tech offices',
+        audience: 'buyers who like technology',
+        roomsText: '2 bedrooms, 2 bathrooms, 1 living room, 1 kitchen, 1 office',
+        special: 'smart lights and voice-controlled systems',
+        intro: 'A minimalist house with modern systems and clean, simple furniture.',
+        features: ['smart sofa facing the TV', 'desk in front of a large screen', 'bed beside smart lamps', 'speaker above the kitchen counter', 'chairs around a white table'],
+        sellerPrompts: [
+          'Describe the neighborhood and the smart features.',
+          'Use there is and there are with room details.',
+          'Talk about the office and the kitchen.',
+          'Use in front of, above, and beside.',
+          'Explain why the house feels modern.'
+        ],
+        buyerPrompts: [
+          'Is there a home office?',
+          'Where is the speaker?',
+          'What is in front of the large screen?',
+          'Are the lights smart?',
+          'Who would like this house?'
+        ]
+      },
+      {
+        name: 'Mountain Cabin',
+        type: 'Cabin',
+        location: 'In the mountains, above a small valley road',
+        audience: 'travelers who want nature and quiet',
+        roomsText: '2 bedrooms, 1 bathroom, 1 living room, 1 kitchen',
+        special: 'beautiful mountain view and wooden design',
+        intro: 'A quiet mountain cabin with simple rooms and a warm atmosphere.',
+        features: ['wooden table near the fireplace', 'sofa in front of the fire', 'bed under a skylight', 'boots behind the front door', 'lamp above the table'],
+        sellerPrompts: [
+          'Describe the mountain location first.',
+          'Use there is / there are for each main room.',
+          'Describe where the table, sofa, and boots are.',
+          'Use near, in front of, behind, and under.',
+          'Mention the warm atmosphere as a bonus.'
+        ],
+        buyerPrompts: [
+          'Is it in the mountains?',
+          'Where are the boots?',
+          'What is above the table?',
+          'Is there a fireplace?',
+          'Why is the cabin cozy?'
+        ]
+      }
+    ];
+
+    const RUBRIC_ITEMS = [
+      { id: 'location', label: 'Strong location intro', points: 2, desc: 'The seller explained where the property is and why the area is attractive.' },
+      { id: 'rooms', label: 'Room count and property type', points: 2, desc: 'The seller clearly described the type of property and the number of rooms.' },
+      { id: 'thereis', label: 'Used there is / there are', points: 2, desc: 'The seller used the target structure in complete sentences.' },
+      { id: 'furniture', label: 'Furniture detail', points: 2, desc: 'The seller named enough furniture and objects in the property.' },
+      { id: 'prepositions', label: 'Prepositions of place', points: 3, desc: 'The seller used location language such as between, behind, in front of, or above.' },
+      { id: 'extra', label: 'Extra persuasive detail', points: 2, desc: 'The seller added useful extra detail, personality, or reasons to buy/rent.' },
+      { id: 'answers', label: 'Answered buyer questions well', points: 2, desc: 'The seller responded clearly to buyer questions during the round.' },
+      { id: 'sold', label: 'Property sold', points: 5, desc: 'The teacher confirmed the sale at the end of the round.' }
+    ];
+
+    const state = {
+      players: [],
+      round: 0,
+      totalRounds: 6,
+      timerSeconds: 90,
+      timerLeft: 90,
+      timerId: null,
+      currentSellerId: null,
+      currentProperty: null,
+      usedPropertyIndexes: [],
+      rubricState: {},
+      saleMarked: false,
+      soldBuyerId: null,
+      saleClosed: false,
+      roundLog: [],
+      currentRoundBuyerBonusAwards: []
+    };
+
+    const setupScreen = document.getElementById('setupScreen');
+    const gameScreen = document.getElementById('gameScreen');
+    const playerInputsEl = document.getElementById('playerInputs');
+    const roundCountEl = document.getElementById('roundCount');
+    const roundTimerEl = document.getElementById('roundTimer');
+    const addBtn = document.getElementById('addBtn');
+    const removeBtn = document.getElementById('removeBtn');
+    const startBtn = document.getElementById('startBtn');
+
+    const roundBadge = document.getElementById('roundBadge');
+    const sellerBadge = document.getElementById('sellerBadge');
+    const phaseBadge = document.getElementById('phaseBadge');
+    const playerCardsEl = document.getElementById('playerCards');
+    const rankingPreviewEl = document.getElementById('rankingPreview');
+    const roundLogEl = document.getElementById('roundLog');
+
+    const propertyTitleEl = document.getElementById('propertyTitle');
+    const propertyIntroEl = document.getElementById('propertyIntro');
+    const propertyTypeTagEl = document.getElementById('propertyTypeTag');
+    const propertyLocationEl = document.getElementById('propertyLocation');
+    const propertyAudienceEl = document.getElementById('propertyAudience');
+    const propertyRoomsEl = document.getElementById('propertyRooms');
+    const propertySpecialEl = document.getElementById('propertySpecial');
+    const featureChipsEl = document.getElementById('featureChips');
+    const sellerPromptsEl = document.getElementById('sellerPrompts');
+    const buyerPromptsEl = document.getElementById('buyerPrompts');
+    const rubricListEl = document.getElementById('rubricList');
+
+    const drawRoundBtn = document.getElementById('drawRoundBtn');
+    const endRoundBtn = document.getElementById('endRoundBtn');
+    const resetRoundBtn = document.getElementById('resetRoundBtn');
+
+    const timerDisplay = document.getElementById('timerDisplay');
+    const timerHint = document.getElementById('timerHint');
+    const timerStartBtn = document.getElementById('timerStartBtn');
+    const timerPauseBtn = document.getElementById('timerPauseBtn');
+    const timerResetBtn = document.getElementById('timerResetBtn');
+
+    const buyerBonusSelect = document.getElementById('buyerBonusSelect');
+    const buyerBonusBtn = document.getElementById('buyerBonusBtn');
+    const saleBuyerSelect = document.getElementById('saleBuyerSelect');
+    const markSoldBtn = document.getElementById('markSoldBtn');
+    const markUnsoldBtn = document.getElementById('markUnsoldBtn');
+    const saleStatusText = document.getElementById('saleStatusText');
+    const saleLine = document.getElementById('saleLine');
+
+    const finalOverlay = document.getElementById('finalOverlay');
+    const winnerBox = document.getElementById('winnerBox');
+    const finalRankingEl = document.getElementById('finalRanking');
+    const playAgainBtn = document.getElementById('playAgainBtn');
+    const toastEl = document.getElementById('toast');
+
+    function buildSetupInputs() {
+      const defaults = ['Player 1', 'Player 2', 'Player 3'];
+      playerInputsEl.innerHTML = '';
+      defaults.forEach((value, index) => {
+        createPlayerInput(value, index);
+      });
+      updateSetupButtons();
+    }
+
+    function createPlayerInput(value, index) {
+      const wrap = document.createElement('div');
+      wrap.className = 'player-input';
+      wrap.innerHTML = `
+        <span class="player-dot" style="background:${COLORS[index % COLORS.length]}"></span>
+        <input type="text" value="${value}" maxlength="18" placeholder="Player ${index + 1}" />
+      `;
+      playerInputsEl.appendChild(wrap);
+    }
+
+    function updateSetupButtons() {
+      const count = playerInputsEl.children.length;
+      addBtn.disabled = count >= 5;
+      removeBtn.disabled = count <= 2;
+    }
+
+    function addPlayerInput() {
+      const count = playerInputsEl.children.length;
+      if (count >= 5) return;
+      createPlayerInput(`Player ${count + 1}`, count);
+      updateSetupButtons();
+    }
+
+    function removePlayerInput() {
+      if (playerInputsEl.children.length <= 2) return;
+      playerInputsEl.removeChild(playerInputsEl.lastElementChild);
+      updateSetupButtons();
+    }
+
+    function readPlayersFromSetup() {
+      const rows = [...playerInputsEl.querySelectorAll('input')];
+      return rows.map((input, index) => ({
+        id: `p${index + 1}`,
+        name: input.value.trim() || `Player ${index + 1}`,
+        color: COLORS[index % COLORS.length],
+        points: 0,
+        sold: 0,
+        sellerTurns: 0,
+        buyerBonuses: 0
+      }));
+    }
+
+    function startGame() {
+      const players = readPlayersFromSetup();
+      if (players.length < 2) {
+        showToast('Add at least 2 players.');
+        return;
+      }
+
+      state.players = players;
+      state.round = 0;
+      state.totalRounds = Number(roundCountEl.value);
+      state.timerSeconds = Number(roundTimerEl.value);
+      state.timerLeft = state.timerSeconds;
+      state.currentSellerId = null;
+      state.currentProperty = null;
+      state.usedPropertyIndexes = [];
+      state.rubricState = {};
+      state.saleMarked = false;
+      state.soldBuyerId = null;
+      state.saleClosed = false;
+      state.roundLog = [];
+      state.currentRoundBuyerBonusAwards = [];
+      stopTimer();
+
+      setupScreen.style.display = 'none';
+      gameScreen.style.display = 'flex';
+
+      renderEmptyBoard();
+      renderPlayers();
+      renderRankingPreview();
+      renderLog();
+      updateHeader();
+      updateBuyerSelectors();
+      updateControls();
+      updateTimerDisplay();
+      showToast('Game started. Draw the first seller and property.');
+    }
+
+    function renderEmptyBoard() {
+      propertyTitleEl.textContent = 'Click “Draw Property & Seller” to begin';
+      propertyIntroEl.textContent = 'The teacher will reveal one listing per round. Students then speak as sellers and buyers.';
+      propertyTypeTagEl.textContent = 'Waiting';
+      propertyLocationEl.textContent = '—';
+      propertyAudienceEl.textContent = '—';
+      propertyRoomsEl.textContent = '—';
+      propertySpecialEl.textContent = '—';
+      featureChipsEl.innerHTML = '<span class="chip">No property yet</span>';
+      sellerPromptsEl.innerHTML = '<li>Draw a property to show speaking prompts.</li>';
+      buyerPromptsEl.innerHTML = '<li>Draw a property to show buyer questions.</li>';
+      renderRubric();
+      saleStatusText.textContent = 'No property on the market yet.';
+      saleLine.textContent = 'Sale status: pending';
+    }
+
+    function updateHeader() {
+      roundBadge.textContent = `Round ${Math.min(state.round + 1, state.totalRounds)} / ${state.totalRounds}`;
+      sellerBadge.textContent = `Seller: ${getCurrentSeller() ? getCurrentSeller().name : '—'}`;
+      if (!state.currentProperty) {
+        phaseBadge.textContent = 'Ready for the next property';
+      } else if (state.saleClosed) {
+        phaseBadge.textContent = state.saleMarked ? 'Round finished: sold' : 'Round finished: unsold';
+      } else {
+        phaseBadge.textContent = 'Pitch in progress';
+      }
+    }
+
+    function getCurrentSeller() {
+      return state.players.find((player) => player.id === state.currentSellerId) || null;
+    }
+
+    function getSortedPlayers() {
+      return [...state.players].sort((a, b) => {
+        if (b.points !== a.points) return b.points - a.points;
+        if (b.sold !== a.sold) return b.sold - a.sold;
+        return a.name.localeCompare(b.name);
+      });
+    }
+
+    function renderPlayers() {
+      playerCardsEl.innerHTML = '';
+      getSortedPlayers().forEach((player) => {
+        const card = document.createElement('div');
+        const role = player.id === state.currentSellerId ? 'seller' : (state.currentSellerId ? 'buyer' : '');
+        card.className = `player-card ${role === 'seller' ? 'active' : ''} ${role === 'buyer' ? 'buyer' : ''}`;
+        card.innerHTML = `
+          <div class="player-top">
+            <span class="player-dot" style="background:${player.color}"></span>
+            <span class="player-name">${player.name}</span>
+            ${role === 'seller' ? '<span class="mini-badge seller-badge">SELLER</span>' : ''}
+            ${role === 'buyer' ? '<span class="mini-badge buyer-badge">BUYER</span>' : ''}
+          </div>
+          <div class="stat-grid">
+            <div class="stat-box">
+              <div class="stat-label">Score</div>
+              <div class="stat-value">${player.points}</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Sales</div>
+              <div class="stat-value">${player.sold}</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Seller turns</div>
+              <div class="stat-value">${player.sellerTurns}</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Buyer bonus</div>
+              <div class="stat-value">${player.buyerBonuses}</div>
+            </div>
+          </div>
+        `;
+        playerCardsEl.appendChild(card);
+      });
+    }
+
+    function renderRankingPreview() {
+      rankingPreviewEl.innerHTML = '';
+      getSortedPlayers().forEach((player, index) => {
+        const row = document.createElement('div');
+        row.className = `rank-row ${index === 0 ? 'top' : ''}`;
+        row.innerHTML = `
+          <div class="rank-pos">${index + 1}</div>
+          <div class="rank-name">${player.name}</div>
+          <div class="rank-stats">${player.points} pts · ${player.sold} sold</div>
+        `;
+        rankingPreviewEl.appendChild(row);
+      });
+    }
+
+    function renderLog() {
+      roundLogEl.innerHTML = '';
+      if (!state.roundLog.length) {
+        roundLogEl.innerHTML = '<div class="log-entry">No rounds finished yet.</div>';
+        return;
+      }
+
+      state.roundLog.slice().reverse().forEach((entry) => {
+        const item = document.createElement('div');
+        item.className = 'log-entry';
+        item.innerHTML = `
+          <strong>Round ${entry.round}: ${entry.seller}</strong><br>
+          ${entry.property}<br>
+          ${entry.result}<br>
+          Rubric points: ${entry.rubricPoints} · Buyer bonus: ${entry.buyerBonus}
+        `;
+        roundLogEl.appendChild(item);
+      });
+    }
+
+    function renderProperty(property) {
+      propertyTitleEl.textContent = property.name;
+      propertyIntroEl.textContent = property.intro;
+      propertyTypeTagEl.textContent = property.type;
+      propertyLocationEl.textContent = property.location;
+      propertyAudienceEl.textContent = property.audience;
+      propertyRoomsEl.textContent = property.roomsText;
+      propertySpecialEl.textContent = property.special;
+
+      featureChipsEl.innerHTML = '';
+      property.features.forEach((feature) => {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = feature;
+        featureChipsEl.appendChild(chip);
+      });
+
+      sellerPromptsEl.innerHTML = property.sellerPrompts.map((prompt) => `<li>${prompt}</li>`).join('');
+      buyerPromptsEl.innerHTML = property.buyerPrompts.map((prompt) => `<li>${prompt}</li>`).join('');
+    }
+
+    function renderRubric() {
+      rubricListEl.innerHTML = '';
+      RUBRIC_ITEMS.forEach((item) => {
+        const active = Boolean(state.rubricState[item.id]);
+        const isSoldRow = item.id === 'sold';
+        const row = document.createElement('div');
+        row.className = `rubric-item ${active ? 'active' : ''}`;
+        row.innerHTML = `
+          <div class="rubric-meta">
+            <strong>${item.label}</strong>
+            <small>${item.desc}</small>
+          </div>
+          <div class="rubric-points">+${item.points}</div>
+          <button class="btn ${isSoldRow ? 'btn-secondary' : active ? 'btn-green' : 'btn-secondary'}" type="button" data-rubric-id="${item.id}" ${isSoldRow ? 'disabled' : ''}>
+            ${isSoldRow ? (active ? 'Sold' : 'Use Sale Buttons') : active ? 'Applied' : 'Apply'}
+          </button>
+        `;
+        rubricListEl.appendChild(row);
+      });
+    }
+
+    function updateBuyerSelectors() {
+      const buyerOptions = state.players
+        .filter((player) => player.id !== state.currentSellerId)
+        .map((player) => `<option value="${player.id}">${player.name}</option>`)
+        .join('');
+
+      buyerBonusSelect.innerHTML = buyerOptions || '<option value="">No buyers</option>';
+      saleBuyerSelect.innerHTML = `<option value="">Choose buyer</option>${buyerOptions}`;
+    }
+
+    function chooseSeller() {
+      const minimumTurns = Math.min(...state.players.map((player) => player.sellerTurns));
+      const pool = state.players.filter((player) => player.sellerTurns === minimumTurns);
+      return pool[Math.floor(Math.random() * pool.length)];
+    }
+
+    function drawPropertyIndex() {
+      if (state.usedPropertyIndexes.length === PROPERTY_DECK.length) {
+        state.usedPropertyIndexes = [];
+      }
+
+      let index;
+      do {
+        index = Math.floor(Math.random() * PROPERTY_DECK.length);
+      } while (state.usedPropertyIndexes.includes(index));
+
+      state.usedPropertyIndexes.push(index);
+      return index;
+    }
+
+    function startRound() {
+      if (state.round >= state.totalRounds) {
+        showFinalResults();
+        return;
+      }
+
+      stopTimer();
+      state.timerLeft = state.timerSeconds;
+      updateTimerDisplay();
+
+      const seller = chooseSeller();
+      seller.sellerTurns += 1;
+      state.currentSellerId = seller.id;
+      state.currentProperty = PROPERTY_DECK[drawPropertyIndex()];
+      state.rubricState = {};
+      RUBRIC_ITEMS.forEach((item) => {
+        state.rubricState[item.id] = false;
+      });
+      state.saleMarked = false;
+      state.soldBuyerId = '';
+      state.saleClosed = false;
+      state.currentRoundBuyerBonusAwards = [];
+
+      renderProperty(state.currentProperty);
+      renderRubric();
+      renderPlayers();
+      renderRankingPreview();
+      updateBuyerSelectors();
+      updateHeader();
+      updateSaleBox();
+      updateControls();
+
+      showToast(`${seller.name} is the seller for Round ${state.round + 1}.`);
+    }
+
+    function updateSaleBox() {
+      if (!state.currentProperty) {
+        saleStatusText.textContent = 'No property on the market yet.';
+        saleLine.textContent = 'Sale status: pending';
+        return;
+      }
+
+      const seller = getCurrentSeller();
+      saleStatusText.textContent = `${seller ? seller.name : 'The seller'} is trying to sell "${state.currentProperty.name}".`;
+      if (state.saleClosed && state.saleMarked) {
+        const buyerName = state.players.find((player) => player.id === state.soldBuyerId)?.name || 'a buyer';
+        saleLine.textContent = `Sale status: SOLD to ${buyerName}`;
+      } else if (state.saleClosed) {
+        saleLine.textContent = 'Sale status: not sold this round';
+      } else {
+        saleLine.textContent = 'Sale status: pending';
+      }
+    }
+
+    function toggleRubric(id) {
+      if (id === 'sold') return;
+      if (!state.currentProperty || state.saleClosed) return;
+      const item = RUBRIC_ITEMS.find((entry) => entry.id === id);
+      if (!item) return;
+
+      const seller = getCurrentSeller();
+      if (!seller) return;
+
+      const isActive = state.rubricState[id];
+      state.rubricState[id] = !isActive;
+      seller.points += isActive ? -item.points : item.points;
+
+      renderRubric();
+      renderPlayers();
+      renderRankingPreview();
+      updateSaleBox();
+      updateControls();
+    }
+
+    function awardBuyerBonus() {
+      if (!state.currentProperty || state.saleClosed) return;
+      const buyerId = buyerBonusSelect.value;
+      const buyer = state.players.find((player) => player.id === buyerId);
+      if (!buyer) {
+        showToast('Select a buyer first.');
+        return;
+      }
+
+      buyer.points += 2;
+      buyer.buyerBonuses += 1;
+      state.currentRoundBuyerBonusAwards.push(buyer.id);
+      renderPlayers();
+      renderRankingPreview();
+      showToast(`${buyer.name} received a buyer bonus.`);
+    }
+
+    function markSale(sold) {
+      if (!state.currentProperty) return;
+      const seller = getCurrentSeller();
+      if (!seller) return;
+
+      const soldRubric = RUBRIC_ITEMS.find((item) => item.id === 'sold');
+      const soldApplied = Boolean(state.rubricState.sold);
+
+      if (sold) {
+        if (!saleBuyerSelect.value) {
+          showToast('Choose the buyer who bought the property.');
+          return;
+        }
+        state.soldBuyerId = saleBuyerSelect.value;
+        state.saleMarked = true;
+        state.saleClosed = true;
+        if (!soldApplied) {
+          state.rubricState.sold = true;
+          seller.points += soldRubric.points;
+          seller.sold += 1;
+        }
+      } else {
+        state.saleMarked = false;
+        state.saleClosed = true;
+        state.soldBuyerId = '';
+        if (soldApplied) {
+          state.rubricState.sold = false;
+          seller.points -= soldRubric.points;
+          seller.sold = Math.max(0, seller.sold - 1);
+        }
+      }
+
+      renderRubric();
+      renderPlayers();
+      renderRankingPreview();
+      updateSaleBox();
+      updateHeader();
+      updateControls();
+    }
+
+    function resetCurrentRound() {
+      if (!state.currentProperty) return;
+
+      const seller = getCurrentSeller();
+      if (!seller) return;
+
+      RUBRIC_ITEMS.forEach((item) => {
+        if (state.rubricState[item.id]) {
+          seller.points -= item.points;
+        }
+      });
+
+      if (state.rubricState.sold) {
+        seller.sold = Math.max(0, seller.sold - 1);
+      }
+
+      state.currentRoundBuyerBonusAwards.forEach((buyerId) => {
+        const buyer = state.players.find((player) => player.id === buyerId);
+        if (buyer) {
+          buyer.points = Math.max(0, buyer.points - 2);
+          buyer.buyerBonuses = Math.max(0, buyer.buyerBonuses - 1);
+        }
+      });
+
+      state.rubricState = {};
+      RUBRIC_ITEMS.forEach((item) => {
+        state.rubricState[item.id] = false;
+      });
+      state.saleMarked = false;
+      state.saleClosed = false;
+      state.soldBuyerId = '';
+      state.currentRoundBuyerBonusAwards = [];
+      stopTimer();
+      state.timerLeft = state.timerSeconds;
+      updateTimerDisplay();
+
+      renderRubric();
+      renderPlayers();
+      renderRankingPreview();
+      updateSaleBox();
+      updateHeader();
+      updateControls();
+      showToast('Current round was reset.');
+    }
+
+    function endRound() {
+      if (!state.currentProperty) return;
+      if (!state.saleClosed) {
+        showToast('Mark the property as sold or unsold before ending the round.');
+        return;
+      }
+
+      stopTimer();
+
+      const seller = getCurrentSeller();
+      const buyerName = state.players.find((player) => player.id === state.soldBuyerId)?.name || 'No buyer selected';
+      const rubricPoints = RUBRIC_ITEMS
+        .filter((item) => state.rubricState[item.id])
+        .reduce((sum, item) => sum + item.points, 0);
+
+      const buyerBonusPoints = state.currentRoundBuyerBonusAwards.length * 2;
+
+      state.roundLog.push({
+        round: state.round + 1,
+        seller: seller ? seller.name : 'Unknown seller',
+        property: `${state.currentProperty.name} (${state.currentProperty.type})`,
+        result: state.saleMarked ? `Sold to ${buyerName}` : 'Not sold',
+        rubricPoints,
+        buyerBonus: `${buyerBonusPoints} pts`
+      });
+
+      state.round += 1;
+      state.currentSellerId = null;
+      state.currentProperty = null;
+      state.rubricState = {};
+      state.saleMarked = false;
+      state.saleClosed = false;
+      state.soldBuyerId = '';
+      state.currentRoundBuyerBonusAwards = [];
+      state.timerLeft = state.timerSeconds;
+
+      renderEmptyBoard();
+      renderPlayers();
+      renderRankingPreview();
+      renderLog();
+      updateBuyerSelectors();
+      updateHeader();
+      updateControls();
+      updateTimerDisplay();
+
+      if (state.round >= state.totalRounds) {
+        showToast('All rounds finished.');
+        showFinalResults();
+      } else {
+        showToast(`Round ${state.round} finished. Draw the next property.`);
+      }
+    }
+
+    function updateControls() {
+      const hasRound = Boolean(state.currentProperty);
+      const readyToDraw = state.round < state.totalRounds && !hasRound;
+      drawRoundBtn.disabled = !readyToDraw;
+
+      timerStartBtn.disabled = !hasRound || state.saleClosed;
+      timerPauseBtn.disabled = !hasRound;
+      timerResetBtn.disabled = !hasRound;
+
+      buyerBonusBtn.disabled = !hasRound || state.saleClosed || buyerBonusSelect.options.length === 0;
+      markSoldBtn.disabled = !hasRound || state.saleClosed;
+      markUnsoldBtn.disabled = !hasRound || state.saleClosed;
+      endRoundBtn.disabled = !hasRound || !state.saleClosed;
+      resetRoundBtn.disabled = !hasRound;
+    }
+
+    function updateTimerDisplay() {
+      const minutes = String(Math.floor(state.timerLeft / 60)).padStart(2, '0');
+      const seconds = String(state.timerLeft % 60).padStart(2, '0');
+      timerDisplay.textContent = `${minutes}:${seconds}`;
+    }
+
+    function startTimer() {
+      if (!state.currentProperty || state.timerId) return;
+      timerHint.textContent = 'Pitch timer is running.';
+      state.timerId = window.setInterval(() => {
+        if (state.timerLeft <= 0) {
+          stopTimer();
+          showToast('Time is up. Ask for final questions or score the pitch.');
+          return;
+        }
+        state.timerLeft -= 1;
+        updateTimerDisplay();
+      }, 1000);
+      updateControls();
+    }
+
+    function stopTimer() {
+      if (state.timerId) {
+        clearInterval(state.timerId);
+        state.timerId = null;
+      }
+    }
+
+    function resetTimer() {
+      stopTimer();
+      state.timerLeft = state.timerSeconds;
+      timerHint.textContent = 'Use the timer for the seller pitch and buyer questions.';
+      updateTimerDisplay();
+    }
+
+    function showFinalResults() {
+      const sorted = getSortedPlayers();
+      const winner = sorted[0];
+      winnerBox.innerHTML = `
+        <strong>${winner.name}</strong>
+        <div>${winner.points} points · ${winner.sold} properties sold</div>
+      `;
+
+      finalRankingEl.innerHTML = '';
+      sorted.forEach((player, index) => {
+        const row = document.createElement('div');
+        row.className = `rank-row ${index === 0 ? 'top' : ''}`;
+        row.innerHTML = `
+          <div class="rank-pos">${index + 1}</div>
+          <div class="rank-name">${player.name}</div>
+          <div class="rank-stats">${player.points} pts · ${player.sold} sold · ${player.sellerTurns} turns</div>
+        `;
+        finalRankingEl.appendChild(row);
+      });
+
+      finalOverlay.style.display = 'flex';
+    }
+
+    function restartGame() {
+      finalOverlay.style.display = 'none';
+      gameScreen.style.display = 'none';
+      setupScreen.style.display = 'flex';
+      stopTimer();
+      buildSetupInputs();
+    }
+
+    function showToast(message) {
+      toastEl.textContent = message;
+      toastEl.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => {
+        toastEl.classList.remove('show');
+      }, 2400);
+    }
+
+    rubricListEl.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-rubric-id]');
+      if (!button) return;
+      toggleRubric(button.dataset.rubricId);
+    });
+
+    addBtn.addEventListener('click', addPlayerInput);
+    removeBtn.addEventListener('click', removePlayerInput);
+    startBtn.addEventListener('click', startGame);
+    drawRoundBtn.addEventListener('click', startRound);
+    endRoundBtn.addEventListener('click', endRound);
+    resetRoundBtn.addEventListener('click', resetCurrentRound);
+    timerStartBtn.addEventListener('click', startTimer);
+    timerPauseBtn.addEventListener('click', () => {
+      stopTimer();
+      timerHint.textContent = 'Timer paused.';
+      updateControls();
+    });
+    timerResetBtn.addEventListener('click', resetTimer);
+    buyerBonusBtn.addEventListener('click', awardBuyerBonus);
+    markSoldBtn.addEventListener('click', () => markSale(true));
+    markUnsoldBtn.addEventListener('click', () => markSale(false));
+    playAgainBtn.addEventListener('click', restartGame);
+
+    buildSetupInputs();
+    renderEmptyBoard();
+    updateTimerDisplay();
+  </script>
+</body>
+</html>

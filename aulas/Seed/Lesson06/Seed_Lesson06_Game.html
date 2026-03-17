@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Stylist Show | Seed Lesson 06</title>
+  <style>
+    :root {
+      --bg: #120f22;
+      --panel: #1d1834;
+      --panel-2: #2a2248;
+      --panel-3: #34285d;
+      --accent: #ff4fa3;
+      --accent-2: #ffd54f;
+      --green: #52d273;
+      --blue: #5bb3ff;
+      --text: #f7f4ff;
+      --muted: #b7adcf;
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(255,79,163,.25), transparent 35%),
+        radial-gradient(circle at right, rgba(91,179,255,.18), transparent 28%),
+        linear-gradient(135deg, #0c0a16, #171228 45%, #0f0b1d);
+      color: var(--text);
+    }
+
+    button, select, input {
+      font: inherit;
+    }
+
+    .hidden { display: none !important; }
+
+    .screen {
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: min(1180px, 100%);
+      background: rgba(29, 24, 52, .92);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .setup-card {
+      max-width: 900px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 22px;
+    }
+
+    .hero {
+      padding: 14px 8px 14px 6px;
+    }
+
+    .kicker {
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--accent-2);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #fff, #ffd54f, #ff7fc0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      max-width: 52ch;
+    }
+
+    .hero ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .hero li {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      color: #e8e1f8;
+    }
+
+    .setup-panel {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 22px;
+      padding: 20px;
+    }
+
+    .setup-panel h2 {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .setup-panel .sub {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-bottom: 18px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: .88rem;
+      margin-bottom: 7px;
+      color: #efeaff;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      padding: 12px 13px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(8,7,18,.5);
+      color: var(--text);
+    }
+
+    .player-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .player-input {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(255,255,255,.04);
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.06);
+    }
+
+    .player-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 12px 18px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform .15s ease, opacity .15s ease, background .15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+    .btn-primary { background: linear-gradient(90deg, var(--accent), #ff7fc0); color: white; }
+    .btn-secondary { background: rgba(255,255,255,.08); color: var(--text); border: 1px solid rgba(255,255,255,.12); }
+    .btn-gold { background: linear-gradient(90deg, #ffd54f, #ffb300); color: #281700; }
+    .btn-green { background: linear-gradient(90deg, #4ad46d, #7bf3a7); color: #09250f; }
+
+    #gameScreen {
+      min-height: 100vh;
+      padding: 18px;
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      background: rgba(29, 24, 52, .92);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .topbar h2 {
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+
+    .topbar small { color: var(--muted); }
+
+    .badge-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 700;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 280px 1fr 340px;
+      gap: 16px;
+      min-height: 0;
+      flex: 1;
+    }
+
+    .panel {
+      background: rgba(29, 24, 52, .92);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 16px 18px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .panel-header h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .panel-header p {
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.45;
+    }
+
+    .panel-body {
+      padding: 16px 18px 18px;
+    }
+
+    .players-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .player-card {
+      background: rgba(255,255,255,.05);
+      border: 2px solid transparent;
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .player-card.active {
+      border-color: var(--accent-2);
+      background: rgba(255,213,79,.10);
+    }
+
+    .player-card.done {
+      border-color: rgba(82,210,115,.8);
+      background: rgba(82,210,115,.10);
+    }
+
+    .player-card h4 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .player-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: .86rem;
+      color: var(--muted);
+    }
+
+    .theme-card {
+      background: linear-gradient(135deg, rgba(255,79,163,.18), rgba(91,179,255,.15));
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .theme-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+    }
+
+    .theme-card p {
+      color: #f3ebff;
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .chip {
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: .78rem;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+    }
+
+    .stylist-box {
+      display: grid;
+      grid-template-columns: minmax(250px, 340px) 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .mannequin {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 20px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .model {
+      position: relative;
+      width: 160px;
+      height: 340px;
+      margin: 0 auto 16px;
+    }
+
+    .head, .torso, .bottom, .feet, .hat, .label-pill {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 2px solid rgba(255,255,255,.24);
+    }
+
+    .head {
+      top: 0;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #ffd3b5;
+    }
+
+    .hat {
+      top: -12px;
+      width: 98px;
+      height: 28px;
+      border-radius: 50px 50px 16px 16px;
+      background: rgba(255,255,255,.14);
+      opacity: 0;
+    }
+
+    .torso {
+      top: 86px;
+      width: 110px;
+      height: 108px;
+      border-radius: 24px 24px 18px 18px;
+      background: #7b68ee;
+    }
+
+    .bottom {
+      top: 190px;
+      width: 104px;
+      height: 86px;
+      border-radius: 16px;
+      background: #5bb3ff;
+    }
+
+    .feet {
+      top: 284px;
+      width: 118px;
+      height: 28px;
+      border-radius: 14px;
+      background: #f9f9f9;
+    }
+
+    .label-pill {
+      top: 320px;
+      width: 150px;
+      min-height: 34px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      font-size: .8rem;
+      border-color: rgba(255,255,255,.12);
+    }
+
+    .preview-lines {
+      display: grid;
+      gap: 7px;
+      text-align: left;
+      font-size: .88rem;
+      color: #f8f6ff;
+    }
+
+    .preview-lines span {
+      color: var(--muted);
+      display: block;
+      font-size: .78rem;
+      margin-bottom: 2px;
+    }
+
+    .builder {
+      display: grid;
+      gap: 14px;
+    }
+
+    .builder-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .builder-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .builder-card h4 {
+      margin-bottom: 10px;
+      font-size: .95rem;
+    }
+
+    .builder-card small {
+      color: var(--muted);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .builder-card select {
+      width: 100%;
+      margin-top: 8px;
+      padding: 10px 11px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(8,7,18,.55);
+      color: var(--text);
+    }
+
+    .outfit-summary {
+      background: rgba(255,255,255,.05);
+      border: 1px dashed rgba(255,255,255,.14);
+      border-radius: 16px;
+      padding: 14px;
+      color: #eee8ff;
+      line-height: 1.65;
+    }
+
+    .outfit-summary strong {
+      color: var(--accent-2);
+    }
+
+    .results-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .result-card {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .result-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      font-size: 1.1rem;
+      letter-spacing: .1em;
+    }
+
+    .judge-list {
+      margin-top: 10px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .judge-item {
+      background: rgba(255,255,255,.04);
+      border-radius: 14px;
+      padding: 10px 12px;
+      font-size: .88rem;
+      color: #f0ecff;
+    }
+
+    .judge-item span {
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .ranking-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .rank-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .rank-card.winner {
+      background: rgba(255,213,79,.12);
+      border-color: rgba(255,213,79,.6);
+    }
+
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+    }
+
+    .history-table th,
+    .history-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .history-table th {
+      color: var(--accent-2);
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .muted { color: var(--muted); }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%);
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(8,7,18,.92);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow);
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s ease;
+      z-index: 20;
+    }
+
+    .toast.show { opacity: 1; }
+
+    @media (max-width: 1100px) {
+      .layout { grid-template-columns: 1fr; }
+      .stylist-box { grid-template-columns: 1fr; }
+      .setup-card { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .screen, #gameScreen { padding: 12px; }
+      .player-grid, .builder-grid { grid-template-columns: 1fr; }
+      .topbar { flex-direction: column; align-items: flex-start; }
+      .badge-row { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div id="setupScreen" class="screen">
+    <div class="card setup-card">
+      <section class="hero">
+        <div class="kicker">SpeakUp · Seed Lesson 06</div>
+        <h1><span class="gradient">Fashion Stylist Show</span></h1>
+        <p>
+          Os jogadores viram estilistas em um grande evento de moda. Em cada rodada,
+          eles escolhem cores e roupas para montar um look em inglês. No fim do desfile,
+          três jurados dão notas de <strong>1 a 5</strong>.
+        </p>
+        <ul>
+          <li><strong>Vocabulário:</strong> colors + clothes da Lesson 06.</li>
+          <li><strong>Frase-alvo:</strong> <em>I'm wearing a blue shirt and black shoes.</em></li>
+          <li><strong>Jogadores:</strong> até 6 estilistas por partida.</li>
+          <li><strong>Rodadas:</strong> temas diferentes de moda para manter o jogo variado.</li>
+        </ul>
+      </section>
+
+      <section class="setup-panel">
+        <h2>Configurar partida</h2>
+        <div class="sub">Escolha o número de rodadas e os nomes dos estilistas.</div>
+
+        <div class="field">
+          <label for="roundCount">Número de rodadas</label>
+          <select id="roundCount">
+            <option value="3">3 rodadas</option>
+            <option value="4" selected>4 rodadas</option>
+            <option value="5">5 rodadas</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Jogadores (1 a 6)</label>
+          <div id="playerInputs" class="player-grid"></div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="removePlayerBtn" type="button">− Remover</button>
+          <button class="btn btn-secondary" id="addPlayerBtn" type="button">+ Adicionar</button>
+          <button class="btn btn-primary" id="startBtn" type="button">Start Fashion Show</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <main id="gameScreen">
+    <header class="topbar">
+      <div>
+        <h2>Fashion Stylist Show</h2>
+        <small>Monte looks com <strong>color + clothes</strong> e impressione os jurados.</small>
+      </div>
+      <div class="badge-row">
+        <div class="badge" id="roundBadge">Round 1</div>
+        <div class="badge" id="playerBadge">Stylist: Player 1</div>
+        <div class="badge" id="scoreBadge">Total: 0</div>
+      </div>
+    </header>
+
+    <section class="layout">
+      <aside class="panel">
+        <div class="panel-header">
+          <h3>Stylist Team</h3>
+          <p>Quem já montou o look da rodada?</p>
+        </div>
+        <div class="panel-body">
+          <div id="playersList" class="players-list"></div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-body">
+          <div id="builderView">
+            <div id="themeCard" class="theme-card"></div>
+            <div class="stylist-box">
+              <div class="mannequin">
+                <div class="model">
+                  <div class="hat" id="previewHat"></div>
+                  <div class="head"></div>
+                  <div class="torso" id="previewTop"></div>
+                  <div class="bottom" id="previewBottom"></div>
+                  <div class="feet" id="previewFootwear"></div>
+                  <div class="label-pill" id="previewAccessoryLabel">No accessory yet</div>
+                </div>
+                <div class="preview-lines" id="previewLines"></div>
+              </div>
+
+              <div class="builder">
+                <div class="builder-grid">
+                  <div class="builder-card">
+                    <h4>Top piece</h4>
+                    <small>Escolha uma roupa e uma cor.</small>
+                    <select id="topItem"></select>
+                    <select id="topColor"></select>
+                  </div>
+                  <div class="builder-card">
+                    <h4>Bottom piece</h4>
+                    <small>Combine com o top.</small>
+                    <select id="bottomItem"></select>
+                    <select id="bottomColor"></select>
+                  </div>
+                  <div class="builder-card">
+                    <h4>Footwear</h4>
+                    <small>Finalize o estilo.</small>
+                    <select id="footwearItem"></select>
+                    <select id="footwearColor"></select>
+                  </div>
+                  <div class="builder-card">
+                    <h4>Accessory</h4>
+                    <small>Adicione um detalhe fashion.</small>
+                    <select id="accessoryItem"></select>
+                    <select id="accessoryColor"></select>
+                  </div>
+                </div>
+
+                <div class="outfit-summary" id="outfitSummary"></div>
+
+                <div class="btn-row">
+                  <button class="btn btn-primary" id="saveLookBtn" type="button">Save look & rate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="resultsView" class="hidden">
+            <div class="theme-card" id="resultsThemeCard"></div>
+            <div id="resultsGrid" class="results-grid"></div>
+            <div class="btn-row">
+              <button class="btn btn-gold" id="nextRoundBtn" type="button">Next round</button>
+              <button class="btn btn-green hidden" id="showFinalBtn" type="button">Show final ranking</button>
+            </div>
+          </div>
+
+          <div id="finalView" class="hidden">
+            <div class="theme-card" id="finalThemeCard"></div>
+            <div class="panel" style="background: rgba(255,255,255,.03); border-radius: 18px; border: 1px solid rgba(255,255,255,.08); margin-bottom: 16px; box-shadow:none;">
+              <div class="panel-header">
+                <h3>Final ranking</h3>
+                <p>Quem brilhou mais na passarela?</p>
+              </div>
+              <div class="panel-body">
+                <div id="rankingList" class="ranking-list"></div>
+              </div>
+            </div>
+
+            <div class="panel" style="background: rgba(255,255,255,.03); border-radius: 18px; border: 1px solid rgba(255,255,255,.08); box-shadow:none;">
+              <div class="panel-header">
+                <h3>Round history</h3>
+                <p>Resumo dos looks e notas de cada rodada.</p>
+              </div>
+              <div class="panel-body" style="overflow:auto;">
+                <table class="history-table">
+                  <thead>
+                    <tr>
+                      <th>Round</th>
+                      <th>Stylist</th>
+                      <th>Look</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody id="historyBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="btn-row" style="margin-top: 16px;">
+              <button class="btn btn-primary" id="restartBtn" type="button">Play again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-header">
+          <h3>Teacher corner</h3>
+          <p>Use o jogo para praticar a frase-alvo em voz alta.</p>
+        </div>
+        <div class="panel-body">
+          <div class="theme-card" style="margin-bottom: 14px;">
+            <h3 style="font-size:1.05rem;">Useful English</h3>
+            <p>
+              <strong>I'm wearing</strong> a red shirt and black shoes.<br />
+              <strong>She is wearing</strong> a blue dress.<br />
+              <strong>What color</strong> are your sneakers?
+            </p>
+          </div>
+
+          <div id="sideSummary" class="outfit-summary">
+            Waiting for the first stylist...
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    const PLAYER_COLORS = ['#ff6cab', '#5bb3ff', '#52d273', '#ffd54f', '#c084fc', '#ff9966'];
+
+    const COLOR_OPTIONS = [
+      { value: 'red', label: 'Red', hex: '#ff4d5a' },
+      { value: 'blue', label: 'Blue', hex: '#4da6ff' },
+      { value: 'green', label: 'Green', hex: '#4bd16f' },
+      { value: 'yellow', label: 'Yellow', hex: '#ffd84d' },
+      { value: 'orange', label: 'Orange', hex: '#ff9f43' },
+      { value: 'purple', label: 'Purple', hex: '#9b6bff' },
+      { value: 'pink', label: 'Pink', hex: '#ff7fc8' },
+      { value: 'black', label: 'Black', hex: '#2d2d2d' },
+      { value: 'white', label: 'White', hex: '#f5f5f5' },
+      { value: 'brown', label: 'Brown', hex: '#8d5a3b' },
+      { value: 'gray', label: 'Gray', hex: '#9ca3af' }
+    ];
+
+    const CLOTHES = {
+      top: [
+        { value: 'shirt', label: 'shirt' },
+        { value: 't-shirt', label: 't-shirt' },
+        { value: 'jacket', label: 'jacket' },
+        { value: 'coat', label: 'coat' },
+        { value: 'sweater', label: 'sweater' },
+        { value: 'dress', label: 'dress' }
+      ],
+      bottom: [
+        { value: 'pants', label: 'pants' },
+        { value: 'jeans', label: 'jeans' },
+        { value: 'skirt', label: 'skirt' },
+        { value: 'shorts', label: 'shorts' }
+      ],
+      footwear: [
+        { value: 'shoes', label: 'shoes' },
+        { value: 'sneakers', label: 'sneakers' },
+        { value: 'boots', label: 'boots' }
+      ],
+      accessory: [
+        { value: 'hat', label: 'hat' },
+        { value: 'cap', label: 'cap' },
+        { value: 'socks', label: 'socks' }
+      ]
+    };
+
+    const THEMES = [
+      {
+        name: 'Red Carpet Night',
+        prompt: 'Create a fancy look for a glamorous fashion event.',
+        preferredColors: ['black', 'red', 'white', 'purple'],
+        preferredItems: ['dress', 'jacket', 'coat', 'boots', 'shoes'],
+        bonusText: 'Bonus for elegant colors and fancy pieces.'
+      },
+      {
+        name: 'Sunny Summer Show',
+        prompt: 'Build a bright, happy outfit for a summer runway.',
+        preferredColors: ['yellow', 'orange', 'pink', 'white', 'blue'],
+        preferredItems: ['t-shirt', 'shorts', 'skirt', 'cap', 'sneakers'],
+        bonusText: 'Bonus for bright colors and relaxed summer clothes.'
+      },
+      {
+        name: 'Cool Street Style',
+        prompt: 'Design a modern city look for a street fashion event.',
+        preferredColors: ['blue', 'black', 'gray', 'green'],
+        preferredItems: ['jeans', 'jacket', 'shirt', 'sneakers', 'cap'],
+        bonusText: 'Bonus for jeans, jackets and urban combinations.'
+      },
+      {
+        name: 'Color Pop Party',
+        prompt: 'The audience wants fun colors and a playful outfit.',
+        preferredColors: ['pink', 'purple', 'green', 'orange', 'red'],
+        preferredItems: ['dress', 'skirt', 'hat', 'sweater', 'shoes'],
+        bonusText: 'Bonus for colorful looks with strong personality.'
+      },
+      {
+        name: 'Winter Fashion Week',
+        prompt: 'Prepare a warm look for a cold-weather catwalk.',
+        preferredColors: ['brown', 'gray', 'black', 'white', 'blue'],
+        preferredItems: ['coat', 'sweater', 'boots', 'jacket', 'socks'],
+        bonusText: 'Bonus for cozy items and winter-friendly styling.'
+      }
+    ];
+
+    const JUDGES = [
+      'Ms. Glitter',
+      'Mr. Runway',
+      'DJ Fashion Star'
+    ];
+
+    const state = {
+      playerCount: 2,
+      players: [],
+      round: 0,
+      roundsToPlay: 4,
+      currentPlayerIndex: 0,
+      currentSelections: null,
+      roundResults: []
+    };
+
+    const playerInputs = document.getElementById('playerInputs');
+    const roundCount = document.getElementById('roundCount');
+    const addPlayerBtn = document.getElementById('addPlayerBtn');
+    const removePlayerBtn = document.getElementById('removePlayerBtn');
+    const startBtn = document.getElementById('startBtn');
+    const setupScreen = document.getElementById('setupScreen');
+    const gameScreen = document.getElementById('gameScreen');
+    const playersList = document.getElementById('playersList');
+    const themeCard = document.getElementById('themeCard');
+    const resultsThemeCard = document.getElementById('resultsThemeCard');
+    const finalThemeCard = document.getElementById('finalThemeCard');
+    const roundBadge = document.getElementById('roundBadge');
+    const playerBadge = document.getElementById('playerBadge');
+    const scoreBadge = document.getElementById('scoreBadge');
+    const sideSummary = document.getElementById('sideSummary');
+    const builderView = document.getElementById('builderView');
+    const resultsView = document.getElementById('resultsView');
+    const finalView = document.getElementById('finalView');
+    const resultsGrid = document.getElementById('resultsGrid');
+    const rankingList = document.getElementById('rankingList');
+    const historyBody = document.getElementById('historyBody');
+    const nextRoundBtn = document.getElementById('nextRoundBtn');
+    const showFinalBtn = document.getElementById('showFinalBtn');
+    const restartBtn = document.getElementById('restartBtn');
+    const saveLookBtn = document.getElementById('saveLookBtn');
+    const outfitSummary = document.getElementById('outfitSummary');
+    const previewTop = document.getElementById('previewTop');
+    const previewBottom = document.getElementById('previewBottom');
+    const previewFootwear = document.getElementById('previewFootwear');
+    const previewHat = document.getElementById('previewHat');
+    const previewAccessoryLabel = document.getElementById('previewAccessoryLabel');
+    const previewLines = document.getElementById('previewLines');
+    const toast = document.getElementById('toast');
+
+    const controls = {
+      topItem: document.getElementById('topItem'),
+      topColor: document.getElementById('topColor'),
+      bottomItem: document.getElementById('bottomItem'),
+      bottomColor: document.getElementById('bottomColor'),
+      footwearItem: document.getElementById('footwearItem'),
+      footwearColor: document.getElementById('footwearColor'),
+      accessoryItem: document.getElementById('accessoryItem'),
+      accessoryColor: document.getElementById('accessoryColor')
+    };
+
+    function renderSetupInputs() {
+      playerInputs.innerHTML = '';
+
+      for (let i = 0; i < state.playerCount; i += 1) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'player-input';
+        wrapper.innerHTML = `
+          <span class="player-dot" style="background:${PLAYER_COLORS[i]}"></span>
+          <input type="text" id="playerName${i}" value="Stylist ${i + 1}" maxlength="18" />
+        `;
+        playerInputs.appendChild(wrapper);
+      }
+
+      addPlayerBtn.disabled = state.playerCount >= 6;
+      removePlayerBtn.disabled = state.playerCount <= 1;
+    }
+
+    function fillSelect(selectEl, items, formatter) {
+      selectEl.innerHTML = items.map((item) => {
+        const value = item.value || item;
+        const label = formatter ? formatter(item) : item.label || item;
+        return `<option value="${value}">${label}</option>`;
+      }).join('');
+    }
+
+    function getColorData(value) {
+      return COLOR_OPTIONS.find((color) => color.value === value) || COLOR_OPTIONS[0];
+    }
+
+    function getTheme() {
+      return THEMES[state.round % THEMES.length];
+    }
+
+    function readSelections() {
+      return {
+        top: { item: controls.topItem.value, color: controls.topColor.value },
+        bottom: { item: controls.bottomItem.value, color: controls.bottomColor.value },
+        footwear: { item: controls.footwearItem.value, color: controls.footwearColor.value },
+        accessory: { item: controls.accessoryItem.value, color: controls.accessoryColor.value }
+      };
+    }
+
+    function formatPiece(piece) {
+      return `${piece.color} ${piece.item}`;
+    }
+
+    function formatLookSentence(selections) {
+      return `I'm wearing a ${selections.top.color} ${selections.top.item}, ${selections.bottom.color} ${selections.bottom.item}, ${selections.footwear.color} ${selections.footwear.item}, and a ${selections.accessory.color} ${selections.accessory.item}.`;
+    }
+
+    function updatePreview() {
+      const selections = readSelections();
+      state.currentSelections = selections;
+
+      previewTop.style.background = getColorData(selections.top.color).hex;
+      previewBottom.style.background = getColorData(selections.bottom.color).hex;
+      previewFootwear.style.background = getColorData(selections.footwear.color).hex;
+      previewHat.style.background = getColorData(selections.accessory.color).hex;
+      previewHat.style.opacity = selections.accessory.item === 'hat' || selections.accessory.item === 'cap' ? '1' : '.15';
+      previewAccessoryLabel.textContent = `${selections.accessory.color} ${selections.accessory.item}`;
+
+      previewLines.innerHTML = `
+        <div><span>Top</span>${selections.top.color} ${selections.top.item}</div>
+        <div><span>Bottom</span>${selections.bottom.color} ${selections.bottom.item}</div>
+        <div><span>Footwear</span>${selections.footwear.color} ${selections.footwear.item}</div>
+        <div><span>Accessory</span>${selections.accessory.color} ${selections.accessory.item}</div>
+      `;
+
+      outfitSummary.innerHTML = `
+        <strong>Runway sentence:</strong><br />
+        ${formatLookSentence(selections)}
+      `;
+
+      sideSummary.innerHTML = `
+        <strong>Current stylist:</strong> ${state.players[state.currentPlayerIndex]?.name || '-'}<br /><br />
+        <strong>Theme:</strong> ${getTheme().name}<br />
+        <strong>Prompt:</strong> ${getTheme().prompt}<br /><br />
+        <strong>Model sentence:</strong><br />${formatLookSentence(selections)}
+      `;
+    }
+
+    function renderPlayersPanel() {
+      playersList.innerHTML = state.players.map((player, index) => {
+        const isActive = index === state.currentPlayerIndex && !allPlayersDoneThisRound();
+        const thisRound = player.results[state.round];
+        const total = player.totalScore;
+        const statusClass = thisRound ? 'done' : (isActive ? 'active' : '');
+        const statusLabel = thisRound ? 'Look ready' : (isActive ? 'Styling now' : 'Waiting');
+
+        return `
+          <div class="player-card ${statusClass}">
+            <h4>${player.name}</h4>
+            <div class="player-meta">
+              <span>${statusLabel}</span>
+              <span>${total} pts</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderThemeCard() {
+      const theme = getTheme();
+      themeCard.innerHTML = `
+        <h3>${theme.name}</h3>
+        <p>${theme.prompt}</p>
+        <div class="chips">
+          <span class="chip">Preferred colors: ${theme.preferredColors.join(', ')}</span>
+          <span class="chip">Style hint: ${theme.bonusText}</span>
+        </div>
+      `;
+      resultsThemeCard.innerHTML = themeCard.innerHTML;
+    }
+
+    function refreshTopBar() {
+      const player = state.players[state.currentPlayerIndex];
+      roundBadge.textContent = `Round ${state.round + 1} / ${state.roundsToPlay}`;
+      playerBadge.textContent = allPlayersDoneThisRound()
+        ? 'All looks ready'
+        : `Stylist: ${player.name}`;
+      scoreBadge.textContent = player ? `Total: ${player.totalScore}` : 'Total: 0';
+    }
+
+    function allPlayersDoneThisRound() {
+      return state.players.length > 0 && state.players.every((player) => Boolean(player.results[state.round]));
+    }
+
+    function advancePlayerPointer() {
+      const nextIndex = state.players.findIndex((player) => !player.results[state.round]);
+      state.currentPlayerIndex = nextIndex === -1 ? 0 : nextIndex;
+    }
+
+    function calculateScore(selections, theme, playerIndex) {
+      let points = 1.6;
+      const colors = [selections.top.color, selections.bottom.color, selections.footwear.color, selections.accessory.color];
+      const items = [selections.top.item, selections.bottom.item, selections.footwear.item, selections.accessory.item];
+      const uniqueColors = new Set(colors);
+
+      colors.forEach((color) => {
+        if (theme.preferredColors.includes(color)) points += 0.35;
+      });
+
+      items.forEach((item) => {
+        if (theme.preferredItems.includes(item)) points += 0.28;
+      });
+
+      if (uniqueColors.size <= 3) points += 0.35;
+      if (selections.top.color === selections.bottom.color || selections.top.color === selections.accessory.color) points += 0.3;
+      if (selections.top.item === 'dress' && (selections.bottom.item === 'skirt' || selections.bottom.item === 'shorts')) points -= 0.35;
+      if (theme.name === 'Winter Fashion Week' && (selections.bottom.item === 'shorts' || selections.bottom.item === 'skirt')) points -= 0.2;
+      if (theme.name === 'Sunny Summer Show' && (selections.top.item === 'coat' || selections.footwear.item === 'boots')) points -= 0.2;
+
+      const textureBonus = ((playerIndex + 1) * (state.round + 2)) % 3;
+      points += textureBonus * 0.12;
+
+      const finalScore = Math.max(1, Math.min(5, Math.round(points)));
+      return finalScore;
+    }
+
+    function buildJudgeVotes(score, playerName, selections, theme) {
+      const notes = [];
+      for (let i = 0; i < JUDGES.length; i += 1) {
+        const shift = ((playerName.length + i + state.round) % 3) - 1;
+        const vote = Math.max(1, Math.min(5, score + shift));
+        const compliment = vote >= 4
+          ? `loves the ${selections.top.color} ${selections.top.item}`
+          : vote === 3
+            ? `thinks the look is good, but wants more ${theme.preferredColors[0] || 'style'}`
+            : `wants a stronger match with the theme`;
+
+        notes.push({ judge: JUDGES[i], vote, text: `${JUDGES[i]} ${compliment}.` });
+      }
+      return notes;
+    }
+
+    function getRoundComment(score, theme) {
+      if (score === 5) return `Amazing! Perfect for ${theme.name}.`;
+      if (score === 4) return `Great runway choice! Strong match for the theme.`;
+      if (score === 3) return `Good look! A little more coordination could help.`;
+      if (score === 2) return `Nice try! Try using more theme colors next time.`;
+      return `Creative effort! Let's build a stronger look next round.`;
+    }
+
+    function saveCurrentLook() {
+      const player = state.players[state.currentPlayerIndex];
+      const theme = getTheme();
+      const selections = readSelections();
+      const score = calculateScore(selections, theme, state.currentPlayerIndex);
+      const judgeVotes = buildJudgeVotes(score, player.name, selections, theme);
+      const result = {
+        theme: theme.name,
+        round: state.round + 1,
+        selections,
+        sentence: formatLookSentence(selections),
+        score,
+        judgeVotes,
+        comment: getRoundComment(score, theme)
+      };
+
+      player.results[state.round] = result;
+      player.totalScore += score;
+      state.roundResults.push({ player: player.name, ...result });
+
+      showToast(`${player.name} received ${score}/5!`);
+
+      if (allPlayersDoneThisRound()) {
+        showRoundResults();
+      } else {
+        advancePlayerPointer();
+        refreshBuilderForPlayer();
+      }
+    }
+
+    function showRoundResults() {
+      builderView.classList.add('hidden');
+      finalView.classList.add('hidden');
+      resultsView.classList.remove('hidden');
+
+      const roundEntries = state.players.map((player) => ({ name: player.name, ...player.results[state.round] }));
+      resultsGrid.innerHTML = roundEntries.map((entry) => {
+        const stars = '★'.repeat(entry.score) + '☆'.repeat(5 - entry.score);
+        return `
+          <article class="result-card">
+            <div class="result-top">
+              <div>
+                <h3>${entry.name}</h3>
+                <p class="muted">${entry.sentence}</p>
+              </div>
+              <div class="stars" aria-label="${entry.score} stars">${stars}</div>
+            </div>
+            <p><strong>Round note:</strong> ${entry.comment}</p>
+            <div class="chips" style="margin-bottom:10px;">
+              <span class="chip">Top: ${formatPiece(entry.selections.top)}</span>
+              <span class="chip">Bottom: ${formatPiece(entry.selections.bottom)}</span>
+              <span class="chip">Footwear: ${formatPiece(entry.selections.footwear)}</span>
+              <span class="chip">Accessory: ${formatPiece(entry.selections.accessory)}</span>
+            </div>
+            <div class="judge-list">
+              ${entry.judgeVotes.map((vote) => `
+                <div class="judge-item"><span>${vote.judge}:</span> ${vote.vote}/5 — ${vote.text}</div>
+              `).join('')}
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      nextRoundBtn.classList.toggle('hidden', state.round >= state.roundsToPlay - 1);
+      showFinalBtn.classList.toggle('hidden', state.round < state.roundsToPlay - 1);
+      refreshTopBar();
+      renderPlayersPanel();
+      sideSummary.innerHTML = '<strong>Round complete!</strong><br /><br />Ask students to read their outfit sentences aloud before moving on.';
+    }
+
+    function refreshBuilderForPlayer() {
+      builderView.classList.remove('hidden');
+      resultsView.classList.add('hidden');
+      finalView.classList.add('hidden');
+      renderThemeCard();
+      refreshTopBar();
+      renderPlayersPanel();
+      seedSelections();
+      updatePreview();
+    }
+
+    function seedSelections() {
+      const colorSeed = state.currentPlayerIndex + state.round;
+      controls.topItem.selectedIndex = (state.currentPlayerIndex + state.round) % CLOTHES.top.length;
+      controls.topColor.selectedIndex = colorSeed % COLOR_OPTIONS.length;
+      controls.bottomItem.selectedIndex = (state.currentPlayerIndex + state.round + 1) % CLOTHES.bottom.length;
+      controls.bottomColor.selectedIndex = (colorSeed + 2) % COLOR_OPTIONS.length;
+      controls.footwearItem.selectedIndex = (state.currentPlayerIndex + 1) % CLOTHES.footwear.length;
+      controls.footwearColor.selectedIndex = (colorSeed + 4) % COLOR_OPTIONS.length;
+      controls.accessoryItem.selectedIndex = (state.currentPlayerIndex + state.round) % CLOTHES.accessory.length;
+      controls.accessoryColor.selectedIndex = (colorSeed + 6) % COLOR_OPTIONS.length;
+    }
+
+    function nextRound() {
+      state.round += 1;
+      state.currentPlayerIndex = 0;
+      refreshBuilderForPlayer();
+    }
+
+    function showFinalRanking() {
+      builderView.classList.add('hidden');
+      resultsView.classList.add('hidden');
+      finalView.classList.remove('hidden');
+
+      const ranking = [...state.players].sort((a, b) => b.totalScore - a.totalScore);
+      const winner = ranking[0];
+
+      finalThemeCard.innerHTML = `
+        <h3>Fashion show finished!</h3>
+        <p><strong>${winner.name}</strong> is the runway champion with <strong>${winner.totalScore}</strong> points.</p>
+        <div class="chips">
+          <span class="chip">Players: ${state.players.length}</span>
+          <span class="chip">Rounds: ${state.roundsToPlay}</span>
+        </div>
+      `;
+
+      rankingList.innerHTML = ranking.map((player, index) => `
+        <div class="rank-card ${index === 0 ? 'winner' : ''}">
+          <div>
+            <strong>#${index + 1} ${player.name}</strong><br />
+            <span class="muted">Average: ${(player.totalScore / state.roundsToPlay).toFixed(1)} / 5</span>
+          </div>
+          <div><strong>${player.totalScore}</strong> pts</div>
+        </div>
+      `).join('');
+
+      historyBody.innerHTML = state.roundResults.map((entry) => `
+        <tr>
+          <td>Round ${entry.round}</td>
+          <td>${entry.player}</td>
+          <td>${entry.sentence}</td>
+          <td>${entry.score}/5</td>
+        </tr>
+      `).join('');
+
+      playerBadge.textContent = 'Show complete';
+      scoreBadge.textContent = `Winner: ${winner.name}`;
+      sideSummary.innerHTML = '<strong>Teacher tip:</strong><br /><br />Use the final ranking to review colors, clothes, and the sentence pattern “I\'m wearing...”.';
+      renderPlayersPanel();
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      window.clearTimeout(showToast.timer);
+      showToast.timer = window.setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    function startGame() {
+      const players = [];
+      for (let i = 0; i < state.playerCount; i += 1) {
+        const input = document.getElementById(`playerName${i}`);
+        const name = input.value.trim() || `Stylist ${i + 1}`;
+        players.push({ name, color: PLAYER_COLORS[i], totalScore: 0, results: [] });
+      }
+
+      state.players = players;
+      state.round = 0;
+      state.currentPlayerIndex = 0;
+      state.roundsToPlay = Number(roundCount.value);
+      state.roundResults = [];
+
+      setupScreen.style.display = 'none';
+      gameScreen.style.display = 'flex';
+
+      refreshBuilderForPlayer();
+    }
+
+    function restartGame() {
+      gameScreen.style.display = 'none';
+      setupScreen.style.display = 'flex';
+      renderSetupInputs();
+    }
+
+    function bindControlEvents() {
+      Object.values(controls).forEach((control) => {
+        control.addEventListener('change', updatePreview);
+      });
+
+      addPlayerBtn.addEventListener('click', () => {
+        if (state.playerCount < 6) {
+          state.playerCount += 1;
+          renderSetupInputs();
+        }
+      });
+
+      removePlayerBtn.addEventListener('click', () => {
+        if (state.playerCount > 1) {
+          state.playerCount -= 1;
+          renderSetupInputs();
+        }
+      });
+
+      startBtn.addEventListener('click', startGame);
+      saveLookBtn.addEventListener('click', saveCurrentLook);
+      nextRoundBtn.addEventListener('click', nextRound);
+      showFinalBtn.addEventListener('click', showFinalRanking);
+      restartBtn.addEventListener('click', restartGame);
+    }
+
+    function initSelects() {
+      fillSelect(controls.topItem, CLOTHES.top);
+      fillSelect(controls.bottomItem, CLOTHES.bottom);
+      fillSelect(controls.footwearItem, CLOTHES.footwear);
+      fillSelect(controls.accessoryItem, CLOTHES.accessory);
+
+      Object.values(controls)
+        .filter((control) => control.id.toLowerCase().includes('color'))
+        .forEach((control) => fillSelect(control, COLOR_OPTIONS, (item) => item.label));
+    }
+
+    initSelects();
+    bindControlEvents();
+    renderSetupInputs();
+    seedSelections();
+    updatePreview();
+  </script>
+</body>
+</html>

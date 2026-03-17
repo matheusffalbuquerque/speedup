@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDIOM QUEST 🗝️ | Fruit Lesson 3</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+    :root {
+      --cell: 80px;
+      --gap: 3px;
+      --pad: 4px;
+      --c-idiom:   #E8920A;
+      --c-phrasal: #3B9EDB;
+      --c-stage:   #9B59B6;
+      --c-review:  #27AE60;
+      --c-start:   #E74C3C;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family:'Poppins',sans-serif;
+      background: radial-gradient(ellipse at 25% 15%, #1a0d2e 0%, #07050f 70%);
+      color:#fff;
+      min-height:100vh;
+      overflow:hidden;
+    }
+
+    .screen { display:none; width:100vw; height:100vh; }
+    .screen.active { display:flex; }
+
+    /* ══ SETUP ══ */
+    #setup-screen {
+      flex-direction:column; align-items:center; justify-content:center;
+      gap:22px; padding:24px;
+    }
+    .game-logo { text-align:center; }
+    .game-logo h1 {
+      font-size:2.9em; font-weight:900;
+      background:linear-gradient(135deg,#E8920A 0%,#E040FB 55%,#3B9EDB 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text; letter-spacing:-1px;
+    }
+    .logo-sub  { font-size:0.82em; color:#6655aa; margin-top:3px; }
+    .logo-badge {
+      display:inline-block;
+      background:rgba(232,146,10,0.15);
+      border:1px solid rgba(232,146,10,0.35);
+      color:#E8920A; border-radius:50px;
+      padding:2px 15px; font-size:0.72em; margin-top:8px;
+    }
+    .setup-card {
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.09);
+      border-radius:20px; padding:24px 32px;
+      width:100%; max-width:460px;
+    }
+    .setup-label {
+      font-size:0.65em; font-weight:700;
+      text-transform:uppercase; letter-spacing:2px;
+      color:#556688; margin-bottom:10px;
+    }
+    .count-row { display:flex; gap:8px; margin-bottom:22px; }
+    .count-btn {
+      flex:1; padding:11px;
+      border:2px solid rgba(255,255,255,0.12);
+      background:transparent; color:#fff;
+      border-radius:12px; font-family:inherit;
+      font-size:1.2em; font-weight:700; cursor:pointer; transition:all 0.2s;
+    }
+    .count-btn:hover { background:rgba(255,255,255,0.07); }
+    .count-btn.active { border-color:#E8920A; background:rgba(232,146,10,0.18); color:#E8920A; }
+    .player-inputs { display:flex; flex-direction:column; gap:9px; margin-bottom:20px; }
+    .prow { display:flex; align-items:center; gap:10px; }
+    .prow-dot { width:14px; height:14px; border-radius:50%; flex-shrink:0; }
+    .prow input {
+      flex:1; background:rgba(255,255,255,0.07);
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:10px; padding:9px 13px;
+      color:#fff; font-family:inherit; font-size:0.88em;
+      outline:none; transition:border 0.2s;
+    }
+    .prow input:focus { border-color:rgba(255,255,255,0.35); }
+    .start-btn {
+      width:100%; padding:13px;
+      background:linear-gradient(135deg,#E8920A,#c0392b);
+      border:none; border-radius:13px; color:#fff;
+      font-family:inherit; font-size:1em; font-weight:700;
+      cursor:pointer; letter-spacing:1px; transition:all 0.25s;
+    }
+    .start-btn:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(232,146,10,0.4); }
+    .setup-hint {
+      font-size:0.72em; color:#445566;
+      text-align:center; max-width:420px; line-height:1.75;
+    }
+
+    /* ══ GAME SCREEN ══ */
+    #game-screen { flex-direction:row; align-items:stretch; }
+
+    .board-area {
+      flex:1; display:flex;
+      align-items:center; justify-content:center;
+      padding:16px; overflow:hidden;
+    }
+    .board-wrapper { position:relative; }
+    .board {
+      display:grid;
+      grid-template-columns:repeat(6, var(--cell));
+      grid-template-rows:repeat(6, var(--cell));
+      gap:var(--gap);
+      background:#060310;
+      border:2px solid rgba(232,146,10,0.22);
+      border-radius:16px;
+      padding:var(--pad);
+      position:relative;
+    }
+
+    /* Board center */
+    .board-center {
+      grid-column:2/6; grid-row:2/6;
+      background:linear-gradient(145deg,#130a20,#1c1030);
+      border-radius:10px;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:6px;
+      border:1px solid rgba(255,255,255,0.06);
+      position:relative; overflow:hidden;
+    }
+    .board-center::before {
+      content:'';
+      position:absolute; inset:0;
+      background:
+        repeating-linear-gradient(0deg,transparent,transparent 22px,rgba(255,255,255,0.015) 22px,rgba(255,255,255,0.015) 23px),
+        repeating-linear-gradient(90deg,transparent,transparent 22px,rgba(255,255,255,0.015) 22px,rgba(255,255,255,0.015) 23px);
+    }
+    .bc-icon { font-size:2.8em; position:relative; z-index:1; }
+    .bc-name {
+      font-size:0.85em; font-weight:800;
+      letter-spacing:3px; color:rgba(255,255,255,0.45);
+      text-transform:uppercase; position:relative; z-index:1;
+    }
+    .bc-sub {
+      font-size:0.52em; color:rgba(255,255,255,0.22);
+      letter-spacing:1px; position:relative; z-index:1;
+    }
+
+    /* Board spaces */
+    .space {
+      border-radius:7px;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:1px; position:relative;
+      border:1px solid rgba(255,255,255,0.07);
+      font-size:0.58em; text-align:center;
+      padding:3px 2px; overflow:hidden;
+      transition:box-shadow 0.3s;
+    }
+    .space-num {
+      position:absolute; top:3px; left:5px;
+      font-size:0.82em; font-weight:700; opacity:0.45;
+    }
+    .space-icon { font-size:1.9em; line-height:1; }
+    .space-lbl  { font-size:0.88em; font-weight:600; line-height:1.15; padding:0 2px; }
+
+    .space.type-start   { background:rgba(231,76,60,0.18);   border-color:rgba(231,76,60,0.45);   }
+    .space.type-idiom   { background:rgba(232,146,10,0.14);  border-color:rgba(232,146,10,0.38);  }
+    .space.type-phrasal { background:rgba(59,158,219,0.14);  border-color:rgba(59,158,219,0.38);  }
+    .space.type-stage   { background:rgba(155,89,182,0.14);  border-color:rgba(155,89,182,0.38);  }
+    .space.type-review  { background:rgba(39,174,96,0.14);   border-color:rgba(39,174,96,0.38);   }
+
+    .space.highlight {
+      animation:pulseSpace 0.9s ease-in-out infinite; z-index:2;
+    }
+    @keyframes pulseSpace {
+      0%,100% { box-shadow:0 0 0 0 rgba(255,230,50,0.55); }
+      50%      { box-shadow:0 0 0 8px rgba(255,230,50,0);  }
+    }
+
+    /* Tokens */
+    .tokens-layer {
+      position:absolute; top:var(--pad); left:var(--pad);
+      pointer-events:none; z-index:10;
+    }
+    .token {
+      position:absolute;
+      width:21px; height:21px; border-radius:50%;
+      border:2px solid rgba(255,255,255,0.85);
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.5em; font-weight:800; color:#fff;
+      text-shadow:0 1px 3px rgba(0,0,0,0.9);
+      transition:top 0.45s cubic-bezier(0.4,0,0.2,1), left 0.45s cubic-bezier(0.4,0,0.2,1);
+      box-shadow:0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    /* ══ SIDE PANEL ══ */
+    .side-panel {
+      width:270px;
+      background:rgba(255,255,255,0.022);
+      border-left:1px solid rgba(255,255,255,0.065);
+      display:flex; flex-direction:column;
+      overflow-y:auto; flex-shrink:0;
+    }
+    .p-sec { padding:14px 16px; border-bottom:1px solid rgba(255,255,255,0.05); }
+    .p-title {
+      font-size:0.6em; font-weight:700;
+      text-transform:uppercase; letter-spacing:2px;
+      color:#554466; margin-bottom:10px;
+    }
+    .cp-card {
+      background:rgba(232,146,10,0.1);
+      border:1px solid rgba(232,146,10,0.25);
+      border-radius:12px; padding:11px 13px;
+      display:flex; align-items:center; gap:11px;
+    }
+    .cp-dot {
+      width:38px; height:38px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:800; font-size:0.85em; flex-shrink:0;
+    }
+    .cp-name { font-weight:700; font-size:0.93em; }
+    .cp-pos  { font-size:0.65em; color:#8877aa; }
+    .dice-wrap { display:flex; flex-direction:column; align-items:center; gap:11px; }
+    .dice-face {
+      width:76px; height:76px;
+      background:linear-gradient(145deg,#1a0d28,#2a1545);
+      border:2px solid rgba(232,146,10,0.35);
+      border-radius:14px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:2.4em; font-weight:900;
+      box-shadow:0 4px 18px rgba(0,0,0,0.45);
+    }
+    .dice-face.rolling { animation:shakeDice 0.55s ease-in-out; }
+    @keyframes shakeDice {
+      0%   { transform:rotate(0deg)   scale(1);    }
+      20%  { transform:rotate(14deg)  scale(1.12); }
+      45%  { transform:rotate(-14deg) scale(1.15); }
+      70%  { transform:rotate(9deg)   scale(1.1);  }
+      100% { transform:rotate(0deg)   scale(1);    }
+    }
+    .roll-btn {
+      width:100%; padding:11px;
+      background:linear-gradient(135deg,#E8920A,#9B59B6);
+      border:none; border-radius:10px; color:#fff;
+      font-family:inherit; font-size:0.82em; font-weight:700;
+      cursor:pointer; letter-spacing:1px; transition:all 0.2s;
+    }
+    .roll-btn:hover:not(:disabled) { transform:translateY(-1px); box-shadow:0 5px 18px rgba(232,146,10,0.4); }
+    .roll-btn:disabled { opacity:0.35; cursor:not-allowed; }
+    .roll-info { font-size:0.7em; color:#7766aa; text-align:center; min-height:1.2em; }
+    .players-list { display:flex; flex-direction:column; gap:7px; }
+    .prow-game {
+      display:flex; align-items:center; gap:9px;
+      padding:7px 9px; border-radius:9px;
+      background:rgba(255,255,255,0.022);
+      border:1px solid rgba(255,255,255,0.05); transition:all 0.2s;
+    }
+    .prow-game.is-current {
+      background:rgba(232,146,10,0.1); border-color:rgba(232,146,10,0.28);
+    }
+    .ptok-mini {
+      width:26px; height:26px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.65em; font-weight:800; flex-shrink:0;
+    }
+    .pname-s  { font-size:0.78em; font-weight:600; }
+    .ppos-s   { font-size:0.6em; color:#6677aa; }
+    .pstars   { font-size:0.72em; margin-left:auto; }
+    .legend { display:flex; flex-direction:column; gap:5px; }
+    .leg-row { display:flex; align-items:center; gap:7px; font-size:0.68em; color:#8877aa; }
+    .leg-dot { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
+
+    /* ══ CHALLENGE MODAL ══ */
+    .modal-ov {
+      position:fixed; inset:0;
+      background:rgba(0,0,0,0.9);
+      backdrop-filter:blur(10px);
+      z-index:200; display:flex;
+      align-items:center; justify-content:center; padding:16px;
+    }
+    .modal-ov.hidden { display:none; }
+    .ch-card {
+      background:linear-gradient(160deg,#0e0820,#130d28);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:22px;
+      width:100%; max-width:660px;
+      max-height:92vh; overflow-y:auto;
+      box-shadow:0 28px 70px rgba(0,0,0,0.8);
+      animation:cardIn 0.28s cubic-bezier(0.2,0,0,1);
+    }
+    @keyframes cardIn {
+      from { transform:scale(0.88) translateY(18px); opacity:0; }
+      to   { transform:scale(1)    translateY(0);    opacity:1; }
+    }
+    .ch-header {
+      padding:18px 22px 14px;
+      border-bottom:1px solid rgba(255,255,255,0.07);
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    }
+    .type-badge {
+      display:inline-flex; align-items:center; gap:5px;
+      padding:4px 13px; border-radius:50px;
+      font-size:0.7em; font-weight:700; letter-spacing:0.5px;
+    }
+    .badge-idiom   { background:rgba(232,146,10,0.22);  color:#E8920A; border:1px solid rgba(232,146,10,0.4);  }
+    .badge-phrasal { background:rgba(59,158,219,0.22);  color:#3B9EDB; border:1px solid rgba(59,158,219,0.4);  }
+    .badge-stage   { background:rgba(155,89,182,0.22);  color:#9B59B6; border:1px solid rgba(155,89,182,0.4);  }
+    .badge-review  { background:rgba(39,174,96,0.22);   color:#27AE60; border:1px solid rgba(39,174,96,0.4);   }
+    .ch-who { margin-left:auto; text-align:right; font-size:0.72em; color:#7788aa; }
+    .ch-who-name { font-weight:700; color:#fff; }
+    .ch-body { padding:18px 22px; }
+    .ch-title    { font-size:1.3em; font-weight:800; line-height:1.2; margin-bottom:3px; }
+    .ch-location { font-size:0.77em; color:#7766aa; margin-bottom:14px; }
+    .ch-scenario {
+      background:rgba(255,255,255,0.04);
+      border-left:3px solid;
+      border-radius:0 9px 9px 0;
+      padding:13px 15px; margin-bottom:15px;
+      font-size:0.83em; line-height:1.65; color:#c8c0e0;
+    }
+    .ch-tasks-lbl {
+      font-size:0.68em; font-weight:700;
+      text-transform:uppercase; letter-spacing:1px;
+      color:#7766aa; margin-bottom:8px;
+    }
+    .task-row {
+      display:flex; align-items:flex-start; gap:9px;
+      margin-bottom:9px; font-size:0.83em; line-height:1.55;
+    }
+    .task-n {
+      width:21px; height:21px; border-radius:50%;
+      background:rgba(255,255,255,0.08);
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.75em; font-weight:700; flex-shrink:0;
+    }
+    .lang-tip {
+      background:rgba(255,210,0,0.06);
+      border:1px solid rgba(255,210,0,0.18);
+      border-radius:11px;
+      padding:11px 14px; margin-top:14px;
+      font-size:0.79em; line-height:1.65; color:#ffd060;
+    }
+    .lang-tip-ttl { font-weight:700; margin-bottom:4px; }
+    .ch-footer {
+      padding:14px 22px 18px;
+      border-top:1px solid rgba(255,255,255,0.07);
+      display:flex; flex-direction:column; align-items:center; gap:13px;
+    }
+    .role-msg {
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.07);
+      border-radius:9px; padding:9px 14px;
+      font-size:0.74em; color:#7788aa; text-align:center; width:100%;
+    }
+    .timer-wrap { position:relative; width:94px; height:94px; }
+    .timer-svg  { transform:rotate(-90deg); }
+    .timer-bg   { fill:none; stroke:rgba(255,255,255,0.08); stroke-width:6; }
+    .timer-prog { fill:none; stroke-width:6; stroke-linecap:round; transition:stroke-dashoffset 1s linear, stroke 0.8s; }
+    .timer-txt  {
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.45em; font-weight:800;
+    }
+    .foot-btns { display:flex; gap:8px; width:100%; }
+    .btn-start {
+      flex:1; padding:11px;
+      background:linear-gradient(135deg,#27AE60,#1abc9c);
+      border:none; border-radius:11px; color:#fff;
+      font-family:inherit; font-size:0.86em; font-weight:700;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .btn-start:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 5px 18px rgba(39,174,96,0.4); }
+    .btn-start:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+    .btn-done {
+      flex:1; padding:11px;
+      background:linear-gradient(135deg,#E8920A,#9B59B6);
+      border:none; border-radius:11px; color:#fff;
+      font-family:inherit; font-size:0.86em; font-weight:700;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .btn-done:hover:not(:disabled) { transform:translateY(-2px); }
+    .btn-done:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+    .btn-skip {
+      padding:11px 16px;
+      background:transparent; border:1px solid rgba(255,255,255,0.14);
+      border-radius:11px; color:#7788aa;
+      font-family:inherit; font-size:0.82em; cursor:pointer; transition:all 0.2s;
+    }
+    .btn-skip:hover { border-color:rgba(255,255,255,0.35); color:#fff; }
+
+    /* Toast */
+    .toast {
+      position:fixed; top:18px; left:50%; transform:translateX(-50%);
+      background:rgba(232,146,10,0.96); border-radius:50px;
+      padding:9px 22px; font-weight:700; font-size:0.88em;
+      z-index:400; white-space:nowrap;
+      animation:toastIn 0.28s ease-out, toastOut 0.3s 2.6s forwards;
+    }
+    @keyframes toastIn  { from{transform:translateX(-50%) translateY(-14px);opacity:0} to{transform:translateX(-50%) translateY(0);opacity:1} }
+    @keyframes toastOut { to{opacity:0} }
+
+    /* Win overlay */
+    .win-ov {
+      position:fixed; inset:0; background:rgba(0,0,0,0.94);
+      z-index:500; display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:16px; text-align:center;
+    }
+    .win-ov.hidden { display:none; }
+    .win-emoji { font-size:5em; }
+    .win-ttl   { font-size:2.2em; font-weight:900; }
+    .win-sub   { color:#6655aa; font-size:0.95em; }
+    .win-restart {
+      margin-top:8px; padding:12px 34px;
+      background:linear-gradient(135deg,#E8920A,#9B59B6);
+      border:none; border-radius:13px; color:#fff;
+      font-family:inherit; font-size:0.95em; font-weight:700;
+      cursor:pointer; transition:all 0.2s;
+    }
+    .win-restart:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(232,146,10,0.4); }
+
+    ::-webkit-scrollbar { width:5px; }
+    ::-webkit-scrollbar-track { background:transparent; }
+    ::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.14); border-radius:3px; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════ SETUP ══════════ -->
+<div id="setup-screen" class="screen active">
+  <div class="game-logo">
+    <h1>🗝️ IDIOM QUEST</h1>
+    <div class="logo-sub">Board Game — Idiomatic Language &amp; Phrasal Verbs</div>
+    <div class="logo-badge">FRUIT Level · Lesson 3 · Includes L1 &amp; L2 Review</div>
+  </div>
+  <div class="setup-card">
+    <div class="setup-label">Number of Players</div>
+    <div class="count-row" id="count-row">
+      <button class="count-btn" data-n="2">2</button>
+      <button class="count-btn active" data-n="3">3</button>
+      <button class="count-btn" data-n="4">4</button>
+    </div>
+    <div class="setup-label">Player Names</div>
+    <div class="player-inputs" id="player-inputs"></div>
+    <button class="start-btn" onclick="startGame()">🗝️ &nbsp;Start Quest</button>
+  </div>
+  <div class="setup-hint">
+    🎯 Each challenge lasts <strong>3 minutes</strong> &nbsp;·&nbsp; All players participate &nbsp;·&nbsp;
+    First to earn <strong>5 ⭐</strong> wins &nbsp;·&nbsp; 🃏 Wild Cards review Lessons 1 &amp; 2
+  </div>
+</div>
+
+<!-- ══════════ GAME ══════════ -->
+<div id="game-screen" class="screen">
+  <div class="board-area">
+    <div class="board-wrapper">
+      <div class="board" id="board">
+        <div class="board-center">
+          <div class="bc-icon">🗝️</div>
+          <div class="bc-name">Idiom Quest</div>
+          <div class="bc-sub">Fruit · Lesson 3</div>
+        </div>
+      </div>
+      <div class="tokens-layer" id="tokens-layer"></div>
+    </div>
+  </div>
+
+  <div class="side-panel">
+    <div class="p-sec">
+      <div class="p-title">Current Turn</div>
+      <div class="cp-card">
+        <div class="cp-dot" id="cp-dot"></div>
+        <div>
+          <div class="cp-name" id="cp-name">—</div>
+          <div class="cp-pos"  id="cp-pos">—</div>
+        </div>
+      </div>
+    </div>
+    <div class="p-sec">
+      <div class="p-title">Dice</div>
+      <div class="dice-wrap">
+        <div class="dice-face" id="dice-face">🎲</div>
+        <button class="roll-btn" id="roll-btn" onclick="rollDice()">ROLL DICE</button>
+        <div class="roll-info" id="roll-info"></div>
+      </div>
+    </div>
+    <div class="p-sec">
+      <div class="p-title">Players</div>
+      <div class="players-list" id="players-list"></div>
+    </div>
+    <div class="p-sec">
+      <div class="p-title">Legend</div>
+      <div class="legend">
+        <div class="leg-row"><div class="leg-dot" style="background:#E74C3C"></div>🏁 Start</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#E8920A"></div>🎙️ Idiom Studio</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#3B9EDB"></div>💼 Phrasal HQ</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#9B59B6"></div>🎭 Figure Stage</div>
+        <div class="leg-row"><div class="leg-dot" style="background:#27AE60"></div>🎲 Wild Card (L1/L2)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ CHALLENGE MODAL ══════════ -->
+<div id="challenge-modal" class="modal-ov hidden">
+  <div class="ch-card">
+    <div class="ch-header">
+      <div class="type-badge" id="mod-badge">—</div>
+      <div class="ch-who">
+        <div class="ch-who-name" id="mod-pname">—</div>
+        <div>landed here</div>
+      </div>
+    </div>
+    <div class="ch-body">
+      <div class="ch-title"     id="mod-title">—</div>
+      <div class="ch-location"  id="mod-loc">—</div>
+      <div class="ch-scenario"  id="mod-scenario"></div>
+      <div class="ch-tasks-lbl" id="mod-tasks-lbl">Your Challenge</div>
+      <div id="mod-tasks"></div>
+      <div class="lang-tip"     id="mod-tip"></div>
+    </div>
+    <div class="ch-footer">
+      <div class="role-msg" id="mod-role">—</div>
+      <div class="timer-wrap">
+        <svg class="timer-svg" width="94" height="94" viewBox="0 0 94 94">
+          <circle class="timer-bg"   cx="47" cy="47" r="40"/>
+          <circle class="timer-prog" id="timer-prog" cx="47" cy="47" r="40"
+            stroke-dasharray="251.33" stroke-dashoffset="0" stroke="#27AE60"/>
+        </svg>
+        <div class="timer-txt" id="timer-txt">3:00</div>
+      </div>
+      <div class="foot-btns">
+        <button class="btn-start" id="btn-start" onclick="startTimer()">▶ Start 3 min</button>
+        <button class="btn-done"  id="btn-done"  onclick="completeChallenge()" disabled>✓ Done!</button>
+        <button class="btn-skip"  onclick="skipChallenge()">Skip</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ WIN ══════════ -->
+<div id="win-ov" class="win-ov hidden">
+  <div class="win-emoji">🏆</div>
+  <div class="win-ttl" id="win-ttl">Winner!</div>
+  <div class="win-sub" id="win-sub">Master of Idioms &amp; Phrasal Verbs! 🗝️</div>
+  <button class="win-restart" onclick="location.reload()">🔄 Play Again</button>
+</div>
+
+<script>
+/* ════════════════════════════════════════
+   CONSTANTS
+════════════════════════════════════════ */
+const COLORS   = ['#E74C3C','#E8920A','#3B9EDB','#9B59B6'];
+const DEFAULTS = ['Player 1','Player 2','Player 3','Player 4'];
+const WIN_STARS = 5;
+const TIMER_SEC = 180;
+const CIRC      = 251.33;
+
+// [row, col] grid positions for 20 board spaces (0-indexed)
+const GRID_POS = [
+  [0,0],[0,1],[0,2],[0,3],[0,4],[0,5], // 0–5  top row →
+  [1,5],[2,5],[3,5],[4,5],             // 6–9  right col ↓
+  [5,5],[5,4],[5,3],[5,2],[5,1],[5,0], // 10–15 bottom row ←
+  [4,0],[3,0],[2,0],[1,0]              // 16–19 left col ↑
+];
+
+// Board layout: 20 spaces alternating types
+const BOARD_TYPES = [
+  'start','idiom','phrasal','stage','review','idiom',
+  'phrasal','stage','review','idiom',
+  'phrasal','stage','review','idiom','phrasal',
+  'stage','review','idiom','phrasal','stage'
+];
+
+const SPACE_INFO = {
+  start:   { icon:'🏁', lbl:'Start',        color:'#E74C3C' },
+  idiom:   { icon:'🎙️', lbl:'Idiom Studio', color:'#E8920A' },
+  phrasal: { icon:'💼', lbl:'Phrasal HQ',   color:'#3B9EDB' },
+  stage:   { icon:'🎭', lbl:'Figure Stage', color:'#9B59B6' },
+  review:  { icon:'🎲', lbl:'Wild Card',    color:'#27AE60' },
+};
+
+const BADGE_CLS = {
+  idiom:'badge-idiom', phrasal:'badge-phrasal',
+  stage:'badge-stage', review:'badge-review'
+};
+const BADGE_LBL = {
+  idiom:'🎙️ Idiom Studio', phrasal:'💼 Phrasal HQ',
+  stage:'🎭 Figure Stage', review:'🎲 Wild Card'
+};
+const ROLE_MSG = {
+  idiom:   '🎭 Other players: Be the podcast audience — react, ask questions, and judge naturalness!',
+  phrasal: '🎭 Other players: You are the meeting participants — respond and use at least one phrasal verb each!',
+  stage:   '🎭 Other players: You are the audience — identify each figure of speech used!',
+  review:  '🎭 Other players: Help if needed, but let the active player lead — then add your own example!',
+};
+
+/* ════════════════════════════════════════
+   CHALLENGE POOLS
+════════════════════════════════════════ */
+
+// ─── 🎙️ IDIOM STUDIO ─────────────────────────────────────────────────────────
+const POOL = {
+idiom: [
+  {
+    title:'The First Day Podcast',
+    location:'🎙️ Episode 1 — New Beginnings',
+    scenario:'You\'re a guest on a podcast talking about starting a new job. It was terrifying at first, but you managed to settle in. The host wants the honest story.',
+    tasks:[
+      'Describe how you felt meeting your new team for the first time. Use BREAK THE ICE naturally in your answer.',
+      'Did you or a colleague CUT CORNERS on anything in the first week? What happened? Use the idiom.',
+      'What did you do to GO THE EXTRA MILE and make a good first impression?'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Idiom Hints</div>break the ice = make a social situation more comfortable | cut corners = skip steps / lower standards to save effort | go the extra mile = do more than what is expected',
+    color:'#E8920A'
+  },
+  {
+    title:'Under the Weather',
+    location:'🎙️ Episode 4 — Health & Motivation',
+    scenario:'The host asks you about staying motivated when life gets hard — when you\'re sick, stressed, or falling behind on goals. Be honest and use idioms naturally.',
+    tasks:[
+      'Explain how you manage to BITE THE BULLET when you really don\'t feel motivated to study or work.',
+      'Tell us about a time you were UNDER THE WEATHER but still had to GET THE BALL ROLLING on something important. What happened?',
+      'What advice would you give to someone who keeps CUTTING CORNERS on their health and wellbeing?'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Idiom Hints</div>under the weather = feeling slightly sick or run-down | get the ball rolling = start something, initiate a process | bite the bullet = push through something difficult',
+    color:'#E8920A'
+  },
+  {
+    title:'Face the Music',
+    location:'🎙️ Episode 7 — Accountability Stories',
+    scenario:'This episode explores moments when people had to own up to their mistakes — no excuses, no shortcuts. The host wants real, raw stories.',
+    tasks:[
+      'Tell a story (real or invented) about a time when you — or someone you know — had to FACE THE MUSIC.',
+      'Was there a moment when someone CUT CORNERS and then had to FACE THE MUSIC? What were the consequences?',
+      'Use BITE THE BULLET and GO THE EXTRA MILE in the same story about recovering from a mistake.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Idiom Hints</div>face the music = accept the consequences of your actions | bite the bullet = endure something difficult | go the extra mile = put in extra effort to fix or improve something',
+    color:'#E8920A'
+  },
+  {
+    title:'Networking Expert',
+    location:'🎙️ Episode 11 — Social Situations',
+    scenario:'You\'re a guest expert on professional networking. The host wants practical tips on starting conversations at events and making a lasting impression.',
+    tasks:[
+      'Give 2 tips for BREAKING THE ICE at a networking event. Use the idiom naturally — not just as a topic!',
+      'Is it ever okay to CUT CORNERS on professional etiquette? What are the risks? Use the idiom in your answer.',
+      'How do you GO THE EXTRA MILE to make sure people remember you after a networking event?'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Idiom Hints</div>break the ice = start a conversation in an awkward or formal situation | cut corners = skip important steps | go the extra mile = exceed normal expectations',
+    color:'#E8920A'
+  },
+  {
+    title:'Get the Ball Rolling',
+    location:'🎙️ Episode 14 — Productivity & Goals',
+    scenario:'A productivity coach joins the show. The host asks about overcoming procrastination and finally starting on those big goals that keep getting delayed.',
+    tasks:[
+      'What stops people from GETTING THE BALL ROLLING on their goals? Use the idiom in your answer.',
+      'Describe a practical technique for BITING THE BULLET when you really don\'t want to start something.',
+      'Is it better to GO THE EXTRA MILE from day one, or build up gradually? Defend your opinion using at least one idiom.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Idiom Hints</div>get the ball rolling = begin a process, initiate something | bite the bullet = force yourself to do something hard | go the extra mile = put in more effort than strictly necessary',
+    color:'#E8920A'
+  },
+  {
+    title:'Rapid Fire Idioms',
+    location:'🎙️ Bonus Round — Live Challenge!',
+    scenario:'The host throws rapid-fire situations at you! Respond to each one using the correct idiom naturally and fluently. No pausing to think too long!',
+    tasks:[
+      'Situation: Your boss tells you the project is a disaster. You must take responsibility. → Respond using FACE THE MUSIC.',
+      'Situation: You feel awful, but you have an important presentation today. You decide to go through with it. → Use UNDER THE WEATHER + BITE THE BULLET.',
+      'Situation: You\'re at a team meeting and everyone is shy. You decide to start the conversation. → Use BREAK THE ICE + GET THE BALL ROLLING.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Pro Tip</div>Remember: idioms should sound natural — don\'t "announce" them! Use them as part of a flowing, confident sentence. The meaning must be clear from context.',
+    color:'#E8920A'
+  },
+  {
+    title:'Listener Advice Corner',
+    location:'🎙️ Episode 18 — Audience Q&A',
+    scenario:'A listener wrote in: "I keep cutting corners on my English practice. I know I should study more, but I can\'t motivate myself. What should I do?"',
+    tasks:[
+      'Respond to the listener using AT LEAST TWO idioms from this lesson. Make them sound natural.',
+      'Give your honest advice: should they BITE THE BULLET and practice every day, or is there a smarter approach?',
+      'End your advice with an encouraging statement that uses BREAK THE ICE or GET THE BALL ROLLING about their English journey.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Idiom Hints</div>When giving advice with idioms, make sure the meaning is clear from context. Imagine the listener has never heard the expression before — your sentence should explain it naturally.',
+    color:'#E8920A'
+  },
+  {
+    title:'Register Challenge',
+    location:'🎙️ Special Edition — Style Shifts',
+    scenario:'The producer asks you to deliver the same message THREE times: once in formal English, once casually with a friend, and once as a text message with colloquial language.',
+    tasks:[
+      'FORMAL: Your team struggled but produced excellent results. Rephrase using at least one idiom in a professional register.',
+      'CASUAL: Tell a friend about a tough week at work using GO THE EXTRA MILE and UNDER THE WEATHER.',
+      'COLLOQUIAL: Text your best friend about the same situation using 2+ idioms and at least one native catch phrase (e.g., "I mean...", "to be honest", "it is what it is").'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Register Reminder</div>The same idiom can appear in different registers — what changes is the framing and surrounding language. "Under the weather" fits most contexts; slang-heavy framing is for casual only.',
+    color:'#E8920A'
+  },
+],
+
+// ─── 💼 PHRASAL HQ ────────────────────────────────────────────────────────────
+phrasal: [
+  {
+    title:'Project Kickoff Meeting',
+    location:'💼 Conference Room A — Monday 9am',
+    scenario:'Your team is launching a new project. Everyone needs to pitch in, take on tasks, and align on next steps. The manager is watching closely.',
+    tasks:[
+      'Use BRING UP and LOOK INTO in the same statement: what issues will you raise and what will you investigate?',
+      'Tell the team what responsibilities you\'re willing to TAKE ON, and what you would TURN DOWN and why.',
+      'End with a motivating statement that includes GET THE BALL ROLLING and a second phrasal verb (e.g., SET UP, KICK OFF, COME UP WITH).'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes</div>bring up (sep) = mention/raise a topic | look into (insep) = investigate | take on (sep) = accept responsibility | turn down (sep) = refuse or reject',
+    color:'#3B9EDB'
+  },
+  {
+    title:'The Delayed Report',
+    location:'💼 Manager\'s Office — Thursday 4pm',
+    scenario:'Your manager called you in. An important report is late, and there are errors. You need to explain what happened, take accountability, and propose a clear fix.',
+    tasks:[
+      'Use FIGURE OUT and SORT OUT to explain your plan of action for fixing the report.',
+      'Was something PUT OFF that shouldn\'t have been? Be honest and use the phrasal verb in your answer.',
+      'How will you BACK UP your work to ensure this doesn\'t happen again? Use BACK UP in the correct sense (save/support).'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes</div>figure out (sep) = understand/solve | sort out (sep) = resolve or organize | put off (sep) = delay or postpone | back up (sep) = save a copy OR provide support',
+    color:'#3B9EDB'
+  },
+  {
+    title:'Difficult Client Call',
+    location:'💼 Video Conference — Client Relations',
+    scenario:'A major client is unhappy. They feel the team didn\'t deliver what was promised. This is a high-stakes call — you need to sound professional, calm, and solution-focused.',
+    tasks:[
+      'Use COME ACROSS AS in your opening: "I want to make sure I don\'t come across as..." — complete the sentence naturally.',
+      'Explain what the team will LOOK INTO and CARRY OUT to resolve the situation.',
+      'Use RUN INTO (= encounter a problem) to explain what caused the original delay. Give a realistic reason.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes</div>come across as (insep) = give the impression of being | look into (insep) = investigate | carry out (sep) = execute or complete | run into (insep) = encounter unexpectedly',
+    color:'#3B9EDB'
+  },
+  {
+    title:'Annual Performance Review',
+    location:'💼 HR Room — Annual Review',
+    scenario:'It\'s your annual review. Your manager asks about achievements, challenges overcome, and plans for growth. This is your moment to advocate for yourself confidently.',
+    tasks:[
+      'Use TAKE ON, KEEP UP, and WORK OUT to describe your performance and achievements this year.',
+      'What have you had to PUT UP WITH in the workplace this year? How have you handled it professionally?',
+      'What new goals did you COME UP WITH? How will you CARRY them OUT in the next quarter?'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes</div>take on (sep) = accept new responsibility | keep up (sep/insep) = maintain pace or quality | work out (sep) = develop well, resolve | put up with (insep) = tolerate | come up with (insep) = invent or create',
+    color:'#3B9EDB'
+  },
+  {
+    title:'Budget Crisis Meeting',
+    location:'💼 Finance Department — Emergency Session',
+    scenario:'The budget has been slashed by 30%. The team must decide what to keep, what to cut, and how to maintain quality under extreme pressure.',
+    tasks:[
+      'Use TURN DOWN, CUT BACK ON, and PUT OFF to describe three difficult decisions the team must make.',
+      'What is one thing the team absolutely cannot GIVE UP, even under budget pressure? Justify your answer.',
+      'Use GO THE EXTRA MILE (idiom from L3) + at least one phrasal verb to explain how the team will compensate for the cuts.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes</div>turn down (sep) = refuse/reject | cut back on (insep) = reduce spending or use | put off (sep) = postpone | give up (sep) = stop doing something / sacrifice',
+    color:'#3B9EDB'
+  },
+  {
+    title:'Team Conflict Mediation',
+    location:'💼 Break Room — Difficult Conversation',
+    scenario:'Two team members are not getting along and it\'s affecting the whole team. As team lead, you must mediate and find a solution that works for everyone.',
+    tasks:[
+      'Use BRING UP (the issue), WORK OUT (a solution), and GIVE IN (when appropriate) in your mediation speech.',
+      'What behaviour should each person GIVE UP to improve the team dynamic? Use GIVE UP in your answer.',
+      'Use FACE THE MUSIC (idiom from L3) + one phrasal verb to describe what each person needs to do to move forward.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes</div>bring up (sep) = raise an issue | work out (sep) = resolve | give in (insep) = stop resisting / compromise | give up (sep) = abandon a habit or behaviour',
+    color:'#3B9EDB'
+  },
+  {
+    title:'New System Rollout',
+    location:'💼 IT Department — Implementation Week',
+    scenario:'A new software system is being introduced. Some employees are resistant. You need to present its benefits, handle objections, and address technical concerns.',
+    tasks:[
+      'Use LOOK INTO (research), SET UP (install/arrange), and SORT OUT (fix issues) in your presentation.',
+      'What problems might COME UP during the transition? Use COME UP as a phrasal verb meaning "arise unexpectedly".',
+      'Use Inversion (L1 Review!) to open dramatically: "Never before has the company introduced a system so complex..." then continue with a phrasal verb.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes + L1 Link</div>look into = investigate | set up = install/arrange | sort out = fix/resolve | come up = arise | L1 Inversion: "Never has..." / "Not only did..." adds formal emphasis!',
+    color:'#3B9EDB'
+  },
+  {
+    title:'Promotion Interview',
+    location:'💼 Director\'s Office — Career Conversation',
+    scenario:'You\'re being considered for a promotion. The director wants to hear about your contributions, the obstacles you\'ve overcome, and why you\'re ready for the next level.',
+    tasks:[
+      'Use TAKE ON, CARRY OUT, and FOLLOW THROUGH in describing your key achievements this year.',
+      'What challenges did you RUN INTO and how did you WORK AROUND them? Be specific.',
+      'Use a Cleft Sentence (L1 Review!): "What I have consistently demonstrated is..." to highlight your most important quality.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Phrasal Verb Notes + L1 Link</div>take on = accept challenges | carry out = execute plans | follow through = complete what you started | run into = encounter | work around = find a way despite obstacles | L1 Cleft: "What I... is..."',
+    color:'#3B9EDB'
+  },
+],
+
+// ─── 🎭 FIGURE STAGE ──────────────────────────────────────────────────────────
+stage: [
+  {
+    title:'The Metaphor Monologue',
+    location:'🎭 Main Stage — Solo Performance',
+    scenario:'You have 90 seconds to deliver a monologue about your experience learning English — using ONLY metaphors. No literal descriptions allowed!',
+    tasks:[
+      'Create a metaphor comparing your English learning journey to something physical (a journey, a building, a sport, a garden). Develop it for at least 3 sentences.',
+      'Add a second metaphor describing how a specific challenge in English made you feel (e.g., grammar, pronunciation, vocabulary).',
+      'Bonus: Create one ORIGINAL metaphor — not a common expression. Something your own!'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Figure of Speech: Metaphor</div>Metaphor = direct comparison without "like" or "as". "English is a maze" vs simile "English is LIKE a maze." The best metaphors are vivid, original, and extended across multiple sentences.',
+    color:'#9B59B6'
+  },
+  {
+    title:'Hyperbole Theatre',
+    location:'🎭 Drama Studio — Exaggeration Lab',
+    scenario:'In this scene, EVERYTHING must be exaggerated. Normal, boring sentences become theatrical, over-the-top, and wildly dramatic!',
+    tasks:[
+      'Transform: "I was very tired after studying all night." → Turn it into extreme hyperbole.',
+      'Transform: "The grammar exercise was quite difficult." → Hyperbole version, please!',
+      'Tell a real story (about anything — work, study, cooking, travelling) using AT LEAST 3 hyperboles. The group rates the drama level from 1–10!'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Figure of Speech: Hyperbole</div>Hyperbole = deliberate exaggeration for emphasis or humour. "I\'ve told you a million times!" / "I\'m so hungry I could eat a horse!" / "This bag weighs a tonne." Native speakers use hyperbole constantly in casual conversation.',
+    color:'#9B59B6'
+  },
+  {
+    title:'The Irony Scene',
+    location:'🎭 Improv Corner — Unexpected Outcomes',
+    scenario:'Irony is all about the gap between what\'s expected and what actually happens — or saying the opposite of what you mean. Today you perform this gap.',
+    tasks:[
+      'Verbal Irony: Someone makes a terrible mistake in a meeting. You respond with total sarcasm. Perform the scene.',
+      'Situational Irony: Describe a real or imagined situation where the exact opposite of what was planned happened.',
+      'Understatement: Describe something catastrophic as if it\'s completely minor. ("Oh, it was a slight issue...") The group must guess what actually happened!'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Figure of Speech: Irony</div>Verbal irony = saying the opposite of what you mean. Situational irony = outcome is opposite to expectations. Understatement = describing something serious as minor. "Oh, brilliant" (when it\'s awful) is classic British dry humour!',
+    color:'#9B59B6'
+  },
+  {
+    title:'Catch Phrase Bingo',
+    location:'🎭 Live Audience Show — Authentic English',
+    scenario:'You must use as many native English catch phrases and fillers as possible in a 2-minute story about your week. The group counts how many you use!',
+    tasks:[
+      'Use at least FOUR of these expressions naturally: "Fair enough", "That\'s the thing", "I mean...", "To be honest", "It is what it is", "At the end of the day", "Having said that", "Don\'t get me wrong".',
+      'Use one expression to AGREE and one to DISAGREE with something someone says after your story.',
+      'Challenge: connect two catch phrases in one sentence without sounding robotic. Example: "I mean, to be honest, it is what it is."'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Catch Phrases as Discourse Markers</div>These expressions signal authenticity. Use them as openers or connectors — not as the centre of your sentence. "I mean, at the end of the day, you just have to bite the bullet." (combines idiom + catch phrase!)',
+    color:'#9B59B6'
+  },
+  {
+    title:'Figure of Speech Duel',
+    location:'🎭 Challenge Stage — Versus Round!',
+    scenario:'Two players compete! One delivers a sentence using a figure of speech — the other must identify the type and create their own. The teacher/group judges who wins each round.',
+    tasks:[
+      'Player A says: "This office is a pressure cooker." → Player B: Identify the figure of speech + create your own metaphor about the workplace.',
+      'Player A says: "I\'ve been waiting for this meeting to end for literally a thousand years." → Player B: Identify + create your own hyperbole.',
+      'Player A says: "Oh, what a wonderful surprise — another Monday morning." → Player B: Identify the irony + create your own ironic statement about daily life.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Quick Reference</div>Metaphor = direct comparison | Simile = comparison with "like/as" | Hyperbole = deliberate exaggeration | Irony = opposite of what\'s meant | Personification = human qualities given to non-human things',
+    color:'#9B59B6'
+  },
+  {
+    title:'Sarcasm Master Class',
+    location:'🎭 Comedy Workshop — Advanced Humour',
+    scenario:'Sarcasm is verbal irony with a critical or humorous edge. Today you learn to deliver it like a native — with the right tone, timing, and understatement.',
+    tasks:[
+      'Respond to this: "I sent you a 6,000-word email with no subject line at 11pm." Use classic English sarcasm.',
+      'Respond to this: "We\'ve scheduled an urgent team meeting for Friday at 5:30pm." Sarcastic response, please.',
+      'Create your own scenario (traffic, tech problems, office life, studying) and deliver a sarcastic comment about it. The group votes on who sounds most like a native!'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Delivering Sarcasm in English</div>Sarcasm works best with: flat/dry tone + understatement + the word "lovely" or "brilliant" used ironically. "Oh great, another meeting. Truly the highlight of my week." Keep it deadpan — over-acting kills it!',
+    color:'#9B59B6'
+  },
+  {
+    title:'Mixed Rhetoric',
+    location:'🎭 Final Stage — Showstopper',
+    scenario:'Your final performance combines THREE figures of speech in one connected 2-minute monologue. Choose any topic: your city, your job, learning English, or daily life.',
+    tasks:[
+      'Use a METAPHOR to describe your relationship with the English language or your career.',
+      'Use a HYPERBOLE to describe how much effort you\'ve put in (or haven\'t!) recently.',
+      'Use IRONY or SARCASM to describe a setback, failure, or frustration. The group must identify each figure of speech!'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Combining Figures of Speech</div>The best communicators blend figures of speech naturally. Don\'t announce them — let the audience feel the effect. Start with the metaphor to set the tone, build with hyperbole, and land with irony for comic or dramatic effect.',
+    color:'#9B59B6'
+  },
+  {
+    title:'Native Voice',
+    location:'🎭 Dialect Workshop — Register & Authenticity',
+    scenario:'Being authentic means knowing WHEN to use which expression and HOW to adapt your language for different audiences. Today\'s challenge: same message, three completely different voices.',
+    tasks:[
+      'Your manager sends a disappointing email about your project. Respond: once formally (use hedging language: "It could be argued...", "It appears that..."), once casually to a friend (idioms + catch phrases).',
+      'You\'re late to an important meeting. Explain to your manager (formal + one appropriate idiom). Then explain the same to your best friend (catch phrases + colloquial).',
+      'Connect three native expressions in one flowing statement: "Having said that..." + "To be honest..." + "At the end of the day..."'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Register Awareness (L2/L3 Link)</div>Same meaning, completely different language. Hedging (L2): "It could be argued / It appears that" for formal | Idioms (L3): natural in informal | Catch phrases: markers of authenticity in casual speech.',
+    color:'#9B59B6'
+  },
+],
+
+// ─── 🎲 WILD CARD (L1 + L2 REVIEW) ──────────────────────────────────────────
+review: [
+  {
+    title:'Inversion Remix',
+    location:'🎲 Wild Card — L1 Grammar Review',
+    scenario:'Time to show off your Lesson 1 grammar! Use inversion to transform these ordinary sentences into emphatic, formal, and powerful statements.',
+    tasks:[
+      'Transform: "I have never used an idiom so naturally before." → Use NEVER + inversion.',
+      'Transform: "She not only learned the idiom, but also used it perfectly in context." → Use NOT ONLY.',
+      'Create your OWN sentence using RARELY or SELDOM to describe something surprising about learning English.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L1 Review: Inversion</div>Move the negative adverb to the front → auxiliary before subject. "Never have I..." / "Not only did she..." / "Rarely does he..." / "No sooner had we... than..." Adds dramatic emphasis — common in speeches and formal writing.',
+    color:'#27AE60'
+  },
+  {
+    title:'Mixed Conditional Marathon',
+    location:'🎲 Wild Card — L1 Grammar Review',
+    scenario:'Life is full of "what ifs". Show your command of mixed conditionals — where past decisions shape the present, and present habits explain the past.',
+    tasks:[
+      'Type A: Think of one phrase or idiom you wish you\'d learned earlier. How would your English be different today? → "If I had learned... I would... now."',
+      'Type B: Think of a current language habit (cutting corners on grammar?). How might this have affected your past performance? → "If I were... I would have..."',
+      'Bonus: Combine both in one connected reflection — Type A + Type B in two sentences.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L1 Review: Mixed Conditionals</div>Type A: If + Past Perfect → would + base verb (present result). Type B: If + were/weren\'t → would have + past participle (past result). The key challenge: mixing TIME FRAMES deliberately.',
+    color:'#27AE60'
+  },
+  {
+    title:'Cleft Sentence Spotlight',
+    location:'🎲 Wild Card — L1 Grammar Review',
+    scenario:'Use cleft sentences to put the spotlight on the most important element of each statement. Make the emphasis undeniable.',
+    tasks:[
+      'Transform: "Consistency helped me most in learning new vocabulary." → Use "It was... that..."',
+      'Transform: "I really need more speaking practice to improve." → Use "What I need is..."',
+      'Transform: "Only daily contact with native content makes the difference." → Use "The thing that... is..."'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L1 Review: Cleft Sentences</div>"It was X that..." = emphasize cause or agent | "What I need/want is..." = emphasize desire or need | "The thing that..." = introduce the key factor | "All I want is..." = minimizer + emphasis',
+    color:'#27AE60'
+  },
+  {
+    title:'Advanced Connectors',
+    location:'🎲 Wild Card — L2 Cohesion Review',
+    scenario:'Level up your discourse markers! Use at least TWO advanced connectors from Lesson 2 in a fluent, connected response on the topic below.',
+    tasks:[
+      'Question: Should English learners prioritize idioms and catch phrases before perfecting grammar? Argue your position using ALBEIT, NOTWITHSTANDING, or INASMUCH AS.',
+      'Describe a challenge you face in English. Use HAVING SAID THAT or TO THE EXTENT THAT to add nuance to your answer.',
+      'Use THE FORMER and THE LATTER correctly in one sentence comparing two aspects of today\'s lesson (idioms vs phrasal verbs).'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L2 Review: Advanced Connectors</div>albeit = although | notwithstanding = despite | inasmuch as = to the extent that | having said that = but / nevertheless | the former = the first of two | the latter = the second of two',
+    color:'#27AE60'
+  },
+  {
+    title:'Hedging & Boosting',
+    location:'🎲 Wild Card — L2 Opinion Language Review',
+    scenario:'At B2+ level, it\'s not just WHAT you say but HOW CERTAIN you sound. Today you practice hedging and boosting — the tools of sophisticated academic and professional speech.',
+    tasks:[
+      'Give your opinion on whether learning idioms makes English harder or easier. Use at least one HEDGING expression: tend to, appear to, arguably, it could be said, it seems.',
+      'Now make a BOOSTED statement about something you\'re confident about in your English: use undoubtedly, clearly, without question, or remarkably.',
+      'Switch the same opinion from hedged to boosted — and discuss: what changes? What does each version communicate about the speaker?'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L2 Review: Hedging & Boosting</div>Hedging: "It could be argued that..." / "There tends to be..." / "It appears that..." — shows caution. Boosting: "It is undoubtedly true that..." / "Clearly, the evidence shows..." — shows certainty. Both are essential for B2+ communication.',
+    color:'#27AE60'
+  },
+  {
+    title:'Ellipsis & Substitution',
+    location:'🎲 Wild Card — L2 Cohesion Review',
+    scenario:'A mark of advanced English is knowing how to avoid unnecessary repetition. Today you demonstrate ellipsis and substitution to create concise, sophisticated speech.',
+    tasks:[
+      'Rewrite to remove repetition using ellipsis: "She can use phrasal verbs naturally. He can use phrasal verbs naturally too." — Shorten it!',
+      'Use SO or NOT as substitute: Someone asks "Do you think idioms are essential?" — respond without repeating the full clause. ("I think so." / "I don\'t think so." — now explain WHY.)',
+      'Use THE FORMER and THE LATTER in one sentence about metaphors and hyperboles from today\'s lesson.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L2 Review: Ellipsis & Substitution</div>Ellipsis = omit words that are already understood: "She can, and he can too." Substitution = replace a clause with SO/NOT/DO SO: "I think so / I hope not." The former/latter = refer to two previously mentioned items elegantly.',
+    color:'#27AE60'
+  },
+  {
+    title:'Register Master',
+    location:'🎲 Wild Card — L3 Register Review',
+    scenario:'Same message — three completely different registers. Show that you can adapt your language for any audience, context, and communication channel.',
+    tasks:[
+      '"I disagree with my colleague\'s approach to the project." Express this in: (1) a formal meeting, (2) a casual chat with a friend, (3) a WhatsApp message to your partner.',
+      'Use at least ONE idiom from today\'s lesson (L3) in the informal version.',
+      'Use at least ONE advanced connector from Lesson 2 in the formal version.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 L3 Review: Register Shifting</div>Formal: "I respectfully disagree with my colleague\'s proposed approach." Neutral: "I don\'t think that\'s the right way to go." Casual: "Honestly? That\'s not gonna work." Colloquial: "I mean, come on... that\'s not it, to be honest."',
+    color:'#27AE60'
+  },
+  {
+    title:'Grand Slam — All Lessons!',
+    location:'🎲 Mega Wild Card — Ultimate Review',
+    scenario:'The ultimate challenge! Demonstrate your mastery of ALL THREE lessons in one connected, fluent response. This is what real B2+ communication looks like.',
+    tasks:[
+      'Step 1 — L3: Open with an IDIOM from Lesson 3. Use it naturally to introduce your topic (any topic you choose).',
+      'Step 2 — L1: Use INVERSION or a CLEFT SENTENCE to emphasize your key point. Make it sound powerful.',
+      'Step 3 — L2: Use a HEDGING or BOOSTING expression + an ADVANCED CONNECTOR to craft a sophisticated conclusion.'
+    ],
+    tip:'<div class="lang-tip-ttl">💡 Grand Slam Formula</div>Idiom (L3) → sets authentic tone | Inversion/Cleft (L1) → adds emphasis and drama | Hedging/Connector (L2) → signals sophistication and nuance. This is exactly what IELTS Band 7+ and Cambridge B2 responses look like!',
+    color:'#27AE60'
+  },
+]
+};
+
+/* ════════════════════════════════════════
+   STATE
+════════════════════════════════════════ */
+const G = {
+  players: [],
+  currentIdx: 0,
+  board: BOARD_TYPES,
+  rolling: false,
+  timerInterval: null,
+  timerLeft: TIMER_SEC,
+  activeChallenge: null,
+};
+
+/* ════════════════════════════════════════
+   SETUP
+════════════════════════════════════════ */
+let selectedCount = 3;
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.count-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedCount = +btn.dataset.n;
+      document.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderPlayerInputs(selectedCount);
+    });
+  });
+  renderPlayerInputs(selectedCount);
+});
+
+function renderPlayerInputs(n) {
+  const container = document.getElementById('player-inputs');
+  container.innerHTML = '';
+  for (let i = 0; i < n; i++) {
+    const row = document.createElement('div');
+    row.className = 'prow';
+    row.innerHTML = `
+      <div class="prow-dot" style="background:${COLORS[i]}"></div>
+      <input type="text" placeholder="Player ${i + 1}" id="pi-${i}" maxlength="18"/>
+    `;
+    container.appendChild(row);
+  }
+}
+
+function startGame() {
+  G.players = [];
+  for (let i = 0; i < selectedCount; i++) {
+    const inp = document.getElementById(`pi-${i}`);
+    const name = inp ? (inp.value.trim() || DEFAULTS[i]) : DEFAULTS[i];
+    const initials = name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2);
+    G.players.push({ name, initials, color: COLORS[i], position: 0, stars: 0 });
+  }
+  G.currentIdx = 0;
+
+  document.getElementById('setup-screen').classList.remove('active');
+  document.getElementById('game-screen').classList.add('active');
+
+  buildBoard();
+  renderTokens();
+  renderPlayersList();
+  refreshCurrentPlayer();
+}
+
+/* ════════════════════════════════════════
+   BOARD
+════════════════════════════════════════ */
+function buildBoard() {
+  const board = document.getElementById('board');
+
+  // Space grid-column/row mappings (CSS 1-indexed)
+  const spaceGridPos = [
+    {r:1,c:1},{r:1,c:2},{r:1,c:3},{r:1,c:4},{r:1,c:5},{r:1,c:6},
+    {r:2,c:6},{r:3,c:6},{r:4,c:6},{r:5,c:6},
+    {r:6,c:6},{r:6,c:5},{r:6,c:4},{r:6,c:3},{r:6,c:2},{r:6,c:1},
+    {r:5,c:1},{r:4,c:1},{r:3,c:1},{r:2,c:1}
+  ];
+
+  for (let i = 0; i < 20; i++) {
+    const type = BOARD_TYPES[i];
+    const info = SPACE_INFO[type];
+    const pos  = spaceGridPos[i];
+    const sp   = document.createElement('div');
+    sp.className = `space type-${type}`;
+    sp.id = `sp-${i}`;
+    sp.style.gridColumn = pos.c;
+    sp.style.gridRow    = pos.r;
+    sp.innerHTML = `
+      <div class="space-num">${i}</div>
+      <div class="space-icon">${info.icon}</div>
+      <div class="space-lbl">${info.lbl}</div>
+    `;
+    board.appendChild(sp);
+  }
+}
+
+/* ════════════════════════════════════════
+   TOKENS
+════════════════════════════════════════ */
+function spaceCenter(id) {
+  const [row, col] = GRID_POS[id];
+  const PAD = 4, CELL = 80, GAP = 3;
+  return { x: PAD + col * (CELL + GAP) + CELL / 2, y: PAD + row * (CELL + GAP) + CELL / 2 };
+}
+
+function renderTokens() {
+  const layer = document.getElementById('tokens-layer');
+  layer.innerHTML = '';
+
+  const byPos = {};
+  G.players.forEach((p, i) => {
+    byPos[p.position] = byPos[p.position] || [];
+    byPos[p.position].push(i);
+  });
+
+  G.players.forEach((p, i) => {
+    const c      = spaceCenter(p.position);
+    const group  = byPos[p.position];
+    const sibIdx = group.indexOf(i);
+    const offset = (sibIdx - (group.length - 1) / 2) * 15;
+
+    const tok = document.createElement('div');
+    tok.className  = 'token';
+    tok.id         = `tok-${i}`;
+    tok.style.background = p.color;
+    tok.style.left = (c.x + offset - 10.5) + 'px';
+    tok.style.top  = (c.y - 10.5) + 'px';
+    tok.textContent = p.initials;
+    layer.appendChild(tok);
+  });
+}
+
+function repositionToken(idx) {
+  const byPos = {};
+  G.players.forEach((p, i) => {
+    byPos[p.position] = byPos[p.position] || [];
+    byPos[p.position].push(i);
+  });
+
+  const p      = G.players[idx];
+  const c      = spaceCenter(p.position);
+  const group  = byPos[p.position];
+  const sibIdx = group.indexOf(idx);
+  const offset = (sibIdx - (group.length - 1) / 2) * 15;
+
+  const tok = document.getElementById(`tok-${idx}`);
+  if (tok) {
+    tok.style.left = (c.x + offset - 10.5) + 'px';
+    tok.style.top  = (c.y - 10.5) + 'px';
+  }
+}
+
+/* ════════════════════════════════════════
+   SIDE PANEL
+════════════════════════════════════════ */
+function refreshCurrentPlayer() {
+  const p = G.players[G.currentIdx];
+  const dot = document.getElementById('cp-dot');
+  dot.style.background = p.color;
+  dot.textContent = p.initials;
+  document.getElementById('cp-name').textContent = `${p.name}'s Turn`;
+  document.getElementById('cp-pos').textContent  = `Space ${p.position} — roll the dice!`;
+  document.getElementById('roll-btn').disabled   = false;
+  document.getElementById('roll-info').textContent = '';
+  document.getElementById('dice-face').textContent  = '🎲';
+}
+
+function renderPlayersList() {
+  const list = document.getElementById('players-list');
+  list.innerHTML = '';
+  G.players.forEach((p, i) => {
+    const type = G.board[p.position];
+    const info = SPACE_INFO[type];
+    const row  = document.createElement('div');
+    row.className = `prow-game ${i === G.currentIdx ? 'is-current' : ''}`;
+    row.id = `pr-${i}`;
+    row.innerHTML = `
+      <div class="ptok-mini" style="background:${p.color}">${p.initials}</div>
+      <div style="flex:1">
+        <div class="pname-s">${p.name}</div>
+        <div class="ppos-s">Space ${p.position} — ${info.icon} ${info.lbl}</div>
+      </div>
+      <div class="pstars">${'⭐'.repeat(p.stars) || '—'}</div>
+    `;
+    list.appendChild(row);
+  });
+}
+
+/* ════════════════════════════════════════
+   DICE & MOVEMENT
+════════════════════════════════════════ */
+const FACES = ['⚀','⚁','⚂','⚃','⚄','⚅'];
+
+function rollDice() {
+  if (G.rolling) return;
+  G.rolling = true;
+  document.getElementById('roll-btn').disabled = true;
+
+  const face  = document.getElementById('dice-face');
+  let n = 0;
+  const total = 14;
+  const anim  = setInterval(() => {
+    face.textContent = FACES[Math.floor(Math.random() * 6)];
+    n++;
+    if (n >= total) {
+      clearInterval(anim);
+      const result = Math.floor(Math.random() * 6) + 1;
+      face.textContent = FACES[result - 1];
+      face.classList.add('rolling');
+      setTimeout(() => face.classList.remove('rolling'), 580);
+
+      document.getElementById('roll-info').textContent = `Rolled ${result} — moving ${result} spaces…`;
+      setTimeout(() => advance(result), 480);
+    }
+  }, 75);
+}
+
+function advance(steps) {
+  const idx    = G.currentIdx;
+  const p      = G.players[idx];
+  const oldPos = p.position;
+  const newPos = (oldPos + steps) % 20;
+  const looped = newPos < oldPos || (oldPos === 0 && newPos > 0 && steps > 0 && oldPos === 0 && newPos === steps % 20 && newPos < steps);
+
+  p.position = newPos;
+  G.rolling  = false;
+
+  renderTokens();
+  setTimeout(() => repositionToken(idx), 20);
+
+  document.querySelectorAll('.space').forEach(s => s.classList.remove('highlight'));
+  const dest = document.getElementById(`sp-${newPos}`);
+  if (dest) dest.classList.add('highlight');
+
+  if ((oldPos + steps) >= 20) toast('🏁 Passed START — keep going!');
+
+  renderPlayersList();
+  document.getElementById('cp-pos').textContent = `Space ${newPos} — landed!`;
+
+  setTimeout(() => {
+    const type = G.board[newPos];
+    if (type === 'start') {
+      toast('🏁 Back to START — free turn, no challenge!');
+      setTimeout(nextTurn, 1800);
+    } else {
+      showChallenge(type, idx);
+    }
+  }, 700);
+}
+
+/* ════════════════════════════════════════
+   CHALLENGE MODAL
+════════════════════════════════════════ */
+function showChallenge(type, playerIdx) {
+  const pool = POOL[type];
+  const ch   = pool[Math.floor(Math.random() * pool.length)];
+  G.activeChallenge = { type, playerIdx, ch };
+
+  const badge = document.getElementById('mod-badge');
+  badge.className   = `type-badge ${BADGE_CLS[type]}`;
+  badge.innerHTML   = BADGE_LBL[type];
+
+  document.getElementById('mod-pname').textContent    = G.players[playerIdx].name;
+  document.getElementById('mod-title').textContent    = ch.title;
+  document.getElementById('mod-loc').textContent      = ch.location;
+
+  const scen = document.getElementById('mod-scenario');
+  scen.textContent   = ch.scenario;
+  scen.style.borderColor = ch.color;
+
+  document.getElementById('mod-tasks-lbl').textContent = '🎯 Your Challenge';
+
+  const tasksDiv = document.getElementById('mod-tasks');
+  tasksDiv.innerHTML = '';
+  ch.tasks.forEach((t, i) => {
+    const row = document.createElement('div');
+    row.className = 'task-row';
+    row.innerHTML = `
+      <div class="task-n" style="background:${ch.color}22;color:${ch.color}">${i + 1}</div>
+      <div>${t}</div>
+    `;
+    tasksDiv.appendChild(row);
+  });
+
+  document.getElementById('mod-tip').innerHTML = ch.tip;
+  document.getElementById('mod-role').textContent = ROLE_MSG[type];
+
+  resetTimer();
+  document.getElementById('btn-start').disabled = false;
+  document.getElementById('btn-done').disabled  = true;
+
+  document.getElementById('challenge-modal').classList.remove('hidden');
+}
+
+/* ════════════════════════════════════════
+   TIMER
+════════════════════════════════════════ */
+function resetTimer() {
+  clearInterval(G.timerInterval);
+  G.timerLeft = TIMER_SEC;
+  document.getElementById('timer-txt').textContent = '3:00';
+  const prog = document.getElementById('timer-prog');
+  prog.style.strokeDashoffset = '0';
+  prog.style.stroke = '#27AE60';
+}
+
+function startTimer() {
+  document.getElementById('btn-start').disabled = true;
+  document.getElementById('btn-done').disabled  = false;
+
+  G.timerInterval = setInterval(() => {
+    G.timerLeft--;
+    const m = Math.floor(G.timerLeft / 60);
+    const s = G.timerLeft % 60;
+    document.getElementById('timer-txt').textContent =
+      `${m}:${String(s).padStart(2, '0')}`;
+
+    const ratio  = G.timerLeft / TIMER_SEC;
+    const offset = CIRC * (1 - ratio);
+    const prog   = document.getElementById('timer-prog');
+    prog.style.strokeDashoffset = offset;
+    prog.style.stroke = ratio > 0.5 ? '#27AE60' : ratio > 0.2 ? '#E8920A' : '#E74C3C';
+
+    if (G.timerLeft <= 0) {
+      clearInterval(G.timerInterval);
+      document.getElementById('timer-txt').textContent = '0:00';
+      document.getElementById('mod-role').textContent  = '⏰ Time\'s up! Did the player complete the challenge?';
+    }
+  }, 1000);
+}
+
+/* ════════════════════════════════════════
+   CHALLENGE RESOLUTION
+════════════════════════════════════════ */
+function completeChallenge() {
+  clearInterval(G.timerInterval);
+  const idx = G.activeChallenge.playerIdx;
+  G.players[idx].stars++;
+
+  closeModal();
+  renderPlayersList();
+  toast(`⭐ ${G.players[idx].name} earned a star!`);
+
+  if (G.players[idx].stars >= WIN_STARS) {
+    setTimeout(() => showWin(idx), 600);
+    return;
+  }
+  setTimeout(nextTurn, 600);
+}
+
+function skipChallenge() {
+  clearInterval(G.timerInterval);
+  closeModal();
+  setTimeout(nextTurn, 300);
+}
+
+function closeModal() {
+  document.getElementById('challenge-modal').classList.add('hidden');
+  document.querySelectorAll('.space').forEach(s => s.classList.remove('highlight'));
+}
+
+/* ════════════════════════════════════════
+   TURNS
+════════════════════════════════════════ */
+function nextTurn() {
+  G.currentIdx = (G.currentIdx + 1) % G.players.length;
+  renderPlayersList();
+  refreshCurrentPlayer();
+}
+
+/* ════════════════════════════════════════
+   WIN
+════════════════════════════════════════ */
+function showWin(idx) {
+  const p = G.players[idx];
+  document.getElementById('win-ttl').textContent =
+    `🏆 ${p.name} wins!`;
+  document.getElementById('win-sub').textContent =
+    `Completed ${WIN_STARS} challenges — a true master of idioms, phrasal verbs & B2+ grammar! 🗝️✨`;
+  document.getElementById('win-ov').classList.remove('hidden');
+}
+
+/* ════════════════════════════════════════
+   TOAST
+════════════════════════════════════════ */
+function toast(msg) {
+  const t = document.createElement('div');
+  t.className   = 'toast';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 3000);
+}
+</script>
+</body>
+</html>

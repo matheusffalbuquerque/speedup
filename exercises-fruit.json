@@ -3,850 +3,922 @@
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "\"Cohesion\" in a text refers to...",
+      "question": "What does the idiom \"bite the bullet\" mean?",
       "options": [
-        "The overall meaning and logical flow of ideas",
-        "The grammatical and lexical links that connect sentences and paragraphs",
-        "The vocabulary level of a written piece",
-        "The use of complex grammar structures"
+        "To speak very loudly",
+        "To face a difficult situation with courage",
+        "To avoid a problem completely",
+        "To make a joke at the wrong time"
       ],
-      "correctAnswer": "The grammatical and lexical links that connect sentences and paragraphs"
+      "correctAnswer": "To face a difficult situation with courage"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "\"Coherence\" is best described as...",
+      "question": "What does \"face the music\" mean?",
       "options": [
-        "The use of connectors like 'however' and 'therefore'",
-        "Avoiding repetition through substitution",
-        "The logical consistency and clear flow of ideas throughout a text",
-        "Matching the register to the audience"
+        "To enjoy a concert",
+        "To accept the consequences of your actions",
+        "To change your opinion quickly",
+        "To work in the music industry"
       ],
-      "correctAnswer": "The logical consistency and clear flow of ideas throughout a text"
+      "correctAnswer": "To accept the consequences of your actions"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "What is the function of a \"transition\" in written discourse?",
+      "question": "What does \"get the ball rolling\" mean?",
       "options": [
-        "To introduce a new topic unrelated to the previous one",
-        "To signal a relationship between ideas — contrast, addition, or result",
-        "To summarise the entire text at the end",
-        "To express the writer's personal opinion"
+        "To start an activity or process",
+        "To finish a project successfully",
+        "To cancel a meeting",
+        "To play a sport professionally"
       ],
-      "correctAnswer": "To signal a relationship between ideas — contrast, addition, or result"
+      "correctAnswer": "To start an activity or process"
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "_____ the severe weather conditions, the conference proceeded as planned.",
-      "correctAnswer": "Notwithstanding"
+      "type": "multiple-choice",
+      "question": "If someone is \"under the weather\", they are...",
+      "options": [
+        "traveling abroad",
+        "slightly ill",
+        "extremely busy",
+        "feeling excited"
+      ],
+      "correctAnswer": "slightly ill"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "\"Albeit\" is closest in meaning to...",
+      "question": "What does \"go the extra mile\" mean?",
       "options": [
-        "Therefore",
-        "Nevertheless",
-        "Although / even though",
-        "In addition to"
+        "To travel one more mile",
+        "To do more than what is expected",
+        "To arrive late on purpose",
+        "To change jobs frequently"
       ],
-      "correctAnswer": "Although / even though"
+      "correctAnswer": "To do more than what is expected"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "She was the first to _____ that the initial proposal had significant flaws — her honesty was appreciated by the team.",
-      "correctAnswer": "acknowledge"
+      "type": "multiple-choice",
+      "question": "What does \"break the ice\" mean?",
+      "options": [
+        "To damage something fragile",
+        "To begin a conversation and reduce tension",
+        "To end an argument suddenly",
+        "To ruin a friendly meeting"
+      ],
+      "correctAnswer": "To begin a conversation and reduce tension"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "To \"paraphrase\" means to...",
+      "question": "What does \"cut corners\" mean?",
       "options": [
-        "Translate a sentence into another language",
-        "Copy a text and cite the source",
-        "Express the same idea using different words without changing the meaning",
-        "Summarise only the main point of a long text"
+        "To save time or money by doing something badly",
+        "To design a building",
+        "To choose a shorter route",
+        "To solve a problem creatively"
       ],
-      "correctAnswer": "Express the same idea using different words without changing the meaning"
+      "correctAnswer": "To save time or money by doing something badly"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "The professor asked her student to _____ on the point about climate change — a single sentence was not enough.",
-      "correctAnswer": "elaborate"
+      "type": "fill-blank",
+      "question": "We need to ______ the ball rolling before the client loses interest.",
+      "correctAnswer": "get"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "\"Inasmuch as\" is used to...",
-      "options": [
-        "Introduce a contrast or unexpected result",
-        "Provide a reason or qualification — similar to 'in so far as'",
-        "Add emphasis to a previously stated idea",
-        "Indicate a time sequence between two events"
-      ],
-      "correctAnswer": "Provide a reason or qualification — similar to 'in so far as'"
+      "type": "fill-blank",
+      "question": "I wasn't feeling great yesterday. I was a bit under the ______.",
+      "correctAnswer": "weather"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "The policy was considered a success _____ _____ _____ it reduced unemployment by 12% within two years.",
-      "correctAnswer": "to the extent that"
+      "type": "complete",
+      "question": "Complete the idiom: \"go the extra ______\".",
+      "correctAnswer": "mile"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "To \"digress\" during a presentation means to...",
-      "options": [
-        "Summarise the key points clearly",
-        "Move away from the main topic temporarily",
-        "Introduce a counter-argument",
-        "Use formal and academic vocabulary"
-      ],
-      "correctAnswer": "Move away from the main topic temporarily"
+      "type": "complete",
+      "question": "Complete the idiom: \"break the ______\".",
+      "correctAnswer": "ice"
     },
     {
       "id": 12,
       "type": "complete",
-      "question": "After the brief digression, the speaker said: \"Let me _____ to the main argument I was making before.\"",
-      "correctAnswer": "resume"
+      "question": "Complete the idiom: \"face the ______\".",
+      "correctAnswer": "music"
     },
     {
       "id": 13,
-      "type": "fill-blank",
-      "question": "The project was approved, _____ several committee members had raised serious objections.",
-      "correctAnswer": "notwithstanding"
+      "type": "translate",
+      "question": "Translate into English: \"Ela decidiu enfrentar a situação com coragem.\"",
+      "correctAnswer": "She decided to bite the bullet"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "\"In that\" as a connector is used to...",
-      "options": [
-        "Introduce a time clause",
-        "Express a concession or contrast",
-        "Explain or specify the reason for something just stated",
-        "Add a new, unrelated point"
-      ],
-      "correctAnswer": "Explain or specify the reason for something just stated"
+      "type": "translate",
+      "question": "Translate into English: \"Depois do erro, ele teve que arcar com as consequências.\"",
+      "correctAnswer": "After the mistake, he had to face the music"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "The new law was controversial, _____ it imposed restrictions that many citizens considered an infringement of personal freedom.",
-      "correctAnswer": "in that"
+      "type": "translate",
+      "question": "Translate into English: \"Vamos iniciar a reunião.\"",
+      "correctAnswer": "Let's get the ball rolling|Let us get the ball rolling"
     },
     {
       "id": 16,
       "type": "multiple-choice",
-      "question": "Which sentence correctly uses \"albeit\"?",
+      "question": "Which idiom best fits this meaning: \"to make people feel more comfortable in a social situation\"?",
       "options": [
-        "The report was completed albeit quickly and thoroughly.",
-        "The film received positive reviews, albeit with some criticism of the ending.",
-        "She passed the exam albeit she studied very hard.",
-        "Albeit the rain, they enjoyed the outdoor event."
+        "cut corners",
+        "break the ice",
+        "face the music",
+        "under the weather"
       ],
-      "correctAnswer": "The film received positive reviews, albeit with some criticism of the ending."
+      "correctAnswer": "break the ice"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "A text has _____ when its ideas follow a logical sequence that the reader can easily follow — even without explicit connectors.",
-      "correctAnswer": "coherence"
+      "type": "multiple-choice",
+      "question": "Which idiom has a negative meaning related to quality or effort?",
+      "options": [
+        "go the extra mile",
+        "bite the bullet",
+        "cut corners",
+        "get the ball rolling"
+      ],
+      "correctAnswer": "cut corners"
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "In his closing remarks, the director _____ the team's concerns and promised to address them in the next meeting.",
-      "correctAnswer": "acknowledged"
+      "type": "fill-blank",
+      "question": "The team really went the extra ______ to deliver the project early.",
+      "correctAnswer": "mile"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which word best completes the sentence? \"The budget cuts affected the department _____ _____ _____ several key projects had to be cancelled.\"",
-      "options": [
-        "albeit",
-        "notwithstanding",
-        "to the extent that",
-        "inasmuch as"
-      ],
-      "correctAnswer": "to the extent that"
+      "type": "fill-blank",
+      "question": "When the manager arrived, someone had to break the ______ and speak first.",
+      "correctAnswer": "ice"
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Rewrite the sentence using \"notwithstanding\": \"Despite the high cost, the board approved the plan.\"",
-      "correctAnswer": "notwithstanding the high cost, the board approved the plan"
+      "type": "multiple-choice",
+      "question": "Which sentence uses the idiom correctly?",
+      "options": [
+        "I was under the weather, so I ran five kilometers.",
+        "We need to get the ball rolling if we want to finish on time.",
+        "She cut corners by carefully checking every detail.",
+        "He faced the music by turning on the radio."
+      ],
+      "correctAnswer": "We need to get the ball rolling if we want to finish on time."
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "\"Ellipsis\" in grammar refers to...",
+      "question": "Which idiom best completes the sentence? \"The presentation was awkward at first, so Maya told a joke to ______.\"",
       "options": [
-        "Using synonyms to avoid repeating the same word",
-        "Replacing a word or phrase with a pronoun",
-        "Omitting words that can be understood from context to avoid unnecessary repetition",
-        "Referring back to a previously mentioned idea"
+        "cut corners",
+        "break the ice",
+        "face the music",
+        "go the extra mile"
       ],
-      "correctAnswer": "Omitting words that can be understood from context to avoid unnecessary repetition"
+      "correctAnswer": "break the ice"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Complete using ellipsis: \"She can play the guitar, and her brother _____ too.\" (omit repeated words)",
-      "correctAnswer": "can"
+      "type": "multiple-choice",
+      "question": "Which idiom best completes the sentence? \"The company tried to ______ on safety checks, and that caused serious problems.\"",
+      "options": [
+        "cut corners",
+        "get the ball rolling",
+        "bite the bullet",
+        "break the ice"
+      ],
+      "correctAnswer": "cut corners"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "In the sentence \"Both plans were presented. The former focused on cost reduction; the latter on market expansion.\", what does \"the former\" refer to?",
+      "question": "Choose the best register label for the idiom \"under the weather\".",
       "options": [
-        "Market expansion",
-        "Cost reduction",
-        "The first plan mentioned",
-        "The second plan mentioned"
+        "very formal",
+        "neutral academic",
+        "informal everyday English",
+        "technical jargon"
       ],
-      "correctAnswer": "The first plan mentioned"
+      "correctAnswer": "informal everyday English"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Rewrite to avoid repetition using substitution: \"Maria submitted her report. Maria's report was excellent.\" → Maria submitted her report. _____ was excellent.",
-      "correctAnswer": "It"
+      "type": "multiple-choice",
+      "question": "Choose the best register label for the idiom \"cut corners\".",
+      "options": [
+        "formal legal language only",
+        "informal to neutral everyday English",
+        "poetic only",
+        "old-fashioned literary English"
+      ],
+      "correctAnswer": "informal to neutral everyday English"
     },
     {
       "id": 5,
       "type": "fill-blank",
-      "question": "Two solutions were proposed: one involving tax reform and another involving public spending cuts. The _____ was rejected immediately; the _____ was debated at length.",
-      "correctAnswer": "former / latter"
+      "question": "After months of delay, someone finally got the ball ______.",
+      "correctAnswer": "rolling"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Which sentence demonstrates ellipsis correctly?",
-      "options": [
-        "He arrived late, and she arrived late too.",
-        "He arrived late, and she did too.",
-        "He arrived late, and she arrived as well.",
-        "He arrived late, and so she arrived."
-      ],
-      "correctAnswer": "He arrived late, and she did too."
+      "type": "complete",
+      "question": "Complete the sentence with an idiom: \"He knew the conversation would be difficult, but he decided to ______ ______ ______.\"",
+      "correctAnswer": "bite the bullet"
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "The committee received two proposals. _____ proposals were reviewed carefully before the final decision was made.",
-      "correctAnswer": "Such"
+      "type": "multiple-choice",
+      "question": "Which sentence sounds most appropriate in a formal report?",
+      "options": [
+        "We need to get the ball rolling ASAP.",
+        "The project should commence as soon as possible.",
+        "Let's break the ice with the investors.",
+        "They were under the weather during negotiations."
+      ],
+      "correctAnswer": "The project should commence as soon as possible."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "In the sentence \"The results were surprising. This prompted the team to reanalyse the data.\", \"this\" refers to...",
+      "question": "Which sentence is the best informal equivalent of \"The team exceeded expectations\"?",
       "options": [
-        "The team",
-        "The data",
-        "The surprising results",
-        "The reanalysis"
+        "The team went the extra mile.",
+        "The team commenced operations.",
+        "The team demonstrated procedural compliance.",
+        "The team maintained neutrality."
       ],
-      "correctAnswer": "The surprising results"
+      "correctAnswer": "The team went the extra mile."
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Rewrite using ellipsis: \"He didn't finish his homework, and she didn't finish her homework either.\"",
-      "correctAnswer": "he didn't finish his homework, and she didn't either"
+      "type": "fill-blank",
+      "question": "Although it was uncomfortable, she faced the ______ and apologized publicly.",
+      "correctAnswer": "music"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Two candidates were shortlisted: Dr. Hughes and Professor Carter. The _____ specialises in linguistics; the _____ in cognitive psychology.",
-      "correctAnswer": "former / latter"
+      "type": "multiple-choice",
+      "question": "Which sentence uses \"under the weather\" correctly?",
+      "options": [
+        "He was under the weather, so he stayed home and rested.",
+        "The report was under the weather and needed editing.",
+        "We were under the weather, so we signed the contract.",
+        "She put the proposal under the weather yesterday."
+      ],
+      "correctAnswer": "He was under the weather, so he stayed home and rested."
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Which sentence uses \"substitution\" to avoid repetition?",
-      "options": [
-        "I bought a new car. The new car is very fast.",
-        "I bought a new car. It is very fast.",
-        "I bought a new car. A car that is very fast.",
-        "I bought a new car. New cars are generally fast."
-      ],
-      "correctAnswer": "I bought a new car. It is very fast."
+      "type": "translate",
+      "question": "Translate into English: \"Eles fizeram mais do que o esperado para ajudar o cliente.\"",
+      "correctAnswer": "They went the extra mile to help the client"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Three strategies were tested. _____ strategies proved effective only under specific conditions.",
-      "correctAnswer": "Such"
+      "type": "translate",
+      "question": "Translate into English: \"A empresa tentou economizar de forma irresponsável.\"",
+      "correctAnswer": "The company tried to cut corners"
     },
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "\"Substitution\" as a cohesion device involves...",
+      "question": "Which expression is least appropriate in a university essay?",
       "options": [
-        "Omitting words that are already understood",
-        "Replacing a word or phrase with another item (pronoun, 'do so', 'one', etc.) to avoid repetition",
-        "Using discourse markers to link ideas logically",
-        "Paraphrasing a complex idea in simpler terms"
+        "under the weather",
+        "consequently",
+        "moreover",
+        "in contrast"
       ],
-      "correctAnswer": "Replacing a word or phrase with another item (pronoun, 'do so', 'one', etc.) to avoid repetition"
+      "correctAnswer": "under the weather"
     },
     {
       "id": 14,
       "type": "complete",
-      "question": "\"Several policies were introduced. _____ policies had mixed results.\" Choose the reference device that creates cohesion without repeating 'policies': \"These\" or \"Such\"?",
-      "correctAnswer": "Such / These"
+      "question": "Choose an idiom to complete the idea: \"When the new intern introduced herself, she used a funny story to ______ the ______.\"",
+      "correctAnswer": "break the ice"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "\"Would you like a biscuit?\" — \"No thanks, I've already had _____.\" (use substitution for 'a biscuit')",
-      "correctAnswer": "one"
+      "type": "multiple-choice",
+      "question": "Which option best paraphrases \"He had to face the music after lying to the team\"?",
+      "options": [
+        "He had to accept the consequences",
+        "He had to sing in front of the team",
+        "He had to leave the meeting early",
+        "He had to start the project again"
+      ],
+      "correctAnswer": "He had to accept the consequences"
     },
     {
       "id": 16,
       "type": "multiple-choice",
-      "question": "\"The latter\" always refers to...",
+      "question": "Which option best paraphrases \"Let's get the ball rolling\" in a work meeting?",
       "options": [
-        "The first item mentioned in a list",
-        "Any item mentioned previously",
-        "The last item mentioned in a pair or list",
-        "A more important of two things"
+        "Let's postpone everything",
+        "Let's begin",
+        "Let's complain",
+        "Let's leave early"
       ],
-      "correctAnswer": "The last item mentioned in a pair or list"
+      "correctAnswer": "Let's begin"
     },
     {
       "id": 17,
       "type": "fill-blank",
-      "question": "The meeting discussed two issues: funding and staffing. The former was resolved quickly; the resolution of _____ took considerably longer.",
-      "correctAnswer": "the latter"
+      "question": "In casual conversation, native speakers often say \"I'm a little under the ______\" instead of \"I'm slightly ill.\"",
+      "correctAnswer": "weather"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Rewrite using 'do so' to avoid repetition: \"She wanted to quit, but she couldn't quit because of her contract.\"",
-      "correctAnswer": "she wanted to quit, but she couldn't do so because of her contract"
+      "type": "multiple-choice",
+      "question": "Which sentence shows the best awareness of register?",
+      "options": [
+        "The CEO was under the weather; henceforth, the merger was postponed.",
+        "The patient was under the weather, according to the surgical report.",
+        "The manager was feeling unwell, so the meeting was rescheduled.",
+        "The contract was under the weather and needed revision."
+      ],
+      "correctAnswer": "The manager was feeling unwell, so the meeting was rescheduled."
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "\"Anaphoric\" reference means...",
-      "options": [
-        "Pointing forward to something not yet mentioned",
-        "Referring back to something already mentioned in the text",
-        "Using a pronoun to avoid repeating a noun",
-        "Omitting words that can be inferred from context"
-      ],
-      "correctAnswer": "Referring back to something already mentioned in the text"
+      "type": "translate",
+      "question": "Translate into English: \"Para começar a conversa, ele fez uma pergunta simples.\"",
+      "correctAnswer": "To break the ice, he asked a simple question"
     },
     {
       "id": 20,
       "type": "complete",
-      "question": "\"The CEO announced a new strategy. _____ decision came as a surprise to many shareholders.\" Fill in the best reference device.",
-      "correctAnswer": "This"
+      "question": "Complete the sentence with the best idiom: \"The supplier used cheap materials to save money. They clearly ______ ______.\"",
+      "correctAnswer": "cut corners"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "\"Hedging\" in academic language is used to...",
+      "question": "What does the phrasal verb \"put off\" mean in this sentence: \"They put off the meeting\"?",
       "options": [
-        "Make a statement sound more certain and definitive",
-        "Express caution or uncertainty — avoiding absolute claims",
-        "Introduce a counter-argument to one's own position",
-        "Criticise another writer's methodology"
+        "to cancel permanently",
+        "to postpone",
+        "to enjoy",
+        "to organize"
       ],
-      "correctAnswer": "Express caution or uncertainty — avoiding absolute claims"
+      "correctAnswer": "to postpone"
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "Research suggests that children _____ _____ learn languages more easily than adults, though individual variation is significant.",
-      "correctAnswer": "tend to"
+      "type": "multiple-choice",
+      "question": "What does \"look into\" mean?",
+      "options": [
+        "to investigate",
+        "to invent",
+        "to admire",
+        "to memorize"
+      ],
+      "correctAnswer": "to investigate"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence uses hedging appropriately?",
+      "question": "What does \"turn down\" mean in this sentence: \"She turned down the offer\"?",
       "options": [
-        "This study proves that diet is the only cause of obesity.",
-        "This study suggests that diet may be a contributing factor in obesity.",
-        "This study clearly shows that diet undoubtedly causes obesity.",
-        "This study confirms without doubt that diet is the main cause."
+        "to accept enthusiastically",
+        "to reject",
+        "to reduce the volume",
+        "to write formally"
       ],
-      "correctAnswer": "This study suggests that diet may be a contributing factor in obesity."
+      "correctAnswer": "to reject"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "The new approach is _____ the most effective strategy proposed this decade — no comparable method has achieved such results.",
-      "correctAnswer": "undoubtedly"
+      "type": "multiple-choice",
+      "question": "What does \"run into\" usually mean when talking about people?",
+      "options": [
+        "to crash into someone",
+        "to meet unexpectedly",
+        "to argue strongly",
+        "to invite someone in"
+      ],
+      "correctAnswer": "to meet unexpectedly"
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "The data is _____ insufficient to draw firm conclusions — further research is needed before any policy changes are made.",
-      "correctAnswer": "clearly"
+      "type": "multiple-choice",
+      "question": "Which phrasal verb is separable?",
+      "options": [
+        "look into",
+        "run into",
+        "put off",
+        "come across"
+      ],
+      "correctAnswer": "put off"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "\"Arguably\" is used by writers to...",
+      "question": "Which phrasal verb is inseparable?",
       "options": [
-        "Present a fact that cannot be disputed",
-        "Express that a claim is strong but open to debate",
-        "Introduce a direct quotation from another source",
-        "Indicate that two ideas are equally valid"
+        "hand in",
+        "figure out",
+        "look into",
+        "turn down"
       ],
-      "correctAnswer": "Express that a claim is strong but open to debate"
+      "correctAnswer": "look into"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "The symptoms _____ _____ be caused by stress, though a full medical evaluation would be needed to confirm this.",
-      "correctAnswer": "appear to"
+      "question": "We need to look ______ the complaint before replying to the customer.",
+      "correctAnswer": "into"
     },
     {
       "id": 8,
-      "type": "complete",
-      "question": "Excessive social media use _____ _____ affect concentration levels in adolescents, according to several recent studies.",
-      "correctAnswer": "tends to"
+      "type": "fill-blank",
+      "question": "She turned ______ the job because the salary was too low.",
+      "correctAnswer": "down"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which of the following is a \"boosting\" expression?",
-      "options": [
-        "It appears that",
-        "It tends to",
-        "It may possibly",
-        "It is undoubtedly"
-      ],
-      "correctAnswer": "It is undoubtedly"
+      "type": "complete",
+      "question": "Complete the phrasal verb: \"figure ______\".",
+      "correctAnswer": "out"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "This is _____ the most significant contribution to the field in the last twenty years.",
-      "correctAnswer": "arguably"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I looked the issue into.",
+        "I looked into the issue.",
+        "I looked into it the issue.",
+        "I looked the issue."
+      ],
+      "correctAnswer": "I looked into the issue."
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Which sentence softens the claim most effectively using hedging?",
+      "question": "Which sentence is correct?",
       "options": [
-        "Remote work destroys team communication.",
-        "Remote work appears to have some impact on team communication.",
-        "Remote work undoubtedly destroys team communication entirely.",
-        "Remote work is clearly the worst thing for team communication."
+        "She turned down it.",
+        "She turned it down.",
+        "She turned into it down.",
+        "She down turned it."
       ],
-      "correctAnswer": "Remote work appears to have some impact on team communication."
+      "correctAnswer": "She turned it down."
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "_____ the results suggest a positive correlation, the sample size is too small to make a definitive claim.",
-      "correctAnswer": "Although / While / Even though"
+      "type": "multiple-choice",
+      "question": "What does \"bring up\" mean in this sentence: \"He brought up an interesting point\"?",
+      "options": [
+        "to mention",
+        "to raise a child",
+        "to hide",
+        "to repeat quietly"
+      ],
+      "correctAnswer": "to mention"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Add hedging to make this statement more academic: \"Stress causes poor academic performance.\"",
-      "correctAnswer": "stress tends to / appears to / may contribute to poor academic performance"
+      "type": "multiple-choice",
+      "question": "What does \"carry on\" mean?",
+      "options": [
+        "to continue",
+        "to transport luggage",
+        "to cancel",
+        "to discover by chance"
+      ],
+      "correctAnswer": "to continue"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Shakespeare is _____ the greatest playwright in the history of the English language.",
-      "correctAnswer": "arguably"
+      "question": "Please hand ______ your assignment by Friday.",
+      "correctAnswer": "in"
     },
     {
       "id": 15,
       "type": "multiple-choice",
-      "question": "Which hedging phrase is most appropriate in a formal academic essay?",
+      "question": "Which phrasal verb means \"discover by chance\"?",
       "options": [
-        "I think maybe this could possibly be true",
-        "It would appear that further investigation is warranted",
-        "Probably this is what happens",
-        "Maybe things work this way"
+        "come across",
+        "put off",
+        "set up",
+        "take over"
       ],
-      "correctAnswer": "It would appear that further investigation is warranted"
+      "correctAnswer": "come across"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "This approach is _____ more efficient, though cost considerations must also be taken into account.",
-      "correctAnswer": "clearly"
+      "type": "translate",
+      "question": "Translate into English: \"Vou investigar esse problema amanhã.\"",
+      "correctAnswer": "I will look into this problem tomorrow|I'll look into this problem tomorrow"
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "_____ _____ _____ that the new regulations have had a significant effect on air quality in urban areas.",
-      "correctAnswer": "It would appear"
+      "type": "translate",
+      "question": "Translate into English: \"Ela recusou o convite.\"",
+      "correctAnswer": "She turned down the invitation|She turned the invitation down"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "\"Boosting\" expressions are used to...",
-      "options": [
-        "Introduce an uncertain or tentative claim",
-        "Strengthen or reinforce the certainty of a statement",
-        "Add a contrast to the previous argument",
-        "Summarise the findings of a study"
-      ],
-      "correctAnswer": "Strengthen or reinforce the certainty of a statement"
+      "type": "complete",
+      "question": "Choose the best phrasal verb: \"We had to ______ ______ the launch because the software wasn't ready.\"",
+      "correctAnswer": "put off"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "The evidence _____ _____ support the hypothesis, though replication studies will be needed.",
-      "correctAnswer": "tends to"
+      "type": "multiple-choice",
+      "question": "Which sentence shows an inseparable phrasal verb?",
+      "options": [
+        "They put the meeting off.",
+        "They put it off.",
+        "They looked into the matter.",
+        "They turned the offer down."
+      ],
+      "correctAnswer": "They looked into the matter."
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Transform this boosted claim into a hedged one: \"This policy undoubtedly solves the housing crisis.\"",
-      "correctAnswer": "this policy appears to / may / tends to address some aspects of the housing crisis"
+      "type": "multiple-choice",
+      "question": "Which phrasal verb best completes the sentence? \"During the meeting, she ______ an issue nobody had considered before.\"",
+      "options": [
+        "brought up",
+        "ran into",
+        "put off",
+        "came across"
+      ],
+      "correctAnswer": "brought up"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "What is the key difference between \"paraphrasing\" and \"quoting\"?",
+      "question": "Choose the correct sentence.",
       "options": [
-        "Quoting changes the original words; paraphrasing keeps them",
-        "Paraphrasing uses the exact original words; quoting changes them",
-        "Quoting keeps the exact words of the source; paraphrasing expresses the idea in your own words",
-        "There is no difference — they are the same technique"
+        "Please look the matter into.",
+        "Please look into the matter.",
+        "Please look it into the matter.",
+        "Please into look the matter."
       ],
-      "correctAnswer": "Quoting keeps the exact words of the source; paraphrasing expresses the idea in your own words"
+      "correctAnswer": "Please look into the matter."
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "In other _____, the project failed because the team lacked clear communication and defined roles.",
-      "correctAnswer": "words"
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with a pronoun.",
+      "options": [
+        "Turn down it.",
+        "Turn it down.",
+        "Turn down them it.",
+        "Turn it into down."
+      ],
+      "correctAnswer": "Turn it down."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "\"To elaborate\" means to...",
+      "question": "Choose the correct sentence with a separable phrasal verb.",
       "options": [
-        "Simplify a complex idea",
-        "Repeat the same point multiple times",
-        "Add more detail or explanation to something already stated",
-        "Contradict a point made by someone else"
+        "She put off it.",
+        "She put it off.",
+        "She looked it into.",
+        "She ran the issue into."
       ],
-      "correctAnswer": "Add more detail or explanation to something already stated"
+      "correctAnswer": "She put it off."
     },
     {
       "id": 4,
-      "type": "fill-blank",
-      "question": "The scientist was respected, _____ not widely known outside of academic circles.",
-      "correctAnswer": "albeit"
+      "type": "complete",
+      "question": "Rewrite using a pronoun: \"He handed in the report.\"",
+      "correctAnswer": "He handed it in"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "\"Inasmuch as\" is best replaced by which simpler expression?",
-      "options": [
-        "Even though",
-        "In so far as / to the degree that",
-        "As a result of",
-        "In contrast to"
-      ],
-      "correctAnswer": "In so far as / to the degree that"
+      "type": "complete",
+      "question": "Rewrite using a pronoun: \"They turned down the proposal.\"",
+      "correctAnswer": "They turned it down"
     },
     {
       "id": 6,
-      "type": "translate",
-      "question": "Paraphrase this sentence: \"Children who grow up bilingual often have advantages in cognitive flexibility.\"",
-      "correctAnswer": "bilingual children / growing up with two languages may develop / tend to show greater cognitive flexibility / adaptability"
+      "type": "complete",
+      "question": "Rewrite correctly: \"We looked the issue into.\"",
+      "correctAnswer": "We looked into the issue"
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "The programme was successful _____ _____ _____ it changed participants' long-term career prospects significantly.",
-      "correctAnswer": "to the extent that"
+      "type": "multiple-choice",
+      "question": "Which sentence is wrong?",
+      "options": [
+        "I came across an old photo.",
+        "I put the meeting off.",
+        "I looked the complaint into.",
+        "I figured the answer out."
+      ],
+      "correctAnswer": "I looked the complaint into."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence correctly uses \"inasmuch as\"?",
+      "question": "Which sentence is correct?",
       "options": [
-        "The decision was fair inasmuch as all parties had been consulted.",
-        "Inasmuch as, the results were unexpected.",
-        "She succeeded inasmuch as worked very hard.",
-        "Inasmuch as the meeting, we discussed the budget."
+        "She brought up it during lunch.",
+        "She brought it up during lunch.",
+        "She looked it into during lunch.",
+        "She came the issue across."
       ],
-      "correctAnswer": "The decision was fair inasmuch as all parties had been consulted."
+      "correctAnswer": "She brought it up during lunch."
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "\"To _____ my earlier point — what I was arguing is that communication, not technology, is the core issue.\"",
-      "correctAnswer": "elaborate on / rephrase / resume"
+      "type": "fill-blank",
+      "question": "With separable phrasal verbs, object pronouns usually go ______ the verb and the particle.",
+      "correctAnswer": "between"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "Which phrase would a speaker use to signal they are about to \"digress\"?",
-      "options": [
-        "\"To conclude...\"",
-        "\"On a slightly different note...\" / \"I should mention, though it's not directly related...\"",
-        "\"Therefore...\"",
-        "\"As I was saying...\""
-      ],
-      "correctAnswer": "\"On a slightly different note...\" / \"I should mention, though it's not directly related...\""
+      "type": "fill-blank",
+      "question": "With inseparable phrasal verbs, the object goes ______ the full phrasal verb.",
+      "correctAnswer": "after"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "\"Let me _____ that — what I meant was that the data supports the theory, not that it proves it conclusively.\"",
-      "correctAnswer": "rephrase"
+      "type": "multiple-choice",
+      "question": "Choose the correct transformation of \"Please put off the meeting.\" using a pronoun.",
+      "options": [
+        "Please put off it.",
+        "Please put it off.",
+        "Please put into it off.",
+        "Please off put it."
+      ],
+      "correctAnswer": "Please put it off."
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "\"Sorry for the brief detour — let me _____ to the main point I was making before.\"",
-      "correctAnswer": "resume"
+      "type": "multiple-choice",
+      "question": "Choose the correct transformation of \"I'll look into the complaint.\" using a pronoun.",
+      "options": [
+        "I'll look it into.",
+        "I'll look into it.",
+        "I'll look it into the complaint.",
+        "I'll into look it."
+      ],
+      "correctAnswer": "I'll look into it."
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Which connector expresses concession most appropriately in a formal text?",
-      "options": [
-        "And also",
-        "Notwithstanding",
-        "Because of",
-        "In addition to"
-      ],
-      "correctAnswer": "Notwithstanding"
+      "type": "translate",
+      "question": "Translate into English: \"Eles adiaram isso para a próxima semana.\"",
+      "correctAnswer": "They put it off until next week|They put it off for next week"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "The proposal was well-structured, _____ somewhat lacking in concrete financial projections.",
-      "correctAnswer": "albeit"
+      "type": "translate",
+      "question": "Translate into English: \"Nós vamos investigar isso imediatamente.\"",
+      "correctAnswer": "We will look into it immediately|We'll look into it immediately"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Write a sentence using \"albeit\" to express: \"The experiment was a success, but on a very small scale.\"",
-      "correctAnswer": "the experiment was a success, albeit on a very small scale"
+      "type": "complete",
+      "question": "Correct the sentence: \"She turned down it because it was risky.\"",
+      "correctAnswer": "She turned it down because it was risky"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Which connector is most appropriate for ADDING information in academic writing?",
-      "options": [
-        "Notwithstanding",
-        "Furthermore",
-        "Albeit",
-        "In that"
-      ],
-      "correctAnswer": "Furthermore"
+      "type": "complete",
+      "question": "Correct the sentence: \"He looked the problem into before replying.\"",
+      "correctAnswer": "He looked into the problem before replying"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "The law was considered unjust, _____ it disproportionately penalised lower-income households.",
-      "correctAnswer": "in that"
+      "type": "multiple-choice",
+      "question": "Which sentence is best?",
+      "options": [
+        "We ran our teacher into at the mall.",
+        "We ran into our teacher at the mall.",
+        "We ran into at our teacher the mall.",
+        "We ran our teacher at the mall into."
+      ],
+      "correctAnswer": "We ran into our teacher at the mall."
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "The company's strategy was innovative, _____ _____ _____ it completely disrupted the traditional market model.",
-      "correctAnswer": "to the extent that"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses \"figure out\" with a pronoun?",
+      "options": [
+        "Can you figure out it?",
+        "Can you figure it out?",
+        "Can you out figure it?",
+        "Can you figure into it out?"
+      ],
+      "correctAnswer": "Can you figure it out?"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "What is the function of \"notwithstanding\" in the following sentence? \"Notwithstanding the criticism, the author continued with her original vision.\"",
-      "options": [
-        "It explains the reason for the author's decision",
-        "It introduces a contrast — something happened despite an obstacle",
-        "It adds extra information about the author",
-        "It indicates a time relationship between two events"
-      ],
-      "correctAnswer": "It introduces a contrast — something happened despite an obstacle"
+      "type": "fill-blank",
+      "question": "Complete the rule: \"Look into\" is generally treated as an ______ phrasal verb.",
+      "correctAnswer": "inseparable"
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Rewrite using a cohesion device to avoid repeating \"the problem\": \"The problem was discussed for hours. The problem was not resolved.\"",
-      "correctAnswer": "the problem was discussed for hours, but it / this / such a matter was not resolved"
+      "type": "fill-blank",
+      "question": "Complete the rule: \"Turn down\" is a ______ phrasal verb.",
+      "correctAnswer": "separable"
     }
   ],
   "friday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "\"To rephrase\" an idea means to...",
+      "question": "Which sentence contains a metaphor?",
       "options": [
-        "Quote it directly from the original source",
-        "Express it again in a different or clearer way",
-        "Summarise only the main point of a long argument",
-        "Introduce a contrasting perspective"
+        "The office was a zoo during the product launch.",
+        "I was under the weather yesterday.",
+        "Could you look into this issue?",
+        "She turned the offer down politely."
       ],
-      "correctAnswer": "Express it again in a different or clearer way"
+      "correctAnswer": "The office was a zoo during the product launch."
     },
     {
       "id": 2,
-      "type": "fill-blank",
-      "question": "The funding was approved, _____ serious doubts about the project's long-term viability.",
-      "correctAnswer": "notwithstanding"
+      "type": "multiple-choice",
+      "question": "Which sentence contains hyperbole?",
+      "options": [
+        "I've told you a million times to back up your files.",
+        "He looked into the complaint.",
+        "Let's get the ball rolling.",
+        "She was feeling under the weather."
+      ],
+      "correctAnswer": "I've told you a million times to back up your files."
     },
     {
       "id": 3,
-      "type": "complete",
-      "question": "A text has both _____ and _____ when its sentences are well-connected AND the ideas follow a clear logical progression.",
-      "correctAnswer": "cohesion / coherence"
+      "type": "multiple-choice",
+      "question": "Which sentence is most likely ironic?",
+      "options": [
+        "Great, another two-hour meeting. Just what I needed.",
+        "We need to investigate the issue carefully.",
+        "She went the extra mile to help.",
+        "He submitted the report on time."
+      ],
+      "correctAnswer": "Great, another two-hour meeting. Just what I needed."
     },
     {
       "id": 4,
-      "type": "translate",
-      "question": "Rewrite using \"the former... the latter...\": \"Both options were discussed. Option A was expensive; Option B was impractical.\"",
-      "correctAnswer": "both options were discussed: the former was expensive; the latter was impractical"
+      "type": "multiple-choice",
+      "question": "Choose the most natural informal sentence.",
+      "options": [
+        "I was slightly indisposed, therefore I remained at home.",
+        "I was under the weather, so I stayed home.",
+        "My physical condition was suboptimal, so I stayed home.",
+        "I remained home due to minor illness symptoms."
+      ],
+      "correctAnswer": "I was under the weather, so I stayed home."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Identify whether the underlined word is hedging (H) or boosting (B): \"The results are *undoubtedly* significant.\"",
+      "question": "Choose the best formal alternative to \"Let's get the ball rolling.\"",
       "options": [
-        "H — it softens the claim",
-        "B — it strengthens the claim",
-        "Neither — it is a neutral connector",
-        "H — it makes the claim seem uncertain"
+        "Let's stop wasting time.",
+        "Let's break the ice.",
+        "Let's begin the process.",
+        "Let's go the extra mile."
       ],
-      "correctAnswer": "B — it strengthens the claim"
+      "correctAnswer": "Let's begin the process."
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "\"They had hoped to finish the project by Friday, but they couldn't _____ because of the last-minute changes.\" (use 'do so' to avoid repetition)",
-      "correctAnswer": "do so"
+      "question": "The writer used exaggeration for effect. That figure of speech is called ______.",
+      "correctAnswer": "hyperbole"
     },
     {
       "id": 7,
-      "type": "complete",
-      "question": "Two theories were analysed. The _____ was proposed in the 1960s; the _____ emerged only in the 1990s.",
-      "correctAnswer": "former / latter"
+      "type": "fill-blank",
+      "question": "When someone says the opposite of what they really mean for effect, that is often ______.",
+      "correctAnswer": "irony"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "Which sentence uses an advanced connector correctly?",
-      "options": [
-        "The reform was partial, albeit it improved the situation somewhat.",
-        "The reform was partial, albeit improving the situation somewhat.",
-        "Albeit the reform was partial, it improved the situation.",
-        "The reform was partial albeit; it improved the situation."
-      ],
-      "correctAnswer": "The reform was partial, albeit improving the situation somewhat."
+      "type": "fill-blank",
+      "question": "Calling a chaotic classroom \"a circus\" is an example of a ______.",
+      "correctAnswer": "metaphor"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "He chose to _____ rather than admit the mistake — a decision that cost him the team's trust.",
-      "correctAnswer": "digress"
+      "type": "translate",
+      "question": "Translate into English: \"Ele teve que encarar as consequências no fim.\"",
+      "correctAnswer": "He had to face the music in the end"
     },
     {
       "id": 10,
       "type": "translate",
-      "question": "Paraphrase: \"The inability to acknowledge one's errors is a significant obstacle to professional growth.\"",
-      "correctAnswer": "not being able to / failing to recognise / admit one's mistakes / errors can seriously hinder / limit professional development"
+      "question": "Translate into English: \"Eles encontraram a antiga professora por acaso.\"",
+      "correctAnswer": "They ran into their old teacher by chance|They ran into their old teacher"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "In the sentence \"The report outlined two risks. These were discussed in detail.\", \"these\" functions as...",
-      "options": [
-        "A boosting device",
-        "An anaphoric reference device pointing back to 'two risks'",
-        "A discourse marker introducing a new topic",
-        "An example of ellipsis"
-      ],
-      "correctAnswer": "An anaphoric reference device pointing back to 'two risks'"
+      "type": "translate",
+      "question": "Translate into English: \"Você pode descobrir isso?\"",
+      "correctAnswer": "Can you figure it out?"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "The treatment _____ _____ be effective for most patients, though results vary depending on age and overall health.",
-      "correctAnswer": "tends to"
+      "type": "complete",
+      "question": "Complete the sentence with the best idiom: \"Nobody wanted to start the discussion, so Ana decided to ______ the ______.\"",
+      "correctAnswer": "get the ball rolling"
     },
     {
       "id": 13,
       "type": "complete",
-      "question": "The policy change was disruptive, _____ it redefined roles across every department in the organisation.",
-      "correctAnswer": "in that"
+      "question": "Complete the sentence with the best phrasal verb: \"The editor asked me to ______ ______ the article before publication.\"",
+      "correctAnswer": "look into"
     },
     {
       "id": 14,
       "type": "multiple-choice",
-      "question": "What is the purpose of using \"such\" as a reference device?",
+      "question": "Which sentence mixes idiom and register appropriately?",
       "options": [
-        "To omit unnecessary repeated words",
-        "To refer back to a previously mentioned item or group with a degree of formal distance",
-        "To introduce a new argument",
-        "To express strong certainty about a claim"
+        "The legal document says the witness was under the weather.",
+        "During the casual chat, he used humor to break the ice.",
+        "The academic paper says we should bite the bullet in section two.",
+        "The research abstract says the company cut corners, lol."
       ],
-      "correctAnswer": "To refer back to a previously mentioned item or group with a degree of formal distance"
+      "correctAnswer": "During the casual chat, he used humor to break the ice."
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "She offered to help with the analysis, and he _____ _____ as well — the collaboration was productive.",
-      "correctAnswer": "did so"
+      "type": "multiple-choice",
+      "question": "Which sentence uses a phrasal verb correctly?",
+      "options": [
+        "She looked the data into before publishing.",
+        "She looked into the data before publishing.",
+        "She looked into it the data before publishing.",
+        "She into looked the data before publishing."
+      ],
+      "correctAnswer": "She looked into the data before publishing."
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Add a cohesion device to link these sentences: \"Three solutions were proposed. [blank] solutions had both advantages and limitations.\"",
-      "correctAnswer": "such solutions / these solutions / all three solutions had both advantages and limitations"
+      "type": "multiple-choice",
+      "question": "Which sentence best shows \"go the extra mile\"?",
+      "options": [
+        "He did only what was required.",
+        "She stayed late to help the new employee finish the task.",
+        "They canceled the service immediately.",
+        "I ignored the customer's email."
+      ],
+      "correctAnswer": "She stayed late to help the new employee finish the task."
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "\"Albeit\" differs from \"although\" in that...",
-      "options": [
-        "\"Albeit\" introduces a full clause; \"although\" introduces a phrase",
-        "\"Albeit\" typically precedes an adjective or noun phrase, not a full clause; \"although\" introduces a full clause",
-        "\"Albeit\" is informal; \"although\" is formal",
-        "There is no meaningful difference between the two"
-      ],
-      "correctAnswer": "\"Albeit\" typically precedes an adjective or noun phrase, not a full clause; \"although\" introduces a full clause"
+      "type": "fill-blank",
+      "question": "In \"This laptop is a dinosaur,\" the speaker is probably using a figure of speech, not speaking literally. The figure is a ______.",
+      "correctAnswer": "metaphor"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "The initiative was impactful _____ _____ _____ it became a model for similar programmes across the country.",
-      "correctAnswer": "to the extent that"
+      "type": "translate",
+      "question": "Translate into English: \"Ela recusou a proposta e depois investigou os detalhes.\"",
+      "correctAnswer": "She turned down the proposal and then looked into the details|She turned the proposal down and then looked into the details"
     },
     {
       "id": 19,
       "type": "complete",
-      "question": "The candidate was clearly qualified for the role, _____ inexperienced in managing large cross-functional teams.",
-      "correctAnswer": "albeit"
+      "question": "Choose the best word to complete the sentence: \"Saying 'Fantastic weather' during a storm can sound ______.\"",
+      "correctAnswer": "ironic"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "Which of the following best demonstrates effective discourse organisation?",
+      "question": "Which sentence is the best final review answer?",
       "options": [
-        "A text where each sentence introduces a completely new topic",
-        "A text that uses only short, simple sentences without connectors",
-        "A text where ideas are logically sequenced, linked with transitions, and free from unnecessary repetition",
-        "A text that repeats key words in every sentence to maintain clarity"
+        "We looked the issue into, then we cut corners.",
+        "We looked into the issue, but we didn't cut corners.",
+        "We turned down it because we were under a weather.",
+        "We got the ball roll and faced the song."
       ],
-      "correctAnswer": "A text where ideas are logically sequenced, linked with transitions, and free from unnecessary repetition"
+      "correctAnswer": "We looked into the issue, but we didn't cut corners."
     }
   ]
 }

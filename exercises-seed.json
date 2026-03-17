@@ -1,597 +1,525 @@
 {
-  "lesson": 5,
+  "lesson": 6,
   "level": "seed",
-  "topic": "Food & Drinks",
+  "topic": "Colors & Clothes",
   "monday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "What does 'apple' mean?",
-      "options": ["Banana", "Laranja", "Maçã", "Uva"],
-      "correctAnswer": "Maçã"
+      "question": "What does 'red' mean?",
+      "options": ["Azul", "Verde", "Vermelho", "Amarelo"],
+      "correctAnswer": "Vermelho"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "What does 'bread' mean?",
-      "options": ["Leite", "Pão", "Manteiga", "Queijo"],
-      "correctAnswer": "Pão"
+      "question": "What does 'blue' mean?",
+      "options": ["Azul", "Preto", "Branco", "Rosa"],
+      "correctAnswer": "Azul"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "What does 'juice' mean?",
-      "options": ["Água", "Leite", "Café", "Suco"],
-      "correctAnswer": "Suco"
+      "question": "What does 'green' mean?",
+      "options": ["Cinza", "Verde", "Vermelho", "Marrom"],
+      "correctAnswer": "Verde"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What does 'chicken' mean?",
-      "options": ["Peixe", "Carne", "Frango", "Porco"],
-      "correctAnswer": "Frango"
+      "question": "What does 'shirt' mean?",
+      "options": ["Calça", "Camisa", "Vestido", "Jaqueta"],
+      "correctAnswer": "Camisa"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What does 'vegetables' mean?",
-      "options": ["Frutas", "Legumes / Verduras", "Carnes", "Doces"],
-      "correctAnswer": "Legumes / Verduras"
+      "question": "What does 'pants' mean?",
+      "options": ["Sapatos", "Chapéu", "Calças", "Camisa"],
+      "correctAnswer": "Calças"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which of the following is a drink?",
-      "options": ["Apple", "Rice", "Chicken", "Water"],
-      "correctAnswer": "Water"
+      "question": "What does 'dress' mean?",
+      "options": ["Vestido", "Jaqueta", "Saia", "Camisa"],
+      "correctAnswer": "Vestido"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which of the following is NOT a food?",
-      "options": ["Bread", "Juice", "Rice", "Chicken"],
-      "correctAnswer": "Juice"
+      "question": "What does 'shoes' mean?",
+      "options": ["Meias", "Sapatos", "Botas", "Sandálias"],
+      "correctAnswer": "Sapatos"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ apples.' (I like apples)",
-      "correctAnswer": "like"
+      "type": "multiple-choice",
+      "question": "What does 'hat' mean?",
+      "options": ["Chapéu", "Relógio", "Cinto", "Bolsa"],
+      "correctAnswer": "Chapéu"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Complete: 'I don't _____ coffee.' (I don't like coffee)",
-      "correctAnswer": "like"
+      "type": "multiple-choice",
+      "question": "What does 'jacket' mean?",
+      "options": ["Camiseta", "Calça", "Jaqueta", "Vestido"],
+      "correctAnswer": "Jaqueta"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you like vegetables?' (question form)",
-      "correctAnswer": "Do"
+      "type": "multiple-choice",
+      "question": "Which item do you wear on your feet?",
+      "options": ["Hat", "Shirt", "Shoes", "Jacket"],
+      "correctAnswer": "Shoes"
     },
     {
       "id": 11,
       "type": "fill-blank",
-      "question": "Complete: 'Yes, I _____.' (short positive answer)",
-      "correctAnswer": "do"
+      "question": "Complete: 'This is a _____ shirt.'",
+      "correctAnswer": "red"
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "Complete: 'No, I _____.' (short negative answer)",
-      "correctAnswer": "don't"
+      "question": "Complete: 'She has a blue _____.'",
+      "correctAnswer": "dress"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Eu gosto de maçã.'",
-      "correctAnswer": "i like apple|i like apples"
+      "type": "fill-blank",
+      "question": "Complete: 'He is wearing a _____ on his head.'",
+      "correctAnswer": "hat"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate to English: 'Eu não gosto de arroz.'",
-      "correctAnswer": "i don't like rice"
+      "type": "fill-blank",
+      "question": "Complete: 'My jacket is _____, not dirty.'",
+      "correctAnswer": "clean"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate to English: 'Você gosta de café?'",
-      "correctAnswer": "do you like coffee?"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'green / jacket / a'",
+      "correctAnswer": "a green jacket"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Ela gosta de pão.'",
-      "correctAnswer": "she likes bread"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'blue / shoes'",
+      "correctAnswer": "blue shoes"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "I likes apples.",
-        "I like apples.",
-        "I am like apples.",
-        "I do like apples not."
-      ],
-      "correctAnswer": "I like apples."
+      "type": "translate",
+      "question": "Translate to English: 'camisa vermelha'",
+      "correctAnswer": "red shirt"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "What does 'rice' mean?",
-      "options": ["Feijão", "Trigo", "Arroz", "Milho"],
-      "correctAnswer": "Arroz"
+      "type": "translate",
+      "question": "Translate to English: 'calças azuis'",
+      "correctAnswer": "blue pants|blue trousers"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "What does 'fruit' mean?",
-      "options": ["Verdura", "Fruta", "Carne", "Pão"],
-      "correctAnswer": "Fruta"
+      "type": "translate",
+      "question": "Translate to English: 'sapatos verdes'",
+      "correctAnswer": "green shoes"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "What does 'water' mean?",
-      "options": ["Leite", "Suco", "Chá", "Água"],
-      "correctAnswer": "Água"
+      "question": "Which phrase is correct?",
+      "options": ["a red dress", "red a dress", "dress red a", "a dress red"],
+      "correctAnswer": "a red dress"
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "How do you ask someone about their food preferences?",
-      "options": [
-        "Are you like pizza?",
-        "Do you like pizza?",
-        "Does you like pizza?",
-        "You like pizza?"
-      ],
-      "correctAnswer": "Do you like pizza?"
+      "question": "Which phrase is correct?",
+      "options": ["a blue shirt", "a shirt blue", "blue a shirt", "shirt a blue"],
+      "correctAnswer": "a blue shirt"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "What is the correct short answer for 'Do you like juice?' when you do like it?",
-      "options": ["Yes, I like.", "Yes, I am.", "Yes, I do.", "Yes, I does."],
-      "correctAnswer": "Yes, I do."
+      "question": "Which phrase is correct?",
+      "options": ["an old hat", "a old hat", "old an hat", "hat an old"],
+      "correctAnswer": "an old hat"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "What is the correct short answer for 'Do you like coffee?' when you don't like it?",
-      "options": ["No, I don't.", "No, I not.", "No, I doesn't.", "No, I am not."],
-      "correctAnswer": "No, I don't."
+      "question": "Which sentence is correct?",
+      "options": ["My pants are green.", "My green are pants.", "My are green pants.", "My pants green are."],
+      "correctAnswer": "My pants are green."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "She like chicken.",
-        "She likes chicken.",
-        "She do like chicken.",
-        "She liking chicken."
-      ],
-      "correctAnswer": "She likes chicken."
+      "question": "What does 'new jacket' mean?",
+      "options": ["Jaqueta velha", "Jaqueta nova", "Camisa nova", "Vestido novo"],
+      "correctAnswer": "Jaqueta nova"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What does 'coffee' mean?",
-      "options": ["Chá", "Suco", "Café", "Leite"],
-      "correctAnswer": "Café"
+      "question": "What does 'dirty shoes' mean?",
+      "options": ["Sapatos limpos", "Sapatos novos", "Sapatos sujos", "Sapatos vermelhos"],
+      "correctAnswer": "Sapatos sujos"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ like chicken.' (she likes — 3rd person)",
-      "correctAnswer": "likes"
+      "question": "Complete: 'She has a _____ dress.'",
+      "correctAnswer": "red"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ like vegetables.' (he doesn't like)",
-      "correctAnswer": "doesn't"
+      "question": "Complete: 'He has _____ blue hat.'",
+      "correctAnswer": "a"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'They _____ like fruit.' (they like)",
-      "correctAnswer": "like"
+      "question": "Complete: 'I have _____ old jacket.'",
+      "correctAnswer": "an"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: '_____ she like rice?' (question — 3rd person)",
-      "correctAnswer": "Does"
+      "question": "Complete: 'They have green _____.'",
+      "correctAnswer": "pants"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'Do you like _____?' (fill with a drink — e.g. juice)",
-      "correctAnswer": "juice|coffee|water"
+      "question": "Complete: 'My shoes are _____.'",
+      "correctAnswer": "blue"
     },
     {
       "id": 11,
       "type": "translate",
-      "question": "Translate to English: 'Você gosta de fruta?'",
-      "correctAnswer": "do you like fruit?"
+      "question": "Translate to English: 'Eu tenho uma camisa verde.'",
+      "correctAnswer": "i have a green shirt"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Translate to English: 'Ele não gosta de café.'",
-      "correctAnswer": "he doesn't like coffee"
+      "question": "Translate to English: 'Ela tem um vestido azul.'",
+      "correctAnswer": "she has a blue dress"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Eles gostam de suco.'",
-      "correctAnswer": "they like juice"
+      "question": "Translate to English: 'Ele tem um chapéu vermelho.'",
+      "correctAnswer": "he has a red hat"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Eu gosto de frango e arroz.'",
-      "correctAnswer": "i like chicken and rice"
+      "question": "Translate to English: 'Minha jaqueta é nova.'",
+      "correctAnswer": "my jacket is new"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which word means 'legumes / verduras'?",
-      "options": ["Fruit", "Bread", "Vegetables", "Rice"],
-      "correctAnswer": "Vegetables"
+      "type": "translate",
+      "question": "Translate to English: 'As calças são velhas.'",
+      "correctAnswer": "the pants are old|the trousers are old"
     },
     {
       "id": 16,
       "type": "multiple-choice",
-      "question": "Which word means 'frango'?",
-      "options": ["Beef", "Pork", "Fish", "Chicken"],
-      "correctAnswer": "Chicken"
+      "question": "In English, what usually comes before the clothes noun?",
+      "options": ["The verb", "The color", "The number", "The name"],
+      "correctAnswer": "The color"
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'don't like'?",
-      "options": [
-        "I don't likes apples.",
-        "I don't like apples.",
-        "I doesn't like apples.",
-        "I not like apples."
-      ],
-      "correctAnswer": "I don't like apples."
+      "question": "Which sentence is correct?",
+      "options": ["She has red shoes.", "She has shoes red.", "She red has shoes.", "Has she red shoes."],
+      "correctAnswer": "She has red shoes."
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "How do you say 'Ela gosta de...' in English?",
-      "options": ["She like...", "She likes...", "She do like...", "She is like..."],
-      "correctAnswer": "She likes..."
+      "type": "fill-blank",
+      "question": "Complete: 'The hat is _____.'",
+      "correctAnswer": "old"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete: 'We _____ like bread.' (we don't like)",
-      "correctAnswer": "don't"
+      "type": "complete",
+      "question": "Complete the phrase: 'a _____ shirt'",
+      "correctAnswer": "blue"
     },
     {
       "id": 20,
-      "type": "fill-blank",
-      "question": "Complete: 'Does he like _____?' (fruit)",
-      "correctAnswer": "fruit"
+      "type": "multiple-choice",
+      "question": "Which question is correct?",
+      "options": ["What color is your shirt?", "What color your shirt is?", "Your shirt is what color?", "What is color your shirt?"],
+      "correctAnswer": "What color is your shirt?"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Is 'water' countable or uncountable?",
-      "options": ["Countable", "Uncountable", "Both", "Neither"],
-      "correctAnswer": "Uncountable"
+      "question": "Which sentence is correct?",
+      "options": ["I wearing a red shirt.", "I am wearing a red shirt.", "I am wear a red shirt.", "I red shirt wearing."],
+      "correctAnswer": "I am wearing a red shirt."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Is 'apple' countable or uncountable?",
-      "options": ["Countable", "Uncountable", "Both", "Neither"],
-      "correctAnswer": "Countable"
+      "question": "Which sentence is correct?",
+      "options": ["He is wearing blue pants.", "He wearing blue pants.", "He is wear blue pants.", "He blue pants is wearing."],
+      "correctAnswer": "He is wearing blue pants."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "I drink a water.",
-        "I drink the a water.",
-        "I drink water.",
-        "I drink waters."
-      ],
-      "correctAnswer": "I drink water."
+      "question": "Which sentence describes another person now?",
+      "options": ["She is wearing a green dress.", "She wear a green dress.", "She wearing a green dress.", "She is wear a green dress."],
+      "correctAnswer": "She is wearing a green dress."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "I eat a rice.",
-        "I eat rice.",
-        "I eat rices.",
-        "I eat the rice a."
-      ],
-      "correctAnswer": "I eat rice."
+      "question": "What does 'I'm wearing' mean?",
+      "options": ["Eu gosto de", "Eu tenho", "Eu estou usando", "Eu quero comprar"],
+      "correctAnswer": "Eu estou usando"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which article do we use before a countable noun starting with a vowel? (e.g. ___ apple)",
-      "options": ["A", "An", "The", "Some"],
-      "correctAnswer": "An"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ wearing a jacket.'",
+      "correctAnswer": "am"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Which of the following is uncountable?",
-      "options": ["Apple", "Banana", "Rice", "Egg"],
-      "correctAnswer": "Rice"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ wearing a hat.'",
+      "correctAnswer": "is"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Which of the following is countable?",
-      "options": ["Water", "Coffee", "Juice", "Apple"],
-      "correctAnswer": "Apple"
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ wearing blue shoes.'",
+      "correctAnswer": "are"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'I eat _____ apple every day.' (article for countable, vowel)",
-      "correctAnswer": "an"
+      "question": "Complete: 'She is wearing a _____ dress.'",
+      "correctAnswer": "green"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'Can I have _____ juice?' (some/a — uncountable)",
-      "correctAnswer": "some"
+      "question": "Complete: 'We are _____ jackets today.'",
+      "correctAnswer": "wearing"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'I eat _____ bread every morning.' (some — uncountable)",
-      "correctAnswer": "some"
-    },
-    {
-      "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'She drinks _____ coffee.' (uncountable — no article)",
-      "correctAnswer": "some|"
-    },
-    {
-      "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'I want _____ apple.' (article — countable + vowel)",
+      "type": "complete",
+      "question": "Complete: 'He is wearing _____ old jacket.'",
       "correctAnswer": "an"
     },
     {
+      "id": 11,
+      "type": "complete",
+      "question": "Complete: 'She is wearing red _____.'",
+      "correctAnswer": "shoes"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Translate to English: 'Eu estou usando uma camisa azul.'",
+      "correctAnswer": "i am wearing a blue shirt|i'm wearing a blue shirt"
+    },
+    {
       "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: 'They eat _____ vegetables every day.' (some)",
-      "correctAnswer": "some"
+      "type": "translate",
+      "question": "Translate to English: 'Ela está usando um vestido verde.'",
+      "correctAnswer": "she is wearing a green dress|she's wearing a green dress"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Eu bebo água todo dia.'",
-      "correctAnswer": "i drink water every day"
+      "question": "Translate to English: 'Ele está usando um chapéu vermelho.'",
+      "correctAnswer": "he is wearing a red hat|he's wearing a red hat"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'Você quer um pouco de arroz?'",
-      "correctAnswer": "do you want some rice?"
+      "question": "Translate to English: 'Eles estão usando jaquetas.'",
+      "correctAnswer": "they are wearing jackets|they're wearing jackets"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Eu como uma maçã todo dia.'",
-      "correctAnswer": "i eat an apple every day"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": ["The boy is wearing clean shoes.", "The boy clean shoes is wearing.", "The boy is wear clean shoes.", "The boy wearing is clean shoes."],
+      "correctAnswer": "The boy is wearing clean shoes."
     },
     {
       "id": 17,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "I drink a coffee.",
-        "I drink an coffee.",
-        "I drink coffee.",
-        "I drink the coffee a."
-      ],
-      "correctAnswer": "I drink coffee."
+      "question": "Tom has a jacket on now. What can you say?",
+      "options": ["He wears a jacket now.", "He is wearing a jacket.", "He wearing a jacket.", "He is wear a jacket."],
+      "correctAnswer": "He is wearing a jacket."
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "I want a bread.",
-        "I want an bread.",
-        "I want some bread.",
-        "I want breads."
-      ],
-      "correctAnswer": "I want some bread."
+      "type": "fill-blank",
+      "question": "Complete: 'My shoes are new, and I am _____ them today.'",
+      "correctAnswer": "wearing"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which word is countable?",
-      "options": ["Water", "Rice", "Chicken (as meat)", "Egg"],
-      "correctAnswer": "Egg"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'wearing / is / she / a red dress'",
+      "correctAnswer": "she is wearing a red dress"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "What does 'some' mean in 'I want some juice'?",
-      "options": ["Nenhum", "Muito", "Um pouco de / alguns", "Todos"],
-      "correctAnswer": "Um pouco de / alguns"
+      "type": "translate",
+      "question": "Translate to English: 'Nós estamos usando calças azuis.'",
+      "correctAnswer": "we are wearing blue pants|we're wearing blue pants|we are wearing blue trousers|we're wearing blue trousers"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'doesn't like'?",
-      "options": [
-        "He doesn't likes vegetables.",
-        "He doesn't like vegetables.",
-        "He don't like vegetables.",
-        "He not like vegetables."
-      ],
-      "correctAnswer": "He doesn't like vegetables."
+      "question": "Which negative sentence is correct?",
+      "options": ["He isn't wearing a hat.", "He not wearing a hat.", "He isn't wear a hat.", "He doesn't wearing a hat."],
+      "correctAnswer": "He isn't wearing a hat."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "What does 'I like...' become when negative?",
-      "options": [
-        "I not like...",
-        "I likes not...",
-        "I don't like...",
-        "I doesn't like..."
-      ],
-      "correctAnswer": "I don't like..."
+      "question": "Which question is correct?",
+      "options": ["Are you wearing a jacket?", "Do you wearing a jacket?", "You are wearing a jacket?", "Are wearing you a jacket?"],
+      "correctAnswer": "Are you wearing a jacket?"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "What does 'She likes...' become when negative?",
-      "options": [
-        "She don't like...",
-        "She not likes...",
-        "She doesn't like...",
-        "She doesn't likes..."
-      ],
-      "correctAnswer": "She doesn't like..."
+      "question": "Which sentence is correct?",
+      "options": ["She isn't wearing shoes.", "She not is wearing shoes.", "She doesn't wearing shoes.", "She isn't wear shoes."],
+      "correctAnswer": "She isn't wearing shoes."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What is the correct answer to 'Does she like fruit?' when she does?",
-      "options": ["Yes, she do.", "Yes, she like.", "Yes, she does.", "Yes, she is."],
-      "correctAnswer": "Yes, she does."
+      "question": "Choose the correct article: '_____ old shirt'",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What is the correct answer to 'Do they like chicken?' when they don't?",
-      "options": [
-        "No, they doesn't.",
-        "No, they don't.",
-        "No, they not.",
-        "No, they do not like."
-      ],
-      "correctAnswer": "No, they don't."
+      "question": "Which sentence is correct?",
+      "options": ["He is wearing a shirt.", "He is wearing shirt.", "He wearing a shirt.", "He is wear a shirt."],
+      "correctAnswer": "He is wearing a shirt."
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ like vegetables.' (doesn't — 3rd person negative)",
-      "correctAnswer": "doesn't"
+      "question": "Complete: 'She _____ wearing a dress today.'",
+      "correctAnswer": "isn't|is not"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "Complete: '_____ she like chicken?' (3rd person question)",
-      "correctAnswer": "Does"
+      "question": "Complete: '_____ he wearing blue pants?'",
+      "correctAnswer": "Is"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ like fruit.' (likes — 3rd person affirmative)",
-      "correctAnswer": "likes"
+      "question": "Complete: 'Are you wearing _____ hat?'",
+      "correctAnswer": "a"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ coffee but I like tea.' (don't like)",
-      "correctAnswer": "don't like"
+      "question": "Complete: 'I am not wearing _____ jacket today.'",
+      "correctAnswer": "a"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'They _____ like rice.' (affirmative — they)",
-      "correctAnswer": "like"
+      "question": "Complete: 'They are not _____ shoes.'",
+      "correctAnswer": "wearing"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you like bread?' (question for I/you/we/they)",
-      "correctAnswer": "Do"
+      "type": "complete",
+      "question": "Complete: 'Is she wearing _____ green dress?'",
+      "correctAnswer": "a"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ like coffee.' (doesn't — negative 3rd person)",
-      "correctAnswer": "doesn't"
+      "type": "complete",
+      "question": "Complete: 'He isn't wearing _____ shoes.'",
+      "correctAnswer": "blue"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Eu gosto de maçã, mas não gosto de pão.'",
-      "correctAnswer": "i like apple but i don't like bread|i like apples but i don't like bread"
+      "question": "Translate to English: 'Ele não está usando uma jaqueta.'",
+      "correctAnswer": "he is not wearing a jacket|he isn't wearing a jacket"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Ele gosta de suco de laranja.'",
-      "correctAnswer": "he likes orange juice"
+      "question": "Translate to English: 'Ela não está usando sapatos.'",
+      "correctAnswer": "she is not wearing shoes|she isn't wearing shoes"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'Nós gostamos de legumes.'",
-      "correctAnswer": "we like vegetables"
+      "question": "Translate to English: 'Você está usando um chapéu?'",
+      "correctAnswer": "are you wearing a hat?"
     },
     {
       "id": 16,
       "type": "translate",
-      "question": "Translate to English: 'Ela não gosta de água.'",
-      "correctAnswer": "she doesn't like water"
+      "question": "Translate to English: 'Ela está usando uma camisa vermelha?'",
+      "correctAnswer": "is she wearing a red shirt?"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Você gosta de legumes?'",
-      "correctAnswer": "do you like vegetables?"
+      "type": "multiple-choice",
+      "question": "Which sentence is wrong?",
+      "options": ["She is wearing a green jacket.", "They are wearing shoes.", "He is wearing hat.", "I am wearing blue pants."],
+      "correctAnswer": "He is wearing hat."
     },
     {
       "id": 18,
       "type": "multiple-choice",
-      "question": "Which word means 'arroz'?",
-      "options": ["Bread", "Rice", "Chicken", "Fruit"],
-      "correctAnswer": "Rice"
+      "question": "What is the correct short answer to 'Are you wearing new shoes?'",
+      "options": ["Yes, I am.", "Yes, I do.", "Yes, I wear.", "Yes, I is."],
+      "correctAnswer": "Yes, I am."
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which word means 'maçã'?",
-      "options": ["Orange", "Banana", "Apple", "Grape"],
-      "correctAnswer": "Apple"
+      "type": "fill-blank",
+      "question": "Complete: 'No, he _____ not wearing a hat.'",
+      "correctAnswer": "is"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence asks about preferences correctly for 'he/she/it'?",
-      "options": [
-        "Do he like coffee?",
-        "Does he like coffee?",
-        "Is he like coffee?",
-        "He like coffee?"
-      ],
-      "correctAnswer": "Does he like coffee?"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'dirty / jacket / a'",
+      "correctAnswer": "a dirty jacket"
     }
   ],
   "friday": [
@@ -599,149 +527,129 @@
       "id": 1,
       "type": "multiple-choice",
       "question": "Which sentence is correct?",
-      "options": [
-        "I like rice and I doesn't like bread.",
-        "I like rice and I don't like bread.",
-        "I likes rice and I don't like bread.",
-        "I like rice and I am not like bread."
-      ],
-      "correctAnswer": "I like rice and I don't like bread."
+      "options": ["I am putting on my jacket.", "I putting on my jacket.", "I am put on my jacket.", "I puting on my jacket."],
+      "correctAnswer": "I am putting on my jacket."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "Does she likes apples?",
-        "Do she like apples?",
-        "Does she like apples?",
-        "She does like apples?"
-      ],
-      "correctAnswer": "Does she like apples?"
+      "question": "What is the opposite of 'put on'?",
+      "options": ["wear", "buy", "take off", "wash"],
+      "correctAnswer": "take off"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which food vocabulary word means 'pão'?",
-      "options": ["Butter", "Cheese", "Bread", "Cake"],
-      "correctAnswer": "Bread"
+      "question": "What does 'clean shirt' mean?",
+      "options": ["Camisa suja", "Camisa limpa", "Camisa velha", "Camisa azul"],
+      "correctAnswer": "Camisa limpa"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which word means 'suco'?",
-      "options": ["Coffee", "Juice", "Tea", "Milk"],
-      "correctAnswer": "Juice"
+      "question": "What does 'old shoes' mean?",
+      "options": ["Sapatos novos", "Sapatos bonitos", "Sapatos velhos", "Sapatos limpos"],
+      "correctAnswer": "Sapatos velhos"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which word means 'fruta'?",
-      "options": ["Vegetable", "Flower", "Fruit", "Food"],
-      "correctAnswer": "Fruit"
+      "question": "Which sentence is correct?",
+      "options": ["Today I am wearing a red shirt and blue pants.", "Today I wearing a red shirt and blue pants.", "Today I am wear a red shirt and blue pants.", "Today wearing I a red shirt and blue pants."],
+      "correctAnswer": "Today I am wearing a red shirt and blue pants."
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: '_____ he like water?' (question — 3rd person)",
-      "correctAnswer": "Does"
+      "question": "Complete: 'Before school, I put _____ my jacket.'",
+      "correctAnswer": "on"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "Complete: 'We _____ like bread.' (negative — we)",
-      "correctAnswer": "don't"
+      "question": "Complete: 'At home, I take _____ my shoes.'",
+      "correctAnswer": "off"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'Do _____ like rice?' (they)",
-      "correctAnswer": "they"
+      "question": "Complete: 'She is wearing a _____ hat and a blue jacket.'",
+      "correctAnswer": "red"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'I like coffee but she _____ like it.' (doesn't — 3rd person negative)",
-      "correctAnswer": "doesn't"
+      "question": "Complete: 'The dress is _____, not dirty.'",
+      "correctAnswer": "clean"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ vegetables but likes chicken.' (doesn't like)",
-      "correctAnswer": "doesn't like"
+      "type": "complete",
+      "question": "Complete: 'He is wearing _____ new shirt.'",
+      "correctAnswer": "a"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'I like _____ and fruit.' (vegetables)",
-      "correctAnswer": "vegetables"
+      "type": "complete",
+      "question": "Complete: 'They are wearing blue _____.'",
+      "correctAnswer": "pants|trousers"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'Do you like _____?' (a food you enjoy — e.g. chicken)",
-      "correctAnswer": "chicken|rice|bread|vegetables|fruit|apples"
+      "type": "translate",
+      "question": "Translate to English: 'Eu tiro meus sapatos em casa.'",
+      "correctAnswer": "i take off my shoes at home"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Eu gosto de café com leite.'",
-      "correctAnswer": "i like coffee with milk"
+      "question": "Translate to English: 'Ela coloca o chapéu vermelho.'",
+      "correctAnswer": "she puts on the red hat|she puts on a red hat"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Você gosta de maçã ou banana?'",
-      "correctAnswer": "do you like apple or banana?|do you like apples or bananas?"
+      "question": "Translate to English: 'Ele está usando uma jaqueta velha.'",
+      "correctAnswer": "he is wearing an old jacket|he's wearing an old jacket"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'Ela gosta de fruta e suco.'",
-      "correctAnswer": "she likes fruit and juice"
+      "question": "Translate to English: 'Nós estamos usando sapatos novos.'",
+      "correctAnswer": "we are wearing new shoes|we're wearing new shoes"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Eles não gostam de frango.'",
-      "correctAnswer": "they don't like chicken"
+      "type": "multiple-choice",
+      "question": "Which question asks about clothes correctly?",
+      "options": ["What are you wearing?", "What do you wearing?", "What you are wearing?", "What wearing you?"],
+      "correctAnswer": "What are you wearing?"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Ele gosta de pão com manteiga.'",
-      "correctAnswer": "he likes bread with butter"
+      "type": "multiple-choice",
+      "question": "What is the best answer to 'What are you wearing?'",
+      "options": ["I am wearing a green dress.", "I wearing green dress.", "I wear a green dress now.", "I am wear green dress."],
+      "correctAnswer": "I am wearing a green dress."
     },
     {
       "id": 18,
       "type": "multiple-choice",
-      "question": "What is the correct positive short answer to 'Do you like water?'",
-      "options": ["Yes, I like.", "Yes, I does.", "Yes, I do.", "Yes, I am."],
-      "correctAnswer": "Yes, I do."
+      "question": "Which sentence is correct?",
+      "options": ["She is wearing a blue shirt and black shoes.", "She is wearing blue shirt and black shoes.", "She wearing a blue shirt and black shoes.", "She is wear a blue shirt and black shoes."],
+      "correctAnswer": "She is wearing a blue shirt and black shoes."
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which sentence uses the vocabulary from this lesson correctly?",
-      "options": [
-        "I like drink juice every morning.",
-        "I like to drinks juice every morning.",
-        "I like juice every morning.",
-        "I am like juice every morning."
-      ],
-      "correctAnswer": "I like juice every morning."
+      "type": "fill-blank",
+      "question": "Complete: 'My hat is old, but my jacket is _____.'",
+      "correctAnswer": "new"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "What does 'I like / I don't like' express?",
-      "options": [
-        "What you are doing right now",
-        "Your personal preferences",
-        "What you did in the past",
-        "Your daily routine"
-      ],
-      "correctAnswer": "Your personal preferences"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'wearing / are / they / clean / shoes'",
+      "correctAnswer": "they are wearing clean shoes"
     }
   ]
 }

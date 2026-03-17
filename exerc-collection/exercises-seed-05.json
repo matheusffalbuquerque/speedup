@@ -1,0 +1,747 @@
+{
+  "lesson": 5,
+  "level": "seed",
+  "topic": "Food & Drinks",
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does 'apple' mean?",
+      "options": ["Banana", "Laranja", "Maçã", "Uva"],
+      "correctAnswer": "Maçã"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does 'bread' mean?",
+      "options": ["Leite", "Pão", "Manteiga", "Queijo"],
+      "correctAnswer": "Pão"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does 'juice' mean?",
+      "options": ["Água", "Leite", "Café", "Suco"],
+      "correctAnswer": "Suco"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What does 'chicken' mean?",
+      "options": ["Peixe", "Carne", "Frango", "Porco"],
+      "correctAnswer": "Frango"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does 'vegetables' mean?",
+      "options": ["Frutas", "Legumes / Verduras", "Carnes", "Doces"],
+      "correctAnswer": "Legumes / Verduras"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which of the following is a drink?",
+      "options": ["Apple", "Rice", "Chicken", "Water"],
+      "correctAnswer": "Water"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT a food?",
+      "options": ["Bread", "Juice", "Rice", "Chicken"],
+      "correctAnswer": "Juice"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ apples.' (I like apples)",
+      "correctAnswer": "like"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'I don't _____ coffee.' (I don't like coffee)",
+      "correctAnswer": "like"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: '_____ you like vegetables?' (question form)",
+      "correctAnswer": "Do"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'Yes, I _____.' (short positive answer)",
+      "correctAnswer": "do"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'No, I _____.' (short negative answer)",
+      "correctAnswer": "don't"
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de maçã.'",
+      "correctAnswer": "i like apple|i like apples"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Eu não gosto de arroz.'",
+      "correctAnswer": "i don't like rice"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de café?'",
+      "correctAnswer": "do you like coffee?"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Ela gosta de pão.'",
+      "correctAnswer": "she likes bread"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I likes apples.",
+        "I like apples.",
+        "I am like apples.",
+        "I do like apples not."
+      ],
+      "correctAnswer": "I like apples."
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "What does 'rice' mean?",
+      "options": ["Feijão", "Trigo", "Arroz", "Milho"],
+      "correctAnswer": "Arroz"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "What does 'fruit' mean?",
+      "options": ["Verdura", "Fruta", "Carne", "Pão"],
+      "correctAnswer": "Fruta"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "What does 'water' mean?",
+      "options": ["Leite", "Suco", "Chá", "Água"],
+      "correctAnswer": "Água"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "How do you ask someone about their food preferences?",
+      "options": [
+        "Are you like pizza?",
+        "Do you like pizza?",
+        "Does you like pizza?",
+        "You like pizza?"
+      ],
+      "correctAnswer": "Do you like pizza?"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What is the correct short answer for 'Do you like juice?' when you do like it?",
+      "options": ["Yes, I like.", "Yes, I am.", "Yes, I do.", "Yes, I does."],
+      "correctAnswer": "Yes, I do."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What is the correct short answer for 'Do you like coffee?' when you don't like it?",
+      "options": ["No, I don't.", "No, I not.", "No, I doesn't.", "No, I am not."],
+      "correctAnswer": "No, I don't."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She like chicken.",
+        "She likes chicken.",
+        "She do like chicken.",
+        "She liking chicken."
+      ],
+      "correctAnswer": "She likes chicken."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does 'coffee' mean?",
+      "options": ["Chá", "Suco", "Café", "Leite"],
+      "correctAnswer": "Café"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like chicken.' (she likes — 3rd person)",
+      "correctAnswer": "likes"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ like vegetables.' (he doesn't like)",
+      "correctAnswer": "doesn't"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ like fruit.' (they like)",
+      "correctAnswer": "like"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: '_____ she like rice?' (question — 3rd person)",
+      "correctAnswer": "Does"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'Do you like _____?' (fill with a drink — e.g. juice)",
+      "correctAnswer": "juice|coffee|water"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de fruta?'",
+      "correctAnswer": "do you like fruit?"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Translate to English: 'Ele não gosta de café.'",
+      "correctAnswer": "he doesn't like coffee"
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Translate to English: 'Eles gostam de suco.'",
+      "correctAnswer": "they like juice"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de frango e arroz.'",
+      "correctAnswer": "i like chicken and rice"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which word means 'legumes / verduras'?",
+      "options": ["Fruit", "Bread", "Vegetables", "Rice"],
+      "correctAnswer": "Vegetables"
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Which word means 'frango'?",
+      "options": ["Beef", "Pork", "Fish", "Chicken"],
+      "correctAnswer": "Chicken"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses 'don't like'?",
+      "options": [
+        "I don't likes apples.",
+        "I don't like apples.",
+        "I doesn't like apples.",
+        "I not like apples."
+      ],
+      "correctAnswer": "I don't like apples."
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "How do you say 'Ela gosta de...' in English?",
+      "options": ["She like...", "She likes...", "She do like...", "She is like..."],
+      "correctAnswer": "She likes..."
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ like bread.' (we don't like)",
+      "correctAnswer": "don't"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Complete: 'Does he like _____?' (fruit)",
+      "correctAnswer": "fruit"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Is 'water' countable or uncountable?",
+      "options": ["Countable", "Uncountable", "Both", "Neither"],
+      "correctAnswer": "Uncountable"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Is 'apple' countable or uncountable?",
+      "options": ["Countable", "Uncountable", "Both", "Neither"],
+      "correctAnswer": "Countable"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I drink a water.",
+        "I drink the a water.",
+        "I drink water.",
+        "I drink waters."
+      ],
+      "correctAnswer": "I drink water."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I eat a rice.",
+        "I eat rice.",
+        "I eat rices.",
+        "I eat the rice a."
+      ],
+      "correctAnswer": "I eat rice."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which article do we use before a countable noun starting with a vowel? (e.g. ___ apple)",
+      "options": ["A", "An", "The", "Some"],
+      "correctAnswer": "An"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which of the following is uncountable?",
+      "options": ["Apple", "Banana", "Rice", "Egg"],
+      "correctAnswer": "Rice"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which of the following is countable?",
+      "options": ["Water", "Coffee", "Juice", "Apple"],
+      "correctAnswer": "Apple"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'I eat _____ apple every day.' (article for countable, vowel)",
+      "correctAnswer": "an"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'Can I have _____ juice?' (some/a — uncountable)",
+      "correctAnswer": "some"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'I eat _____ bread every morning.' (some — uncountable)",
+      "correctAnswer": "some"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'She drinks _____ coffee.' (uncountable — no article)",
+      "correctAnswer": "some|"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'I want _____ apple.' (article — countable + vowel)",
+      "correctAnswer": "an"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'They eat _____ vegetables every day.' (some)",
+      "correctAnswer": "some"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Eu bebo água todo dia.'",
+      "correctAnswer": "i drink water every day"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Você quer um pouco de arroz?'",
+      "correctAnswer": "do you want some rice?"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Eu como uma maçã todo dia.'",
+      "correctAnswer": "i eat an apple every day"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I drink a coffee.",
+        "I drink an coffee.",
+        "I drink coffee.",
+        "I drink the coffee a."
+      ],
+      "correctAnswer": "I drink coffee."
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I want a bread.",
+        "I want an bread.",
+        "I want some bread.",
+        "I want breads."
+      ],
+      "correctAnswer": "I want some bread."
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which word is countable?",
+      "options": ["Water", "Rice", "Chicken (as meat)", "Egg"],
+      "correctAnswer": "Egg"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "What does 'some' mean in 'I want some juice'?",
+      "options": ["Nenhum", "Muito", "Um pouco de / alguns", "Todos"],
+      "correctAnswer": "Um pouco de / alguns"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses 'doesn't like'?",
+      "options": [
+        "He doesn't likes vegetables.",
+        "He doesn't like vegetables.",
+        "He don't like vegetables.",
+        "He not like vegetables."
+      ],
+      "correctAnswer": "He doesn't like vegetables."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does 'I like...' become when negative?",
+      "options": [
+        "I not like...",
+        "I likes not...",
+        "I don't like...",
+        "I doesn't like..."
+      ],
+      "correctAnswer": "I don't like..."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does 'She likes...' become when negative?",
+      "options": [
+        "She don't like...",
+        "She not likes...",
+        "She doesn't like...",
+        "She doesn't likes..."
+      ],
+      "correctAnswer": "She doesn't like..."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What is the correct answer to 'Does she like fruit?' when she does?",
+      "options": ["Yes, she do.", "Yes, she like.", "Yes, she does.", "Yes, she is."],
+      "correctAnswer": "Yes, she does."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What is the correct answer to 'Do they like chicken?' when they don't?",
+      "options": [
+        "No, they doesn't.",
+        "No, they don't.",
+        "No, they not.",
+        "No, they do not like."
+      ],
+      "correctAnswer": "No, they don't."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ like vegetables.' (doesn't — 3rd person negative)",
+      "correctAnswer": "doesn't"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: '_____ she like chicken?' (3rd person question)",
+      "correctAnswer": "Does"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like fruit.' (likes — 3rd person affirmative)",
+      "correctAnswer": "likes"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ coffee but I like tea.' (don't like)",
+      "correctAnswer": "don't like"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ like rice.' (affirmative — they)",
+      "correctAnswer": "like"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: '_____ you like bread?' (question for I/you/we/they)",
+      "correctAnswer": "Do"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like coffee.' (doesn't — negative 3rd person)",
+      "correctAnswer": "doesn't"
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de maçã, mas não gosto de pão.'",
+      "correctAnswer": "i like apple but i don't like bread|i like apples but i don't like bread"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ele gosta de suco de laranja.'",
+      "correctAnswer": "he likes orange juice"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Nós gostamos de legumes.'",
+      "correctAnswer": "we like vegetables"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Ela não gosta de água.'",
+      "correctAnswer": "she doesn't like water"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de legumes?'",
+      "correctAnswer": "do you like vegetables?"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which word means 'arroz'?",
+      "options": ["Bread", "Rice", "Chicken", "Fruit"],
+      "correctAnswer": "Rice"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which word means 'maçã'?",
+      "options": ["Orange", "Banana", "Apple", "Grape"],
+      "correctAnswer": "Apple"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which sentence asks about preferences correctly for 'he/she/it'?",
+      "options": [
+        "Do he like coffee?",
+        "Does he like coffee?",
+        "Is he like coffee?",
+        "He like coffee?"
+      ],
+      "correctAnswer": "Does he like coffee?"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I like rice and I doesn't like bread.",
+        "I like rice and I don't like bread.",
+        "I likes rice and I don't like bread.",
+        "I like rice and I am not like bread."
+      ],
+      "correctAnswer": "I like rice and I don't like bread."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Does she likes apples?",
+        "Do she like apples?",
+        "Does she like apples?",
+        "She does like apples?"
+      ],
+      "correctAnswer": "Does she like apples?"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which food vocabulary word means 'pão'?",
+      "options": ["Butter", "Cheese", "Bread", "Cake"],
+      "correctAnswer": "Bread"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which word means 'suco'?",
+      "options": ["Coffee", "Juice", "Tea", "Milk"],
+      "correctAnswer": "Juice"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which word means 'fruta'?",
+      "options": ["Vegetable", "Flower", "Fruit", "Food"],
+      "correctAnswer": "Fruit"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: '_____ he like water?' (question — 3rd person)",
+      "correctAnswer": "Does"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ like bread.' (negative — we)",
+      "correctAnswer": "don't"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'Do _____ like rice?' (they)",
+      "correctAnswer": "they"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'I like coffee but she _____ like it.' (doesn't — 3rd person negative)",
+      "correctAnswer": "doesn't"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ vegetables but likes chicken.' (doesn't like)",
+      "correctAnswer": "doesn't like"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'I like _____ and fruit.' (vegetables)",
+      "correctAnswer": "vegetables"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'Do you like _____?' (a food you enjoy — e.g. chicken)",
+      "correctAnswer": "chicken|rice|bread|vegetables|fruit|apples"
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de café com leite.'",
+      "correctAnswer": "i like coffee with milk"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Você gosta de maçã ou banana?'",
+      "correctAnswer": "do you like apple or banana?|do you like apples or bananas?"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Ela gosta de fruta e suco.'",
+      "correctAnswer": "she likes fruit and juice"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Eles não gostam de frango.'",
+      "correctAnswer": "they don't like chicken"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Ele gosta de pão com manteiga.'",
+      "correctAnswer": "he likes bread with butter"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "What is the correct positive short answer to 'Do you like water?'",
+      "options": ["Yes, I like.", "Yes, I does.", "Yes, I do.", "Yes, I am."],
+      "correctAnswer": "Yes, I do."
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the vocabulary from this lesson correctly?",
+      "options": [
+        "I like drink juice every morning.",
+        "I like to drinks juice every morning.",
+        "I like juice every morning.",
+        "I am like juice every morning."
+      ],
+      "correctAnswer": "I like juice every morning."
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "What does 'I like / I don't like' express?",
+      "options": [
+        "What you are doing right now",
+        "Your personal preferences",
+        "What you did in the past",
+        "Your daily routine"
+      ],
+      "correctAnswer": "Your personal preferences"
+    }
+  ]
+}

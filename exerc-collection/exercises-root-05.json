@@ -1,0 +1,745 @@
+{
+  "lesson": 5,
+  "level": "root",
+  "topic": "Describing People & Personality",
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does 'shy' mean?",
+      "options": ["Extrovertido", "Animado", "Tímido", "Engraçado"],
+      "correctAnswer": "Tímido"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does 'outgoing' mean?",
+      "options": ["Reservado", "Extrovertido / Sociável", "Sério", "Preguiçoso"],
+      "correctAnswer": "Extrovertido / Sociável"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does 'friendly' mean?",
+      "options": ["Rude", "Tímido", "Simpático / Amigável", "Chato"],
+      "correctAnswer": "Simpático / Amigável"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What does 'personality' mean?",
+      "options": ["Aparência física", "Personalidade / Jeito de ser", "Profissão", "Opinião"],
+      "correctAnswer": "Personalidade / Jeito de ser"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does 'appearance' mean?",
+      "options": ["Personalidade", "Comportamento", "Aparência / Jeito físico", "Reputação"],
+      "correctAnswer": "Aparência / Jeito físico"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What does 'smart' mean?",
+      "options": ["Bonito", "Inteligente", "Engraçado", "Alto"],
+      "correctAnswer": "Inteligente"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does 'kind' mean?",
+      "options": ["Mau", "Estranho", "Gentil / Bondoso", "Nervoso"],
+      "correctAnswer": "Gentil / Bondoso"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which adjective describes someone who talks easily with new people?",
+      "options": ["Shy", "Outgoing", "Serious", "Quiet"],
+      "correctAnswer": "Outgoing"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which adjective describes someone's physical appearance (not personality)?",
+      "options": ["Kind", "Friendly", "Smart", "Tall"],
+      "correctAnswer": "Tall"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "What is the OPPOSITE of 'shy'?",
+      "options": ["Smart", "Friendly", "Outgoing", "Kind"],
+      "correctAnswer": "Outgoing"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'She is very _____ and loves meeting new people.' (extrovertida)",
+      "correctAnswer": "outgoing"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____, so he doesn't talk much in class.' (tímido)",
+      "correctAnswer": "shy"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'My neighbor is very _____. She always says hello.' (simpática)",
+      "correctAnswer": "friendly"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'He is very _____. He always helps others.' (gentil)",
+      "correctAnswer": "kind"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like her mother — same eyes and smile.' (parece fisicamente)",
+      "correctAnswer": "looks"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é alta e simpática.'",
+      "correctAnswer": "she is tall and friendly"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Ele é tímido, mas muito inteligente.'",
+      "correctAnswer": "he is shy but very smart"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Meu amigo é muito simpático.'",
+      "correctAnswer": "my friend is very friendly"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Ela tem uma personalidade incrível.'",
+      "correctAnswer": "she has an amazing personality"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ele parece o pai — alto e de cabelo escuro.'",
+      "correctAnswer": "he looks like his father — tall and dark-haired|he looks like his dad — tall with dark hair"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "How do we form the comparative of short one-syllable adjectives like 'tall'?",
+      "options": [
+        "more + adjective",
+        "adjective + -er",
+        "most + adjective",
+        "adjective + -est"
+      ],
+      "correctAnswer": "adjective + -er"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which is the correct comparative of 'tall'?",
+      "options": ["More tall", "Tallest", "Taller", "Most tall"],
+      "correctAnswer": "Taller"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which is the correct comparative of 'smart'?",
+      "options": ["More smart", "Smarter", "Smartest", "Most smart"],
+      "correctAnswer": "Smarter"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "How do we form the comparative of longer adjectives like 'outgoing'?",
+      "options": [
+        "adjective + -er",
+        "most + adjective",
+        "more + adjective",
+        "adjective + -est"
+      ],
+      "correctAnswer": "more + adjective"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which is the correct comparative of 'friendly'?",
+      "options": ["Friendlier / More friendly", "Most friendly", "Friendliest", "More friendlier"],
+      "correctAnswer": "Friendlier / More friendly"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She is more tall than her sister.",
+        "She is tallest than her sister.",
+        "She is taller than her sister.",
+        "She is tall than her sister."
+      ],
+      "correctAnswer": "She is taller than her sister."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He is more outgoing that his brother.",
+        "He is more outgoing than his brother.",
+        "He is outrgoing than his brother.",
+        "He is outgoingest than his brother."
+      ],
+      "correctAnswer": "He is more outgoing than his brother."
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ than her sister.' (tall → comparative)",
+      "correctAnswer": "taller"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ than his classmate.' (smart → comparative)",
+      "correctAnswer": "smarter"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'My brother is _____ than me.' (young → comparative)",
+      "correctAnswer": "younger"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ outgoing than her coworker.' (comparative marker for long adj.)",
+      "correctAnswer": "more"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ patient than I expected.' (comparative — long adj.)",
+      "correctAnswer": "more"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ kind than she looks.' (comparative — short adj.)",
+      "correctAnswer": "kinder"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'He is taller _____ his father.' (comparison word)",
+      "correctAnswer": "than"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais alta do que eu.'",
+      "correctAnswer": "she is taller than me|she is taller than i am"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Ele é mais inteligente do que o amigo dele.'",
+      "correctAnswer": "he is smarter than his friend"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Minha irmã é mais simpática do que meu irmão.'",
+      "correctAnswer": "my sister is friendlier than my brother|my sister is more friendly than my brother"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ele é mais tímido do que parece.'",
+      "correctAnswer": "he is shyer than he looks|he is more shy than he looks"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'João é mais alto do que Pedro.'",
+      "correctAnswer": "João is taller than Pedro|Joao is taller than Pedro"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais extrovertida do que a irmã.'",
+      "correctAnswer": "she is more outgoing than her sister"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does 'She looks like her mother' mean?",
+      "options": [
+        "Ela age como a mãe.",
+        "Ela tem a aparência física da mãe.",
+        "Ela fala como a mãe.",
+        "Ela gosta da mãe."
+      ],
+      "correctAnswer": "Ela tem a aparência física da mãe."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does 'He is like his father' mean?",
+      "options": [
+        "Ele se parece fisicamente com o pai.",
+        "Ele é igual ao pai em personalidade/comportamento.",
+        "Ele gosta do pai.",
+        "Ele trabalha com o pai."
+      ],
+      "correctAnswer": "Ele é igual ao pai em personalidade/comportamento."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence means 'Ela se parece com a irmã' (aparência física)?",
+      "options": [
+        "She is like her sister.",
+        "She looks as her sister.",
+        "She looks like her sister.",
+        "She is looking her sister."
+      ],
+      "correctAnswer": "She looks like her sister."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence means 'Ele é como o irmão — muito engraçado'?",
+      "options": [
+        "He looks like his brother — very funny.",
+        "He is like his brother — very funny.",
+        "He seems his brother — very funny.",
+        "He is looking like his brother — very funny."
+      ],
+      "correctAnswer": "He is like his brother — very funny."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What is the irregular comparative of 'good'?",
+      "options": ["Gooder", "More good", "Goodest", "Better"],
+      "correctAnswer": "Better"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What is the irregular comparative of 'bad'?",
+      "options": ["More bad", "Badder", "Worse", "Worst"],
+      "correctAnswer": "Worse"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She is more better at English than me.",
+        "She is gooder at English than me.",
+        "She is better at English than me.",
+        "She is best at English than me."
+      ],
+      "correctAnswer": "She is better at English than me."
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like her grandmother — same smile and eyes.' (looks like)",
+      "correctAnswer": "looks"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ his older brother — very confident and funny.' (is like)",
+      "correctAnswer": "like"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ at sports than her twin sister.' (better — irregular comparative)",
+      "correctAnswer": "better"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'My old phone was _____ than this one.' (worse — irregular comparative)",
+      "correctAnswer": "worse"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'He is more _____ than his coworkers — he never gets angry.' (patient)",
+      "correctAnswer": "patient"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'She is more _____ than anyone in the class.' (creative)",
+      "correctAnswer": "creative"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ele se parece com o pai.'",
+      "correctAnswer": "he looks like his father|he looks like his dad"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é como a mãe — muito paciente.'",
+      "correctAnswer": "she is like her mother — very patient|she is like her mom — very patient"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Minha amiga parece uma modelo.'",
+      "correctAnswer": "my friend looks like a model"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Ele é melhor em inglês do que eu.'",
+      "correctAnswer": "he is better at english than me|he is better at english than i am"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais criativa do que qualquer um da turma.'",
+      "correctAnswer": "she is more creative than anyone in the class"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Esse filme foi pior do que o último.'",
+      "correctAnswer": "this movie was worse than the last one|this film was worse than the last one"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela parece mais nova do que realmente é.'",
+      "correctAnswer": "she looks younger than she really is|she looks younger than she actually is"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which adjective describes PERSONALITY (not appearance)?",
+      "options": ["Tall", "Short", "Curly", "Confident"],
+      "correctAnswer": "Confident"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which adjective describes APPEARANCE (not personality)?",
+      "options": ["Funny", "Kind", "Slim", "Outgoing"],
+      "correctAnswer": "Slim"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does 'confident' mean?",
+      "options": ["Tímido", "Ansioso", "Confiante / Seguro de si", "Triste"],
+      "correctAnswer": "Confiante / Seguro de si"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What does 'patient' mean?",
+      "options": ["Impaciente", "Paciente / Calmo", "Rápido", "Nervoso"],
+      "correctAnswer": "Paciente / Calmo"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which question asks about someone's APPEARANCE?",
+      "options": [
+        "What is she like?",
+        "What does she look like?",
+        "How is her personality?",
+        "Is she nice?"
+      ],
+      "correctAnswer": "What does she look like?"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which question asks about someone's PERSONALITY?",
+      "options": [
+        "What does he look like?",
+        "How tall is he?",
+        "What is he like?",
+        "Does he have blue eyes?"
+      ],
+      "correctAnswer": "What is he like?"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses a comparative adjective?",
+      "options": [
+        "She is more taller than her friend.",
+        "She is more tall than her friend.",
+        "She is taller than her friend.",
+        "She is tallest than her friend."
+      ],
+      "correctAnswer": "She is taller than her friend."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly combines appearance and personality?",
+      "options": [
+        "He is tall and he more outgoing.",
+        "He is tall and more outgoing than his brother.",
+        "He is taller and more outgoinger than his brother.",
+        "He is more tall and outgoing than his brother."
+      ],
+      "correctAnswer": "He is tall and more outgoing than his brother."
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'Maria is _____ than Ana, but Ana is more outgoing.' (tall → comparative)",
+      "correctAnswer": "taller"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'He is very _____. He never gets angry or raises his voice.' (patient)",
+      "correctAnswer": "patient"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'She is really _____. She makes everyone laugh.' (funny)",
+      "correctAnswer": "funny"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: '— What does he look like? — He is _____ and has dark hair.' (tall)",
+      "correctAnswer": "tall"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: '— What is she like? — She is very _____ and always helps people.' (kind)",
+      "correctAnswer": "kind"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ like his grandfather — same nose and eyes.' (looks like)",
+      "correctAnswer": "looks"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'She is more _____ than her sister when it comes to art.' (creative)",
+      "correctAnswer": "creative"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Meu professor é alto, simpático e muito paciente.'",
+      "correctAnswer": "my teacher is tall, friendly and very patient"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Ele é mais extrovertido do que eu.'",
+      "correctAnswer": "he is more outgoing than me|he is more outgoing than i am"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ela tem cabelo liso e é muito simpática.'",
+      "correctAnswer": "she has straight hair and is very friendly"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é confiante e muito inteligente.'",
+      "correctAnswer": "she is confident and very smart|she is confident and very intelligent"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Quem é mais alto, você ou seu irmão?'",
+      "correctAnswer": "who is taller, you or your brother?"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does 'creative' mean?",
+      "options": ["Chato", "Criativo / Imaginativo", "Preguiçoso", "Rígido"],
+      "correctAnswer": "Criativo / Imaginativo"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does 'serious' mean?",
+      "options": ["Engraçado", "Tímido", "Sério", "Ansioso"],
+      "correctAnswer": "Sério"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She is more taller than him.",
+        "She is taller than him.",
+        "She is tallest than him.",
+        "She is the taller than him."
+      ],
+      "correctAnswer": "She is taller than him."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He is more funnier than his friend.",
+        "He is funniest than his friend.",
+        "He is funnier than his friend.",
+        "He is most funny than his friend."
+      ],
+      "correctAnswer": "He is funnier than his friend."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What is 'good' in comparative form?",
+      "options": ["Gooder", "More good", "Goodest", "Better"],
+      "correctAnswer": "Better"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "'What does she look like?' — Which answer is correct?",
+      "options": [
+        "She is very kind and funny.",
+        "She looks like a model — tall with long hair.",
+        "She likes music and sports.",
+        "She is from Brazil."
+      ],
+      "correctAnswer": "She looks like a model — tall with long hair."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "'What is he like?' — Which answer is correct?",
+      "options": [
+        "He is tall and has brown eyes.",
+        "He is from São Paulo.",
+        "He is really outgoing and very funny.",
+        "He looks like his father."
+      ],
+      "correctAnswer": "He is really outgoing and very funny."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which describes someone's personality correctly?",
+      "options": [
+        "She has curly hair and brown eyes.",
+        "She is kind, patient and very creative.",
+        "She is tall and slim.",
+        "She looks like her mother."
+      ],
+      "correctAnswer": "She is kind, patient and very creative."
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'She is taller _____ her sister.' (comparison word)",
+      "correctAnswer": "than"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ at sports than his twin.' (better — irregular)",
+      "correctAnswer": "better"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'She is very _____. She never says anything rude.' (kind)",
+      "correctAnswer": "kind"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'My friend is _____ and always makes people feel welcome.' (friendly)",
+      "correctAnswer": "friendly"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ like a young version of her mother.' (looks like)",
+      "correctAnswer": "looks"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: '— What does your boss look like? — He is _____ and has short hair.' (tall / short / etc.)",
+      "correctAnswer": "tall|short|young|old"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'He is _____ serious than his sister — he laughs all the time.' (less — opposite comparison)",
+      "correctAnswer": "less"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais séria do que parece.'",
+      "correctAnswer": "she is more serious than she looks"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Você é mais extrovertido do que seu irmão?'",
+      "correctAnswer": "are you more outgoing than your brother?"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ele parece mais velho do que realmente é.'",
+      "correctAnswer": "he looks older than he really is|he looks older than he actually is"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Quem é mais simpático na sua família?'",
+      "correctAnswer": "who is the friendliest in your family?|who is friendlier in your family?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Meu melhor amigo é engraçado, criativo e muito gentil.'",
+      "correctAnswer": "my best friend is funny, creative and very kind"
+    }
+  ]
+}

@@ -1,0 +1,882 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does the word 'similar' mean?",
+      "options": [
+        "Almost the same",
+        "Completely different",
+        "Much better",
+        "Very strange"
+      ],
+      "correctAnswer": "Almost the same"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What is the comparative form of the adjective 'big'?",
+      "options": [
+        "more big",
+        "bigger",
+        "biggest",
+        "biger"
+      ],
+      "correctAnswer": "bigger"
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "This car is _____ (fast) than that one.",
+      "correctAnswer": "faster"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does the word 'different' mean?",
+      "options": [
+        "Not the same",
+        "Very similar",
+        "Better quality",
+        "Less important"
+      ],
+      "correctAnswer": "Not the same"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Choose the correct comparative: 'Tokyo is _____ than my hometown.'",
+      "options": [
+        "more big",
+        "bigger",
+        "most big",
+        "biggest"
+      ],
+      "correctAnswer": "bigger"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "She is _____ (tall) than her brother.",
+      "correctAnswer": "taller"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Brazil is _____ than Portugal in terms of size.",
+      "correctAnswer": "bigger|larger"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'O Rio de Janeiro é mais quente do que São Paulo.'",
+      "correctAnswer": "rio de janeiro is hotter than são paulo|rio de janeiro is hotter than sao paulo"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does the word 'comparison' mean?",
+      "options": [
+        "Examining similarities and differences between things",
+        "A type of adjective used in English",
+        "A way of speaking more formally",
+        "A common grammar mistake"
+      ],
+      "correctAnswer": "Examining similarities and differences between things"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is grammatically correct?",
+      "options": [
+        "This phone is more expensive than the old one.",
+        "This phone is expensiver than the old one.",
+        "This phone is most expensive than the old one.",
+        "This phone is expensive than the old one."
+      ],
+      "correctAnswer": "This phone is more expensive than the old one."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "The bus is _____ (cheap) than the taxi.",
+      "correctAnswer": "cheaper"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "This exercise is _____ than the last one. (use the comparative of 'difficult')",
+      "correctAnswer": "more difficult|harder"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "The word 'faster' is the comparative form of which adjective?",
+      "options": [
+        "fast",
+        "fat",
+        "far",
+        "fair"
+      ],
+      "correctAnswer": "fast"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Este livro é menos interessante do que o outro.'",
+      "correctAnswer": "this book is less interesting than the other one|this book is less interesting than the other"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the comparative form of 'good'?",
+      "options": [
+        "gooder",
+        "more good",
+        "better",
+        "best"
+      ],
+      "correctAnswer": "better"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "The new laptop is _____ expensive than the old one.",
+      "correctAnswer": "more"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "He speaks English _____ than I do. (comparative of 'well')",
+      "correctAnswer": "better"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'A minha cidade é menor do que a capital.'",
+      "correctAnswer": "my city is smaller than the capital"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the comparative correctly?",
+      "options": [
+        "He runs more fast than me.",
+        "He runs faster than me.",
+        "He runs fastest than me.",
+        "He runs fast than me."
+      ],
+      "correctAnswer": "He runs faster than me."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "This hotel is _____ comfortable than the hostel. (use 'more' or 'less')",
+      "correctAnswer": "more"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does the superlative phrase 'the best' express?",
+      "options": [
+        "The highest quality among all options",
+        "Better than just one other thing",
+        "As good as another option",
+        "Slightly better than before"
+      ],
+      "correctAnswer": "The highest quality among all options"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What is the superlative form of 'tall'?",
+      "options": [
+        "taller",
+        "more tall",
+        "the tallest",
+        "the most tall"
+      ],
+      "correctAnswer": "the tallest"
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "Mount Everest is _____ (high) mountain in the world.",
+      "correctAnswer": "the highest"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'the worst' mean?",
+      "options": [
+        "The lowest quality among all options",
+        "Bad but not the lowest",
+        "Worse than just one other thing",
+        "Not very good but acceptable"
+      ],
+      "correctAnswer": "The lowest quality among all options"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Choose the correct superlative: 'This is _____ movie I've ever seen.'",
+      "options": [
+        "the most bored",
+        "the more boring",
+        "the most boring",
+        "most boring"
+      ],
+      "correctAnswer": "the most boring"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "She is _____ (smart) student in the entire class.",
+      "correctAnswer": "the smartest"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "This is _____ (expensive) restaurant in town. I can't afford it!",
+      "correctAnswer": "the most expensive"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Este é o restaurante mais caro da cidade.'",
+      "correctAnswer": "this is the most expensive restaurant in the city"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "The phrase 'the most' is typically used to form superlatives of adjectives that are...",
+      "options": [
+        "Long (2 or more syllables)",
+        "One syllable only",
+        "Irregular forms",
+        "Adverbs only"
+      ],
+      "correctAnswer": "Long (2 or more syllables)"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which is the correct superlative of 'bad'?",
+      "options": [
+        "baddest",
+        "more bad",
+        "the worst",
+        "the most bad"
+      ],
+      "correctAnswer": "the worst"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "That was _____ (good) meal I have ever had! Absolutely delicious.",
+      "correctAnswer": "the best"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "This hostel is _____ (cheap) accommodation option in the city.",
+      "correctAnswer": "the cheapest"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "What does the phrase 'the least' mean in a superlative comparison?",
+      "options": [
+        "The minimum degree among all options",
+        "Less than one other thing only",
+        "The maximum degree among all",
+        "Slightly less than average"
+      ],
+      "correctAnswer": "The minimum degree among all options"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é a aluna mais dedicada da turma.'",
+      "correctAnswer": "she is the most dedicated student in the class"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the superlative form of 'interesting'?",
+      "options": [
+        "the interestingest",
+        "the most interesting",
+        "the more interesting",
+        "most interestinger"
+      ],
+      "correctAnswer": "the most interesting"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "He is _____ (popular) singer in the country right now.",
+      "correctAnswer": "the most popular"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Physics is _____ (difficult) subject I have this semester.",
+      "correctAnswer": "the most difficult"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Qual é o menor país do mundo?'",
+      "correctAnswer": "what is the smallest country in the world?"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the superlative correctly?",
+      "options": [
+        "She is more tallest in her family.",
+        "She is the tallest in her family.",
+        "She is tallest than her family.",
+        "She is most tall in her family."
+      ],
+      "correctAnswer": "She is the tallest in her family."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "This is _____ (least + comfortable) seat on the entire plane.",
+      "correctAnswer": "the least comfortable"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does the construction 'as...as' express in English?",
+      "options": [
+        "Two things are equal in some quality",
+        "One thing is better than another",
+        "One thing is the best of all",
+        "Two things are completely different"
+      ],
+      "correctAnswer": "Two things are equal in some quality"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence using 'as...as': 'She is _____ her mother.'",
+      "options": [
+        "as tall as",
+        "as taller as",
+        "as tallest as",
+        "more tall as"
+      ],
+      "correctAnswer": "as tall as"
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "This laptop is not _____ expensive _____ that one. (as...as)",
+      "correctAnswer": "as...as|as / as"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does the adjective 'comfortable' mean?",
+      "options": [
+        "Giving a feeling of physical ease and relaxation",
+        "Very expensive and luxurious",
+        "Fast and efficient",
+        "Difficult to use or understand"
+      ],
+      "correctAnswer": "Giving a feeling of physical ease and relaxation"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does 'He is not as fast as his brother' mean?",
+      "options": [
+        "His brother is faster than him",
+        "He is faster than his brother",
+        "They run at the same speed",
+        "He is the fastest in the family"
+      ],
+      "correctAnswer": "His brother is faster than him"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "He is _____ intelligent _____ his sister. (they have equal intelligence)",
+      "correctAnswer": "as...as|as / as"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "The bus is not _____ quick _____ the train. (as...as structure)",
+      "correctAnswer": "as quick as|as fast as"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Este celular é tão rápido quanto o meu.'",
+      "correctAnswer": "this phone is as fast as mine|this cell phone is as fast as mine"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "The adjective 'cheap' means...",
+      "options": [
+        "Low in price; not expensive",
+        "Of poor quality only",
+        "Very old or outdated",
+        "Difficult to find"
+      ],
+      "correctAnswer": "Low in price; not expensive"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "This hotel is as cheap than mine.",
+        "This hotel is as cheap as mine.",
+        "This hotel is as cheaper as mine.",
+        "This hotel is as cheap that mine."
+      ],
+      "correctAnswer": "This hotel is as cheap as mine."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Your house is _____ big _____ mine. (they are the same size)",
+      "correctAnswer": "as big as|as / as"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "She doesn't study _____ hard _____ she used to. (not as...as)",
+      "correctAnswer": "as hard as"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "When two things are described as 'similar', it means they are...",
+      "options": [
+        "Nearly equal or alike in some way",
+        "Completely identical in every way",
+        "Very different from each other",
+        "One is better than the other"
+      ],
+      "correctAnswer": "Nearly equal or alike in some way"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'O metrô não é tão confortável quanto o ônibus expresso.'",
+      "correctAnswer": "the metro is not as comfortable as the express bus|the subway is not as comfortable as the express bus"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "'Not as fast as' is equivalent to which of the following?",
+      "options": [
+        "less fast than|slower than",
+        "faster than",
+        "the fastest",
+        "as fast as"
+      ],
+      "correctAnswer": "less fast than|slower than"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "In my opinion, Paris is _____ beautiful _____ Rome. (they are equally beautiful)",
+      "correctAnswer": "as beautiful as|as / as"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "He isn't _____ experienced _____ his colleague at the company.",
+      "correctAnswer": "as experienced as"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ela corre tão rápido quanto ele.'",
+      "correctAnswer": "she runs as fast as him|she runs as fast as he does"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Rewrite using 'as...as': 'The red car is faster than the blue car.' Which option is closest in meaning?",
+      "options": [
+        "The blue car is not as fast as the red car.",
+        "The red car is not as fast as the blue car.",
+        "Both cars are as fast as each other.",
+        "The blue car is faster than the red car."
+      ],
+      "correctAnswer": "The blue car is not as fast as the red car."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "This coffee is not _____ hot _____ the one I ordered. (as...as)",
+      "correctAnswer": "as hot as|as / as"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "The connector 'whereas' is used to...",
+      "options": [
+        "Show a direct contrast between two facts",
+        "Add similar information",
+        "Express a result or consequence",
+        "Introduce an example"
+      ],
+      "correctAnswer": "Show a direct contrast between two facts"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct use of 'whereas': '_____'",
+      "options": [
+        "I love summer, whereas my sister prefers winter.",
+        "I love summer, whereas I also like spring.",
+        "I love summer, whereas it is hot.",
+        "I love summer, whereas summer is nice."
+      ],
+      "correctAnswer": "I love summer, whereas my sister prefers winter."
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "_____ it was raining heavily, we still went for a walk. (concession connector)",
+      "correctAnswer": "although|even though|though"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "The word 'unlike' is used to...",
+      "options": [
+        "Highlight a difference between two people or things",
+        "Show they are similar",
+        "Express surprise about something",
+        "Add an extra example"
+      ],
+      "correctAnswer": "Highlight a difference between two people or things"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Where is 'however' typically placed in a sentence?",
+      "options": [
+        "At the start of a new sentence or after a semicolon",
+        "Always in the middle of a clause",
+        "Only at the end of a sentence",
+        "Directly before the verb"
+      ],
+      "correctAnswer": "At the start of a new sentence or after a semicolon"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "I love Italian food; _____, my sister cannot eat cheese. (contrast connector)",
+      "correctAnswer": "however"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "_____ my brother, I don't enjoy watching sports on TV.",
+      "correctAnswer": "unlike"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Embora seja caro, este restaurante é excelente.'",
+      "correctAnswer": "although it is expensive, this restaurant is excellent|even though it is expensive, this restaurant is excellent"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "The word 'although' has a similar meaning to which of the following?",
+      "options": [
+        "even though / though",
+        "therefore / so",
+        "because / since",
+        "also / in addition"
+      ],
+      "correctAnswer": "even though / though"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'although' correctly?",
+      "options": [
+        "Although she studied hard, she passed the test.",
+        "She studied hard although she passed.",
+        "Although she passed, she studied hard.",
+        "She although studied hard passed the test."
+      ],
+      "correctAnswer": "Although she studied hard, she passed the test."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "She works extremely hard; _____, she never seems to get promoted.",
+      "correctAnswer": "however"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "I love city life, _____ my best friend prefers the countryside.",
+      "correctAnswer": "whereas|while"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "The connector 'however' is used to...",
+      "options": [
+        "Introduce a contrasting or surprising idea",
+        "Give an additional similar idea",
+        "Explain a reason",
+        "Describe a sequence of events"
+      ],
+      "correctAnswer": "Introduce a contrasting or surprising idea"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ao contrário de mim, ela adora acordar cedo.'",
+      "correctAnswer": "unlike me, she loves waking up early|unlike me, she loves to wake up early"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Choose the best connector: 'The weather was terrible. _____, we had a fantastic holiday.'",
+      "options": [
+        "However",
+        "Although",
+        "Unlike",
+        "Whereas"
+      ],
+      "correctAnswer": "However"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "_____ cats are generally independent, dogs tend to be very loyal and social.",
+      "correctAnswer": "whereas|while|although"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "_____ he studied all night long, he still failed the final exam.",
+      "correctAnswer": "although|even though|though"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'No entanto, o projeto foi um grande sucesso.'",
+      "correctAnswer": "however, the project was a great success"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence contains an error in connector usage?",
+      "options": [
+        "Although he was tired, he finished the work.",
+        "He was tired. However, he finished the work.",
+        "He was tired, whereas he finished the work.",
+        "Unlike his teammates, he finished the work."
+      ],
+      "correctAnswer": "He was tired, whereas he finished the work."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "_____ my initial expectations, the trip turned out to be absolutely amazing.",
+      "correctAnswer": "unlike|contrary to"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does the word 'contrast' mean?",
+      "options": [
+        "A clear difference between two things",
+        "A similarity between two ideas",
+        "A type of superlative form",
+        "A grammar structure using 'as'"
+      ],
+      "correctAnswer": "A clear difference between two things"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the comparative correctly?",
+      "options": [
+        "São Paulo is more populated than Rio de Janeiro.",
+        "São Paulo is more populateder than Rio de Janeiro.",
+        "São Paulo is populateder than Rio de Janeiro.",
+        "São Paulo is the more populated than Rio de Janeiro."
+      ],
+      "correctAnswer": "São Paulo is more populated than Rio de Janeiro."
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "The Amazon River is one of _____ (long) rivers in the world.",
+      "correctAnswer": "the longest"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "Which sentence best illustrates the use of 'whereas'?",
+      "options": [
+        "He likes tea, whereas she prefers coffee.",
+        "He likes tea, whereas he also drinks coffee.",
+        "He likes tea, whereas tea is delicious.",
+        "He likes tea. Whereas, it is healthy."
+      ],
+      "correctAnswer": "He likes tea, whereas she prefers coffee."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses 'as...as'?",
+      "options": [
+        "This test is as difficult as I expected.",
+        "This test is as difficult than I expected.",
+        "This test is as more difficult as I expected.",
+        "This test is as difficult that I expected."
+      ],
+      "correctAnswer": "This test is as difficult as I expected."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "A train ticket is _____ (expensive) than a bus ticket, but it's much faster.",
+      "correctAnswer": "more expensive"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "In my opinion, Italy has _____ (delicious) food in all of Europe.",
+      "correctAnswer": "the most delicious"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'O inverno no Canadá é muito mais frio do que no Brasil.'",
+      "correctAnswer": "winter in canada is much colder than in brazil|winter in canada is much colder than brazil"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "The word 'unlike' introduces...",
+      "options": [
+        "A contrast between two different things or people",
+        "Two things that are equal",
+        "The best example in a group",
+        "A reason for something"
+      ],
+      "correctAnswer": "A contrast between two different things or people"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Choose the correct contrast connector: 'I passed all my exams. _____, my grades were not perfect.'",
+      "options": [
+        "However",
+        "Although",
+        "Unlike",
+        "Whereas"
+      ],
+      "correctAnswer": "However"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "My new apartment is not _____ spacious _____ my old one.",
+      "correctAnswer": "as spacious as|as / as"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "My exam score was _____ (bad) this semester than last semester.",
+      "correctAnswer": "worse"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "'More expensive' is the comparative form of which adjective?",
+      "options": [
+        "expensive",
+        "expense",
+        "expend",
+        "expensed"
+      ],
+      "correctAnswer": "expensive"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Embora eu prefira o verão, o outono também é muito bonito.'",
+      "correctAnswer": "although i prefer summer, autumn is also very beautiful|even though i prefer summer, autumn is also very beautiful"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence is the most complete and correct comparison?",
+      "options": [
+        "Although taxis are faster, the subway is cheaper and less stressful.",
+        "Although taxis are most fast, the subway is more cheap and less stressful.",
+        "Although taxis are faster, the subway is more cheap and least stressful.",
+        "Although taxis are faster, the subway is cheap and less stressful than."
+      ],
+      "correctAnswer": "Although taxis are faster, the subway is cheaper and less stressful."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "_____ English, Mandarin Chinese has a much more complex writing system.",
+      "correctAnswer": "unlike"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "The new phone model is _____ powerful _____ the previous one. (as...as — equal power)",
+      "correctAnswer": "as powerful as"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ao contrário do meu irmão, eu prefiro estudar de manhã.'",
+      "correctAnswer": "unlike my brother, i prefer to study in the morning|unlike my brother, i prefer studying in the morning"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Identify the sentence that correctly uses ALL structures from this lesson:",
+      "options": [
+        "Although Paris is the most romantic city, it is not as cheap as Lisbon, whereas Lisbon is smaller.",
+        "Although Paris is most romantic city, it is not as cheap than Lisbon, whereas Lisbon is more small.",
+        "Although Paris is the more romantic city, it is not as cheap as Lisbon, whereas Lisbon is smaller.",
+        "Although Paris is the most romantic city, it is not as cheap than Lisbon, whereas Lisbon is the small."
+      ],
+      "correctAnswer": "Although Paris is the most romantic city, it is not as cheap as Lisbon, whereas Lisbon is smaller."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "This was _____ (interesting) course I have ever taken. I learned so much!",
+      "correctAnswer": "the most interesting"
+    }
+  ]
+}
