@@ -1,525 +1,530 @@
 {
-  "lesson": 6,
+  "lesson": 7,
   "level": "seed",
-  "topic": "Colors & Clothes",
+  "topic": "Places in the City",
   "monday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "What does 'red' mean?",
-      "options": ["Azul", "Verde", "Vermelho", "Amarelo"],
-      "correctAnswer": "Vermelho"
+      "question": "What does 'school' mean?",
+      "options": ["Hospital", "Escola", "Banco", "Mercado"],
+      "correctAnswer": "Escola"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "What does 'blue' mean?",
-      "options": ["Azul", "Preto", "Branco", "Rosa"],
-      "correctAnswer": "Azul"
+      "question": "What does 'hospital' mean?",
+      "options": ["Escola", "Parque", "Hospital", "Restaurante"],
+      "correctAnswer": "Hospital"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "What does 'green' mean?",
-      "options": ["Cinza", "Verde", "Vermelho", "Marrom"],
-      "correctAnswer": "Verde"
+      "question": "What does 'supermarket' mean?",
+      "options": ["Farmácia", "Supermercado", "Banco", "Escola"],
+      "correctAnswer": "Supermercado"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What does 'shirt' mean?",
-      "options": ["Calça", "Camisa", "Vestido", "Jaqueta"],
-      "correctAnswer": "Camisa"
+      "question": "What does 'restaurant' mean?",
+      "options": ["Parque", "Banco", "Restaurante", "Rua"],
+      "correctAnswer": "Restaurante"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What does 'pants' mean?",
-      "options": ["Sapatos", "Chapéu", "Calças", "Camisa"],
-      "correctAnswer": "Calças"
+      "question": "What does 'park' mean?",
+      "options": ["Farmácia", "Parque", "Mercado", "Hospital"],
+      "correctAnswer": "Parque"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "What does 'dress' mean?",
-      "options": ["Vestido", "Jaqueta", "Saia", "Camisa"],
-      "correctAnswer": "Vestido"
+      "question": "What does 'bank' mean?",
+      "options": ["Banco", "Rua", "Escola", "Loja"],
+      "correctAnswer": "Banco"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "What does 'shoes' mean?",
-      "options": ["Meias", "Sapatos", "Botas", "Sandálias"],
-      "correctAnswer": "Sapatos"
+      "question": "What does 'pharmacy' mean?",
+      "options": ["Restaurante", "Supermercado", "Farmácia", "Parque"],
+      "correctAnswer": "Farmácia"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "What does 'hat' mean?",
-      "options": ["Chapéu", "Relógio", "Cinto", "Bolsa"],
-      "correctAnswer": "Chapéu"
+      "question": "What does 'street' mean?",
+      "options": ["Rua", "Praça", "Escola", "Banco"],
+      "correctAnswer": "Rua"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "What does 'jacket' mean?",
-      "options": ["Camiseta", "Calça", "Jaqueta", "Vestido"],
-      "correctAnswer": "Jaqueta"
+      "question": "Where do you go to buy medicine?",
+      "options": ["School", "Bank", "Pharmacy", "Park"],
+      "correctAnswer": "Pharmacy"
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Which item do you wear on your feet?",
-      "options": ["Hat", "Shirt", "Shoes", "Jacket"],
-      "correctAnswer": "Shoes"
+      "question": "Where do you go to eat a meal?",
+      "options": ["Hospital", "Restaurant", "Bank", "School"],
+      "correctAnswer": "Restaurant"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'This is a _____ shirt.'",
-      "correctAnswer": "red"
+      "type": "multiple-choice",
+      "question": "Where do you go to study?",
+      "options": ["Supermarket", "Park", "School", "Pharmacy"],
+      "correctAnswer": "School"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'She has a blue _____.'",
-      "correctAnswer": "dress"
+      "type": "multiple-choice",
+      "question": "Where do you go to save money?",
+      "options": ["Park", "Hospital", "Restaurant", "Bank"],
+      "correctAnswer": "Bank"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Complete: 'He is wearing a _____ on his head.'",
-      "correctAnswer": "hat"
+      "question": "Complete: 'I buy food at the _____.'",
+      "correctAnswer": "supermarket"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'My jacket is _____, not dirty.'",
-      "correctAnswer": "clean"
+      "question": "Complete: 'The children play in the _____.'",
+      "correctAnswer": "park"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Put the words in the correct order: 'green / jacket / a'",
-      "correctAnswer": "a green jacket"
+      "type": "fill-blank",
+      "question": "Complete: 'The doctor works at the _____.'",
+      "correctAnswer": "hospital"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Put the words in the correct order: 'blue / shoes'",
-      "correctAnswer": "blue shoes"
+      "type": "fill-blank",
+      "question": "Complete: 'My school is on Green _____.'",
+      "correctAnswer": "Street"
     },
     {
       "id": 17,
       "type": "translate",
-      "question": "Translate to English: 'camisa vermelha'",
-      "correctAnswer": "red shirt"
+      "question": "Translate to English: 'escola'",
+      "correctAnswer": "school"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Translate to English: 'calças azuis'",
-      "correctAnswer": "blue pants|blue trousers"
+      "question": "Translate to English: 'farmácia'",
+      "correctAnswer": "pharmacy"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'sapatos verdes'",
-      "correctAnswer": "green shoes"
+      "question": "Translate to English: 'supermercado'",
+      "correctAnswer": "supermarket"
     },
     {
       "id": 20,
       "type": "multiple-choice",
-      "question": "Which phrase is correct?",
-      "options": ["a red dress", "red a dress", "dress red a", "a dress red"],
-      "correctAnswer": "a red dress"
+      "question": "Which word is a place in the city?",
+      "options": ["jacket", "hospital", "blue", "eating"],
+      "correctAnswer": "hospital"
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which phrase is correct?",
-      "options": ["a blue shirt", "a shirt blue", "blue a shirt", "shirt a blue"],
-      "correctAnswer": "a blue shirt"
+      "question": "Which sentence is correct?",
+      "options": ["The bank is at Main Street.", "The bank is on Main Street.", "The bank is in Main Street.", "The bank is near Main Street."],
+      "correctAnswer": "The bank is on Main Street."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Which phrase is correct?",
-      "options": ["an old hat", "a old hat", "old an hat", "hat an old"],
-      "correctAnswer": "an old hat"
+      "question": "Which sentence is correct?",
+      "options": ["She works in the hospital.", "She works on the hospital.", "She works at the hospital.", "She works near the hospital."],
+      "correctAnswer": "She works at the hospital."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["My pants are green.", "My green are pants.", "My are green pants.", "My pants green are."],
-      "correctAnswer": "My pants are green."
+      "question": "Which preposition is correct: 'The park is _____ my house.'",
+      "options": ["in", "on", "at", "near"],
+      "correctAnswer": "near"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What does 'new jacket' mean?",
-      "options": ["Jaqueta velha", "Jaqueta nova", "Camisa nova", "Vestido novo"],
-      "correctAnswer": "Jaqueta nova"
+      "question": "Which preposition is correct: 'The restaurant is _____ the bank.'",
+      "options": ["in", "next to", "at", "on"],
+      "correctAnswer": "next to"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What does 'dirty shoes' mean?",
-      "options": ["Sapatos limpos", "Sapatos novos", "Sapatos sujos", "Sapatos vermelhos"],
-      "correctAnswer": "Sapatos sujos"
+      "question": "Which sentence is correct?",
+      "options": ["The children are in the park.", "The children are on the park.", "The children are at the park.", "The children are near the park."],
+      "correctAnswer": "The children are in the park."
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'She has a _____ dress.'",
-      "correctAnswer": "red"
+      "type": "multiple-choice",
+      "question": "What does 'next to' mean?",
+      "options": ["Longe de", "Dentro de", "Ao lado de", "Em cima de"],
+      "correctAnswer": "Ao lado de"
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "Complete: 'He has _____ blue hat.'",
-      "correctAnswer": "a"
+      "type": "multiple-choice",
+      "question": "What does 'near' mean?",
+      "options": ["Longe", "Perto", "Dentro", "Embaixo"],
+      "correctAnswer": "Perto"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'I have _____ old jacket.'",
-      "correctAnswer": "an"
+      "question": "Complete: 'The pharmacy is _____ Oak Street.'",
+      "correctAnswer": "on"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'They have green _____.'",
-      "correctAnswer": "pants"
+      "question": "Complete: 'We eat _____ the restaurant.'",
+      "correctAnswer": "at"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'My shoes are _____.'",
-      "correctAnswer": "blue"
+      "question": "Complete: 'The supermarket is _____ the school.'",
+      "correctAnswer": "near|next to"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Translate to English: 'Eu tenho uma camisa verde.'",
-      "correctAnswer": "i have a green shirt"
+      "type": "fill-blank",
+      "question": "Complete: 'The children play _____ the park.'",
+      "correctAnswer": "in"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate to English: 'Ela tem um vestido azul.'",
-      "correctAnswer": "she has a blue dress"
+      "type": "fill-blank",
+      "question": "Complete: 'I study _____ school.'",
+      "correctAnswer": "at"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Ele tem um chapéu vermelho.'",
-      "correctAnswer": "he has a red hat"
+      "question": "Translate to English: 'O banco fica na Rua Central.'",
+      "correctAnswer": "the bank is on central street"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Minha jaqueta é nova.'",
-      "correctAnswer": "my jacket is new"
+      "question": "Translate to English: 'A farmácia fica ao lado do hospital.'",
+      "correctAnswer": "the pharmacy is next to the hospital"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'As calças são velhas.'",
-      "correctAnswer": "the pants are old|the trousers are old"
+      "question": "Translate to English: 'O parque fica perto da escola.'",
+      "correctAnswer": "the park is near the school"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "In English, what usually comes before the clothes noun?",
-      "options": ["The verb", "The color", "The number", "The name"],
-      "correctAnswer": "The color"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'next to / is / the / bank / the pharmacy'",
+      "correctAnswer": "the pharmacy is next to the bank"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["She has red shoes.", "She has shoes red.", "She red has shoes.", "Has she red shoes."],
-      "correctAnswer": "She has red shoes."
+      "type": "complete",
+      "question": "Put the words in the correct order: 'on / the / school / is / Park Street'",
+      "correctAnswer": "the school is on park street"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'The hat is _____.'",
-      "correctAnswer": "old"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'in' correctly?",
+      "options": ["The kids are in the park.", "She is in Main Street.", "We eat in the restaurant.", "He works in the bank."],
+      "correctAnswer": "The kids are in the park."
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete the phrase: 'a _____ shirt'",
-      "correctAnswer": "blue"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'at' correctly?",
+      "options": ["I am at the park playing.", "He is at Main Street.", "She is at the hospital.", "They are at the park tree."],
+      "correctAnswer": "She is at the hospital."
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which question is correct?",
-      "options": ["What color is your shirt?", "What color your shirt is?", "Your shirt is what color?", "What is color your shirt?"],
-      "correctAnswer": "What color is your shirt?"
+      "type": "fill-blank",
+      "question": "Complete: 'The supermarket is _____ Elm Street, _____ the park.'",
+      "correctAnswer": "on, near"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["I wearing a red shirt.", "I am wearing a red shirt.", "I am wear a red shirt.", "I red shirt wearing."],
-      "correctAnswer": "I am wearing a red shirt."
+      "question": "Which question is correct?",
+      "options": ["Where is the bank?", "Where the bank is?", "The bank is where?", "Is the bank where?"],
+      "correctAnswer": "Where is the bank?"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["He is wearing blue pants.", "He wearing blue pants.", "He is wear blue pants.", "He blue pants is wearing."],
-      "correctAnswer": "He is wearing blue pants."
+      "question": "Which answer is correct for 'Where is the pharmacy?'",
+      "options": ["It's on Oak Street.", "It's Oak Street.", "Is on Oak Street.", "On Oak Street it's."],
+      "correctAnswer": "It's on Oak Street."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence describes another person now?",
-      "options": ["She is wearing a green dress.", "She wear a green dress.", "She wearing a green dress.", "She is wear a green dress."],
-      "correctAnswer": "She is wearing a green dress."
+      "question": "Which answer is correct for 'Where is the hospital?'",
+      "options": ["It's near the park.", "Is near the park.", "Near the park it is.", "The hospital near the park."],
+      "correctAnswer": "It's near the park."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What does 'I'm wearing' mean?",
-      "options": ["Eu gosto de", "Eu tenho", "Eu estou usando", "Eu quero comprar"],
-      "correctAnswer": "Eu estou usando"
+      "question": "What does 'Where is the restaurant?' mean?",
+      "options": ["Quando é o restaurante?", "Onde fica o restaurante?", "Como é o restaurante?", "Qual é o restaurante?"],
+      "correctAnswer": "Onde fica o restaurante?"
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ wearing a jacket.'",
-      "correctAnswer": "am"
+      "type": "multiple-choice",
+      "question": "Which sentence answers 'Where is the school?'",
+      "options": ["It's big and new.", "It's at 8 in the morning.", "It's on Green Street, next to the park.", "It's a good school."],
+      "correctAnswer": "It's on Green Street, next to the park."
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'He _____ wearing a hat.'",
-      "correctAnswer": "is"
+      "question": "Complete: '_____ is the supermarket? It's on Main Street.'",
+      "correctAnswer": "Where"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "Complete: 'They _____ wearing blue shoes.'",
-      "correctAnswer": "are"
+      "question": "Complete: 'Where is the park? _____ near the school.'",
+      "correctAnswer": "It's"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'She is wearing a _____ dress.'",
-      "correctAnswer": "green"
+      "question": "Complete: 'Where is the bank? It's _____ Oak Street.'",
+      "correctAnswer": "on"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'We are _____ jackets today.'",
-      "correctAnswer": "wearing"
+      "question": "Complete: 'Where is the hospital? It's _____ to the pharmacy.'",
+      "correctAnswer": "next"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: 'He is wearing _____ old jacket.'",
-      "correctAnswer": "an"
+      "type": "fill-blank",
+      "question": "Complete: 'Where _____ the restaurant? It's on Park Street.'",
+      "correctAnswer": "is"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'She is wearing red _____.'",
-      "correctAnswer": "shoes"
+      "type": "translate",
+      "question": "Translate to English: 'Onde fica a escola?'",
+      "correctAnswer": "where is the school?"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Translate to English: 'Eu estou usando uma camisa azul.'",
-      "correctAnswer": "i am wearing a blue shirt|i'm wearing a blue shirt"
+      "question": "Translate to English: 'Onde fica o hospital?'",
+      "correctAnswer": "where is the hospital?"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Ela está usando um vestido verde.'",
-      "correctAnswer": "she is wearing a green dress|she's wearing a green dress"
+      "question": "Translate to English: 'Fica na Rua Central.'",
+      "correctAnswer": "it's on central street"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Ele está usando um chapéu vermelho.'",
-      "correctAnswer": "he is wearing a red hat|he's wearing a red hat"
+      "question": "Translate to English: 'Fica ao lado do banco.'",
+      "correctAnswer": "it's next to the bank"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'Eles estão usando jaquetas.'",
-      "correctAnswer": "they are wearing jackets|they're wearing jackets"
+      "question": "Translate to English: 'Onde fica o supermercado? Fica perto do parque.'",
+      "correctAnswer": "where is the supermarket? it's near the park"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["The boy is wearing clean shoes.", "The boy clean shoes is wearing.", "The boy is wear clean shoes.", "The boy wearing is clean shoes."],
-      "correctAnswer": "The boy is wearing clean shoes."
+      "type": "complete",
+      "question": "Put the words in the correct order: 'the / where / pharmacy / is'",
+      "correctAnswer": "where is the pharmacy"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Tom has a jacket on now. What can you say?",
-      "options": ["He wears a jacket now.", "He is wearing a jacket.", "He wearing a jacket.", "He is wear a jacket."],
-      "correctAnswer": "He is wearing a jacket."
+      "type": "complete",
+      "question": "Put the words in the correct order: 'the / restaurant / on / it's / Main Street'",
+      "correctAnswer": "it's on main street"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'My shoes are new, and I am _____ them today.'",
-      "correctAnswer": "wearing"
+      "type": "multiple-choice",
+      "question": "Which dialogue is correct?",
+      "options": ["A: Where is the park? B: It's near the school.", "A: Where is the park? B: It's at 9 o'clock.", "A: Where is the park? B: It's a big park.", "A: Where is the park? B: The park is green."],
+      "correctAnswer": "A: Where is the park? B: It's near the school."
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Put the words in the correct order: 'wearing / is / she / a red dress'",
-      "correctAnswer": "she is wearing a red dress"
+      "type": "multiple-choice",
+      "question": "Choose the correct response: 'Where is the bank?' → '_____ on Park Street.'",
+      "options": ["It's", "Is", "There", "Here"],
+      "correctAnswer": "It's"
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Translate to English: 'Nós estamos usando calças azuis.'",
-      "correctAnswer": "we are wearing blue pants|we're wearing blue pants|we are wearing blue trousers|we're wearing blue trousers"
+      "type": "fill-blank",
+      "question": "Complete: 'Excuse me, where _____ the nearest pharmacy?'",
+      "correctAnswer": "is"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "multiple-choice",
-      "question": "Which negative sentence is correct?",
-      "options": ["He isn't wearing a hat.", "He not wearing a hat.", "He isn't wear a hat.", "He doesn't wearing a hat."],
-      "correctAnswer": "He isn't wearing a hat."
+      "question": "Which sentence is correct?",
+      "options": ["There is a park near my house.", "There are a park near my house.", "It is a park near my house.", "Is there a park near my house."],
+      "correctAnswer": "There is a park near my house."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Which question is correct?",
-      "options": ["Are you wearing a jacket?", "Do you wearing a jacket?", "You are wearing a jacket?", "Are wearing you a jacket?"],
-      "correctAnswer": "Are you wearing a jacket?"
+      "question": "Which sentence is correct?",
+      "options": ["There are two schools on this street.", "There is two schools on this street.", "There have two schools on this street.", "Two schools there are on this street."],
+      "correctAnswer": "There are two schools on this street."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["She isn't wearing shoes.", "She not is wearing shoes.", "She doesn't wearing shoes.", "She isn't wear shoes."],
-      "correctAnswer": "She isn't wearing shoes."
+      "question": "What does 'There is a hospital near here.' mean?",
+      "options": ["Eu quero um hospital.", "Há um hospital perto daqui.", "Onde fica o hospital?", "O hospital é grande."],
+      "correctAnswer": "Há um hospital perto daqui."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Choose the correct article: '_____ old shirt'",
-      "options": ["a", "an", "the", "no article"],
-      "correctAnswer": "an"
+      "question": "Which sentence is correct?",
+      "options": ["There isn't a bank on this street.", "There aren't a bank on this street.", "There isn't banks on this street.", "There not is a bank on this street."],
+      "correctAnswer": "There isn't a bank on this street."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["He is wearing a shirt.", "He is wearing shirt.", "He wearing a shirt.", "He is wear a shirt."],
-      "correctAnswer": "He is wearing a shirt."
+      "question": "Which question is correct?",
+      "options": ["Is there a supermarket near here?", "There is a supermarket near here?", "Are there a supermarket near here?", "Is a supermarket there near here?"],
+      "correctAnswer": "Is there a supermarket near here?"
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ wearing a dress today.'",
-      "correctAnswer": "isn't|is not"
+      "question": "Complete: 'There _____ a restaurant on Oak Street.'",
+      "correctAnswer": "is"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "Complete: '_____ he wearing blue pants?'",
-      "correctAnswer": "Is"
+      "question": "Complete: 'There _____ three parks in this city.'",
+      "correctAnswer": "are"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'Are you wearing _____ hat?'",
-      "correctAnswer": "a"
+      "question": "Complete: 'There _____ a pharmacy near the hospital.'",
+      "correctAnswer": "is"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'I am not wearing _____ jacket today.'",
-      "correctAnswer": "a"
+      "question": "Complete: 'There _____ any banks on this street.'",
+      "correctAnswer": "aren't"
     },
     {
       "id": 10,
       "type": "fill-blank",
-      "question": "Complete: 'They are not _____ shoes.'",
-      "correctAnswer": "wearing"
+      "question": "Complete: '_____ there a school near here? Yes, there is.'",
+      "correctAnswer": "Is"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'Is she wearing _____ green dress?'",
-      "correctAnswer": "a"
+      "type": "fill-blank",
+      "question": "Complete: 'There are _____ supermarkets in this neighborhood.'",
+      "correctAnswer": "two"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete: 'He isn't wearing _____ shoes.'",
-      "correctAnswer": "blue"
+      "type": "translate",
+      "question": "Translate to English: 'Há um banco nesta rua.'",
+      "correctAnswer": "there is a bank on this street"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Ele não está usando uma jaqueta.'",
-      "correctAnswer": "he is not wearing a jacket|he isn't wearing a jacket"
+      "question": "Translate to English: 'Há três restaurantes no centro.'",
+      "correctAnswer": "there are three restaurants in the center|there are three restaurants downtown"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Ela não está usando sapatos.'",
-      "correctAnswer": "she is not wearing shoes|she isn't wearing shoes"
+      "question": "Translate to English: 'Não há farmácia perto daqui.'",
+      "correctAnswer": "there isn't a pharmacy near here|there is no pharmacy near here"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'Você está usando um chapéu?'",
-      "correctAnswer": "are you wearing a hat?"
+      "question": "Translate to English: 'Há um supermercado perto da escola?'",
+      "correctAnswer": "is there a supermarket near the school?"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Ela está usando uma camisa vermelha?'",
-      "correctAnswer": "is she wearing a red shirt?"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'is / there / park / a / near here'",
+      "correctAnswer": "there is a park near here"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["She is wearing a green jacket.", "They are wearing shoes.", "He is wearing hat.", "I am wearing blue pants."],
-      "correctAnswer": "He is wearing hat."
+      "type": "complete",
+      "question": "Put the words in the correct order: 'are / there / two / hospitals / in this city'",
+      "correctAnswer": "there are two hospitals in this city"
     },
     {
       "id": 18,
       "type": "multiple-choice",
-      "question": "What is the correct short answer to 'Are you wearing new shoes?'",
-      "options": ["Yes, I am.", "Yes, I do.", "Yes, I wear.", "Yes, I is."],
-      "correctAnswer": "Yes, I am."
+      "question": "Which is the correct short answer to 'Is there a bank near here?'",
+      "options": ["Yes, there is.", "Yes, it is.", "Yes, there are.", "Yes, is there."],
+      "correctAnswer": "Yes, there is."
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete: 'No, he _____ not wearing a hat.'",
-      "correctAnswer": "is"
+      "type": "multiple-choice",
+      "question": "Which sentence is wrong?",
+      "options": ["There is a school here.", "There are many restaurants.", "There is two parks.", "There isn't a pharmacy."],
+      "correctAnswer": "There is two parks."
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Put the words in the correct order: 'dirty / jacket / a'",
-      "correctAnswer": "a dirty jacket"
+      "type": "multiple-choice",
+      "question": "Which is the correct negative form?",
+      "options": ["There isn't a supermarket.", "There no is a supermarket.", "There is not supermarket.", "There don't is a supermarket."],
+      "correctAnswer": "There isn't a supermarket."
     }
   ],
   "friday": [
@@ -527,129 +532,129 @@
       "id": 1,
       "type": "multiple-choice",
       "question": "Which sentence is correct?",
-      "options": ["I am putting on my jacket.", "I putting on my jacket.", "I am put on my jacket.", "I puting on my jacket."],
-      "correctAnswer": "I am putting on my jacket."
+      "options": ["Where is the nearest bank? It's on Park Street, next to the restaurant.", "Where is the nearest bank? Is on Park Street, next to the restaurant.", "Where is the nearest bank? It's Park Street, next to the restaurant.", "Where the nearest bank is? It's on Park Street."],
+      "correctAnswer": "Where is the nearest bank? It's on Park Street, next to the restaurant."
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "What is the opposite of 'put on'?",
-      "options": ["wear", "buy", "take off", "wash"],
-      "correctAnswer": "take off"
+      "question": "What does 'nearest' mean in 'Where is the nearest hospital?'",
+      "options": ["Maior", "Mais antigo", "Mais próximo", "Mais famoso"],
+      "correctAnswer": "Mais próximo"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "What does 'clean shirt' mean?",
-      "options": ["Camisa suja", "Camisa limpa", "Camisa velha", "Camisa azul"],
-      "correctAnswer": "Camisa limpa"
+      "question": "Which sentence is correct?",
+      "options": ["There is a supermarket on this street and a pharmacy next to it.", "There is a supermarket on this street and a pharmacy next it.", "There are a supermarket on this street and a pharmacy next to it.", "There is a supermarket this street and a pharmacy next to it."],
+      "correctAnswer": "There is a supermarket on this street and a pharmacy next to it."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What does 'old shoes' mean?",
-      "options": ["Sapatos novos", "Sapatos bonitos", "Sapatos velhos", "Sapatos limpos"],
-      "correctAnswer": "Sapatos velhos"
+      "question": "What is the best response to 'Excuse me, is there a park near here?'",
+      "options": ["Yes, there is. It's on Elm Street.", "Yes, it's near.", "No, it isn't near.", "The park is big and green."],
+      "correctAnswer": "Yes, there is. It's on Elm Street."
     },
     {
       "id": 5,
       "type": "multiple-choice",
       "question": "Which sentence is correct?",
-      "options": ["Today I am wearing a red shirt and blue pants.", "Today I wearing a red shirt and blue pants.", "Today I am wear a red shirt and blue pants.", "Today wearing I a red shirt and blue pants."],
-      "correctAnswer": "Today I am wearing a red shirt and blue pants."
+      "options": ["The school is on Green Street, near the bank.", "The school is in Green Street, near the bank.", "The school is at Green Street, near the bank.", "The school is Green Street, near the bank."],
+      "correctAnswer": "The school is on Green Street, near the bank."
     },
     {
       "id": 6,
       "type": "fill-blank",
-      "question": "Complete: 'Before school, I put _____ my jacket.'",
-      "correctAnswer": "on"
+      "question": "Complete: 'Excuse me, _____ is the supermarket?'",
+      "correctAnswer": "where"
     },
     {
       "id": 7,
       "type": "fill-blank",
-      "question": "Complete: 'At home, I take _____ my shoes.'",
-      "correctAnswer": "off"
+      "question": "Complete: 'The restaurant is _____ to the bank and _____ the park.'",
+      "correctAnswer": "next, near"
     },
     {
       "id": 8,
       "type": "fill-blank",
-      "question": "Complete: 'She is wearing a _____ hat and a blue jacket.'",
-      "correctAnswer": "red"
+      "question": "Complete: 'There _____ a pharmacy and a hospital on this street.'",
+      "correctAnswer": "are"
     },
     {
       "id": 9,
       "type": "fill-blank",
-      "question": "Complete: 'The dress is _____, not dirty.'",
-      "correctAnswer": "clean"
+      "question": "Complete: 'Is _____ a school near here? Yes, there _____.'",
+      "correctAnswer": "there, is"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: 'He is wearing _____ new shirt.'",
-      "correctAnswer": "a"
+      "type": "fill-blank",
+      "question": "Complete: 'The bank is _____ Main Street, _____ to the supermarket.'",
+      "correctAnswer": "on, next"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete: 'They are wearing blue _____.'",
-      "correctAnswer": "pants|trousers"
+      "type": "translate",
+      "question": "Translate to English: 'Onde fica o restaurante? Fica na Rua Oak, ao lado do banco.'",
+      "correctAnswer": "where is the restaurant? it's on oak street, next to the bank"
     },
     {
       "id": 12,
       "type": "translate",
-      "question": "Translate to English: 'Eu tiro meus sapatos em casa.'",
-      "correctAnswer": "i take off my shoes at home"
+      "question": "Translate to English: 'Há uma farmácia e um hospital perto daqui.'",
+      "correctAnswer": "there is a pharmacy and a hospital near here|there are a pharmacy and a hospital near here"
     },
     {
       "id": 13,
       "type": "translate",
-      "question": "Translate to English: 'Ela coloca o chapéu vermelho.'",
-      "correctAnswer": "she puts on the red hat|she puts on a red hat"
+      "question": "Translate to English: 'O parque fica na Rua Green, perto da escola.'",
+      "correctAnswer": "the park is on green street, near the school"
     },
     {
       "id": 14,
       "type": "translate",
-      "question": "Translate to English: 'Ele está usando uma jaqueta velha.'",
-      "correctAnswer": "he is wearing an old jacket|he's wearing an old jacket"
+      "question": "Translate to English: 'Não há banco nesta rua, mas há um supermercado.'",
+      "correctAnswer": "there isn't a bank on this street, but there is a supermarket"
     },
     {
       "id": 15,
       "type": "translate",
-      "question": "Translate to English: 'Nós estamos usando sapatos novos.'",
-      "correctAnswer": "we are wearing new shoes|we're wearing new shoes"
+      "question": "Translate to English: 'Com licença, onde fica a farmácia mais próxima?'",
+      "correctAnswer": "excuse me, where is the nearest pharmacy?"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Which question asks about clothes correctly?",
-      "options": ["What are you wearing?", "What do you wearing?", "What you are wearing?", "What wearing you?"],
-      "correctAnswer": "What are you wearing?"
+      "type": "complete",
+      "question": "Put the words in the correct order: 'the / hospital / where / nearest / is'",
+      "correctAnswer": "where is the nearest hospital"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "What is the best answer to 'What are you wearing?'",
-      "options": ["I am wearing a green dress.", "I wearing green dress.", "I wear a green dress now.", "I am wear green dress."],
-      "correctAnswer": "I am wearing a green dress."
+      "type": "complete",
+      "question": "Put the words in the correct order: 'there / a / is / park / street / on / this'",
+      "correctAnswer": "there is a park on this street"
     },
     {
       "id": 18,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["She is wearing a blue shirt and black shoes.", "She is wearing blue shirt and black shoes.", "She wearing a blue shirt and black shoes.", "She is wear a blue shirt and black shoes."],
-      "correctAnswer": "She is wearing a blue shirt and black shoes."
+      "question": "Which dialogue is correct?",
+      "options": ["A: Where is the supermarket? B: It's on Main Street, next to the bank.", "A: Where is the supermarket? B: Yes, there is.", "A: Where is the supermarket? B: Is near the park.", "A: Where is the supermarket? B: There is a supermarket."],
+      "correctAnswer": "A: Where is the supermarket? B: It's on Main Street, next to the bank."
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete: 'My hat is old, but my jacket is _____.'",
-      "correctAnswer": "new"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly describes a map?",
+      "options": ["There is a school on Park Street, and the bank is next to it.", "There is a school in Park Street, and the bank is next it.", "There are a school on Park Street, and the bank is next to it.", "There is a school on Park Street, and the bank is near it's."],
+      "correctAnswer": "There is a school on Park Street, and the bank is next to it."
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Put the words in the correct order: 'wearing / are / they / clean / shoes'",
-      "correctAnswer": "they are wearing clean shoes"
+      "type": "multiple-choice",
+      "question": "Which sentence uses the most vocabulary from this lesson correctly?",
+      "options": ["There is a pharmacy next to the hospital on Oak Street.", "There is a pharmacy next the hospital on Oak Street.", "There are a pharmacy next to the hospital on Oak Street.", "There is pharmacy next to the hospital on Oak Street."],
+      "correctAnswer": "There is a pharmacy next to the hospital on Oak Street."
     }
   ]
 }

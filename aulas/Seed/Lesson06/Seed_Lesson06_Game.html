@@ -355,77 +355,447 @@
     }
 
     .mannequin {
-      background: rgba(255,255,255,.04);
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,.12), transparent 42%),
+        linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 20px;
       padding: 18px;
       text-align: center;
+      overflow: hidden;
+    }
+
+    .model-stage {
+      position: relative;
+      margin: 0 auto 16px;
+      width: min(100%, 240px);
+      height: 430px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(255,255,255,.18), transparent 22%),
+        linear-gradient(180deg, rgba(8,7,18,.1), rgba(8,7,18,.28));
+      border: 1px solid rgba(255,255,255,.07);
+    }
+
+    .spotlight {
+      position: absolute;
+      inset: 18px;
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(255,255,255,.22), transparent 26%),
+        radial-gradient(circle at 50% 75%, rgba(255,255,255,.08), transparent 32%);
+      pointer-events: none;
     }
 
     .model {
+      --skin: #f4c5a8;
+      --skin-shadow: #d9a88e;
+      --hair: #2b1a1d;
+      --top-color: #7b68ee;
+      --bottom-color: #5bb3ff;
+      --footwear-color: #f5f5f5;
+      --accessory-color: rgba(255,255,255,.14);
       position: relative;
-      width: 160px;
-      height: 340px;
-      margin: 0 auto 16px;
+      width: 220px;
+      height: 390px;
+      margin: 12px auto 0;
     }
 
-    .head, .torso, .bottom, .feet, .hat, .label-pill {
+    .hat,
+    .hair,
+    .head,
+    .neck,
+    .arm,
+    .hand,
+    .top-piece,
+    .waist,
+    .bottom,
+    .leg,
+    .sock,
+    .footwear,
+    .shadow,
+    .label-pill {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 2px solid rgba(255,255,255,.24);
     }
+
+    .hair {
+      top: 20px;
+      left: 50%;
+      width: 96px;
+      height: 88px;
+      transform: translateX(-50%);
+      border-radius: 44px 44px 34px 34px;
+      background: linear-gradient(180deg, #4a3136, var(--hair));
+      box-shadow: inset 0 -14px 0 rgba(0,0,0,.12);
+    }
+
+    .hair::before,
+    .hair::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      width: 22px;
+      height: 68px;
+      background: linear-gradient(180deg, #4a3136, var(--hair));
+      border-radius: 18px;
+    }
+
+    .hair::before { left: 2px; transform: rotate(8deg); }
+    .hair::after { right: 2px; transform: rotate(-8deg); }
 
     .head {
-      top: 0;
-      width: 72px;
-      height: 72px;
+      top: 32px;
+      left: 50%;
+      width: 76px;
+      height: 94px;
+      transform: translateX(-50%);
+      border-radius: 38px 38px 34px 34px;
+      background: linear-gradient(180deg, #ffd7be, var(--skin));
+      box-shadow: inset 0 -10px 0 rgba(217,168,142,.22);
+      z-index: 2;
+    }
+
+    .head::before,
+    .head::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background: #ffd3b5;
+      background: rgba(58,33,30,.85);
+    }
+
+    .head::before { left: 20px; }
+    .head::after { right: 20px; }
+
+    .head span {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      width: 20px;
+      height: 10px;
+      transform: translateX(-50%);
+      border-bottom: 3px solid rgba(179,91,108,.85);
+      border-radius: 0 0 20px 20px;
+    }
+
+    .neck {
+      top: 114px;
+      left: 50%;
+      width: 22px;
+      height: 20px;
+      transform: translateX(-50%);
+      border-radius: 0 0 12px 12px;
+      background: linear-gradient(180deg, var(--skin), var(--skin-shadow));
+      z-index: 1;
     }
 
     .hat {
-      top: -12px;
-      width: 98px;
-      height: 28px;
-      border-radius: 50px 50px 16px 16px;
-      background: rgba(255,255,255,.14);
+      top: 8px;
+      left: 50%;
+      width: 112px;
+      height: 42px;
+      transform: translateX(-50%);
+      background: var(--accessory-color);
       opacity: 0;
+      transition: opacity .2s ease, transform .2s ease;
+      z-index: 4;
     }
 
-    .torso {
-      top: 86px;
-      width: 110px;
-      height: 108px;
-      border-radius: 24px 24px 18px 18px;
-      background: #7b68ee;
+    .hat::before,
+    .hat::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: inherit;
+    }
+
+    .hat::before {
+      top: 0;
+      width: 64px;
+      height: 26px;
+      border-radius: 36px 36px 16px 16px;
+    }
+
+    .hat::after {
+      bottom: 2px;
+      width: 112px;
+      height: 12px;
+      border-radius: 999px;
+      filter: brightness(.95);
+    }
+
+    .arm {
+      top: 142px;
+      width: 22px;
+      height: 116px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #ffd8bf, var(--skin-shadow));
+      z-index: 1;
+    }
+
+    .arm.left { left: 46px; transform: rotate(10deg); }
+    .arm.right { right: 46px; transform: rotate(-10deg); }
+
+    .hand {
+      top: 245px;
+      width: 20px;
+      height: 24px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #ffd8bf, var(--skin-shadow));
+      z-index: 1;
+    }
+
+    .hand.left { left: 52px; }
+    .hand.right { right: 52px; }
+
+    .top-piece {
+      top: 132px;
+      left: 50%;
+      width: 108px;
+      height: 118px;
+      transform: translateX(-50%);
+      border-radius: 28px 28px 24px 24px;
+      background: var(--top-color);
+      box-shadow: inset 0 -14px 0 rgba(0,0,0,.08);
+      z-index: 3;
+    }
+
+    .top-piece::before,
+    .top-piece::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 28px;
+      height: 78px;
+      border-radius: 18px;
+      background: var(--top-color);
+    }
+
+    .top-piece::before { left: -18px; transform: rotate(10deg); }
+    .top-piece::after { right: -18px; transform: rotate(-10deg); }
+
+    .waist {
+      top: 232px;
+      left: 50%;
+      width: 78px;
+      height: 18px;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      background: rgba(255,255,255,.18);
+      z-index: 4;
+      mix-blend-mode: soft-light;
     }
 
     .bottom {
-      top: 190px;
+      top: 238px;
+      left: 50%;
       width: 104px;
-      height: 86px;
-      border-radius: 16px;
-      background: #5bb3ff;
+      height: 92px;
+      transform: translateX(-50%);
+      border-radius: 18px 18px 24px 24px;
+      background: var(--bottom-color);
+      box-shadow: inset 0 -12px 0 rgba(0,0,0,.08);
+      z-index: 2;
     }
 
-    .feet {
-      top: 284px;
-      width: 118px;
+    .leg {
+      top: 306px;
+      width: 32px;
+      height: 82px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #ffd8bf, var(--skin-shadow));
+      z-index: 1;
+    }
+
+    .leg.left { left: 78px; }
+    .leg.right { right: 78px; }
+
+    .sock {
+      top: 352px;
+      width: 28px;
       height: 28px;
-      border-radius: 14px;
-      background: #f9f9f9;
+      border-radius: 12px;
+      background: var(--accessory-color);
+      opacity: .08;
+      z-index: 2;
+    }
+
+    .sock.left { left: 80px; }
+    .sock.right { right: 80px; }
+
+    .footwear {
+      top: 368px;
+      left: 50%;
+      width: 122px;
+      height: 22px;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+
+    .footwear::before,
+    .footwear::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 20px;
+      border-radius: 14px 14px 10px 10px;
+      background: var(--footwear-color);
+      box-shadow: inset 0 -5px 0 rgba(0,0,0,.15);
+    }
+
+    .footwear::before { left: 6px; }
+    .footwear::after { right: 6px; }
+
+    .shadow {
+      left: 50%;
+      bottom: 6px;
+      width: 128px;
+      height: 20px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,0,0,.26), transparent 70%);
     }
 
     .label-pill {
-      top: 320px;
-      width: 150px;
-      min-height: 34px;
-      padding: 7px 10px;
+      left: 50%;
+      bottom: -8px;
+      width: 172px;
+      min-height: 36px;
+      padding: 8px 12px;
+      transform: translateX(-50%);
       border-radius: 999px;
       background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
       font-size: .8rem;
-      border-color: rgba(255,255,255,.12);
+      line-height: 1.2;
+      backdrop-filter: blur(6px);
+      z-index: 5;
+    }
+
+    .model.look-top-t-shirt .top-piece {
+      top: 138px;
+      height: 104px;
+      border-radius: 20px 20px 24px 24px;
+    }
+
+    .model.look-top-shirt .top-piece {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.16), transparent 20%),
+        var(--top-color);
+    }
+
+    .model.look-top-jacket .top-piece,
+    .model.look-top-coat .top-piece {
+      width: 116px;
+      border-radius: 30px 30px 22px 22px;
+    }
+
+    .model.look-top-jacket .top-piece::before,
+    .model.look-top-jacket .top-piece::after,
+    .model.look-top-coat .top-piece::before,
+    .model.look-top-coat .top-piece::after {
+      top: 2px;
+      height: 92px;
+      width: 30px;
+    }
+
+    .model.look-top-coat .top-piece {
+      height: 142px;
+    }
+
+    .model.look-top-sweater .top-piece {
+      border-radius: 26px 26px 28px 28px;
+      box-shadow: inset 0 6px 0 rgba(255,255,255,.12), inset 0 -14px 0 rgba(0,0,0,.08);
+    }
+
+    .model.look-top-dress .top-piece {
+      width: 118px;
+      height: 152px;
+      border-radius: 28px 28px 16px 16px;
+      clip-path: polygon(14% 0, 86% 0, 100% 78%, 88% 100%, 12% 100%, 0 78%);
+    }
+
+    .model.look-top-dress .bottom {
+      top: 266px;
+      width: 126px;
+      height: 74px;
+      border-radius: 0 0 26px 26px;
+      clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%);
+      background: linear-gradient(180deg, #ffffff40, var(--bottom-color));
+    }
+
+    .model.look-bottom-skirt .bottom {
+      width: 126px;
+      height: 82px;
+      border-radius: 10px 10px 26px 26px;
+      clip-path: polygon(16% 0, 84% 0, 100% 100%, 0 100%);
+    }
+
+    .model.look-bottom-shorts .bottom {
+      width: 96px;
+      height: 56px;
+      border-radius: 14px;
+    }
+
+    .model.look-bottom-pants .bottom,
+    .model.look-bottom-jeans .bottom {
+      height: 118px;
+      clip-path: polygon(10% 0, 90% 0, 88% 100%, 58% 100%, 52% 42%, 48% 42%, 42% 100%, 12% 100%);
+    }
+
+    .model.look-bottom-pants .leg,
+    .model.look-bottom-jeans .leg {
+      background: var(--bottom-color);
+      box-shadow: inset 0 -10px 0 rgba(0,0,0,.08);
+    }
+
+    .model.look-footwear-sneakers .footwear::before,
+    .model.look-footwear-sneakers .footwear::after {
+      height: 18px;
+      border-radius: 12px 12px 8px 8px;
+      box-shadow: inset 0 -4px 0 rgba(255,255,255,.18), inset 0 -6px 0 rgba(0,0,0,.12);
+    }
+
+    .model.look-footwear-boots .footwear::before,
+    .model.look-footwear-boots .footwear::after {
+      height: 32px;
+      border-radius: 10px;
+    }
+
+    .model.look-footwear-boots .leg {
+      height: 72px;
+    }
+
+    .model.look-accessory-hat .hat {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .model.look-accessory-cap .hat {
+      opacity: 1;
+      transform: translateX(-50%) translateY(4px);
+    }
+
+    .model.look-accessory-cap .hat::before {
+      width: 72px;
+      height: 24px;
+      border-radius: 24px 24px 10px 10px;
+    }
+
+    .model.look-accessory-cap .hat::after {
+      width: 80px;
+      height: 10px;
+      left: 68%;
+      border-radius: 0 999px 999px 0;
+      transform: translateX(-50%) rotate(-8deg);
+    }
+
+    .model.look-accessory-socks .sock {
+      opacity: 1;
     }
 
     .preview-lines {
@@ -613,6 +983,8 @@
       .player-grid, .builder-grid { grid-template-columns: 1fr; }
       .topbar { flex-direction: column; align-items: flex-start; }
       .badge-row { justify-content: flex-start; }
+      .model-stage { height: 408px; }
+      .model { transform: scale(.93); transform-origin: top center; }
     }
   </style>
 </head>
@@ -692,13 +1064,28 @@
             <div id="themeCard" class="theme-card"></div>
             <div class="stylist-box">
               <div class="mannequin">
-                <div class="model">
-                  <div class="hat" id="previewHat"></div>
-                  <div class="head"></div>
-                  <div class="torso" id="previewTop"></div>
-                  <div class="bottom" id="previewBottom"></div>
-                  <div class="feet" id="previewFootwear"></div>
-                  <div class="label-pill" id="previewAccessoryLabel">No accessory yet</div>
+                <div class="model-stage">
+                  <div class="spotlight"></div>
+                  <div class="model" id="modelFigure">
+                    <div class="hat" id="previewHat"></div>
+                    <div class="hair"></div>
+                    <div class="head"><span></span></div>
+                    <div class="neck"></div>
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                    <div class="hand left"></div>
+                    <div class="hand right"></div>
+                    <div class="top-piece" id="previewTop"></div>
+                    <div class="waist"></div>
+                    <div class="bottom" id="previewBottom"></div>
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                    <div class="sock left"></div>
+                    <div class="sock right"></div>
+                    <div class="footwear" id="previewFootwear"></div>
+                    <div class="shadow"></div>
+                    <div class="label-pill" id="previewAccessoryLabel">No accessory yet</div>
+                  </div>
                 </div>
                 <div class="preview-lines" id="previewLines"></div>
               </div>
@@ -937,6 +1324,7 @@
     const restartBtn = document.getElementById('restartBtn');
     const saveLookBtn = document.getElementById('saveLookBtn');
     const outfitSummary = document.getElementById('outfitSummary');
+    const modelFigure = document.getElementById('modelFigure');
     const previewTop = document.getElementById('previewTop');
     const previewBottom = document.getElementById('previewBottom');
     const previewFootwear = document.getElementById('previewFootwear');
@@ -1006,16 +1394,41 @@
       return `I'm wearing a ${selections.top.color} ${selections.top.item}, ${selections.bottom.color} ${selections.bottom.item}, ${selections.footwear.color} ${selections.footwear.item}, and a ${selections.accessory.color} ${selections.accessory.item}.`;
     }
 
+    function normalizeLookToken(value) {
+      return value.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+    }
+
+    function applyLookClasses(selections) {
+      [...modelFigure.classList]
+        .filter((className) => className.startsWith('look-'))
+        .forEach((className) => modelFigure.classList.remove(className));
+
+      modelFigure.classList.add(`look-top-${normalizeLookToken(selections.top.item)}`);
+      modelFigure.classList.add(`look-bottom-${normalizeLookToken(selections.bottom.item)}`);
+      modelFigure.classList.add(`look-footwear-${normalizeLookToken(selections.footwear.item)}`);
+      modelFigure.classList.add(`look-accessory-${normalizeLookToken(selections.accessory.item)}`);
+    }
+
     function updatePreview() {
       const selections = readSelections();
       state.currentSelections = selections;
 
-      previewTop.style.background = getColorData(selections.top.color).hex;
-      previewBottom.style.background = getColorData(selections.bottom.color).hex;
-      previewFootwear.style.background = getColorData(selections.footwear.color).hex;
-      previewHat.style.background = getColorData(selections.accessory.color).hex;
-      previewHat.style.opacity = selections.accessory.item === 'hat' || selections.accessory.item === 'cap' ? '1' : '.15';
+      const topColor = getColorData(selections.top.color).hex;
+      const bottomColor = getColorData(selections.bottom.color).hex;
+      const footwearColor = getColorData(selections.footwear.color).hex;
+      const accessoryColor = getColorData(selections.accessory.color).hex;
+
+      modelFigure.style.setProperty('--top-color', topColor);
+      modelFigure.style.setProperty('--bottom-color', bottomColor);
+      modelFigure.style.setProperty('--footwear-color', footwearColor);
+      modelFigure.style.setProperty('--accessory-color', accessoryColor);
+      previewTop.style.background = topColor;
+      previewBottom.style.background = bottomColor;
+      previewFootwear.style.background = footwearColor;
+      previewHat.style.background = accessoryColor;
+      previewHat.style.opacity = selections.accessory.item === 'hat' || selections.accessory.item === 'cap' ? '1' : '0';
       previewAccessoryLabel.textContent = `${selections.accessory.color} ${selections.accessory.item}`;
+      applyLookClasses(selections);
 
       previewLines.innerHTML = `
         <div><span>Top</span>${selections.top.color} ${selections.top.item}</div>

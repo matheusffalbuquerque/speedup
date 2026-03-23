@@ -1,0 +1,882 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does the word 'experience' mean?",
+      "options": [
+        "Something that happens to you in life",
+        "A plan for the future",
+        "A school subject",
+        "A type of food"
+      ],
+      "correctAnswer": "Something that happens to you in life"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct present perfect question.",
+      "options": [
+        "Did you ever be in Salvador?",
+        "Have you ever been to Salvador?",
+        "Have you ever went to Salvador?",
+        "Are you ever been to Salvador?"
+      ],
+      "correctAnswer": "Have you ever been to Salvador?"
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "I have _____ (be) to Recife twice.",
+      "correctAnswer": "been"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'ever' mean in the question 'Have you ever traveled alone?'",
+      "options": [
+        "At any time in your life",
+        "Every day",
+        "Only last week",
+        "In the future"
+      ],
+      "correctAnswer": "At any time in your life"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She has never try sushi.",
+        "She never has tried sushi.",
+        "She has never tried sushi.",
+        "She has never tryed sushi."
+      ],
+      "correctAnswer": "She has never tried sushi."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "They have _____ (finish) the activity.",
+      "correctAnswer": "finished"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "We _____ the museum.",
+      "correctAnswer": "have already visited"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Eu já visitei Brasília duas vezes.'",
+      "correctAnswer": "i have already visited brasília twice|i've already visited brasília twice|i have already visited brasilia twice|i've already visited brasilia twice"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'yet' usually mean in negative sentences and questions?",
+      "options": [
+        "Until now",
+        "Very soon",
+        "Many times",
+        "A long time ago"
+      ],
+      "correctAnswer": "Until now"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Choose the correct answer to the question: \"Have you ever seen snow?\"",
+      "options": [
+        "Yes, I have.",
+        "Yes, I did.",
+        "Yes, I ever.",
+        "Yes, I was."
+      ],
+      "correctAnswer": "Yes, I have."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "_____ you ever _____ (meet) a famous person?",
+      "correctAnswer": "have met"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "My brother _____ abroad.",
+      "correctAnswer": "has never traveled|has never travelled"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "What does 'already' mean?",
+      "options": [
+        "Before now / sooner than expected",
+        "Not until now",
+        "At any time",
+        "A long time ago"
+      ],
+      "correctAnswer": "Before now / sooner than expected"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ela nunca andou de avião.'",
+      "correctAnswer": "she has never traveled by plane|she has never travelled by plane|she has never been on a plane"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence is best for talking about a life experience?",
+      "options": [
+        "I went to Recife in 2018.",
+        "I have been to Recife.",
+        "I have gone to Recife yesterday.",
+        "I did been to Recife."
+      ],
+      "correctAnswer": "I have been to Recife."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "I haven't visited that museum _____.",
+      "correctAnswer": "yet"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Have you ever _____ a marathon?",
+      "correctAnswer": "run"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Nós já experimentamos comida japonesa.'",
+      "correctAnswer": "we have already tried japanese food|we've already tried japanese food"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "Has you ever traveled alone?",
+        "Have you ever traveled alone?",
+        "Did you have ever traveled alone?",
+        "You have ever traveled alone?"
+      ],
+      "correctAnswer": "Have you ever traveled alone?"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "She has never _____ (ride) a horse.",
+      "correctAnswer": "ridden"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'never' mean?",
+      "options": [
+        "Not at any time",
+        "Many times",
+        "Very recently",
+        "Only once"
+      ],
+      "correctAnswer": "Not at any time"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with a specific past time.",
+      "options": [
+        "I have visited Rio in 2021.",
+        "I visited Rio in 2021.",
+        "I have visit Rio in 2021.",
+        "I did visited Rio in 2021."
+      ],
+      "correctAnswer": "I visited Rio in 2021."
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "I have never _____ (see) the Pantanal.",
+      "correctAnswer": "seen"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "Which expression refers to a finished past time?",
+      "options": [
+        "last month",
+        "ever",
+        "already",
+        "yet"
+      ],
+      "correctAnswer": "last month"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Have you ever eat acarajé?",
+        "Did you ever eaten acarajé?",
+        "Have you ever eaten acarajé?",
+        "Have you ate acarajé ever?"
+      ],
+      "correctAnswer": "Have you ever eaten acarajé?"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "We _____ (go) to Curitiba last winter.",
+      "correctAnswer": "went"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "I _____ to that beach when I was a child.",
+      "correctAnswer": "went"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Eu conheci ela em 2020.'",
+      "correctAnswer": "i met her in 2020"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'ever' usually show in a present perfect question?",
+      "options": [
+        "Life experience at any time",
+        "A finished time yesterday",
+        "A future plan",
+        "A daily routine"
+      ],
+      "correctAnswer": "Life experience at any time"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is wrong?",
+      "options": [
+        "She has been to Bahia twice.",
+        "We visited Manaus last year.",
+        "I have seen that movie before.",
+        "I have visited my grandmother yesterday."
+      ],
+      "correctAnswer": "I have visited my grandmother yesterday."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "She has _____ (be) to the USA three times.",
+      "correctAnswer": "been"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "They _____ dinner at 8 p.m. yesterday.",
+      "correctAnswer": "had"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "Which expression usually goes with the present perfect?",
+      "options": [
+        "before",
+        "yesterday",
+        "last night",
+        "in 2019"
+      ],
+      "correctAnswer": "before"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Você já esteve em Minas Gerais?'",
+      "correctAnswer": "have you ever been to minas gerais?|have you been to minas gerais?"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Complete the rule: We usually use the simple past with _____.",
+      "options": [
+        "specific finished times",
+        "life experiences in general",
+        "yet and already",
+        "up to now"
+      ],
+      "correctAnswer": "specific finished times"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "I _____ (not / travel) abroad last year.",
+      "correctAnswer": "didn't travel|did not travel"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "We use the present perfect for life experiences when the time is _____.",
+      "correctAnswer": "not specified|unspecified"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Ela nunca visitou o Nordeste.'",
+      "correctAnswer": "she has never visited the northeast"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Choose the correct pair.",
+      "options": [
+        "Did / stay",
+        "Have / stayed",
+        "Has / stay",
+        "Have / stay"
+      ],
+      "correctAnswer": "Have / stayed"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "My parents _____ (move) to São Paulo in 2015.",
+      "correctAnswer": "moved"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'already' mean in 'I have already done my homework'?",
+      "options": [
+        "Before now",
+        "Not until now",
+        "At this exact moment",
+        "Every day"
+      ],
+      "correctAnswer": "Before now"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct placement of the adverb.",
+      "options": [
+        "I already have finished my homework.",
+        "I have finished already my homework.",
+        "I have already finished my homework.",
+        "I have finished my already homework."
+      ],
+      "correctAnswer": "I have already finished my homework."
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "Have you cleaned your room _____?",
+      "correctAnswer": "yet"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'just' mean in the present perfect?",
+      "options": [
+        "A short time ago",
+        "Not now",
+        "Many times",
+        "In the future"
+      ],
+      "correctAnswer": "A short time ago"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Choose the best answer to: \"Has Lucas arrived yet?\"",
+      "options": [
+        "No, he hasn't yet.",
+        "No, he didn't yet.",
+        "No, he not arrived.",
+        "No, he hasn't already."
+      ],
+      "correctAnswer": "No, he hasn't yet."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "We have _____ eaten lunch, so we're not hungry.",
+      "correctAnswer": "already"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "She has _____ the office.",
+      "correctAnswer": "just left"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Eu acabei de falar com a professora.'",
+      "correctAnswer": "i have just spoken to the teacher|i've just spoken to the teacher|i have just talked to the teacher|i've just talked to the teacher"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'yet' often show in a negative sentence?",
+      "options": [
+        "The action has not happened until now",
+        "The action happened a minute ago",
+        "The action happens every day",
+        "The action is impossible"
+      ],
+      "correctAnswer": "The action has not happened until now"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I haven't finished the report yet.",
+        "I haven't yet finished the report not.",
+        "I didn't finish the report yet.",
+        "I not have finished the report yet."
+      ],
+      "correctAnswer": "I haven't finished the report yet."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "They have _____ (buy) the tickets.",
+      "correctAnswer": "already bought"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Have you _____ sent the email?",
+      "correctAnswer": "already"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "Which adverb do we use for a very recent action?",
+      "options": [
+        "just",
+        "yet",
+        "last year",
+        "always"
+      ],
+      "correctAnswer": "just"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ela ainda não chegou.'",
+      "correctAnswer": "she hasn't arrived yet|she has not arrived yet"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Identify the sentence with the correct adverb position.",
+      "options": [
+        "He just has called me.",
+        "He has called just me.",
+        "He has just called me.",
+        "He has called me just."
+      ],
+      "correctAnswer": "He has just called me."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "I haven't watched that movie _____.",
+      "correctAnswer": "yet"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "The baby has _____.",
+      "correctAnswer": "just fallen asleep"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Nós já terminamos o projeto.'",
+      "correctAnswer": "we have already finished the project|we've already finished the project"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Choose the best sentence.",
+      "options": [
+        "Have you eaten lunch yet?",
+        "Did you have eaten lunch yet?",
+        "Have you ate lunch yet?",
+        "You have eaten lunch yet?"
+      ],
+      "correctAnswer": "Have you eaten lunch yet?"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Pedro has _____ visited Ouro Preto, so he knows the city.",
+      "correctAnswer": "already"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'recently' mean?",
+      "options": [
+        "In the last few days or weeks",
+        "A long time ago",
+        "Every year",
+        "Never"
+      ],
+      "correctAnswer": "In the last few days or weeks"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with recently.",
+      "options": [
+        "I have recently started a new course.",
+        "I recently have started a new course yesterday.",
+        "I have start recently a new course.",
+        "I have recently start a new course."
+      ],
+      "correctAnswer": "I have recently started a new course."
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "We have learned a lot _____.",
+      "correctAnswer": "so far"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'so far' mean?",
+      "options": [
+        "Until this moment",
+        "Tomorrow morning",
+        "Many years ago",
+        "At the same time"
+      ],
+      "correctAnswer": "Until this moment"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which question is best for starting a conversation about life experiences?",
+      "options": [
+        "Did you travel alone yesterday?",
+        "Have you ever traveled alone?",
+        "Are you traveling alone?",
+        "Do you ever traveled alone?"
+      ],
+      "correctAnswer": "Have you ever traveled alone?"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "I still haven't _____ (find) my keys.",
+      "correctAnswer": "found"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Up to now, she _____ three English books.",
+      "correctAnswer": "has read"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Até agora, eu não encontrei um bom café aqui.'",
+      "correctAnswer": "up to now, i haven't found a good café here|up to now, i haven't found a good cafe here|so far, i haven't found a good café here|so far, i haven't found a good cafe here"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'still haven't' show?",
+      "options": [
+        "An action was expected, but it is not complete",
+        "An action happened yesterday",
+        "An action will happen tomorrow",
+        "An action happens every day"
+      ],
+      "correctAnswer": "An action was expected, but it is not complete"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which answer fits the question: \"Have you ever tried scuba diving?\"",
+      "options": [
+        "No, I haven't, but I'd like to.",
+        "No, I didn't, but I'd like to.",
+        "No, I never am.",
+        "No, I not tried."
+      ],
+      "correctAnswer": "No, I haven't, but I'd like to."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "He has worked very hard _____.",
+      "correctAnswer": "recently"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "So far, they _____ five countries in South America.",
+      "correctAnswer": "have visited"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "'Up to now' is closest in meaning to...",
+      "options": [
+        "until this moment",
+        "right after lunch",
+        "next month",
+        "for one minute only"
+      ],
+      "correctAnswer": "until this moment"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Você já experimentou comida coreana?'",
+      "correctAnswer": "have you ever tried korean food?|have you ever eaten korean food?"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I still haven't done my homework.",
+        "I still didn't do my homework.",
+        "I haven't still done my homework.",
+        "I still not have done my homework."
+      ],
+      "correctAnswer": "I still haven't done my homework."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "_____ you ever _____ (sleep) in an airport?",
+      "correctAnswer": "have slept"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Recently, my parents _____ interested in podcasts.",
+      "correctAnswer": "have become"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Recentemente, nós temos estudado mais inglês.'",
+      "correctAnswer": "recently, we have studied more english|recently, we've studied more english"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Choose the best continuation: \"Have you ever lost your phone?\"",
+      "options": [
+        "Yes, I have. It happened last year.",
+        "Yes, I lost.",
+        "Yes, I have lost yesterday.",
+        "Yes, I do."
+      ],
+      "correctAnswer": "Yes, I have. It happened last year."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Up to now, I _____ (not / receive) any message from Ana.",
+      "correctAnswer": "haven't received|have not received"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does the phrase 'Have you ever...?' usually ask about?",
+      "options": [
+        "Life experiences until now",
+        "A fixed plan tomorrow",
+        "A habit every day",
+        "A specific time yesterday"
+      ],
+      "correctAnswer": "Life experiences until now"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I have already seen that movie.",
+        "I already have seen that movie yesterday.",
+        "I have saw that movie already.",
+        "I did already see that movie."
+      ],
+      "correctAnswer": "I have already seen that movie."
+    },
+    {
+      "id": 3,
+      "type": "fill-blank",
+      "question": "She _____ (go) to the dentist yesterday.",
+      "correctAnswer": "went"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "Which expression shows that something did not happen until now?",
+      "options": [
+        "yet",
+        "already",
+        "last night",
+        "in 2021"
+      ],
+      "correctAnswer": "yet"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Identify the sentence with an error.",
+      "options": [
+        "Have you ever visited Argentina?",
+        "I have just finished lunch.",
+        "Did you ever visited London?",
+        "She has never ridden a bike."
+      ],
+      "correctAnswer": "Did you ever visited London?"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "They have just _____ (arrive).",
+      "correctAnswer": "arrived"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "I _____ never _____ a snake in real life.",
+      "correctAnswer": "have seen"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Eu ainda não terminei meu exercício.'",
+      "correctAnswer": "i still haven't finished my exercise|i still have not finished my exercise|i haven't finished my exercise yet|i have not finished my exercise yet"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'up to now' mean?",
+      "options": [
+        "Until this moment",
+        "A long time ago",
+        "Every weekend",
+        "At exactly 8 p.m."
+      ],
+      "correctAnswer": "Until this moment"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Choose the best sentence for an unspecified time.",
+      "options": [
+        "I visited Bahia in 2019.",
+        "I have visited Bahia many times.",
+        "I have visited Bahia last year.",
+        "I did visit Bahia many times."
+      ],
+      "correctAnswer": "I have visited Bahia many times."
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Have you _____ (ever / eat) feijoada?",
+      "correctAnswer": "ever eaten"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "My brother _____ to Chile in 2022.",
+      "correctAnswer": "went"
+    },
+    {
+      "id": 13,
+      "type": "vocabulary",
+      "question": "Which adverb is usually placed between have/has and the past participle?",
+      "options": [
+        "already",
+        "yesterday",
+        "last year",
+        "tomorrow"
+      ],
+      "correctAnswer": "already"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Ela acabou de sair de casa.'",
+      "correctAnswer": "she has just left home|she's just left home"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence is the best correction of \"I have seen him yesterday\"?",
+      "options": [
+        "I saw him yesterday.",
+        "I have saw him yesterday.",
+        "I did seen him yesterday.",
+        "I have seen him last night."
+      ],
+      "correctAnswer": "I saw him yesterday."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "So far, we _____ (complete) eight lessons.",
+      "correctAnswer": "have completed"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "They still haven't _____ the answer.",
+      "correctAnswer": "found"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Você já terminou, ou ainda não?'",
+      "correctAnswer": "have you finished yet, or not yet?|have you finished yet or not yet?"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Choose the most natural mini-dialogue.",
+      "options": [
+        "A: Have you ever been to Argentina? B: Yes, I have.",
+        "A: Did you ever been to Argentina? B: Yes, I did have.",
+        "A: Have you ever went to Argentina? B: Yes, I went have.",
+        "A: Were you ever in Argentina? B: Yes, I ever was."
+      ],
+      "correctAnswer": "A: Have you ever been to Argentina? B: Yes, I have."
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Up to now, Mariana _____ (not / call) me.",
+      "correctAnswer": "hasn't called|has not called"
+    }
+  ]
+}

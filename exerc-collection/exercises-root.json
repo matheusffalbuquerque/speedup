@@ -1,0 +1,867 @@
+{
+  "lesson": 6,
+  "level": "root",
+  "topic": "Home & Furniture",
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does 'living room' mean?",
+      "options": [
+        "Quarto",
+        "Sala de estar",
+        "Cozinha",
+        "Banheiro"
+      ],
+      "correctAnswer": "Sala de estar"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does 'bedroom' mean?",
+      "options": [
+        "Quarto",
+        "Garagem",
+        "Varanda",
+        "Sala de jantar"
+      ],
+      "correctAnswer": "Quarto"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does 'kitchen' mean?",
+      "options": [
+        "Escritório",
+        "Lavanderia",
+        "Cozinha",
+        "Corredor"
+      ],
+      "correctAnswer": "Cozinha"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What does 'sofa' mean?",
+      "options": [
+        "Mesa",
+        "Sofá",
+        "Cama",
+        "Tapete"
+      ],
+      "correctAnswer": "Sofá"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does 'table' mean?",
+      "options": [
+        "Cadeira",
+        "Mesa",
+        "Janela",
+        "Porta"
+      ],
+      "correctAnswer": "Mesa"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What does 'bed' mean?",
+      "options": [
+        "Cama",
+        "Armário",
+        "Prateleira",
+        "Fogão"
+      ],
+      "correctAnswer": "Cama"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does 'furniture' mean?",
+      "options": [
+        "Móveis",
+        "Ferramentas",
+        "Roupas",
+        "Paredes"
+      ],
+      "correctAnswer": "Móveis"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "What does 'apartment' mean?",
+      "options": [
+        "Casa",
+        "Apartamento",
+        "Escritório",
+        "Loja"
+      ],
+      "correctAnswer": "Apartamento"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does 'rent' mean in 'I pay rent'?",
+      "options": [
+        "Comprar",
+        "Mudar",
+        "Aluguel",
+        "Construir"
+      ],
+      "correctAnswer": "Aluguel"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which room usually has a bed?",
+      "options": [
+        "Kitchen",
+        "Bedroom",
+        "Living room",
+        "Garage"
+      ],
+      "correctAnswer": "Bedroom"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which room usually has a sofa?",
+      "options": [
+        "Bathroom",
+        "Bedroom",
+        "Living room",
+        "Kitchen"
+      ],
+      "correctAnswer": "Living room"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which room usually has a table for meals?",
+      "options": [
+        "Kitchen",
+        "Balcony",
+        "Bathroom",
+        "Hallway"
+      ],
+      "correctAnswer": "Kitchen"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'I sleep in the _____.",
+      "correctAnswer": "bedroom"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'We watch TV in the _____.",
+      "correctAnswer": "living room"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'We cook in the _____.",
+      "correctAnswer": "kitchen"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'A sofa is a piece of _____.",
+      "correctAnswer": "furniture"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "Complete the sentence: 'My apartment has one bedroom and one _____.",
+      "correctAnswer": "living room"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'Eu moro em um apartamento pequeno.'",
+      "correctAnswer": "i live in a small apartment"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'O sofá está na sala de estar.'",
+      "correctAnswer": "the sofa is in the living room"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'A cama está no quarto.'",
+      "correctAnswer": "the bed is in the bedroom"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "There is a sofa in the living room.",
+        "There are a sofa in the living room.",
+        "There is two sofas in the living room.",
+        "There are one sofa in the living room."
+      ],
+      "correctAnswer": "There is a sofa in the living room."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "There are two chairs in the kitchen.",
+        "There is two chairs in the kitchen.",
+        "There are a chair in the kitchen.",
+        "There is two chair in the kitchen."
+      ],
+      "correctAnswer": "There are two chairs in the kitchen."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence describes a room correctly?",
+      "options": [
+        "There is a bed in the bedroom.",
+        "There are a bed in the bedroom.",
+        "There is two beds in the bedroom.",
+        "There are one bed in the bedroom."
+      ],
+      "correctAnswer": "There is a bed in the bedroom."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "There are three windows in the apartment.",
+        "There is three windows in the apartment.",
+        "There are three window in the apartment.",
+        "There is three window in the apartment."
+      ],
+      "correctAnswer": "There are three windows in the apartment."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Choose the best description.",
+      "options": [
+        "There is a table and four chairs in the kitchen.",
+        "There are a table and four chairs in the kitchen.",
+        "There is four chairs in the kitchen.",
+        "There are a table in the kitchen."
+      ],
+      "correctAnswer": "There is a table and four chairs in the kitchen."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: '_____ is a TV in the living room.'",
+      "correctAnswer": "there"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ two bedrooms in the apartment.'",
+      "correctAnswer": "are"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ a bed and a desk in my room.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ four chairs next to the table.'",
+      "correctAnswer": "are"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ a sofa in front of the TV.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 11,
+      "type": "complete",
+      "question": "Complete the sentence: 'In my kitchen, there are two chairs and one _____.",
+      "correctAnswer": "table"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete the sentence: 'In the bedroom, there is a bed and a _____.",
+      "correctAnswer": "table|desk"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete the sentence: 'The living room is small, but there is a comfortable _____.",
+      "correctAnswer": "sofa"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Há uma mesa na cozinha.'",
+      "correctAnswer": "there is a table in the kitchen"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Há duas camas no quarto.'",
+      "correctAnswer": "there are two beds in the bedroom"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Há um sofá e duas cadeiras na sala de estar.'",
+      "correctAnswer": "there is a sofa and two chairs in the living room"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Meu apartamento tem uma cozinha pequena.'",
+      "correctAnswer": "my apartment has a small kitchen"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which sentence sounds natural?",
+      "options": [
+        "There is a nice bedroom in the apartment.",
+        "There are a nice bedroom in the apartment.",
+        "There is nice bedroom in apartment.",
+        "There are nice bedroom in the apartment."
+      ],
+      "correctAnswer": "There is a nice bedroom in the apartment."
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "Complete the sentence: 'There are three rooms in my apartment: a bedroom, a kitchen, and a _____.",
+      "correctAnswer": "living room"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Na minha sala, há uma mesa pequena.'",
+      "correctAnswer": "in my living room, there is a small table"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Choose the correct preposition: 'The lamp is _____ the sofa.'",
+      "options": [
+        "between",
+        "behind",
+        "above",
+        "under"
+      ],
+      "correctAnswer": "above"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct preposition: 'The sofa is _____ the table and the window.'",
+      "options": [
+        "between",
+        "behind",
+        "above",
+        "in front of"
+      ],
+      "correctAnswer": "between"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the correct preposition: 'The bed is _____ the door.'",
+      "options": [
+        "behind",
+        "in front of",
+        "between",
+        "above"
+      ],
+      "correctAnswer": "behind"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct preposition: 'The chair is _____ the desk.'",
+      "options": [
+        "in front of",
+        "above",
+        "between",
+        "behind"
+      ],
+      "correctAnswer": "in front of"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does 'behind' mean?",
+      "options": [
+        "Entre",
+        "Em frente de",
+        "Atrás de",
+        "Acima de"
+      ],
+      "correctAnswer": "Atrás de"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What does 'in front of' mean?",
+      "options": [
+        "Ao lado de",
+        "Em frente de",
+        "Debaixo de",
+        "Entre"
+      ],
+      "correctAnswer": "Em frente de"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does 'between' mean?",
+      "options": [
+        "Entre",
+        "Atrás de",
+        "Perto de",
+        "Acima de"
+      ],
+      "correctAnswer": "Entre"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "What does 'above' mean?",
+      "options": [
+        "Debaixo de",
+        "Na frente de",
+        "Acima de",
+        "Dentro de"
+      ],
+      "correctAnswer": "Acima de"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'The TV is _____ the sofa.'",
+      "correctAnswer": "above"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'The coffee table is _____ the sofa.'",
+      "correctAnswer": "in front of"
+    },
+    {
+      "id": 11,
+      "type": "fill-blank",
+      "question": "Complete: 'The plant is _____ the sofa and the window.'",
+      "correctAnswer": "between"
+    },
+    {
+      "id": 12,
+      "type": "fill-blank",
+      "question": "Complete: 'The box is _____ the bed.'",
+      "correctAnswer": "behind"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete the sentence: 'The mirror is above the _____.",
+      "correctAnswer": "table|sofa|bed"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete the sentence: 'The chair is in front of the _____.",
+      "correctAnswer": "table|desk"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'A cadeira está em frente da mesa.'",
+      "correctAnswer": "the chair is in front of the table"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'A cama está atrás da porta.'",
+      "correctAnswer": "the bed is behind the door"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'A planta está entre o sofá e a janela.'",
+      "correctAnswer": "the plant is between the sofa and the window"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'A lâmpada está acima da mesa.'",
+      "correctAnswer": "the lamp is above the table"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "The sofa is between the table and the chair.",
+        "The sofa is behind the table and the chair.",
+        "The sofa is above the table and the chair.",
+        "The sofa is in front the table and the chair."
+      ],
+      "correctAnswer": "The sofa is between the table and the chair."
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete the sentence: 'In the living room, the sofa is in front of the TV and the clock is _____ the TV.'",
+      "correctAnswer": "above"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Choose the correct negative sentence.",
+      "options": [
+        "There isn't a sofa in the kitchen.",
+        "There aren't a sofa in the kitchen.",
+        "There isn't any chairs in the kitchen.",
+        "There aren't a bed in the kitchen."
+      ],
+      "correctAnswer": "There isn't a sofa in the kitchen."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct negative sentence.",
+      "options": [
+        "There aren't any chairs in the bedroom.",
+        "There isn't any chairs in the bedroom.",
+        "There aren't some chairs in the bedroom.",
+        "There isn't chairs in the bedroom."
+      ],
+      "correctAnswer": "There aren't any chairs in the bedroom."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the correct question.",
+      "options": [
+        "Is there a table in the kitchen?",
+        "Are there a table in the kitchen?",
+        "There is a table in the kitchen?",
+        "Is there table in the kitchen?"
+      ],
+      "correctAnswer": "Is there a table in the kitchen?"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct question.",
+      "options": [
+        "Are there any windows in the bedroom?",
+        "Is there any windows in the bedroom?",
+        "Are there some windows in the bedroom?",
+        "There are any windows in the bedroom?"
+      ],
+      "correctAnswer": "Are there any windows in the bedroom?"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "There is some furniture in the apartment.",
+        "There are some furnitures in the apartment.",
+        "There is many furniture in the apartment.",
+        "There are a furniture in the apartment."
+      ],
+      "correctAnswer": "There is some furniture in the apartment."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "There aren't any beds in the room.",
+        "There isn't any beds in the room.",
+        "There aren't some beds in the room.",
+        "There isn't no beds in the room."
+      ],
+      "correctAnswer": "There aren't any beds in the room."
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ any chairs in the kitchen.'",
+      "correctAnswer": "aren't"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: '_____ there a sofa in the living room?'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'Are there _____ windows in your bedroom?'",
+      "correctAnswer": "any"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ some furniture in the apartment.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 11,
+      "type": "complete",
+      "question": "Complete the sentence: 'There isn't a bed in the living room, but there is a _____.",
+      "correctAnswer": "sofa"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete the sentence: 'Are there any chairs in the kitchen? Yes, there _____.",
+      "correctAnswer": "are"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete the sentence: 'Is there a table in the bedroom? No, there _____.",
+      "correctAnswer": "isn't"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Não há sofá na cozinha.'",
+      "correctAnswer": "there isn't a sofa in the kitchen"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Há alguma cadeira no quarto?'",
+      "correctAnswer": "are there any chairs in the bedroom|is there any chair in the bedroom"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'Não há janelas na sala.'",
+      "correctAnswer": "there aren't any windows in the living room|there are no windows in the living room"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Há alguns móveis no apartamento.'",
+      "correctAnswer": "there is some furniture in the apartment"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which answer is correct for 'Is there a bed in the room?'",
+      "options": [
+        "Yes, there is.",
+        "Yes, there are.",
+        "Yes, it is.",
+        "Yes, has."
+      ],
+      "correctAnswer": "Yes, there is."
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which answer is correct for 'Are there any tables in the apartment?'",
+      "options": [
+        "No, there isn't.",
+        "No, there aren't.",
+        "No, it isn't.",
+        "No, there is."
+      ],
+      "correctAnswer": "No, there aren't."
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete the sentence: 'There are two chairs, but there isn't a _____.",
+      "correctAnswer": "table"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Choose the best sentence for an apartment ad.",
+      "options": [
+        "There are one bedroom and a small kitchen.",
+        "There is one bedroom and a small kitchen.",
+        "There is one bedroom and small kitchen are nice.",
+        "There are one bedroom and small kitchen."
+      ],
+      "correctAnswer": "There is one bedroom and a small kitchen."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "The apartment is behind the supermarket.",
+        "The apartment is above the supermarket and the bank.",
+        "The apartment is between a sofa and a bed.",
+        "The apartment is in front the supermarket."
+      ],
+      "correctAnswer": "The apartment is behind the supermarket."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does 'for rent' mean?",
+      "options": [
+        "Para vender",
+        "Para alugar",
+        "Mobilado",
+        "Pequeno"
+      ],
+      "correctAnswer": "Para alugar"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct question for a rental conversation.",
+      "options": [
+        "Is there a washing machine in the apartment?",
+        "There is a washing machine in the apartment?",
+        "Are there a washing machine in the apartment?",
+        "Is there washing machine in apartment?"
+      ],
+      "correctAnswer": "Is there a washing machine in the apartment?"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence sounds natural?",
+      "options": [
+        "There are two bedrooms and some furniture.",
+        "There is two bedrooms and some furniture.",
+        "There are two bedrooms and many furnitures.",
+        "There is two bedroom and some furniture."
+      ],
+      "correctAnswer": "There are two bedrooms and some furniture."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'This apartment is _____ rent.'",
+      "correctAnswer": "for"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'There are two bedrooms _____ one bathroom.'",
+      "correctAnswer": "and"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Complete: 'The sofa is in the living room, _____ front of the TV.'",
+      "correctAnswer": "in"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Complete: 'Is there any furniture in the apartment? Yes, there _____.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'The lamp is _____ the table.'",
+      "correctAnswer": "above"
+    },
+    {
+      "id": 11,
+      "type": "complete",
+      "question": "Complete the sentence: 'The apartment has a bedroom, a kitchen, and a _____.",
+      "correctAnswer": "living room"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete the sentence: 'In the living room, there is a sofa and a small _____.",
+      "correctAnswer": "table"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete the sentence: 'The bed is in the bedroom, and the table is in front of the _____.",
+      "correctAnswer": "bed"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate to English: 'Este apartamento é para alugar.'",
+      "correctAnswer": "this apartment is for rent"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Há dois quartos e uma sala de estar.'",
+      "correctAnswer": "there are two bedrooms and a living room"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate to English: 'O aluguel é alto, mas o apartamento é bom.'",
+      "correctAnswer": "the rent is high but the apartment is good"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Há móveis no apartamento?'",
+      "correctAnswer": "is there any furniture in the apartment"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'A mesa está entre o sofá e a janela.'",
+      "correctAnswer": "the table is between the sofa and the window"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence is best for describing a room?",
+      "options": [
+        "There is a bed, a lamp, and a table in the bedroom.",
+        "There are a bed, a lamp, and a table in the bedroom.",
+        "There is a bed, a lamp, and table in bedroom.",
+        "There are bed, lamp, and a table in the bedroom."
+      ],
+      "correctAnswer": "There is a bed, a lamp, and a table in the bedroom."
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which question is correct when visiting an apartment?",
+      "options": [
+        "Are there any chairs in the kitchen?",
+        "Is there any chairs in the kitchen?",
+        "There are any chairs in the kitchen?",
+        "Are there some chair in the kitchen?"
+      ],
+      "correctAnswer": "Are there any chairs in the kitchen?"
+    }
+  ]
+}

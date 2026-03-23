@@ -608,6 +608,7 @@ function showVideos() {
             { title: '📚 Seed - Lesson 04', url: 'https://www.youtube.com/embed/_cG368DlSEo?si=3r2HSCXHqVkedjfp' },
             { title: '📚 Seed - Lesson 05', url: 'https://www.youtube.com/embed/ySo1qYziThg?si=6SgSxd4P5w6NRB63' },
             { title: '📚 Seed - Lesson 06', url: 'https://www.youtube.com/embed/HgLvdAD-Uu4?si=q9kCRXbJpJgUfy8l' },
+            { title: '📚 Seed - Lesson 07', url: 'https://www.youtube.com/embed/-ymGgMrYJhA?si=9lK7mwVgXJ_QY0Jz' },
 
         ];
     } else if (currentLevel === 'root') {
@@ -617,11 +618,13 @@ function showVideos() {
             { title: '📚 Root - Lesson 02', url: 'https://www.youtube.com/embed/4zqE4uznWxk?si=8JaDLu53E_ju0aa0' },
             { title: '📚 Root - Lesson 03', url: 'https://www.youtube.com/embed/hf_d0Mk6T_0?si=twOJYtRxyJvu1jMX' },
             { title: '📚 Root - Lesson 05', url: 'https://www.youtube.com/embed/hv-ctQAtXrA?si=dbrLINCpIHg6SHIF' },
+            { title: '📚 Root - Lesson 07', url: 'https://www.youtube.com/embed/KWVWlfrZMsE?si=bGQUTOVuMdoQTxT4' },
         ];
     } else if (currentLevel === 'leaf') {
         // Vídeos do Leaf - adicione os vídeos quando estiverem disponíveis
         videos = [
             { title: '📚 Leaf - Lesson 01', url: 'https://www.youtube.com/embed/4zeyh5wB2ic?si=2JTLi98zbPiU8QW3' },
+            { title: '📚 Leaf - Lesson 04', url: 'https://www.youtube.com/embed/oWVmJkaiorc?si=i3Z3TByA35DjMurG' },
         ];
     }
     
@@ -825,7 +828,18 @@ const slidesList = {
         }
     ],
     fruit: [
-        // Slides do Fruit serão adicionados futuramente
+        {
+            id: 1,
+            title: 'Lesson 01 - Advanced Topics',
+            description: 'Complex grammatical structures and advanced vocabulary',
+            pdfFile: 'aulas/Fruit/slide/Fruit_Lesson01.pdf'
+        },
+        {
+            id: 2,
+            title: 'Lesson 02 - Professional Communication',
+            description: 'Business English and formal communication skills',
+            pdfFile: 'aulas/Fruit/slide/Fruit _Lesson02.pdf'
+        }
     ]
 };
 

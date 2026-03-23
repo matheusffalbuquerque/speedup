@@ -1,924 +1,897 @@
 {
+  "lesson": 3,
+  "level": "leaf",
+  "topic": "Comparing & Contrasting",
   "monday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "What does the idiom \"bite the bullet\" mean?",
+      "type": "vocabulary",
+      "question": "What does 'similar' mean?",
       "options": [
-        "To speak very loudly",
-        "To face a difficult situation with courage",
-        "To avoid a problem completely",
-        "To make a joke at the wrong time"
+        "Completely different",
+        "Almost the same",
+        "Much better",
+        "Very strange"
       ],
-      "correctAnswer": "To face a difficult situation with courage"
+      "correctAnswer": "Almost the same"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "What does \"face the music\" mean?",
+      "type": "vocabulary",
+      "question": "What does 'different' mean?",
       "options": [
-        "To enjoy a concert",
-        "To accept the consequences of your actions",
-        "To change your opinion quickly",
-        "To work in the music industry"
+        "Exactly the same",
+        "Not the same",
+        "Very good",
+        "Very expensive"
       ],
-      "correctAnswer": "To accept the consequences of your actions"
+      "correctAnswer": "Not the same"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "What does \"get the ball rolling\" mean?",
+      "type": "vocabulary",
+      "question": "What does 'contrast' mean in a comparison context?",
       "options": [
-        "To start an activity or process",
-        "To finish a project successfully",
-        "To cancel a meeting",
-        "To play a sport professionally"
+        "To show similarities",
+        "To show differences",
+        "To give examples",
+        "To explain reasons"
       ],
-      "correctAnswer": "To start an activity or process"
+      "correctAnswer": "To show differences"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "If someone is \"under the weather\", they are...",
+      "type": "vocabulary",
+      "question": "What is a 'comparison'?",
       "options": [
-        "traveling abroad",
-        "slightly ill",
-        "extremely busy",
-        "feeling excited"
+        "A type of question",
+        "An action of examining differences or similarities",
+        "A way to give directions",
+        "A kind of story"
       ],
-      "correctAnswer": "slightly ill"
+      "correctAnswer": "An action of examining differences or similarities"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What does \"go the extra mile\" mean?",
+      "question": "Which sentence uses the comparative form correctly?",
       "options": [
-        "To travel one more mile",
-        "To do more than what is expected",
-        "To arrive late on purpose",
-        "To change jobs frequently"
+        "This book is more interesting than that one.",
+        "This book is interestinger than that one.",
+        "This book is most interesting than that one.",
+        "This book is the interesting than that one."
       ],
-      "correctAnswer": "To do more than what is expected"
+      "correctAnswer": "This book is more interesting than that one."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "What does \"break the ice\" mean?",
+      "question": "Choose the correct comparative: 'The red car is _____ than the blue one.'",
       "options": [
-        "To damage something fragile",
-        "To begin a conversation and reduce tension",
-        "To end an argument suddenly",
-        "To ruin a friendly meeting"
+        "fast",
+        "more fast",
+        "faster",
+        "the fastest"
       ],
-      "correctAnswer": "To begin a conversation and reduce tension"
+      "correctAnswer": "faster"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "What does \"cut corners\" mean?",
+      "question": "Which word completes the sentence? 'This restaurant is _____ expensive than the other one.'",
       "options": [
-        "To save time or money by doing something badly",
-        "To design a building",
-        "To choose a shorter route",
-        "To solve a problem creatively"
+        "more",
+        "most",
+        "very",
+        "much"
       ],
-      "correctAnswer": "To save time or money by doing something badly"
+      "correctAnswer": "more"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "We need to ______ the ball rolling before the client loses interest.",
-      "correctAnswer": "get"
+      "type": "multiple-choice",
+      "question": "Which sentence is INCORRECT?",
+      "options": [
+        "She is taller than her brother.",
+        "This movie is more boring than the last one.",
+        "He is more smarter than his classmates.",
+        "The weather is colder today than yesterday."
+      ],
+      "correctAnswer": "He is more smarter than his classmates."
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "I wasn't feeling great yesterday. I was a bit under the ______.",
-      "correctAnswer": "weather"
+      "type": "multiple-choice",
+      "question": "What does 'unlike' signal in a sentence?",
+      "options": [
+        "Similarity between two things",
+        "A contrast or difference",
+        "A reason or cause",
+        "A time sequence"
+      ],
+      "correctAnswer": "A contrast or difference"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete the idiom: \"go the extra ______\".",
-      "correctAnswer": "mile"
+      "type": "multiple-choice",
+      "question": "Choose the correct option: 'Tom loves cold weather, _____ his sister prefers summer.'",
+      "options": [
+        "because",
+        "whereas",
+        "so",
+        "although"
+      ],
+      "correctAnswer": "whereas"
     },
     {
       "id": 11,
-      "type": "complete",
-      "question": "Complete the idiom: \"break the ______\".",
-      "correctAnswer": "ice"
+      "type": "fill-blank",
+      "question": "My city is _____ than yours — it has more buildings and more people.",
+      "correctAnswer": "bigger"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete the idiom: \"face the ______\".",
-      "correctAnswer": "music"
+      "type": "fill-blank",
+      "question": "_____ my brother, I don't enjoy playing video games.",
+      "correctAnswer": "Unlike"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate into English: \"Ela decidiu enfrentar a situação com coragem.\"",
-      "correctAnswer": "She decided to bite the bullet"
+      "type": "fill-blank",
+      "question": "Soccer is _____ popular than cricket in Brazil.",
+      "correctAnswer": "more"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate into English: \"Depois do erro, ele teve que arcar com as consequências.\"",
-      "correctAnswer": "After the mistake, he had to face the music"
+      "type": "fill-blank",
+      "question": "Winter in Canada is much _____ than winter in Brazil.",
+      "correctAnswer": "colder"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate into English: \"Vamos iniciar a reunião.\"",
-      "correctAnswer": "Let's get the ball rolling|Let us get the ball rolling"
+      "type": "complete",
+      "question": "I enjoy reading books, _____ my friend prefers watching movies.",
+      "correctAnswer": "whereas|while"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Which idiom best fits this meaning: \"to make people feel more comfortable in a social situation\"?",
-      "options": [
-        "cut corners",
-        "break the ice",
-        "face the music",
-        "under the weather"
-      ],
-      "correctAnswer": "break the ice"
+      "type": "complete",
+      "question": "This laptop costs _____ the old model — it is much pricier.",
+      "correctAnswer": "more than"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which idiom has a negative meaning related to quality or effort?",
-      "options": [
-        "go the extra mile",
-        "bite the bullet",
-        "cut corners",
-        "get the ball rolling"
-      ],
-      "correctAnswer": "cut corners"
+      "type": "complete",
+      "question": "_____ my parents, I love spicy food.",
+      "correctAnswer": "Unlike"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "The team really went the extra ______ to deliver the project early.",
-      "correctAnswer": "mile"
+      "type": "translate",
+      "question": "Translate to English: 'Este carro é mais rápido do que aquele.'",
+      "correctAnswer": "this car is faster than that one"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "When the manager arrived, someone had to break the ______ and speak first.",
-      "correctAnswer": "ice"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é mais alta do que o irmão dela.'",
+      "correctAnswer": "she is taller than her brother"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence uses the idiom correctly?",
-      "options": [
-        "I was under the weather, so I ran five kilometers.",
-        "We need to get the ball rolling if we want to finish on time.",
-        "She cut corners by carefully checking every detail.",
-        "He faced the music by turning on the radio."
-      ],
-      "correctAnswer": "We need to get the ball rolling if we want to finish on time."
+      "type": "translate",
+      "question": "Translate to English: 'Ao contrário do meu amigo, eu prefiro comida simples.'",
+      "correctAnswer": "unlike my friend, i prefer simple food"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which idiom best completes the sentence? \"The presentation was awkward at first, so Maya told a joke to ______.\"",
+      "type": "vocabulary",
+      "question": "What does 'both' mean when comparing two things?",
       "options": [
-        "cut corners",
-        "break the ice",
-        "face the music",
-        "go the extra mile"
+        "Neither one nor the other",
+        "One of the two",
+        "The two together",
+        "More than two"
       ],
-      "correctAnswer": "break the ice"
+      "correctAnswer": "The two together"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which idiom best completes the sentence? \"The company tried to ______ on safety checks, and that caused serious problems.\"",
+      "type": "vocabulary",
+      "question": "In a comparison, 'either' means:",
       "options": [
-        "cut corners",
-        "get the ball rolling",
-        "bite the bullet",
-        "break the ice"
+        "None of the options",
+        "One or the other (of two)",
+        "Both at the same time",
+        "More than two things"
       ],
-      "correctAnswer": "cut corners"
+      "correctAnswer": "One or the other (of two)"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Choose the best register label for the idiom \"under the weather\".",
+      "type": "vocabulary",
+      "question": "What does 'neither' express?",
       "options": [
-        "very formal",
-        "neutral academic",
-        "informal everyday English",
-        "technical jargon"
+        "Both options are true",
+        "None of the two options",
+        "One option is better",
+        "The first option only"
       ],
-      "correctAnswer": "informal everyday English"
+      "correctAnswer": "None of the two options"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "Choose the best register label for the idiom \"cut corners\".",
+      "type": "vocabulary",
+      "question": "What does 'just as' indicate in a comparison?",
       "options": [
-        "formal legal language only",
-        "informal to neutral everyday English",
-        "poetic only",
-        "old-fashioned literary English"
+        "A big difference",
+        "An exact or close similarity",
+        "A contrast",
+        "An exception"
       ],
-      "correctAnswer": "informal to neutral everyday English"
+      "correctAnswer": "An exact or close similarity"
     },
     {
       "id": 5,
-      "type": "fill-blank",
-      "question": "After months of delay, someone finally got the ball ______.",
-      "correctAnswer": "rolling"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'as...as' correctly?",
+      "options": [
+        "She is as tall as her mother.",
+        "She is as taller as her mother.",
+        "She is as tall than her mother.",
+        "She is as the tallest as her mother."
+      ],
+      "correctAnswer": "She is as tall as her mother."
     },
     {
       "id": 6,
-      "type": "complete",
-      "question": "Complete the sentence with an idiom: \"He knew the conversation would be difficult, but he decided to ______ ______ ______.\"",
-      "correctAnswer": "bite the bullet"
+      "type": "multiple-choice",
+      "question": "Which is the correct superlative form of 'good'?",
+      "options": [
+        "Gooder",
+        "More good",
+        "The best",
+        "The goodest"
+      ],
+      "correctAnswer": "The best"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence sounds most appropriate in a formal report?",
+      "question": "Choose the correct superlative: 'This is _____ restaurant in the city.'",
       "options": [
-        "We need to get the ball rolling ASAP.",
-        "The project should commence as soon as possible.",
-        "Let's break the ice with the investors.",
-        "They were under the weather during negotiations."
+        "the most expensive",
+        "the more expensive",
+        "most expensive",
+        "more expensive"
       ],
-      "correctAnswer": "The project should commence as soon as possible."
+      "correctAnswer": "the most expensive"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence is the best informal equivalent of \"The team exceeded expectations\"?",
+      "question": "What does 'the least popular' mean?",
       "options": [
-        "The team went the extra mile.",
-        "The team commenced operations.",
-        "The team demonstrated procedural compliance.",
-        "The team maintained neutrality."
+        "The most liked",
+        "The second most liked",
+        "The one that people like the least",
+        "More popular than others"
       ],
-      "correctAnswer": "The team went the extra mile."
+      "correctAnswer": "The one that people like the least"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Although it was uncomfortable, she faced the ______ and apologized publicly.",
-      "correctAnswer": "music"
+      "type": "multiple-choice",
+      "question": "Which sentence expresses that A is smaller than B?",
+      "options": [
+        "A is as big as B.",
+        "A is not as big as B.",
+        "A is bigger than B.",
+        "A is the biggest."
+      ],
+      "correctAnswer": "A is not as big as B."
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "Which sentence uses \"under the weather\" correctly?",
-      "options": [
-        "He was under the weather, so he stayed home and rested.",
-        "The report was under the weather and needed editing.",
-        "We were under the weather, so we signed the contract.",
-        "She put the proposal under the weather yesterday."
-      ],
-      "correctAnswer": "He was under the weather, so he stayed home and rested."
+      "type": "fill-blank",
+      "question": "The Amazon River is not as long _____ the Nile River.",
+      "correctAnswer": "as"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Translate into English: \"Eles fizeram mais do que o esperado para ajudar o cliente.\"",
-      "correctAnswer": "They went the extra mile to help the client"
+      "type": "fill-blank",
+      "question": "Mount Everest is _____ mountain in the world.",
+      "correctAnswer": "the tallest|the highest"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate into English: \"A empresa tentou economizar de forma irresponsável.\"",
-      "correctAnswer": "The company tried to cut corners"
+      "type": "fill-blank",
+      "question": "My phone is just _____ good as yours — they are both excellent.",
+      "correctAnswer": "as"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Which expression is least appropriate in a university essay?",
-      "options": [
-        "under the weather",
-        "consequently",
-        "moreover",
-        "in contrast"
-      ],
-      "correctAnswer": "under the weather"
+      "type": "fill-blank",
+      "question": "That was _____ meal I have ever had — absolutely delicious!",
+      "correctAnswer": "the best"
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "Choose an idiom to complete the idea: \"When the new intern introduced herself, she used a funny story to ______ the ______.\"",
-      "correctAnswer": "break the ice"
+      "type": "fill-blank",
+      "question": "This option is the _____ expensive, so it is good for our budget.",
+      "correctAnswer": "least"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which option best paraphrases \"He had to face the music after lying to the team\"?",
-      "options": [
-        "He had to accept the consequences",
-        "He had to sing in front of the team",
-        "He had to leave the meeting early",
-        "He had to start the project again"
-      ],
-      "correctAnswer": "He had to accept the consequences"
+      "type": "fill-blank",
+      "question": "Tokyo is one of _____ cities in the world.",
+      "correctAnswer": "the most expensive|the largest|the biggest"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Which option best paraphrases \"Let's get the ball rolling\" in a work meeting?",
-      "options": [
-        "Let's postpone everything",
-        "Let's begin",
-        "Let's complain",
-        "Let's leave early"
-      ],
-      "correctAnswer": "Let's begin"
+      "type": "complete",
+      "question": "Brazil is _____ country in South America in terms of size.",
+      "correctAnswer": "the largest|the biggest"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "In casual conversation, native speakers often say \"I'm a little under the ______\" instead of \"I'm slightly ill.\"",
-      "correctAnswer": "weather"
+      "type": "complete",
+      "question": "She speaks English _____ a native speaker.",
+      "correctAnswer": "as well as|as fluently as"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Which sentence shows the best awareness of register?",
-      "options": [
-        "The CEO was under the weather; henceforth, the merger was postponed.",
-        "The patient was under the weather, according to the surgical report.",
-        "The manager was feeling unwell, so the meeting was rescheduled.",
-        "The contract was under the weather and needed revision."
-      ],
-      "correctAnswer": "The manager was feeling unwell, so the meeting was rescheduled."
+      "type": "complete",
+      "question": "_____ the cat and the dog make great family pets.",
+      "correctAnswer": "Both"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate into English: \"Para começar a conversa, ele fez uma pergunta simples.\"",
-      "correctAnswer": "To break the ice, he asked a simple question"
+      "question": "Translate to English: 'Esse é o melhor filme que já assisti.'",
+      "correctAnswer": "this is the best movie i have ever watched|this is the best film i have ever seen"
     },
     {
       "id": 20,
-      "type": "complete",
-      "question": "Complete the sentence with the best idiom: \"The supplier used cheap materials to save money. They clearly ______ ______.\"",
-      "correctAnswer": "cut corners"
+      "type": "translate",
+      "question": "Translate to English: 'Minha mochila é tão pesada quanto a sua.'",
+      "correctAnswer": "my backpack is as heavy as yours"
     }
   ],
   "wednesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "What does the phrasal verb \"put off\" mean in this sentence: \"They put off the meeting\"?",
+      "type": "vocabulary",
+      "question": "What does 'although' mean?",
       "options": [
-        "to cancel permanently",
-        "to postpone",
-        "to enjoy",
-        "to organize"
+        "Because of that",
+        "In spite of the fact that",
+        "As a result",
+        "For example"
       ],
-      "correctAnswer": "to postpone"
+      "correctAnswer": "In spite of the fact that"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "What does \"look into\" mean?",
+      "type": "vocabulary",
+      "question": "What is the function of 'however' in a sentence?",
       "options": [
-        "to investigate",
-        "to invent",
-        "to admire",
-        "to memorize"
+        "To add more information",
+        "To introduce a contrast or opposite idea",
+        "To give a reason",
+        "To list items"
       ],
-      "correctAnswer": "to investigate"
+      "correctAnswer": "To introduce a contrast or opposite idea"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "What does \"turn down\" mean in this sentence: \"She turned down the offer\"?",
+      "type": "vocabulary",
+      "question": "When do we use 'on the other hand'?",
       "options": [
-        "to accept enthusiastically",
-        "to reject",
-        "to reduce the volume",
-        "to write formally"
+        "To repeat the same idea",
+        "To introduce a contrasting point of view",
+        "To summarize a list",
+        "To give step-by-step instructions"
       ],
-      "correctAnswer": "to reject"
+      "correctAnswer": "To introduce a contrasting point of view"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "What does \"run into\" usually mean when talking about people?",
+      "question": "Which sentence uses 'although' correctly?",
       "options": [
-        "to crash into someone",
-        "to meet unexpectedly",
-        "to argue strongly",
-        "to invite someone in"
+        "Although it was raining, we went for a walk.",
+        "We although went for a walk, it was raining.",
+        "It was raining although, we went for a walk.",
+        "We went although for a walk it was raining."
       ],
-      "correctAnswer": "to meet unexpectedly"
+      "correctAnswer": "Although it was raining, we went for a walk."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which phrasal verb is separable?",
+      "question": "Choose the correct option: '_____ the movie was long, everyone enjoyed it.'",
       "options": [
-        "look into",
-        "run into",
-        "put off",
-        "come across"
+        "However",
+        "Because",
+        "Even though",
+        "So"
       ],
-      "correctAnswer": "put off"
+      "correctAnswer": "Even though"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which phrasal verb is inseparable?",
+      "question": "Which sentence uses 'however' with correct punctuation?",
       "options": [
-        "hand in",
-        "figure out",
-        "look into",
-        "turn down"
+        "I was tired; however, I finished the work.",
+        "I was tired however I finished the work.",
+        "I was however tired, I finished the work.",
+        "However I was tired I finished the work."
       ],
-      "correctAnswer": "look into"
+      "correctAnswer": "I was tired; however, I finished the work."
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "We need to look ______ the complaint before replying to the customer.",
-      "correctAnswer": "into"
+      "type": "multiple-choice",
+      "question": "Which connector best expresses contrast between two separate sentences?",
+      "options": [
+        "therefore",
+        "in addition",
+        "on the other hand",
+        "as well as"
+      ],
+      "correctAnswer": "on the other hand"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "She turned ______ the job because the salary was too low.",
-      "correctAnswer": "down"
+      "type": "multiple-choice",
+      "question": "'She passed the test _____ she didn't study much.' Which word shows contrast?",
+      "options": [
+        "because",
+        "so",
+        "although",
+        "and"
+      ],
+      "correctAnswer": "although"
     },
     {
       "id": 9,
-      "type": "complete",
-      "question": "Complete the phrasal verb: \"figure ______\".",
-      "correctAnswer": "out"
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT a contrast connector?",
+      "options": [
+        "although",
+        "however",
+        "even though",
+        "because"
+      ],
+      "correctAnswer": "because"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "I looked the issue into.",
-        "I looked into the issue.",
-        "I looked into it the issue.",
-        "I looked the issue."
-      ],
-      "correctAnswer": "I looked into the issue."
+      "type": "fill-blank",
+      "question": "_____ I don't like cats, I do think they're beautiful animals.",
+      "correctAnswer": "Although|Even though"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "She turned down it.",
-        "She turned it down.",
-        "She turned into it down.",
-        "She down turned it."
-      ],
-      "correctAnswer": "She turned it down."
+      "type": "fill-blank",
+      "question": "The weather was terrible. _____, we decided to go to the beach.",
+      "correctAnswer": "However"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "What does \"bring up\" mean in this sentence: \"He brought up an interesting point\"?",
-      "options": [
-        "to mention",
-        "to raise a child",
-        "to hide",
-        "to repeat quietly"
-      ],
-      "correctAnswer": "to mention"
+      "type": "fill-blank",
+      "question": "He kept running _____ his leg was hurting.",
+      "correctAnswer": "even though|although"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "What does \"carry on\" mean?",
-      "options": [
-        "to continue",
-        "to transport luggage",
-        "to cancel",
-        "to discover by chance"
-      ],
-      "correctAnswer": "to continue"
+      "type": "fill-blank",
+      "question": "Living in a big city can be stressful. _____, it offers many job opportunities.",
+      "correctAnswer": "On the other hand|However"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Please hand ______ your assignment by Friday.",
-      "correctAnswer": "in"
+      "question": "_____ the food was expensive, the quality was truly excellent.",
+      "correctAnswer": "Although|Even though"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which phrasal verb means \"discover by chance\"?",
-      "options": [
-        "come across",
-        "put off",
-        "set up",
-        "take over"
-      ],
-      "correctAnswer": "come across"
+      "type": "complete",
+      "question": "I love traveling. _____, I don't have enough money to do it often.",
+      "correctAnswer": "However"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate into English: \"Vou investigar esse problema amanhã.\"",
-      "correctAnswer": "I will look into this problem tomorrow|I'll look into this problem tomorrow"
+      "type": "complete",
+      "question": "She decided to buy the dress _____ it was very expensive.",
+      "correctAnswer": "although|even though"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate into English: \"Ela recusou o convite.\"",
-      "correctAnswer": "She turned down the invitation|She turned the invitation down"
+      "type": "complete",
+      "question": "Dogs are very loyal pets. _____, they need a lot of attention and exercise.",
+      "correctAnswer": "On the other hand|However"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "Choose the best phrasal verb: \"We had to ______ ______ the launch because the software wasn't ready.\"",
-      "correctAnswer": "put off"
+      "question": "_____ he studied hard, he didn't pass the final exam.",
+      "correctAnswer": "Even though|Although"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which sentence shows an inseparable phrasal verb?",
-      "options": [
-        "They put the meeting off.",
-        "They put it off.",
-        "They looked into the matter.",
-        "They turned the offer down."
-      ],
-      "correctAnswer": "They looked into the matter."
+      "type": "translate",
+      "question": "Translate to English: 'Embora estivesse cansado, ele continuou trabalhando.'",
+      "correctAnswer": "although he was tired, he kept working|even though he was tired, he kept working"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which phrasal verb best completes the sentence? \"During the meeting, she ______ an issue nobody had considered before.\"",
-      "options": [
-        "brought up",
-        "ran into",
-        "put off",
-        "came across"
-      ],
-      "correctAnswer": "brought up"
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de tecnologia. No entanto, prefiro livros físicos.'",
+      "correctAnswer": "i like technology. however, i prefer physical books"
     }
   ],
   "thursday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence.",
+      "type": "vocabulary",
+      "question": "What does 'whereas' express in a comparison?",
       "options": [
-        "Please look the matter into.",
-        "Please look into the matter.",
-        "Please look it into the matter.",
-        "Please into look the matter."
+        "Similarity",
+        "Result",
+        "Direct contrast between two ideas",
+        "Additional information"
       ],
-      "correctAnswer": "Please look into the matter."
+      "correctAnswer": "Direct contrast between two ideas"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence with a pronoun.",
+      "type": "vocabulary",
+      "question": "What does 'in contrast' mean?",
       "options": [
-        "Turn down it.",
-        "Turn it down.",
-        "Turn down them it.",
-        "Turn it into down."
+        "In the same way",
+        "Showing a noticeable difference",
+        "Adding more details",
+        "Giving a specific example"
       ],
-      "correctAnswer": "Turn it down."
+      "correctAnswer": "Showing a noticeable difference"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence with a separable phrasal verb.",
+      "type": "vocabulary",
+      "question": "What does 'in comparison' signal?",
       "options": [
-        "She put off it.",
-        "She put it off.",
-        "She looked it into.",
-        "She ran the issue into."
+        "A complete disagreement",
+        "How two things relate in terms of similarities or differences",
+        "A final conclusion",
+        "A surprising fact"
       ],
-      "correctAnswer": "She put it off."
+      "correctAnswer": "How two things relate in terms of similarities or differences"
     },
     {
       "id": 4,
-      "type": "complete",
-      "question": "Rewrite using a pronoun: \"He handed in the report.\"",
-      "correctAnswer": "He handed it in"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'whereas' correctly?",
+      "options": [
+        "She likes tea, whereas her husband prefers coffee.",
+        "She likes tea whereas, her husband prefers coffee.",
+        "She likes tea. Whereas her husband prefers coffee.",
+        "Whereas she likes tea her husband prefers coffee."
+      ],
+      "correctAnswer": "She likes tea, whereas her husband prefers coffee."
     },
     {
       "id": 5,
-      "type": "complete",
-      "question": "Rewrite using a pronoun: \"They turned down the proposal.\"",
-      "correctAnswer": "They turned it down"
+      "type": "multiple-choice",
+      "question": "In which sentence does 'while' show contrast (not time)?",
+      "options": [
+        "I was cooking while he was watching TV.",
+        "She loves the mountains, while he prefers the sea.",
+        "While waiting, I read a magazine.",
+        "They arrived while we were still eating."
+      ],
+      "correctAnswer": "She loves the mountains, while he prefers the sea."
     },
     {
       "id": 6,
-      "type": "complete",
-      "question": "Rewrite correctly: \"We looked the issue into.\"",
-      "correctAnswer": "We looked into the issue"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'unlike' correctly?",
+      "options": [
+        "Unlike my sister, I enjoy cooking.",
+        "I unlike my sister enjoy cooking.",
+        "My sister unlike enjoys cooking very much.",
+        "Unlike to my sister, I enjoy cooking."
+      ],
+      "correctAnswer": "Unlike my sister, I enjoy cooking."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
+      "question": "Choose the best connector: 'Brazil is very hot in summer. _____, Norway is extremely cold.'",
       "options": [
-        "I came across an old photo.",
-        "I put the meeting off.",
-        "I looked the complaint into.",
-        "I figured the answer out."
+        "Similarly",
+        "In contrast",
+        "In addition",
+        "As a result"
       ],
-      "correctAnswer": "I looked the complaint into."
+      "correctAnswer": "In contrast"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
+      "question": "Which sentence uses 'unlike' INCORRECTLY?",
       "options": [
-        "She brought up it during lunch.",
-        "She brought it up during lunch.",
-        "She looked it into during lunch.",
-        "She came the issue across."
+        "Unlike my brother, I love spicy food.",
+        "Unlike in Spain, in Brazil we don't eat paella.",
+        "He unlike his friend is very quiet.",
+        "Unlike his teammates, he prefers individual sports."
       ],
-      "correctAnswer": "She brought it up during lunch."
+      "correctAnswer": "He unlike his friend is very quiet."
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "With separable phrasal verbs, object pronouns usually go ______ the verb and the particle.",
-      "correctAnswer": "between"
+      "type": "multiple-choice",
+      "question": "Which connector expresses contrast in: 'She is very outgoing, _____ her twin sister is quite shy.'?",
+      "options": [
+        "because",
+        "whereas",
+        "so",
+        "and"
+      ],
+      "correctAnswer": "whereas"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "With inseparable phrasal verbs, the object goes ______ the full phrasal verb.",
-      "correctAnswer": "after"
+      "type": "multiple-choice",
+      "question": "Choose the best option: 'Our new office is huge. _____, the old one was tiny.'",
+      "options": [
+        "As a result",
+        "In comparison",
+        "For example",
+        "In order to"
+      ],
+      "correctAnswer": "In comparison"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Choose the correct transformation of \"Please put off the meeting.\" using a pronoun.",
-      "options": [
-        "Please put off it.",
-        "Please put it off.",
-        "Please put into it off.",
-        "Please off put it."
-      ],
-      "correctAnswer": "Please put it off."
+      "type": "fill-blank",
+      "question": "I prefer working in the morning, _____ my colleague works better at night.",
+      "correctAnswer": "whereas|while"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Choose the correct transformation of \"I'll look into the complaint.\" using a pronoun.",
-      "options": [
-        "I'll look it into.",
-        "I'll look into it.",
-        "I'll look it into the complaint.",
-        "I'll into look it."
-      ],
-      "correctAnswer": "I'll look into it."
+      "type": "fill-blank",
+      "question": "Paris is famous for art and fashion. _____, Tokyo is known for technology and food.",
+      "correctAnswer": "In contrast|On the other hand"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate into English: \"Eles adiaram isso para a próxima semana.\"",
-      "correctAnswer": "They put it off until next week|They put it off for next week"
+      "type": "fill-blank",
+      "question": "_____ other sports, swimming is very easy on the joints.",
+      "correctAnswer": "Unlike"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate into English: \"Nós vamos investigar isso imediatamente.\"",
-      "correctAnswer": "We will look into it immediately|We'll look into it immediately"
+      "type": "fill-blank",
+      "question": "This city has better public transport _____ to the capital.",
+      "correctAnswer": "in comparison"
     },
     {
       "id": 15,
       "type": "complete",
-      "question": "Correct the sentence: \"She turned down it because it was risky.\"",
-      "correctAnswer": "She turned it down because it was risky"
+      "question": "My brother is very loud, _____ I tend to be quiet.",
+      "correctAnswer": "whereas|while"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "Correct the sentence: \"He looked the problem into before replying.\"",
-      "correctAnswer": "He looked into the problem before replying"
+      "question": "Summer in Brazil is very hot. _____, winter is mild and cool.",
+      "correctAnswer": "In contrast|On the other hand|However"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which sentence is best?",
-      "options": [
-        "We ran our teacher into at the mall.",
-        "We ran into our teacher at the mall.",
-        "We ran into at our teacher the mall.",
-        "We ran our teacher at the mall into."
-      ],
-      "correctAnswer": "We ran into our teacher at the mall."
+      "type": "complete",
+      "question": "_____ traditional cameras, smartphones can take great photos instantly.",
+      "correctAnswer": "Unlike"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses \"figure out\" with a pronoun?",
-      "options": [
-        "Can you figure out it?",
-        "Can you figure it out?",
-        "Can you out figure it?",
-        "Can you figure into it out?"
-      ],
-      "correctAnswer": "Can you figure it out?"
+      "type": "complete",
+      "question": "The new stadium is much bigger. _____, the old one had only 10,000 seats.",
+      "correctAnswer": "In comparison|In contrast"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "Complete the rule: \"Look into\" is generally treated as an ______ phrasal verb.",
-      "correctAnswer": "inseparable"
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de aventura, enquanto minha esposa prefere relaxar.'",
+      "correctAnswer": "i like adventure, whereas my wife prefers to relax|i enjoy adventure, while my wife prefers to relax"
     },
     {
       "id": 20,
-      "type": "fill-blank",
-      "question": "Complete the rule: \"Turn down\" is a ______ phrasal verb.",
-      "correctAnswer": "separable"
+      "type": "translate",
+      "question": "Translate to English: 'Em comparação com a cidade vizinha, nossa cidade é muito menor.'",
+      "correctAnswer": "in comparison with the neighboring city, our city is much smaller|compared to the neighboring city, our city is much smaller"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which sentence contains a metaphor?",
+      "type": "vocabulary",
+      "question": "What does 'as well as' mean?",
       "options": [
-        "The office was a zoo during the product launch.",
-        "I was under the weather yesterday.",
-        "Could you look into this issue?",
-        "She turned the offer down politely."
+        "Instead of",
+        "In addition to / and also",
+        "Unlike",
+        "Better than"
       ],
-      "correctAnswer": "The office was a zoo during the product launch."
+      "correctAnswer": "In addition to / and also"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which sentence contains hyperbole?",
+      "type": "vocabulary",
+      "question": "In 'Neither option is correct,' what does 'neither' indicate?",
       "options": [
-        "I've told you a million times to back up your files.",
-        "He looked into the complaint.",
-        "Let's get the ball rolling.",
-        "She was feeling under the weather."
+        "Both options are acceptable",
+        "One of the options is correct",
+        "Not one and not the other",
+        "Only the second option"
       ],
-      "correctAnswer": "I've told you a million times to back up your files."
+      "correctAnswer": "Not one and not the other"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence is most likely ironic?",
+      "type": "vocabulary",
+      "question": "Which of the following is a synonym for 'whereas'?",
       "options": [
-        "Great, another two-hour meeting. Just what I needed.",
-        "We need to investigate the issue carefully.",
-        "She went the extra mile to help.",
-        "He submitted the report on time."
+        "because",
+        "therefore",
+        "while / on the other hand",
+        "as a result"
       ],
-      "correctAnswer": "Great, another two-hour meeting. Just what I needed."
+      "correctAnswer": "while / on the other hand"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "Choose the most natural informal sentence.",
+      "type": "vocabulary",
+      "question": "What does 'in contrast' help the reader understand?",
       "options": [
-        "I was slightly indisposed, therefore I remained at home.",
-        "I was under the weather, so I stayed home.",
-        "My physical condition was suboptimal, so I stayed home.",
-        "I remained home due to minor illness symptoms."
+        "A time sequence of events",
+        "A noticeable difference between two things",
+        "A cause and its effect",
+        "A list of similar items"
       ],
-      "correctAnswer": "I was under the weather, so I stayed home."
+      "correctAnswer": "A noticeable difference between two things"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Choose the best formal alternative to \"Let's get the ball rolling.\"",
+      "question": "Choose the correct superlative: 'This is _____ book I have ever read.'",
       "options": [
-        "Let's stop wasting time.",
-        "Let's break the ice.",
-        "Let's begin the process.",
-        "Let's go the extra mile."
+        "the most interesting",
+        "more interesting",
+        "the interestingest",
+        "most interesting"
       ],
-      "correctAnswer": "Let's begin the process."
+      "correctAnswer": "the most interesting"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "The writer used exaggeration for effect. That figure of speech is called ______.",
-      "correctAnswer": "hyperbole"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses 'not as...as'?",
+      "options": [
+        "This car is not as expensive as I thought.",
+        "This car is not as more expensive as I thought.",
+        "This car is not as expensiver as I thought.",
+        "This car is not the expensive as I thought."
+      ],
+      "correctAnswer": "This car is not as expensive as I thought."
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "When someone says the opposite of what they really mean for effect, that is often ______.",
-      "correctAnswer": "irony"
+      "type": "multiple-choice",
+      "question": "Which two words can BOTH be used to show contrast?",
+      "options": [
+        "however / therefore",
+        "although / whereas",
+        "because / since",
+        "also / in addition"
+      ],
+      "correctAnswer": "although / whereas"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Calling a chaotic classroom \"a circus\" is an example of a ______.",
-      "correctAnswer": "metaphor"
+      "type": "multiple-choice",
+      "question": "Which sentence is grammatically CORRECT?",
+      "options": [
+        "This coffee is more better than the last one.",
+        "This coffee is gooder than the last one.",
+        "This coffee is better than the last one.",
+        "This coffee is the better than the last one."
+      ],
+      "correctAnswer": "This coffee is better than the last one."
     },
     {
       "id": 9,
-      "type": "translate",
-      "question": "Translate into English: \"Ele teve que encarar as consequências no fim.\"",
-      "correctAnswer": "He had to face the music in the end"
+      "type": "multiple-choice",
+      "question": "Choose the correct option: '_____ Jane and Mark enjoy hiking on weekends.'",
+      "options": [
+        "Either",
+        "Neither",
+        "Both",
+        "Although"
+      ],
+      "correctAnswer": "Both"
     },
     {
       "id": 10,
-      "type": "translate",
-      "question": "Translate into English: \"Eles encontraram a antiga professora por acaso.\"",
-      "correctAnswer": "They ran into their old teacher by chance|They ran into their old teacher"
+      "type": "fill-blank",
+      "question": "Living in the city is more expensive _____ living in the countryside.",
+      "correctAnswer": "than"
     },
     {
       "id": 11,
-      "type": "translate",
-      "question": "Translate into English: \"Você pode descobrir isso?\"",
-      "correctAnswer": "Can you figure it out?"
+      "type": "fill-blank",
+      "question": "Online shopping is very convenient. _____, some people still prefer physical stores.",
+      "correctAnswer": "However"
     },
     {
       "id": 12,
-      "type": "complete",
-      "question": "Complete the sentence with the best idiom: \"Nobody wanted to start the discussion, so Ana decided to ______ the ______.\"",
-      "correctAnswer": "get the ball rolling"
+      "type": "fill-blank",
+      "question": "The food here is not as spicy _____ the food in Thailand.",
+      "correctAnswer": "as"
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "Complete the sentence with the best phrasal verb: \"The editor asked me to ______ ______ the article before publication.\"",
-      "correctAnswer": "look into"
+      "type": "fill-blank",
+      "question": "_____ her sister, Ana prefers to live in the city rather than in the countryside.",
+      "correctAnswer": "Unlike"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Which sentence mixes idiom and register appropriately?",
-      "options": [
-        "The legal document says the witness was under the weather.",
-        "During the casual chat, he used humor to break the ice.",
-        "The academic paper says we should bite the bullet in section two.",
-        "The research abstract says the company cut corners, lol."
-      ],
-      "correctAnswer": "During the casual chat, he used humor to break the ice."
+      "type": "complete",
+      "question": "I prefer tea, _____ most people in the office drink coffee.",
+      "correctAnswer": "whereas|while"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which sentence uses a phrasal verb correctly?",
-      "options": [
-        "She looked the data into before publishing.",
-        "She looked into the data before publishing.",
-        "She looked into it the data before publishing.",
-        "She into looked the data before publishing."
-      ],
-      "correctAnswer": "She looked into the data before publishing."
+      "type": "complete",
+      "question": "The Amazon is _____ river in South America.",
+      "correctAnswer": "the longest|the largest"
     },
     {
       "id": 16,
-      "type": "multiple-choice",
-      "question": "Which sentence best shows \"go the extra mile\"?",
-      "options": [
-        "He did only what was required.",
-        "She stayed late to help the new employee finish the task.",
-        "They canceled the service immediately.",
-        "I ignored the customer's email."
-      ],
-      "correctAnswer": "She stayed late to help the new employee finish the task."
+      "type": "complete",
+      "question": "_____ the hotel was expensive, the service was not good at all.",
+      "correctAnswer": "Although|Even though"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "In \"This laptop is a dinosaur,\" the speaker is probably using a figure of speech, not speaking literally. The figure is a ______.",
-      "correctAnswer": "metaphor"
+      "type": "complete",
+      "question": "The first half of the movie was boring. _____, the ending was absolutely amazing.",
+      "correctAnswer": "In contrast|However|On the other hand"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Translate into English: \"Ela recusou a proposta e depois investigou os detalhes.\"",
-      "correctAnswer": "She turned down the proposal and then looked into the details|She turned the proposal down and then looked into the details"
+      "question": "Translate to English: 'Embora eu goste de tecnologia, prefiro conversar pessoalmente.'",
+      "correctAnswer": "although i like technology, i prefer to talk in person|even though i like technology, i prefer to talk in person"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Choose the best word to complete the sentence: \"Saying 'Fantastic weather' during a storm can sound ______.\"",
-      "correctAnswer": "ironic"
+      "type": "translate",
+      "question": "Translate to English: 'Esse restaurante é muito melhor do que o anterior.'",
+      "correctAnswer": "this restaurant is much better than the previous one"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence is the best final review answer?",
-      "options": [
-        "We looked the issue into, then we cut corners.",
-        "We looked into the issue, but we didn't cut corners.",
-        "We turned down it because we were under a weather.",
-        "We got the ball roll and faced the song."
-      ],
-      "correctAnswer": "We looked into the issue, but we didn't cut corners."
+      "type": "translate",
+      "question": "Translate to English: 'Tanto os gatos quanto os cachorros são ótimos animais de estimação.'",
+      "correctAnswer": "both cats and dogs are great pets"
     }
   ]
 }
