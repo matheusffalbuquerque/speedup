@@ -261,6 +261,7 @@ function renderExercises() {
                 break;
 
             case 'multiple-choice':
+            case 'vocabulary':
                 inputHTML = `
                     <div class="options-container">
                         ${exercise.options.map((option, optIndex) => `
@@ -311,6 +312,7 @@ function getTypeLabel(type) {
     const labels = {
         'fill-blank': '📝 Preencher',
         'multiple-choice': '✅ Múltipla Escolha',
+        'vocabulary': '📖 Vocabulário',
         'translate': '🔄 Tradução',
         'complete': '✏️ Completar',
         'match': '🔗 Relacionar'
