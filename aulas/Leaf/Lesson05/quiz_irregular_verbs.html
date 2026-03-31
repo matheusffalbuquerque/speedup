@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz de Verbos Irregulares</title>
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #1e293b;
+      --card: rgba(15, 23, 42, 0.78);
+      --card-soft: rgba(30, 41, 59, 0.9);
+      --accent: #38bdf8;
+      --accent-2: #22c55e;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: rgba(148, 163, 184, 0.18);
+      --shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top left, #1d4ed8 0%, var(--bg1) 34%, #020617 100%);
+      color: var(--text);
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .app {
+      width: 100vw;
+      height: 100vh;
+      padding: 1.2rem;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 1rem;
+      overflow: hidden;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr auto;
+      gap: 1rem;
+      align-items: stretch;
+      min-height: 104px;
+      padding: 1rem 1.2rem;
+    }
+
+    .brand h1 {
+      font-size: clamp(1.3rem, 2.4vw, 2.3rem);
+      line-height: 1.1;
+      margin-bottom: .3rem;
+    }
+
+    .brand p {
+      color: var(--muted);
+      font-size: clamp(.9rem, 1.2vw, 1rem);
+    }
+
+    .status-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: .35rem;
+      padding: .9rem 1rem;
+      background: rgba(15, 23, 42, .45);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .status-label {
+      font-size: .82rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .status-value {
+      font-size: clamp(1rem, 1.8vw, 1.5rem);
+      font-weight: 800;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      justify-content: flex-end;
+      align-content: center;
+    }
+
+    button, .chip {
+      border: none;
+      border-radius: 16px;
+      padding: .85rem 1rem;
+      font-size: .96rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.06);
+    }
+
+    button:active {
+      transform: scale(.98);
+    }
+
+    .primary { background: linear-gradient(135deg, var(--accent), #2563eb); color: white; }
+    .success { background: linear-gradient(135deg, var(--accent-2), #15803d); color: white; }
+    .warning { background: linear-gradient(135deg, var(--warning), #d97706); color: white; }
+    .ghost { background: rgba(148,163,184,.14); color: var(--text); border: 1px solid var(--border); }
+    .danger { background: linear-gradient(135deg, var(--danger), #b91c1c); color: white; }
+
+    .main {
+      display: grid;
+      grid-template-columns: 1.05fr 1.7fr;
+      gap: 1rem;
+      min-height: 0;
+    }
+
+    .sidebar, .board {
+      min-height: 0;
+      padding: 1rem;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 1rem;
+    }
+
+    .setup, .scoreboard, .teacher-box {
+      background: rgba(15, 23, 42, .45);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 1rem;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: .8rem;
+    }
+
+    .section-title h2 {
+      font-size: 1rem;
+    }
+
+    .small {
+      font-size: .82rem;
+      color: var(--muted);
+    }
+
+    .player-count {
+      display: flex;
+      gap: .6rem;
+      margin-bottom: .8rem;
+    }
+
+    .count-btn.active {
+      outline: 2px solid var(--accent);
+      background: rgba(56, 189, 248, 0.18);
+    }
+
+    .player-inputs {
+      display: grid;
+      gap: .55rem;
+    }
+
+    .player-inputs input {
+      width: 100%;
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      color: white;
+      padding: .78rem .9rem;
+      font-size: .96rem;
+      outline: none;
+    }
+
+    .player-inputs input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(56,189,248,.18);
+    }
+
+    .players-list {
+      display: grid;
+      gap: .65rem;
+    }
+
+    .player-card {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: .7rem;
+      align-items: center;
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: .8rem .9rem;
+    }
+
+    .player-card.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(56,189,248,.15) inset;
+    }
+
+    .player-name {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .player-turn {
+      font-size: .8rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .player-score {
+      font-size: 1.35rem;
+      font-weight: 900;
+      min-width: 52px;
+      text-align: right;
+    }
+
+    .teacher-box {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: .8rem;
+    }
+
+    .teacher-actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .65rem;
+    }
+
+    .board {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 1rem;
+    }
+
+    .question-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      background: rgba(15, 23, 42, .42);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 1.2rem;
+    }
+
+    .verb-label {
+      color: var(--muted);
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: .45rem;
+    }
+
+    .verb-word {
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+
+    .verb-meta {
+      display: flex;
+      gap: .65rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill {
+      padding: .7rem .9rem;
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 700;
+      background: rgba(56, 189, 248, .16);
+      border: 1px solid rgba(56, 189, 248, .22);
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .9rem;
+      min-height: 0;
+    }
+
+    .choice {
+      min-height: 96px;
+      padding: 1rem;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(30,41,59,.96), rgba(15,23,42,.96));
+      border: 2px solid transparent;
+      color: white;
+      font-size: clamp(1rem, 1.8vw, 1.45rem);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .choice:hover {
+      border-color: rgba(56, 189, 248, .5);
+    }
+
+    .choice.disabled {
+      opacity: .6;
+      pointer-events: none;
+    }
+
+    .choice.correct {
+      background: linear-gradient(135deg, #16a34a, #166534);
+      border-color: #86efac;
+    }
+
+    .choice.wrong {
+      background: linear-gradient(135deg, #ef4444, #991b1b);
+      border-color: #fca5a5;
+    }
+
+    .bottom-bar {
+      display: grid;
+      grid-template-columns: 1.2fr auto;
+      gap: 1rem;
+      align-items: center;
+      padding: 1rem 1.2rem;
+    }
+
+    .message {
+      font-size: clamp(.98rem, 1.45vw, 1.15rem);
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .message .ok { color: #86efac; }
+    .message .bad { color: #fca5a5; }
+    .message .highlight { color: #7dd3fc; }
+
+    .footer-actions {
+      display: flex;
+      gap: .7rem;
+      justify-content: flex-end;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, .78);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      z-index: 20;
+    }
+
+    .overlay.show { display: flex; }
+
+    .modal {
+      width: min(900px, 94vw);
+      background: linear-gradient(180deg, rgba(15,23,42,.98), rgba(30,41,59,.98));
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 1.3rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .ranking {
+      display: grid;
+      gap: .8rem;
+    }
+
+    .rank-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: .8rem;
+      align-items: center;
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: .9rem 1rem;
+    }
+
+    .medal {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 900;
+      background: rgba(56, 189, 248, .16);
+    }
+
+    @media (max-width: 1100px) {
+      .topbar,
+      .main,
+      .bottom-bar {
+        grid-template-columns: 1fr;
+      }
+
+      .choices {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .app { padding: .7rem; gap: .7rem; }
+      .choices { grid-template-columns: 1fr; }
+      .teacher-actions, .footer-actions, .controls, .player-count { grid-template-columns: 1fr 1fr; display: grid; }
+      button, .chip { padding: .72rem .8rem; font-size: .88rem; }
+      .question-card { grid-template-columns: 1fr; }
+      .verb-meta { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar panel">
+      <div class="brand">
+        <h1>Irregular Verbs Battle</h1>
+        <p>Jogo online para 2 ou 3 jogadores. O teacher só precisa clicar nas opções e controlar as rodadas.</p>
+      </div>
+      <div class="status-box">
+        <div class="status-label">Progresso</div>
+        <div class="status-value" id="progress">1 / 40</div>
+        <div class="small" id="remaining">40 verbos na partida</div>
+      </div>
+      <div class="controls">
+        <button class="ghost" id="btnShuffle">Embaralhar</button>
+        <button class="warning" id="btnRestart">Reiniciar</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar panel">
+        <section class="setup">
+          <div class="section-title">
+            <h2>Configuração</h2>
+            <span class="small">Escolha os jogadores</span>
+          </div>
+          <div class="player-count">
+            <button class="ghost count-btn active" data-count="2">2 jogadores</button>
+            <button class="ghost count-btn" data-count="3">3 jogadores</button>
+          </div>
+          <div class="player-inputs" id="playerInputs"></div>
+        </section>
+
+        <section class="scoreboard">
+          <div class="section-title">
+            <h2>Placar</h2>
+            <span class="small">Pontos por acerto</span>
+          </div>
+          <div class="players-list" id="playersList"></div>
+        </section>
+
+        <section class="teacher-box">
+          <div class="section-title">
+            <h2>Painel do teacher</h2>
+            <span class="small">Controle da rodada</span>
+          </div>
+          <div class="small" id="teacherHint">Clique na resposta escolhida pelo jogador da vez.</div>
+          <div class="teacher-actions">
+            <button class="success" id="btnNext">Próxima rodada</button>
+            <button class="danger" id="btnReveal">Mostrar resposta</button>
+          </div>
+        </section>
+      </aside>
+
+      <section class="board panel">
+        <div class="question-card">
+          <div>
+            <div class="verb-label">Verbo no infinitivo</div>
+            <div class="verb-word" id="verbWord">begin</div>
+          </div>
+          <div class="verb-meta">
+            <div class="pill" id="turnPill">Vez de Jogador 1</div>
+            <div class="pill" id="roundPill">Rodada 1</div>
+          </div>
+        </div>
+
+        <div class="choices" id="choices"></div>
+
+        <div class="bottom-bar panel">
+          <div class="message" id="message">Clique em <span class="highlight">Começar jogo</span> para iniciar.</div>
+          <div class="footer-actions">
+            <button class="primary" id="btnStart">Começar jogo</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <div class="section-title">
+        <h2>Fim de jogo</h2>
+        <span class="small">Ranking final</span>
+      </div>
+      <div class="ranking" id="ranking"></div>
+      <div class="footer-actions">
+        <button class="primary" id="btnPlayAgain">Jogar novamente</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const verbs = [
+      { base: 'begin', participle: 'begun' },
+      { base: 'break', participle: 'broken' },
+      { base: 'bring', participle: 'brought' },
+      { base: 'build', participle: 'built' },
+      { base: 'buy', participle: 'bought' },
+      { base: 'choose', participle: 'chosen' },
+      { base: 'come', participle: 'come' },
+      { base: 'do', participle: 'done' },
+      { base: 'drink', participle: 'drunk' },
+      { base: 'drive', participle: 'driven' },
+      { base: 'eat', participle: 'eaten' },
+      { base: 'fall', participle: 'fallen' },
+      { base: 'fly', participle: 'flown' },
+      { base: 'forget', participle: 'forgotten' },
+      { base: 'get', participle: 'gotten' },
+      { base: 'give', participle: 'given' },
+      { base: 'go', participle: 'gone' },
+      { base: 'grow', participle: 'grown' },
+      { base: 'know', participle: 'known' },
+      { base: 'leave', participle: 'left' },
+      { base: 'make', participle: 'made' },
+      { base: 'meet', participle: 'met' },
+      { base: 'read', participle: 'read' },
+      { base: 'ride', participle: 'ridden' },
+      { base: 'ring', participle: 'rung' },
+      { base: 'run', participle: 'run' },
+      { base: 'see', participle: 'seen' },
+      { base: 'sell', participle: 'sold' },
+      { base: 'sing', participle: 'sung' },
+      { base: 'sit', participle: 'sat' },
+      { base: 'speak', participle: 'spoken' },
+      { base: 'swim', participle: 'swum' },
+      { base: 'take', participle: 'taken' },
+      { base: 'teach', participle: 'taught' },
+      { base: 'tell', participle: 'told' },
+      { base: 'think', participle: 'thought' },
+      { base: 'wear', participle: 'worn' },
+      { base: 'write', participle: 'written' },
+      { base: 'shake', participle: 'shaken' },
+      { base: 'throw', participle: 'thrown' }
+    ];
+
+    const distractors = [...new Set(verbs.map(v => v.participle))];
+
+    function getConfusingOptions(correct, base) {
+      const manualDistractors = {
+        begin: ['begined', 'began', 'beginned'],
+        break: ['breaked', 'broked', 'brooken'],
+        bring: ['bringed', 'brang', 'brung'],
+        build: ['builded', 'bilded', 'bulded'],
+        buy: ['buyed', 'buied', 'boughted'],
+        choose: ['choosed', 'choosen', 'chosed'],
+        come: ['comed', 'camed', 'comes'],
+        do: ['doed', 'dided', 'doneed'],
+        drink: ['drinked', 'dranked', 'drinken'],
+        drive: ['drived', 'drove', 'driven'],
+        eat: ['eated', 'ate', 'eatened'],
+        fall: ['falled', 'felled', 'fallened'],
+        fly: ['flyed', 'flied', 'flowned'],
+        forget: ['forgeted', 'forgot', 'forgetten'],
+        get: ['geted', 'got', 'getten'],
+        give: ['gived', 'gave', 'giveden'],
+        go: ['goed', 'went', 'goned'],
+        grow: ['growed', 'grew', 'grownen'],
+        know: ['knowed', 'knew', 'knowen'],
+        leave: ['leaved', 'lefted', 'liften'],
+        make: ['maked', 'madeed', 'moken'],
+        meet: ['meeted', 'meted', 'meeten'],
+        read: ['readed', 'red', 'readen'],
+        ride: ['rided', 'rode', 'riden'],
+        ring: ['ringed', 'rang', 'ringen'],
+        run: ['runned', 'ran', 'runned'],
+        see: ['seed', 'saw', 'seened'],
+        sell: ['selled', 'solded', 'sellen'],
+        sing: ['singed', 'sang', 'singen'],
+        sit: ['sitted', 'saten', 'sittede'],
+        speak: ['speaked', 'spoke', 'speaken'],
+        swim: ['swimed', 'swam', 'swimmen'],
+        take: ['taked', 'took', 'takeen'],
+        teach: ['teached', 'taughted', 'teachen'],
+        tell: ['telled', 'tolled', 'tellen'],
+        think: ['thinked', 'thoughted', 'thunken'],
+        wear: ['weared', 'wore', 'wearen'],
+        write: ['writed', 'wrote', 'writeen'],
+        shake: ['shaked', 'shook', 'shakeen'],
+        throw: ['throwed', 'threw', 'throwen']
+      };
+
+      const curated = manualDistractors[base] || [];
+      return shuffle(curated.filter(option => option !== correct)).slice(0, 3);
+    }
+
+    
+
+    
+
+    let state = {
+      playerCount: 2,
+      players: [
+        { name: 'Jogador 1', score: 0 },
+        { name: 'Jogador 2', score: 0 }
+      ],
+      currentPlayer: 0,
+      currentRound: 0,
+      questions: [],
+      currentQuestion: null,
+      answered: false,
+      started: false
+    };
+
+    const playerInputs = document.getElementById('playerInputs');
+    const playersList = document.getElementById('playersList');
+    const verbWord = document.getElementById('verbWord');
+    const choicesEl = document.getElementById('choices');
+    const messageEl = document.getElementById('message');
+    const progressEl = document.getElementById('progress');
+    const remainingEl = document.getElementById('remaining');
+    const turnPill = document.getElementById('turnPill');
+    const roundPill = document.getElementById('roundPill');
+    const overlay = document.getElementById('overlay');
+    const ranking = document.getElementById('ranking');
+    const teacherHint = document.getElementById('teacherHint');
+
+    function shuffle(array) {
+      const clone = [...array];
+      for (let i = clone.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [clone[i], clone[j]] = [clone[j], clone[i]];
+      }
+      return clone;
+    }
+
+    function createQuestionSet() {
+      state.questions = shuffle(verbs).map((verb) => {
+        const wrongOptions = getConfusingOptions(verb.participle, verb.base);
+        const finalOptions = shuffle([verb.participle, ...wrongOptions.filter(option => option !== verb.participle)]);
+        return {
+          ...verb,
+          options: finalOptions
+        };
+      });
+    }
+
+    function renderPlayerInputs() {
+      playerInputs.innerHTML = '';
+      for (let i = 0; i < state.playerCount; i++) {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.maxLength = 18;
+        input.value = state.players[i]?.name || `Jogador ${i + 1}`;
+        input.placeholder = `Nome do Jogador ${i + 1}`;
+        input.addEventListener('input', (e) => {
+          state.players[i].name = e.target.value.trim() || `Jogador ${i + 1}`;
+          renderPlayers();
+          updateTurn();
+        });
+        playerInputs.appendChild(input);
+      }
+    }
+
+    function renderPlayers() {
+      playersList.innerHTML = '';
+      state.players.forEach((player, index) => {
+        const card = document.createElement('div');
+        card.className = `player-card ${index === state.currentPlayer ? 'active' : ''}`;
+        card.innerHTML = `
+          <div>
+            <div class="player-name">${player.name}</div>
+            <div class="player-turn">${index === state.currentPlayer ? 'Na vez' : 'Aguardando'}</div>
+          </div>
+          <div class="small">Pontos</div>
+          <div class="player-score">${player.score}</div>
+        `;
+        playersList.appendChild(card);
+      });
+    }
+
+    function updateHeader() {
+      const total = state.questions.length || 40;
+      const roundNumber = Math.min(state.currentRound + 1, total);
+      progressEl.textContent = `${roundNumber} / ${total}`;
+      const remaining = Math.max(total - state.currentRound, 0);
+      remainingEl.textContent = `${remaining} verbo${remaining === 1 ? '' : 's'} restante${remaining === 1 ? '' : 's'} na partida`;
+      roundPill.textContent = `Rodada ${roundNumber}`;
+      updateTurn();
+    }
+
+    function updateTurn() {
+      const player = state.players[state.currentPlayer];
+      turnPill.textContent = `Vez de ${player.name}`;
+    }
+
+    function setMessage(html) {
+      messageEl.innerHTML = html;
+    }
+
+    function renderQuestion() {
+      if (!state.currentQuestion) return;
+      verbWord.textContent = state.currentQuestion.base;
+      choicesEl.innerHTML = '';
+
+      state.currentQuestion.options.forEach(option => {
+        const btn = document.createElement('button');
+        btn.className = `choice ${!state.started ? 'disabled' : ''}`;
+        btn.textContent = option;
+        btn.disabled = !state.started || state.answered;
+        btn.addEventListener('click', () => chooseOption(option, btn));
+        choicesEl.appendChild(btn);
+      });
+    }
+
+    function chooseOption(option, button) {
+      if (!state.started || state.answered || !state.currentQuestion) return;
+      state.answered = true;
+      const correct = state.currentQuestion.participle;
+      const allButtons = [...document.querySelectorAll('.choice')];
+
+      allButtons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent === correct) btn.classList.add('correct');
+      });
+
+      if (option === correct) {
+        button.classList.add('correct');
+        state.players[state.currentPlayer].score += 1;
+        setMessage(`<span class="ok">Correto!</span> ${state.players[state.currentPlayer].name} marcou 1 ponto. O particípio de <span class="highlight">${state.currentQuestion.base}</span> é <span class="highlight">${correct}</span>.`);
+      } else {
+        button.classList.add('wrong');
+        setMessage(`<span class="bad">Resposta incorreta.</span> O particípio de <span class="highlight">${state.currentQuestion.base}</span> é <span class="highlight">${correct}</span>.`);
+      }
+
+      teacherHint.textContent = 'Clique em “Próxima rodada” para seguir.';
+      renderPlayers();
+    }
+
+    function revealAnswer() {
+      if (!state.started || state.answered || !state.currentQuestion) return;
+      state.answered = true;
+      const correct = state.currentQuestion.participle;
+      [...document.querySelectorAll('.choice')].forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent === correct) btn.classList.add('correct');
+      });
+      setMessage(`Resposta revelada: o particípio de <span class="highlight">${state.currentQuestion.base}</span> é <span class="highlight">${correct}</span>.`);
+      teacherHint.textContent = 'Nenhum ponto foi dado nesta rodada.';
+    }
+
+    function nextRound() {
+      if (!state.started) return;
+
+      if (state.currentRound >= state.questions.length - 1) {
+        finishGame();
+        return;
+      }
+
+      state.currentRound += 1;
+      state.currentPlayer = (state.currentPlayer + 1) % state.playerCount;
+      state.currentQuestion = state.questions[state.currentRound];
+      state.answered = false;
+      teacherHint.textContent = 'Clique na resposta escolhida pelo jogador da vez.';
+      setMessage('Selecione a alternativa que o jogador respondeu.');
+      updateHeader();
+      renderPlayers();
+      renderQuestion();
+    }
+
+    function finishGame() {
+      state.started = false;
+      updateHeader();
+      const sorted = [...state.players].sort((a, b) => b.score - a.score);
+      ranking.innerHTML = '';
+      sorted.forEach((player, index) => {
+        const item = document.createElement('div');
+        item.className = 'rank-item';
+        const emoji = index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉';
+        item.innerHTML = `
+          <div class="medal">${emoji}</div>
+          <div>
+            <div class="player-name">${player.name}</div>
+            <div class="small">Pontuação final</div>
+          </div>
+          <div class="player-score">${player.score}</div>
+        `;
+        ranking.appendChild(item);
+      });
+      overlay.classList.add('show');
+      setMessage('Partida encerrada. Veja o ranking final.');
+    }
+
+    function startGame() {
+      state.players = state.players.slice(0, state.playerCount).map((player, i) => ({
+        name: player.name?.trim() || `Jogador ${i + 1}`,
+        score: 0
+      }));
+      createQuestionSet();
+      state.currentRound = 0;
+      state.currentPlayer = 0;
+      state.currentQuestion = state.questions[0];
+      state.answered = false;
+      state.started = true;
+      overlay.classList.remove('show');
+      teacherHint.textContent = 'Clique na resposta escolhida pelo jogador da vez.';
+      setMessage('Jogo iniciado. As alternativas agora foram feitas para confundir mais e reforçar a prática real do past participle.');
+      updateHeader();
+      renderPlayers();
+      renderQuestion();
+    }
+
+    function restartGame() {
+      state.players = Array.from({ length: state.playerCount }, (_, i) => ({
+        name: state.players[i]?.name || `Jogador ${i + 1}`,
+        score: 0
+      }));
+      startGame();
+    }
+
+    function setPlayerCount(count) {
+      state.playerCount = count;
+      state.players = Array.from({ length: count }, (_, i) => ({
+        name: state.players[i]?.name || `Jogador ${i + 1}`,
+        score: state.players[i]?.score || 0
+      }));
+      document.querySelectorAll('.count-btn').forEach(btn => {
+        btn.classList.toggle('active', Number(btn.dataset.count) === count);
+      });
+      renderPlayerInputs();
+      renderPlayers();
+      updateTurn();
+    }
+
+    document.querySelectorAll('.count-btn').forEach(btn => {
+      btn.addEventListener('click', () => setPlayerCount(Number(btn.dataset.count)));
+    });
+
+    document.getElementById('btnStart').addEventListener('click', startGame);
+    document.getElementById('btnNext').addEventListener('click', nextRound);
+    document.getElementById('btnReveal').addEventListener('click', revealAnswer);
+    document.getElementById('btnRestart').addEventListener('click', restartGame);
+    document.getElementById('btnShuffle').addEventListener('click', () => {
+      createQuestionSet();
+      if (state.started) {
+        state.currentRound = 0;
+        state.currentPlayer = 0;
+        state.currentQuestion = state.questions[0];
+        state.answered = false;
+        renderQuestion();
+        renderPlayers();
+        updateHeader();
+        setMessage('Verbos embaralhados com novas alternativas mais parecidas entre si.');
+      } else {
+        setMessage('Lista de verbos embaralhada. Clique em “Começar jogo”.');
+      }
+    });
+    document.getElementById('btnPlayAgain').addEventListener('click', restartGame);
+
+    setPlayerCount(2);
+    createQuestionSet();
+    state.currentQuestion = state.questions[0];
+    renderPlayers();
+    renderQuestion();
+    updateHeader();
+  </script>
+</body>
+</html>

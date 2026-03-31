@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opinion Spinner - Leaf Lesson 05</title>
+  <style>
+    :root {
+      --leaf-dark: #18392b;
+      --leaf: #2f6b4f;
+      --leaf-light: #4e9a73;
+      --leaf-pale: #eaf6ef;
+      --cream: #fffdf7;
+      --ink: #203028;
+      --muted: #61756a;
+      --gold: #f1c75b;
+      --gold-dark: #cc9d24;
+      --red: #d85b5b;
+      --blue: #dcecff;
+      --border: #d9e5dd;
+      --shadow: 0 14px 40px rgba(18, 45, 33, 0.16);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(241, 199, 91, 0.2), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(78, 154, 115, 0.2), transparent 30%),
+        linear-gradient(135deg, #f6fbf7 0%, #edf7f1 48%, #e4f1e8 100%);
+      min-height: 100vh;
+      color: var(--ink);
+      padding: 24px 16px 40px;
+    }
+
+    .app {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--leaf-dark), var(--leaf));
+      color: #fff;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      top: -80px;
+      right: -40px;
+    }
+
+    .eyebrow {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: #d7f1e3;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.55;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 18px;
+    }
+
+    .panel,
+    .topic-card,
+    .history-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .panel {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .panel h2,
+    .topic-card h2,
+    .history-card h2 {
+      font-size: 1rem;
+      color: var(--leaf);
+      margin-bottom: 10px;
+    }
+
+    .small {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: var(--leaf-pale);
+      color: var(--leaf);
+      font-weight: 700;
+      font-size: 0.84rem;
+      border: 1px solid #cfe5d7;
+    }
+
+    .player-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .player-list input {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      outline: none;
+      background: var(--cream);
+    }
+
+    .player-list input:focus {
+      border-color: var(--leaf-light);
+      box-shadow: 0 0 0 4px rgba(78, 154, 115, 0.12);
+    }
+
+    .controls {
+      display: grid;
+      gap: 10px;
+    }
+
+    button {
+      border: none;
+      border-radius: 14px;
+      padding: 14px 16px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.12s ease, opacity 0.12s ease, background 0.2s ease;
+    }
+
+    button:hover { transform: translateY(-1px); }
+    button:active { transform: translateY(1px); }
+
+    .primary {
+      background: linear-gradient(135deg, var(--gold), #ffd977);
+      color: #3e2f07;
+    }
+
+    .secondary {
+      background: var(--leaf);
+      color: #fff;
+    }
+
+    .ghost {
+      background: #edf5f0;
+      color: var(--leaf);
+      border: 1px solid var(--border);
+    }
+
+    .stage {
+      display: grid;
+      gap: 18px;
+    }
+
+    .status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .turn-badge,
+    .round-badge,
+    .timer-badge {
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .turn-badge {
+      background: #e8f5ec;
+      color: var(--leaf);
+      border: 1px solid #cfe5d7;
+    }
+
+    .round-badge {
+      background: #fff4d7;
+      color: #876206;
+      border: 1px solid #f0dc9a;
+    }
+
+    .timer-badge {
+      background: var(--leaf-dark);
+      color: #fff;
+      min-width: 94px;
+      text-align: center;
+    }
+
+    .timer-badge.danger {
+      background: var(--red);
+    }
+
+    .topic-card {
+      padding: 24px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .topic-topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .tag {
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .tag.topic { background: #e8f3ff; color: #335b8d; }
+    .tag.level { background: #edf8ef; color: #2d774a; }
+
+    .topic-title {
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      line-height: 1.08;
+      color: var(--leaf-dark);
+    }
+
+    .prompt {
+      font-size: 1.06rem;
+      line-height: 1.7;
+      color: #31443a;
+      background: #f8fcf9;
+      border: 1px solid #e5efe8;
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .box {
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .box h3 {
+      font-size: 0.95rem;
+      color: var(--leaf);
+      margin-bottom: 10px;
+    }
+
+    .box ul {
+      padding-left: 18px;
+      display: grid;
+      gap: 8px;
+      color: #385045;
+      line-height: 1.45;
+    }
+
+    .box li strong {
+      color: var(--leaf-dark);
+    }
+
+    .hint-line {
+      font-size: 0.94rem;
+      color: #4d6057;
+      line-height: 1.6;
+      background: var(--blue);
+      border: 1px solid #c7ddff;
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .actions-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .history-card {
+      padding: 20px;
+    }
+
+    .history-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .history-item {
+      background: #f6faf7;
+      border: 1px solid #e2ede5;
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+
+    .history-item strong {
+      color: var(--leaf-dark);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .history-item span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      .panel,
+      .topic-card,
+      .history-card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <section class="hero">
+      <div class="eyebrow">Leaf Lesson 05 Game</div>
+      <h1>Opinion Spinner</h1>
+      <p>
+        Sorteie temas do dia a dia, responda com sua opinião e use as dicas de vocabulário
+        para praticar concordar, discordar e justificar ideias com mais naturalidade.
+      </p>
+    </section>
+
+    <div class="layout">
+      <aside class="panel">
+        <section>
+          <h2>How to Play</h2>
+          <p class="small">
+            Clique em <strong>Sort New Topic</strong>. O jogador da vez responde usando
+            uma opinião, uma razão e, se quiser, uma frase de acordo ou desacordo.
+          </p>
+        </section>
+
+        <section>
+          <h2>Speaking Formula</h2>
+          <div class="chips">
+            <div class="chip">In my opinion...</div>
+            <div class="chip">I agree because...</div>
+            <div class="chip">I disagree because...</div>
+            <div class="chip">On the other hand...</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Players</h2>
+          <div class="player-list">
+            <input id="player1" type="text" placeholder="Player 1" value="Player 1" />
+            <input id="player2" type="text" placeholder="Player 2" value="Player 2" />
+            <input id="player3" type="text" placeholder="Player 3" value="Player 3" />
+            <input id="player4" type="text" placeholder="Player 4" value="Player 4" />
+          </div>
+        </section>
+
+        <section class="controls">
+          <button class="primary" id="drawBtn">Sort New Topic</button>
+          <button class="secondary" id="nextPlayerBtn">Next Player</button>
+          <button class="ghost" id="timerBtn">Start 60s Timer</button>
+          <button class="ghost" id="resetBtn">Reset Deck</button>
+        </section>
+      </aside>
+
+      <main class="stage">
+        <div class="status-bar">
+          <div class="turn-badge" id="turnBadge">Turn: Player 1</div>
+          <div class="round-badge" id="roundBadge">Round 0</div>
+          <div class="timer-badge" id="timerBadge">60s</div>
+        </div>
+
+        <section class="topic-card">
+          <div class="topic-topline">
+            <div class="tag topic" id="topicCategory">Daily Life</div>
+            <div class="tag level">Opinion Practice</div>
+          </div>
+
+          <div>
+            <h2 class="topic-title" id="topicTitle">Press “Sort New Topic” to begin</h2>
+          </div>
+
+          <div class="prompt" id="topicPrompt">
+            The topic, opinion question, and conversation support will appear here.
+          </div>
+
+          <div class="grid">
+            <div class="box">
+              <h3>Vocabulary Tips</h3>
+              <ul id="vocabList"></ul>
+            </div>
+
+            <div class="box">
+              <h3>Useful Opinion Phrases</h3>
+              <ul id="phraseList"></ul>
+            </div>
+          </div>
+
+          <div class="hint-line" id="challengeLine">
+            Challenge: give your opinion, add one reason, and mention one opposite idea.
+          </div>
+
+          <div class="actions-row">
+            <button class="primary" id="drawBtnInline">Sort Another Topic</button>
+            <button class="secondary" id="nextPlayerBtnInline">Pass Turn</button>
+          </div>
+        </section>
+
+        <section class="history-card">
+          <h2>Topic History</h2>
+          <ul class="history-list" id="historyList">
+            <li class="history-item">
+              <strong>No topics yet</strong>
+              <span>Use the sorter to start the conversation round.</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const topics = [
+      {
+        category: "Food",
+        title: "Cooking at home vs eating out",
+        prompt: "Which do you prefer in daily life: cooking at home or eating at restaurants? Why?",
+        vocab: ["homemade meal", "cheap", "healthy", "convenient", "time-consuming"],
+        phrases: ["In my opinion...", "I prefer...", "I agree that..., but...", "On the other hand..."],
+        challenge: "Mention price, time, and health in your answer."
+      },
+      {
+        category: "Technology",
+        title: "Using phones during meals",
+        prompt: "Do you think people should use their phones while eating with family or friends?",
+        vocab: ["distracting", "rude", "habit", "quality time", "attention"],
+        phrases: ["I believe that...", "I'm not sure I agree...", "That's true, but...", "Personally..."],
+        challenge: "Give one positive point and one negative point."
+      },
+      {
+        category: "Routine",
+        title: "Waking up early",
+        prompt: "Is waking up early always a good idea? Why or why not?",
+        vocab: ["productive", "tired", "routine", "energy", "schedule"],
+        phrases: ["From my perspective...", "I think...", "I disagree because...", "The main reason is that..."],
+        challenge: "Use an example from work, school, or weekends."
+      },
+      {
+        category: "Transport",
+        title: "Public transport vs car",
+        prompt: "Which is better for everyday life in your city: public transport or using a car?",
+        vocab: ["traffic", "expensive", "comfortable", "fast", "pollution"],
+        phrases: ["In my opinion...", "I completely agree that...", "I see it differently...", "For example..."],
+        challenge: "Talk about cost and comfort."
+      },
+      {
+        category: "Health",
+        title: "Exercising every day",
+        prompt: "Do you think everyone needs to exercise every day to be healthy?",
+        vocab: ["healthy", "stress", "energy", "balance", "habit"],
+        phrases: ["I believe...", "That may be true, but...", "I partly agree...", "This is why..."],
+        challenge: "Explain what is realistic in daily life."
+      },
+      {
+        category: "Entertainment",
+        title: "Series vs movies",
+        prompt: "What do you enjoy more: watching series or movies? Why?",
+        vocab: ["story", "episode", "boring", "exciting", "character"],
+        phrases: ["Personally...", "I prefer...", "I agree with that point...", "However..."],
+        challenge: "Mention time, story, and attention."
+      },
+      {
+        category: "Study",
+        title: "Studying alone or with others",
+        prompt: "Is it better to study alone or with friends?",
+        vocab: ["focus", "distraction", "helpful", "discussion", "concentrate"],
+        phrases: ["From my point of view...", "I don't think so...", "I agree to some extent, but...", "The main reason is that..."],
+        challenge: "Compare both options before choosing one."
+      },
+      {
+        category: "Shopping",
+        title: "Online shopping",
+        prompt: "Do you think online shopping is better than going to physical stores?",
+        vocab: ["delivery", "price", "easy", "try on", "return"],
+        phrases: ["I think that...", "On the other hand...", "I disagree because...", "For me..."],
+        challenge: "Say one advantage and one problem."
+      },
+      {
+        category: "Lifestyle",
+        title: "Living alone",
+        prompt: "Is living alone a good experience for most adults?",
+        vocab: ["freedom", "responsibility", "lonely", "independent", "expensive"],
+        phrases: ["In my opinion...", "I see your point, but...", "I completely agree...", "Because..."],
+        challenge: "Talk about freedom and responsibility."
+      },
+      {
+        category: "School",
+        title: "Homework",
+        prompt: "Do students need homework every day? Why or why not?",
+        vocab: ["practice", "pressure", "useful", "tired", "improve"],
+        phrases: ["I believe that...", "I'm not sure I agree...", "That's a fair point...", "For example..."],
+        challenge: "Mention learning and free time."
+      },
+      {
+        category: "Social Life",
+        title: "Social media every day",
+        prompt: "Is using social media every day a good thing?",
+        vocab: ["addictive", "useful", "communication", "waste of time", "news"],
+        phrases: ["Personally...", "I disagree because...", "That may be true, but...", "From my perspective..."],
+        challenge: "Balance communication and distraction."
+      },
+      {
+        category: "Work",
+        title: "Working from home",
+        prompt: "Do you think working from home is better than working in an office?",
+        vocab: ["flexible", "productive", "commute", "quiet", "teamwork"],
+        phrases: ["I think...", "I agree with that idea...", "I see it differently...", "This is why..."],
+        challenge: "Talk about time and communication."
+      },
+      {
+        category: "Travel",
+        title: "Traveling with a plan",
+        prompt: "Is it better to plan a trip carefully or be spontaneous?",
+        vocab: ["organized", "surprise", "relaxed", "problem", "budget"],
+        phrases: ["In my opinion...", "I prefer...", "On the other hand...", "The main reason is that..."],
+        challenge: "Include money and stress in your answer."
+      },
+      {
+        category: "Home",
+        title: "Keeping the house very organized",
+        prompt: "Is it important to keep the house organized all the time?",
+        vocab: ["clean", "messy", "comfortable", "stressful", "routine"],
+        phrases: ["I believe...", "I partly agree...", "I don't think so...", "For example..."],
+        challenge: "Mention comfort and daily routine."
+      }
+    ];
+
+    const playerInputs = [
+      document.getElementById("player1"),
+      document.getElementById("player2"),
+      document.getElementById("player3"),
+      document.getElementById("player4")
+    ];
+
+    const turnBadge = document.getElementById("turnBadge");
+    const roundBadge = document.getElementById("roundBadge");
+    const timerBadge = document.getElementById("timerBadge");
+    const topicCategory = document.getElementById("topicCategory");
+    const topicTitle = document.getElementById("topicTitle");
+    const topicPrompt = document.getElementById("topicPrompt");
+    const vocabList = document.getElementById("vocabList");
+    const phraseList = document.getElementById("phraseList");
+    const challengeLine = document.getElementById("challengeLine");
+    const historyList = document.getElementById("historyList");
+
+    const drawButtons = [
+      document.getElementById("drawBtn"),
+      document.getElementById("drawBtnInline")
+    ];
+    const nextButtons = [
+      document.getElementById("nextPlayerBtn"),
+      document.getElementById("nextPlayerBtnInline")
+    ];
+
+    const timerBtn = document.getElementById("timerBtn");
+    const resetBtn = document.getElementById("resetBtn");
+
+    let playerIndex = 0;
+    let round = 0;
+    let availableTopics = [...topics];
+    let timerId = null;
+    let secondsLeft = 60;
+
+    function getPlayers() {
+      return playerInputs
+        .map((input, index) => input.value.trim() || `Player ${index + 1}`)
+        .filter(Boolean);
+    }
+
+    function updateTurnLabel() {
+      const players = getPlayers();
+      if (!players.length) {
+        turnBadge.textContent = "Turn: Player 1";
+        return;
+      }
+
+      if (playerIndex >= players.length) {
+        playerIndex = 0;
+      }
+
+      turnBadge.textContent = `Turn: ${players[playerIndex]}`;
+    }
+
+    function renderList(element, items) {
+      element.innerHTML = "";
+
+      items.forEach((item) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${item}</strong>`;
+        element.appendChild(li);
+      });
+    }
+
+    function renderPhraseList(element, items) {
+      element.innerHTML = "";
+
+      items.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        element.appendChild(li);
+      });
+    }
+
+    function addHistory(topic, currentPlayer) {
+      if (historyList.children.length === 1 && historyList.children[0].textContent.includes("No topics yet")) {
+        historyList.innerHTML = "";
+      }
+
+      const item = document.createElement("li");
+      item.className = "history-item";
+      item.innerHTML = `
+        <strong>${topic.title}</strong>
+        <span>${currentPlayer} • ${topic.category} • ${topic.prompt}</span>
+      `;
+      historyList.prepend(item);
+    }
+
+    function stopTimer() {
+      if (timerId) {
+        clearInterval(timerId);
+        timerId = null;
+      }
+    }
+
+    function setTimerVisual() {
+      timerBadge.textContent = `${secondsLeft}s`;
+      timerBadge.classList.toggle("danger", secondsLeft <= 10);
+      timerBtn.textContent = timerId ? "Stop Timer" : "Start 60s Timer";
+    }
+
+    function resetTimer() {
+      stopTimer();
+      secondsLeft = 60;
+      setTimerVisual();
+    }
+
+    function toggleTimer() {
+      if (timerId) {
+        stopTimer();
+        setTimerVisual();
+        return;
+      }
+
+      timerId = setInterval(() => {
+        secondsLeft -= 1;
+        setTimerVisual();
+
+        if (secondsLeft <= 0) {
+          stopTimer();
+          timerBadge.textContent = "Time!";
+          timerBadge.classList.add("danger");
+          timerBtn.textContent = "Start 60s Timer";
+        }
+      }, 1000);
+
+      setTimerVisual();
+    }
+
+    function drawTopic() {
+      if (availableTopics.length === 0) {
+        availableTopics = [...topics];
+      }
+
+      const randomIndex = Math.floor(Math.random() * availableTopics.length);
+      const topic = availableTopics.splice(randomIndex, 1)[0];
+      const players = getPlayers();
+      const currentPlayer = players[playerIndex] || "Player 1";
+
+      round += 1;
+      roundBadge.textContent = `Round ${round}`;
+      topicCategory.textContent = topic.category;
+      topicTitle.textContent = topic.title;
+      topicPrompt.textContent = topic.prompt;
+      challengeLine.textContent = `Challenge: ${topic.challenge}`;
+
+      renderList(vocabList, topic.vocab);
+      renderPhraseList(phraseList, topic.phrases);
+      addHistory(topic, currentPlayer);
+      resetTimer();
+      updateTurnLabel();
+    }
+
+    function nextPlayer() {
+      const players = getPlayers();
+      if (!players.length) {
+        playerIndex = 0;
+      } else {
+        playerIndex = (playerIndex + 1) % players.length;
+      }
+      updateTurnLabel();
+      resetTimer();
+    }
+
+    function resetDeck() {
+      availableTopics = [...topics];
+      round = 0;
+      roundBadge.textContent = "Round 0";
+      topicCategory.textContent = "Daily Life";
+      topicTitle.textContent = "Press “Sort New Topic” to begin";
+      topicPrompt.textContent = "The topic, opinion question, and conversation support will appear here.";
+      challengeLine.textContent = "Challenge: give your opinion, add one reason, and mention one opposite idea.";
+      vocabList.innerHTML = "";
+      phraseList.innerHTML = "";
+      historyList.innerHTML = `
+        <li class="history-item">
+          <strong>No topics yet</strong>
+          <span>Use the sorter to start the conversation round.</span>
+        </li>
+      `;
+      playerIndex = 0;
+      updateTurnLabel();
+      resetTimer();
+    }
+
+    drawButtons.forEach((button) => button.addEventListener("click", drawTopic));
+    nextButtons.forEach((button) => button.addEventListener("click", nextPlayer));
+    timerBtn.addEventListener("click", toggleTimer);
+    resetBtn.addEventListener("click", resetDeck);
+    playerInputs.forEach((input) => input.addEventListener("input", updateTurnLabel));
+
+    updateTurnLabel();
+    resetTimer();
+  </script>
+</body>
+</html>

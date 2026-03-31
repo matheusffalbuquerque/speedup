@@ -808,6 +808,24 @@ const slidesList = {
             description: 'Vocabulary related to appearance and personality traits',
             pdfFile: 'aulas/Root/slide/Root_Lesson05.pdf'
         },
+        {
+            id: 6,
+            title: 'Lesson 06 - Future Plans',
+            description: 'Future tenses and expressions for talking about plans',
+            pdfFile: 'aulas/Root/slide/Root_Lesson06.pdf'
+        },
+        {
+            id: 7,
+            title: 'Lesson 07 - Health & Lifestyle',
+            description: 'Health vocabulary and talking about habits and lifestyle',
+            pdfFile: 'aulas/Root/slide/Root_Lesson07.pdf'
+        },
+        {
+            id: 8,
+            title: 'Lesson 08 - Shopping & Money',
+            description: 'Shopping vocabulary and expressions for buying and selling',
+            pdfFile: 'aulas/Root/slide/Root_Lesson08.pdf'
+        }
     ],
     leaf: [
         {
