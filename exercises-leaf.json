@@ -1,664 +1,957 @@
 {
-  "lesson": 4,
+  "lesson": 5,
   "level": "leaf",
-  "topic": "Experiences & Present Perfect",
+  "topic": "Expressing Opinions & Agreeing/Disagreeing",
   "monday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does the word 'experience' mean?",
-      "options": ["Something that happens to you and teaches you something", "A plan you make for the future", "A mistake you never repeat", "A place you want to visit"],
-      "correctAnswer": "Something that happens to you and teaches you something"
+      "question": "What does 'opinion' mean?",
+      "options": [
+        "A proven fact about something",
+        "A personal view or belief about something",
+        "A question you ask someone",
+        "A rule that everyone must follow"
+      ],
+      "correctAnswer": "A personal view or belief about something"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'ever' mean in 'Have you ever tried Japanese food?'",
-      "options": ["At any point in your life", "Only recently", "Every single day", "A very long time ago"],
-      "correctAnswer": "At any point in your life"
+      "question": "What does 'agree' mean?",
+      "options": [
+        "To have the same view or feeling as someone else",
+        "To argue with someone about something",
+        "To change your mind about something",
+        "To explain your idea in detail"
+      ],
+      "correctAnswer": "To have the same view or feeling as someone else"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'never' mean in a Present Perfect sentence?",
-      "options": ["Not at any time in your life", "Not today", "Not very often", "Not recently"],
-      "correctAnswer": "Not at any time in your life"
+      "question": "What does 'disagree' mean?",
+      "options": [
+        "To have the same opinion as someone",
+        "To repeat what someone said",
+        "To have a different opinion from someone",
+        "To ask someone to explain better"
+      ],
+      "correctAnswer": "To have a different opinion from someone"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'just' mean in 'I have just arrived'?",
-      "options": ["A very short time ago", "A long time ago", "Not yet", "Many times before"],
-      "correctAnswer": "A very short time ago"
+      "question": "What does 'perspective' mean?",
+      "options": [
+        "A way of thinking about or seeing something based on your experience",
+        "A type of question used in debates",
+        "A formal written opinion",
+        "A word used only in academic writing"
+      ],
+      "correctAnswer": "A way of thinking about or seeing something based on your experience"
     },
     {
       "id": 5,
       "type": "vocabulary",
-      "question": "What does 'recently' mean?",
-      "options": ["Not long ago, in the near past", "A very long time ago", "In the future", "Every day"],
-      "correctAnswer": "Not long ago, in the near past"
+      "question": "What does 'argument' mean in an academic or discussion context?",
+      "options": [
+        "A fight or physical conflict between people",
+        "A reason or set of reasons given to support a point of view",
+        "A question that has no answer",
+        "A sentence with no main verb"
+      ],
+      "correctAnswer": "A reason or set of reasons given to support a point of view"
     },
     {
       "id": 6,
       "type": "vocabulary",
-      "question": "What does 'so far' mean in 'I have visited three countries so far'?",
-      "options": ["Up to this point in time", "Very far from here", "A long time ago", "At the end"],
-      "correctAnswer": "Up to this point in time"
+      "question": "What does 'point of view' mean?",
+      "options": [
+        "The place where you are standing",
+        "A type of grammar structure",
+        "A particular way of thinking about something",
+        "A sentence that starts with 'I'"
+      ],
+      "correctAnswer": "A particular way of thinking about something"
     },
     {
       "id": 7,
       "type": "vocabulary",
-      "question": "What does 'up to now' mean?",
-      "options": ["Until the present moment", "Very soon", "At any time", "Only once"],
-      "correctAnswer": "Until the present moment"
+      "question": "What does 'believe' mean?",
+      "options": [
+        "To know something for certain based on evidence",
+        "To think that something is true without absolute proof",
+        "To change your mind after discussion",
+        "To understand something fully"
+      ],
+      "correctAnswer": "To think that something is true without absolute proof"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence uses the Present Perfect correctly to talk about a life experience?",
-      "options": ["I have been to Paris.", "I was been to Paris.", "I have went to Paris.", "I did go to Paris."],
-      "correctAnswer": "I have been to Paris."
+      "question": "Which phrase is used to introduce a personal opinion?",
+      "options": [
+        "In my opinion, ...",
+        "As a matter of fact, ...",
+        "According to the news, ...",
+        "It is known that ..."
+      ],
+      "correctAnswer": "In my opinion, ..."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which question correctly asks about a life experience?",
-      "options": ["Have you ever tried surfing?", "Did you ever have tried surfing?", "Have you ever try surfing?", "Did you have ever tried surfing?"],
-      "correctAnswer": "Have you ever tried surfing?"
+      "question": "Which of the following is an opinion phrase?",
+      "options": [
+        "I believe that technology improves education.",
+        "Technology was invented in the 20th century.",
+        "Many people use technology every day.",
+        "Technology includes computers and phones."
+      ],
+      "correctAnswer": "I believe that technology improves education."
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Which is the correct short answer to 'Have you ever lived abroad?'",
-      "options": ["Yes, I have.", "Yes, I did.", "Yes, I was.", "Yes, I do."],
-      "correctAnswer": "Yes, I have."
+      "question": "Which sentence correctly expresses an opinion?",
+      "options": [
+        "From my perspective, remote work is more productive.",
+        "From my perspective remote work is more productive",
+        "In my opinion remote work is more productively.",
+        "I perspective think remote work is more productive."
+      ],
+      "correctAnswer": "From my perspective, remote work is more productive."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Have you _____ climbed a mountain?",
-      "correctAnswer": "ever"
+      "type": "multiple-choice",
+      "question": "Which phrase means 'In my opinion' in a more formal way?",
+      "options": [
+        "I guess ...",
+        "As far as I'm concerned, ...",
+        "I think maybe ...",
+        "It's possible that ..."
+      ],
+      "correctAnswer": "As far as I'm concerned, ..."
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "She has _____ tried skydiving. She's too afraid.",
-      "correctAnswer": "never"
+      "question": "Complete: '_____ my opinion, social media has both advantages and disadvantages.'",
+      "correctAnswer": "In"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "I have _____ (see) that movie. It was amazing!",
-      "correctAnswer": "seen"
+      "question": "Complete: 'I _____ that everyone should learn a second language.'",
+      "correctAnswer": "believe|think|feel"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "They have _____ (travel) to more than ten countries.",
-      "correctAnswer": "traveled|travelled"
+      "question": "Complete: 'From my _____, the city needs more public parks.'",
+      "correctAnswer": "perspective|point of view"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "My sister _____ a horse before. It was her first time.",
-      "correctAnswer": "has never ridden"
+      "type": "fill-blank",
+      "question": "Complete: 'As far as I'm _____, working from home is better for families.'",
+      "correctAnswer": "concerned"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "_____ you ever _____ a famous person?",
-      "correctAnswer": "have met"
+      "question": "'_____ my perspective, learning English opens many opportunities in life.'",
+      "correctAnswer": "From"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Você já experimentou comida indiana?'",
-      "correctAnswer": "have you ever tried indian food?"
+      "type": "complete",
+      "question": "She expressed her _____ clearly during the class debate.",
+      "correctAnswer": "opinion|point of view|perspective|argument"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Translate to English: 'Ele nunca andou de moto.'",
-      "correctAnswer": "he has never ridden a motorcycle"
+      "question": "Translate to English: 'Na minha opinião, a educação é muito importante.'",
+      "correctAnswer": "in my opinion, education is very important"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Eu já fui ao Rio de Janeiro.'",
-      "correctAnswer": "i have been to rio de janeiro|i have already been to rio de janeiro"
+      "question": "Translate to English: 'Eu acredito que o trabalho remoto é mais eficiente.'",
+      "correctAnswer": "i believe that remote work is more efficient"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["She has never eaten sushi.", "Have you ever met a celebrity?", "I have never been in Tokyo.", "He has ever tried bungee jumping."],
-      "correctAnswer": "He has ever tried bungee jumping."
+      "type": "translate",
+      "question": "Translate to English: 'Do meu ponto de vista, essa é uma boa ideia.'",
+      "correctAnswer": "from my point of view, that is a good idea"
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'already' express in a sentence like 'I have already eaten'?",
-      "options": ["Something happened before expected or before now", "Something has not happened yet", "Something happened a very long time ago", "Something will happen soon"],
-      "correctAnswer": "Something happened before expected or before now"
+      "question": "What does 'absolutely' mean when used to agree with someone?",
+      "options": [
+        "Maybe, I'm not sure",
+        "I completely agree, without any doubt",
+        "I understand but I disagree",
+        "That's an interesting point"
+      ],
+      "correctAnswer": "I completely agree, without any doubt"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'yet' express in 'I haven't finished yet'?",
-      "options": ["Something expected hasn't happened up to now", "Something happened earlier than expected", "Something that will never happen", "Something that happened just now"],
-      "correctAnswer": "Something expected hasn't happened up to now"
+      "question": "What does 'valid' mean when talking about an argument or opinion?",
+      "options": [
+        "Rude or disrespectful",
+        "Impossible to prove",
+        "Well-reasoned and acceptable",
+        "Based on feelings, not facts"
+      ],
+      "correctAnswer": "Well-reasoned and acceptable"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Where does 'already' usually go in an affirmative sentence?",
-      "options": ["Between 'have/has' and the past participle", "At the beginning of the sentence", "At the end of the sentence only", "After the subject"],
-      "correctAnswer": "Between 'have/has' and the past participle"
+      "question": "Which sentence expresses agreement?",
+      "options": [
+        "I couldn't agree more with your point.",
+        "I'm not sure that's right.",
+        "I see it differently.",
+        "I don't think so."
+      ],
+      "correctAnswer": "I couldn't agree more with your point."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Where does 'yet' usually go in a negative sentence?",
-      "options": ["At the end of the sentence", "Between 'haven't' and the past participle", "At the beginning of the sentence", "After the subject"],
-      "correctAnswer": "At the end of the sentence"
+      "question": "Which sentence expresses disagreement politely?",
+      "options": [
+        "You're completely wrong about that.",
+        "I see your point, but I disagree.",
+        "That's absolutely right!",
+        "I couldn't agree more."
+      ],
+      "correctAnswer": "I see your point, but I disagree."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'already' correctly?",
-      "options": ["I have already read that book.", "I already have read that book.", "I have read already that book.", "Already I have read that book."],
-      "correctAnswer": "I have already read that book."
+      "question": "What does 'I couldn't agree more.' mean?",
+      "options": [
+        "I partially agree with you.",
+        "I completely agree with you.",
+        "I don't agree with you at all.",
+        "I need more time to think."
+      ],
+      "correctAnswer": "I completely agree with you."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'yet' correctly?",
-      "options": ["She hasn't called me yet.", "She yet hasn't called me.", "She hasn't yet me called.", "She has called me yet."],
-      "correctAnswer": "She hasn't called me yet."
+      "question": "Which response best shows disagreement?",
+      "options": [
+        "Absolutely! That's a great point.",
+        "You're right, I agree completely.",
+        "I'm not sure about that. I think it depends.",
+        "Exactly! That's what I think too."
+      ],
+      "correctAnswer": "I'm not sure about that. I think it depends."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'just' correctly?",
-      "options": ["He has just finished his homework.", "He just has finished his homework.", "He has finished just his homework.", "Just he has finished his homework."],
-      "correctAnswer": "He has just finished his homework."
+      "question": "Which phrase introduces a contrasting opinion?",
+      "options": [
+        "On the other hand, ...",
+        "In addition, ...",
+        "For example, ...",
+        "As a result, ..."
+      ],
+      "correctAnswer": "On the other hand, ..."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which negative sentence is correct?",
-      "options": ["They haven't decided yet.", "They didn't have decided yet.", "They have not decided already.", "They haven't decide yet."],
-      "correctAnswer": "They haven't decided yet."
+      "question": "Which is the most polite way to disagree?",
+      "options": [
+        "That's wrong!",
+        "You don't know what you're talking about.",
+        "With all due respect, I see it differently.",
+        "No, you're incorrect."
+      ],
+      "correctAnswer": "With all due respect, I see it differently."
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "I have _____ seen this film. Let's watch something else.",
-      "correctAnswer": "already"
+      "type": "multiple-choice",
+      "question": "What does 'That's a fair point.' signal in a conversation?",
+      "options": [
+        "Disagreement with the speaker",
+        "Acknowledging that the other person made a good argument",
+        "Changing the subject",
+        "Asking for more information"
+      ],
+      "correctAnswer": "Acknowledging that the other person made a good argument"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Have you packed your bags _____?",
-      "correctAnswer": "yet"
+      "type": "multiple-choice",
+      "question": "Which phrase is used to agree strongly?",
+      "options": [
+        "I'm not entirely sure...",
+        "Exactly! That's what I think too.",
+        "Well, it depends on the situation.",
+        "I don't think that's right."
+      ],
+      "correctAnswer": "Exactly! That's what I think too."
     },
     {
       "id": 11,
       "type": "fill-blank",
-      "question": "She has _____ arrived. She's still on the way.",
-      "correctAnswer": "not|n't"
+      "question": "Complete: 'I _____ with you completely. That's a great idea.'",
+      "correctAnswer": "agree"
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "He has _____ (just) _____ (finish) the report.",
-      "correctAnswer": "just finished"
+      "question": "Complete: 'I see your point, _____ I still think there's a better solution.'",
+      "correctAnswer": "but"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "We haven't booked the hotel _____.",
-      "correctAnswer": "yet"
+      "question": "Complete: 'On the _____ hand, some people believe that technology creates more problems.'",
+      "correctAnswer": "other"
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "Don't tell me the ending! I _____ that series.",
-      "correctAnswer": "haven't watched yet|haven't finished yet"
+      "type": "fill-blank",
+      "question": "Complete: 'With all due _____, I don't think that argument is valid.'",
+      "correctAnswer": "respect"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "You don't need to remind him. He _____ about the meeting.",
-      "correctAnswer": "has already heard|already knows"
+      "type": "fill-blank",
+      "question": "Complete: 'That's a _____ point. I hadn't thought about it that way before.'",
+      "correctAnswer": "good|fair|valid|great"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Eu já terminei minha lição de casa.'",
-      "correctAnswer": "i have already finished my homework|i've already finished my homework"
+      "type": "complete",
+      "question": "'I couldn't _____ more. That is exactly what I was thinking.'",
+      "correctAnswer": "agree"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Ela ainda não respondeu o email.'",
-      "correctAnswer": "she hasn't replied to the email yet|she has not replied to the email yet"
+      "type": "complete",
+      "question": "I understand your opinion, _____ I have a different point of view.",
+      "correctAnswer": "but|however|although"
     },
     {
       "id": 18,
       "type": "translate",
-      "question": "Translate to English: 'Eles acabaram de chegar.'",
-      "correctAnswer": "they have just arrived|they've just arrived"
+      "question": "Translate to English: 'Eu concordo completamente com você.'",
+      "correctAnswer": "i completely agree with you|i agree with you completely"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Você já comprou os ingressos?'",
-      "correctAnswer": "have you already bought the tickets?|have you bought the tickets yet?"
+      "question": "Translate to English: 'Eu discordo. Acho que é mais complicado do que isso.'",
+      "correctAnswer": "i disagree. i think it is more complicated than that"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["I have already eaten lunch.", "She hasn't called me yet.", "Have you already finished?", "He has yet arrived."],
-      "correctAnswer": "He has yet arrived."
+      "type": "translate",
+      "question": "Translate to English: 'Por outro lado, há pessoas que pensam de forma diferente.'",
+      "correctAnswer": "on the other hand, there are people who think differently"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "When do we use the Simple Past instead of the Present Perfect?",
-      "options": ["When we mention a specific time in the past", "When we talk about life experiences in general", "When the action is still relevant now", "When we use 'ever' or 'never'"],
-      "correctAnswer": "When we mention a specific time in the past"
+      "question": "What does 'convince' mean?",
+      "options": [
+        "To make someone believe or agree with you",
+        "To repeat your opinion louder",
+        "To avoid expressing an opinion",
+        "To change the subject in a debate"
+      ],
+      "correctAnswer": "To make someone believe or agree with you"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Which sentence uses the correct tense?",
-      "options": ["I visited Rome last summer.", "I have visited Rome last summer.", "I have visited Rome in 2019.", "I did visit Rome last summer."],
-      "correctAnswer": "I visited Rome last summer."
+      "question": "Which sentence correctly uses 'I think that'?",
+      "options": [
+        "I think that public transport should be free.",
+        "I think that public transport should to be free.",
+        "I am thinking that public transport should free.",
+        "I think that public transport are free."
+      ],
+      "correctAnswer": "I think that public transport should be free."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence uses the correct tense?",
-      "options": ["She has tried sushi once in her life.", "She tried sushi once in her life.", "She tried sushi last week.", "She has tried sushi last week."],
-      "correctAnswer": "She has tried sushi once in her life."
+      "question": "Which sentence correctly uses 'I believe'?",
+      "options": [
+        "I believe learning languages is a great skill.",
+        "I believe to learn languages is a great skill.",
+        "I am believe that languages is a great skill.",
+        "I believe languages are great skill."
+      ],
+      "correctAnswer": "I believe learning languages is a great skill."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Choose the correct tense: 'I _____ that museum in 2021.'",
-      "options": ["visited", "have visited", "have been visiting", "was visiting"],
-      "correctAnswer": "visited"
+      "question": "Choose the correct sentence with 'In my opinion':",
+      "options": [
+        "In my opinion, the movie was too long.",
+        "In my opinion the movie it was too long.",
+        "In my opinion, the movie were too long.",
+        "In my opinion: the movie too long."
+      ],
+      "correctAnswer": "In my opinion, the movie was too long."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Choose the correct tense: 'I _____ that museum, but I don't remember when.'",
-      "options": ["have visited", "visited", "was visiting", "did visit"],
-      "correctAnswer": "have visited"
+      "question": "Which structure is used to express a personal opinion?",
+      "options": [
+        "As far as I'm concerned, ...",
+        "According to scientists, ...",
+        "It has been proven that ...",
+        "Research shows that ..."
+      ],
+      "correctAnswer": "As far as I'm concerned, ..."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["Did you ever try bungee jumping?", "Have you ever tried bungee jumping?", "Have you ever try bungee jumping?", "Did you have ever tried bungee jumping?"],
-      "correctAnswer": "Have you ever tried bungee jumping?"
+      "question": "Which word CANNOT be used to introduce an opinion?",
+      "options": [
+        "believe",
+        "think",
+        "feel",
+        "drive"
+      ],
+      "correctAnswer": "drive"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["When did you go to London?", "When have you gone to London?", "When have you been to London?", "When did you been to London?"],
-      "correctAnswer": "When did you go to London?"
+      "question": "Which sentence uses an opinion phrase incorrectly?",
+      "options": [
+        "In my opinion, reading books is better than watching TV.",
+        "I believe that exercise is important for health.",
+        "From my perspective, the city needs more green areas.",
+        "In my opinion of the weather is nice today."
+      ],
+      "correctAnswer": "In my opinion of the weather is nice today."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Someone says 'I have been to Japan.' You want to know WHEN. What do you ask?",
-      "options": ["When did you go?", "When have you gone?", "When were you going?", "When did you been?"],
-      "correctAnswer": "When did you go?"
+      "question": "What does 'I feel that ...' signal?",
+      "options": [
+        "A scientific fact",
+        "A personal emotional belief or opinion",
+        "Something that someone else said",
+        "A neutral description"
+      ],
+      "correctAnswer": "A personal emotional belief or opinion"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "I _____ (see) that movie last night. It was fantastic.",
-      "correctAnswer": "saw"
+      "type": "multiple-choice",
+      "question": "Which phrase acknowledges the other side before disagreeing?",
+      "options": [
+        "I see your point, but ...",
+        "You are wrong because ...",
+        "That's absolutely right.",
+        "I couldn't agree more."
+      ],
+      "correctAnswer": "I see your point, but ..."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "She _____ (live) in Canada for two years when she was a child.",
-      "correctAnswer": "lived"
+      "type": "multiple-choice",
+      "question": "Which option correctly disagrees with: 'I think social media is great.'?",
+      "options": [
+        "I don't think so. It can be harmful to mental health.",
+        "I couldn't agree more. Social media is wonderful.",
+        "Absolutely! I use it every day.",
+        "That's true. I totally agree."
+      ],
+      "correctAnswer": "I don't think so. It can be harmful to mental health."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "He _____ (never / try) Thai food. He should give it a chance.",
-      "correctAnswer": "has never tried"
+      "type": "multiple-choice",
+      "question": "Which expression is used to soften a disagreement?",
+      "options": [
+        "That may be true, but ...",
+        "You're completely wrong!",
+        "I totally agree!",
+        "Exactly right!"
+      ],
+      "correctAnswer": "That may be true, but ..."
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "They _____ (meet) for the first time at a conference in 2020.",
-      "correctAnswer": "met"
+      "type": "multiple-choice",
+      "question": "Which sentence shows a balanced opinion?",
+      "options": [
+        "Technology has advantages, but it also has disadvantages.",
+        "Technology is always good.",
+        "Technology is always bad.",
+        "Technology has nothing to do with education."
+      ],
+      "correctAnswer": "Technology has advantages, but it also has disadvantages."
     },
     {
       "id": 13,
-      "type": "complete",
-      "question": "A: Have you ever been to Florianópolis? B: Yes! I _____ there in 2022 with my family.",
-      "correctAnswer": "went|traveled|visited"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ that people should exercise at least three times a week.'",
+      "correctAnswer": "think|believe|feel"
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "I _____ a few times, but never professionally.",
-      "correctAnswer": "have gone camping|have been camping|have camped"
+      "type": "fill-blank",
+      "question": "Complete: 'That _____ be true, but I still think we need to consider other options.'",
+      "correctAnswer": "may"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate to English: 'Eu fui a São Paulo no ano passado.' (use Simple Past)",
-      "correctAnswer": "i went to são paulo last year|i went to sao paulo last year|i traveled to são paulo last year"
+      "type": "fill-blank",
+      "question": "Complete: '_____ my perspective, the government should invest more in education.'",
+      "correctAnswer": "From"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Eu já fui a São Paulo.' (use Present Perfect)",
-      "correctAnswer": "i have been to são paulo|i have been to sao paulo|i've been to são paulo"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ your point, but I see the situation differently.'",
+      "correctAnswer": "see|understand|get"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Quando você foi para a Europa?'",
-      "correctAnswer": "when did you go to europe?"
+      "type": "complete",
+      "question": "In my opinion, _____ should be taught in every school.",
+      "correctAnswer": "English|music|art|sports|financial education"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Which pair of sentences is both correct?",
-      "options": ["I have been there last year. / I went there once.", "I went there last year. / I have been there once.", "I have went there last year. / I been there once.", "I went there last year. / I have gone there once."],
-      "correctAnswer": "I went there last year. / I have been there once."
+      "type": "complete",
+      "question": "That's a _____ argument. I hadn't considered that before.",
+      "correctAnswer": "good|valid|strong|fair"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["She worked at that company in 2018.", "I have tried sushi three times.", "He has gone to London last year.", "They have never seen snow."],
-      "correctAnswer": "He has gone to London last year."
+      "type": "translate",
+      "question": "Translate to English: 'Do meu ponto de vista, as crianças assistem televisão demais.'",
+      "correctAnswer": "from my point of view, children watch too much television"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "What is wrong with this sentence: 'Have you seen that film yesterday?'",
-      "options": ["'Yesterday' is a specific past time, so we need Simple Past.", "The verb 'seen' is wrong — it should be 'saw'.", "The auxiliary 'have' is wrong here.", "Nothing — the sentence is correct."],
-      "correctAnswer": "'Yesterday' is a specific past time, so we need Simple Past."
+      "type": "translate",
+      "question": "Translate to English: 'Entendo o seu ponto, mas discordo.'",
+      "correctAnswer": "i understand your point, but i disagree|i see your point, but i disagree"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'so far' indicate in 'I have read five chapters so far'?",
-      "options": ["The action has happened up to the present moment and may continue", "The action is completely finished", "The action happened only once", "The action will happen soon"],
-      "correctAnswer": "The action has happened up to the present moment and may continue"
+      "question": "What does 'neutral' mean in a debate context?",
+      "options": [
+        "Strongly in favor of one side",
+        "Not supporting either side; unbiased",
+        "Completely against an idea",
+        "Giving a very long opinion"
+      ],
+      "correctAnswer": "Not supporting either side; unbiased"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'up to now' mean in context?",
-      "options": ["From the past until the present moment", "Only in the future", "A long time ago", "At a specific moment in the past"],
-      "correctAnswer": "From the past until the present moment"
+      "question": "What does 'acknowledge' mean when responding to someone's opinion?",
+      "options": [
+        "To completely reject what someone said",
+        "To recognize or accept the truth of what someone said",
+        "To repeat someone's opinion back to them",
+        "To change the topic of a conversation"
+      ],
+      "correctAnswer": "To recognize or accept the truth of what someone said"
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'so far' correctly?",
-      "options": ["I have learned a lot so far in this course.", "I learned a lot so far in this course.", "I so far have learned a lot in this course.", "So far I learned a lot in this course."],
-      "correctAnswer": "I have learned a lot so far in this course."
+      "question": "Which sentence correctly responds to: 'I think we should work less.'?",
+      "options": [
+        "I agree. Working less could improve our well-being.",
+        "I agrees. Working less could improve our well-being.",
+        "I agreeing with you. Working less could improve our well-being.",
+        "I am agree. Working less could improve our well-being."
+      ],
+      "correctAnswer": "I agree. Working less could improve our well-being."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'recently' correctly?",
-      "options": ["She has recently started learning guitar.", "She recently started learning guitar.", "She has started recently learning guitar.", "She has started learning guitar recently."],
-      "correctAnswer": "She has recently started learning guitar."
+      "question": "Which is NOT a phrase used to disagree?",
+      "options": [
+        "I don't think so.",
+        "I see it differently.",
+        "I'm not convinced.",
+        "I couldn't agree more."
+      ],
+      "correctAnswer": "I couldn't agree more."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["He has gained a lot of experience so far.", "He gained a lot of experience so far.", "He has gain a lot of experience so far.", "He have gained a lot of experience so far."],
-      "correctAnswer": "He has gained a lot of experience so far."
+      "question": "Which is NOT a phrase used to agree?",
+      "options": [
+        "That's true.",
+        "Absolutely!",
+        "I'm not sure about that.",
+        "You're right."
+      ],
+      "correctAnswer": "I'm not sure about that."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence best describes something that has changed up to now?",
-      "options": ["Technology has changed a lot up to now.", "Technology changed a lot up to now.", "Technology has change a lot up to now.", "Technology had changed a lot up to now."],
-      "correctAnswer": "Technology has changed a lot up to now."
+      "question": "In which situation would you say 'I see your point, but...'?",
+      "options": [
+        "When you completely agree with someone",
+        "When you want to end the conversation",
+        "When you partially agree but want to offer a different view",
+        "When you don't understand what the person said"
+      ],
+      "correctAnswer": "When you partially agree but want to offer a different view"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["I have recently moved to a new apartment.", "I have moved recently to a new apartment.", "I recently have moved to a new apartment.", "Recently I moved to a new apartment."],
-      "correctAnswer": "I have recently moved to a new apartment."
+      "question": "Which sentence is a correct example of disagreement using 'however'?",
+      "options": [
+        "Solar energy is clean. However, it can be expensive to install.",
+        "Solar energy is clean, however is expensive to install.",
+        "However solar energy is clean, expensive.",
+        "Solar energy is clean. It however expensive."
+      ],
+      "correctAnswer": "Solar energy is clean. However, it can be expensive to install."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which question is correct?",
-      "options": ["What have you learned so far?", "What did you learn so far?", "What you have learned so far?", "What have you learned yet?"],
-      "correctAnswer": "What have you learned so far?"
+      "question": "Which sentence uses 'although' correctly to show a contrasting opinion?",
+      "options": [
+        "Although I understand your view, I think differently.",
+        "Although I understand your view but I think differently.",
+        "I understand your view, although but I think differently.",
+        "Although, I understand your view."
+      ],
+      "correctAnswer": "Although I understand your view, I think differently."
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "We have completed five lessons _____ _____.",
-      "correctAnswer": "so far"
+      "type": "multiple-choice",
+      "question": "What is the function of 'On the other hand' in a discussion?",
+      "options": [
+        "To introduce an additional similar point",
+        "To introduce a contrasting or opposing point",
+        "To give an example",
+        "To conclude the argument"
+      ],
+      "correctAnswer": "To introduce a contrasting or opposing point"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "She has _____ changed jobs three times. Her career is evolving fast.",
-      "correctAnswer": "recently"
+      "type": "multiple-choice",
+      "question": "Which phrase shows the speaker is not completely convinced?",
+      "options": [
+        "Absolutely, I agree!",
+        "That's exactly what I think.",
+        "I'm not entirely sure about that.",
+        "You're totally right!"
+      ],
+      "correctAnswer": "I'm not entirely sure about that."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "How many books have you read _____ _____?",
-      "correctAnswer": "so far"
+      "type": "multiple-choice",
+      "question": "Choose the best response to: 'In my opinion, cars should be banned in city centers.'",
+      "options": [
+        "I agree. It would reduce pollution and traffic.",
+        "I agreeing because it reduce pollution.",
+        "I am agree. It reduces pollution.",
+        "I agrees that it would reduce pollution."
+      ],
+      "correctAnswer": "I agree. It would reduce pollution and traffic."
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "_____ _____ now, no one has found a perfect solution.",
-      "correctAnswer": "up to"
+      "type": "multiple-choice",
+      "question": "Which phrase signals that you are about to give your opinion?",
+      "options": [
+        "The fact is that ...",
+        "Research proves that ...",
+        "As far as I'm concerned, ...",
+        "It is well-known that ..."
+      ],
+      "correctAnswer": "As far as I'm concerned, ..."
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "I have _____ (meet) many interesting people in this job.",
-      "correctAnswer": "met"
+      "question": "Complete: '_____ I agree with some of your ideas, I think the plan needs more work.'",
+      "correctAnswer": "Although|While|Even though"
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "This year has been very productive. I _____ three new skills so far.",
-      "correctAnswer": "have learned|have learned|have picked up|have developed"
+      "type": "fill-blank",
+      "question": "Complete: 'Pets are great companions. _____, they require a lot of time and money.'",
+      "correctAnswer": "However|On the other hand|That said"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Up to now, scientists _____ a cure for this disease.",
-      "correctAnswer": "have not found|haven't found"
+      "type": "fill-blank",
+      "question": "Complete: 'I'm not _____ convinced that this is the best approach.'",
+      "correctAnswer": "entirely|completely|totally"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Até agora, eu aprendi muito neste curso.'",
-      "correctAnswer": "so far, i have learned a lot in this course|i have learned a lot in this course so far"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ your point, but from my perspective, there are other factors to consider.'",
+      "correctAnswer": "see|understand|acknowledge"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Ela recentemente começou a praticar yoga.'",
-      "correctAnswer": "she has recently started practicing yoga|she has recently started practising yoga"
+      "type": "complete",
+      "question": "'Do you agree with the idea of working from home?' — 'To be honest, I'm not _____ sure. It has pros and cons.'",
+      "correctAnswer": "entirely|completely|totally"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Quantos países você visitou até agora?'",
-      "correctAnswer": "how many countries have you visited so far?|how many countries have you visited up to now?"
+      "type": "complete",
+      "question": "She made a _____ argument and everyone in the room changed their opinion.",
+      "correctAnswer": "convincing|strong|valid|powerful"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Até agora, ninguém respondeu minha pergunta.'",
-      "correctAnswer": "up to now, no one has answered my question|so far, no one has answered my question"
+      "question": "Translate to English: 'Embora eu entenda seu ponto de vista, discordo.'",
+      "correctAnswer": "although i understand your point of view, i disagree"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["I have visited five countries so far.", "She has recently changed her job.", "He has learned a lot up to now.", "They so far visited three cities."],
-      "correctAnswer": "They so far visited three cities."
+      "type": "translate",
+      "question": "Translate to English: 'No que me diz respeito, essa é a melhor solução.'",
+      "correctAnswer": "as far as i'm concerned, that is the best solution"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly combines Present Perfect and a follow-up Simple Past?",
-      "options": ["I have been to Japan. I went there in 2019.", "I have been to Japan. I have gone there in 2019.", "I been to Japan. I went there in 2019.", "I have went to Japan. I went there in 2019."],
-      "correctAnswer": "I have been to Japan. I went there in 2019."
+      "type": "vocabulary",
+      "question": "What does 'biased' mean in the context of an opinion or argument?",
+      "options": [
+        "Based on solid evidence and facts",
+        "Unfairly influenced by personal feelings or preferences",
+        "Very well-balanced and neutral",
+        "Extremely polite and formal"
+      ],
+      "correctAnswer": "Unfairly influenced by personal feelings or preferences"
     },
     {
       "id": 2,
       "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["I have just finished the report.", "She hasn't replied yet.", "Have you already heard the news?", "He has went to the gym this morning."],
-      "correctAnswer": "He has went to the gym this morning."
+      "question": "Which sentence is the most complete and well-structured opinion?",
+      "options": [
+        "In my opinion, electric cars are better for the environment because they produce less pollution.",
+        "I think electric cars good.",
+        "Electric cars opinion better.",
+        "From perspective, electric cars."
+      ],
+      "correctAnswer": "In my opinion, electric cars are better for the environment because they produce less pollution."
     },
     {
       "id": 3,
       "type": "multiple-choice",
-      "question": "A: 'Have you ever done a cooking class?' B: 'Yes! _____ last year with my sister.'",
-      "options": ["I did it", "I have done it", "I've done it", "I had done it"],
-      "correctAnswer": "I did it"
+      "question": "Which sentence correctly combines an opinion with a reason?",
+      "options": [
+        "I believe that reading is important because it improves vocabulary and critical thinking.",
+        "I believe that reading is important because it improve vocabulary.",
+        "I am believing reading important because vocabulary.",
+        "I believe reading important it improves vocabulary."
+      ],
+      "correctAnswer": "I believe that reading is important because it improves vocabulary and critical thinking."
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which sentence uses the Present Perfect correctly in context?",
-      "options": ["I've seen that documentary — you should watch it too.", "I've seen that documentary yesterday.", "I've saw that documentary.", "I seen that documentary recently."],
-      "correctAnswer": "I've seen that documentary — you should watch it too."
+      "question": "Which response shows partial agreement followed by a contrasting point?",
+      "options": [
+        "That's a good point. However, we also need to consider the costs.",
+        "I completely disagree with everything you said.",
+        "Absolutely! I agree 100%.",
+        "I have no opinion on this topic."
+      ],
+      "correctAnswer": "That's a good point. However, we also need to consider the costs."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which is the most natural response to 'Have you ever been skydiving?'",
-      "options": ["No, never. It seems too scary for me.", "No, I wasn't.", "No, I didn't.", "No, I haven't been."],
-      "correctAnswer": "No, never. It seems too scary for me."
+      "question": "What is wrong with: 'I am disagree with your opinion.'?",
+      "options": [
+        "Nothing — it is correct.",
+        "'Disagree' cannot follow 'am'. The correct form is 'I disagree'.",
+        "'Opinion' should be 'opinions'.",
+        "'Your' should be 'you'."
+      ],
+      "correctAnswer": "'Disagree' cannot follow 'am'. The correct form is 'I disagree'."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence shows the Present Perfect used correctly with 'so far'?",
-      "options": ["She has completed half of the project so far.", "She completed half of the project so far.", "She has complete half of the project so far.", "She had completed half of the project so far."],
-      "correctAnswer": "She has completed half of the project so far."
+      "question": "Which sentence correctly uses 'however' to contrast two ideas?",
+      "options": [
+        "Fast food is cheap and convenient. However, it is not very healthy.",
+        "Fast food is cheap and convenient however it is not very healthy.",
+        "However fast food is cheap, convenient.",
+        "Fast food is cheap. Convenient however."
+      ],
+      "correctAnswer": "Fast food is cheap and convenient. However, it is not very healthy."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["He has already eaten, so he isn't hungry.", "He already has eaten, so he isn't hungry.", "He has eaten already so he isn't hungry yet.", "He has yet eaten, so he isn't hungry."],
-      "correctAnswer": "He has already eaten, so he isn't hungry."
+      "question": "Which phrase is the MOST formal way to express an opinion?",
+      "options": [
+        "I guess ...",
+        "I kind of think ...",
+        "As far as I'm concerned, ...",
+        "I dunno, but ..."
+      ],
+      "correctAnswer": "As far as I'm concerned, ..."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which dialogue uses tenses correctly?",
-      "options": ["A: Have you ever tried surfing? B: Yes! I tried it for the first time in Florianópolis.", "A: Have you ever tried surfing? B: Yes! I have tried it for the first time in Florianópolis.", "A: Did you ever try surfing? B: Yes! I have tried it in Florianópolis.", "A: Have you ever tried surfing? B: Yes! I've tried it last year."],
-      "correctAnswer": "A: Have you ever tried surfing? B: Yes! I tried it for the first time in Florianópolis."
+      "question": "Which sentence correctly agrees AND adds a new idea?",
+      "options": [
+        "I agree, and I would also add that regular exercise improves mental health.",
+        "I agree, but I would also add that exercise improves mental health.",
+        "Both A and B are correct.",
+        "Neither A nor B are correct."
+      ],
+      "correctAnswer": "Both A and B are correct."
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "I've _____ (live) in three different cities. Each one taught me something new.",
-      "correctAnswer": "lived"
+      "type": "multiple-choice",
+      "question": "A classmate says: 'I think fast food restaurants should be closed.' The most respectful way to disagree is:",
+      "options": [
+        "That's completely wrong and a terrible idea.",
+        "I respect your opinion, but I think banning them would affect many jobs.",
+        "You don't know what you're talking about.",
+        "I don't care about your opinion."
+      ],
+      "correctAnswer": "I respect your opinion, but I think banning them would affect many jobs."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "She _____ (just / finish) her degree. She's looking for a job now.",
-      "correctAnswer": "has just finished"
+      "type": "multiple-choice",
+      "question": "Which is a complete and correct expression of disagreement?",
+      "options": [
+        "I don't think so. In my opinion, the situation is more complex than that.",
+        "Not agree. The situation complex.",
+        "I no agree, situation is complex.",
+        "Not thinking so, the situation is complexer."
+      ],
+      "correctAnswer": "I don't think so. In my opinion, the situation is more complex than that."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Have you _____ read 'The Alchemist'? It's a fantastic book.",
-      "correctAnswer": "ever"
+      "type": "multiple-choice",
+      "question": "What is the function of 'To be fair, ...' in a discussion?",
+      "options": [
+        "To start a disagreement",
+        "To acknowledge something positive in the opposing view",
+        "To end the conversation",
+        "To repeat your own opinion"
+      ],
+      "correctAnswer": "To acknowledge something positive in the opposing view"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "We've _____ completed twelve exercises so far. Only eight to go!",
-      "correctAnswer": "already"
+      "type": "multiple-choice",
+      "question": "Which pair of expressions shows agreement and then a contrasting opinion?",
+      "options": [
+        "That's true. On the other hand, ...",
+        "I disagree. For example, ...",
+        "You're right. In addition, ...",
+        "I don't think so. However, ..."
+      ],
+      "correctAnswer": "That's true. On the other hand, ..."
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "I _____ (not / see) the new Marvel film _____. Is it good?",
-      "correctAnswer": "haven't seen yet"
+      "question": "Complete: 'I _____ believe that children spend too much time on screens.'",
+      "correctAnswer": "strongly|truly|firmly|personally"
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "This is the most challenging project I _____ in my career.",
-      "correctAnswer": "have ever worked on|have ever done"
+      "type": "fill-blank",
+      "question": "Complete: 'To be _____, I think both sides have valid points in this debate.'",
+      "correctAnswer": "fair|honest"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "Up to now, my team _____ every single deadline.",
-      "correctAnswer": "has met|has hit"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ your point of view, and I think you raise some important issues.'",
+      "correctAnswer": "respect|understand|acknowledge"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Você já fez algo que te assustou muito?'",
-      "correctAnswer": "have you ever done something that scared you a lot?|have you ever done something really scary?"
+      "type": "fill-blank",
+      "question": "Complete: 'She didn't _____ with my idea, but she was polite about it.'",
+      "correctAnswer": "agree"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Ela acabou de perceber que esqueceu o passaporte.'",
-      "correctAnswer": "she has just realized she forgot her passport|she's just realized she forgot her passport"
+      "type": "complete",
+      "question": "I believe that _____, but I understand that others may see it differently.",
+      "correctAnswer": "education is essential|everyone should learn a language|exercise is important"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Até agora, esta tem sido a melhor experiência da minha vida.'",
-      "correctAnswer": "so far, this has been the best experience of my life|up to now, this has been the best experience of my life"
+      "type": "complete",
+      "question": "He made a very _____ argument, and I found it hard to disagree.",
+      "correctAnswer": "convincing|valid|strong|compelling"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Eu nunca comi comida mexicana, mas adoraria experimentar.'",
-      "correctAnswer": "i have never eaten mexican food, but i would love to try|i've never eaten mexican food, but i'd love to try"
+      "question": "Translate to English: 'Na minha opinião, aprender inglês muda a sua vida.'",
+      "correctAnswer": "in my opinion, learning english changes your life"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly integrates all key vocabulary and structures from this lesson?",
-      "options": ["I've had many interesting experiences so far, and I've recently decided to share them in a blog.", "I had many interesting experiences so far, and I recently decided to share them in a blog.", "I've had many interesting experiences so far, and I recently have decided to share them in a blog.", "I've had many interesting experiences so far, and I've recently decide to share them in a blog."],
-      "correctAnswer": "I've had many interesting experiences so far, and I've recently decided to share them in a blog."
+      "type": "translate",
+      "question": "Translate to English: 'Respeito sua opinião, mas penso de forma diferente.'",
+      "correctAnswer": "i respect your opinion, but i think differently"
     }
   ]
 }

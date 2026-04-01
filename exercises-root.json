@@ -1,665 +1,818 @@
 {
-  "lesson": 7,
+  "lesson": 8,
   "level": "root",
-  "topic": "Technology & Communication",
+  "topic": "Work & Professions",
   "monday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "What does 'computer' mean?",
-      "options": ["Telefone", "Computador", "Televisão", "Rádio"],
-      "correctAnswer": "Computador"
+      "type": "vocabulary",
+      "question": "What does 'job' mean?",
+      "options": ["Passatempo", "Emprego / Trabalho", "Escola", "Projeto"],
+      "correctAnswer": "Emprego / Trabalho"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "What does 'email' mean?",
-      "options": ["Ligação telefônica", "Mensagem de texto", "Correio eletrônico", "Carta"],
-      "correctAnswer": "Correio eletrônico"
+      "type": "vocabulary",
+      "question": "What does 'career' mean?",
+      "options": ["Salário", "Carreira profissional", "Tarefa diária", "Contrato"],
+      "correctAnswer": "Carreira profissional"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "What does 'internet' mean?",
-      "options": ["Televisão", "Internet", "Rádio", "Jornal"],
-      "correctAnswer": "Internet"
+      "type": "vocabulary",
+      "question": "What does 'office' mean?",
+      "options": ["Fábrica", "Loja", "Escritório", "Laboratório"],
+      "correctAnswer": "Escritório"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "What does 'message' mean?",
-      "options": ["Chamada", "Mensagem", "Arquivo", "Contato"],
-      "correctAnswer": "Mensagem"
+      "type": "vocabulary",
+      "question": "What does 'salary' mean?",
+      "options": ["Benefício", "Salário", "Bônus", "Imposto"],
+      "correctAnswer": "Salário"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "What does 'social media' mean?",
-      "options": ["Mídia impressa", "Redes sociais", "Notícias online", "Programas de TV"],
-      "correctAnswer": "Redes sociais"
+      "type": "vocabulary",
+      "question": "What does 'boss' mean?",
+      "options": ["Funcionário", "Estagiário", "Chefe", "Cliente"],
+      "correctAnswer": "Chefe"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "What does 'app' mean?",
-      "options": ["Aplicativo", "Aparelho", "Arquivo", "Acesso"],
-      "correctAnswer": "Aplicativo"
+      "type": "vocabulary",
+      "question": "What does 'employee' mean?",
+      "options": ["Chefe", "Dono da empresa", "Funcionário / Empregado", "Investidor"],
+      "correctAnswer": "Funcionário / Empregado"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "What does 'website' mean?",
-      "options": ["Rede Wi-Fi", "Site / Página da internet", "Cabo de internet", "Provedor de internet"],
-      "correctAnswer": "Site / Página da internet"
+      "type": "vocabulary",
+      "question": "What does 'interview' mean?",
+      "options": ["Contrato de trabalho", "Entrevista", "Reunião de equipe", "Avaliação de desempenho"],
+      "correctAnswer": "Entrevista"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "What does 'download' mean?",
-      "options": ["Enviar um arquivo", "Baixar um arquivo", "Deletar um arquivo", "Abrir um arquivo"],
-      "correctAnswer": "Baixar um arquivo"
+      "type": "vocabulary",
+      "question": "What does 'profession' mean?",
+      "options": ["Profissão", "Salário", "Empresa", "Turno de trabalho"],
+      "correctAnswer": "Profissão"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "What does 'upload' mean?",
-      "options": ["Baixar um arquivo", "Editar um arquivo", "Fazer upload / enviar para a nuvem", "Salvar um arquivo"],
-      "correctAnswer": "Fazer upload / enviar para a nuvem"
+      "type": "vocabulary",
+      "question": "What does 'colleague' mean?",
+      "options": ["Gerente", "Colega de trabalho", "Diretor", "Sócio"],
+      "correctAnswer": "Colega de trabalho"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "What does 'connect' mean in a technology context?",
-      "options": ["Desligar", "Conectar", "Instalar", "Atualizar"],
-      "correctAnswer": "Conectar"
+      "type": "vocabulary",
+      "question": "What does 'promotion' mean in a work context?",
+      "options": ["Demissão", "Transferência", "Promoção / Avanço de cargo", "Aviso prévio"],
+      "correctAnswer": "Promoção / Avanço de cargo"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "What does 'send' mean?",
-      "options": ["Receber", "Enviar", "Apagar", "Arquivar"],
-      "correctAnswer": "Enviar"
+      "question": "Which word means 'the money you earn regularly for your work'?",
+      "options": ["boss", "salary", "interview", "career"],
+      "correctAnswer": "salary"
     },
     {
       "id": 12,
       "type": "multiple-choice",
-      "question": "What does 'receive' mean?",
-      "options": ["Enviar", "Receber", "Responder", "Reenviar"],
-      "correctAnswer": "Receber"
+      "question": "Which of these is a profession?",
+      "options": ["office", "salary", "doctor", "interview"],
+      "correctAnswer": "doctor"
     },
     {
       "id": 13,
       "type": "multiple-choice",
-      "question": "Which of these is a 'social media' platform?",
-      "options": ["Microsoft Word", "Instagram", "Google Chrome", "Windows"],
-      "correctAnswer": "Instagram"
+      "question": "What do you call the person who manages and directs other workers?",
+      "options": ["employee", "colleague", "boss", "client"],
+      "correctAnswer": "boss"
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'I use my _____ to browse the internet.'",
-      "correctAnswer": "computer|phone"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She works as a nurse.",
+        "She works like a nurse.",
+        "She works for a nurse.",
+        "She works to a nurse."
+      ],
+      "correctAnswer": "She works as a nurse."
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'She sent me an _____ with the document attached.'",
-      "correctAnswer": "email"
+      "type": "multiple-choice",
+      "question": "What does 'full-time job' mean?",
+      "options": ["Trabalho de meio período", "Trabalho temporário", "Trabalho em tempo integral", "Trabalho freelancer"],
+      "correctAnswer": "Trabalho em tempo integral"
     },
     {
       "id": 16,
       "type": "fill-blank",
-      "question": "Complete: 'You need a strong Wi-Fi signal to _____ to the internet.'",
-      "correctAnswer": "connect"
+      "question": "Complete: 'She is looking for a new _____ because she wants to earn more money.'",
+      "correctAnswer": "job"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'aplicativo'",
-      "correctAnswer": "app|application"
+      "type": "fill-blank",
+      "question": "Complete: 'My _____ gave me a raise because I worked very hard this year.'",
+      "correctAnswer": "boss"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'redes sociais'",
-      "correctAnswer": "social media"
+      "type": "fill-blank",
+      "question": "Complete: 'She has a great _____ in medicine — she has been a doctor for ten years.'",
+      "correctAnswer": "career"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'baixar um arquivo'",
-      "correctAnswer": "download a file"
+      "question": "Translate to English: 'Ele trabalha em um escritório.'",
+      "correctAnswer": "he works in an office"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which word is a technology verb?",
-      "options": ["restaurant", "download", "jacket", "mountain"],
-      "correctAnswer": "download"
+      "type": "translate",
+      "question": "Translate to English: 'Ela foi a uma entrevista de emprego ontem.'",
+      "correctAnswer": "she went to a job interview yesterday"
     }
   ],
   "tuesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["I can send emails on my phone.", "I can to send emails on my phone.", "I can sending emails on my phone.", "I cans send emails on my phone."],
-      "correctAnswer": "I can send emails on my phone."
+      "type": "vocabulary",
+      "question": "What does 'hire' mean?",
+      "options": ["Demitir", "Contratar", "Promover", "Transferir"],
+      "correctAnswer": "Contratar"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["She can't connect to the internet.", "She can't to connect to the internet.", "She can't connecting to the internet.", "She cannot to connect to the internet."],
-      "correctAnswer": "She can't connect to the internet."
+      "type": "vocabulary",
+      "question": "What does 'resume' (or 'CV') mean?",
+      "options": ["Contrato de trabalho", "Crachá de identificação", "Currículo", "Relatório de desempenho"],
+      "correctAnswer": "Currículo"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which question is correct?",
-      "options": ["Can you download this app?", "Can you to download this app?", "You can download this app?", "Can downloading this app?"],
-      "correctAnswer": "Can you download this app?"
+      "type": "vocabulary",
+      "question": "What does 'deadline' mean in a work context?",
+      "options": ["Reunião de equipe", "Prazo / Data limite", "Horário de almoço", "Meta de vendas"],
+      "correctAnswer": "Prazo / Data limite"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "What does 'I can't receive messages.' mean?",
-      "options": ["Eu não quero receber mensagens.", "Eu não consigo receber mensagens.", "Eu nunca recebo mensagens.", "Eu não devo receber mensagens."],
-      "correctAnswer": "Eu não consigo receber mensagens."
+      "type": "vocabulary",
+      "question": "What does 'meeting' mean?",
+      "options": ["Intervalo", "Almoço de negócios", "Reunião", "Apresentação"],
+      "correctAnswer": "Reunião"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which is the correct short answer to 'Can you use this app?'",
-      "options": ["Yes, I can.", "Yes, I do.", "Yes, I am.", "Yes, I could."],
-      "correctAnswer": "Yes, I can."
+      "question": "Which question is used to ask about someone's profession?",
+      "options": [
+        "What do you do?",
+        "What are you doing?",
+        "What did you do?",
+        "What will you do?"
+      ],
+      "correctAnswer": "What do you do?"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'can' correctly?",
-      "options": ["He can upload photos to social media.", "He can uploads photos to social media.", "He can to upload photos to social media.", "He can uploading photos to social media."],
-      "correctAnswer": "He can upload photos to social media."
+      "question": "Which is the correct answer to 'What do you do?'",
+      "options": [
+        "I work as a teacher.",
+        "I work like a teacher.",
+        "I working as a teacher.",
+        "I am work as a teacher."
+      ],
+      "correctAnswer": "I work as a teacher."
     },
     {
       "id": 7,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you send me the file by email?'",
-      "correctAnswer": "Can"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly describes someone's job?",
+      "options": [
+        "He is a engineer.",
+        "He is an engineer.",
+        "He is engineering.",
+        "He is engineer."
+      ],
+      "correctAnswer": "He is an engineer."
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ connect to Wi-Fi from here. The signal is too weak.'",
-      "correctAnswer": "can't|cannot"
+      "type": "multiple-choice",
+      "question": "Which answer is the MOST natural response to 'What do you do for a living?'",
+      "options": [
+        "I am doing fine, thanks.",
+        "I work as a software developer.",
+        "I do a lot of things.",
+        "I am working now."
+      ],
+      "correctAnswer": "I work as a software developer."
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ use any app on her new phone.'",
-      "correctAnswer": "can"
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence:",
+      "options": [
+        "She works as a lawyer at a big firm.",
+        "She works as lawyer at a big firm.",
+        "She work as a lawyer at a big firm.",
+        "She is work as a lawyer at a big firm."
+      ],
+      "correctAnswer": "She works as a lawyer at a big firm."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'We _____ download movies on this website.'",
-      "correctAnswer": "can"
+      "type": "multiple-choice",
+      "question": "How do you say 'Qual é a sua profissão?' in English?",
+      "options": [
+        "What is your job title?",
+        "What do you do?",
+        "Where do you work?",
+        "How is your work?"
+      ],
+      "correctAnswer": "What do you do?"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: '_____ he access the internet on his computer?'",
-      "correctAnswer": "Can"
+      "type": "multiple-choice",
+      "question": "Which of these professions works in a hospital?",
+      "options": ["accountant", "nurse", "architect", "journalist"],
+      "correctAnswer": "nurse"
     },
     {
       "id": 12,
-      "type": "translate",
-      "question": "Translate to English: 'Eu consigo enviar mensagens pelo aplicativo.'",
-      "correctAnswer": "i can send messages through the app|i can send messages on the app"
+      "type": "multiple-choice",
+      "question": "What does 'I work as a freelancer' mean?",
+      "options": [
+        "Eu trabalho em tempo integral para uma empresa.",
+        "Eu trabalho de forma autônoma, sem vínculo fixo.",
+        "Eu trabalho sem receber salário.",
+        "Eu trabalho de madrugada."
+      ],
+      "correctAnswer": "Eu trabalho de forma autônoma, sem vínculo fixo."
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Ela não consegue conectar à internet.'",
-      "correctAnswer": "she can't connect to the internet|she cannot connect to the internet"
+      "type": "fill-blank",
+      "question": "Complete: '_____ do you do for a living?' — 'I'm a graphic designer.'",
+      "correctAnswer": "What"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate to English: 'Você consegue baixar esse arquivo?'",
-      "correctAnswer": "can you download this file?"
+      "type": "fill-blank",
+      "question": "Complete: 'My father works _____ an accountant at a local company.'",
+      "correctAnswer": "as"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate to English: 'Não consigo receber emails no meu telefone.'",
-      "correctAnswer": "i can't receive emails on my phone|i cannot receive emails on my phone"
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ architect. She designs buildings for large companies.'",
+      "correctAnswer": "an"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "Put the words in the correct order: 'can / she / upload / photos / to the website'",
-      "correctAnswer": "she can upload photos to the website"
+      "type": "fill-blank",
+      "question": "Complete: 'He is looking for a job. He has his _____ ready to send to companies.'",
+      "correctAnswer": "resume|CV"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Put the words in the correct order: 'connect / can't / I / to / the internet'",
-      "correctAnswer": "i can't connect to the internet"
+      "question": "'What do you do?' — 'I _____ as a nurse at the city hospital.'",
+      "correctAnswer": "work"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["I can send an email.", "She can download music.", "He can to receive messages.", "We can connect to Wi-Fi."],
-      "correctAnswer": "He can to receive messages."
+      "type": "complete",
+      "question": "'_____ do you do for a living?' — 'I'm a teacher.'",
+      "correctAnswer": "What"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "What is the negative form of 'I can send files'?",
-      "options": ["I can't send files.", "I don't can send files.", "I am not send files.", "I can not to send files."],
-      "correctAnswer": "I can't send files."
+      "type": "translate",
+      "question": "Translate to English: 'O que você faz?' (profissão)",
+      "correctAnswer": "what do you do?"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence means 'Você consegue usar esse site?'",
-      "options": ["Can you use this website?", "Do you use this website?", "Are you using this website?", "You can use this website?"],
-      "correctAnswer": "Can you use this website?"
+      "type": "translate",
+      "question": "Translate to English: 'Eu trabalho como engenheiro numa grande empresa.'",
+      "correctAnswer": "i work as an engineer at a big company"
     }
   ],
   "wednesday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which sentence is in the Present Perfect?",
-      "options": ["I used this app yesterday.", "I have used this app before.", "I am using this app now.", "I use this app every day."],
-      "correctAnswer": "I have used this app before."
+      "type": "vocabulary",
+      "question": "What does 'company' mean?",
+      "options": ["Departamento", "Empresa", "Filial", "Cooperativa"],
+      "correctAnswer": "Empresa"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["I have sent the email.", "I have send the email.", "I have sended the email.", "I has sent the email."],
-      "correctAnswer": "I have sent the email."
+      "type": "vocabulary",
+      "question": "What does 'fired' mean in a work context?",
+      "options": ["Promovido", "Contratado", "Demitido", "Aposentado"],
+      "correctAnswer": "Demitido"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["She has downloaded the app.", "She has download the app.", "She have downloaded the app.", "She has downloades the app."],
-      "correctAnswer": "She has downloaded the app."
+      "type": "vocabulary",
+      "question": "What does 'part-time' mean?",
+      "options": ["Tempo integral", "Meio período", "Turno noturno", "Hora extra"],
+      "correctAnswer": "Meio período"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "What does 'Have you tried this app?' mean?",
-      "options": ["Você vai experimentar esse aplicativo?", "Você já experimentou esse aplicativo?", "Você está usando esse aplicativo?", "Você gosta desse aplicativo?"],
-      "correctAnswer": "Você já experimentou esse aplicativo?"
+      "type": "vocabulary",
+      "question": "What does 'overtime' mean?",
+      "options": ["Folga", "Hora extra", "Intervalo de almoço", "Férias"],
+      "correctAnswer": "Hora extra"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which question is correct?",
-      "options": ["Have you used this website before?", "Did you have used this website before?", "Have you use this website before?", "Has you used this website before?"],
-      "correctAnswer": "Have you used this website before?"
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "I have worked here for five years.",
+        "I worked here for five years.",
+        "I am working here for five years.",
+        "I work here since five years."
+      ],
+      "correctAnswer": "I have worked here for five years."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which is the correct short answer to 'Have you tried social media?'",
-      "options": ["Yes, I have.", "Yes, I did.", "Yes, I do.", "Yes, I used."],
-      "correctAnswer": "Yes, I have."
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "She has been an employee since 2019.",
+        "She is an employee since 2019.",
+        "She was an employee since 2019.",
+        "She has been an employee for 2019."
+      ],
+      "correctAnswer": "She has been an employee since 2019."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["They have connected to the internet.", "They have connect to the internet.", "They has connected to the internet.", "They have connectted to the internet."],
-      "correctAnswer": "They have connected to the internet."
+      "question": "Choose the correct option: 'He has worked at this company _____ ten years.'",
+      "options": ["since", "for", "from", "during"],
+      "correctAnswer": "for"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ already downloaded this app.'",
-      "correctAnswer": "have"
+      "type": "multiple-choice",
+      "question": "Choose the correct option: 'She has been the boss _____ March.'",
+      "options": ["for", "during", "since", "in"],
+      "correctAnswer": "since"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ never used social media.'",
-      "correctAnswer": "has"
+      "type": "multiple-choice",
+      "question": "What is the difference between 'for' and 'since' in Present Perfect?",
+      "options": [
+        "'For' is used with a point in time; 'since' is used with a duration.",
+        "'For' is used with a duration; 'since' is used with a point in time.",
+        "They mean the same thing.",
+        "'For' is for the past; 'since' is for the future."
+      ],
+      "correctAnswer": "'For' is used with a duration; 'since' is used with a point in time."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you received my email?'",
-      "correctAnswer": "Have"
+      "type": "multiple-choice",
+      "question": "Which sentence is INCORRECT?",
+      "options": [
+        "I have had this job for three months.",
+        "She has worked here since last year.",
+        "They have been employees since two years.",
+        "He has been the manager for a long time."
+      ],
+      "correctAnswer": "They have been employees since two years."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'He has _____ the file to the website.'",
-      "correctAnswer": "uploaded"
+      "type": "multiple-choice",
+      "question": "What does 'How long have you worked here?' mean?",
+      "options": [
+        "Onde você trabalha?",
+        "Por quanto tempo você trabalha aqui?",
+        "Você gosta do seu trabalho?",
+        "Quando você começou a trabalhar?"
+      ],
+      "correctAnswer": "Por quanto tempo você trabalha aqui?"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'We have _____ this app for a long time.'",
-      "correctAnswer": "used"
+      "type": "multiple-choice",
+      "question": "Which is the correct response to 'How long have you been a nurse?'",
+      "options": [
+        "I am a nurse since 2015.",
+        "I have been a nurse for eight years.",
+        "I was a nurse for eight years.",
+        "I am being a nurse for eight years."
+      ],
+      "correctAnswer": "I have been a nurse for eight years."
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Eu já usei esse aplicativo.'",
-      "correctAnswer": "i have already used this app|i have used this app before"
+      "type": "fill-blank",
+      "question": "Complete: 'I have worked at this office _____ 2020.'",
+      "correctAnswer": "since"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate to English: 'Ela já enviou o email.'",
-      "correctAnswer": "she has already sent the email"
+      "type": "fill-blank",
+      "question": "Complete: 'She has been the team leader _____ almost two years.'",
+      "correctAnswer": "for"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate to English: 'Você já tentou esse site?'",
-      "correctAnswer": "have you tried this website?"
+      "type": "fill-blank",
+      "question": "Complete: 'How long _____ you worked in this company?'",
+      "correctAnswer": "have"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Eles já baixaram o arquivo.'",
-      "correctAnswer": "they have already downloaded the file"
+      "type": "fill-blank",
+      "question": "Complete: 'He has _____ a doctor since he finished university.'",
+      "correctAnswer": "been"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Put the words in the correct order: 'have / I / used / this / app / before'",
-      "correctAnswer": "i have used this app before"
+      "question": "'How long have you been an employee here?' — 'I have worked here _____ six months.'",
+      "correctAnswer": "for"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "Put the words in the correct order: 'she / has / sent / the / message'",
-      "correctAnswer": "she has sent the message"
+      "question": "She has been the boss _____ January — that's almost a year now.",
+      "correctAnswer": "since"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["I have tried this app.", "She has connected to Wi-Fi.", "He have downloaded the file.", "They have sent the email."],
-      "correctAnswer": "He have downloaded the file."
+      "type": "translate",
+      "question": "Translate to English: 'Ele trabalha nessa empresa há dois anos.'",
+      "correctAnswer": "he has worked at this company for two years"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which word completes: 'She has _____ a photo to social media.'",
-      "options": ["upload", "uploads", "uploaded", "uploading"],
-      "correctAnswer": "uploaded"
+      "type": "translate",
+      "question": "Translate to English: 'Ela é funcionária desde março.'",
+      "correctAnswer": "she has been an employee since march"
     }
   ],
   "thursday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which negative sentence is correct?",
-      "options": ["I haven't received his message.", "I haven't receive his message.", "I have not received his message yet.", "I haven't received his message yet."],
-      "correctAnswer": "I haven't received his message yet."
+      "type": "vocabulary",
+      "question": "What does 'resign' mean?",
+      "options": ["Ser contratado", "Pedir demissão / Demitir-se", "Ser promovido", "Receber aumento"],
+      "correctAnswer": "Pedir demissão / Demitir-se"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which negative sentence is correct?",
-      "options": ["She hasn't used this app before.", "She haven't used this app before.", "She hasn't use this app before.", "She has not uses this app before."],
-      "correctAnswer": "She hasn't used this app before."
+      "type": "vocabulary",
+      "question": "What does 'workplace' mean?",
+      "options": ["Salário", "Local de trabalho", "Contrato de trabalho", "Horário de trabalho"],
+      "correctAnswer": "Local de trabalho"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "What does 'I haven't tried that app yet.' mean?",
-      "options": ["Eu já tentei esse aplicativo.", "Eu não vou tentar esse aplicativo.", "Eu ainda não tentei esse aplicativo.", "Eu nunca vou tentar esse aplicativo."],
-      "correctAnswer": "Eu ainda não tentei esse aplicativo."
+      "type": "vocabulary",
+      "question": "What does 'shift' mean in a work context?",
+      "options": ["Pausa para café", "Turno de trabalho", "Reunião semanal", "Tarefa especial"],
+      "correctAnswer": "Turno de trabalho"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "Which question is correct?",
-      "options": ["Has she downloaded the file?", "Have she downloaded the file?", "Has she download the file?", "Did she has downloaded the file?"],
-      "correctAnswer": "Has she downloaded the file?"
+      "type": "vocabulary",
+      "question": "What does 'raise' mean in a work context?",
+      "options": ["Corte de salário", "Demissão", "Aumento de salário", "Avaliação de desempenho"],
+      "correctAnswer": "Aumento de salário"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "What does 'yet' mean in 'I haven't sent the email yet'?",
-      "options": ["ainda", "nunca", "sempre", "já"],
-      "correctAnswer": "ainda"
+      "question": "Which question is appropriate to ask in a job interview?",
+      "options": [
+        "What is your salary at your current job?",
+        "Can you tell me about your previous work experience?",
+        "Why did your boss fire you?",
+        "Do you need the money badly?"
+      ],
+      "correctAnswer": "Can you tell me about your previous work experience?"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "What does 'already' mean in 'I have already connected'?",
-      "options": ["ainda não", "já", "nunca", "às vezes"],
-      "correctAnswer": "já"
+      "question": "Which answer is the best response to 'Where do you work?'",
+      "options": [
+        "I work in a hospital as a nurse.",
+        "I work as in a hospital nurse.",
+        "I work hospital, nurse.",
+        "I am working nurse at hospital."
+      ],
+      "correctAnswer": "I work in a hospital as a nurse."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'ever' correctly?",
-      "options": ["Have you ever used social media?", "Have you ever use social media?", "Did you ever have used social media?", "You have ever used social media?"],
-      "correctAnswer": "Have you ever used social media?"
+      "question": "Which sentence is grammatically correct?",
+      "options": [
+        "She hasn't worked here since a long time.",
+        "She hasn't worked here for a long time.",
+        "She didn't work here for a long time.",
+        "She isn't working here since a long time."
+      ],
+      "correctAnswer": "She hasn't worked here for a long time."
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: 'He _____ uploaded the photos yet.'",
-      "correctAnswer": "hasn't"
+      "type": "multiple-choice",
+      "question": "Which word describes a person who works independently without a fixed employer?",
+      "options": ["employee", "boss", "freelancer", "intern"],
+      "correctAnswer": "freelancer"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Complete: 'Have they _____ connected to this network before?'",
-      "correctAnswer": "ever"
+      "type": "multiple-choice",
+      "question": "What does 'I got a promotion!' mean?",
+      "options": [
+        "Fui demitido!",
+        "Recebi uma multa!",
+        "Fui promovido!",
+        "Pedi aumento!"
+      ],
+      "correctAnswer": "Fui promovido!"
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'I have _____ received your email. When did you send it?'",
-      "correctAnswer": "not|never"
+      "type": "multiple-choice",
+      "question": "Choose the correct question: '_____?' — 'I've been a teacher for twelve years.'",
+      "options": [
+        "How long have you been a teacher?",
+        "How long are you a teacher?",
+        "How long did you be a teacher?",
+        "Since when you are a teacher?"
+      ],
+      "correctAnswer": "How long have you been a teacher?"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ never downloaded anything from this website.'",
-      "correctAnswer": "has"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses a job-related expression?",
+      "options": [
+        "He applied for the job and got an interview.",
+        "He applied to the job and got an interview.",
+        "He applied at the job and got an interview.",
+        "He applied the job and got an interview."
+      ],
+      "correctAnswer": "He applied for the job and got an interview."
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you ever sent a video message?'",
-      "correctAnswer": "Have"
+      "type": "multiple-choice",
+      "question": "What is the meaning of 'She works the night shift'?",
+      "options": [
+        "Ela trabalha durante o dia.",
+        "Ela trabalha no turno da noite.",
+        "Ela trabalha horas extras.",
+        "Ela trabalha remotamente à noite."
+      ],
+      "correctAnswer": "Ela trabalha no turno da noite."
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Eu ainda não recebi o email.'",
-      "correctAnswer": "i haven't received the email yet|i have not received the email yet"
+      "type": "fill-blank",
+      "question": "Complete: 'Can you tell me about your work _____? What jobs have you had before?'",
+      "correctAnswer": "experience"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate to English: 'Ela nunca usou esse aplicativo.'",
-      "correctAnswer": "she has never used this app"
+      "type": "fill-blank",
+      "question": "Complete: 'She got a _____ and now earns $500 more per month.'",
+      "correctAnswer": "raise|promotion"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate to English: 'Você já baixou esse arquivo?'",
-      "correctAnswer": "have you downloaded this file yet?|have you already downloaded this file?"
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ for a new job because he wants a better salary.'",
+      "correctAnswer": "applied|is looking"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Ele ainda não enviou a mensagem.'",
-      "correctAnswer": "he hasn't sent the message yet|he has not sent the message yet"
+      "type": "fill-blank",
+      "question": "Complete: 'I have been at this company _____ I graduated from college.'",
+      "correctAnswer": "since"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Put the words in the correct order: 'she / hasn't / the / uploaded / photo / yet'",
-      "correctAnswer": "she hasn't uploaded the photo yet"
+      "question": "'What do you do?' — 'I am _____ architect. I design bridges and buildings.'",
+      "correctAnswer": "an"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "Put the words in the correct order: 'have / ever / you / tried / a video call'",
-      "correctAnswer": "have you ever tried a video call"
+      "question": "She resigned from her job. She _____ worked there for five years before she left.",
+      "correctAnswer": "had"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which is the correct negative answer to 'Has he received the message?'",
-      "options": ["No, he hasn't.", "No, he haven't.", "No, he didn't have.", "No, he isn't."],
-      "correctAnswer": "No, he hasn't."
+      "type": "translate",
+      "question": "Translate to English: 'Há quanto tempo você trabalha aqui?'",
+      "correctAnswer": "how long have you worked here?"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence is wrong?",
-      "options": ["I haven't tried this app yet.", "She has never sent an email.", "Have you ever use the internet?", "He hasn't connected to Wi-Fi."],
-      "correctAnswer": "Have you ever use the internet?"
+      "type": "translate",
+      "question": "Translate to English: 'Ela pediu demissão depois de dez anos na empresa.'",
+      "correctAnswer": "she resigned after ten years at the company"
     }
   ],
   "friday": [
     {
       "id": 1,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["I have used many apps, and I can recommend this one.", "I have use many apps, and I can recommend this one.", "I used many apps, and I can recommends this one.", "I have used many apps, and I can to recommend this one."],
-      "correctAnswer": "I have used many apps, and I can recommend this one."
+      "type": "vocabulary",
+      "question": "What does 'intern' mean?",
+      "options": ["Chefe de departamento", "Estagiário", "Funcionário efetivo", "Consultor externo"],
+      "correctAnswer": "Estagiário"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "What does 'video call' mean?",
-      "options": ["Mensagem de voz", "Chamada de vídeo", "Email com vídeo", "Transmissão ao vivo"],
-      "correctAnswer": "Chamada de vídeo"
+      "type": "vocabulary",
+      "question": "What does 'remote work' mean?",
+      "options": ["Trabalho presencial", "Trabalho em campo", "Trabalho remoto / de casa", "Trabalho noturno"],
+      "correctAnswer": "Trabalho remoto / de casa"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": ["Have you ever made a video call?", "Have you ever make a video call?", "Did you have ever made a video call?", "You have ever made a video call?"],
-      "correctAnswer": "Have you ever made a video call?"
+      "type": "vocabulary",
+      "question": "What does 'unemployed' mean?",
+      "options": ["Aposentado", "Desempregado", "Autônomo", "Servidor público"],
+      "correctAnswer": "Desempregado"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "What does 'I can't upload this file. It's too large.' mean?",
-      "options": ["Não quero fazer upload deste arquivo. É muito grande.", "Não consigo fazer upload deste arquivo. É muito grande.", "Não devo fazer upload deste arquivo. É muito grande.", "Não preciso fazer upload deste arquivo. É muito grande."],
-      "correctAnswer": "Não consigo fazer upload deste arquivo. É muito grande."
+      "type": "vocabulary",
+      "question": "What does 'benefits' mean in a work context?",
+      "options": ["Deveres do trabalho", "Salário base", "Benefícios (plano de saúde, vale-refeição etc.)", "Horas trabalhadas"],
+      "correctAnswer": "Benefícios (plano de saúde, vale-refeição etc.)"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which is the best response to 'Have you used this social media app?'",
-      "options": ["Yes, I have. I use it every day.", "Yes, I did. I use it every day.", "Yes, I am. I use it every day.", "Yes, I do. I used it every day."],
-      "correctAnswer": "Yes, I have. I use it every day."
+      "question": "Which sentence uses 'work' correctly?",
+      "options": [
+        "I work in an office from Monday to Friday.",
+        "I work at an office from Monday to Friday.",
+        "Both A and B are correct.",
+        "I work on an office from Monday to Friday."
+      ],
+      "correctAnswer": "Both A and B are correct."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "What does 'Wi-Fi' help you do?",
-      "options": ["Make phone calls only", "Connect to the internet wirelessly", "Charge your phone", "Take photos"],
-      "correctAnswer": "Connect to the internet wirelessly"
+      "question": "Which sentence is in Present Perfect?",
+      "options": [
+        "I work here since 2018.",
+        "I worked here in 2018.",
+        "I have worked here since 2018.",
+        "I am working here since 2018."
+      ],
+      "correctAnswer": "I have worked here since 2018."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence correctly combines 'can' and Present Perfect?",
-      "options": ["I have used this app before and I can show you how it works.", "I have used this app before and I can to show you how it works.", "I used this app before and I can showed you how it works.", "I have use this app before and I can show you how it works."],
-      "correctAnswer": "I have used this app before and I can show you how it works."
+      "question": "Choose the correct question for this answer: 'I work as a chef at a French restaurant.'",
+      "options": [
+        "Where are you working?",
+        "What do you do?",
+        "What did you do?",
+        "How long have you worked?"
+      ],
+      "correctAnswer": "What do you do?"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ already sent you the file. Check your email.'",
-      "correctAnswer": "have"
+      "type": "multiple-choice",
+      "question": "Which word DOES NOT relate to work/professions?",
+      "options": ["salary", "deadline", "colleague", "mountain"],
+      "correctAnswer": "mountain"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ connect to Wi-Fi because she forgot the password.'",
-      "correctAnswer": "can't|cannot"
+      "type": "multiple-choice",
+      "question": "What does 'He was laid off' mean?",
+      "options": [
+        "Ele foi promovido.",
+        "Ele tirou férias.",
+        "Ele foi demitido (por corte de pessoal).",
+        "Ele pediu demissão."
+      ],
+      "correctAnswer": "Ele foi demitido (por corte de pessoal)."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Complete: 'Have you _____ used a smartwatch before?'",
-      "correctAnswer": "ever"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "They have not had a meeting since last Monday.",
+        "They have not had a meeting for last Monday.",
+        "They did not have a meeting since last Monday.",
+        "They haven't had a meeting at last Monday."
+      ],
+      "correctAnswer": "They have not had a meeting since last Monday."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ receive your message. Can you send it again?'",
-      "correctAnswer": "can't|couldn't"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly talks about a job role?",
+      "options": [
+        "She works like a manager in our team.",
+        "She works as a manager in our team.",
+        "She works for a manager in our team.",
+        "She works by a manager in our team."
+      ],
+      "correctAnswer": "She works as a manager in our team."
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'He has _____ tried video calls before, but he wants to learn.'",
-      "correctAnswer": "never"
+      "type": "multiple-choice",
+      "question": "What is the meaning of 'job interview'?",
+      "options": [
+        "Uma reunião de equipe.",
+        "Uma conversa para avaliar um candidato a uma vaga.",
+        "Uma avaliação de desempenho anual.",
+        "Uma apresentação para clientes."
+      ],
+      "correctAnswer": "Uma conversa para avaliar um candidato a uma vaga."
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Eu já usei esse site antes. Consigo te mostrar como funciona.'",
-      "correctAnswer": "i have used this website before. i can show you how it works"
+      "type": "fill-blank",
+      "question": "Complete: 'She has been _____ for three months and is still looking for a job.'",
+      "correctAnswer": "unemployed"
     },
     {
       "id": 14,
-      "type": "translate",
-      "question": "Translate to English: 'Ela nunca fez uma chamada de vídeo, mas consegue aprender.'",
-      "correctAnswer": "she has never made a video call, but she can learn"
+      "type": "fill-blank",
+      "question": "Complete: 'I work _____ home on Fridays. It's more comfortable than the office.'",
+      "correctAnswer": "from|at"
     },
     {
       "id": 15,
-      "type": "translate",
-      "question": "Translate to English: 'Você já recebeu minha mensagem?'",
-      "correctAnswer": "have you received my message?|have you received my message yet?"
+      "type": "fill-blank",
+      "question": "Complete: 'He has been our _____ since he joined the company ten years ago.'",
+      "correctAnswer": "colleague"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Não consigo fazer upload da foto. O arquivo é muito grande.'",
-      "correctAnswer": "i can't upload the photo. the file is too large|i cannot upload the photo. the file is too large"
+      "type": "fill-blank",
+      "question": "Complete: 'What _____ you do for a living?' — 'I'm an accountant.'",
+      "correctAnswer": "do"
     },
     {
       "id": 17,
-      "type": "translate",
-      "question": "Translate to English: 'Eles já baixaram o aplicativo e conseguem usá-lo agora.'",
-      "correctAnswer": "they have already downloaded the app and they can use it now"
+      "type": "complete",
+      "question": "I have worked in this office _____ three years. I really like my job.",
+      "correctAnswer": "for"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "Put the words in the correct order: 'have / I / never / a / smartwatch / used'",
-      "correctAnswer": "i have never used a smartwatch"
+      "question": "She got the job after a great _____. The manager loved her answers.",
+      "correctAnswer": "interview"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "Which dialogue is correct?",
-      "options": ["A: Have you tried this app? B: Yes, I have. It's great!", "A: Have you tried this app? B: Yes, I did. It was great!", "A: Have you tried this app? B: Yes, I am. It's great!", "A: Have you tried this app? B: Yes, I do. It's great!"],
-      "correctAnswer": "A: Have you tried this app? B: Yes, I have. It's great!"
+      "type": "translate",
+      "question": "Translate to English: 'Qual é a sua profissão?'",
+      "correctAnswer": "what is your profession?|what do you do?"
     },
     {
       "id": 20,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses all three structures from this lesson?",
-      "options": ["I have used this app before and I can send messages, but I haven't tried the video call feature yet.", "I used this app before and I can send messages, but I haven't tried the video call feature yet.", "I have used this app before and I can to send messages, but I didn't tried the video call feature yet.", "I have use this app before and I can send messages, but I haven't try the video call feature yet."],
-      "correctAnswer": "I have used this app before and I can send messages, but I haven't tried the video call feature yet."
+      "type": "translate",
+      "question": "Translate to English: 'Eu trabalho como professor há cinco anos.'",
+      "correctAnswer": "i have worked as a teacher for five years"
     }
   ]
 }

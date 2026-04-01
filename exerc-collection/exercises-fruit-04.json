@@ -1,0 +1,924 @@
+{
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does the idiom \"bite the bullet\" mean?",
+      "options": [
+        "To speak very loudly",
+        "To face a difficult situation with courage",
+        "To avoid a problem completely",
+        "To make a joke at the wrong time"
+      ],
+      "correctAnswer": "To face a difficult situation with courage"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does \"face the music\" mean?",
+      "options": [
+        "To enjoy a concert",
+        "To accept the consequences of your actions",
+        "To change your opinion quickly",
+        "To work in the music industry"
+      ],
+      "correctAnswer": "To accept the consequences of your actions"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does \"get the ball rolling\" mean?",
+      "options": [
+        "To start an activity or process",
+        "To finish a project successfully",
+        "To cancel a meeting",
+        "To play a sport professionally"
+      ],
+      "correctAnswer": "To start an activity or process"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "If someone is \"under the weather\", they are...",
+      "options": [
+        "traveling abroad",
+        "slightly ill",
+        "extremely busy",
+        "feeling excited"
+      ],
+      "correctAnswer": "slightly ill"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What does \"go the extra mile\" mean?",
+      "options": [
+        "To travel one more mile",
+        "To do more than what is expected",
+        "To arrive late on purpose",
+        "To change jobs frequently"
+      ],
+      "correctAnswer": "To do more than what is expected"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What does \"break the ice\" mean?",
+      "options": [
+        "To damage something fragile",
+        "To begin a conversation and reduce tension",
+        "To end an argument suddenly",
+        "To ruin a friendly meeting"
+      ],
+      "correctAnswer": "To begin a conversation and reduce tension"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does \"cut corners\" mean?",
+      "options": [
+        "To save time or money by doing something badly",
+        "To design a building",
+        "To choose a shorter route",
+        "To solve a problem creatively"
+      ],
+      "correctAnswer": "To save time or money by doing something badly"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "We need to ______ the ball rolling before the client loses interest.",
+      "correctAnswer": "get"
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "I wasn't feeling great yesterday. I was a bit under the ______.",
+      "correctAnswer": "weather"
+    },
+    {
+      "id": 10,
+      "type": "complete",
+      "question": "Complete the idiom: \"go the extra ______\".",
+      "correctAnswer": "mile"
+    },
+    {
+      "id": 11,
+      "type": "complete",
+      "question": "Complete the idiom: \"break the ______\".",
+      "correctAnswer": "ice"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete the idiom: \"face the ______\".",
+      "correctAnswer": "music"
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Translate into English: \"Ela decidiu enfrentar a situação com coragem.\"",
+      "correctAnswer": "She decided to bite the bullet"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate into English: \"Depois do erro, ele teve que arcar com as consequências.\"",
+      "correctAnswer": "After the mistake, he had to face the music"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate into English: \"Vamos iniciar a reunião.\"",
+      "correctAnswer": "Let's get the ball rolling|Let us get the ball rolling"
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Which idiom best fits this meaning: \"to make people feel more comfortable in a social situation\"?",
+      "options": [
+        "cut corners",
+        "break the ice",
+        "face the music",
+        "under the weather"
+      ],
+      "correctAnswer": "break the ice"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Which idiom has a negative meaning related to quality or effort?",
+      "options": [
+        "go the extra mile",
+        "bite the bullet",
+        "cut corners",
+        "get the ball rolling"
+      ],
+      "correctAnswer": "cut corners"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "The team really went the extra ______ to deliver the project early.",
+      "correctAnswer": "mile"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "When the manager arrived, someone had to break the ______ and speak first.",
+      "correctAnswer": "ice"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the idiom correctly?",
+      "options": [
+        "I was under the weather, so I ran five kilometers.",
+        "We need to get the ball rolling if we want to finish on time.",
+        "She cut corners by carefully checking every detail.",
+        "He faced the music by turning on the radio."
+      ],
+      "correctAnswer": "We need to get the ball rolling if we want to finish on time."
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which idiom best completes the sentence? \"The presentation was awkward at first, so Maya told a joke to ______.\"",
+      "options": [
+        "cut corners",
+        "break the ice",
+        "face the music",
+        "go the extra mile"
+      ],
+      "correctAnswer": "break the ice"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which idiom best completes the sentence? \"The company tried to ______ on safety checks, and that caused serious problems.\"",
+      "options": [
+        "cut corners",
+        "get the ball rolling",
+        "bite the bullet",
+        "break the ice"
+      ],
+      "correctAnswer": "cut corners"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the best register label for the idiom \"under the weather\".",
+      "options": [
+        "very formal",
+        "neutral academic",
+        "informal everyday English",
+        "technical jargon"
+      ],
+      "correctAnswer": "informal everyday English"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the best register label for the idiom \"cut corners\".",
+      "options": [
+        "formal legal language only",
+        "informal to neutral everyday English",
+        "poetic only",
+        "old-fashioned literary English"
+      ],
+      "correctAnswer": "informal to neutral everyday English"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "After months of delay, someone finally got the ball ______.",
+      "correctAnswer": "rolling"
+    },
+    {
+      "id": 6,
+      "type": "complete",
+      "question": "Complete the sentence with an idiom: \"He knew the conversation would be difficult, but he decided to ______ ______ ______.\"",
+      "correctAnswer": "bite the bullet"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence sounds most appropriate in a formal report?",
+      "options": [
+        "We need to get the ball rolling ASAP.",
+        "The project should commence as soon as possible.",
+        "Let's break the ice with the investors.",
+        "They were under the weather during negotiations."
+      ],
+      "correctAnswer": "The project should commence as soon as possible."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which sentence is the best informal equivalent of \"The team exceeded expectations\"?",
+      "options": [
+        "The team went the extra mile.",
+        "The team commenced operations.",
+        "The team demonstrated procedural compliance.",
+        "The team maintained neutrality."
+      ],
+      "correctAnswer": "The team went the extra mile."
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "Although it was uncomfortable, she faced the ______ and apologized publicly.",
+      "correctAnswer": "music"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence uses \"under the weather\" correctly?",
+      "options": [
+        "He was under the weather, so he stayed home and rested.",
+        "The report was under the weather and needed editing.",
+        "We were under the weather, so we signed the contract.",
+        "She put the proposal under the weather yesterday."
+      ],
+      "correctAnswer": "He was under the weather, so he stayed home and rested."
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Translate into English: \"Eles fizeram mais do que o esperado para ajudar o cliente.\"",
+      "correctAnswer": "They went the extra mile to help the client"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Translate into English: \"A empresa tentou economizar de forma irresponsável.\"",
+      "correctAnswer": "The company tried to cut corners"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which expression is least appropriate in a university essay?",
+      "options": [
+        "under the weather",
+        "consequently",
+        "moreover",
+        "in contrast"
+      ],
+      "correctAnswer": "under the weather"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Choose an idiom to complete the idea: \"When the new intern introduced herself, she used a funny story to ______ the ______.\"",
+      "correctAnswer": "break the ice"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which option best paraphrases \"He had to face the music after lying to the team\"?",
+      "options": [
+        "He had to accept the consequences",
+        "He had to sing in front of the team",
+        "He had to leave the meeting early",
+        "He had to start the project again"
+      ],
+      "correctAnswer": "He had to accept the consequences"
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Which option best paraphrases \"Let's get the ball rolling\" in a work meeting?",
+      "options": [
+        "Let's postpone everything",
+        "Let's begin",
+        "Let's complain",
+        "Let's leave early"
+      ],
+      "correctAnswer": "Let's begin"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "In casual conversation, native speakers often say \"I'm a little under the ______\" instead of \"I'm slightly ill.\"",
+      "correctAnswer": "weather"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which sentence shows the best awareness of register?",
+      "options": [
+        "The CEO was under the weather; henceforth, the merger was postponed.",
+        "The patient was under the weather, according to the surgical report.",
+        "The manager was feeling unwell, so the meeting was rescheduled.",
+        "The contract was under the weather and needed revision."
+      ],
+      "correctAnswer": "The manager was feeling unwell, so the meeting was rescheduled."
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate into English: \"Para começar a conversa, ele fez uma pergunta simples.\"",
+      "correctAnswer": "To break the ice, he asked a simple question"
+    },
+    {
+      "id": 20,
+      "type": "complete",
+      "question": "Complete the sentence with the best idiom: \"The supplier used cheap materials to save money. They clearly ______ ______.\"",
+      "correctAnswer": "cut corners"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does the phrasal verb \"put off\" mean in this sentence: \"They put off the meeting\"?",
+      "options": [
+        "to cancel permanently",
+        "to postpone",
+        "to enjoy",
+        "to organize"
+      ],
+      "correctAnswer": "to postpone"
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "What does \"look into\" mean?",
+      "options": [
+        "to investigate",
+        "to invent",
+        "to admire",
+        "to memorize"
+      ],
+      "correctAnswer": "to investigate"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What does \"turn down\" mean in this sentence: \"She turned down the offer\"?",
+      "options": [
+        "to accept enthusiastically",
+        "to reject",
+        "to reduce the volume",
+        "to write formally"
+      ],
+      "correctAnswer": "to reject"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What does \"run into\" usually mean when talking about people?",
+      "options": [
+        "to crash into someone",
+        "to meet unexpectedly",
+        "to argue strongly",
+        "to invite someone in"
+      ],
+      "correctAnswer": "to meet unexpectedly"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which phrasal verb is separable?",
+      "options": [
+        "look into",
+        "run into",
+        "put off",
+        "come across"
+      ],
+      "correctAnswer": "put off"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which phrasal verb is inseparable?",
+      "options": [
+        "hand in",
+        "figure out",
+        "look into",
+        "turn down"
+      ],
+      "correctAnswer": "look into"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "We need to look ______ the complaint before replying to the customer.",
+      "correctAnswer": "into"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "She turned ______ the job because the salary was too low.",
+      "correctAnswer": "down"
+    },
+    {
+      "id": 9,
+      "type": "complete",
+      "question": "Complete the phrasal verb: \"figure ______\".",
+      "correctAnswer": "out"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I looked the issue into.",
+        "I looked into the issue.",
+        "I looked into it the issue.",
+        "I looked the issue."
+      ],
+      "correctAnswer": "I looked into the issue."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She turned down it.",
+        "She turned it down.",
+        "She turned into it down.",
+        "She down turned it."
+      ],
+      "correctAnswer": "She turned it down."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does \"bring up\" mean in this sentence: \"He brought up an interesting point\"?",
+      "options": [
+        "to mention",
+        "to raise a child",
+        "to hide",
+        "to repeat quietly"
+      ],
+      "correctAnswer": "to mention"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "What does \"carry on\" mean?",
+      "options": [
+        "to continue",
+        "to transport luggage",
+        "to cancel",
+        "to discover by chance"
+      ],
+      "correctAnswer": "to continue"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Please hand ______ your assignment by Friday.",
+      "correctAnswer": "in"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which phrasal verb means \"discover by chance\"?",
+      "options": [
+        "come across",
+        "put off",
+        "set up",
+        "take over"
+      ],
+      "correctAnswer": "come across"
+    },
+    {
+      "id": 16,
+      "type": "translate",
+      "question": "Translate into English: \"Vou investigar esse problema amanhã.\"",
+      "correctAnswer": "I will look into this problem tomorrow|I'll look into this problem tomorrow"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate into English: \"Ela recusou o convite.\"",
+      "correctAnswer": "She turned down the invitation|She turned the invitation down"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "Choose the best phrasal verb: \"We had to ______ ______ the launch because the software wasn't ready.\"",
+      "correctAnswer": "put off"
+    },
+    {
+      "id": 19,
+      "type": "multiple-choice",
+      "question": "Which sentence shows an inseparable phrasal verb?",
+      "options": [
+        "They put the meeting off.",
+        "They put it off.",
+        "They looked into the matter.",
+        "They turned the offer down."
+      ],
+      "correctAnswer": "They looked into the matter."
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which phrasal verb best completes the sentence? \"During the meeting, she ______ an issue nobody had considered before.\"",
+      "options": [
+        "brought up",
+        "ran into",
+        "put off",
+        "came across"
+      ],
+      "correctAnswer": "brought up"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "Please look the matter into.",
+        "Please look into the matter.",
+        "Please look it into the matter.",
+        "Please into look the matter."
+      ],
+      "correctAnswer": "Please look into the matter."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with a pronoun.",
+      "options": [
+        "Turn down it.",
+        "Turn it down.",
+        "Turn down them it.",
+        "Turn it into down."
+      ],
+      "correctAnswer": "Turn it down."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with a separable phrasal verb.",
+      "options": [
+        "She put off it.",
+        "She put it off.",
+        "She looked it into.",
+        "She ran the issue into."
+      ],
+      "correctAnswer": "She put it off."
+    },
+    {
+      "id": 4,
+      "type": "complete",
+      "question": "Rewrite using a pronoun: \"He handed in the report.\"",
+      "correctAnswer": "He handed it in"
+    },
+    {
+      "id": 5,
+      "type": "complete",
+      "question": "Rewrite using a pronoun: \"They turned down the proposal.\"",
+      "correctAnswer": "They turned it down"
+    },
+    {
+      "id": 6,
+      "type": "complete",
+      "question": "Rewrite correctly: \"We looked the issue into.\"",
+      "correctAnswer": "We looked into the issue"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence is wrong?",
+      "options": [
+        "I came across an old photo.",
+        "I put the meeting off.",
+        "I looked the complaint into.",
+        "I figured the answer out."
+      ],
+      "correctAnswer": "I looked the complaint into."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She brought up it during lunch.",
+        "She brought it up during lunch.",
+        "She looked it into during lunch.",
+        "She came the issue across."
+      ],
+      "correctAnswer": "She brought it up during lunch."
+    },
+    {
+      "id": 9,
+      "type": "fill-blank",
+      "question": "With separable phrasal verbs, object pronouns usually go ______ the verb and the particle.",
+      "correctAnswer": "between"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "With inseparable phrasal verbs, the object goes ______ the full phrasal verb.",
+      "correctAnswer": "after"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Choose the correct transformation of \"Please put off the meeting.\" using a pronoun.",
+      "options": [
+        "Please put off it.",
+        "Please put it off.",
+        "Please put into it off.",
+        "Please off put it."
+      ],
+      "correctAnswer": "Please put it off."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct transformation of \"I'll look into the complaint.\" using a pronoun.",
+      "options": [
+        "I'll look it into.",
+        "I'll look into it.",
+        "I'll look it into the complaint.",
+        "I'll into look it."
+      ],
+      "correctAnswer": "I'll look into it."
+    },
+    {
+      "id": 13,
+      "type": "translate",
+      "question": "Translate into English: \"Eles adiaram isso para a próxima semana.\"",
+      "correctAnswer": "They put it off until next week|They put it off for next week"
+    },
+    {
+      "id": 14,
+      "type": "translate",
+      "question": "Translate into English: \"Nós vamos investigar isso imediatamente.\"",
+      "correctAnswer": "We will look into it immediately|We'll look into it immediately"
+    },
+    {
+      "id": 15,
+      "type": "complete",
+      "question": "Correct the sentence: \"She turned down it because it was risky.\"",
+      "correctAnswer": "She turned it down because it was risky"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "Correct the sentence: \"He looked the problem into before replying.\"",
+      "correctAnswer": "He looked into the problem before replying"
+    },
+    {
+      "id": 17,
+      "type": "multiple-choice",
+      "question": "Which sentence is best?",
+      "options": [
+        "We ran our teacher into at the mall.",
+        "We ran into our teacher at the mall.",
+        "We ran into at our teacher the mall.",
+        "We ran our teacher at the mall into."
+      ],
+      "correctAnswer": "We ran into our teacher at the mall."
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses \"figure out\" with a pronoun?",
+      "options": [
+        "Can you figure out it?",
+        "Can you figure it out?",
+        "Can you out figure it?",
+        "Can you figure into it out?"
+      ],
+      "correctAnswer": "Can you figure it out?"
+    },
+    {
+      "id": 19,
+      "type": "fill-blank",
+      "question": "Complete the rule: \"Look into\" is generally treated as an ______ phrasal verb.",
+      "correctAnswer": "inseparable"
+    },
+    {
+      "id": 20,
+      "type": "fill-blank",
+      "question": "Complete the rule: \"Turn down\" is a ______ phrasal verb.",
+      "correctAnswer": "separable"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which sentence contains a metaphor?",
+      "options": [
+        "The office was a zoo during the product launch.",
+        "I was under the weather yesterday.",
+        "Could you look into this issue?",
+        "She turned the offer down politely."
+      ],
+      "correctAnswer": "The office was a zoo during the product launch."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which sentence contains hyperbole?",
+      "options": [
+        "I've told you a million times to back up your files.",
+        "He looked into the complaint.",
+        "Let's get the ball rolling.",
+        "She was feeling under the weather."
+      ],
+      "correctAnswer": "I've told you a million times to back up your files."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence is most likely ironic?",
+      "options": [
+        "Great, another two-hour meeting. Just what I needed.",
+        "We need to investigate the issue carefully.",
+        "She went the extra mile to help.",
+        "He submitted the report on time."
+      ],
+      "correctAnswer": "Great, another two-hour meeting. Just what I needed."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the most natural informal sentence.",
+      "options": [
+        "I was slightly indisposed, therefore I remained at home.",
+        "I was under the weather, so I stayed home.",
+        "My physical condition was suboptimal, so I stayed home.",
+        "I remained home due to minor illness symptoms."
+      ],
+      "correctAnswer": "I was under the weather, so I stayed home."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Choose the best formal alternative to \"Let's get the ball rolling.\"",
+      "options": [
+        "Let's stop wasting time.",
+        "Let's break the ice.",
+        "Let's begin the process.",
+        "Let's go the extra mile."
+      ],
+      "correctAnswer": "Let's begin the process."
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "The writer used exaggeration for effect. That figure of speech is called ______.",
+      "correctAnswer": "hyperbole"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "When someone says the opposite of what they really mean for effect, that is often ______.",
+      "correctAnswer": "irony"
+    },
+    {
+      "id": 8,
+      "type": "fill-blank",
+      "question": "Calling a chaotic classroom \"a circus\" is an example of a ______.",
+      "correctAnswer": "metaphor"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate into English: \"Ele teve que encarar as consequências no fim.\"",
+      "correctAnswer": "He had to face the music in the end"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate into English: \"Eles encontraram a antiga professora por acaso.\"",
+      "correctAnswer": "They ran into their old teacher by chance|They ran into their old teacher"
+    },
+    {
+      "id": 11,
+      "type": "translate",
+      "question": "Translate into English: \"Você pode descobrir isso?\"",
+      "correctAnswer": "Can you figure it out?"
+    },
+    {
+      "id": 12,
+      "type": "complete",
+      "question": "Complete the sentence with the best idiom: \"Nobody wanted to start the discussion, so Ana decided to ______ the ______.\"",
+      "correctAnswer": "get the ball rolling"
+    },
+    {
+      "id": 13,
+      "type": "complete",
+      "question": "Complete the sentence with the best phrasal verb: \"The editor asked me to ______ ______ the article before publication.\"",
+      "correctAnswer": "look into"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which sentence mixes idiom and register appropriately?",
+      "options": [
+        "The legal document says the witness was under the weather.",
+        "During the casual chat, he used humor to break the ice.",
+        "The academic paper says we should bite the bullet in section two.",
+        "The research abstract says the company cut corners, lol."
+      ],
+      "correctAnswer": "During the casual chat, he used humor to break the ice."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence uses a phrasal verb correctly?",
+      "options": [
+        "She looked the data into before publishing.",
+        "She looked into the data before publishing.",
+        "She looked into it the data before publishing.",
+        "She into looked the data before publishing."
+      ],
+      "correctAnswer": "She looked into the data before publishing."
+    },
+    {
+      "id": 16,
+      "type": "multiple-choice",
+      "question": "Which sentence best shows \"go the extra mile\"?",
+      "options": [
+        "He did only what was required.",
+        "She stayed late to help the new employee finish the task.",
+        "They canceled the service immediately.",
+        "I ignored the customer's email."
+      ],
+      "correctAnswer": "She stayed late to help the new employee finish the task."
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "In \"This laptop is a dinosaur,\" the speaker is probably using a figure of speech, not speaking literally. The figure is a ______.",
+      "correctAnswer": "metaphor"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate into English: \"Ela recusou a proposta e depois investigou os detalhes.\"",
+      "correctAnswer": "She turned down the proposal and then looked into the details|She turned the proposal down and then looked into the details"
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "Choose the best word to complete the sentence: \"Saying 'Fantastic weather' during a storm can sound ______.\"",
+      "correctAnswer": "ironic"
+    },
+    {
+      "id": 20,
+      "type": "multiple-choice",
+      "question": "Which sentence is the best final review answer?",
+      "options": [
+        "We looked the issue into, then we cut corners.",
+        "We looked into the issue, but we didn't cut corners.",
+        "We turned down it because we were under a weather.",
+        "We got the ball roll and faced the song."
+      ],
+      "correctAnswer": "We looked into the issue, but we didn't cut corners."
+    }
+  ]
+}

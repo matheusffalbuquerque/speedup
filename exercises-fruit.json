@@ -1,897 +1,936 @@
 {
-  "lesson": 3,
-  "level": "leaf",
-  "topic": "Comparing & Contrasting",
+  "lesson": 4,
+  "level": "fruit",
+  "topic": "Academic & Professional Writing",
   "monday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'similar' mean?",
+      "question": "What is a 'thesis' in academic writing?",
       "options": [
-        "Completely different",
-        "Almost the same",
-        "Much better",
-        "Very strange"
+        "A long book written by a professor",
+        "A central claim or argument that the writer intends to prove or develop",
+        "A list of references used in an essay",
+        "A concluding paragraph that restates the introduction"
       ],
-      "correctAnswer": "Almost the same"
+      "correctAnswer": "A central claim or argument that the writer intends to prove or develop"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'different' mean?",
+      "question": "What does 'counterargument' mean in academic writing?",
       "options": [
-        "Exactly the same",
-        "Not the same",
-        "Very good",
-        "Very expensive"
+        "A point that supports the writer's main argument",
+        "An opposing view or objection to the writer's main argument",
+        "A statistical fact used as evidence",
+        "A quotation from an authoritative source"
       ],
-      "correctAnswer": "Not the same"
+      "correctAnswer": "An opposing view or objection to the writer's main argument"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'contrast' mean in a comparison context?",
+      "question": "What does it mean to 'cite' a source?",
       "options": [
-        "To show similarities",
-        "To show differences",
-        "To give examples",
-        "To explain reasons"
+        "To completely rewrite a source in your own words",
+        "To formally acknowledge or reference a source in your writing",
+        "To summarize an entire article in one sentence",
+        "To delete information that you do not agree with"
       ],
-      "correctAnswer": "To show differences"
+      "correctAnswer": "To formally acknowledge or reference a source in your writing"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What is a 'comparison'?",
+      "question": "What does 'paraphrase' mean?",
       "options": [
-        "A type of question",
-        "An action of examining differences or similarities",
-        "A way to give directions",
-        "A kind of story"
+        "To copy a text word for word and place it in quotation marks",
+        "To list all sources at the end of a document",
+        "To restate someone else's idea in your own words while preserving the meaning",
+        "To combine two different texts into one without changes"
       ],
-      "correctAnswer": "An action of examining differences or similarities"
+      "correctAnswer": "To restate someone else's idea in your own words while preserving the meaning"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which sentence uses the comparative form correctly?",
+      "type": "vocabulary",
+      "question": "What does 'evidence' mean in an academic argument?",
       "options": [
-        "This book is more interesting than that one.",
-        "This book is interestinger than that one.",
-        "This book is most interesting than that one.",
-        "This book is the interesting than that one."
+        "A personal feeling about a topic",
+        "Facts, data, examples, or expert opinions used to support a claim",
+        "A list of topics covered in an essay",
+        "The title of an academic paper"
       ],
-      "correctAnswer": "This book is more interesting than that one."
+      "correctAnswer": "Facts, data, examples, or expert opinions used to support a claim"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Choose the correct comparative: 'The red car is _____ than the blue one.'",
+      "type": "vocabulary",
+      "question": "What does 'synthesize' mean in academic writing?",
       "options": [
-        "fast",
-        "more fast",
-        "faster",
-        "the fastest"
+        "To copy information directly from multiple sources",
+        "To reject all existing research on a topic",
+        "To combine ideas and information from different sources into a unified understanding",
+        "To write a one-sentence summary of a source"
       ],
-      "correctAnswer": "faster"
+      "correctAnswer": "To combine ideas and information from different sources into a unified understanding"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Which word completes the sentence? 'This restaurant is _____ expensive than the other one.'",
+      "type": "vocabulary",
+      "question": "What does 'evaluate' mean in an academic context?",
       "options": [
-        "more",
-        "most",
-        "very",
-        "much"
+        "To describe something without forming a judgment",
+        "To critically assess the value, quality, or significance of something",
+        "To translate a text into another language",
+        "To list all the parts of an argument"
       ],
-      "correctAnswer": "more"
+      "correctAnswer": "To critically assess the value, quality, or significance of something"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence is INCORRECT?",
+      "question": "What is 'nominalization'?",
       "options": [
-        "She is taller than her brother.",
-        "This movie is more boring than the last one.",
-        "He is more smarter than his classmates.",
-        "The weather is colder today than yesterday."
+        "The process of converting verbs or adjectives into nouns",
+        "The use of names and proper nouns in formal writing",
+        "A technique for shortening long sentences",
+        "A method for organizing paragraphs logically"
       ],
-      "correctAnswer": "He is more smarter than his classmates."
+      "correctAnswer": "The process of converting verbs or adjectives into nouns"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "What does 'unlike' signal in a sentence?",
-      "options": [
-        "Similarity between two things",
-        "A contrast or difference",
-        "A reason or cause",
-        "A time sequence"
-      ],
-      "correctAnswer": "A contrast or difference"
+      "question": "Which is the correct nominalized form of 'analyze'?",
+      "options": ["analyzation", "analyzed", "analysis", "analyzing"],
+      "correctAnswer": "analysis"
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Choose the correct option: 'Tom loves cold weather, _____ his sister prefers summer.'",
-      "options": [
-        "because",
-        "whereas",
-        "so",
-        "although"
-      ],
-      "correctAnswer": "whereas"
+      "question": "Which is the correct nominalized form of 'achieve'?",
+      "options": ["achieval", "achievment", "achievement", "achieveness"],
+      "correctAnswer": "achievement"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "My city is _____ than yours — it has more buildings and more people.",
-      "correctAnswer": "bigger"
+      "type": "multiple-choice",
+      "question": "Which sentence uses nominalization correctly in an academic style?",
+      "options": [
+        "The analysis of the data revealed significant trends.",
+        "We analyzed the data and we found significant trends.",
+        "When we analyzed the data, we found trends that were significant.",
+        "The data was analyzed and there were trends that were significant."
+      ],
+      "correctAnswer": "The analysis of the data revealed significant trends."
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "_____ my brother, I don't enjoy playing video games.",
-      "correctAnswer": "Unlike"
+      "type": "multiple-choice",
+      "question": "Which nominalization correctly comes from 'discuss'?",
+      "options": ["discussal", "discussion", "discussing", "discussment"],
+      "correctAnswer": "discussion"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Soccer is _____ popular than cricket in Brazil.",
-      "correctAnswer": "more"
+      "question": "Complete using nominalization: 'We need to _____ the results.' → 'Further _____ of the results is necessary.'",
+      "correctAnswer": "evaluation|analysis|discussion"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Winter in Canada is much _____ than winter in Brazil.",
-      "correctAnswer": "colder"
+      "question": "Complete: 'The _____ of new technologies (develop) has transformed modern workplaces.'",
+      "correctAnswer": "development"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "I enjoy reading books, _____ my friend prefers watching movies.",
-      "correctAnswer": "whereas|while"
+      "type": "fill-blank",
+      "question": "Complete: 'The _____ of three academic papers (conclude) was that urban planning needs reform.'",
+      "correctAnswer": "conclusion"
     },
     {
       "id": 16,
-      "type": "complete",
-      "question": "This laptop costs _____ the old model — it is much pricier.",
-      "correctAnswer": "more than"
+      "type": "fill-blank",
+      "question": "Complete: 'The _____ (suggest) that renewable energy is cost-effective was supported by multiple studies.'",
+      "correctAnswer": "suggestion"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "_____ my parents, I love spicy food.",
-      "correctAnswer": "Unlike"
+      "question": "Nominalize the verb: 'to evaluate' → 'The _____ of the program showed positive results.'",
+      "correctAnswer": "evaluation"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Este carro é mais rápido do que aquele.'",
-      "correctAnswer": "this car is faster than that one"
+      "type": "complete",
+      "question": "Nominalize the verb: 'to argue' → 'Her central _____ was well-supported by empirical data.'",
+      "correctAnswer": "argument"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Ela é mais alta do que o irmão dela.'",
-      "correctAnswer": "she is taller than her brother"
+      "question": "Translate to English using nominalization: 'A análise dos dados revelou uma correlação significativa.'",
+      "correctAnswer": "the analysis of the data revealed a significant correlation"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Ao contrário do meu amigo, eu prefiro comida simples.'",
-      "correctAnswer": "unlike my friend, i prefer simple food"
+      "question": "Translate to English using nominalization: 'A avaliação do projeto foi concluída com sucesso.'",
+      "correctAnswer": "the evaluation of the project was successfully completed"
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'both' mean when comparing two things?",
+      "question": "What is 'hedging' in academic writing?",
       "options": [
-        "Neither one nor the other",
-        "One of the two",
-        "The two together",
-        "More than two"
+        "Using definitive, absolute language to sound confident",
+        "Using cautious language to express claims with appropriate uncertainty",
+        "Cutting unnecessary words to make writing more concise",
+        "Adding quotations to every paragraph to strengthen arguments"
       ],
-      "correctAnswer": "The two together"
+      "correctAnswer": "Using cautious language to express claims with appropriate uncertainty"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "In a comparison, 'either' means:",
+      "question": "What does 'analyze' mean in an academic task instruction?",
       "options": [
-        "None of the options",
-        "One or the other (of two)",
-        "Both at the same time",
-        "More than two things"
+        "To describe what you see without interpreting it",
+        "To examine something in detail to identify patterns, relationships, and meaning",
+        "To simply agree or disagree with a source",
+        "To write a personal response to a reading"
       ],
-      "correctAnswer": "One or the other (of two)"
+      "correctAnswer": "To examine something in detail to identify patterns, relationships, and meaning"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'neither' express?",
+      "question": "What does 'summarize' involve in academic writing?",
       "options": [
-        "Both options are true",
-        "None of the two options",
-        "One option is better",
-        "The first option only"
+        "Reproducing an entire text in your own words",
+        "Giving a brief account of the main points of a source without personal opinion",
+        "Quoting large sections of a source with proper citation",
+        "Arguing against the main point of a source"
       ],
-      "correctAnswer": "None of the two options"
+      "correctAnswer": "Giving a brief account of the main points of a source without personal opinion"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'just as' indicate in a comparison?",
+      "question": "What is the purpose of a 'topic sentence' in an academic paragraph?",
       "options": [
-        "A big difference",
-        "An exact or close similarity",
-        "A contrast",
-        "An exception"
+        "To introduce the writer's personal feelings about the topic",
+        "To restate the thesis at the end of the essay",
+        "To state the main idea of the paragraph and guide the reader",
+        "To list all the evidence that will be discussed in the essay"
       ],
-      "correctAnswer": "An exact or close similarity"
+      "correctAnswer": "To state the main idea of the paragraph and guide the reader"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'as...as' correctly?",
+      "question": "Which sentence is an example of academic hedging?",
       "options": [
-        "She is as tall as her mother.",
-        "She is as taller as her mother.",
-        "She is as tall than her mother.",
-        "She is as the tallest as her mother."
+        "The data proves beyond any doubt that climate change causes extreme weather.",
+        "The data suggests that there may be a link between climate change and extreme weather.",
+        "Climate change definitely and certainly causes all extreme weather events.",
+        "It is totally obvious that climate change is the only cause of extreme weather."
       ],
-      "correctAnswer": "She is as tall as her mother."
+      "correctAnswer": "The data suggests that there may be a link between climate change and extreme weather."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which is the correct superlative form of 'good'?",
+      "question": "Which phrase is a typical hedging expression in academic English?",
       "options": [
-        "Gooder",
-        "More good",
-        "The best",
-        "The goodest"
+        "It is absolutely certain that ...",
+        "There is no doubt whatsoever that ...",
+        "It could be argued that ...",
+        "Everyone knows that ..."
       ],
-      "correctAnswer": "The best"
+      "correctAnswer": "It could be argued that ..."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Choose the correct superlative: 'This is _____ restaurant in the city.'",
+      "question": "Why do academic writers use hedging language?",
       "options": [
-        "the most expensive",
-        "the more expensive",
-        "most expensive",
-        "more expensive"
+        "To make their writing sound informal and conversational",
+        "To acknowledge the limits of their evidence and avoid overstating claims",
+        "To confuse the reader with vague statements",
+        "To replace all factual information with opinions"
       ],
-      "correctAnswer": "the most expensive"
+      "correctAnswer": "To acknowledge the limits of their evidence and avoid overstating claims"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "What does 'the least popular' mean?",
+      "question": "Which sentence correctly uses the hedging phrase 'It appears that'?",
       "options": [
-        "The most liked",
-        "The second most liked",
-        "The one that people like the least",
-        "More popular than others"
+        "It appears that the intervention had a positive effect on student outcomes.",
+        "It appears that the intervention have a positive effect on student outcomes.",
+        "It appears the intervention definitely had a positive effect on student outcomes.",
+        "It appearing that the intervention had a positive effect on student outcomes."
       ],
-      "correctAnswer": "The one that people like the least"
+      "correctAnswer": "It appears that the intervention had a positive effect on student outcomes."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which sentence expresses that A is smaller than B?",
+      "question": "Which of the following is NOT a hedging expression?",
       "options": [
-        "A is as big as B.",
-        "A is not as big as B.",
-        "A is bigger than B.",
-        "A is the biggest."
+        "The results tend to suggest ...",
+        "It seems likely that ...",
+        "It is undeniably proven that ...",
+        "There is some evidence to indicate that ..."
       ],
-      "correctAnswer": "A is not as big as B."
+      "correctAnswer": "It is undeniably proven that ..."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "The Amazon River is not as long _____ the Nile River.",
-      "correctAnswer": "as"
+      "type": "multiple-choice",
+      "question": "Which sentence most appropriately hedges a research finding?",
+      "options": [
+        "The results show that this method always works in every context.",
+        "The findings indicate that this method may be effective in similar contexts.",
+        "The findings prove that this method works everywhere without exception.",
+        "This is the best method and there is nothing better."
+      ],
+      "correctAnswer": "The findings indicate that this method may be effective in similar contexts."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Mount Everest is _____ mountain in the world.",
-      "correctAnswer": "the tallest|the highest"
+      "type": "multiple-choice",
+      "question": "Which is the most formal and appropriate way to introduce evidence?",
+      "options": [
+        "Lots of studies show that ...",
+        "Everybody knows that ...",
+        "A growing body of research suggests that ...",
+        "I found out online that ..."
+      ],
+      "correctAnswer": "A growing body of research suggests that ..."
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "My phone is just _____ good as yours — they are both excellent.",
-      "correctAnswer": "as"
+      "question": "Complete: 'It _____ that further investment in public transport would reduce carbon emissions.'",
+      "correctAnswer": "appears|seems|could be argued"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "That was _____ meal I have ever had — absolutely delicious!",
-      "correctAnswer": "the best"
+      "question": "Complete: 'The data _____ a strong correlation between diet and cardiovascular disease.'",
+      "correctAnswer": "suggests|indicates|implies"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "This option is the _____ expensive, so it is good for our budget.",
-      "correctAnswer": "least"
+      "question": "Complete: 'It could _____ argued that remote work increases employee productivity.'",
+      "correctAnswer": "be"
     },
     {
       "id": 15,
       "type": "fill-blank",
-      "question": "Tokyo is one of _____ cities in the world.",
-      "correctAnswer": "the most expensive|the largest|the biggest"
+      "question": "Complete: 'There is some _____ to suggest that early childhood education has long-term cognitive benefits.'",
+      "correctAnswer": "evidence"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "Brazil is _____ country in South America in terms of size.",
-      "correctAnswer": "the largest|the biggest"
+      "question": "The study _____ to indicate that sleep deprivation negatively impacts academic performance.",
+      "correctAnswer": "appears|seems|tends"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "She speaks English _____ a native speaker.",
-      "correctAnswer": "as well as|as fluently as"
+      "question": "It is _____ that the policy had unintended consequences in rural communities.",
+      "correctAnswer": "possible|likely|arguable|plausible"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "_____ the cat and the dog make great family pets.",
-      "correctAnswer": "Both"
+      "question": "A _____ body of evidence suggests that bilingualism delays the onset of dementia.",
+      "correctAnswer": "growing|substantial|considerable|significant"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Esse é o melhor filme que já assisti.'",
-      "correctAnswer": "this is the best movie i have ever watched|this is the best film i have ever seen"
+      "question": "Translate to English using a hedging expression: 'Os dados sugerem que pode haver uma ligação entre estresse e doenças cardíacas.'",
+      "correctAnswer": "the data suggests that there may be a link between stress and heart disease"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Minha mochila é tão pesada quanto a sua.'",
-      "correctAnswer": "my backpack is as heavy as yours"
+      "question": "Translate to English: 'Poderia-se argumentar que a globalização aumentou a desigualdade econômica.'",
+      "correctAnswer": "it could be argued that globalization has increased economic inequality"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'although' mean?",
+      "question": "What does 'coherence' refer to in academic writing?",
       "options": [
-        "Because of that",
-        "In spite of the fact that",
-        "As a result",
-        "For example"
+        "The number of sources cited in an essay",
+        "The logical flow and connection between ideas throughout a text",
+        "The total word count of a written piece",
+        "The formality level of the vocabulary used"
       ],
-      "correctAnswer": "In spite of the fact that"
+      "correctAnswer": "The logical flow and connection between ideas throughout a text"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What is the function of 'however' in a sentence?",
+      "question": "In academic writing, what does 'concise' mean?",
       "options": [
-        "To add more information",
-        "To introduce a contrast or opposite idea",
-        "To give a reason",
-        "To list items"
+        "Using elaborate and complex language to demonstrate knowledge",
+        "Repeating key ideas in different sections for emphasis",
+        "Expressing information clearly and directly without unnecessary words",
+        "Including as much detail as possible in every sentence"
       ],
-      "correctAnswer": "To introduce a contrast or opposite idea"
+      "correctAnswer": "Expressing information clearly and directly without unnecessary words"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "When do we use 'on the other hand'?",
+      "question": "What is the 'passive voice' in academic writing?",
       "options": [
-        "To repeat the same idea",
-        "To introduce a contrasting point of view",
-        "To summarize a list",
-        "To give step-by-step instructions"
+        "A structure where the subject performs the action",
+        "A structure where the subject receives the action, often omitting the agent",
+        "A technique for making sentences shorter by removing adjectives",
+        "A method for embedding quotations into a paragraph"
       ],
-      "correctAnswer": "To introduce a contrasting point of view"
+      "correctAnswer": "A structure where the subject receives the action, often omitting the agent"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'although' correctly?",
+      "question": "Which of the following is a correctly formed passive sentence?",
       "options": [
-        "Although it was raining, we went for a walk.",
-        "We although went for a walk, it was raining.",
-        "It was raining although, we went for a walk.",
-        "We went although for a walk it was raining."
+        "The experiment was conducted by a team of researchers.",
+        "The experiment conducted by a team of researchers.",
+        "The experiment is conduct by a team of researchers.",
+        "A team of researchers was conducting the experiment by."
       ],
-      "correctAnswer": "Although it was raining, we went for a walk."
+      "correctAnswer": "The experiment was conducted by a team of researchers."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Choose the correct option: '_____ the movie was long, everyone enjoyed it.'",
+      "question": "Why is passive voice commonly used in academic and scientific writing?",
       "options": [
-        "However",
-        "Because",
-        "Even though",
-        "So"
+        "To make the text more conversational and engaging",
+        "To emphasize the writer's personal role in the research",
+        "To focus on the action or process rather than on the person performing it",
+        "To avoid using past tense verbs in formal texts"
       ],
-      "correctAnswer": "Even though"
+      "correctAnswer": "To focus on the action or process rather than on the person performing it"
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'however' with correct punctuation?",
+      "question": "Which sentence is in the passive voice?",
       "options": [
-        "I was tired; however, I finished the work.",
-        "I was tired however I finished the work.",
-        "I was however tired, I finished the work.",
-        "However I was tired I finished the work."
+        "The researchers analyzed the samples over six months.",
+        "The samples were analyzed over a period of six months.",
+        "The team completed the analysis in record time.",
+        "They conducted the research at three different locations."
       ],
-      "correctAnswer": "I was tired; however, I finished the work."
+      "correctAnswer": "The samples were analyzed over a period of six months."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which connector best expresses contrast between two separate sentences?",
+      "question": "Which is the best topic sentence for a paragraph about the benefits of renewable energy?",
       "options": [
-        "therefore",
-        "in addition",
-        "on the other hand",
-        "as well as"
+        "The sun is very hot and wind is strong in many countries.",
+        "People have different opinions about energy sources.",
+        "Renewable energy sources offer significant environmental and economic advantages.",
+        "Solar panels were invented a long time ago."
       ],
-      "correctAnswer": "on the other hand"
+      "correctAnswer": "Renewable energy sources offer significant environmental and economic advantages."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "'She passed the test _____ she didn't study much.' Which word shows contrast?",
+      "question": "Where does the topic sentence typically appear in an academic paragraph?",
       "options": [
-        "because",
-        "so",
-        "although",
-        "and"
+        "In the middle, after the evidence is presented",
+        "At the very end, as a concluding statement",
+        "At the beginning, to introduce the paragraph's main idea",
+        "In a footnote, as additional information"
       ],
-      "correctAnswer": "although"
+      "correctAnswer": "At the beginning, to introduce the paragraph's main idea"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which of the following is NOT a contrast connector?",
+      "question": "Which correctly transforms the active sentence into passive voice? 'Scientists have discovered new evidence.'",
       "options": [
-        "although",
-        "however",
-        "even though",
-        "because"
+        "New evidence has been discovered by scientists.",
+        "New evidence was discover by scientists.",
+        "New evidence is being discover by scientists.",
+        "New evidence discovered has been by scientists."
       ],
-      "correctAnswer": "because"
+      "correctAnswer": "New evidence has been discovered by scientists."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "_____ I don't like cats, I do think they're beautiful animals.",
-      "correctAnswer": "Although|Even though"
+      "type": "multiple-choice",
+      "question": "Which sentence is NOT in an appropriate academic register?",
+      "options": [
+        "The findings suggest a significant relationship between the two variables.",
+        "It has been argued that urbanization contributes to environmental degradation.",
+        "The data totally proves that this idea is super correct.",
+        "The results were consistent with the initial hypothesis."
+      ],
+      "correctAnswer": "The data totally proves that this idea is super correct."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "The weather was terrible. _____, we decided to go to the beach.",
-      "correctAnswer": "However"
+      "type": "multiple-choice",
+      "question": "Which is the correct passive form of 'The committee approved the proposal'?",
+      "options": [
+        "The proposal was approved by the committee.",
+        "The proposal has approve by the committee.",
+        "The committee was approved the proposal.",
+        "The proposal approved was by the committee."
+      ],
+      "correctAnswer": "The proposal was approved by the committee."
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "He kept running _____ his leg was hurting.",
-      "correctAnswer": "even though|although"
+      "question": "Complete using passive voice: 'The report _____ (complete) by the research team last Friday.'",
+      "correctAnswer": "was completed"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Living in a big city can be stressful. _____, it offers many job opportunities.",
-      "correctAnswer": "On the other hand|However"
+      "question": "Complete: 'The data _____ (collect) over a three-year period using standardized questionnaires.'",
+      "correctAnswer": "was collected|were collected"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "_____ the food was expensive, the quality was truly excellent.",
-      "correctAnswer": "Although|Even though"
+      "question": "Complete the topic sentence: 'Urban poverty _____ a complex challenge that requires coordinated policy responses.'",
+      "correctAnswer": "remains|represents|is|constitutes"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "I love traveling. _____, I don't have enough money to do it often.",
-      "correctAnswer": "However"
+      "type": "fill-blank",
+      "question": "Complete: 'It has _____ argued that standardized testing may not accurately reflect student ability.'",
+      "correctAnswer": "been"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "She decided to buy the dress _____ it was very expensive.",
-      "correctAnswer": "although|even though"
+      "question": "The participants _____ informed of their rights before the study began.",
+      "correctAnswer": "were"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Dogs are very loyal pets. _____, they need a lot of attention and exercise.",
-      "correctAnswer": "On the other hand|However"
+      "question": "The results _____ be interpreted with caution, as the sample size was relatively small.",
+      "correctAnswer": "should|must|ought to"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "_____ he studied hard, he didn't pass the final exam.",
-      "correctAnswer": "Even though|Although"
+      "question": "Three key factors _____ identified in the literature as contributing to academic success.",
+      "correctAnswer": "were|have been"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Embora estivesse cansado, ele continuou trabalhando.'",
-      "correctAnswer": "although he was tired, he kept working|even though he was tired, he kept working"
+      "question": "Translate to English using passive voice: 'O experimento foi realizado por pesquisadores da Universidade de São Paulo.'",
+      "correctAnswer": "the experiment was conducted by researchers from the university of são paulo"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Eu gosto de tecnologia. No entanto, prefiro livros físicos.'",
-      "correctAnswer": "i like technology. however, i prefer physical books"
+      "question": "Translate to English: 'Os resultados foram analisados usando métodos estatísticos avançados.'",
+      "correctAnswer": "the results were analyzed using advanced statistical methods"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'whereas' express in a comparison?",
+      "question": "What is 'plagiarism' in an academic context?",
       "options": [
-        "Similarity",
-        "Result",
-        "Direct contrast between two ideas",
-        "Additional information"
+        "Using transition words to connect paragraphs effectively",
+        "Presenting someone else's ideas, words, or work as your own without acknowledgment",
+        "Including too many direct quotations in a single paragraph",
+        "Writing a conclusion that does not match the introduction"
       ],
-      "correctAnswer": "Direct contrast between two ideas"
+      "correctAnswer": "Presenting someone else's ideas, words, or work as your own without acknowledgment"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'in contrast' mean?",
+      "question": "What is a 'draft' in the writing process?",
       "options": [
-        "In the same way",
-        "Showing a noticeable difference",
-        "Adding more details",
-        "Giving a specific example"
+        "The final, polished version of a piece of writing",
+        "A bibliography page listing all cited sources",
+        "A preliminary version of a text that will be revised and improved",
+        "A short abstract at the beginning of a research paper"
       ],
-      "correctAnswer": "Showing a noticeable difference"
+      "correctAnswer": "A preliminary version of a text that will be revised and improved"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'in comparison' signal?",
+      "question": "What does it mean to 'revise' a piece of writing?",
       "options": [
-        "A complete disagreement",
-        "How two things relate in terms of similarities or differences",
-        "A final conclusion",
-        "A surprising fact"
+        "To copy the text into a new document without changes",
+        "To review and make changes to improve the content, structure, and clarity",
+        "To translate the text from one language to another",
+        "To add more quotations and citations to support arguments"
       ],
-      "correctAnswer": "How two things relate in terms of similarities or differences"
+      "correctAnswer": "To review and make changes to improve the content, structure, and clarity"
     },
     {
       "id": 4,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'whereas' correctly?",
+      "question": "Which of the following is a correct paraphrase of 'Many students struggle with academic writing'?",
       "options": [
-        "She likes tea, whereas her husband prefers coffee.",
-        "She likes tea whereas, her husband prefers coffee.",
-        "She likes tea. Whereas her husband prefers coffee.",
-        "Whereas she likes tea her husband prefers coffee."
+        "Many students struggle with academic writing.",
+        "A significant number of learners find academic writing challenging.",
+        "Students many struggle write academically.",
+        "Writing academic is struggling for many students."
       ],
-      "correctAnswer": "She likes tea, whereas her husband prefers coffee."
+      "correctAnswer": "A significant number of learners find academic writing challenging."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "In which sentence does 'while' show contrast (not time)?",
+      "question": "Which sentence correctly introduces a paraphrase or cited idea?",
       "options": [
-        "I was cooking while he was watching TV.",
-        "She loves the mountains, while he prefers the sea.",
-        "While waiting, I read a magazine.",
-        "They arrived while we were still eating."
+        "According to Johnson (2019), urban inequality has worsened over the last decade.",
+        "According Johnson 2019 urban inequality has worsened over the last decade.",
+        "Johnson 2019 says urban inequality has worsened.",
+        "Urban inequality, Johnson says in 2019, has worsened."
       ],
-      "correctAnswer": "She loves the mountains, while he prefers the sea."
+      "correctAnswer": "According to Johnson (2019), urban inequality has worsened over the last decade."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'unlike' correctly?",
+      "question": "Which sentence avoids plagiarism by correctly attributing an idea?",
       "options": [
-        "Unlike my sister, I enjoy cooking.",
-        "I unlike my sister enjoy cooking.",
-        "My sister unlike enjoys cooking very much.",
-        "Unlike to my sister, I enjoy cooking."
+        "Climate change is a major global threat.",
+        "It has been argued by Smith (2021) that climate change poses an existential threat to biodiversity.",
+        "Climate change threatens all species on Earth (but I don't need to cite this).",
+        "According to my personal experience, climate change is a serious problem."
       ],
-      "correctAnswer": "Unlike my sister, I enjoy cooking."
+      "correctAnswer": "It has been argued by Smith (2021) that climate change poses an existential threat to biodiversity."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Choose the best connector: 'Brazil is very hot in summer. _____, Norway is extremely cold.'",
+      "question": "Which technique helps a writer paraphrase effectively?",
       "options": [
-        "Similarly",
-        "In contrast",
-        "In addition",
-        "As a result"
+        "Copying the original text and changing only a few words",
+        "Understanding the source fully, then writing the idea in your own words and sentence structure",
+        "Using the same sentence structure as the original but substituting synonyms",
+        "Keeping every technical word from the original unchanged"
       ],
-      "correctAnswer": "In contrast"
+      "correctAnswer": "Understanding the source fully, then writing the idea in your own words and sentence structure"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'unlike' INCORRECTLY?",
+      "question": "Which phrase is commonly used to introduce a paraphrased idea in academic writing?",
       "options": [
-        "Unlike my brother, I love spicy food.",
-        "Unlike in Spain, in Brazil we don't eat paella.",
-        "He unlike his friend is very quiet.",
-        "Unlike his teammates, he prefers individual sports."
+        "I copied this from ...",
+        "As stated by ...",
+        "Like it says in ...",
+        "In the words of someone ..."
       ],
-      "correctAnswer": "He unlike his friend is very quiet."
+      "correctAnswer": "As stated by ..."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which connector expresses contrast in: 'She is very outgoing, _____ her twin sister is quite shy.'?",
+      "question": "Which verb is most appropriate to introduce a citation in formal academic writing?",
       "options": [
-        "because",
-        "whereas",
-        "so",
-        "and"
+        "Smith (2020) says that biodiversity is declining.",
+        "Smith (2020) contends that biodiversity loss is accelerating globally.",
+        "Smith (2020) goes that biodiversity is going down.",
+        "Smith (2020) talks about how biodiversity is bad."
       ],
-      "correctAnswer": "whereas"
+      "correctAnswer": "Smith (2020) contends that biodiversity loss is accelerating globally."
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Choose the best option: 'Our new office is huge. _____, the old one was tiny.'",
+      "question": "When should a writer use a direct quotation instead of a paraphrase?",
       "options": [
-        "As a result",
-        "In comparison",
-        "For example",
-        "In order to"
+        "Whenever any information from a source is used",
+        "When the exact wording of the original is particularly significant or distinctive",
+        "When the writer cannot understand what the source is saying",
+        "To fill up the required word count more quickly"
       ],
-      "correctAnswer": "In comparison"
+      "correctAnswer": "When the exact wording of the original is particularly significant or distinctive"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "I prefer working in the morning, _____ my colleague works better at night.",
-      "correctAnswer": "whereas|while"
+      "type": "multiple-choice",
+      "question": "Which is the most appropriate way to introduce a contrasting source in academic writing?",
+      "options": [
+        "However, Brown (2018) challenges this view, arguing that the benefits are overstated.",
+        "But Brown 2018 thinks differently.",
+        "Brown says in 2018 that he doesn't agree with this.",
+        "Someone named Brown in 2018 had a different idea."
+      ],
+      "correctAnswer": "However, Brown (2018) challenges this view, arguing that the benefits are overstated."
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "Paris is famous for art and fashion. _____, Tokyo is known for technology and food.",
-      "correctAnswer": "In contrast|On the other hand"
+      "question": "Complete: 'As _____ by Lee (2022), access to quality education remains unequal across socioeconomic groups.'",
+      "correctAnswer": "argued|noted|stated|suggested|highlighted"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "_____ other sports, swimming is very easy on the joints.",
-      "correctAnswer": "Unlike"
+      "question": "Complete: 'In _____ words, the author claims that economic growth does not guarantee social progress.'",
+      "correctAnswer": "other"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "This city has better public transport _____ to the capital.",
-      "correctAnswer": "in comparison"
+      "question": "Complete: 'To _____, the research indicates that early intervention programmes are most effective when delivered consistently.'",
+      "correctAnswer": "summarize|sum up|conclude"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "My brother is very loud, _____ I tend to be quiet.",
-      "correctAnswer": "whereas|while"
+      "type": "fill-blank",
+      "question": "Complete: 'The _____ (argue) presented in the paper was supported by three independent studies.'",
+      "correctAnswer": "argument"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "Summer in Brazil is very hot. _____, winter is mild and cool.",
-      "correctAnswer": "In contrast|On the other hand|However"
+      "question": "According _____ Chen (2020), digital literacy is now essential for participation in the modern economy.",
+      "correctAnswer": "to"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "_____ traditional cameras, smartphones can take great photos instantly.",
-      "correctAnswer": "Unlike"
+      "question": "The author's central _____ is that economic inequality is primarily driven by structural, not individual, factors.",
+      "correctAnswer": "argument|thesis|claim|contention"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "The new stadium is much bigger. _____, the old one had only 10,000 seats.",
-      "correctAnswer": "In comparison|In contrast"
+      "question": "The writer effectively _____ the opposing argument before presenting a compelling rebuttal.",
+      "correctAnswer": "acknowledges|addresses|presents|refutes"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Eu gosto de aventura, enquanto minha esposa prefere relaxar.'",
-      "correctAnswer": "i like adventure, whereas my wife prefers to relax|i enjoy adventure, while my wife prefers to relax"
+      "question": "Translate to English: 'Segundo Smith (2020), a desigualdade urbana tem aumentado nas últimas duas décadas.'",
+      "correctAnswer": "according to smith (2020), urban inequality has increased over the last two decades"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Em comparação com a cidade vizinha, nossa cidade é muito menor.'",
-      "correctAnswer": "in comparison with the neighboring city, our city is much smaller|compared to the neighboring city, our city is much smaller"
+      "question": "Translate to English: 'Em outras palavras, o autor argumenta que a tecnologia não resolve todos os problemas sociais.'",
+      "correctAnswer": "in other words, the author argues that technology does not solve all social problems"
     }
   ],
   "friday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'as well as' mean?",
+      "question": "What is an 'abstract' in academic writing?",
       "options": [
-        "Instead of",
-        "In addition to / and also",
-        "Unlike",
-        "Better than"
+        "A list of all sources cited in a paper",
+        "A brief summary of a research paper that outlines its purpose, methods, findings, and conclusions",
+        "The introductory paragraph of an essay",
+        "A set of footnotes at the bottom of each page"
       ],
-      "correctAnswer": "In addition to / and also"
+      "correctAnswer": "A brief summary of a research paper that outlines its purpose, methods, findings, and conclusions"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "In 'Neither option is correct,' what does 'neither' indicate?",
+      "question": "What does 'coherent' mean when describing academic writing?",
       "options": [
-        "Both options are acceptable",
-        "One of the options is correct",
-        "Not one and not the other",
-        "Only the second option"
+        "Long and detailed, covering every possible aspect of the topic",
+        "Logically organized and easy to follow, with ideas connected clearly",
+        "Written using only formal Latin-based vocabulary",
+        "Containing more than five sources per paragraph"
       ],
-      "correctAnswer": "Not one and not the other"
+      "correctAnswer": "Logically organized and easy to follow, with ideas connected clearly"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "Which of the following is a synonym for 'whereas'?",
+      "question": "What is a 'counterargument' used for in academic writing?",
       "options": [
-        "because",
-        "therefore",
-        "while / on the other hand",
-        "as a result"
+        "To introduce the writer's thesis at the beginning of the essay",
+        "To summarize what other researchers have found on the topic",
+        "To acknowledge an opposing view and then refute or qualify it",
+        "To list the limitations of the research methodology"
       ],
-      "correctAnswer": "while / on the other hand"
+      "correctAnswer": "To acknowledge an opposing view and then refute or qualify it"
     },
     {
       "id": 4,
-      "type": "vocabulary",
-      "question": "What does 'in contrast' help the reader understand?",
+      "type": "multiple-choice",
+      "question": "Which sentence is the best example of nominalization in academic writing?",
       "options": [
-        "A time sequence of events",
-        "A noticeable difference between two things",
-        "A cause and its effect",
-        "A list of similar items"
+        "The achievement of the sustainability goals requires collaboration.",
+        "They achieved the sustainability goals by collaborating.",
+        "When people collaborated, they were achieving sustainability goals.",
+        "Sustainability goals were being achieved when people collaborated."
       ],
-      "correctAnswer": "A noticeable difference between two things"
+      "correctAnswer": "The achievement of the sustainability goals requires collaboration."
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Choose the correct superlative: 'This is _____ book I have ever read.'",
+      "question": "Which sentence correctly uses hedging to present a research finding?",
       "options": [
-        "the most interesting",
-        "more interesting",
-        "the interestingest",
-        "most interesting"
+        "The results conclusively prove that exercise cures depression.",
+        "The results seem to suggest that exercise may reduce symptoms of depression.",
+        "Exercise obviously cures depression, as the results clearly show.",
+        "It is a well-known fact that exercise always cures depression."
       ],
-      "correctAnswer": "the most interesting"
+      "correctAnswer": "The results seem to suggest that exercise may reduce symptoms of depression."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'not as...as'?",
+      "question": "Which is the correct passive voice transformation of 'Researchers collected the data in 2022'?",
       "options": [
-        "This car is not as expensive as I thought.",
-        "This car is not as more expensive as I thought.",
-        "This car is not as expensiver as I thought.",
-        "This car is not the expensive as I thought."
+        "The data was collected by researchers in 2022.",
+        "The data collected was researchers in 2022.",
+        "The data has collect by researchers in 2022.",
+        "The researchers were collected the data in 2022."
       ],
-      "correctAnswer": "This car is not as expensive as I thought."
+      "correctAnswer": "The data was collected by researchers in 2022."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which two words can BOTH be used to show contrast?",
+      "question": "What is wrong with this sentence? 'In my opinion, I personally think that this study is very bad.'",
       "options": [
-        "however / therefore",
-        "although / whereas",
-        "because / since",
-        "also / in addition"
+        "The passive voice is used incorrectly.",
+        "It is redundant ('in my opinion' and 'I personally think' express the same idea) and the language is too informal.",
+        "The subject and verb do not agree.",
+        "The sentence is too short for academic writing."
       ],
-      "correctAnswer": "although / whereas"
+      "correctAnswer": "It is redundant ('in my opinion' and 'I personally think' express the same idea) and the language is too informal."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence is grammatically CORRECT?",
+      "question": "Which academic paragraph structure is considered most effective?",
       "options": [
-        "This coffee is more better than the last one.",
-        "This coffee is gooder than the last one.",
-        "This coffee is better than the last one.",
-        "This coffee is the better than the last one."
+        "Evidence → Topic sentence → Analysis → Conclusion",
+        "Conclusion → Evidence → Topic sentence → Analysis",
+        "Topic sentence → Evidence → Analysis → Conclusion",
+        "Analysis → Topic sentence → Conclusion → Evidence"
       ],
-      "correctAnswer": "This coffee is better than the last one."
+      "correctAnswer": "Topic sentence → Evidence → Analysis → Conclusion"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Choose the correct option: '_____ Jane and Mark enjoy hiking on weekends.'",
+      "question": "Which sentence most effectively introduces a counterargument?",
       "options": [
-        "Either",
-        "Neither",
-        "Both",
-        "Although"
+        "Some people are wrong and disagree with this idea.",
+        "While proponents of this view argue that ..., critics contend that ...",
+        "The other side says things but they are not correct.",
+        "There are other opinions but they don't matter."
       ],
-      "correctAnswer": "Both"
+      "correctAnswer": "While proponents of this view argue that ..., critics contend that ..."
     },
     {
       "id": 10,
-      "type": "fill-blank",
-      "question": "Living in the city is more expensive _____ living in the countryside.",
-      "correctAnswer": "than"
+      "type": "multiple-choice",
+      "question": "Which verb is most appropriate in formal academic writing to replace 'talks about'?",
+      "options": [
+        "goes on about",
+        "discusses",
+        "blabs about",
+        "mentions in passing"
+      ],
+      "correctAnswer": "discusses"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "Online shopping is very convenient. _____, some people still prefer physical stores.",
-      "correctAnswer": "However"
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses a reporting verb to introduce a citation?",
+      "options": [
+        "Martinez (2021) demonstrates that early bilingual education yields long-term cognitive benefits.",
+        "Martinez (2021) is demonstrating that early bilingual education has long-term cognitive benefits.",
+        "Martinez in 2021 demonstrated about early bilingual education long-term cognitive benefits.",
+        "Martinez (2021) who demonstrates early bilingual education has long-term cognitive benefits."
+      ],
+      "correctAnswer": "Martinez (2021) demonstrates that early bilingual education yields long-term cognitive benefits."
     },
     {
       "id": 12,
       "type": "fill-blank",
-      "question": "The food here is not as spicy _____ the food in Thailand.",
-      "correctAnswer": "as"
+      "question": "Complete using nominalization: 'The _____ (discover) of penicillin revolutionized modern medicine.'",
+      "correctAnswer": "discovery"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "_____ her sister, Ana prefers to live in the city rather than in the countryside.",
-      "correctAnswer": "Unlike"
+      "question": "Complete: 'The _____ (solve) of the energy crisis will require significant international cooperation.'",
+      "correctAnswer": "solution"
     },
     {
       "id": 14,
-      "type": "complete",
-      "question": "I prefer tea, _____ most people in the office drink coffee.",
-      "correctAnswer": "whereas|while"
+      "type": "fill-blank",
+      "question": "Complete: 'While it is generally _____ that deforestation poses a threat, its full impact remains contested.'",
+      "correctAnswer": "accepted|acknowledged|recognized|agreed"
     },
     {
       "id": 15,
-      "type": "complete",
-      "question": "The Amazon is _____ river in South America.",
-      "correctAnswer": "the longest|the largest"
+      "type": "fill-blank",
+      "question": "Complete: 'The _____ (conclude) drawn from the study must be interpreted with caution given the limited sample size.'",
+      "correctAnswer": "conclusions"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "_____ the hotel was expensive, the service was not good at all.",
-      "correctAnswer": "Although|Even though"
+      "question": "The policy _____ implemented without adequate consultation with affected communities.",
+      "correctAnswer": "was"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "The first half of the movie was boring. _____, the ending was absolutely amazing.",
-      "correctAnswer": "In contrast|However|On the other hand"
+      "question": "It _____ be noted that the scope of this study was limited to urban populations.",
+      "correctAnswer": "should|must|ought to"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Embora eu goste de tecnologia, prefiro conversar pessoalmente.'",
-      "correctAnswer": "although i like technology, i prefer to talk in person|even though i like technology, i prefer to talk in person"
+      "type": "complete",
+      "question": "The author _____ that economic growth is not sufficient to eliminate poverty.",
+      "correctAnswer": "argues|contends|maintains|suggests|claims"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Esse restaurante é muito melhor do que o anterior.'",
-      "correctAnswer": "this restaurant is much better than the previous one"
+      "question": "Translate to English using nominalization: 'O desenvolvimento sustentável requer a cooperação de todos os países.'",
+      "correctAnswer": "sustainable development requires the cooperation of all countries"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Tanto os gatos quanto os cachorros são ótimos animais de estimação.'",
-      "correctAnswer": "both cats and dogs are great pets"
+      "question": "Translate to English: 'Embora alguns argumentem que a inteligência artificial criará empregos, outros acreditam que resultará em desemprego em massa.'",
+      "correctAnswer": "although some argue that artificial intelligence will create jobs, others believe it will result in mass unemployment"
     }
   ]
 }
