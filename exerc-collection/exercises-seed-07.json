@@ -1,0 +1,813 @@
+{
+  "lesson": 8,
+  "level": "seed",
+  "topic": "Weather & Seasons",
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'sunny' mean?",
+      "options": ["Chuvoso", "Ensolarado", "Nublado", "Ventoso"],
+      "correctAnswer": "Ensolarado"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'rainy' mean?",
+      "options": ["Frio", "Quente", "Chuvoso", "Nevado"],
+      "correctAnswer": "Chuvoso"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'cold' mean?",
+      "options": ["Quente", "Frio", "Úmido", "Ventoso"],
+      "correctAnswer": "Frio"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'hot' mean?",
+      "options": ["Frio", "Fresco", "Quente", "Nublado"],
+      "correctAnswer": "Quente"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'weather' mean?",
+      "options": ["Estação do ano", "Clima / Tempo", "Temperatura", "Previsão"],
+      "correctAnswer": "Clima / Tempo"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'winter' mean?",
+      "options": ["Verão", "Primavera", "Outono", "Inverno"],
+      "correctAnswer": "Inverno"
+    },
+    {
+      "id": 7,
+      "type": "vocabulary",
+      "question": "What does 'summer' mean?",
+      "options": ["Inverno", "Verão", "Outono", "Primavera"],
+      "correctAnswer": "Verão"
+    },
+    {
+      "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'spring' mean?",
+      "options": ["Inverno", "Verão", "Primavera", "Outono"],
+      "correctAnswer": "Primavera"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'fall' (or 'autumn') mean?",
+      "options": ["Verão", "Outono", "Inverno", "Primavera"],
+      "correctAnswer": "Outono"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "What does 'cloudy' mean?",
+      "options": ["Ensolarado", "Chuvoso", "Nublado", "Nevado"],
+      "correctAnswer": "Nublado"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which word describes weather with a lot of wind?",
+      "options": ["sunny", "rainy", "windy", "snowy"],
+      "correctAnswer": "windy"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "How many seasons are there in a year?",
+      "options": ["Two", "Three", "Four", "Five"],
+      "correctAnswer": "Four"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which season is usually very hot?",
+      "options": ["winter", "spring", "fall", "summer"],
+      "correctAnswer": "summer"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which season is usually very cold?",
+      "options": ["summer", "spring", "winter", "fall"],
+      "correctAnswer": "winter"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What do you use when it is rainy?",
+      "options": ["sunglasses", "umbrella", "jacket", "boots"],
+      "correctAnswer": "umbrella"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'It is very _____ today. The sun is shining!'",
+      "correctAnswer": "sunny"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'I love _____. It is my favorite season because it is warm and flowers bloom.'",
+      "correctAnswer": "spring"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: 'Take your umbrella — it is _____!'",
+      "correctAnswer": "rainy"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Hoje está ensolarado.'",
+      "correctAnswer": "it is sunny today|today it is sunny"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto do verão.'",
+      "correctAnswer": "i like summer"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'windy' mean?",
+      "options": ["Chuvoso", "Ventoso", "Frio", "Úmido"],
+      "correctAnswer": "Ventoso"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'snowy' mean?",
+      "options": ["Chuvoso", "Nublado", "Nevado / Com neve", "Ensolarado"],
+      "correctAnswer": "Nevado / Com neve"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'warm' mean?",
+      "options": ["Frio", "Quente / Morno", "Úmido", "Nevado"],
+      "correctAnswer": "Quente / Morno"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'cool' mean in a weather context?",
+      "options": ["Quente", "Frio extremo", "Fresco", "Chuvoso"],
+      "correctAnswer": "Fresco"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "It's sunny today.",
+        "It sunny today.",
+        "It are sunny today.",
+        "Today sunny it is."
+      ],
+      "correctAnswer": "It's sunny today."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "It's are cold outside.",
+        "It cold outside.",
+        "It's cold outside.",
+        "Is cold outside."
+      ],
+      "correctAnswer": "It's cold outside."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "How do you say 'Está chovendo.'?",
+      "options": [
+        "It rains.",
+        "It's raining.",
+        "It rain.",
+        "Is raining."
+      ],
+      "correctAnswer": "It's raining."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about winter:",
+      "options": [
+        "In winter, it's usually cold.",
+        "In winter, it's usually hot.",
+        "In winter, it's usually rainy.",
+        "In winter, it's usually sunny."
+      ],
+      "correctAnswer": "In winter, it's usually cold."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which answer is correct? 'What's the weather like today?' — '_____'",
+      "options": [
+        "It's sunny and warm.",
+        "Is sunny and warm.",
+        "The weather sunny.",
+        "Today is sun."
+      ],
+      "correctAnswer": "It's sunny and warm."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "What does 'It's hot today!' mean?",
+      "options": [
+        "Está frio hoje!",
+        "Está quente hoje!",
+        "Está nublado hoje!",
+        "Está ventando hoje!"
+      ],
+      "correctAnswer": "Está quente hoje!"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which word correctly completes: 'In summer, it is usually very _____.'?",
+      "options": ["cold", "snowy", "hot", "windy"],
+      "correctAnswer": "hot"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does 'It's cloudy today.' mean?",
+      "options": [
+        "Está ensolarado hoje.",
+        "Está nublado hoje.",
+        "Está frio hoje.",
+        "Está nevando hoje."
+      ],
+      "correctAnswer": "Está nublado hoje."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'It's _____ today. The wind is very strong!'",
+      "correctAnswer": "windy"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: '_____ hot today. Please drink water.'",
+      "correctAnswer": "It's"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'In _____, the trees lose their leaves and the weather gets cool.'",
+      "correctAnswer": "fall|autumn"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'It is _____ outside. Let's build a snowman!'",
+      "correctAnswer": "snowy"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'What's the weather like?' — 'It's _____ and cold today.'",
+      "correctAnswer": "cloudy|rainy|windy|snowy"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "It _____ cold in winter in Canada.",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Está frio lá fora.'",
+      "correctAnswer": "it is cold outside|it's cold outside"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Está nublado hoje.'",
+      "correctAnswer": "it is cloudy today|it's cloudy today"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'season' mean?",
+      "options": ["Clima", "Temperatura", "Estação do ano", "Previsão do tempo"],
+      "correctAnswer": "Estação do ano"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'umbrella' mean?",
+      "options": ["Casaco", "Botas", "Guarda-chuva", "Cachecol"],
+      "correctAnswer": "Guarda-chuva"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'temperature' mean?",
+      "options": ["Vento", "Temperatura", "Umidade", "Pressão"],
+      "correctAnswer": "Temperatura"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'forecast' mean?",
+      "options": ["Estação do ano", "Temperatura atual", "Previsão do tempo", "Tipo de clima"],
+      "correctAnswer": "Previsão do tempo"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which is the correct question to ask about the weather?",
+      "options": [
+        "What's the weather like?",
+        "How is the weather do?",
+        "What weather is it?",
+        "How weather today?"
+      ],
+      "correctAnswer": "What's the weather like?"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which is a correct answer to 'What's the weather like?'",
+      "options": [
+        "It's warm and sunny.",
+        "Is warm and sunny.",
+        "The weather warm.",
+        "Weather is like sunny."
+      ],
+      "correctAnswer": "It's warm and sunny."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does 'What's the weather like?' mean?",
+      "options": [
+        "Você gosta do clima?",
+        "Como está o tempo?",
+        "Qual é a estação do ano?",
+        "Está chovendo agora?"
+      ],
+      "correctAnswer": "Como está o tempo?"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which is the correct way to talk about weather?",
+      "options": [
+        "It's raining now.",
+        "Is raining now.",
+        "He's raining now.",
+        "Rain is now."
+      ],
+      "correctAnswer": "It's raining now."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which sentence is INCORRECT?",
+      "options": [
+        "It's hot in summer.",
+        "It's cold in winter.",
+        "It's spring in hot.",
+        "It's warm in spring."
+      ],
+      "correctAnswer": "It's spring in hot."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Choose the right word: 'In _____, flowers bloom and the weather is mild.'",
+      "options": ["winter", "fall", "spring", "summer"],
+      "correctAnswer": "spring"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence talks about the weather using Present Simple?",
+      "options": [
+        "It rains a lot in the Amazon.",
+        "It was raining yesterday.",
+        "It rained last week.",
+        "It will rain tomorrow."
+      ],
+      "correctAnswer": "It rains a lot in the Amazon."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does 'It's freezing!' mean?",
+      "options": [
+        "Está muito quente!",
+        "Está muito frio! / Está gelado!",
+        "Está ventando muito!",
+        "Está muito nublado!"
+      ],
+      "correctAnswer": "Está muito frio! / Está gelado!"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'What's the _____ like today?' — 'It's sunny and hot.'",
+      "correctAnswer": "weather"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'It _____ a lot in the rainforest. It rains almost every day.'",
+      "correctAnswer": "rains"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'My favorite _____ is summer because I love the beach.'",
+      "correctAnswer": "season"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'The _____ today is 35 degrees. It is very hot!'",
+      "correctAnswer": "temperature"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'What's the weather like in your city?' — 'It _____ hot in summer and cold in winter.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "I always bring my _____ when it is rainy.",
+      "correctAnswer": "umbrella"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Como está o tempo hoje?'",
+      "correctAnswer": "what's the weather like today?|how is the weather today?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'No inverno, está muito frio.'",
+      "correctAnswer": "in winter, it is very cold|in winter it's very cold"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'stormy' mean?",
+      "options": ["Ensolarado", "Fresco", "Com tempestade / Tempestuoso", "Nevado"],
+      "correctAnswer": "Com tempestade / Tempestuoso"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'humid' mean?",
+      "options": ["Seco", "Úmido", "Frio", "Quente"],
+      "correctAnswer": "Úmido"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'dry' mean in a weather context?",
+      "options": ["Molhado", "Úmido", "Seco", "Fresco"],
+      "correctAnswer": "Seco"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'outside' mean?",
+      "options": ["Dentro de casa", "Do lado de fora", "No céu", "Na escola"],
+      "correctAnswer": "Do lado de fora"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which is the correct Present Simple sentence about weather?",
+      "options": [
+        "London rains a lot.",
+        "London is raining a lot.",
+        "London rain a lot.",
+        "London was raining a lot."
+      ],
+      "correctAnswer": "London rains a lot."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Simple for a weather fact?",
+      "options": [
+        "It snows in Norway every winter.",
+        "It is snowing in Norway every winter.",
+        "It snowed in Norway every winter.",
+        "It will snow in Norway every winter."
+      ],
+      "correctAnswer": "It snows in Norway every winter."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does 'It's warm today.' mean?",
+      "options": [
+        "Está frio hoje.",
+        "Está nublado hoje.",
+        "Está quente / morno hoje.",
+        "Está nevando hoje."
+      ],
+      "correctAnswer": "Está quente / morno hoje."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which is a good answer to 'Do you like rainy weather?'",
+      "options": [
+        "Yes, I do. I love the rain!",
+        "Yes, I likes rainy weather.",
+        "I am like rainy weather.",
+        "Yes, I like."
+      ],
+      "correctAnswer": "Yes, I do. I love the rain!"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "In spring, it is usually warm and it rains sometimes.",
+        "In spring, it usually are warm and it rain sometimes.",
+        "In spring, is usually warm and rains sometimes.",
+        "In spring, it usually warm and it raining sometimes."
+      ],
+      "correctAnswer": "In spring, it is usually warm and it rains sometimes."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "What season comes after summer?",
+      "options": ["spring", "winter", "fall", "cloudy"],
+      "correctAnswer": "fall"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which word does NOT describe weather?",
+      "options": ["sunny", "rainy", "windy", "hungry"],
+      "correctAnswer": "hungry"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does 'It's foggy.' mean?",
+      "options": [
+        "Está ensolarado.",
+        "Está nevando.",
+        "Está com neblina / nevoeiro.",
+        "Está ventando."
+      ],
+      "correctAnswer": "Está com neblina / nevoeiro."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'It _____ a lot in the north. There is snow every winter.'",
+      "correctAnswer": "snows"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'I don't like _____ weather. I prefer sunny days.'",
+      "correctAnswer": "rainy|cold|cloudy|stormy"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'What is the weather _____ in London in winter?' — 'It is cold and rainy.'",
+      "correctAnswer": "like"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'Brazil is _____ in summer. The temperature is very high.'",
+      "correctAnswer": "hot"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "In Brazil, summer is hot and _____. It rains a lot.",
+      "correctAnswer": "rainy|humid|stormy"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "'What's the weather like in your city?' — 'It _____ very hot in summer.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Chove muito aqui no verão.'",
+      "correctAnswer": "it rains a lot here in summer"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Qual é a sua estação favorita?'",
+      "correctAnswer": "what is your favorite season?"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'thunder' mean?",
+      "options": ["Relâmpago", "Trovão", "Vento forte", "Granizo"],
+      "correctAnswer": "Trovão"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'rainbow' mean?",
+      "options": ["Nuvem", "Arco-íris", "Pôr do sol", "Neblina"],
+      "correctAnswer": "Arco-íris"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'degrees' mean in weather?",
+      "options": ["Velocidade do vento", "Nível de chuva", "Graus (temperatura)", "Umidade do ar"],
+      "correctAnswer": "Graus (temperatura)"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'mild' mean in a weather context?",
+      "options": ["Muito quente", "Muito frio", "Agradável / Ameno", "Úmido e chuvoso"],
+      "correctAnswer": "Agradável / Ameno"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "What's the weather like today?",
+        "What's the weather likes today?",
+        "How is the weather like today?",
+        "What weather is like today?"
+      ],
+      "correctAnswer": "What's the weather like today?"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly describes summer?",
+      "options": [
+        "In summer, it is usually hot and sunny.",
+        "In summer, it is usually cold and snowy.",
+        "In summer, it is usually cool and cloudy.",
+        "In summer, it is usually windy and wet."
+      ],
+      "correctAnswer": "In summer, it is usually hot and sunny."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence:",
+      "options": [
+        "It's 30 degrees today. It's very hot!",
+        "It's 30 degrees today. It's very cold!",
+        "It's 30 degrees today. It's very windy!",
+        "It's 30 degrees today. It's very snowy!"
+      ],
+      "correctAnswer": "It's 30 degrees today. It's very hot!"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "What does 'I love winter because it is cold and snowy.' mean?",
+      "options": [
+        "Eu amo o verão porque é quente e ensolarado.",
+        "Eu amo o inverno porque é frio e nevado.",
+        "Eu amo a primavera porque é fria e nevada.",
+        "Eu amo o outono porque é frio e nevado."
+      ],
+      "correctAnswer": "Eu amo o inverno porque é frio e nevado."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which word correctly completes: 'It _____ a lot in winter in the south.'?",
+      "options": ["snowing", "snows", "snow", "is snow"],
+      "correctAnswer": "snows"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "What is the correct order of the four seasons?",
+      "options": [
+        "Spring, Summer, Fall, Winter",
+        "Summer, Spring, Winter, Fall",
+        "Winter, Fall, Summer, Spring",
+        "Fall, Winter, Spring, Summer"
+      ],
+      "correctAnswer": "Spring, Summer, Fall, Winter"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence uses weather vocabulary correctly?",
+      "options": [
+        "It's a beautiful sunny day today!",
+        "It's a beautiful sun day today!",
+        "It's a beautiful sunshine day today!",
+        "It's a beautiful sunned day today!"
+      ],
+      "correctAnswer": "It's a beautiful sunny day today!"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which is a correct weather expression in English?",
+      "options": [
+        "It's raining cats and dogs.",
+        "It's raining cat and dog.",
+        "It rains cats and dogs.",
+        "Both A and C are correct."
+      ],
+      "correctAnswer": "Both A and C are correct."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'After the rain, we saw a beautiful _____ in the sky.'",
+      "correctAnswer": "rainbow"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'The _____ today is 10 degrees. Don't forget your coat!'",
+      "correctAnswer": "temperature"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'Spring is my favorite _____. The weather is mild and flowers bloom.'",
+      "correctAnswer": "season"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'I don't like _____ because it is very cold and I prefer warm weather.'",
+      "correctAnswer": "winter"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'What's the weather like?' — 'It's _____ and rainy. I need my umbrella.'",
+      "correctAnswer": "cloudy|cold|stormy"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "In summer, the days are longer and the weather is _____ and sunny.",
+      "correctAnswer": "hot|warm"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Está quente e ensolarado hoje.'",
+      "correctAnswer": "it is hot and sunny today|it's hot and sunny today"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'A primavera é minha estação favorita.'",
+      "correctAnswer": "spring is my favorite season"
+    }
+  ]
+}

@@ -1,0 +1,818 @@
+{
+  "lesson": 8,
+  "level": "root",
+  "topic": "Work & Professions",
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'job' mean?",
+      "options": ["Passatempo", "Emprego / Trabalho", "Escola", "Projeto"],
+      "correctAnswer": "Emprego / Trabalho"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'career' mean?",
+      "options": ["Salário", "Carreira profissional", "Tarefa diária", "Contrato"],
+      "correctAnswer": "Carreira profissional"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'office' mean?",
+      "options": ["Fábrica", "Loja", "Escritório", "Laboratório"],
+      "correctAnswer": "Escritório"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'salary' mean?",
+      "options": ["Benefício", "Salário", "Bônus", "Imposto"],
+      "correctAnswer": "Salário"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'boss' mean?",
+      "options": ["Funcionário", "Estagiário", "Chefe", "Cliente"],
+      "correctAnswer": "Chefe"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'employee' mean?",
+      "options": ["Chefe", "Dono da empresa", "Funcionário / Empregado", "Investidor"],
+      "correctAnswer": "Funcionário / Empregado"
+    },
+    {
+      "id": 7,
+      "type": "vocabulary",
+      "question": "What does 'interview' mean?",
+      "options": ["Contrato de trabalho", "Entrevista", "Reunião de equipe", "Avaliação de desempenho"],
+      "correctAnswer": "Entrevista"
+    },
+    {
+      "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'profession' mean?",
+      "options": ["Profissão", "Salário", "Empresa", "Turno de trabalho"],
+      "correctAnswer": "Profissão"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'colleague' mean?",
+      "options": ["Gerente", "Colega de trabalho", "Diretor", "Sócio"],
+      "correctAnswer": "Colega de trabalho"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "What does 'promotion' mean in a work context?",
+      "options": ["Demissão", "Transferência", "Promoção / Avanço de cargo", "Aviso prévio"],
+      "correctAnswer": "Promoção / Avanço de cargo"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which word means 'the money you earn regularly for your work'?",
+      "options": ["boss", "salary", "interview", "career"],
+      "correctAnswer": "salary"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which of these is a profession?",
+      "options": ["office", "salary", "doctor", "interview"],
+      "correctAnswer": "doctor"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "What do you call the person who manages and directs other workers?",
+      "options": ["employee", "colleague", "boss", "client"],
+      "correctAnswer": "boss"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She works as a nurse.",
+        "She works like a nurse.",
+        "She works for a nurse.",
+        "She works to a nurse."
+      ],
+      "correctAnswer": "She works as a nurse."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What does 'full-time job' mean?",
+      "options": ["Trabalho de meio período", "Trabalho temporário", "Trabalho em tempo integral", "Trabalho freelancer"],
+      "correctAnswer": "Trabalho em tempo integral"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'She is looking for a new _____ because she wants to earn more money.'",
+      "correctAnswer": "job"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'My _____ gave me a raise because I worked very hard this year.'",
+      "correctAnswer": "boss"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: 'She has a great _____ in medicine — she has been a doctor for ten years.'",
+      "correctAnswer": "career"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Ele trabalha em um escritório.'",
+      "correctAnswer": "he works in an office"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela foi a uma entrevista de emprego ontem.'",
+      "correctAnswer": "she went to a job interview yesterday"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'hire' mean?",
+      "options": ["Demitir", "Contratar", "Promover", "Transferir"],
+      "correctAnswer": "Contratar"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'resume' (or 'CV') mean?",
+      "options": ["Contrato de trabalho", "Crachá de identificação", "Currículo", "Relatório de desempenho"],
+      "correctAnswer": "Currículo"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'deadline' mean in a work context?",
+      "options": ["Reunião de equipe", "Prazo / Data limite", "Horário de almoço", "Meta de vendas"],
+      "correctAnswer": "Prazo / Data limite"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'meeting' mean?",
+      "options": ["Intervalo", "Almoço de negócios", "Reunião", "Apresentação"],
+      "correctAnswer": "Reunião"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which question is used to ask about someone's profession?",
+      "options": [
+        "What do you do?",
+        "What are you doing?",
+        "What did you do?",
+        "What will you do?"
+      ],
+      "correctAnswer": "What do you do?"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which is the correct answer to 'What do you do?'",
+      "options": [
+        "I work as a teacher.",
+        "I work like a teacher.",
+        "I working as a teacher.",
+        "I am work as a teacher."
+      ],
+      "correctAnswer": "I work as a teacher."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly describes someone's job?",
+      "options": [
+        "He is a engineer.",
+        "He is an engineer.",
+        "He is engineering.",
+        "He is engineer."
+      ],
+      "correctAnswer": "He is an engineer."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which answer is the MOST natural response to 'What do you do for a living?'",
+      "options": [
+        "I am doing fine, thanks.",
+        "I work as a software developer.",
+        "I do a lot of things.",
+        "I am working now."
+      ],
+      "correctAnswer": "I work as a software developer."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence:",
+      "options": [
+        "She works as a lawyer at a big firm.",
+        "She works as lawyer at a big firm.",
+        "She work as a lawyer at a big firm.",
+        "She is work as a lawyer at a big firm."
+      ],
+      "correctAnswer": "She works as a lawyer at a big firm."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "How do you say 'Qual é a sua profissão?' in English?",
+      "options": [
+        "What is your job title?",
+        "What do you do?",
+        "Where do you work?",
+        "How is your work?"
+      ],
+      "correctAnswer": "What do you do?"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which of these professions works in a hospital?",
+      "options": ["accountant", "nurse", "architect", "journalist"],
+      "correctAnswer": "nurse"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does 'I work as a freelancer' mean?",
+      "options": [
+        "Eu trabalho em tempo integral para uma empresa.",
+        "Eu trabalho de forma autônoma, sem vínculo fixo.",
+        "Eu trabalho sem receber salário.",
+        "Eu trabalho de madrugada."
+      ],
+      "correctAnswer": "Eu trabalho de forma autônoma, sem vínculo fixo."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: '_____ do you do for a living?' — 'I'm a graphic designer.'",
+      "correctAnswer": "What"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'My father works _____ an accountant at a local company.'",
+      "correctAnswer": "as"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'She is _____ architect. She designs buildings for large companies.'",
+      "correctAnswer": "an"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'He is looking for a job. He has his _____ ready to send to companies.'",
+      "correctAnswer": "resume|CV"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'What do you do?' — 'I _____ as a nurse at the city hospital.'",
+      "correctAnswer": "work"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "'_____ do you do for a living?' — 'I'm a teacher.'",
+      "correctAnswer": "What"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'O que você faz?' (profissão)",
+      "correctAnswer": "what do you do?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Eu trabalho como engenheiro numa grande empresa.'",
+      "correctAnswer": "i work as an engineer at a big company"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'company' mean?",
+      "options": ["Departamento", "Empresa", "Filial", "Cooperativa"],
+      "correctAnswer": "Empresa"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'fired' mean in a work context?",
+      "options": ["Promovido", "Contratado", "Demitido", "Aposentado"],
+      "correctAnswer": "Demitido"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'part-time' mean?",
+      "options": ["Tempo integral", "Meio período", "Turno noturno", "Hora extra"],
+      "correctAnswer": "Meio período"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'overtime' mean?",
+      "options": ["Folga", "Hora extra", "Intervalo de almoço", "Férias"],
+      "correctAnswer": "Hora extra"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "I have worked here for five years.",
+        "I worked here for five years.",
+        "I am working here for five years.",
+        "I work here since five years."
+      ],
+      "correctAnswer": "I have worked here for five years."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "She has been an employee since 2019.",
+        "She is an employee since 2019.",
+        "She was an employee since 2019.",
+        "She has been an employee for 2019."
+      ],
+      "correctAnswer": "She has been an employee since 2019."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Choose the correct option: 'He has worked at this company _____ ten years.'",
+      "options": ["since", "for", "from", "during"],
+      "correctAnswer": "for"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Choose the correct option: 'She has been the boss _____ March.'",
+      "options": ["for", "during", "since", "in"],
+      "correctAnswer": "since"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What is the difference between 'for' and 'since' in Present Perfect?",
+      "options": [
+        "'For' is used with a point in time; 'since' is used with a duration.",
+        "'For' is used with a duration; 'since' is used with a point in time.",
+        "They mean the same thing.",
+        "'For' is for the past; 'since' is for the future."
+      ],
+      "correctAnswer": "'For' is used with a duration; 'since' is used with a point in time."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is INCORRECT?",
+      "options": [
+        "I have had this job for three months.",
+        "She has worked here since last year.",
+        "They have been employees since two years.",
+        "He has been the manager for a long time."
+      ],
+      "correctAnswer": "They have been employees since two years."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "What does 'How long have you worked here?' mean?",
+      "options": [
+        "Onde você trabalha?",
+        "Por quanto tempo você trabalha aqui?",
+        "Você gosta do seu trabalho?",
+        "Quando você começou a trabalhar?"
+      ],
+      "correctAnswer": "Por quanto tempo você trabalha aqui?"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which is the correct response to 'How long have you been a nurse?'",
+      "options": [
+        "I am a nurse since 2015.",
+        "I have been a nurse for eight years.",
+        "I was a nurse for eight years.",
+        "I am being a nurse for eight years."
+      ],
+      "correctAnswer": "I have been a nurse for eight years."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'I have worked at this office _____ 2020.'",
+      "correctAnswer": "since"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'She has been the team leader _____ almost two years.'",
+      "correctAnswer": "for"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'How long _____ you worked in this company?'",
+      "correctAnswer": "have"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'He has _____ a doctor since he finished university.'",
+      "correctAnswer": "been"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'How long have you been an employee here?' — 'I have worked here _____ six months.'",
+      "correctAnswer": "for"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "She has been the boss _____ January — that's almost a year now.",
+      "correctAnswer": "since"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Ele trabalha nessa empresa há dois anos.'",
+      "correctAnswer": "he has worked at this company for two years"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela é funcionária desde março.'",
+      "correctAnswer": "she has been an employee since march"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'resign' mean?",
+      "options": ["Ser contratado", "Pedir demissão / Demitir-se", "Ser promovido", "Receber aumento"],
+      "correctAnswer": "Pedir demissão / Demitir-se"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'workplace' mean?",
+      "options": ["Salário", "Local de trabalho", "Contrato de trabalho", "Horário de trabalho"],
+      "correctAnswer": "Local de trabalho"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'shift' mean in a work context?",
+      "options": ["Pausa para café", "Turno de trabalho", "Reunião semanal", "Tarefa especial"],
+      "correctAnswer": "Turno de trabalho"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'raise' mean in a work context?",
+      "options": ["Corte de salário", "Demissão", "Aumento de salário", "Avaliação de desempenho"],
+      "correctAnswer": "Aumento de salário"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which question is appropriate to ask in a job interview?",
+      "options": [
+        "What is your salary at your current job?",
+        "Can you tell me about your previous work experience?",
+        "Why did your boss fire you?",
+        "Do you need the money badly?"
+      ],
+      "correctAnswer": "Can you tell me about your previous work experience?"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which answer is the best response to 'Where do you work?'",
+      "options": [
+        "I work in a hospital as a nurse.",
+        "I work as in a hospital nurse.",
+        "I work hospital, nurse.",
+        "I am working nurse at hospital."
+      ],
+      "correctAnswer": "I work in a hospital as a nurse."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which sentence is grammatically correct?",
+      "options": [
+        "She hasn't worked here since a long time.",
+        "She hasn't worked here for a long time.",
+        "She didn't work here for a long time.",
+        "She isn't working here since a long time."
+      ],
+      "correctAnswer": "She hasn't worked here for a long time."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which word describes a person who works independently without a fixed employer?",
+      "options": ["employee", "boss", "freelancer", "intern"],
+      "correctAnswer": "freelancer"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does 'I got a promotion!' mean?",
+      "options": [
+        "Fui demitido!",
+        "Recebi uma multa!",
+        "Fui promovido!",
+        "Pedi aumento!"
+      ],
+      "correctAnswer": "Fui promovido!"
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Choose the correct question: '_____?' — 'I've been a teacher for twelve years.'",
+      "options": [
+        "How long have you been a teacher?",
+        "How long are you a teacher?",
+        "How long did you be a teacher?",
+        "Since when you are a teacher?"
+      ],
+      "correctAnswer": "How long have you been a teacher?"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses a job-related expression?",
+      "options": [
+        "He applied for the job and got an interview.",
+        "He applied to the job and got an interview.",
+        "He applied at the job and got an interview.",
+        "He applied the job and got an interview."
+      ],
+      "correctAnswer": "He applied for the job and got an interview."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What is the meaning of 'She works the night shift'?",
+      "options": [
+        "Ela trabalha durante o dia.",
+        "Ela trabalha no turno da noite.",
+        "Ela trabalha horas extras.",
+        "Ela trabalha remotamente à noite."
+      ],
+      "correctAnswer": "Ela trabalha no turno da noite."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'Can you tell me about your work _____? What jobs have you had before?'",
+      "correctAnswer": "experience"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'She got a _____ and now earns $500 more per month.'",
+      "correctAnswer": "raise|promotion"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'He _____ for a new job because he wants a better salary.'",
+      "correctAnswer": "applied|is looking"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'I have been at this company _____ I graduated from college.'",
+      "correctAnswer": "since"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'What do you do?' — 'I am _____ architect. I design bridges and buildings.'",
+      "correctAnswer": "an"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "She resigned from her job. She _____ worked there for five years before she left.",
+      "correctAnswer": "had"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Há quanto tempo você trabalha aqui?'",
+      "correctAnswer": "how long have you worked here?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela pediu demissão depois de dez anos na empresa.'",
+      "correctAnswer": "she resigned after ten years at the company"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'intern' mean?",
+      "options": ["Chefe de departamento", "Estagiário", "Funcionário efetivo", "Consultor externo"],
+      "correctAnswer": "Estagiário"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'remote work' mean?",
+      "options": ["Trabalho presencial", "Trabalho em campo", "Trabalho remoto / de casa", "Trabalho noturno"],
+      "correctAnswer": "Trabalho remoto / de casa"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'unemployed' mean?",
+      "options": ["Aposentado", "Desempregado", "Autônomo", "Servidor público"],
+      "correctAnswer": "Desempregado"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'benefits' mean in a work context?",
+      "options": ["Deveres do trabalho", "Salário base", "Benefícios (plano de saúde, vale-refeição etc.)", "Horas trabalhadas"],
+      "correctAnswer": "Benefícios (plano de saúde, vale-refeição etc.)"
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'work' correctly?",
+      "options": [
+        "I work in an office from Monday to Friday.",
+        "I work at an office from Monday to Friday.",
+        "Both A and B are correct.",
+        "I work on an office from Monday to Friday."
+      ],
+      "correctAnswer": "Both A and B are correct."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which sentence is in Present Perfect?",
+      "options": [
+        "I work here since 2018.",
+        "I worked here in 2018.",
+        "I have worked here since 2018.",
+        "I am working here since 2018."
+      ],
+      "correctAnswer": "I have worked here since 2018."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Choose the correct question for this answer: 'I work as a chef at a French restaurant.'",
+      "options": [
+        "Where are you working?",
+        "What do you do?",
+        "What did you do?",
+        "How long have you worked?"
+      ],
+      "correctAnswer": "What do you do?"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which word DOES NOT relate to work/professions?",
+      "options": ["salary", "deadline", "colleague", "mountain"],
+      "correctAnswer": "mountain"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does 'He was laid off' mean?",
+      "options": [
+        "Ele foi promovido.",
+        "Ele tirou férias.",
+        "Ele foi demitido (por corte de pessoal).",
+        "Ele pediu demissão."
+      ],
+      "correctAnswer": "Ele foi demitido (por corte de pessoal)."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "They have not had a meeting since last Monday.",
+        "They have not had a meeting for last Monday.",
+        "They did not have a meeting since last Monday.",
+        "They haven't had a meeting at last Monday."
+      ],
+      "correctAnswer": "They have not had a meeting since last Monday."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly talks about a job role?",
+      "options": [
+        "She works like a manager in our team.",
+        "She works as a manager in our team.",
+        "She works for a manager in our team.",
+        "She works by a manager in our team."
+      ],
+      "correctAnswer": "She works as a manager in our team."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What is the meaning of 'job interview'?",
+      "options": [
+        "Uma reunião de equipe.",
+        "Uma conversa para avaliar um candidato a uma vaga.",
+        "Uma avaliação de desempenho anual.",
+        "Uma apresentação para clientes."
+      ],
+      "correctAnswer": "Uma conversa para avaliar um candidato a uma vaga."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'She has been _____ for three months and is still looking for a job.'",
+      "correctAnswer": "unemployed"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'I work _____ home on Fridays. It's more comfortable than the office.'",
+      "correctAnswer": "from|at"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'He has been our _____ since he joined the company ten years ago.'",
+      "correctAnswer": "colleague"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'What _____ you do for a living?' — 'I'm an accountant.'",
+      "correctAnswer": "do"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "I have worked in this office _____ three years. I really like my job.",
+      "correctAnswer": "for"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "She got the job after a great _____. The manager loved her answers.",
+      "correctAnswer": "interview"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Qual é a sua profissão?'",
+      "correctAnswer": "what is your profession?|what do you do?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Eu trabalho como professor há cinco anos.'",
+      "correctAnswer": "i have worked as a teacher for five years"
+    }
+  ]
+}

@@ -1,8 +1,220 @@
 {
-  "lesson": 5,
+  "lessons": [4, 5, 6],
   "level": "leaf",
-  "topic": "Expressing Opinions & Agreeing/Disagreeing",
+  "topic": "Experiences & Present Perfect | Expressing Opinions | Future Predictions & Possibilities",
   "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'experience' mean?",
+      "options": [
+        "Something that happens to you and affects how you think or feel",
+        "A plan you make for the future",
+        "A question you ask to learn more",
+        "A mistake you make and regret"
+      ],
+      "correctAnswer": "Something that happens to you and affects how you think or feel"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'already' mean in a sentence like 'I have already eaten'?",
+      "options": [
+        "Something that will happen soon",
+        "Something that happened before now or earlier than expected",
+        "Something that has not happened yet",
+        "Something that happens regularly"
+      ],
+      "correctAnswer": "Something that happened before now or earlier than expected"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'yet' mean in 'I haven't finished yet'?",
+      "options": [
+        "Something already completed",
+        "Something that will never happen",
+        "Something expected to happen but that hasn't happened so far",
+        "Something that happened a long time ago"
+      ],
+      "correctAnswer": "Something expected to happen but that hasn't happened so far"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'never' mean?",
+      "options": [
+        "Always; at every time",
+        "Sometimes; on certain occasions",
+        "Not at any time; at no point in one's life",
+        "Rarely; almost never"
+      ],
+      "correctAnswer": "Not at any time; at no point in one's life"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'ever' mean in 'Have you ever been to Paris?'",
+      "options": [
+        "Right now or at this moment",
+        "At any time in your life (used in questions and negatives)",
+        "Very recently; just a moment ago",
+        "Many times; on a regular basis"
+      ],
+      "correctAnswer": "At any time in your life (used in questions and negatives)"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'just' mean in 'She has just arrived'?",
+      "options": [
+        "She arrived a long time ago",
+        "She is about to arrive",
+        "She arrived a very short time ago",
+        "She will arrive soon"
+      ],
+      "correctAnswer": "She arrived a very short time ago"
+    },
+    {
+      "id": 7,
+      "type": "vocabulary",
+      "question": "What does 'recently' mean?",
+      "options": [
+        "In the far past",
+        "Not long ago; in the near past",
+        "At a specific time in history",
+        "In the future"
+      ],
+      "correctAnswer": "Not long ago; in the near past"
+    },
+    {
+      "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'so far' mean?",
+      "options": [
+        "At a great distance from here",
+        "Until now; up to this point in time",
+        "In a very short time",
+        "After a long period"
+      ],
+      "correctAnswer": "Until now; up to this point in time"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'up to now' mean?",
+      "options": [
+        "From now on into the future",
+        "Until the present moment",
+        "A long time from the present",
+        "Exactly at this moment"
+      ],
+      "correctAnswer": "Until the present moment"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "In the sentence 'Have you ever tried sushi?', what does 'tried' refer to?",
+      "options": [
+        "A future plan",
+        "A regular habit",
+        "A life experience at some point in the past",
+        "A specific past event with a clear time"
+      ],
+      "correctAnswer": "A life experience at some point in the past"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Perfect correctly for a life experience?",
+      "options": [
+        "I have visited Rome last summer.",
+        "I visited Rome in my life.",
+        "I have never visited Rome.",
+        "I was never visit Rome."
+      ],
+      "correctAnswer": "I have never visited Rome."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Simple Past — NOT Present Perfect?",
+      "options": [
+        "She has lived here for years.",
+        "She has already seen that film.",
+        "She saw that film last Friday.",
+        "She has never eaten Thai food."
+      ],
+      "correctAnswer": "She saw that film last Friday."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Where is 'already' correctly placed?",
+      "options": [
+        "She has finished already the report.",
+        "She already has finished the report.",
+        "She has already finished the report.",
+        "Already she has finished the report."
+      ],
+      "correctAnswer": "She has already finished the report."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'yet' correctly?",
+      "options": [
+        "I have yet eaten dinner.",
+        "I haven't eaten dinner yet.",
+        "I haven't yet eaten already.",
+        "Yet I have eaten dinner."
+      ],
+      "correctAnswer": "I haven't eaten dinner yet."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the main difference between Present Perfect and Simple Past?",
+      "options": [
+        "Present Perfect is used only for future events.",
+        "Simple Past requires a specific time; Present Perfect focuses on the experience or current result.",
+        "They can always be used interchangeably.",
+        "Present Perfect is only used in formal writing."
+      ],
+      "correctAnswer": "Simple Past requires a specific time; Present Perfect focuses on the experience or current result."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'Have you _____ tried skydiving?'",
+      "correctAnswer": "ever"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'I haven't read that book _____. I'll start it this weekend.'",
+      "correctAnswer": "yet"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: 'She has _____ been to Japan. She went last summer.'",
+      "correctAnswer": "already"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Você já foi a Nova York?'",
+      "correctAnswer": "have you ever been to new york?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Eu ainda não terminei meu trabalho.'",
+      "correctAnswer": "i haven't finished my work yet"
+    }
+  ],
+  "tuesday": [
     {
       "id": 1,
       "type": "vocabulary",
@@ -18,17 +230,29 @@
     {
       "id": 2,
       "type": "vocabulary",
+      "question": "What does 'believe' mean?",
+      "options": [
+        "To know something for certain based on hard evidence",
+        "To think that something is true without absolute proof",
+        "To change your mind after a discussion",
+        "To understand something completely"
+      ],
+      "correctAnswer": "To think that something is true without absolute proof"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
       "question": "What does 'agree' mean?",
       "options": [
         "To have the same view or feeling as someone else",
         "To argue with someone about something",
-        "To change your mind about something",
-        "To explain your idea in detail"
+        "To explain your idea in detail",
+        "To listen without responding"
       ],
       "correctAnswer": "To have the same view or feeling as someone else"
     },
     {
-      "id": 3,
+      "id": 4,
       "type": "vocabulary",
       "question": "What does 'disagree' mean?",
       "options": [
@@ -40,918 +264,754 @@
       "correctAnswer": "To have a different opinion from someone"
     },
     {
-      "id": 4,
+      "id": 5,
       "type": "vocabulary",
       "question": "What does 'perspective' mean?",
       "options": [
+        "A type of question used in formal debates",
+        "A formal written opinion published online",
         "A way of thinking about or seeing something based on your experience",
-        "A type of question used in debates",
-        "A formal written opinion",
         "A word used only in academic writing"
       ],
       "correctAnswer": "A way of thinking about or seeing something based on your experience"
     },
     {
-      "id": 5,
+      "id": 6,
       "type": "vocabulary",
-      "question": "What does 'argument' mean in an academic or discussion context?",
+      "question": "What does 'argument' mean in a discussion or academic context?",
       "options": [
-        "A fight or physical conflict between people",
+        "A physical fight between two people",
         "A reason or set of reasons given to support a point of view",
-        "A question that has no answer",
+        "A question that has no clear answer",
         "A sentence with no main verb"
       ],
       "correctAnswer": "A reason or set of reasons given to support a point of view"
     },
     {
-      "id": 6,
-      "type": "vocabulary",
-      "question": "What does 'point of view' mean?",
-      "options": [
-        "The place where you are standing",
-        "A type of grammar structure",
-        "A particular way of thinking about something",
-        "A sentence that starts with 'I'"
-      ],
-      "correctAnswer": "A particular way of thinking about something"
-    },
-    {
       "id": 7,
       "type": "vocabulary",
-      "question": "What does 'believe' mean?",
+      "question": "What does 'convince' mean?",
       "options": [
-        "To know something for certain based on evidence",
-        "To think that something is true without absolute proof",
-        "To change your mind after discussion",
-        "To understand something fully"
+        "To agree with someone immediately",
+        "To cause someone to believe that something is true",
+        "To repeat the same argument several times",
+        "To change your own mind about something"
       ],
-      "correctAnswer": "To think that something is true without absolute proof"
+      "correctAnswer": "To cause someone to believe that something is true"
     },
     {
       "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'viewpoint' mean?",
+      "options": [
+        "The physical place where you stand",
+        "A particular attitude or way of thinking about something",
+        "A sentence that starts with 'I think'",
+        "A type of grammar structure used in debates"
+      ],
+      "correctAnswer": "A particular attitude or way of thinking about something"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'on the other hand' mean?",
+      "options": [
+        "As a result of the previous idea",
+        "In addition to what was already said",
+        "Used to introduce a contrasting point of view",
+        "Used to give an example"
+      ],
+      "correctAnswer": "Used to introduce a contrasting point of view"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "What does 'point of view' mean?",
+      "options": [
+        "The exact spot where you are looking",
+        "A particular way of thinking about a topic or issue",
+        "The most important point in an argument",
+        "A writing structure used in essays"
+      ],
+      "correctAnswer": "A particular way of thinking about a topic or issue"
+    },
+    {
+      "id": 11,
       "type": "multiple-choice",
       "question": "Which phrase is used to introduce a personal opinion?",
       "options": [
-        "In my opinion, ...",
-        "As a matter of fact, ...",
         "According to the news, ...",
-        "It is known that ..."
+        "In my opinion, ...",
+        "It is known that ...",
+        "The research shows ..."
       ],
       "correctAnswer": "In my opinion, ..."
     },
     {
-      "id": 9,
-      "type": "multiple-choice",
-      "question": "Which of the following is an opinion phrase?",
-      "options": [
-        "I believe that technology improves education.",
-        "Technology was invented in the 20th century.",
-        "Many people use technology every day.",
-        "Technology includes computers and phones."
-      ],
-      "correctAnswer": "I believe that technology improves education."
-    },
-    {
-      "id": 10,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly expresses an opinion?",
-      "options": [
-        "From my perspective, remote work is more productive.",
-        "From my perspective remote work is more productive",
-        "In my opinion remote work is more productively.",
-        "I perspective think remote work is more productive."
-      ],
-      "correctAnswer": "From my perspective, remote work is more productive."
-    },
-    {
-      "id": 11,
-      "type": "multiple-choice",
-      "question": "Which phrase means 'In my opinion' in a more formal way?",
-      "options": [
-        "I guess ...",
-        "As far as I'm concerned, ...",
-        "I think maybe ...",
-        "It's possible that ..."
-      ],
-      "correctAnswer": "As far as I'm concerned, ..."
-    },
-    {
       "id": 12,
+      "type": "multiple-choice",
+      "question": "Which is the most natural way to agree with someone?",
+      "options": [
+        "I don't think so.",
+        "I totally agree with you.",
+        "That doesn't make sense.",
+        "I'm not sure about that."
+      ],
+      "correctAnswer": "I totally agree with you."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which is a polite way to disagree?",
+      "options": [
+        "You're completely wrong.",
+        "That's a ridiculous idea.",
+        "I see your point, but I disagree because...",
+        "No, you're mistaken."
+      ],
+      "correctAnswer": "I see your point, but I disagree because..."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses an opinion phrase?",
+      "options": [
+        "From my perspective is important to recycle.",
+        "From my perspective, it is important to recycle.",
+        "From my perspective it important to recycle.",
+        "From perspective, it is important to recycle."
+      ],
+      "correctAnswer": "From my perspective, it is important to recycle."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which of these is NOT an opinion phrase?",
+      "options": [
+        "I believe that...",
+        "In my view, ...",
+        "According to scientists, ...",
+        "From my perspective, ..."
+      ],
+      "correctAnswer": "According to scientists, ..."
+    },
+    {
+      "id": 16,
       "type": "fill-blank",
-      "question": "Complete: '_____ my opinion, social media has both advantages and disadvantages.'",
+      "question": "Complete: '_____ my opinion, social media has more benefits than disadvantages.'",
       "correctAnswer": "In"
     },
     {
-      "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ that everyone should learn a second language.'",
-      "correctAnswer": "believe|think|feel"
-    },
-    {
-      "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'From my _____, the city needs more public parks.'",
-      "correctAnswer": "perspective|point of view"
-    },
-    {
-      "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'As far as I'm _____, working from home is better for families.'",
-      "correctAnswer": "concerned"
-    },
-    {
-      "id": 16,
-      "type": "complete",
-      "question": "'_____ my perspective, learning English opens many opportunities in life.'",
-      "correctAnswer": "From"
-    },
-    {
       "id": 17,
-      "type": "complete",
-      "question": "She expressed her _____ clearly during the class debate.",
-      "correctAnswer": "opinion|point of view|perspective|argument"
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ that everyone should have access to free education.'",
+      "correctAnswer": "believe"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Na minha opinião, a educação é muito importante.'",
-      "correctAnswer": "in my opinion, education is very important"
+      "type": "fill-blank",
+      "question": "Complete: 'That's a good _____, but I see it differently.'",
+      "correctAnswer": "point"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Eu acredito que o trabalho remoto é mais eficiente.'",
-      "correctAnswer": "i believe that remote work is more efficient"
+      "question": "Translate to English: 'Na minha opinião, é importante aprender um segundo idioma.'",
+      "correctAnswer": "in my opinion, it is important to learn a second language"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Do meu ponto de vista, essa é uma boa ideia.'",
-      "correctAnswer": "from my point of view, that is a good idea"
-    }
-  ],
-  "tuesday": [
-    {
-      "id": 1,
-      "type": "vocabulary",
-      "question": "What does 'absolutely' mean when used to agree with someone?",
-      "options": [
-        "Maybe, I'm not sure",
-        "I completely agree, without any doubt",
-        "I understand but I disagree",
-        "That's an interesting point"
-      ],
-      "correctAnswer": "I completely agree, without any doubt"
-    },
-    {
-      "id": 2,
-      "type": "vocabulary",
-      "question": "What does 'valid' mean when talking about an argument or opinion?",
-      "options": [
-        "Rude or disrespectful",
-        "Impossible to prove",
-        "Well-reasoned and acceptable",
-        "Based on feelings, not facts"
-      ],
-      "correctAnswer": "Well-reasoned and acceptable"
-    },
-    {
-      "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence expresses agreement?",
-      "options": [
-        "I couldn't agree more with your point.",
-        "I'm not sure that's right.",
-        "I see it differently.",
-        "I don't think so."
-      ],
-      "correctAnswer": "I couldn't agree more with your point."
-    },
-    {
-      "id": 4,
-      "type": "multiple-choice",
-      "question": "Which sentence expresses disagreement politely?",
-      "options": [
-        "You're completely wrong about that.",
-        "I see your point, but I disagree.",
-        "That's absolutely right!",
-        "I couldn't agree more."
-      ],
-      "correctAnswer": "I see your point, but I disagree."
-    },
-    {
-      "id": 5,
-      "type": "multiple-choice",
-      "question": "What does 'I couldn't agree more.' mean?",
-      "options": [
-        "I partially agree with you.",
-        "I completely agree with you.",
-        "I don't agree with you at all.",
-        "I need more time to think."
-      ],
-      "correctAnswer": "I completely agree with you."
-    },
-    {
-      "id": 6,
-      "type": "multiple-choice",
-      "question": "Which response best shows disagreement?",
-      "options": [
-        "Absolutely! That's a great point.",
-        "You're right, I agree completely.",
-        "I'm not sure about that. I think it depends.",
-        "Exactly! That's what I think too."
-      ],
-      "correctAnswer": "I'm not sure about that. I think it depends."
-    },
-    {
-      "id": 7,
-      "type": "multiple-choice",
-      "question": "Which phrase introduces a contrasting opinion?",
-      "options": [
-        "On the other hand, ...",
-        "In addition, ...",
-        "For example, ...",
-        "As a result, ..."
-      ],
-      "correctAnswer": "On the other hand, ..."
-    },
-    {
-      "id": 8,
-      "type": "multiple-choice",
-      "question": "Which is the most polite way to disagree?",
-      "options": [
-        "That's wrong!",
-        "You don't know what you're talking about.",
-        "With all due respect, I see it differently.",
-        "No, you're incorrect."
-      ],
-      "correctAnswer": "With all due respect, I see it differently."
-    },
-    {
-      "id": 9,
-      "type": "multiple-choice",
-      "question": "What does 'That's a fair point.' signal in a conversation?",
-      "options": [
-        "Disagreement with the speaker",
-        "Acknowledging that the other person made a good argument",
-        "Changing the subject",
-        "Asking for more information"
-      ],
-      "correctAnswer": "Acknowledging that the other person made a good argument"
-    },
-    {
-      "id": 10,
-      "type": "multiple-choice",
-      "question": "Which phrase is used to agree strongly?",
-      "options": [
-        "I'm not entirely sure...",
-        "Exactly! That's what I think too.",
-        "Well, it depends on the situation.",
-        "I don't think that's right."
-      ],
-      "correctAnswer": "Exactly! That's what I think too."
-    },
-    {
-      "id": 11,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ with you completely. That's a great idea.'",
-      "correctAnswer": "agree"
-    },
-    {
-      "id": 12,
-      "type": "fill-blank",
-      "question": "Complete: 'I see your point, _____ I still think there's a better solution.'",
-      "correctAnswer": "but"
-    },
-    {
-      "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: 'On the _____ hand, some people believe that technology creates more problems.'",
-      "correctAnswer": "other"
-    },
-    {
-      "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'With all due _____, I don't think that argument is valid.'",
-      "correctAnswer": "respect"
-    },
-    {
-      "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'That's a _____ point. I hadn't thought about it that way before.'",
-      "correctAnswer": "good|fair|valid|great"
-    },
-    {
-      "id": 16,
-      "type": "complete",
-      "question": "'I couldn't _____ more. That is exactly what I was thinking.'",
-      "correctAnswer": "agree"
-    },
-    {
-      "id": 17,
-      "type": "complete",
-      "question": "I understand your opinion, _____ I have a different point of view.",
-      "correctAnswer": "but|however|although"
-    },
-    {
-      "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Eu concordo completamente com você.'",
-      "correctAnswer": "i completely agree with you|i agree with you completely"
-    },
-    {
-      "id": 19,
-      "type": "translate",
-      "question": "Translate to English: 'Eu discordo. Acho que é mais complicado do que isso.'",
-      "correctAnswer": "i disagree. i think it is more complicated than that"
-    },
-    {
-      "id": 20,
-      "type": "translate",
-      "question": "Translate to English: 'Por outro lado, há pessoas que pensam de forma diferente.'",
-      "correctAnswer": "on the other hand, there are people who think differently"
+      "question": "Translate to English: 'Eu discordo porque acho que isso não é justo.'",
+      "correctAnswer": "i disagree because i think this is not fair"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'convince' mean?",
+      "question": "What does 'predict' mean?",
       "options": [
-        "To make someone believe or agree with you",
-        "To repeat your opinion louder",
-        "To avoid expressing an opinion",
-        "To change the subject in a debate"
+        "To remember something from the past",
+        "To say what you think will happen in the future",
+        "To explain why something happened",
+        "To describe something that is happening now"
       ],
-      "correctAnswer": "To make someone believe or agree with you"
+      "correctAnswer": "To say what you think will happen in the future"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'I think that'?",
+      "type": "vocabulary",
+      "question": "What does 'probably' mean?",
       "options": [
-        "I think that public transport should be free.",
-        "I think that public transport should to be free.",
-        "I am thinking that public transport should free.",
-        "I think that public transport are free."
+        "Definitely; with complete certainty",
+        "Never; not at any time",
+        "Almost certainly; very likely to happen",
+        "Barely; almost impossible"
       ],
-      "correctAnswer": "I think that public transport should be free."
+      "correctAnswer": "Almost certainly; very likely to happen"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'I believe'?",
+      "type": "vocabulary",
+      "question": "What does 'possibly' mean?",
       "options": [
-        "I believe learning languages is a great skill.",
-        "I believe to learn languages is a great skill.",
-        "I am believe that languages is a great skill.",
-        "I believe languages are great skill."
+        "Certainly; without any doubt",
+        "Perhaps; it might be true or might happen",
+        "Rarely; almost never",
+        "Always; every single time"
       ],
-      "correctAnswer": "I believe learning languages is a great skill."
+      "correctAnswer": "Perhaps; it might be true or might happen"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence with 'In my opinion':",
+      "type": "vocabulary",
+      "question": "What does 'likely' mean?",
       "options": [
-        "In my opinion, the movie was too long.",
-        "In my opinion the movie it was too long.",
-        "In my opinion, the movie were too long.",
-        "In my opinion: the movie too long."
+        "Impossible; never going to happen",
+        "Difficult to understand or predict",
+        "Probably going to happen; expected to occur",
+        "Already confirmed to happen"
       ],
-      "correctAnswer": "In my opinion, the movie was too long."
+      "correctAnswer": "Probably going to happen; expected to occur"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which structure is used to express a personal opinion?",
+      "type": "vocabulary",
+      "question": "What does 'unlikely' mean?",
       "options": [
-        "As far as I'm concerned, ...",
-        "According to scientists, ...",
-        "It has been proven that ...",
-        "Research shows that ..."
+        "Very certain; guaranteed to happen",
+        "Not expected to happen; probably will not occur",
+        "Happening right now",
+        "Completely impossible under any circumstances"
       ],
-      "correctAnswer": "As far as I'm concerned, ..."
+      "correctAnswer": "Not expected to happen; probably will not occur"
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Which word CANNOT be used to introduce an opinion?",
+      "type": "vocabulary",
+      "question": "What does 'forecast' mean?",
       "options": [
-        "believe",
-        "think",
-        "feel",
-        "drive"
+        "A record of past events",
+        "An explanation of a current situation",
+        "A prediction about what will happen, especially about weather",
+        "A rule about what must be done"
       ],
-      "correctAnswer": "drive"
+      "correctAnswer": "A prediction about what will happen, especially about weather"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Which sentence uses an opinion phrase incorrectly?",
+      "type": "vocabulary",
+      "question": "What does 'expect' mean?",
       "options": [
-        "In my opinion, reading books is better than watching TV.",
-        "I believe that exercise is important for health.",
-        "From my perspective, the city needs more green areas.",
-        "In my opinion of the weather is nice today."
+        "To hope something happens but know it won't",
+        "To think something will happen based on what you know",
+        "To plan something for the near future",
+        "To remember something that happened in the past"
       ],
-      "correctAnswer": "In my opinion of the weather is nice today."
+      "correctAnswer": "To think something will happen based on what you know"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "What does 'I feel that ...' signal?",
+      "type": "vocabulary",
+      "question": "What does 'anticipate' mean?",
       "options": [
-        "A scientific fact",
-        "A personal emotional belief or opinion",
-        "Something that someone else said",
-        "A neutral description"
+        "To think about and prepare for something that will happen",
+        "To be surprised by an unexpected event",
+        "To react to something after it happens",
+        "To ignore something that might happen"
       ],
-      "correctAnswer": "A personal emotional belief or opinion"
+      "correctAnswer": "To think about and prepare for something that will happen"
     },
     {
       "id": 9,
-      "type": "multiple-choice",
-      "question": "Which phrase acknowledges the other side before disagreeing?",
+      "type": "vocabulary",
+      "question": "What does 'definitely' mean?",
       "options": [
-        "I see your point, but ...",
-        "You are wrong because ...",
-        "That's absolutely right.",
-        "I couldn't agree more."
+        "Perhaps; it might happen",
+        "Probably; very likely",
+        "Without any doubt; certainly",
+        "Rarely; almost never"
       ],
-      "correctAnswer": "I see your point, but ..."
+      "correctAnswer": "Without any doubt; certainly"
     },
     {
       "id": 10,
-      "type": "multiple-choice",
-      "question": "Which option correctly disagrees with: 'I think social media is great.'?",
+      "type": "vocabulary",
+      "question": "What does 'chance' mean in 'There's a good chance it will rain'?",
       "options": [
-        "I don't think so. It can be harmful to mental health.",
-        "I couldn't agree more. Social media is wonderful.",
-        "Absolutely! I use it every day.",
-        "That's true. I totally agree."
+        "A confirmed schedule",
+        "A possibility that something will happen",
+        "A warning about danger",
+        "A plan made for the future"
       ],
-      "correctAnswer": "I don't think so. It can be harmful to mental health."
+      "correctAnswer": "A possibility that something will happen"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Which expression is used to soften a disagreement?",
+      "question": "Which modal verb expresses the highest certainty about a future event?",
       "options": [
-        "That may be true, but ...",
-        "You're completely wrong!",
-        "I totally agree!",
-        "Exactly right!"
+        "might",
+        "could",
+        "may",
+        "will"
       ],
-      "correctAnswer": "That may be true, but ..."
+      "correctAnswer": "will"
     },
     {
       "id": 12,
       "type": "multiple-choice",
-      "question": "Which sentence shows a balanced opinion?",
+      "question": "Which sentence correctly makes a future prediction?",
       "options": [
-        "Technology has advantages, but it also has disadvantages.",
-        "Technology is always good.",
-        "Technology is always bad.",
-        "Technology has nothing to do with education."
+        "It will probably rains tomorrow.",
+        "It will probably rain tomorrow.",
+        "It will probably rained tomorrow.",
+        "It will probably raining tomorrow."
       ],
-      "correctAnswer": "Technology has advantages, but it also has disadvantages."
+      "correctAnswer": "It will probably rain tomorrow."
     },
     {
       "id": 13,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ that people should exercise at least three times a week.'",
-      "correctAnswer": "think|believe|feel"
+      "type": "multiple-choice",
+      "question": "What does 'She might come to the party' mean?",
+      "options": [
+        "She will definitely come to the party.",
+        "She is at the party right now.",
+        "There is a possibility she will come, but it's not certain.",
+        "She has already been to the party."
+      ],
+      "correctAnswer": "There is a possibility she will come, but it's not certain."
     },
     {
       "id": 14,
-      "type": "fill-blank",
-      "question": "Complete: 'That _____ be true, but I still think we need to consider other options.'",
-      "correctAnswer": "may"
+      "type": "multiple-choice",
+      "question": "Where is the probability adverb correctly placed?",
+      "options": [
+        "He definitely will pass the test.",
+        "He will pass definitely the test.",
+        "He will definitely pass the test.",
+        "Definitely he will pass the test."
+      ],
+      "correctAnswer": "He will definitely pass the test."
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: '_____ my perspective, the government should invest more in education.'",
-      "correctAnswer": "From"
+      "type": "multiple-choice",
+      "question": "Which sentence expresses the LEAST certainty about the future?",
+      "options": [
+        "She will definitely be there.",
+        "She will probably be there.",
+        "She might be there.",
+        "She is going to be there."
+      ],
+      "correctAnswer": "She might be there."
     },
     {
       "id": 16,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ your point, but I see the situation differently.'",
-      "correctAnswer": "see|understand|get"
+      "question": "Complete: 'I think it _____ rain this afternoon — look at those dark clouds.'",
+      "correctAnswer": "might|may|will"
     },
     {
       "id": 17,
-      "type": "complete",
-      "question": "In my opinion, _____ should be taught in every school.",
-      "correctAnswer": "English|music|art|sports|financial education"
+      "type": "fill-blank",
+      "question": "Complete: 'Scientists _____ that sea levels will rise significantly by 2100.'",
+      "correctAnswer": "predict"
     },
     {
       "id": 18,
-      "type": "complete",
-      "question": "That's a _____ argument. I hadn't considered that before.",
-      "correctAnswer": "good|valid|strong|fair"
+      "type": "fill-blank",
+      "question": "Complete: 'There is a good _____ that the project will be finished on time.'",
+      "correctAnswer": "chance"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Do meu ponto de vista, as crianças assistem televisão demais.'",
-      "correctAnswer": "from my point of view, children watch too much television"
+      "question": "Translate to English: 'Talvez eu vá à festa amanhã.'",
+      "correctAnswer": "i might go to the party tomorrow"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Entendo o seu ponto, mas discordo.'",
-      "correctAnswer": "i understand your point, but i disagree|i see your point, but i disagree"
+      "question": "Translate to English: 'É provável que ele chegue atrasado.'",
+      "correctAnswer": "he will probably arrive late"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'neutral' mean in a debate context?",
+      "question": "What does 'debate' mean?",
       "options": [
-        "Strongly in favor of one side",
-        "Not supporting either side; unbiased",
-        "Completely against an idea",
-        "Giving a very long opinion"
+        "A casual conversation between friends",
+        "A formal discussion where people express and defend different viewpoints",
+        "A written summary of an argument",
+        "A type of question with no answer"
       ],
-      "correctAnswer": "Not supporting either side; unbiased"
+      "correctAnswer": "A formal discussion where people express and defend different viewpoints"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'acknowledge' mean when responding to someone's opinion?",
+      "question": "What does 'absolutely' mean when used in a conversation?",
       "options": [
-        "To completely reject what someone said",
-        "To recognize or accept the truth of what someone said",
-        "To repeat someone's opinion back to them",
-        "To change the topic of a conversation"
+        "Used to strongly agree or emphasize certainty",
+        "Used to express doubt or uncertainty",
+        "Used to introduce a new topic",
+        "Used to politely disagree"
       ],
-      "correctAnswer": "To recognize or accept the truth of what someone said"
+      "correctAnswer": "Used to strongly agree or emphasize certainty"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly responds to: 'I think we should work less.'?",
+      "type": "vocabulary",
+      "question": "What does 'although' mean?",
       "options": [
-        "I agree. Working less could improve our well-being.",
-        "I agrees. Working less could improve our well-being.",
-        "I agreeing with you. Working less could improve our well-being.",
-        "I am agree. Working less could improve our well-being."
+        "In addition to; also",
+        "As a result of; therefore",
+        "Despite the fact that; even though",
+        "For example; such as"
       ],
-      "correctAnswer": "I agree. Working less could improve our well-being."
+      "correctAnswer": "Despite the fact that; even though"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "Which is NOT a phrase used to disagree?",
+      "type": "vocabulary",
+      "question": "What does 'whereas' mean?",
       "options": [
-        "I don't think so.",
-        "I see it differently.",
-        "I'm not convinced.",
-        "I couldn't agree more."
+        "Because of this; as a result",
+        "Used to contrast two different facts or situations",
+        "In the same way as",
+        "At the same time as"
       ],
-      "correctAnswer": "I couldn't agree more."
+      "correctAnswer": "Used to contrast two different facts or situations"
     },
     {
       "id": 5,
       "type": "multiple-choice",
-      "question": "Which is NOT a phrase used to agree?",
+      "question": "Which sentence correctly uses Present Perfect with a life experience?",
       "options": [
-        "That's true.",
-        "Absolutely!",
-        "I'm not sure about that.",
-        "You're right."
+        "I have tried sushi last year.",
+        "I tried sushi in my life.",
+        "I have tried sushi before.",
+        "I am tried sushi before."
       ],
-      "correctAnswer": "I'm not sure about that."
+      "correctAnswer": "I have tried sushi before."
     },
     {
       "id": 6,
       "type": "multiple-choice",
-      "question": "In which situation would you say 'I see your point, but...'?",
+      "question": "Which question correctly uses 'yet'?",
       "options": [
-        "When you completely agree with someone",
-        "When you want to end the conversation",
-        "When you partially agree but want to offer a different view",
-        "When you don't understand what the person said"
+        "Has she already finished yet?",
+        "Has she finished yet?",
+        "She has finished yet?",
+        "Did she finish yet?"
       ],
-      "correctAnswer": "When you partially agree but want to offer a different view"
+      "correctAnswer": "Has she finished yet?"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which sentence is a correct example of disagreement using 'however'?",
+      "question": "Which phrase shows the STRONGEST disagreement?",
       "options": [
-        "Solar energy is clean. However, it can be expensive to install.",
-        "Solar energy is clean, however is expensive to install.",
-        "However solar energy is clean, expensive.",
-        "Solar energy is clean. It however expensive."
+        "I see your point, but...",
+        "I'm not entirely sure about that.",
+        "I completely disagree with that statement.",
+        "That's an interesting perspective."
       ],
-      "correctAnswer": "Solar energy is clean. However, it can be expensive to install."
+      "correctAnswer": "I completely disagree with that statement."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'although' correctly to show a contrasting opinion?",
+      "question": "Which sentence correctly uses 'could' to express a future possibility?",
       "options": [
-        "Although I understand your view, I think differently.",
-        "Although I understand your view but I think differently.",
-        "I understand your view, although but I think differently.",
-        "Although, I understand your view."
+        "It could rains tomorrow.",
+        "It could rain tomorrow.",
+        "It could rained tomorrow.",
+        "It could to rain tomorrow."
       ],
-      "correctAnswer": "Although I understand your view, I think differently."
+      "correctAnswer": "It could rain tomorrow."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "What is the function of 'On the other hand' in a discussion?",
+      "question": "Which sentence uses 'may' correctly to express possibility?",
       "options": [
-        "To introduce an additional similar point",
-        "To introduce a contrasting or opposing point",
-        "To give an example",
-        "To conclude the argument"
+        "She may to change her mind.",
+        "She mays change her mind.",
+        "She may change her mind.",
+        "She may changes her mind."
       ],
-      "correctAnswer": "To introduce a contrasting or opposing point"
+      "correctAnswer": "She may change her mind."
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Which phrase shows the speaker is not completely convinced?",
+      "question": "Which is the correct way to express a strong future prediction?",
       "options": [
-        "Absolutely, I agree!",
-        "That's exactly what I think.",
-        "I'm not entirely sure about that.",
-        "You're totally right!"
+        "Technology might definitely change the world.",
+        "Technology will definitely change the world.",
+        "Technology could definitely will change the world.",
+        "Technology may will change the world."
       ],
-      "correctAnswer": "I'm not entirely sure about that."
+      "correctAnswer": "Technology will definitely change the world."
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Choose the best response to: 'In my opinion, cars should be banned in city centers.'",
-      "options": [
-        "I agree. It would reduce pollution and traffic.",
-        "I agreeing because it reduce pollution.",
-        "I am agree. It reduces pollution.",
-        "I agrees that it would reduce pollution."
-      ],
-      "correctAnswer": "I agree. It would reduce pollution and traffic."
+      "type": "fill-blank",
+      "question": "Complete: 'Have you _____ visited a country in Asia?'",
+      "correctAnswer": "ever"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Which phrase signals that you are about to give your opinion?",
-      "options": [
-        "The fact is that ...",
-        "Research proves that ...",
-        "As far as I'm concerned, ...",
-        "It is well-known that ..."
-      ],
-      "correctAnswer": "As far as I'm concerned, ..."
+      "type": "fill-blank",
+      "question": "Complete: 'I _____ already done my homework, so I can go out now.'",
+      "correctAnswer": "have"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Complete: '_____ I agree with some of your ideas, I think the plan needs more work.'",
-      "correctAnswer": "Although|While|Even though"
+      "question": "Complete: '_____ my perspective, working from home increases productivity.'",
+      "correctAnswer": "From"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'Pets are great companions. _____, they require a lot of time and money.'",
-      "correctAnswer": "However|On the other hand|That said"
+      "question": "Complete: 'The economy _____ probably improve in the next few years.'",
+      "correctAnswer": "will"
     },
     {
       "id": 15,
       "type": "fill-blank",
-      "question": "Complete: 'I'm not _____ convinced that this is the best approach.'",
-      "correctAnswer": "entirely|completely|totally"
+      "question": "Complete: 'I strongly _____ with your view on climate change.'",
+      "correctAnswer": "agree"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: 'I _____ your point, but from my perspective, there are other factors to consider.'",
-      "correctAnswer": "see|understand|acknowledge"
+      "type": "complete",
+      "question": "'Have you seen this film?' — 'No, I _____. Is it good?'",
+      "correctAnswer": "haven't"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "'Do you agree with the idea of working from home?' — 'To be honest, I'm not _____ sure. It has pros and cons.'",
-      "correctAnswer": "entirely|completely|totally"
+      "question": "'Do you agree with the new policy?' — 'Not entirely. _____ my opinion, it needs some changes.'",
+      "correctAnswer": "In"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "She made a _____ argument and everyone in the room changed their opinion.",
-      "correctAnswer": "convincing|strong|valid|powerful"
+      "question": "'Will she come to the meeting?' — 'She _____. She hasn't confirmed yet.'",
+      "correctAnswer": "might|may"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Embora eu entenda seu ponto de vista, discordo.'",
-      "correctAnswer": "although i understand your point of view, i disagree"
+      "question": "Translate to English: 'Eu nunca experimentei comida indiana.'",
+      "correctAnswer": "i have never tried indian food"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'No que me diz respeito, essa é a melhor solução.'",
-      "correctAnswer": "as far as i'm concerned, that is the best solution"
+      "question": "Translate to English: 'Isso provavelmente vai mudar no futuro.'",
+      "correctAnswer": "this will probably change in the future"
     }
   ],
   "friday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'biased' mean in the context of an opinion or argument?",
+      "question": "What does 'recently' mean in 'I have recently started a new job'?",
       "options": [
-        "Based on solid evidence and facts",
-        "Unfairly influenced by personal feelings or preferences",
-        "Very well-balanced and neutral",
-        "Extremely polite and formal"
+        "A very long time ago",
+        "Not long ago; in the near past",
+        "At a specific time in history",
+        "At some point in the future"
       ],
-      "correctAnswer": "Unfairly influenced by personal feelings or preferences"
+      "correctAnswer": "Not long ago; in the near past"
     },
     {
       "id": 2,
-      "type": "multiple-choice",
-      "question": "Which sentence is the most complete and well-structured opinion?",
+      "type": "vocabulary",
+      "question": "What does 'anticipate' mean?",
       "options": [
-        "In my opinion, electric cars are better for the environment because they produce less pollution.",
-        "I think electric cars good.",
-        "Electric cars opinion better.",
-        "From perspective, electric cars."
+        "To react to something after it happens",
+        "To be completely surprised by something",
+        "To think about and prepare for something expected to happen",
+        "To ignore something that is coming"
       ],
-      "correctAnswer": "In my opinion, electric cars are better for the environment because they produce less pollution."
+      "correctAnswer": "To think about and prepare for something expected to happen"
     },
     {
       "id": 3,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly combines an opinion with a reason?",
+      "type": "vocabulary",
+      "question": "What does 'convince' mean?",
       "options": [
-        "I believe that reading is important because it improves vocabulary and critical thinking.",
-        "I believe that reading is important because it improve vocabulary.",
-        "I am believing reading important because vocabulary.",
-        "I believe reading important it improves vocabulary."
+        "To agree with someone immediately",
+        "To cause someone to believe that something is true",
+        "To repeat the same argument several times",
+        "To change your own mind without reason"
       ],
-      "correctAnswer": "I believe that reading is important because it improves vocabulary and critical thinking."
+      "correctAnswer": "To cause someone to believe that something is true"
     },
     {
       "id": 4,
-      "type": "multiple-choice",
-      "question": "Which response shows partial agreement followed by a contrasting point?",
+      "type": "vocabulary",
+      "question": "What does 'however' mean in a discussion context?",
       "options": [
-        "That's a good point. However, we also need to consider the costs.",
-        "I completely disagree with everything you said.",
-        "Absolutely! I agree 100%.",
-        "I have no opinion on this topic."
+        "Used to add more information to the same point",
+        "Used to give an example",
+        "Used to introduce a contrast or opposite idea",
+        "Used to summarize the conclusion"
       ],
-      "correctAnswer": "That's a good point. However, we also need to consider the costs."
+      "correctAnswer": "Used to introduce a contrast or opposite idea"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "What is wrong with: 'I am disagree with your opinion.'?",
+      "type": "vocabulary",
+      "question": "What does 'unlikely' mean in 'It is unlikely to snow in July'?",
       "options": [
-        "Nothing — it is correct.",
-        "'Disagree' cannot follow 'am'. The correct form is 'I disagree'.",
-        "'Opinion' should be 'opinions'.",
-        "'Your' should be 'you'."
+        "It will certainly snow in July.",
+        "It is not expected to happen; it probably won't occur.",
+        "It might snow, and nobody knows.",
+        "It has snowed in July before."
       ],
-      "correctAnswer": "'Disagree' cannot follow 'am'. The correct form is 'I disagree'."
+      "correctAnswer": "It is not expected to happen; it probably won't occur."
     },
     {
       "id": 6,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses 'however' to contrast two ideas?",
+      "type": "vocabulary",
+      "question": "What does 'so far' mean in 'So far, the results have been positive'?",
       "options": [
-        "Fast food is cheap and convenient. However, it is not very healthy.",
-        "Fast food is cheap and convenient however it is not very healthy.",
-        "However fast food is cheap, convenient.",
-        "Fast food is cheap. Convenient however."
+        "At a great physical distance",
+        "In the near future",
+        "Until now; up to this point in time",
+        "After a long time has passed"
       ],
-      "correctAnswer": "Fast food is cheap and convenient. However, it is not very healthy."
+      "correctAnswer": "Until now; up to this point in time"
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which phrase is the MOST formal way to express an opinion?",
+      "question": "Which sentence uses 'just' correctly in Present Perfect?",
       "options": [
-        "I guess ...",
-        "I kind of think ...",
-        "As far as I'm concerned, ...",
-        "I dunno, but ..."
+        "I just have finished my lunch.",
+        "I have finished just my lunch.",
+        "I have just finished my lunch.",
+        "Just I have finished my lunch."
       ],
-      "correctAnswer": "As far as I'm concerned, ..."
+      "correctAnswer": "I have just finished my lunch."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which sentence correctly agrees AND adds a new idea?",
+      "question": "'I have never been to Africa.' What does this tell us?",
       "options": [
-        "I agree, and I would also add that regular exercise improves mental health.",
-        "I agree, but I would also add that exercise improves mental health.",
-        "Both A and B are correct.",
-        "Neither A nor B are correct."
+        "The speaker went to Africa once.",
+        "The speaker is currently in Africa.",
+        "The speaker has not visited Africa at any point in their life.",
+        "The speaker has plans to visit Africa soon."
       ],
-      "correctAnswer": "Both A and B are correct."
+      "correctAnswer": "The speaker has not visited Africa at any point in their life."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "A classmate says: 'I think fast food restaurants should be closed.' The most respectful way to disagree is:",
+      "question": "Which is the most natural response when you agree with someone's opinion?",
       "options": [
-        "That's completely wrong and a terrible idea.",
-        "I respect your opinion, but I think banning them would affect many jobs.",
-        "You don't know what you're talking about.",
-        "I don't care about your opinion."
+        "I don't think that's right.",
+        "Absolutely, I couldn't agree more.",
+        "That makes no sense to me.",
+        "I see it very differently."
       ],
-      "correctAnswer": "I respect your opinion, but I think banning them would affect many jobs."
+      "correctAnswer": "Absolutely, I couldn't agree more."
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Which is a complete and correct expression of disagreement?",
+      "question": "Complete the sentence: 'I see your _____, but I still think we should try a different approach.'",
       "options": [
-        "I don't think so. In my opinion, the situation is more complex than that.",
-        "Not agree. The situation complex.",
-        "I no agree, situation is complex.",
-        "Not thinking so, the situation is complexer."
+        "mind",
+        "idea",
+        "point",
+        "opinion"
       ],
-      "correctAnswer": "I don't think so. In my opinion, the situation is more complex than that."
+      "correctAnswer": "point"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "What is the function of 'To be fair, ...' in a discussion?",
+      "question": "Which sentence uses 'since' correctly with Present Perfect?",
       "options": [
-        "To start a disagreement",
-        "To acknowledge something positive in the opposing view",
-        "To end the conversation",
-        "To repeat your own opinion"
+        "She has worked here since five years.",
+        "She has worked here since 2019.",
+        "She worked here since 2019.",
+        "She has work here since 2019."
       ],
-      "correctAnswer": "To acknowledge something positive in the opposing view"
+      "correctAnswer": "She has worked here since 2019."
     },
     {
       "id": 12,
       "type": "multiple-choice",
-      "question": "Which pair of expressions shows agreement and then a contrasting opinion?",
+      "question": "Which modal shows the LEAST certainty about the future?",
       "options": [
-        "That's true. On the other hand, ...",
-        "I disagree. For example, ...",
-        "You're right. In addition, ...",
-        "I don't think so. However, ..."
+        "will",
+        "probably will",
+        "might",
+        "is going to"
       ],
-      "correctAnswer": "That's true. On the other hand, ..."
+      "correctAnswer": "might"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ believe that children spend too much time on screens.'",
-      "correctAnswer": "strongly|truly|firmly|personally"
+      "question": "Complete: 'She has _____ arrived — she just walked through the door.'",
+      "correctAnswer": "just"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'To be _____, I think both sides have valid points in this debate.'",
-      "correctAnswer": "fair|honest"
+      "question": "Complete: 'It _____ be cold tonight — I'm not sure, but bring a jacket.'",
+      "correctAnswer": "might|could|may"
     },
     {
       "id": 15,
       "type": "fill-blank",
-      "question": "Complete: 'I _____ your point of view, and I think you raise some important issues.'",
-      "correctAnswer": "respect|understand|acknowledge"
+      "question": "Complete: 'He got the job! He _____ been trying for months.'",
+      "correctAnswer": "has"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: 'She didn't _____ with my idea, but she was polite about it.'",
-      "correctAnswer": "agree"
+      "type": "complete",
+      "question": "'Have you finished the project yet?' — 'Yes, I've _____ finished it. I did it this morning.'",
+      "correctAnswer": "already"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "I believe that _____, but I understand that others may see it differently.",
-      "correctAnswer": "education is essential|everyone should learn a language|exercise is important"
+      "question": "'What do you think about remote work?' — '_____ my perspective, it gives people more freedom.'",
+      "correctAnswer": "From"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "He made a very _____ argument, and I found it hard to disagree.",
-      "correctAnswer": "convincing|valid|strong|compelling"
+      "question": "'Will it rain tomorrow?' — 'It _____. The forecast is not very clear.'",
+      "correctAnswer": "might|may|could"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Na minha opinião, aprender inglês muda a sua vida.'",
-      "correctAnswer": "in my opinion, learning english changes your life"
+      "question": "Translate to English: 'Do meu ponto de vista, todos deveriam aprender um segundo idioma.'",
+      "correctAnswer": "from my point of view, everyone should learn a second language"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Respeito sua opinião, mas penso de forma diferente.'",
-      "correctAnswer": "i respect your opinion, but i think differently"
+      "question": "Translate to English: 'Pode ser que ela mude de ideia.'",
+      "correctAnswer": "she might change her mind"
     }
   ]
 }
