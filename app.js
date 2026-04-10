@@ -782,6 +782,30 @@ const slidesList = {
             description: 'Present continuous and food vocabulary',
             pdfFile: 'aulas/Seed/slide/Seed_Lesson05.pdf'
         },
+        {
+            id: 6,
+            title: 'Lesson 06 - Places in the City',
+            description: 'Vocabulary for places in the city and giving directions',
+            pdfFile: 'aulas/Seed/slide/Seed - Lesson06.pdf'
+        },
+        {
+            id: 7,
+            title: 'Lesson 07 - Free Time & Hobbies',
+            description: 'Talking about free time activities and hobbies',
+            pdfFile: 'aulas/Seed/slide/Seed - Lesson07.pdf'
+        },
+        {
+            id: 8,
+            title: 'Lesson 08 - Clothes & Shopping',
+            description: 'Clothing vocabulary and shopping expressions',
+            pdfFile: 'aulas/Seed/slide/Seed - Lesson08.pdf'
+        },
+        {
+            id: 9,
+            title: 'Lesson 09 - Weather & Seasons',
+            description: 'Weather vocabulary and describing seasons',
+            pdfFile: 'aulas/Seed/slide/Seed - Lesson09.pdf'
+        }
     ],
     root: [
         {
@@ -812,19 +836,19 @@ const slidesList = {
             id: 6,
             title: 'Lesson 06 - Future Plans',
             description: 'Future tenses and expressions for talking about plans',
-            pdfFile: 'aulas/Root/slide/Root_Lesson06.pdf'
+            pdfFile: 'aulas/Root/slide/Root - Lesson06.pdf'
         },
         {
             id: 7,
             title: 'Lesson 07 - Health & Lifestyle',
             description: 'Health vocabulary and talking about habits and lifestyle',
-            pdfFile: 'aulas/Root/slide/Root_Lesson07.pdf'
+            pdfFile: 'aulas/Root/slide/Root - Lesson07.pdf'
         },
         {
             id: 8,
             title: 'Lesson 08 - Shopping & Money',
             description: 'Shopping vocabulary and expressions for buying and selling',
-            pdfFile: 'aulas/Root/slide/Root_Lesson08.pdf'
+            pdfFile: 'aulas/Root/slide/Root - Lesson08.pdf'
         }
     ],
     leaf: [

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby Chat – SpeakUp Seed Lesson 9</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root { --radius: 14px; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0f0f1a;
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    /* ── HEADER ─────────────────────────────────────── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 52px;
+      flex-shrink: 0;
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .header-left { display: flex; align-items: center; gap: 10px; }
+    .logo { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.3px; }
+    .logo span { color: rgba(255,255,255,0.35); font-weight: 400; font-size: 0.85rem; }
+    .score-dots { display: flex; gap: 5px; }
+    .dot-item {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .dot-item.done  { background: #4ade80; }
+    .dot-item.active{ background: #facc15; box-shadow: 0 0 7px #facc15; }
+    .round-badge {
+      background: rgba(255,255,255,0.1);
+      padding: 3px 11px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ── GAME AREA ───────────────────────────────────── */
+    .game-area {
+      flex: 1;
+      display: flex;
+      gap: 14px;
+      padding: 10px 18px;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    /* ── CHARACTER CARD ──────────────────────────────── */
+    .character-panel {
+      flex: 0 0 44%;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .character-card {
+      flex: 1;
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background: #1a1a2e;
+      border: 2px solid rgba(255,255,255,0.06);
+      transition: background 0.5s ease, border-color 0.5s ease;
+      min-height: 0;
+    }
+    .idle-overlay {
+      position: absolute; inset: 0;
+      background: rgba(15,15,26,0.92);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      border-radius: var(--radius);
+      gap: 8px; text-align: center; padding: 20px;
+      z-index: 10;
+      transition: opacity 0.3s;
+    }
+    .idle-emojis { font-size: 1.9rem; letter-spacing: 3px; }
+    .idle-title  { font-size: 1.1rem; font-weight: 700; }
+    .idle-sub    { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+
+    .avatar {
+      font-size: clamp(3rem, 8vh, 5rem);
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+    .avatar.spin { animation: spinIn 0.5s cubic-bezier(.34,1.56,.64,1); }
+    @keyframes spinIn {
+      from { transform: scale(0) rotate(-180deg); opacity: 0; }
+      to   { transform: scale(1) rotate(0deg);    opacity: 1; }
+    }
+    .char-name { font-size: clamp(1.3rem, 3.5vh, 1.9rem); font-weight: 800; margin-bottom: 4px; }
+    .char-tag {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 2px 10px; border-radius: 20px;
+      background: rgba(255,255,255,0.12);
+      margin-bottom: 12px;
+    }
+    .hobby-sentences { width: 100%; display: flex; flex-direction: column; gap: 6px; }
+    .sentence {
+      background: rgba(0,0,0,0.3);
+      border-radius: 9px;
+      padding: 7px 11px;
+      font-size: clamp(0.75rem, 1.8vh, 0.88rem);
+      line-height: 1.4;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .sentence .sdot {
+      width: 7px; height: 7px; border-radius: 50%;
+      flex-shrink: 0; opacity: 0.7;
+    }
+
+    /* ── RIGHT PANEL ─────────────────────────────────── */
+    .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 0;
+    }
+
+    /* Timer block */
+    .timer-block {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(255,255,255,0.04);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      border: 1px solid rgba(255,255,255,0.07);
+      flex-shrink: 0;
+    }
+    .timer-wrap { position: relative; width: 80px; height: 80px; flex-shrink: 0; }
+    .timer-text {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+    .timer-circle-bg  { fill: none; stroke: rgba(255,255,255,0.08); stroke-width: 7; }
+    .timer-circle {
+      fill: none; stroke: #4ade80; stroke-width: 7;
+      stroke-linecap: round;
+      transform: rotate(-90deg); transform-origin: 50% 50%;
+      transition: stroke-dashoffset 1s linear, stroke 0.4s;
+    }
+    .timer-circle.warn   { stroke: #facc15; }
+    .timer-circle.danger { stroke: #f87171; }
+    .timer-pulse { animation: pulse 1s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+    .timer-meta { display: flex; flex-direction: column; gap: 3px; flex: 1; }
+    .timer-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.35); }
+    .timer-msg   { font-size: 0.95rem; font-weight: 700; line-height: 1.35; }
+
+    /* Questions */
+    .questions-block {
+      flex: 1;
+      background: rgba(255,255,255,0.04);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      display: flex; flex-direction: column; gap: 7px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.07);
+      min-height: 0;
+    }
+    .q-title {
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 1px;
+      color: rgba(255,255,255,0.35); flex-shrink: 0;
+    }
+    .q-placeholder { color: rgba(255,255,255,0.25); font-size: 0.85rem; margin-top: 6px; line-height: 1.6; }
+    .q-bubble {
+      background: rgba(255,255,255,0.06);
+      border-radius: 9px;
+      padding: 8px 11px;
+      font-size: clamp(0.75rem, 1.8vh, 0.88rem);
+      line-height: 1.4;
+      border-left: 3px solid rgba(255,255,255,0.2);
+      display: flex; align-items: flex-start; gap: 8px;
+      flex-shrink: 0;
+    }
+    .q-num { font-weight: 700; font-size: 0.78rem; color: rgba(255,255,255,0.35); flex-shrink: 0; padding-top: 1px; }
+
+    /* ── FOOTER ─────────────────────────────────────── */
+    footer {
+      height: 56px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      padding: 0 18px;
+    }
+    .btn {
+      padding: 9px 24px; border-radius: 50px; border: none;
+      cursor: pointer; font-size: 0.92rem; font-weight: 700;
+      display: flex; align-items: center; gap: 7px;
+      transition: transform 0.15s, box-shadow 0.15s, opacity 0.2s;
+    }
+    .btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.4); }
+    .btn:active:not(:disabled){ transform: translateY(0); }
+    .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+    .btn-shuffle { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; }
+    .btn-start   { background: linear-gradient(135deg, #4ade80, #22c55e); color: #0f0f1a; }
+    .btn-stop    { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid #f8717155; }
+
+    /* ── TIMES UP OVERLAY ───────────────────────────── */
+    .overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(6px);
+      display: none; flex-direction: column;
+      align-items: center; justify-content: center;
+      z-index: 100; gap: 10px; text-align: center; padding: 20px;
+    }
+    .overlay.show { display: flex; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .overlay-emoji { font-size: clamp(2.5rem, 8vh, 4rem); animation: bob 0.6s ease infinite alternate; }
+    @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-8px); } }
+    .overlay-title { font-size: clamp(1.6rem, 5vh, 2.4rem); font-weight: 900; }
+    .overlay-sub   { font-size: 0.95rem; color: rgba(255,255,255,0.6); max-width: 340px; }
+    .btn-next { background: linear-gradient(135deg, #4ade80, #22c55e); color: #0f0f1a; margin-top: 8px; }
+    .btn-replay { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; margin-top: 8px; }
+
+    /* card animation */
+    .card-in { animation: cardIn 0.4s ease; }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(16px) scale(0.96); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────── -->
+<header>
+  <div class="header-left">
+    <div class="logo">🎯 Hobby Chat <span>— SpeakUp Seed Lesson 9</span></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div class="score-dots" id="scoreDots"></div>
+    <div class="round-badge" id="roundBadge">Round 0 / 8</div>
+  </div>
+</header>
+
+<!-- ── GAME AREA ────────────────────────────────────────── -->
+<div class="game-area">
+
+  <!-- Character Card -->
+  <div class="character-panel">
+    <div class="character-card" id="characterCard">
+
+      <!-- Idle overlay -->
+      <div class="idle-overlay" id="idleOverlay">
+        <div class="idle-emojis">🎮 🎨 ⚽ 📚 🎵 🍳 ✈️ 🏊</div>
+        <div class="idle-title">Who's the character?</div>
+        <div class="idle-sub">Click <strong>Shuffle</strong> to reveal!</div>
+      </div>
+
+      <div class="avatar" id="charAvatar">❓</div>
+      <div class="char-name" id="charName">—</div>
+      <div class="char-tag"  id="charTag">Hobby</div>
+      <div class="hobby-sentences" id="hobbySentences"></div>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div class="right-panel">
+
+    <!-- Timer -->
+    <div class="timer-block">
+      <div class="timer-wrap">
+        <svg width="80" height="80" viewBox="0 0 80 80">
+          <circle class="timer-circle-bg" cx="40" cy="40" r="33"/>
+          <circle class="timer-circle" id="timerCircle" cx="40" cy="40" r="33"
+            stroke-dasharray="207.35" stroke-dashoffset="0"/>
+        </svg>
+        <div class="timer-text" id="timerText">3:00</div>
+      </div>
+      <div class="timer-meta">
+        <div class="timer-label">⏱ Time to Talk</div>
+        <div class="timer-msg" id="timerMsg">Shuffle to<br>start talking!</div>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="questions-block" id="questionsBlock">
+      <div class="q-title">💬 Conversation Starters</div>
+      <div id="questionsList">
+        <div class="q-placeholder">Questions will appear here<br>when you shuffle a new character.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── FOOTER ───────────────────────────────────────────── -->
+<footer>
+  <button class="btn btn-stop"    id="stopBtn"    onclick="stopRound()"         disabled>⏹ End Round</button>
+  <button class="btn btn-start"   id="startBtn"   onclick="startTimer()"        disabled>▶ Start Timer</button>
+  <button class="btn btn-shuffle" id="shuffleBtn" onclick="shuffleCharacter()">🔀 Shuffle Character</button>
+</footer>
+
+<!-- ── OVERLAYS ─────────────────────────────────────────── -->
+<div class="overlay" id="timesUpOverlay">
+  <div class="overlay-emoji">🎉</div>
+  <div class="overlay-title" style="color:#4ade80">Time's Up!</div>
+  <div class="overlay-sub">Great job talking! Ready for the next character?</div>
+  <button class="btn btn-next" onclick="nextRound()">▶ Next Character</button>
+</div>
+
+<div class="overlay" id="allDoneOverlay">
+  <div class="overlay-emoji">🏆</div>
+  <div class="overlay-title" style="color:#facc15">All Done!</div>
+  <div class="overlay-sub">Amazing work! You talked about all 8 hobbies. Great conversation practice!</div>
+  <button class="btn btn-replay" onclick="restartGame()">🔄 Play Again</button>
+</div>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────────────────────────
+const TOTAL    = 8;
+const DURATION = 180; // 3 minutes in seconds
+const CIRCUM   = 207.35; // 2 * π * 33
+
+const characters = [
+  {
+    name: "Jake", avatar: "🎮", hobby: "Video Games",
+    color: "#7C3AED",
+    sentences: [
+      "I like to play video games every day.",
+      "I enjoy watching YouTube videos.",
+      "I always play after school.",
+      "I never exercise. 😅"
+    ],
+    questions: [
+      "Do you like video games? What do you enjoy playing?",
+      "How often do you play — always, sometimes, or never?",
+      "Do you prefer playing alone or with friends?",
+      "What is your favorite game or game type?"
+    ]
+  },
+  {
+    name: "Sofia", avatar: "🎨", hobby: "Drawing & Art",
+    color: "#D97706",
+    sentences: [
+      "I enjoy drawing every day.",
+      "I like to listen to music while I draw.",
+      "I usually draw on weekends.",
+      "I rarely watch TV."
+    ],
+    questions: [
+      "Do you like drawing or art? What do you enjoy making?",
+      "How often do you draw — every day, sometimes, or never?",
+      "Do you listen to music while you work or study?",
+      "Do you prefer drawing, painting, or taking photos?"
+    ]
+  },
+  {
+    name: "Marcus", avatar: "⚽", hobby: "Football & Sports",
+    color: "#16A34A",
+    sentences: [
+      "I like to play football on weekends.",
+      "I always watch games on TV.",
+      "I enjoy exercising in the park.",
+      "I never miss a big match!"
+    ],
+    questions: [
+      "Do you like football or another sport? Which one?",
+      "How often do you play sports — always, usually, or rarely?",
+      "Do you prefer watching sports or playing?",
+      "Who is your favorite athlete or team?"
+    ]
+  },
+  {
+    name: "Emma", avatar: "📚", hobby: "Reading",
+    color: "#DB2777",
+    sentences: [
+      "I always read before bed.",
+      "I enjoy reading mystery books.",
+      "I sometimes drink tea while reading.",
+      "I rarely watch TV — I prefer books!"
+    ],
+    questions: [
+      "Do you like to read? What topics or genres?",
+      "How often do you read — every day or sometimes?",
+      "Do you have a favorite book or story?",
+      "Do you prefer books, comics, or news online?"
+    ]
+  },
+  {
+    name: "Luna", avatar: "🎵", hobby: "Music",
+    color: "#9333EA",
+    sentences: [
+      "I always listen to music.",
+      "I enjoy singing in the shower! 🚿",
+      "I sometimes play guitar at home.",
+      "I never skip my playlist."
+    ],
+    questions: [
+      "What kind of music do you like — pop, rock, or other?",
+      "How often do you listen — always, usually, sometimes?",
+      "Do you play any musical instrument?",
+      "Do you enjoy singing? Where — at home, karaoke, or car?"
+    ]
+  },
+  {
+    name: "Carlos", avatar: "🍳", hobby: "Cooking",
+    color: "#EA580C",
+    sentences: [
+      "I enjoy cooking for my family.",
+      "I usually try new recipes on Sundays.",
+      "I like to watch cooking shows.",
+      "I never skip breakfast!"
+    ],
+    questions: [
+      "Do you like to cook? What do you enjoy making?",
+      "How often do you cook — every day, sometimes, or never?",
+      "What is your favorite meal or dish?",
+      "Do you prefer cooking at home or eating out?"
+    ]
+  },
+  {
+    name: "Mia", avatar: "✈️", hobby: "Traveling",
+    color: "#0284C7",
+    sentences: [
+      "I love to travel in summer.",
+      "I always take photos on trips.",
+      "I sometimes write a travel diary.",
+      "I rarely stay home on holidays."
+    ],
+    questions: [
+      "Do you like to travel? Where do you want to go?",
+      "How often do you travel — sometimes, rarely, or never?",
+      "What do you enjoy doing on vacation?",
+      "Do you prefer beach, mountains, or a city trip?"
+    ]
+  },
+  {
+    name: "Noah", avatar: "🏊", hobby: "Swimming",
+    color: "#0D9488",
+    sentences: [
+      "I enjoy swimming in the morning.",
+      "I usually swim three times a week.",
+      "I sometimes run in the park too.",
+      "I never dance — two left feet! 😂"
+    ],
+    questions: [
+      "Do you like swimming or another sport? Which one?",
+      "How often do you exercise — always, sometimes, or never?",
+      "Do you prefer swimming, running, cycling, or gym?",
+      "Do you exercise in the morning or evening? Why?"
+    ]
+  }
+];
+
+// ─── STATE ──────────────────────────────────────────────────────────────────
+let pool       = [...characters];
+let roundsDone = 0;
+let current    = null;
+let seconds    = DURATION;
+let timerID    = null;
+let running    = false;
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+function buildDots() {
+  const el = document.getElementById('scoreDots');
+  el.innerHTML = '';
+  for (let i = 0; i < TOTAL; i++) {
+    const d = document.createElement('div');
+    d.className = 'dot-item';
+    d.id = `dot${i}`;
+    el.appendChild(d);
+  }
+}
+
+function refreshDots() {
+  for (let i = 0; i < TOTAL; i++) {
+    const d = document.getElementById(`dot${i}`);
+    if (i < roundsDone)        d.className = 'dot-item done';
+    else if (i === roundsDone && running) d.className = 'dot-item active';
+    else                       d.className = 'dot-item';
+  }
+}
+
+// ─── SHUFFLE ─────────────────────────────────────────────────────────────────
+function shuffleCharacter() {
+  if (running) return;
+  document.getElementById('timesUpOverlay').classList.remove('show');
+
+  if (pool.length === 0) pool = [...characters];
+
+  const idx = Math.floor(Math.random() * pool.length);
+  current = pool.splice(idx, 1)[0];
+
+  // Card style
+  const card = document.getElementById('characterCard');
+  card.style.background   = current.color + '18';
+  card.style.borderColor  = current.color + '55';
+  card.classList.add('card-in');
+  setTimeout(() => card.classList.remove('card-in'), 450);
+
+  // Hide idle overlay
+  document.getElementById('idleOverlay').style.display = 'none';
+
+  // Avatar
+  const av = document.getElementById('charAvatar');
+  av.textContent = current.avatar;
+  av.classList.remove('spin');
+  void av.offsetWidth; // reflow to restart animation
+  av.classList.add('spin');
+
+  // Name / tag
+  document.getElementById('charName').textContent = current.name;
+  const tag = document.getElementById('charTag');
+  tag.textContent = current.hobby;
+  tag.style.background = current.color + '44';
+  tag.style.color = '#fff';
+
+  // Sentences
+  document.getElementById('hobbySentences').innerHTML =
+    current.sentences.map(s => `
+      <div class="sentence">
+        <div class="sdot" style="background:${current.color}"></div>
+        ${s}
+      </div>`).join('');
+
+  // Questions
+  document.getElementById('questionsList').innerHTML =
+    current.questions.map((q, i) => `
+      <div class="q-bubble" style="border-left-color:${current.color}">
+        <span class="q-num">Q${i+1}</span>
+        <span>${q}</span>
+      </div>`).join('');
+
+  // Ready to start — don't auto-start the timer
+  document.getElementById('startBtn').disabled   = false;
+  document.getElementById('shuffleBtn').disabled = false;
+  document.getElementById('stopBtn').disabled    = true;
+  document.getElementById('timerMsg').innerHTML  =
+    `<span style="color:#4ade80">Ready!</span><br>Click <strong>Start Timer</strong>`;
+
+  // Reset timer display without starting
+  seconds = DURATION;
+  renderTimer();
+}
+
+// ─── TIMER ───────────────────────────────────────────────────────────────────
+function startTimer() {
+  if (running || !current) return;
+  running = true;
+
+  document.getElementById('startBtn').disabled   = true;
+  document.getElementById('shuffleBtn').disabled = true;
+  document.getElementById('stopBtn').disabled    = false;
+  document.getElementById('timerMsg').innerHTML  =
+    `Talk about<br><strong>${current.name}'s hobby!</strong>`;
+
+  refreshDots();
+
+  timerID = setInterval(() => {
+    seconds--;
+    renderTimer();
+    if (seconds <= 0) {
+      clearInterval(timerID);
+      timesUp();
+    }
+  }, 1000);
+}
+
+function renderTimer() {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  document.getElementById('timerText').textContent = `${m}:${String(s).padStart(2,'0')}`;
+
+  const offset = CIRCUM * (1 - seconds / DURATION);
+  const circle = document.getElementById('timerCircle');
+  circle.style.strokeDashoffset = offset;
+
+  circle.classList.remove('warn','danger','timer-pulse');
+  if (seconds <= 30) {
+    circle.classList.add('danger','timer-pulse');
+    document.getElementById('timerMsg').innerHTML =
+      `<span style="color:#f87171">⚠ Wrap it up!</span>`;
+  } else if (seconds <= 60) {
+    circle.classList.add('warn');
+    document.getElementById('timerMsg').innerHTML =
+      `<span style="color:#facc15">1 minute left!</span>`;
+  }
+}
+
+function stopRound() {
+  if (!running) return;
+  clearInterval(timerID);
+  finishRound();
+}
+
+function timesUp() {
+  finishRound();
+  document.getElementById('timesUpOverlay').classList.add('show');
+}
+
+function finishRound() {
+  running = false;
+  roundsDone++;
+  refreshDots();
+  document.getElementById('roundBadge').textContent = `Round ${roundsDone} / ${TOTAL}`;
+  document.getElementById('stopBtn').disabled    = true;
+  document.getElementById('startBtn').disabled   = true;
+  document.getElementById('shuffleBtn').disabled = (roundsDone >= TOTAL);
+  document.getElementById('timerMsg').innerHTML  = 'Round complete! 🎯';
+}
+
+function nextRound() {
+  document.getElementById('timesUpOverlay').classList.remove('show');
+  if (roundsDone >= TOTAL) {
+    setTimeout(() => document.getElementById('allDoneOverlay').classList.add('show'), 200);
+  } else {
+    document.getElementById('shuffleBtn').disabled = false;
+  }
+}
+
+// ─── RESTART ──────────────────────────────────────────────────────────────────
+function restartGame() {
+  clearInterval(timerID);
+  pool       = [...characters];
+  roundsDone = 0;
+  running    = false;
+  seconds    = DURATION;
+
+  document.getElementById('allDoneOverlay').classList.remove('show');
+  document.getElementById('timesUpOverlay').classList.remove('show');
+  document.getElementById('roundBadge').textContent    = `Round 0 / ${TOTAL}`;
+  document.getElementById('shuffleBtn').disabled        = false;
+  document.getElementById('startBtn').disabled          = true;
+  document.getElementById('stopBtn').disabled           = true;
+  document.getElementById('timerMsg').innerHTML         = 'Shuffle to<br>start talking!';
+  document.getElementById('idleOverlay').style.display  = 'flex';
+  document.getElementById('charAvatar').textContent     = '❓';
+  document.getElementById('charName').textContent       = '—';
+  document.getElementById('questionsList').innerHTML    =
+    '<div class="q-placeholder">Questions will appear here<br>when you shuffle a new character.</div>';
+  document.getElementById('hobbySentences').innerHTML   = '';
+
+  const card = document.getElementById('characterCard');
+  card.style.background  = '#1a1a2e';
+  card.style.borderColor = 'rgba(255,255,255,0.06)';
+
+  const circle = document.getElementById('timerCircle');
+  circle.style.strokeDashoffset = 0;
+  circle.className = 'timer-circle';
+  document.getElementById('timerText').textContent = '3:00';
+
+  refreshDots();
+}
+
+// ─── BOOT ─────────────────────────────────────────────────────────────────────
+buildDots();
+</script>
+</body>
+</html>
