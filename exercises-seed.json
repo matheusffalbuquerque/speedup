@@ -1,722 +1,975 @@
 {
-  "lessons": [6, 7, 8],
+  "lessons": [
+    9,
+    10
+  ],
   "level": "seed",
-  "topics": ["Colors & Clothes", "Places in the City", "Weather & Seasons"],
+  "topics": [
+    "Hobbies & Free Time",
+    "Shopping & Money"
+  ],
   "monday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'blue' mean?",
-      "options": ["Vermelho", "Azul", "Verde", "Amarelo"],
-      "correctAnswer": "Azul"
+      "question": "What does 'play' mean?",
+      "options": [
+        "Jogar / Tocar",
+        "Comprar",
+        "Vender",
+        "Descansar"
+      ],
+      "correctAnswer": "Jogar / Tocar"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'park' mean?",
-      "options": ["Escola", "Hospital", "Parque", "Banco"],
-      "correctAnswer": "Parque"
+      "question": "What does 'exercise' mean?",
+      "options": [
+        "Dormir",
+        "Se exercitar",
+        "Trabalhar",
+        "Estudar"
+      ],
+      "correctAnswer": "Se exercitar"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'sunny' mean?",
-      "options": ["Chuvoso", "Ensolarado", "Nublado", "Ventoso"],
-      "correctAnswer": "Ensolarado"
+      "question": "What does 'cook' mean?",
+      "options": [
+        "Comer",
+        "Lavar",
+        "Cozinhar",
+        "Comprar"
+      ],
+      "correctAnswer": "Cozinhar"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'dress' mean?",
-      "options": ["Camisa", "Calça", "Vestido", "Saia"],
-      "correctAnswer": "Vestido"
+      "question": "What does 'draw' mean?",
+      "options": [
+        "Pintar",
+        "Escrever",
+        "Imprimir",
+        "Desenhar"
+      ],
+      "correctAnswer": "Desenhar"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which sentence uses 'I'm wearing' correctly?",
+      "type": "vocabulary",
+      "question": "What does 'sport' mean?",
       "options": [
-        "I'm wearing a red shirt.",
-        "I wearing a red shirt.",
-        "I am wear a red shirt.",
-        "I wears a red shirt."
+        "Jogo de tabuleiro",
+        "Esporte",
+        "Passatempo",
+        "Competicao"
       ],
-      "correctAnswer": "I'm wearing a red shirt."
+      "correctAnswer": "Esporte"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "Complete: 'It is ___ today. The sun is shining brightly!'",
-      "correctAnswer": "sunny"
+      "type": "vocabulary",
+      "question": "What does 'series' mean?",
+      "options": [
+        "Musica",
+        "Livro",
+        "Serie",
+        "Filme"
+      ],
+      "correctAnswer": "Serie"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "'There ___ a hospital on Main Street.' Choose the correct word.",
-      "options": ["is", "are", "am", "be"],
-      "correctAnswer": "is"
+      "type": "vocabulary",
+      "question": "What does 'always' mean?",
+      "options": [
+        "As vezes",
+        "Nunca",
+        "Raramente",
+        "Sempre"
+      ],
+      "correctAnswer": "Sempre"
     },
     {
       "id": 8,
-      "type": "multiple-choice",
-      "question": "Which is the correct way to ask about the weather?",
+      "type": "vocabulary",
+      "question": "What does 'sometimes' mean?",
       "options": [
-        "What's the weather like?",
-        "How is the weather look?",
-        "What weather is?",
-        "How look weather?"
+        "Geralmente",
+        "Nunca",
+        "As vezes",
+        "Sempre"
       ],
-      "correctAnswer": "What's the weather like?"
+      "correctAnswer": "As vezes"
     },
     {
       "id": 9,
-      "type": "fill-blank",
-      "question": "Peter is wearing black ___. He needs them to walk outside.",
-      "correctAnswer": "boots|shoes"
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about a hobby.",
+      "options": [
+        "I like to dance on Fridays.",
+        "I like dance on Fridays.",
+        "I likes to dance on Fridays.",
+        "I am like to dance on Fridays."
+      ],
+      "correctAnswer": "I like to dance on Fridays."
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: 'What are you wearing?' — 'I'm ___ a blue shirt.'",
-      "correctAnswer": "wearing"
+      "type": "multiple-choice",
+      "question": "Which word is a hobby VERB?",
+      "options": [
+        "money",
+        "price",
+        "swim",
+        "jacket"
+      ],
+      "correctAnswer": "swim"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Where do you go to buy food and groceries?",
-      "options": ["restaurant", "supermarket", "pharmacy", "cinema"],
-      "correctAnswer": "supermarket"
+      "question": "My hobby ___ reading books.",
+      "options": [
+        "are",
+        "is",
+        "be",
+        "am"
+      ],
+      "correctAnswer": "is"
     },
     {
       "id": 12,
-      "type": "fill-blank",
-      "question": "The pharmacy is next ___ the hospital.",
-      "correctAnswer": "to"
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'enjoy' correctly?",
+      "options": [
+        "She enjoy cooking dinner.",
+        "She enjoys cook dinner.",
+        "She enjoys cooking dinner.",
+        "She enjoy to cook dinner."
+      ],
+      "correctAnswer": "She enjoys cooking dinner."
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Hoje está ensolarado.'",
-      "correctAnswer": "it is sunny today|it's sunny today|today it is sunny"
+      "type": "fill-blank",
+      "question": "Complete: 'I like to ___ every morning.' (physical activity)",
+      "correctAnswer": "exercise"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Complete: 'He is wearing ___ shirt and black pants.'",
-      "options": ["a white", "white a", "the whites", "an white"],
-      "correctAnswer": "a white"
+      "type": "fill-blank",
+      "question": "Complete: 'She ___ enjoys reading before bed.' (100% frequency)",
+      "correctAnswer": "always"
     },
     {
       "id": 15,
       "type": "fill-blank",
-      "question": "In ___, it is very cold and there is snow.",
-      "correctAnswer": "winter"
+      "question": "Complete: 'I enjoy ___ on weekends.' (dance → -ing form)",
+      "correctAnswer": "dancing"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "Complete: 'There ___ many people in the park today.'",
-      "correctAnswer": "are"
+      "question": "Complete: 'I like ___ music in the morning.'",
+      "correctAnswer": "listening to"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "It is very hot in ___. People usually go to the beach.",
-      "options": ["winter", "spring", "summer", "fall"],
-      "correctAnswer": "summer"
+      "type": "complete",
+      "question": "Complete: 'What do you ___ to do in your free time?'",
+      "correctAnswer": "like"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'Eu estou usando um chapéu azul.'",
-      "correctAnswer": "i am wearing a blue hat|i'm wearing a blue hat"
+      "type": "complete",
+      "question": "Complete: 'He ___ plays video games at work.'",
+      "correctAnswer": "never"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "The bank is ___ the pharmacy, very close.",
-      "options": ["near", "inside", "on top of", "over"],
-      "correctAnswer": "near"
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de cozinhar em casa.'",
+      "correctAnswer": "i like to cook at home"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'O supermercado fica perto do hospital.'",
-      "correctAnswer": "the supermarket is near the hospital"
+      "question": "Translate to English: 'Ela nunca joga videogame.'",
+      "correctAnswer": "she never plays video games"
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'green' mean?",
-      "options": ["Azul", "Verde", "Roxo", "Laranja"],
-      "correctAnswer": "Verde"
+      "question": "What does 'buy' mean?",
+      "options": [
+        "Vender",
+        "Comprar",
+        "Pagar",
+        "Trocar"
+      ],
+      "correctAnswer": "Comprar"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'pharmacy' mean?",
-      "options": ["Escola", "Farmácia", "Mercado", "Cinema"],
-      "correctAnswer": "Farmácia"
+      "question": "What does 'sell' mean?",
+      "options": [
+        "Comprar",
+        "Guardar",
+        "Vender",
+        "Trocar"
+      ],
+      "correctAnswer": "Vender"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'cloudy' mean?",
-      "options": ["Ensolarado", "Ventoso", "Nublado", "Chuvoso"],
-      "correctAnswer": "Nublado"
+      "question": "What does 'jacket' mean?",
+      "options": [
+        "Vestido",
+        "Jaqueta",
+        "Camisa",
+        "Calca"
+      ],
+      "correctAnswer": "Jaqueta"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'boots' mean?",
-      "options": ["Meias", "Sapatos", "Botas", "Casaco"],
-      "correctAnswer": "Botas"
+      "question": "What does 'hat' mean?",
+      "options": [
+        "Bolsa",
+        "Sapato",
+        "Chapeu",
+        "Meia"
+      ],
+      "correctAnswer": "Chapeu"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "She ___ wearing a green coat today.",
-      "options": ["is", "are", "am", "be"],
-      "correctAnswer": "is"
+      "type": "vocabulary",
+      "question": "What does 'pants' mean?",
+      "options": [
+        "Camisa",
+        "Calca",
+        "Jaqueta",
+        "Vestido"
+      ],
+      "correctAnswer": "Calca"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "The restaurant is ___ the bank and the hotel.",
-      "correctAnswer": "between"
+      "type": "vocabulary",
+      "question": "What does 'usually' mean?",
+      "options": [
+        "Sempre",
+        "Nunca",
+        "Raramente",
+        "Geralmente"
+      ],
+      "correctAnswer": "Geralmente"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "In spring, the weather is usually ___.",
+      "type": "vocabulary",
+      "question": "What does 'rarely' mean?",
       "options": [
-        "very cold and snowy",
-        "warm and sometimes rainy",
-        "very hot and dry",
-        "foggy and dark"
+        "Sempre",
+        "Raramente",
+        "As vezes",
+        "Geralmente"
       ],
-      "correctAnswer": "warm and sometimes rainy"
+      "correctAnswer": "Raramente"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "She is wearing a warm ___ because it is cold outside.",
-      "correctAnswer": "coat|jacket"
+      "type": "vocabulary",
+      "question": "What does 'never' mean?",
+      "options": [
+        "As vezes",
+        "Geralmente",
+        "Quase sempre",
+        "Nunca"
+      ],
+      "correctAnswer": "Nunca"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "'Where is the cinema?' — 'It's ___ Main Street.'",
-      "options": ["in", "on", "at", "between"],
-      "correctAnswer": "on"
+      "question": "What is the correct -ing form of 'swim'?",
+      "options": [
+        "swiming",
+        "swimmming",
+        "swimming",
+        "swimeing"
+      ],
+      "correctAnswer": "swimming"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: 'What's the weather like?' — 'It's ___ and cool. Don't forget your umbrella!'",
-      "correctAnswer": "rainy|cloudy"
+      "type": "multiple-choice",
+      "question": "What is the correct -ing form of 'dance'?",
+      "options": [
+        "danceing",
+        "dancing",
+        "dansing",
+        "danccing"
+      ],
+      "correctAnswer": "dancing"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "In ___, the leaves fall from the trees and the weather gets cooler.",
-      "correctAnswer": "fall|autumn"
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "I enjoy reading books every week.",
+        "I enjoy to read books every week.",
+        "I enjoy read books every week.",
+        "I enjoying books every week."
+      ],
+      "correctAnswer": "I enjoy reading books every week."
     },
     {
       "id": 12,
       "type": "multiple-choice",
-      "question": "Which sentence is CORRECT?",
+      "question": "Which sentence is correct in a store?",
       "options": [
-        "It's windy and rainy today.",
-        "It are windy and rainy today.",
-        "It be windy today.",
-        "It am rainy today."
+        "Can I have this shoes, please?",
+        "Can I have these shoe, please?",
+        "Can I have these shoes, please?",
+        "Can I has these shoes, please?"
       ],
-      "correctAnswer": "It's windy and rainy today."
+      "correctAnswer": "Can I have these shoes, please?"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Ela está usando uma saia roxa.'",
-      "correctAnswer": "she is wearing a purple skirt|she's wearing a purple skirt"
+      "type": "fill-blank",
+      "question": "Complete: 'The blue ___ is twenty dollars.' (clothing item worn on top)",
+      "correctAnswer": "jacket|shirt"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "I need to get some medicine. I'm going to the ___.",
-      "correctAnswer": "pharmacy"
+      "question": "Complete: 'I enjoy ___ in the summer.' (travel → -ing form)",
+      "correctAnswer": "traveling"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which sentence is in the Present Continuous tense?",
-      "options": [
-        "He wears black shoes.",
-        "He is wearing black shoes.",
-        "He wore black shoes.",
-        "He will wear black shoes."
-      ],
-      "correctAnswer": "He is wearing black shoes."
+      "type": "fill-blank",
+      "question": "Complete: 'These ___ are expensive.' (footwear)",
+      "correctAnswer": "shoes"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Como está o tempo hoje?'",
-      "correctAnswer": "what's the weather like today?|what is the weather like today?"
+      "type": "complete",
+      "question": "Complete: 'He ___ swims in the pool on weekends.'",
+      "correctAnswer": "usually"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Complete: 'There ___ a bus stop near the hotel.'",
-      "correctAnswer": "is"
+      "question": "Complete: 'I want ___ hat over there.'",
+      "correctAnswer": "that"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "You can see a movie at the ___.",
-      "correctAnswer": "cinema"
+      "type": "complete",
+      "question": "Complete: '___ I have this bag, please?'",
+      "correctAnswer": "Can"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "'There are many restaurants ___ this street.' Which preposition is correct?",
-      "options": ["on", "in", "at", "next to"],
-      "correctAnswer": "on"
+      "type": "translate",
+      "question": "Translate to English: 'Eu geralmente leio antes de dormir.'",
+      "correctAnswer": "i usually read before sleeping|i usually read before bed"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Há um parque perto da escola.'",
-      "correctAnswer": "there is a park near the school"
+      "question": "Translate to English: 'Estas calcas sao baratas.'",
+      "correctAnswer": "these pants are cheap"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'windy' mean?",
-      "options": ["Frio", "Quente", "Ventoso", "Chuvoso"],
-      "correctAnswer": "Ventoso"
+      "question": "What does 'free time' mean?",
+      "options": [
+        "Hora do almoco",
+        "Tempo livre",
+        "Fim de semana",
+        "Ferias pagas"
+      ],
+      "correctAnswer": "Tempo livre"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'yellow' mean?",
-      "options": ["Amarelo", "Laranja", "Verde", "Branco"],
-      "correctAnswer": "Amarelo"
+      "question": "What does 'game' mean?",
+      "options": [
+        "Festa",
+        "Competicao",
+        "Jogo",
+        "Torneio"
+      ],
+      "correctAnswer": "Jogo"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'supermarket' mean?",
-      "options": ["Farmácia", "Supermercado", "Hospital", "Escola"],
-      "correctAnswer": "Supermercado"
+      "question": "What does 'music' mean?",
+      "options": [
+        "Musica",
+        "Danca",
+        "Radio",
+        "Concert"
+      ],
+      "correctAnswer": "Musica"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'warm' mean?",
-      "options": ["Frio", "Quente/Morno", "Nevando", "Nublado"],
-      "correctAnswer": "Quente/Morno"
+      "question": "What does 'expensive' mean?",
+      "options": [
+        "Barato",
+        "Bonito",
+        "Caro",
+        "Novo"
+      ],
+      "correctAnswer": "Caro"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which word is NOT a clothing item?",
-      "options": ["shirt", "sunny", "skirt", "boots"],
-      "correctAnswer": "sunny"
+      "type": "vocabulary",
+      "question": "What does 'shopping' mean?",
+      "options": [
+        "Loja",
+        "Pagamento",
+        "Compras",
+        "Mercado"
+      ],
+      "correctAnswer": "Compras"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "He is wearing a ___ and a tie for the work meeting.",
-      "correctAnswer": "shirt"
+      "type": "vocabulary",
+      "question": "What does 'watch' mean as a VERB?",
+      "options": [
+        "Ouvir",
+        "Assistir",
+        "Ler",
+        "Olhar para o lado"
+      ],
+      "correctAnswer": "Assistir"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "'My house is ___ the school and the bank.' Which preposition is correct?",
-      "options": ["next to", "between", "behind", "in front of"],
-      "correctAnswer": "between"
+      "type": "vocabulary",
+      "question": "What does 'store' mean?",
+      "options": [
+        "Estoque",
+        "Loja",
+        "Mercado",
+        "Centro comercial"
+      ],
+      "correctAnswer": "Loja"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "During a ___, it is dangerous to be outside. There is lightning and heavy rain.",
-      "correctAnswer": "storm"
+      "type": "vocabulary",
+      "question": "What does 'listen' mean?",
+      "options": [
+        "Assistir",
+        "Falar",
+        "Ouvir",
+        "Cantar"
+      ],
+      "correctAnswer": "Ouvir"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which word describes weather with a lot of wind?",
-      "options": ["sunny", "rainy", "windy", "snowy"],
-      "correctAnswer": "windy"
+      "question": "How much ___ the shoes?",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correctAnswer": "are"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: 'It is very cold and ___. Everything is white outside!'",
-      "correctAnswer": "snowy"
+      "type": "multiple-choice",
+      "question": "Which answer is correct? 'How much is the bag?'",
+      "options": [
+        "They are fifteen dollars.",
+        "It is fifteen dollars.",
+        "Is fifteen dollars.",
+        "Fifteen dollar it is."
+      ],
+      "correctAnswer": "It is fifteen dollars."
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "The bus ___ is near the hotel.",
-      "correctAnswer": "stop"
+      "type": "multiple-choice",
+      "question": "Which adverb means approximately 75% of the time?",
+      "options": [
+        "always",
+        "usually",
+        "sometimes",
+        "rarely"
+      ],
+      "correctAnswer": "usually"
     },
     {
       "id": 12,
       "type": "multiple-choice",
-      "question": "'He is wearing a red ___ tucked into his pants.' Choose the correct clothing item.",
-      "options": ["pants", "shirt", "boots", "skirt"],
-      "correctAnswer": "shirt"
+      "question": "Which word is NOT a frequency adverb?",
+      "options": [
+        "always",
+        "never",
+        "dollar",
+        "usually"
+      ],
+      "correctAnswer": "dollar"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Ele está usando sapatos pretos e meias brancas.'",
-      "correctAnswer": "he is wearing black shoes and white socks|he's wearing black shoes and white socks"
+      "type": "fill-blank",
+      "question": "Complete: 'How much ___ this jacket?'",
+      "correctAnswer": "is"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "On a ___ day, it is hard to see because of the thick mist.",
-      "correctAnswer": "foggy"
+      "question": "Complete: 'The red hat ___ fifteen dollars.'",
+      "correctAnswer": "is"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Where can you see a doctor and get medical treatment?",
-      "options": ["bank", "hospital", "restaurant", "cinema"],
-      "correctAnswer": "hospital"
+      "type": "fill-blank",
+      "question": "Complete: 'I ___ cook dinner. I prefer eating out.' (almost 0% frequency)",
+      "correctAnswer": "rarely"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Onde fica o restaurante?'",
-      "correctAnswer": "where is the restaurant?|where's the restaurant?"
+      "type": "complete",
+      "question": "Complete: 'These shoes are very ___.' (they cost $150)",
+      "correctAnswer": "expensive"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "Which of these words is a COLOR?",
-      "options": ["shirt", "boots", "purple", "jacket"],
-      "correctAnswer": "purple"
+      "type": "complete",
+      "question": "Complete: '___ much is the green dress?'",
+      "correctAnswer": "How"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "Complete: 'There ___ two bus stops near the hotel.'",
-      "correctAnswer": "are"
+      "question": "Complete: 'I ___ watch horror movies.' (0% — I hate them)",
+      "correctAnswer": "never"
     },
     {
       "id": 19,
-      "type": "multiple-choice",
-      "question": "What do we call the season when flowers bloom and the weather gets warmer?",
-      "options": ["winter", "fall", "spring", "summer"],
-      "correctAnswer": "spring"
+      "type": "translate",
+      "question": "Translate to English: 'Quanto custa o vestido vermelho?'",
+      "correctAnswer": "how much is the red dress"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'No verão, o tempo é quente e ensolarado.'",
-      "correctAnswer": "in summer, the weather is hot and sunny|in summer it is hot and sunny|in summer the weather is hot and sunny"
+      "question": "Translate to English: 'Eu sempre ouço musica de manha.'",
+      "correctAnswer": "i always listen to music in the morning"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'purple' mean?",
-      "options": ["Laranja", "Roxo", "Rosa", "Verde"],
-      "correctAnswer": "Roxo"
+      "question": "What does 'prefer' mean?",
+      "options": [
+        "Odiar",
+        "Preferir",
+        "Precisar",
+        "Querer muito"
+      ],
+      "correctAnswer": "Preferir"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'bus stop' mean?",
-      "options": ["Estação de Metrô", "Ponto de Ônibus", "Parada de Táxi", "Terminal"],
-      "correctAnswer": "Ponto de Ônibus"
+      "question": "What does 'because' mean?",
+      "options": [
+        "Embora",
+        "Portanto",
+        "Porque",
+        "Mas"
+      ],
+      "correctAnswer": "Porque"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'fog' mean?",
-      "options": ["Chuva", "Neblina/Névoa", "Trovão", "Vento"],
-      "correctAnswer": "Neblina/Névoa"
+      "question": "What does 'weekend' mean?",
+      "options": [
+        "Dia de semana",
+        "Feriado",
+        "Dia util",
+        "Fim de semana"
+      ],
+      "correctAnswer": "Fim de semana"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'coat' mean?",
-      "options": ["Camisa", "Casaco", "Calça", "Botas"],
-      "correctAnswer": "Casaco"
+      "question": "What does 'movie' mean?",
+      "options": [
+        "Documentario",
+        "Novela",
+        "Filme",
+        "Serie"
+      ],
+      "correctAnswer": "Filme"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "What does 'I'm wearing a skirt' mean in Portuguese?",
+      "type": "vocabulary",
+      "question": "What does 'hobby' mean?",
       "options": [
-        "Eu tenho uma saia.",
-        "Eu vou usar uma saia.",
-        "Eu estou usando uma saia.",
-        "Eu gosto de saia."
+        "Trabalho extra",
+        "Passatempo",
+        "Tarefa",
+        "Profissao"
       ],
-      "correctAnswer": "Eu estou usando uma saia."
+      "correctAnswer": "Passatempo"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "The post ___ is where you send letters and packages.",
-      "correctAnswer": "office"
+      "type": "vocabulary",
+      "question": "What does 'price' mean?",
+      "options": [
+        "Desconto",
+        "Oferta",
+        "Preco",
+        "Brinde"
+      ],
+      "correctAnswer": "Preco"
     },
     {
       "id": 7,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly describes winter weather?",
+      "type": "vocabulary",
+      "question": "What does 'money' mean?",
       "options": [
-        "It's hot and sunny in winter.",
-        "In winter, it's cold and it can snow.",
-        "Winter is the warmest season.",
-        "It never rains in winter."
+        "Moeda especifica",
+        "Cartao",
+        "Dinheiro",
+        "Banco"
       ],
-      "correctAnswer": "In winter, it's cold and it can snow."
+      "correctAnswer": "Dinheiro"
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "Complete: 'She is ___ a beautiful white dress.'",
-      "correctAnswer": "wearing"
+      "type": "vocabulary",
+      "question": "What does 'dollar' mean?",
+      "options": [
+        "Euro",
+        "Libra",
+        "Real",
+        "Dolar"
+      ],
+      "correctAnswer": "Dolar"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "The post office is ___ the bank, at the corner.",
-      "options": ["next to", "inside", "during", "above"],
-      "correctAnswer": "next to"
+      "question": "Which sentence is correct?",
+      "options": [
+        "She enjoy dancing because it is fun.",
+        "She enjoys dancing because it is fun.",
+        "She enjoys to dance because it are fun.",
+        "She enjoy to dance because it is fun."
+      ],
+      "correctAnswer": "She enjoys dancing because it is fun."
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete the dialogue: 'What's the weather like?' — 'It's ___ and warm. Perfect for the beach!'",
-      "correctAnswer": "sunny"
+      "type": "multiple-choice",
+      "question": "Which sentence about asking for an item is correct?",
+      "options": [
+        "Can I have this shoes?",
+        "Can I have these shoe?",
+        "Can I have this hat?",
+        "Can I have a these bag?"
+      ],
+      "correctAnswer": "Can I have this hat?"
     },
     {
       "id": 11,
-      "type": "fill-blank",
-      "question": "I can hear ___ in the distance. There must be a storm coming.",
-      "correctAnswer": "thunder"
+      "type": "multiple-choice",
+      "question": "Which price sentence is correct?",
+      "options": [
+        "It is ten dollar.",
+        "It is ten dollars.",
+        "It are ten dollars.",
+        "They is ten dollars."
+      ],
+      "correctAnswer": "It is ten dollars."
     },
     {
       "id": 12,
       "type": "multiple-choice",
-      "question": "'She is wearing ___.' Which option is CORRECT?",
+      "question": "Where does the frequency adverb go? 'She ___ watches movies at night.'",
       "options": [
-        "a dress red and black boots",
-        "a red dress and black boots",
-        "red dress and boots black",
-        "red a dress and a boots black"
+        "always",
+        "Alwais",
+        "Ever",
+        "Some"
       ],
-      "correctAnswer": "a red dress and black boots"
+      "correctAnswer": "always"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'Está nevando muito hoje.'",
-      "correctAnswer": "it is snowing a lot today|it's snowing a lot today"
+      "type": "fill-blank",
+      "question": "Complete: 'I like dancing ___ it is fun.'",
+      "correctAnswer": "because"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "You can have lunch at a ___.",
-      "correctAnswer": "restaurant"
+      "question": "Complete: 'She ___ to play volleyball on Saturdays.'",
+      "correctAnswer": "likes"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "'There ___ many people in the park today.' Choose the correct word.",
-      "options": ["is", "are", "am", "be"],
-      "correctAnswer": "are"
+      "type": "fill-blank",
+      "question": "Complete: 'Can I have ___ book on the shelf, please?'",
+      "correctAnswer": "that|this"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Ela está usando um casaco verde.'",
-      "correctAnswer": "she is wearing a green coat|she's wearing a green coat"
+      "type": "complete",
+      "question": "Complete: 'I like music, but I ___ dancing.'",
+      "correctAnswer": "prefer"
     },
     {
       "id": 17,
-      "type": "multiple-choice",
-      "question": "What is the OPPOSITE of 'hot' in weather?",
-      "options": ["sunny", "cold", "windy", "rainy"],
-      "correctAnswer": "cold"
+      "type": "complete",
+      "question": "Complete: 'How much ___ that red dress?'",
+      "correctAnswer": "is"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "There ___ a pharmacy next to the hospital.",
-      "correctAnswer": "is"
+      "type": "complete",
+      "question": "Complete: 'The jacket is cheap, ___ I want it.'",
+      "correctAnswer": "so"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "Complete: 'Excuse me, ___ there a bank near here?' — 'Yes, it's on Park Street.'",
-      "correctAnswer": "is"
+      "type": "translate",
+      "question": "Translate to English: 'Eu prefiro assistir filmes a ler livros.'",
+      "correctAnswer": "i prefer watching movies to reading books|i prefer to watch movies than to read books"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Há um cinema entre o hotel e o restaurante.'",
-      "correctAnswer": "there is a cinema between the hotel and the restaurant|there's a cinema between the hotel and the restaurant"
+      "question": "Translate to English: 'Posso ter esta jaqueta, por favor?'",
+      "correctAnswer": "can i have this jacket please"
     }
   ],
   "friday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'thunder' mean?",
-      "options": ["Arco-íris", "Trovão", "Névoa", "Tempestade"],
-      "correctAnswer": "Trovão"
+      "question": "What does 'swim' mean?",
+      "options": [
+        "Correr",
+        "Pular",
+        "Nadar",
+        "Escalar"
+      ],
+      "correctAnswer": "Nadar"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'socks' mean?",
-      "options": ["Sapatos", "Botas", "Meias", "Sandálias"],
-      "correctAnswer": "Meias"
+      "question": "What does 'run' mean?",
+      "options": [
+        "Caminhar",
+        "Correr",
+        "Pedalar",
+        "Saltar"
+      ],
+      "correctAnswer": "Correr"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'post office' mean?",
-      "options": ["Delegacia", "Correios", "Hotel", "Banco"],
-      "correctAnswer": "Correios"
+      "question": "What does 'bag' mean?",
+      "options": [
+        "Chapeu",
+        "Bolsa",
+        "Jaqueta",
+        "Carteira"
+      ],
+      "correctAnswer": "Bolsa"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'rainbow' mean?",
-      "options": ["Tempestade", "Arco-íris", "Raio", "Nuvem"],
-      "correctAnswer": "Arco-íris"
+      "question": "What does 'book' mean?",
+      "options": [
+        "Revista",
+        "Jornal",
+        "Livro",
+        "Caderno"
+      ],
+      "correctAnswer": "Livro"
     },
     {
       "id": 5,
-      "type": "multiple-choice",
-      "question": "Which sentence is CORRECT?",
+      "type": "vocabulary",
+      "question": "What does 'shirt' mean?",
       "options": [
-        "Tom wearing is a blue jacket.",
-        "Tom is wearing a blue jacket.",
-        "Tom is wear a blue jacket.",
-        "Tom wearing blue jacket."
+        "Camisa",
+        "Blusa",
+        "Vestido",
+        "Casaco"
       ],
-      "correctAnswer": "Tom is wearing a blue jacket."
+      "correctAnswer": "Camisa"
     },
     {
       "id": 6,
-      "type": "fill-blank",
-      "question": "What ___ he wearing? He is wearing a purple shirt.",
-      "correctAnswer": "is"
+      "type": "multiple-choice",
+      "question": "Which sentence combines hobbies and shopping correctly?",
+      "options": [
+        "I enjoy to go shopping on weekends.",
+        "I enjoy going shopping on weekends.",
+        "I enjoy go shopping on weekends.",
+        "I enjoying shopping on weekends."
+      ],
+      "correctAnswer": "I enjoy going shopping on weekends."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "What's the weather usually like in spring?",
+      "question": "Which sentence has a frequency adverb in the correct position?",
       "options": [
-        "It's cold and snowy.",
-        "It's warm and sometimes rainy.",
-        "It's always very hot.",
-        "It's always foggy."
+        "I watch never horror movies.",
+        "Never I watch horror movies.",
+        "I never watch horror movies.",
+        "I watch horror never movies."
       ],
-      "correctAnswer": "It's warm and sometimes rainy."
+      "correctAnswer": "I never watch horror movies."
     },
     {
       "id": 8,
-      "type": "fill-blank",
-      "question": "There are many people exercising at the ___.",
-      "correctAnswer": "gym"
+      "type": "multiple-choice",
+      "question": "What is the correct -ing form of 'run'?",
+      "options": [
+        "runing",
+        "running",
+        "runeing",
+        "runnning"
+      ],
+      "correctAnswer": "running"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which option uses the correct article before 'orange coat'?",
-      "options": ["a orange coat", "an orange coat", "orange a coat", "a oranges coat"],
-      "correctAnswer": "an orange coat"
+      "question": "I like to ___ on weekends.",
+      "options": [
+        "cooking",
+        "cooks",
+        "cook",
+        "cooked"
+      ],
+      "correctAnswer": "cook"
     },
     {
       "id": 10,
-      "type": "complete",
-      "question": "Complete: 'After summer comes ___. The leaves change color.'",
-      "correctAnswer": "fall|autumn"
+      "type": "multiple-choice",
+      "question": "The shoes cost one hundred dollars. They are very ___.",
+      "options": [
+        "cheap",
+        "free",
+        "expensive",
+        "small"
+      ],
+      "correctAnswer": "expensive"
     },
     {
       "id": 11,
       "type": "fill-blank",
-      "question": "There ___ no bank in this area. I need to go downtown.",
-      "correctAnswer": "is"
+      "question": "Complete: 'She ___ goes shopping on Saturdays.' (75% frequency)",
+      "correctAnswer": "usually"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Which sentence is CORRECT?",
-      "options": [
-        "There is many shops here.",
-        "There are a shop here.",
-        "There is a shop here.",
-        "There are is a shop here."
-      ],
-      "correctAnswer": "There is a shop here."
+      "type": "fill-blank",
+      "question": "Complete: 'She enjoys ___ in the pool.' (swim → -ing form)",
+      "correctAnswer": "swimming"
     },
     {
       "id": 13,
-      "type": "translate",
-      "question": "Translate to English: 'No inverno, o tempo é frio e pode nevar.'",
-      "correctAnswer": "in winter, the weather is cold and it can snow|in winter it is cold and it can snow|in winter, it's cold and it can snow"
+      "type": "fill-blank",
+      "question": "Complete: 'How much ___ these pants?'",
+      "correctAnswer": "are"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "She always wears a ___ to protect herself from the sun.",
-      "correctAnswer": "hat"
+      "question": "Complete: 'I want to ___ a new jacket at the store.'",
+      "correctAnswer": "buy"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which of the following is NOT a season?",
-      "options": ["winter", "summer", "cloudy", "spring"],
-      "correctAnswer": "cloudy"
+      "type": "complete",
+      "question": "Complete: 'This hat is ten ___.'",
+      "correctAnswer": "dollars"
     },
     {
       "id": 16,
-      "type": "translate",
-      "question": "Translate to English: 'Que roupa você está usando hoje?'",
-      "correctAnswer": "what are you wearing today?|what clothes are you wearing today?"
+      "type": "complete",
+      "question": "Complete: 'I enjoy ___ because it relaxes me.' (any free time activity)",
+      "correctAnswer": "reading|cooking|dancing|swimming|drawing"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "Complete: 'Excuse me, where is the nearest ___?' — 'The pharmacy? It's next to the hospital.'",
-      "correctAnswer": "pharmacy"
+      "question": "Complete: 'She ___ like to draw. She prefers painting.'",
+      "correctAnswer": "doesn't"
     },
     {
       "id": 18,
-      "type": "multiple-choice",
-      "question": "Complete: 'Today I am ___ my new red jacket.'",
-      "options": ["wear", "wears", "wearing", "wore"],
-      "correctAnswer": "wearing"
+      "type": "translate",
+      "question": "Translate to English: 'Eu gosto de jogar futebol nos fins de semana.'",
+      "correctAnswer": "i like to play football on weekends|i like playing football on weekends"
     },
     {
       "id": 19,
-      "type": "fill-blank",
-      "question": "It is very ___ today. I can't see far because of the thick mist.",
-      "correctAnswer": "foggy"
+      "type": "translate",
+      "question": "Translate to English: 'Quero comprar um chapeu barato.'",
+      "correctAnswer": "i want to buy a cheap hat"
     },
     {
       "id": 20,
-      "type": "translate",
-      "question": "Translate to English: 'A delegacia de polícia fica em frente ao parque.'",
-      "correctAnswer": "the police station is in front of the park"
+      "type": "multiple-choice",
+      "question": "Which rule for forming -ing is correct?",
+      "options": [
+        "Always just add -ing to any verb.",
+        "Verbs ending in -e: drop the e and add -ing.",
+        "Short verbs always double the vowel before -ing.",
+        "All verbs ending in a consonant double the last letter."
+      ],
+      "correctAnswer": "Verbs ending in -e: drop the e and add -ing."
     }
   ]
 }

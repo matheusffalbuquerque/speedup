@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Care Journey | Root Lesson 10</title>
+  <style>
+    :root {
+      --bg: #0b1720;
+      --bg-2: #112634;
+      --panel: rgba(13, 28, 38, 0.92);
+      --panel-2: rgba(19, 40, 54, 0.96);
+      --panel-3: rgba(25, 53, 70, 0.98);
+      --line: rgba(255, 255, 255, 0.09);
+      --text: #eef7fb;
+      --muted: #a4c0cf;
+      --sky: #7dd3fc;
+      --green: #86efac;
+      --green-2: #22c55e;
+      --gold: #facc15;
+      --orange: #fb923c;
+      --red: #f87171;
+      --blue: #60a5fa;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(125, 211, 252, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(134, 239, 172, 0.12), transparent 30%),
+        linear-gradient(135deg, #08131b, #0d1d28 45%, #102634);
+    }
+
+    button, input, select { font: inherit; }
+    .hidden { display: none !important; }
+
+    .screen {
+      width: 100%;
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: min(1180px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .setup-card {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 22px;
+      padding: 26px;
+    }
+
+    .kicker {
+      color: var(--gold);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.8vw, 3.6rem);
+      line-height: 0.98;
+      margin-bottom: 14px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ffffff, #7dd3fc, #86efac);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+      max-width: 58ch;
+    }
+
+    .hero ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .hero li {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 14px;
+      padding: 12px 14px;
+      color: #dff1f8;
+    }
+
+    .setup-panel {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 22px;
+      padding: 20px;
+    }
+
+    .setup-panel h2 {
+      font-size: 1.18rem;
+      margin-bottom: 6px;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.88rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(5, 13, 19, 0.56);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 12px 13px;
+    }
+
+    .player-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .player-input {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      border-radius: 14px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .player-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.14s ease, opacity 0.14s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+    .btn-primary { background: linear-gradient(90deg, var(--green), var(--green-2)); color: #062313; }
+    .btn-secondary { background: rgba(255, 255, 255, 0.08); color: var(--text); border: 1px solid rgba(255, 255, 255, 0.12); }
+    .btn-gold { background: linear-gradient(90deg, var(--gold), #f59e0b); color: #312000; }
+    .btn-blue { background: linear-gradient(90deg, var(--blue), #3b82f6); color: #fff; }
+    .btn-red { background: linear-gradient(90deg, var(--red), #ef4444); color: #fff; }
+
+    #gameScreen {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      padding: 16px;
+      gap: 14px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      flex-shrink: 0;
+    }
+
+    .topbar h2 {
+      font-size: 1.32rem;
+      margin-bottom: 4px;
+    }
+
+    .topbar small { color: var(--muted); }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .badge {
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr) 320px;
+      gap: 14px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .panel {
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .panel-head {
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .panel-head h3 {
+      font-size: 0.98rem;
+      margin-bottom: 4px;
+    }
+
+    .panel-head p {
+      color: var(--muted);
+      font-size: 0.77rem;
+      line-height: 1.45;
+    }
+
+    .panel-body {
+      padding: 14px;
+      overflow: auto;
+      min-height: 0;
+    }
+
+    .player-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .player-card {
+      border-radius: 16px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .player-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .player-name {
+      flex: 1;
+      font-weight: 800;
+      font-size: 0.95rem;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .role-tag,
+    .mini-badge {
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    .role-mayor { background: rgba(250, 204, 21, 0.18); color: #fde68a; }
+    .role-citizen { background: rgba(96, 165, 250, 0.16); color: #bfdbfe; }
+    .role-wait { background: rgba(255, 255, 255, 0.08); color: #d3e7ef; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .stat {
+      border-radius: 12px;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .stat-label {
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .center-stack {
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr);
+      gap: 14px;
+      min-height: 0;
+    }
+
+    .hero-panel {
+      padding: 16px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at top right, rgba(125, 211, 252, 0.14), transparent 25%),
+        linear-gradient(135deg, rgba(17, 38, 52, 0.98), rgba(12, 28, 38, 0.96));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .round-title {
+      font-size: 1.45rem;
+      line-height: 1.08;
+      margin-bottom: 10px;
+    }
+
+    .round-copy {
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .round-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .topic-pill {
+      border-radius: 999px;
+      padding: 8px 11px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .timer-box {
+      border-radius: 18px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .timer-big {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1;
+      font-weight: 900;
+      color: #fef3c7;
+    }
+
+    .timer-note {
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      min-height: 0;
+    }
+
+    .info-card {
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .info-card h4 {
+      font-size: 0.94rem;
+      margin-bottom: 8px;
+    }
+
+    .issue-box {
+      border-radius: 16px;
+      padding: 12px;
+      background: rgba(248, 113, 113, 0.08);
+      border: 1px solid rgba(248, 113, 113, 0.18);
+      margin-bottom: 10px;
+    }
+
+    .issue-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .issue-copy {
+      color: #f6d8d8;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .speech-box {
+      border-radius: 16px;
+      padding: 12px;
+      background: rgba(96, 165, 250, 0.08);
+      border: 1px solid rgba(96, 165, 250, 0.18);
+      margin-top: auto;
+    }
+
+    .speech-box strong { color: #dbeafe; }
+
+    .proposal-list,
+    .prompt-list,
+    .score-list {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .proposal-list li,
+    .prompt-list li,
+    .score-item {
+      border-radius: 14px;
+      padding: 10px 11px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      line-height: 1.45;
+      font-size: 0.86rem;
+    }
+
+    .proposal-list strong,
+    .prompt-list strong {
+      color: #dcfce7;
+    }
+
+    .teacher-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .control-group {
+      display: grid;
+      gap: 10px;
+    }
+
+    .label-small {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .score-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      margin-top: 6px;
+    }
+
+    .score-box select {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(7, 16, 24, 0.6);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .score-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .score-total {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #fde68a;
+    }
+
+    .foot-note {
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 1120px) {
+      .layout {
+        grid-template-columns: 220px minmax(0, 1fr) 290px;
+      }
+
+      .hero-grid,
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="setupScreen" class="screen">
+    <div class="card setup-card">
+      <div class="hero">
+        <div class="kicker">Root Lesson 10</div>
+        <h1><span class="gradient">City Care Journey</span></h1>
+        <p>
+          In each round, one player becomes the mayor. The other players are citizens and complain about real city problems.
+          The mayor listens, chooses proposals, and presents solutions in English using <strong>should</strong>, <strong>need to</strong>, and environmental language.
+        </p>
+        <p>
+          The teacher controls the screen, starts the timer, rolls the next mayor, and gives a score from 1 to 10 at the end of each 5-minute round.
+        </p>
+        <ul>
+          <li><strong>Players:</strong> 2 or 3 students</li>
+          <li><strong>Round goal:</strong> listen to the citizens and present a city plan</li>
+          <li><strong>Language focus:</strong> environment, nature, pollution, recycling, clean public spaces</li>
+        </ul>
+      </div>
+
+      <div class="setup-panel">
+        <h2>Game Setup</h2>
+        <p class="sub">Enter up to 3 player names. Everything on screen is ready for online class display.</p>
+
+        <div class="field">
+          <label for="playerCount">Number of players</label>
+          <select id="playerCount">
+            <option value="2">2 players</option>
+            <option value="3" selected>3 players</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Player names</label>
+          <div class="player-grid" id="playerInputs"></div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="fillDemoBtn" type="button">Use Demo Names</button>
+          <button class="btn btn-primary" id="startBtn" type="button">Start Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gameScreen">
+    <div class="topbar">
+      <div>
+        <h2>City Care Journey</h2>
+        <small>Mayor round speaking game for Root Lesson 10</small>
+      </div>
+      <div class="badge-row">
+        <div class="badge" id="roundBadge">Round 0</div>
+        <div class="badge" id="mayorBadge">Mayor: -</div>
+        <div class="badge" id="cycleBadge">Mayors left: -</div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <section class="panel">
+        <div class="panel-head">
+          <h3>Players</h3>
+          <p>One mayor speaks to the citizens. The teacher scores the mayor at the end of the round.</p>
+        </div>
+        <div class="panel-body">
+          <div class="player-list" id="playerList"></div>
+        </div>
+      </section>
+
+      <section class="center-stack">
+        <div class="hero-panel">
+          <div class="hero-grid">
+            <div>
+              <div class="kicker">Current Situation</div>
+              <div class="round-title" id="roundTitle">Press “New Round” to choose the first mayor.</div>
+              <div class="round-copy" id="roundCopy">The mayor will receive a city area, listen to the citizens, and answer with proposals.</div>
+              <div class="round-tags">
+                <div class="topic-pill" id="districtPill">District: -</div>
+                <div class="topic-pill" id="themePill">Theme: -</div>
+                <div class="topic-pill" id="citizensPill">Citizens: -</div>
+              </div>
+            </div>
+            <div class="timer-box">
+              <div>
+                <div class="label-small">Round Timer</div>
+                <div class="timer-big" id="timerDisplay">05:00</div>
+              </div>
+              <div class="timer-note">
+                Each round lasts 5 minutes. Citizens complain first. The mayor should answer with clear proposals and recommendations.
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-blue" id="startTimerBtn" type="button">Start Timer</button>
+                <button class="btn btn-secondary" id="pauseTimerBtn" type="button">Pause</button>
+                <button class="btn btn-secondary" id="resetTimerBtn" type="button">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h4>Citizen Complaint</h4>
+            <div class="issue-box">
+              <div class="issue-title" id="issueTitle">No complaint yet</div>
+              <div class="issue-copy" id="issueCopy">Start a round to reveal a city problem.</div>
+            </div>
+            <div class="speech-box">
+              <strong>Citizen model:</strong>
+              <div id="citizenModel" style="margin-top:6px; line-height:1.5; color:#d7ebf5;">
+                “Mayor, our area has a problem. We need help.”
+              </div>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h4>Mayor Proposal Cards</h4>
+            <ul class="proposal-list" id="proposalList">
+              <li>Press “New Round” to reveal proposal cards.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h4>Speaking Prompts</h4>
+            <ul class="prompt-list" id="promptList"></ul>
+          </article>
+
+          <article class="info-card">
+            <h4>Teacher Notes</h4>
+            <ul class="prompt-list">
+              <li><strong>Step 1:</strong> Citizens explain the problem in their own words.</li>
+              <li><strong>Step 2:</strong> The mayor reacts and presents 2 or 3 proposals.</li>
+              <li><strong>Step 3:</strong> The mayor should use <strong>should</strong>, <strong>need to</strong>, and environmental vocabulary.</li>
+              <li><strong>Step 4:</strong> Give a score from 1 to 10 and start the next round.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>Teacher Controls</h3>
+          <p>Use the buttons below to run the entire game from one screen.</p>
+        </div>
+        <div class="panel-body">
+          <div class="teacher-stack">
+            <div class="control-group">
+              <div class="label-small">Round Actions</div>
+              <div class="btn-row">
+                <button class="btn btn-primary" id="newRoundBtn" type="button">New Round</button>
+                <button class="btn btn-gold" id="rerollIssueBtn" type="button">New Issue</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="label-small">Mayor Score</div>
+              <div class="score-box">
+                <select id="scoreSelect"></select>
+                <button class="btn btn-red" id="saveScoreBtn" type="button">Save Score</button>
+              </div>
+              <div class="foot-note">Give one score from 1 to 10 after the mayor finishes the round.</div>
+            </div>
+
+            <div class="control-group">
+              <div class="label-small">Scoreboard</div>
+              <div class="score-list" id="scoreboard"></div>
+            </div>
+
+            <div class="control-group">
+              <div class="label-small">Language Reminder</div>
+              <ul class="prompt-list">
+                <li><strong>We should...</strong></li>
+                <li><strong>The city should...</strong></li>
+                <li><strong>It is important to...</strong></li>
+                <li><strong>We need to protect...</strong></li>
+                <li><strong>People should not...</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const COLORS = ["#f97316", "#60a5fa", "#34d399"];
+    const ROUND_SECONDS = 300;
+
+    const CITY_AREAS = [
+      {
+        district: "Main Streets",
+        theme: "Trash and pollution",
+        title: "The streets are dirty and full of trash.",
+        complaint: "Citizens say there is plastic, paper, and food waste on the sidewalks. The area looks ugly and smells bad after busy days.",
+        citizenModel: "Mayor, the streets are dirty. People throw trash on the ground, and we want a cleaner neighborhood.",
+        proposals: [
+          "We should add more trash bins on every main street.",
+          "The city should organize a weekly clean-up team.",
+          "People should not throw garbage on the sidewalk.",
+          "It is important to recycle paper, plastic, and glass."
+        ]
+      },
+      {
+        district: "Central Park",
+        theme: "Trees and plants",
+        title: "There are not enough trees and plants in the park.",
+        complaint: "Citizens want more shade, flowers, and green areas. The park feels hot and empty during the day.",
+        citizenModel: "Mayor, this park needs more trees and plants. We want a greener and more beautiful place.",
+        proposals: [
+          "The city should plant more trees in the park.",
+          "We should protect the green areas with clear rules.",
+          "It is important to water the plants every day.",
+          "Families should help keep the park clean."
+        ]
+      },
+      {
+        district: "River Side",
+        theme: "Water pollution",
+        title: "The river is polluted and unsafe.",
+        complaint: "Citizens are worried because the water is dirty and there is trash near the river. Animals and plants are affected.",
+        citizenModel: "Mayor, the river is polluted. We need clean water and better protection for nature.",
+        proposals: [
+          "The city should clean the river area every week.",
+          "People should not throw trash into the water.",
+          "We need to protect animals and plants near the river.",
+          "It is important to create recycling points close to the river."
+        ]
+      },
+      {
+        district: "Neighborhood Square",
+        theme: "Public space care",
+        title: "The square is damaged and not well cared for.",
+        complaint: "Citizens say the benches are broken, there is too much litter, and the area is not inviting for children or older people.",
+        citizenModel: "Mayor, our square is not in good condition. We want a safer and cleaner place for everyone.",
+        proposals: [
+          "The city should repair the benches and public furniture.",
+          "We should keep the square clean every day.",
+          "People should respect shared spaces.",
+          "It is important to add more plants and flowers."
+        ]
+      },
+      {
+        district: "School Zone",
+        theme: "Waste and education",
+        title: "Students do not recycle enough near the school.",
+        complaint: "Citizens notice bottles, cans, and paper on the street after classes. The area needs better recycling habits.",
+        citizenModel: "Mayor, the school area has too much waste. Students need help learning how to recycle.",
+        proposals: [
+          "The city should place recycling bins near the school.",
+          "Teachers and students should start an eco campaign.",
+          "It is important to separate paper, plastic, and metal.",
+          "People should learn how recycling helps the environment."
+        ]
+      },
+      {
+        district: "Bus Terminal",
+        theme: "Air pollution",
+        title: "The bus terminal has dirty air and too much smoke.",
+        complaint: "Citizens complain about smoke, noise, and an unpleasant environment. They want a healthier public area.",
+        citizenModel: "Mayor, the air near the terminal is bad. We need a cleaner place to wait and travel.",
+        proposals: [
+          "The city should reduce pollution near the terminal.",
+          "We should plant trees around the area.",
+          "It is important to keep public transport areas clean.",
+          "People should support cleaner city solutions."
+        ]
+      },
+      {
+        district: "Residential Area",
+        theme: "Too much noise and waste",
+        title: "The neighborhood is noisy and people leave trash outside.",
+        complaint: "Citizens want a calmer, cleaner area where children, families, and animals can live well.",
+        citizenModel: "Mayor, our neighborhood is noisy and dirty. We want people to respect the area more.",
+        proposals: [
+          "People should put trash in the right place.",
+          "The city should improve collection days and signs.",
+          "We should protect the neighborhood environment.",
+          "It is important to keep streets quiet and clean."
+        ]
+      },
+      {
+        district: "City Garden",
+        theme: "Dry plants and poor care",
+        title: "The city garden has dry plants and not enough maintenance.",
+        complaint: "Citizens say the garden used to be beautiful, but now many plants are dry and the space needs care.",
+        citizenModel: "Mayor, the city garden needs help. The plants are dry, and the area looks abandoned.",
+        proposals: [
+          "The city should water the plants more often.",
+          "We should protect the garden and its flowers.",
+          "It is important to care for public green spaces.",
+          "Citizens should help keep the garden clean."
+        ]
+      }
+    ];
+
+    const SPEAKING_PROMPTS = [
+      "What is the main problem in this area?",
+      "Why is this problem bad for people, animals, or plants?",
+      "What should the city do first?",
+      "What should people stop doing?",
+      "How can the neighborhood help the mayor?",
+      "Why is it important to protect this place?"
+    ];
+
+    const state = {
+      players: [],
+      mayorQueue: [],
+      currentMayorId: null,
+      currentIssue: null,
+      currentRound: 0,
+      roundScoreSaved: false,
+      timerLeft: ROUND_SECONDS,
+      timerId: null
+    };
+
+    const playerCountEl = document.getElementById("playerCount");
+    const playerInputsEl = document.getElementById("playerInputs");
+    const fillDemoBtn = document.getElementById("fillDemoBtn");
+    const startBtn = document.getElementById("startBtn");
+    const setupScreen = document.getElementById("setupScreen");
+    const gameScreen = document.getElementById("gameScreen");
+    const playerListEl = document.getElementById("playerList");
+    const roundBadgeEl = document.getElementById("roundBadge");
+    const mayorBadgeEl = document.getElementById("mayorBadge");
+    const cycleBadgeEl = document.getElementById("cycleBadge");
+    const roundTitleEl = document.getElementById("roundTitle");
+    const roundCopyEl = document.getElementById("roundCopy");
+    const districtPillEl = document.getElementById("districtPill");
+    const themePillEl = document.getElementById("themePill");
+    const citizensPillEl = document.getElementById("citizensPill");
+    const timerDisplayEl = document.getElementById("timerDisplay");
+    const issueTitleEl = document.getElementById("issueTitle");
+    const issueCopyEl = document.getElementById("issueCopy");
+    const citizenModelEl = document.getElementById("citizenModel");
+    const proposalListEl = document.getElementById("proposalList");
+    const promptListEl = document.getElementById("promptList");
+    const scoreSelectEl = document.getElementById("scoreSelect");
+    const scoreboardEl = document.getElementById("scoreboard");
+
+    document.getElementById("startTimerBtn").addEventListener("click", startTimer);
+    document.getElementById("pauseTimerBtn").addEventListener("click", pauseTimer);
+    document.getElementById("resetTimerBtn").addEventListener("click", resetTimer);
+    document.getElementById("newRoundBtn").addEventListener("click", startNewRound);
+    document.getElementById("rerollIssueBtn").addEventListener("click", rerollIssueOnly);
+    document.getElementById("saveScoreBtn").addEventListener("click", saveScore);
+    playerCountEl.addEventListener("change", renderPlayerInputs);
+    fillDemoBtn.addEventListener("click", fillDemoNames);
+    startBtn.addEventListener("click", startGame);
+
+    function renderPlayerInputs() {
+      const count = Number(playerCountEl.value);
+      const currentValues = [...playerInputsEl.querySelectorAll("input")].map((input) => input.value);
+      playerInputsEl.innerHTML = "";
+
+      for (let i = 0; i < count; i += 1) {
+        const wrap = document.createElement("div");
+        wrap.className = "player-input";
+
+        const dot = document.createElement("span");
+        dot.className = "player-dot";
+        dot.style.background = COLORS[i];
+
+        const input = document.createElement("input");
+        input.type = "text";
+        input.maxLength = 18;
+        input.placeholder = `Player ${i + 1}`;
+        input.value = currentValues[i] || "";
+
+        wrap.append(dot, input);
+        playerInputsEl.appendChild(wrap);
+      }
+    }
+
+    function fillDemoNames() {
+      const demos = ["Alex", "Mia", "Noah"];
+      [...playerInputsEl.querySelectorAll("input")].forEach((input, index) => {
+        input.value = demos[index] || `Player ${index + 1}`;
+      });
+    }
+
+    function buildMayorQueue() {
+      const ids = state.players.map((player) => player.id);
+      for (let i = ids.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [ids[i], ids[j]] = [ids[j], ids[i]];
+      }
+      state.mayorQueue = ids;
+    }
+
+    function startGame() {
+      const names = [...playerInputsEl.querySelectorAll("input")]
+        .map((input, index) => input.value.trim() || `Player ${index + 1}`);
+
+      if (names.length < 2 || names.length > 3) {
+        return;
+      }
+
+      state.players = names.map((name, index) => ({
+        id: index + 1,
+        name,
+        color: COLORS[index],
+        score: 0,
+        turnsAsMayor: 0,
+        lastScore: "-"
+      }));
+
+      state.currentRound = 0;
+      state.currentMayorId = null;
+      state.currentIssue = null;
+      buildMayorQueue();
+      stopTimer();
+      resetTimer();
+      populateScoreSelect();
+      renderPromptList();
+      renderPlayers();
+      renderScoreboard();
+      updateTopbar();
+
+      setupScreen.style.display = "none";
+      gameScreen.style.display = "flex";
+    }
+
+    function populateScoreSelect() {
+      scoreSelectEl.innerHTML = "";
+      for (let i = 10; i >= 1; i -= 1) {
+        const option = document.createElement("option");
+        option.value = String(i);
+        option.textContent = `${i} points`;
+        scoreSelectEl.appendChild(option);
+      }
+      scoreSelectEl.value = "10";
+    }
+
+    function renderPromptList() {
+      promptListEl.innerHTML = "";
+      SPEAKING_PROMPTS.forEach((prompt) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>Prompt:</strong> ${prompt}`;
+        promptListEl.appendChild(li);
+      });
+    }
+
+    function getCurrentMayor() {
+      return state.players.find((player) => player.id === state.currentMayorId) || null;
+    }
+
+    function getCitizens() {
+      return state.players.filter((player) => player.id !== state.currentMayorId);
+    }
+
+    function pickRandomIssue() {
+      const index = Math.floor(Math.random() * CITY_AREAS.length);
+      return CITY_AREAS[index];
+    }
+
+    function startNewRound() {
+      if (!state.players.length) {
+        return;
+      }
+
+      if (!state.mayorQueue.length) {
+        buildMayorQueue();
+      }
+
+      state.currentMayorId = state.mayorQueue.shift();
+      state.currentIssue = pickRandomIssue();
+      state.currentRound += 1;
+      state.roundScoreSaved = false;
+
+      const mayor = getCurrentMayor();
+      if (mayor) {
+        mayor.turnsAsMayor += 1;
+      }
+
+      stopTimer();
+      resetTimer();
+      renderRound();
+      renderPlayers();
+      renderScoreboard();
+      updateTopbar();
+    }
+
+    function rerollIssueOnly() {
+      if (!state.currentMayorId) {
+        return;
+      }
+      state.currentIssue = pickRandomIssue();
+      renderRound();
+    }
+
+    function renderRound() {
+      const mayor = getCurrentMayor();
+      const citizens = getCitizens();
+
+      if (!mayor || !state.currentIssue) {
+        return;
+      }
+
+      roundTitleEl.textContent = `${mayor.name} is the Mayor of the City`;
+      roundCopyEl.textContent = `Listen to the citizens, respond to the complaint, and present clear solutions for ${state.currentIssue.district}.`;
+      districtPillEl.textContent = `District: ${state.currentIssue.district}`;
+      themePillEl.textContent = `Theme: ${state.currentIssue.theme}`;
+      citizensPillEl.textContent = `Citizens: ${citizens.map((player) => player.name).join(", ")}`;
+
+      issueTitleEl.textContent = state.currentIssue.title;
+      issueCopyEl.textContent = state.currentIssue.complaint;
+      citizenModelEl.textContent = `“${state.currentIssue.citizenModel}”`;
+
+      proposalListEl.innerHTML = "";
+      state.currentIssue.proposals.forEach((proposal) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>Proposal:</strong> ${proposal}`;
+        proposalListEl.appendChild(li);
+      });
+    }
+
+    function renderPlayers() {
+      playerListEl.innerHTML = "";
+      state.players.forEach((player) => {
+        const isMayor = player.id === state.currentMayorId;
+        const roleClass = isMayor ? "role-mayor" : (state.currentMayorId ? "role-citizen" : "role-wait");
+        const roleText = isMayor ? "Mayor" : (state.currentMayorId ? "Citizen" : "Waiting");
+
+        const card = document.createElement("div");
+        card.className = "player-card";
+
+        card.innerHTML = `
+          <div class="player-top">
+            <span class="player-dot" style="background:${player.color}"></span>
+            <div class="player-name">${player.name}</div>
+            <div class="role-tag ${roleClass}">${roleText}</div>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-label">Total score</div>
+              <div class="stat-value">${player.score}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Mayor turns</div>
+              <div class="stat-value">${player.turnsAsMayor}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Last round</div>
+              <div class="stat-value">${player.lastScore}</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Status</div>
+              <div class="stat-value">${roleText}</div>
+            </div>
+          </div>
+        `;
+
+        playerListEl.appendChild(card);
+      });
+    }
+
+    function renderScoreboard() {
+      scoreboardEl.innerHTML = "";
+      const sorted = [...state.players].sort((a, b) => b.score - a.score);
+      sorted.forEach((player, index) => {
+        const item = document.createElement("div");
+        item.className = "score-item";
+        item.innerHTML = `
+          <span>${index + 1}. ${player.name}</span>
+          <span class="score-total">${player.score}</span>
+        `;
+        scoreboardEl.appendChild(item);
+      });
+    }
+
+    function updateTopbar() {
+      const mayor = getCurrentMayor();
+      roundBadgeEl.textContent = `Round ${state.currentRound}`;
+      mayorBadgeEl.textContent = `Mayor: ${mayor ? mayor.name : "-"}`;
+      cycleBadgeEl.textContent = `Mayors left: ${state.mayorQueue.length}`;
+    }
+
+    function saveScore() {
+      const mayor = getCurrentMayor();
+      if (!mayor || state.roundScoreSaved) {
+        return;
+      }
+
+      const points = Number(scoreSelectEl.value);
+      mayor.score += points;
+      mayor.lastScore = points;
+      state.roundScoreSaved = true;
+      renderPlayers();
+      renderScoreboard();
+    }
+
+    function formatTime(totalSeconds) {
+      const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+      const seconds = String(totalSeconds % 60).padStart(2, "0");
+      return `${minutes}:${seconds}`;
+    }
+
+    function updateTimerDisplay() {
+      timerDisplayEl.textContent = formatTime(state.timerLeft);
+      timerDisplayEl.style.color = state.timerLeft <= 30 ? "#fca5a5" : "#fef3c7";
+    }
+
+    function tickTimer() {
+      if (state.timerLeft <= 0) {
+        stopTimer();
+        return;
+      }
+
+      state.timerLeft -= 1;
+      updateTimerDisplay();
+
+      if (state.timerLeft <= 0) {
+        stopTimer();
+      }
+    }
+
+    function startTimer() {
+      if (state.timerId || !state.currentMayorId) {
+        return;
+      }
+      state.timerId = window.setInterval(tickTimer, 1000);
+    }
+
+    function pauseTimer() {
+      stopTimer();
+    }
+
+    function stopTimer() {
+      if (state.timerId) {
+        window.clearInterval(state.timerId);
+        state.timerId = null;
+      }
+    }
+
+    function resetTimer() {
+      state.timerLeft = ROUND_SECONDS;
+      updateTimerDisplay();
+    }
+
+    renderPlayerInputs();
+    renderPromptList();
+    updateTimerDisplay();
+  </script>
+</body>
+</html>

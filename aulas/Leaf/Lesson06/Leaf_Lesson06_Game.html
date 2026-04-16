@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Vision Roulette | Leaf Lesson 06</title>
+  <style>
+    :root {
+      --bg: #09131f;
+      --panel: rgba(17, 27, 42, 0.94);
+      --panel-soft: rgba(255, 255, 255, 0.05);
+      --panel-strong: #1b2b43;
+      --line: rgba(255, 255, 255, 0.1);
+      --text: #edf4ff;
+      --muted: #aab9d4;
+      --gold: #fbbf24;
+      --gold-2: #f59e0b;
+      --green: #34d399;
+      --blue: #60a5fa;
+      --purple: #c084fc;
+      --red: #f87171;
+      --shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(96, 165, 250, 0.24), transparent 28%),
+        radial-gradient(circle at top right, rgba(192, 132, 252, 0.18), transparent 24%),
+        radial-gradient(circle at bottom, rgba(251, 191, 36, 0.12), transparent 30%),
+        linear-gradient(135deg, #07101a, #0a1421 42%, #111d2c);
+    }
+
+    button, input, select {
+      font: inherit;
+    }
+
+    .hidden { display: none !important; }
+
+    .screen {
+      min-height: 100vh;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: min(1200px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .setup-card {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 18px;
+      padding: 18px;
+    }
+
+    .kicker {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4vw, 3rem);
+      line-height: 1.02;
+      margin-bottom: 10px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ffffff, #93c5fd, #c084fc, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .setup-copy p {
+      color: var(--muted);
+      line-height: 1.48;
+      margin-bottom: 10px;
+      max-width: 58ch;
+    }
+
+    .setup-copy ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .setup-copy li {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 10px 12px;
+      color: #dce6fb;
+      line-height: 1.42;
+    }
+
+    .setup-panel,
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .setup-panel {
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      box-shadow: none;
+    }
+
+    .setup-panel h2,
+    .panel-head h3 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .sub,
+    .panel-head p,
+    .teacher-note,
+    .muted {
+      color: var(--muted);
+    }
+
+    .sub {
+      font-size: 0.84rem;
+      margin-bottom: 12px;
+    }
+
+    .field {
+      margin-bottom: 10px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(8, 13, 22, 0.65);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 9px 10px;
+    }
+
+    .player-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .player-input {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 8px;
+    }
+
+    .player-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .btn-row,
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .stack {
+      flex-direction: column;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+    .btn-primary { background: linear-gradient(90deg, var(--gold), var(--gold-2)); color: #231500; }
+    .btn-secondary { background: rgba(255, 255, 255, 0.08); color: var(--text); border: 1px solid rgba(255, 255, 255, 0.12); }
+    .btn-green { background: linear-gradient(90deg, #34d399, #10b981); color: #032117; }
+    .btn-blue { background: linear-gradient(90deg, #60a5fa, #3b82f6); color: white; }
+    .btn-purple { background: linear-gradient(90deg, #c084fc, #8b5cf6); color: white; }
+    .btn-red { background: linear-gradient(90deg, #f87171, #ef4444); color: white; }
+
+    #gameScreen {
+      display: none;
+      min-height: 100vh;
+      padding: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .topbar h2 {
+      font-size: 1.12rem;
+      margin-bottom: 2px;
+    }
+
+    .topbar small { color: var(--muted); }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+
+    .badge {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px 1fr 290px;
+      gap: 10px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .panel-head {
+      padding: 10px 12px 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .panel-head p {
+      line-height: 1.35;
+      font-size: 0.76rem;
+    }
+
+    .panel-body {
+      padding: 10px;
+    }
+
+    .scroll {
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+    }
+
+    .player-card,
+    .hint-card,
+    .control-group,
+    .score-card,
+    .history-entry,
+    .final-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+    }
+
+    .player-card {
+      padding: 9px;
+      display: grid;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .player-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .player-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+    }
+
+    .player-score {
+      font-weight: 800;
+      font-size: 0.92rem;
+    }
+
+    .player-meta {
+      color: var(--muted);
+      font-size: 0.74rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .player-card.active {
+      border-color: rgba(251, 191, 36, 0.45);
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .topic-card {
+      background:
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.18), transparent 26%),
+        rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .topic-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .topic-header h2 {
+      font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+      margin-bottom: 5px;
+    }
+
+    .topic-tag {
+      background: rgba(192, 132, 252, 0.16);
+      border: 1px solid rgba(192, 132, 252, 0.34);
+      color: #eedbff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .topic-prompt {
+      color: #e8f0ff;
+      line-height: 1.42;
+      font-size: 0.88rem;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hint-card {
+      padding: 10px;
+    }
+
+    .hint-card h4 {
+      margin-bottom: 6px;
+      font-size: 0.88rem;
+    }
+
+    .hint-card p {
+      line-height: 1.4;
+      color: #dce6fb;
+      font-size: 0.8rem;
+    }
+
+    .hint-card ul {
+      padding-left: 16px;
+      display: grid;
+      gap: 5px;
+      color: #dce6fb;
+      line-height: 1.35;
+      font-size: 0.79rem;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      padding: 5px 8px;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #edf4ff;
+    }
+
+    .language-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .language-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 9px;
+    }
+
+    .language-box strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #fff2c7;
+      font-size: 0.78rem;
+    }
+
+    .language-box p {
+      color: #dce6fb;
+      font-size: 0.76rem;
+      line-height: 1.35;
+    }
+
+    .curiosity-box {
+      background: rgba(96, 165, 250, 0.1);
+      border: 1px solid rgba(96, 165, 250, 0.24);
+      border-radius: 14px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .curiosity-box strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #cfe6ff;
+      font-size: 0.82rem;
+    }
+
+    .curiosity-box p {
+      line-height: 1.42;
+      color: #e4efff;
+      font-size: 0.8rem;
+    }
+
+    .control-group {
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+
+    .control-group h4 {
+      margin-bottom: 6px;
+      font-size: 0.86rem;
+    }
+
+    .teacher-note {
+      line-height: 1.42;
+      font-size: 0.76rem;
+      margin-bottom: 8px;
+    }
+
+    .timer-box,
+    .summary-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 10px;
+    }
+
+    .timer-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 2px;
+    }
+
+    .summary-box p,
+    .timer-box p {
+      line-height: 1.35;
+      font-size: 0.76rem;
+    }
+
+    .rubric-list {
+      display: grid;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .rubric-btn {
+      width: 100%;
+      text-align: left;
+      border-radius: 12px;
+      padding: 8px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .rubric-btn strong {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 0.8rem;
+    }
+
+    .rubric-btn small {
+      color: var(--muted);
+      line-height: 1.28;
+      display: block;
+      font-size: 0.72rem;
+    }
+
+    .rubric-btn.active {
+      background: rgba(52, 211, 153, 0.12);
+      border-color: rgba(52, 211, 153, 0.4);
+    }
+
+    .score-card {
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+
+    .score-card strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+    }
+
+    .ranking-list,
+    .history-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .rank-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 8px 10px;
+    }
+
+    .rank-row.top {
+      border-color: rgba(251, 191, 36, 0.4);
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .rank-pos {
+      width: 24px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .rank-name {
+      flex: 1;
+      font-weight: 700;
+    }
+
+    .rank-stats {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .history-entry,
+    .final-card {
+      padding: 10px 12px;
+    }
+
+    .history-entry strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .history-entry p {
+      color: #dce6fb;
+      line-height: 1.35;
+      font-size: 0.78rem;
+    }
+
+    .final-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .empty-state {
+      color: var(--muted);
+      line-height: 1.35;
+      font-size: 0.78rem;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(8, 13, 22, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: var(--shadow);
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 30;
+    }
+
+    .toast.show { opacity: 1; }
+
+    @media (max-width: 1080px) {
+      .layout,
+      .setup-card,
+      .final-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .screen,
+      #gameScreen {
+        padding: 10px;
+      }
+
+      .player-grid,
+      .topic-grid,
+      .language-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .badge-row {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="screen" id="setupScreen">
+    <div class="card setup-card">
+      <div class="setup-copy">
+        <div class="kicker">SpeakUp Leaf · Lesson 06</div>
+        <h1><span class="gradient">Future Vision Roulette</span></h1>
+        <p>
+          Neste jogo, cada participante recebe um tema aleatorio e precisa dar sua opiniao sobre
+          como esse assunto sera no futuro. O foco e usar <strong>will</strong>, <strong>might</strong>,
+          <strong>may</strong>, <strong>could</strong> e adverbios de probabilidade de forma natural.
+        </p>
+        <p>
+          Cada rodada mostra ideias de vocabulario, sugestoes de caminho para a resposta e uma
+          curiosidade sobre o passado para ajudar o aluno a comparar ontem, hoje e amanha.
+        </p>
+        <ul>
+          <li><strong>Objetivo linguistico:</strong> fazer previsoes, expressar graus de certeza e justificar opinioes.</li>
+          <li><strong>Temas variados:</strong> esportes, viagens espaciais, cidades, trabalho, saude, educacao e muito mais.</li>
+          <li><strong>Apoio visual:</strong> vocabulario, sentence starters e curiosidades historicas em cada carta.</li>
+          <li><strong>Professor controla:</strong> sorteio, timer, pontos e historico das rodadas.</li>
+        </ul>
+      </div>
+
+      <div class="setup-panel">
+        <h2>Configurar partida</h2>
+        <p class="sub">Escolha as rodadas, o tempo por fala e os nomes dos jogadores.</p>
+
+        <div class="field">
+          <label for="roundCount">Numero de rodadas</label>
+          <select id="roundCount">
+            <option value="3">3 rodadas</option>
+            <option value="4" selected>4 rodadas</option>
+            <option value="5">5 rodadas</option>
+            <option value="6">6 rodadas</option>
+            <option value="8">8 rodadas</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="roundTimer">Tempo de fala por rodada</label>
+          <select id="roundTimer">
+            <option value="60">60 segundos</option>
+            <option value="75">75 segundos</option>
+            <option value="90" selected>90 segundos</option>
+            <option value="120">120 segundos</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Jogadores (1 a 6)</label>
+          <div id="playerInputs" class="player-grid"></div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="removePlayerBtn" type="button">− Remover</button>
+          <button class="btn btn-secondary" id="addPlayerBtn" type="button">+ Adicionar</button>
+          <button class="btn btn-primary" id="startBtn" type="button">Start Game</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="gameScreen">
+    <header class="topbar">
+      <div>
+        <h2>Future Vision Roulette</h2>
+        <small>Speaking game for predictions, opinions, possibilities, and probability language.</small>
+      </div>
+      <div class="badge-row">
+        <div class="badge" id="roundBadge">Round 0 / 0</div>
+        <div class="badge" id="speakerBadge">Speaker: —</div>
+        <div class="badge" id="topicBadge">Topic: Waiting</div>
+      </div>
+    </header>
+
+    <section class="layout">
+      <aside class="panel">
+        <div class="panel-head">
+          <h3>Leaderboard</h3>
+          <p>Pontos, numero de falas e bonus por desempenho claro e bem desenvolvido.</p>
+        </div>
+        <div class="panel-body scroll">
+          <div id="playerCards"></div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>Topic Board</h3>
+          <p>Sorteie um tema, deixe o aluno falar sobre o futuro e use os apoios abaixo para expandir a resposta.</p>
+        </div>
+        <div class="panel-body scroll">
+          <div class="topic-card">
+            <div class="topic-header">
+              <div>
+                <div class="kicker" style="margin-bottom: 6px;">Current topic</div>
+                <h2 id="topicTitle">Click "Draw Topic" to begin</h2>
+                <p class="topic-prompt" id="topicPrompt">
+                  O jogo vai mostrar um assunto, um foco de opiniao sobre o futuro e ideias para enriquecer a fala.
+                </p>
+              </div>
+              <div class="topic-tag" id="topicCategory">Waiting</div>
+            </div>
+
+            <div class="topic-grid">
+              <div class="hint-card">
+                <h4>Future angles</h4>
+                <ul id="futureAngles"></ul>
+              </div>
+              <div class="hint-card">
+                <h4>Follow-up prompts</h4>
+                <ul id="followUpList"></ul>
+              </div>
+            </div>
+
+            <div class="hint-card" style="margin-bottom: 14px;">
+              <h4>Vocabulary ideas</h4>
+              <div class="chip-row" id="vocabularyChips"></div>
+            </div>
+
+            <div class="language-strip">
+              <div class="language-box">
+                <strong>Opinion starters</strong>
+                <p id="opinionStarter">In my opinion, ...</p>
+              </div>
+              <div class="language-box">
+                <strong>Prediction starters</strong>
+                <p id="predictionStarter">This topic will probably...</p>
+              </div>
+              <div class="language-box">
+                <strong>Possibility starters</strong>
+                <p id="possibilityStarter">It might / may / could...</p>
+              </div>
+            </div>
+
+            <div class="curiosity-box">
+              <strong>Past curiosity</strong>
+              <p id="pastCuriosity">
+                Historical notes will appear here to help students compare the past with the future.
+              </p>
+            </div>
+
+            <div class="hint-card">
+              <h4>Speaking mission</h4>
+              <p id="missionText">
+                Give a clear opinion, make at least one strong prediction, mention one possibility, and support your ideas with a reason or example.
+              </p>
+            </div>
+          </div>
+
+          <div id="finalView" class="hidden">
+            <div class="final-card">
+              <div class="kicker" style="margin-bottom: 8px;">Game over</div>
+              <h2 style="font-size: 2rem; margin-bottom: 8px;">Final ranking</h2>
+              <p class="muted" style="line-height: 1.6;">
+                Veja quem falou com mais clareza, variedade de estruturas e boas previsoes sobre o futuro.
+              </p>
+              <div class="final-layout">
+                <div class="final-card">
+                  <h3 style="margin-bottom: 10px;">Ranking</h3>
+                  <div id="finalRanking" class="ranking-list"></div>
+                </div>
+                <div class="final-card">
+                  <h3 style="margin-bottom: 10px;">Round history</h3>
+                  <div id="historyList" class="history-list"></div>
+                </div>
+              </div>
+              <div class="btn-row" style="margin-top: 16px;">
+                <button class="btn btn-primary" id="restartBtn" type="button">Play again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-head">
+          <h3>Teacher controls</h3>
+          <p>Use o timer, marque os criterios atendidos e finalize a rodada.</p>
+        </div>
+        <div class="panel-body scroll">
+          <div class="teacher-note">
+            Fluxo sugerido: sorteie o tema, deixe o aluno falar, use perguntas de follow-up,
+            marque os criterios cumpridos e feche a rodada antes de ir para o proximo speaker.
+          </div>
+
+          <div class="control-group">
+            <h4>Round actions</h4>
+            <div class="stack">
+              <button class="btn btn-primary" id="drawBtn" type="button">Draw Topic & Speaker</button>
+              <button class="btn btn-blue" id="rerollBtn" type="button" disabled>Reroll topic</button>
+              <button class="btn btn-green" id="finishBtn" type="button" disabled>Finish round</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h4>Speaking timer</h4>
+            <div class="timer-box">
+              <div class="timer-value" id="timerDisplay">01:30</div>
+              <p id="timerHint">Use para organizar a fala principal e a pergunta extra do professor.</p>
+              <div class="btn-row" style="margin-top: 10px;">
+                <button class="btn btn-green" id="timerStartBtn" type="button" disabled>Start</button>
+                <button class="btn btn-secondary" id="timerPauseBtn" type="button" disabled>Pause</button>
+                <button class="btn btn-secondary" id="timerResetBtn" type="button" disabled>Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="score-card">
+            <strong id="roundScoreLabel">Round score: 0 pts</strong>
+            <p class="muted" id="scoreHelper">Marque os criterios que o speaker conseguiu cumprir nesta rodada.</p>
+          </div>
+
+          <div class="control-group">
+            <h4>Score checklist</h4>
+            <div class="rubric-list" id="rubricList"></div>
+          </div>
+
+          <div class="control-group">
+            <h4>Quick ranking</h4>
+            <div id="rankingPreview" class="ranking-list"></div>
+          </div>
+
+          <div class="control-group">
+            <h4>Round log</h4>
+            <div id="historyPreview" class="history-list">
+              <div class="empty-state">No rounds finished yet.</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    const PLAYER_COLORS = ['#f87171', '#60a5fa', '#34d399', '#fbbf24', '#c084fc', '#fb7185'];
+
+    const RUBRIC_ITEMS = [
+      {
+        id: 'opinion',
+        title: 'Clear opinion',
+        points: 2,
+        text: 'Used an opinion phrase such as "In my opinion..." or "I believe..." clearly.'
+      },
+      {
+        id: 'prediction',
+        title: 'Future prediction',
+        points: 2,
+        text: 'Used "will" or a strong prediction with a probability adverb.'
+      },
+      {
+        id: 'possibility',
+        title: 'Possible scenario',
+        points: 1,
+        text: 'Used "might", "may", or "could" to talk about a possible future.'
+      },
+      {
+        id: 'support',
+        title: 'Support and detail',
+        points: 1,
+        text: 'Gave a reason, example, comparison, or consequence.'
+      },
+      {
+        id: 'past-link',
+        title: 'Past comparison',
+        points: 1,
+        text: 'Connected the topic with how it was in the past.'
+      }
+    ];
+
+    const TOPICS = [
+      {
+        title: 'Sports',
+        category: 'Lifestyle & Culture',
+        prompt: 'How will sports change in the future? Think about training, technology, safety, audiences, and what people will value more.',
+        vocabulary: ['competition', 'training', 'fitness', 'fans', 'stadium', 'athlete', 'technology', 'safety', 'performance', 'team spirit'],
+        futureAngles: [
+          'Will athletes use more data and smart equipment?',
+          'Might dangerous sports become safer or less popular?',
+          'Could virtual or mixed-reality sports become mainstream?'
+        ],
+        followUps: [
+          'Which sports will probably grow the fastest?',
+          'Will people prefer playing sports or watching them online?',
+          'How might rules change in the future?'
+        ],
+        opinionStarter: 'In my opinion, sports will become more...',
+        predictionStarter: 'Professional sports will probably...',
+        possibilityStarter: 'Fans might / may / could...',
+        mission: 'Give your opinion, make a prediction, mention one possible change, and compare the future with traditional sports.',
+        pastCuriosity: 'In the past, many of the most important sports were linked to combat, survival, and dangerous physical challenges. Physical contests were often closer to battles than to modern entertainment.'
+      },
+      {
+        title: 'Space Travel',
+        category: 'Science & Exploration',
+        prompt: 'What will space travel be like in the future? Think about tourism, colonization, technology, and who will be able to go.',
+        vocabulary: ['rocket', 'orbit', 'mission', 'colony', 'planet', 'astronaut', 'exploration', 'gravity', 'fuel', 'space tourism'],
+        futureAngles: [
+          'Will ordinary people travel to space one day?',
+          'Might humans build permanent bases on the Moon or Mars?',
+          'Could space travel become part of education or business?'
+        ],
+        followUps: [
+          'What will probably be the biggest obstacle?',
+          'Will space travel become cheaper or more exclusive?',
+          'How might daily life in space be different from life on Earth?'
+        ],
+        opinionStarter: 'I think space travel will eventually...',
+        predictionStarter: 'Scientists will probably...',
+        possibilityStarter: 'Humans might / may / could...',
+        mission: 'Talk about opportunities, limits, risks, and what daily life beyond Earth might look like.',
+        pastCuriosity: 'For centuries, many people believed the universe was finite, mysterious, and unreachable. Humanity could not even fly, so the idea of ordinary people leaving Earth would have sounded impossible.'
+      },
+      {
+        title: 'Education',
+        category: 'Society',
+        prompt: 'How will education change in the future? Think about schools, online learning, teachers, and practical skills.',
+        vocabulary: ['classroom', 'skills', 'remote learning', 'teacher', 'student', 'curriculum', 'AI tutor', 'assessment', 'project', 'access'],
+        futureAngles: [
+          'Will schools become more digital and flexible?',
+          'Might students study fewer subjects but more deeply?',
+          'Could AI change the role of teachers?'
+        ],
+        followUps: [
+          'What skills will definitely be more important?',
+          'Will homework change a lot?',
+          'How might exams be different in the future?'
+        ],
+        opinionStarter: 'From my perspective, education will need to...',
+        predictionStarter: 'Schools will probably...',
+        possibilityStarter: 'Students might / may / could...',
+        mission: 'Give an opinion about what schools should keep, what they should change, and what future classrooms may look like.',
+        pastCuriosity: 'In many places, education used to be limited to a small elite. Memorization, strict discipline, and repetition were often more important than creativity, discussion, or personal expression.'
+      },
+      {
+        title: 'Work & Careers',
+        category: 'Economy',
+        prompt: 'What will jobs and careers be like in the future? Think about remote work, automation, new professions, and work-life balance.',
+        vocabulary: ['remote work', 'automation', 'career path', 'skills', 'salary', 'flexibility', 'office', 'freelance', 'AI tools', 'teamwork'],
+        futureAngles: [
+          'Will more people work remotely or hybrid?',
+          'Might some traditional jobs disappear?',
+          'Could new careers appear because of technology?'
+        ],
+        followUps: [
+          'Which jobs will probably remain very human?',
+          'Will offices become less important?',
+          'How might companies evaluate workers in the future?'
+        ],
+        opinionStarter: 'In my opinion, the future of work will...',
+        predictionStarter: 'Companies will probably...',
+        possibilityStarter: 'Workers might / may / could...',
+        mission: 'Talk about change, uncertainty, human skills, and what a successful career may require in the future.',
+        pastCuriosity: 'During the Industrial Revolution, work became more repetitive, factory-based, and physically demanding. For a long time, people expected one stable job for life instead of multiple career changes.'
+      },
+      {
+        title: 'Cities & Urban Life',
+        category: 'Daily Life',
+        prompt: 'How will cities change in the future? Think about mobility, housing, safety, green areas, and technology.',
+        vocabulary: ['traffic', 'public transport', 'smart city', 'housing', 'pollution', 'green space', 'crowded', 'infrastructure', 'bike lane', 'community'],
+        futureAngles: [
+          'Will cities become greener and more walkable?',
+          'Might public transport improve with smarter systems?',
+          'Could housing become smaller, more modular, or more expensive?'
+        ],
+        followUps: [
+          'What will probably happen to traffic?',
+          'Will people still want to live in very big cities?',
+          'How might neighborhoods become more connected?'
+        ],
+        opinionStarter: 'I believe future cities will...',
+        predictionStarter: 'Urban life will probably...',
+        possibilityStarter: 'People might / may / could...',
+        mission: 'Describe what an ideal future city should offer and what problems it may still have.',
+        pastCuriosity: 'Older cities were often built around walls, markets, and limited transport. Before cars, urban life depended much more on walking, animals, and short local distances.'
+      },
+      {
+        title: 'Food & Eating Habits',
+        category: 'Lifestyle',
+        prompt: 'How will food habits change in the future? Think about health, sustainability, convenience, and technology.',
+        vocabulary: ['diet', 'plant-based', 'lab-grown', 'delivery', 'nutrition', 'organic', 'sustainable', 'restaurant', 'habit', 'waste'],
+        futureAngles: [
+          'Will people eat more plant-based food?',
+          'Might lab-grown or alternative proteins become common?',
+          'Could food delivery and smart kitchens change daily meals?'
+        ],
+        followUps: [
+          'What foods will probably become less common?',
+          'Will convenience become more important than tradition?',
+          'How might families eat together in the future?'
+        ],
+        opinionStarter: 'I think our eating habits will...',
+        predictionStarter: 'People will probably...',
+        possibilityStarter: 'Families might / may / could...',
+        mission: 'Talk about health, sustainability, routines, and whether future food culture will be better or worse.',
+        pastCuriosity: 'For most of history, people ate local and seasonal food because preservation and transport were limited. Refrigeration, fast food, and global ingredients changed eating habits dramatically.'
+      },
+      {
+        title: 'Health & Medicine',
+        category: 'Science & Society',
+        prompt: 'What will healthcare be like in the future? Think about prevention, technology, mental health, and personalized medicine.',
+        vocabulary: ['treatment', 'diagnosis', 'prevention', 'patient', 'vaccine', 'mental health', 'wearable device', 'gene therapy', 'doctor', 'remote care'],
+        futureAngles: [
+          'Will medicine become more preventive and personalized?',
+          'Might people use wearable devices to detect problems earlier?',
+          'Could remote healthcare improve access in small towns?'
+        ],
+        followUps: [
+          'What will probably improve the most?',
+          'Will healthcare become more equal or more expensive?',
+          'How might doctors and AI work together?'
+        ],
+        opinionStarter: 'From my point of view, healthcare will...',
+        predictionStarter: 'Doctors will probably...',
+        possibilityStarter: 'Patients might / may / could...',
+        mission: 'Give an opinion about progress, ethics, access, and one possible future medical breakthrough.',
+        pastCuriosity: 'In the past, medicine depended heavily on tradition, limited scientific knowledge, and even harmful treatments. Basic hygiene, antibiotics, and vaccines transformed survival rates.'
+      },
+      {
+        title: 'Entertainment',
+        category: 'Culture',
+        prompt: 'How will entertainment change in the future? Think about streaming, gaming, live events, and immersive experiences.',
+        vocabulary: ['streaming', 'creator', 'virtual reality', 'audience', 'platform', 'concert', 'interactive', 'subscription', 'gaming', 'content'],
+        futureAngles: [
+          'Will entertainment become more personalized and interactive?',
+          'Might live events mix real and virtual audiences?',
+          'Could creators depend less on traditional studios?'
+        ],
+        followUps: [
+          'What will probably disappear first?',
+          'Will people still enjoy long movies and series?',
+          'How might technology change concerts and sports events?'
+        ],
+        opinionStarter: 'I believe entertainment will...',
+        predictionStarter: 'Audiences will probably...',
+        possibilityStarter: 'Creators might / may / could...',
+        mission: 'Compare current entertainment with future experiences and explain what people will value more.',
+        pastCuriosity: 'Entertainment used to depend on theaters, radio, live storytelling, and shared local events. People often had fewer choices, but stronger collective experiences.'
+      },
+      {
+        title: 'Travel & Tourism',
+        category: 'Mobility',
+        prompt: 'How will travel change in the future? Think about sustainability, speed, technology, and cultural experiences.',
+        vocabulary: ['tourism', 'flight', 'destination', 'eco-friendly', 'passport', 'adventure', 'transport', 'booking', 'experience', 'global'],
+        futureAngles: [
+          'Will travel become more sustainable?',
+          'Might virtual tools change how people choose destinations?',
+          'Could faster transport make international travel easier?'
+        ],
+        followUps: [
+          'What will probably make travel more expensive?',
+          'Will tourism become more local or more global?',
+          'How might airports and hotels change?'
+        ],
+        opinionStarter: 'In my opinion, tourism will...',
+        predictionStarter: 'Travelers will probably...',
+        possibilityStarter: 'Tourism companies might / may / could...',
+        mission: 'Explain how future travel will balance convenience, cost, sustainability, and authentic experiences.',
+        pastCuriosity: 'Travel was once slow, risky, and available mostly to merchants, explorers, or the wealthy. Even crossing a country could take weeks or months before trains and airplanes.'
+      },
+      {
+        title: 'Communication',
+        category: 'Technology & Society',
+        prompt: 'How will people communicate in the future? Think about apps, translation, social media, and face-to-face interaction.',
+        vocabulary: ['message', 'video call', 'translation', 'social media', 'privacy', 'voice assistant', 'instant', 'global', 'connection', 'expression'],
+        futureAngles: [
+          'Will translation tools reduce language barriers?',
+          'Might people speak less face to face?',
+          'Could communication become faster but less personal?'
+        ],
+        followUps: [
+          'What will probably improve?',
+          'Will privacy become a bigger concern?',
+          'How might relationships change because of new communication tools?'
+        ],
+        opinionStarter: 'I think communication will...',
+        predictionStarter: 'People will probably...',
+        possibilityStarter: 'We might / may / could...',
+        mission: 'Talk about speed, connection, privacy, emotions, and whether future communication will feel more human or less human.',
+        pastCuriosity: 'Letters used to be the main long-distance communication tool, and answers could take days or months. Even phone calls were once rare, expensive, and often shared by entire families or communities.'
+      },
+      {
+        title: 'Home Life',
+        category: 'Daily Life',
+        prompt: 'How will homes change in the future? Think about smart devices, routines, energy use, and family life.',
+        vocabulary: ['smart home', 'energy', 'security', 'appliance', 'routine', 'remote control', 'automation', 'comfort', 'space', 'sustainability'],
+        futureAngles: [
+          'Will homes become more automated and efficient?',
+          'Might people live in smaller but smarter spaces?',
+          'Could home technology save time but increase dependence?'
+        ],
+        followUps: [
+          'What will probably be standard in future homes?',
+          'Will people cook and clean less manually?',
+          'How might family routines change at home?'
+        ],
+        opinionStarter: 'I believe homes in the future will...',
+        predictionStarter: 'Smart homes will probably...',
+        possibilityStarter: 'Families might / may / could...',
+        mission: 'Give your view on comfort, technology, routines, and one possible downside of future homes.',
+        pastCuriosity: 'In the past, homes had far fewer machines and many daily tasks were manual. Heating, lighting, cooking, and washing clothes took much more time and physical effort.'
+      },
+      {
+        title: 'Environment',
+        category: 'Global Challenges',
+        prompt: 'What will happen to the environment in the future? Think about climate, energy, recycling, and human responsibility.',
+        vocabulary: ['climate change', 'recycling', 'renewable energy', 'emissions', 'forest', 'water', 'waste', 'sustainability', 'policy', 'awareness'],
+        futureAngles: [
+          'Will clean energy become dominant?',
+          'Might climate problems become more serious before they improve?',
+          'Could new technology reduce environmental damage?'
+        ],
+        followUps: [
+          'What will probably be the biggest challenge?',
+          'Will individual action matter as much as government action?',
+          'How might cities and companies change their behavior?'
+        ],
+        opinionStarter: 'In my opinion, the environment will...',
+        predictionStarter: 'Governments will probably...',
+        possibilityStarter: 'People might / may / could...',
+        mission: 'Balance optimism and concern while talking about future environmental solutions and risks.',
+        pastCuriosity: 'For a long time, industrial progress was celebrated without much concern for pollution or long-term damage. Environmental awareness grew slowly as the consequences became impossible to ignore.'
+      }
+    ];
+
+    const state = {
+      playerSlots: 2,
+      players: [],
+      roundCount: 4,
+      timerSeconds: 90,
+      currentRound: 0,
+      currentSpeakerIndex: -1,
+      currentTopic: null,
+      availableTopics: [],
+      roundScore: 0,
+      roundMarks: new Set(),
+      history: [],
+      timerId: null,
+      timeLeft: 90
+    };
+
+    const playerInputs = document.getElementById('playerInputs');
+    const removePlayerBtn = document.getElementById('removePlayerBtn');
+    const addPlayerBtn = document.getElementById('addPlayerBtn');
+    const startBtn = document.getElementById('startBtn');
+    const roundCountSelect = document.getElementById('roundCount');
+    const roundTimerSelect = document.getElementById('roundTimer');
+    const setupScreen = document.getElementById('setupScreen');
+    const gameScreen = document.getElementById('gameScreen');
+
+    const roundBadge = document.getElementById('roundBadge');
+    const speakerBadge = document.getElementById('speakerBadge');
+    const topicBadge = document.getElementById('topicBadge');
+    const playerCards = document.getElementById('playerCards');
+
+    const topicTitle = document.getElementById('topicTitle');
+    const topicPrompt = document.getElementById('topicPrompt');
+    const topicCategory = document.getElementById('topicCategory');
+    const futureAngles = document.getElementById('futureAngles');
+    const followUpList = document.getElementById('followUpList');
+    const vocabularyChips = document.getElementById('vocabularyChips');
+    const opinionStarter = document.getElementById('opinionStarter');
+    const predictionStarter = document.getElementById('predictionStarter');
+    const possibilityStarter = document.getElementById('possibilityStarter');
+    const pastCuriosity = document.getElementById('pastCuriosity');
+    const missionText = document.getElementById('missionText');
+
+    const drawBtn = document.getElementById('drawBtn');
+    const rerollBtn = document.getElementById('rerollBtn');
+    const finishBtn = document.getElementById('finishBtn');
+    const timerDisplay = document.getElementById('timerDisplay');
+    const timerHint = document.getElementById('timerHint');
+    const timerStartBtn = document.getElementById('timerStartBtn');
+    const timerPauseBtn = document.getElementById('timerPauseBtn');
+    const timerResetBtn = document.getElementById('timerResetBtn');
+    const roundScoreLabel = document.getElementById('roundScoreLabel');
+    const scoreHelper = document.getElementById('scoreHelper');
+    const rubricList = document.getElementById('rubricList');
+    const rankingPreview = document.getElementById('rankingPreview');
+    const historyPreview = document.getElementById('historyPreview');
+    const finalView = document.getElementById('finalView');
+    const finalRanking = document.getElementById('finalRanking');
+    const historyList = document.getElementById('historyList');
+    const restartBtn = document.getElementById('restartBtn');
+    const toast = document.getElementById('toast');
+
+    function shuffle(list) {
+      const copy = [...list];
+      for (let i = copy.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function renderPlayerInputs() {
+      playerInputs.innerHTML = '';
+      for (let i = 0; i < state.playerSlots; i += 1) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'player-input';
+        wrapper.innerHTML = `
+          <span class="player-dot" style="background:${PLAYER_COLORS[i]};"></span>
+          <input type="text" placeholder="Player ${i + 1}" value="${i < 2 ? `Player ${i + 1}` : ''}" data-index="${i}" />
+        `;
+        playerInputs.appendChild(wrapper);
+      }
+
+      removePlayerBtn.disabled = state.playerSlots <= 1;
+      addPlayerBtn.disabled = state.playerSlots >= 6;
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    function formatTime(totalSeconds) {
+      const mins = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+      const secs = String(totalSeconds % 60).padStart(2, '0');
+      return `${mins}:${secs}`;
+    }
+
+    function updateTimerDisplay() {
+      timerDisplay.textContent = formatTime(state.timeLeft);
+    }
+
+    function stopTimer() {
+      if (state.timerId) {
+        clearInterval(state.timerId);
+        state.timerId = null;
+      }
+    }
+
+    function resetTimer() {
+      stopTimer();
+      state.timeLeft = state.timerSeconds;
+      updateTimerDisplay();
+      timerHint.textContent = 'Use para organizar a fala principal e a pergunta extra do professor.';
+    }
+
+    function startTimer() {
+      if (!state.currentTopic || state.timerId) {
+        return;
+      }
+
+      state.timerId = setInterval(() => {
+        state.timeLeft -= 1;
+        updateTimerDisplay();
+
+        if (state.timeLeft <= 0) {
+          stopTimer();
+          state.timeLeft = 0;
+          updateTimerDisplay();
+          timerHint.textContent = 'Tempo encerrado. Finalize a fala ou faca uma ultima pergunta.';
+          showToast('Time is up!');
+        }
+      }, 1000);
+    }
+
+    function collectPlayers() {
+      const inputs = [...playerInputs.querySelectorAll('input')];
+      return inputs.map((input, index) => ({
+        id: `player-${index + 1}`,
+        name: input.value.trim() || `Player ${index + 1}`,
+        color: PLAYER_COLORS[index],
+        score: 0,
+        turns: 0
+      }));
+    }
+
+    function ensureTopicPool() {
+      if (!state.availableTopics.length) {
+        state.availableTopics = shuffle(TOPICS);
+      }
+    }
+
+    function nextTopic() {
+      ensureTopicPool();
+      return state.availableTopics.pop();
+    }
+
+    function renderPlayers() {
+      playerCards.innerHTML = '';
+
+      state.players.forEach((player, index) => {
+        const card = document.createElement('div');
+        card.className = `player-card${index === state.currentSpeakerIndex ? ' active' : ''}`;
+        card.innerHTML = `
+          <div class="player-head">
+            <div class="player-name">
+              <span class="player-dot" style="background:${player.color};"></span>
+              <span>${player.name}</span>
+            </div>
+            <div class="player-score">${player.score} pts</div>
+          </div>
+          <div class="player-meta">
+            <span>Turns: ${player.turns}</span>
+            <span>${index === state.currentSpeakerIndex ? 'Speaking now' : 'Waiting'}</span>
+          </div>
+        `;
+        playerCards.appendChild(card);
+      });
+    }
+
+    function renderRanking(target, limit) {
+      const players = [...state.players].sort((a, b) => b.score - a.score || a.turns - b.turns || a.name.localeCompare(b.name));
+      target.innerHTML = '';
+
+      const slice = typeof limit === 'number' ? players.slice(0, limit) : players;
+
+      slice.forEach((player, index) => {
+        const row = document.createElement('div');
+        row.className = `rank-row${index === 0 ? ' top' : ''}`;
+        row.innerHTML = `
+          <div class="rank-pos">${index + 1}</div>
+          <div class="rank-name">${player.name}</div>
+          <div>
+            <div style="font-weight:700;">${player.score} pts</div>
+            <div class="rank-stats">${player.turns} turn(s)</div>
+          </div>
+        `;
+        target.appendChild(row);
+      });
+    }
+
+    function renderHistory(previewOnly = false) {
+      const target = previewOnly ? historyPreview : historyList;
+      target.innerHTML = '';
+
+      if (!state.history.length) {
+        target.innerHTML = '<div class="empty-state">No rounds finished yet.</div>';
+        return;
+      }
+
+      state.history.forEach((entry) => {
+        const item = document.createElement('div');
+        item.className = 'history-entry';
+        item.innerHTML = `
+          <strong>Round ${entry.round} · ${entry.player}</strong>
+          <p><strong>Topic:</strong> ${entry.topic}</p>
+          <p><strong>Score:</strong> ${entry.points} pts</p>
+          <p><strong>Highlights:</strong> ${entry.highlights.join(', ') || 'No checklist items marked'}</p>
+        `;
+        target.appendChild(item);
+      });
+    }
+
+    function renderRubric() {
+      rubricList.innerHTML = '';
+
+      RUBRIC_ITEMS.forEach((item) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = `rubric-btn${state.roundMarks.has(item.id) ? ' active' : ''}`;
+        button.innerHTML = `
+          <strong>${item.title} · +${item.points}</strong>
+          <small>${item.text}</small>
+        `;
+        button.disabled = !state.currentTopic;
+        button.addEventListener('click', () => toggleRubric(item.id));
+        rubricList.appendChild(button);
+      });
+    }
+
+    function updateScoreCard() {
+      roundScoreLabel.textContent = `Round score: ${state.roundScore} pts`;
+      if (!state.currentTopic) {
+        scoreHelper.textContent = 'Marque os criterios que o speaker conseguiu cumprir nesta rodada.';
+      } else {
+        scoreHelper.textContent = 'Use a checklist para registrar qualidade linguistica e desenvolvimento das ideias.';
+      }
+    }
+
+    function toggleRubric(id) {
+      const item = RUBRIC_ITEMS.find((entry) => entry.id === id);
+      if (!item || state.currentSpeakerIndex < 0) {
+        return;
+      }
+
+      const player = state.players[state.currentSpeakerIndex];
+
+      if (state.roundMarks.has(id)) {
+        state.roundMarks.delete(id);
+        state.roundScore -= item.points;
+        player.score -= item.points;
+      } else {
+        state.roundMarks.add(id);
+        state.roundScore += item.points;
+        player.score += item.points;
+      }
+
+      renderRubric();
+      updateScoreCard();
+      renderPlayers();
+      renderRanking(rankingPreview, 5);
+    }
+
+    function renderTopic(topic) {
+      if (!topic) {
+        topicTitle.textContent = 'Click "Draw Topic" to begin';
+        topicPrompt.textContent = 'O jogo vai mostrar um assunto, um foco de opiniao sobre o futuro e ideias para enriquecer a fala.';
+        topicCategory.textContent = 'Waiting';
+        futureAngles.innerHTML = '';
+        followUpList.innerHTML = '';
+        vocabularyChips.innerHTML = '';
+        opinionStarter.textContent = 'In my opinion, ...';
+        predictionStarter.textContent = 'This topic will probably...';
+        possibilityStarter.textContent = 'It might / may / could...';
+        pastCuriosity.textContent = 'Historical notes will appear here to help students compare the past with the future.';
+        missionText.textContent = 'Give a clear opinion, make at least one strong prediction, mention one possibility, and support your ideas with a reason or example.';
+        return;
+      }
+
+      topicTitle.textContent = topic.title;
+      topicPrompt.textContent = topic.prompt;
+      topicCategory.textContent = topic.category;
+      futureAngles.innerHTML = topic.futureAngles.map((item) => `<li>${item}</li>`).join('');
+      followUpList.innerHTML = topic.followUps.map((item) => `<li>${item}</li>`).join('');
+      vocabularyChips.innerHTML = topic.vocabulary.map((item) => `<span class="chip">${item}</span>`).join('');
+      opinionStarter.textContent = topic.opinionStarter;
+      predictionStarter.textContent = topic.predictionStarter;
+      possibilityStarter.textContent = topic.possibilityStarter;
+      pastCuriosity.textContent = topic.pastCuriosity;
+      missionText.textContent = topic.mission;
+    }
+
+    function updateBadges() {
+      roundBadge.textContent = `Round ${state.currentRound} / ${state.roundCount}`;
+      speakerBadge.textContent = state.currentSpeakerIndex >= 0
+        ? `Speaker: ${state.players[state.currentSpeakerIndex].name}`
+        : 'Speaker: —';
+      topicBadge.textContent = state.currentTopic
+        ? `Topic: ${state.currentTopic.title}`
+        : 'Topic: Waiting';
+    }
+
+    function activateRound(topicOverride) {
+      if (state.currentRound >= state.roundCount) {
+        showFinal();
+        return;
+      }
+
+      state.currentRound += 1;
+      state.currentSpeakerIndex = (state.currentRound - 1) % state.players.length;
+      state.currentTopic = topicOverride || nextTopic();
+      state.roundScore = 0;
+      state.roundMarks = new Set();
+      state.players[state.currentSpeakerIndex].turns += 1;
+
+      resetTimer();
+      renderTopic(state.currentTopic);
+      updateBadges();
+      renderPlayers();
+      renderRubric();
+      updateScoreCard();
+      renderRanking(rankingPreview, 5);
+
+      drawBtn.disabled = true;
+      rerollBtn.disabled = false;
+      finishBtn.disabled = false;
+      timerStartBtn.disabled = false;
+      timerPauseBtn.disabled = false;
+      timerResetBtn.disabled = false;
+
+      finalView.classList.add('hidden');
+      showToast(`Topic drawn: ${state.currentTopic.title}`);
+    }
+
+    function rerollTopic() {
+      if (!state.currentTopic || state.currentSpeakerIndex < 0) {
+        return;
+      }
+
+      state.currentTopic = nextTopic();
+      renderTopic(state.currentTopic);
+      updateBadges();
+      showToast('New topic drawn');
+    }
+
+    function finishRound() {
+      if (!state.currentTopic || state.currentSpeakerIndex < 0) {
+        return;
+      }
+
+      stopTimer();
+
+      const player = state.players[state.currentSpeakerIndex];
+      state.history.push({
+        round: state.currentRound,
+        player: player.name,
+        topic: state.currentTopic.title,
+        points: state.roundScore,
+        highlights: RUBRIC_ITEMS
+          .filter((item) => state.roundMarks.has(item.id))
+          .map((item) => item.title)
+      });
+
+      renderHistory(true);
+      renderRanking(rankingPreview, 5);
+      renderPlayers();
+
+      const hasMoreRounds = state.currentRound < state.roundCount;
+
+      state.currentTopic = null;
+      state.currentSpeakerIndex = -1;
+      state.roundScore = 0;
+      state.roundMarks = new Set();
+      resetTimer();
+      renderTopic(null);
+      renderRubric();
+      updateScoreCard();
+      updateBadges();
+
+      drawBtn.disabled = !hasMoreRounds ? true : false;
+      rerollBtn.disabled = true;
+      finishBtn.disabled = true;
+      timerStartBtn.disabled = true;
+      timerPauseBtn.disabled = true;
+      timerResetBtn.disabled = true;
+
+      if (hasMoreRounds) {
+        timerHint.textContent = 'Round finished. Draw a new topic for the next speaker.';
+        showToast('Round saved');
+      } else {
+        showFinal();
+      }
+    }
+
+    function showFinal() {
+      stopTimer();
+      renderPlayers();
+      renderRanking(finalRanking);
+      renderHistory(false);
+      finalView.classList.remove('hidden');
+      drawBtn.disabled = true;
+      rerollBtn.disabled = true;
+      finishBtn.disabled = true;
+      timerStartBtn.disabled = true;
+      timerPauseBtn.disabled = true;
+      timerResetBtn.disabled = true;
+      roundBadge.textContent = `Round ${state.roundCount} / ${state.roundCount}`;
+      speakerBadge.textContent = 'Speaker: finished';
+      topicBadge.textContent = 'Topic: complete';
+    }
+
+    function startGame() {
+      state.players = collectPlayers();
+      state.roundCount = Number(roundCountSelect.value);
+      state.timerSeconds = Number(roundTimerSelect.value);
+      state.currentRound = 0;
+      state.currentSpeakerIndex = -1;
+      state.currentTopic = null;
+      state.availableTopics = shuffle(TOPICS);
+      state.roundScore = 0;
+      state.roundMarks = new Set();
+      state.history = [];
+      state.timeLeft = state.timerSeconds;
+      stopTimer();
+
+      setupScreen.classList.add('hidden');
+      gameScreen.style.display = 'flex';
+
+      renderPlayers();
+      renderTopic(null);
+      renderRubric();
+      updateScoreCard();
+      updateBadges();
+      renderRanking(rankingPreview, 5);
+      renderHistory(true);
+      resetTimer();
+
+      drawBtn.disabled = false;
+      rerollBtn.disabled = true;
+      finishBtn.disabled = true;
+      timerStartBtn.disabled = true;
+      timerPauseBtn.disabled = true;
+      timerResetBtn.disabled = true;
+    }
+
+    function restartGame() {
+      stopTimer();
+      gameScreen.style.display = 'none';
+      setupScreen.classList.remove('hidden');
+      finalView.classList.add('hidden');
+      renderPlayerInputs();
+    }
+
+    addPlayerBtn.addEventListener('click', () => {
+      if (state.playerSlots < 6) {
+        state.playerSlots += 1;
+        renderPlayerInputs();
+      }
+    });
+
+    removePlayerBtn.addEventListener('click', () => {
+      if (state.playerSlots > 1) {
+        state.playerSlots -= 1;
+        renderPlayerInputs();
+      }
+    });
+
+    startBtn.addEventListener('click', startGame);
+    drawBtn.addEventListener('click', () => activateRound());
+    rerollBtn.addEventListener('click', rerollTopic);
+    finishBtn.addEventListener('click', finishRound);
+    timerStartBtn.addEventListener('click', startTimer);
+    timerPauseBtn.addEventListener('click', () => {
+      stopTimer();
+      timerHint.textContent = 'Timer paused. Resume when the speaker is ready.';
+    });
+    timerResetBtn.addEventListener('click', resetTimer);
+    restartBtn.addEventListener('click', restartGame);
+
+    renderPlayerInputs();
+    renderRubric();
+    updateTimerDisplay();
+  </script>
+</body>
+</html>

@@ -1,764 +1,933 @@
 {
-  "lessons": [6, 7, 8],
+  "lessons": [
+    9,
+    10
+  ],
   "level": "root",
-  "topic": "Home & Furniture | Technology & Communication | Work & Professions",
+  "topics": [
+    "Sports & Activities",
+    "Environment & Nature"
+  ],
   "monday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'living room' mean?",
-      "options": ["Cozinha", "Sala de estar", "Quarto", "Banheiro"],
-      "correctAnswer": "Sala de estar"
+      "question": "What does 'gym' mean?",
+      "options": [
+        "Parque",
+        "Academia",
+        "Piscina",
+        "Quadra"
+      ],
+      "correctAnswer": "Academia"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'bedroom' mean?",
-      "options": ["Sala de jantar", "Escritório", "Quarto", "Corredor"],
-      "correctAnswer": "Quarto"
+      "question": "What does 'exercise' mean?",
+      "options": [
+        "Competicao",
+        "Descanso",
+        "Exercicio",
+        "Treino intenso"
+      ],
+      "correctAnswer": "Exercicio"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'kitchen' mean?",
-      "options": ["Cozinha", "Garagem", "Lavanderia", "Depósito"],
-      "correctAnswer": "Cozinha"
+      "question": "What does 'team' mean?",
+      "options": [
+        "Torcida",
+        "Adversario",
+        "Time / Equipe",
+        "Campeonato"
+      ],
+      "correctAnswer": "Time / Equipe"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'sofa' mean?",
-      "options": ["Cadeira", "Sofá", "Cama", "Mesa"],
-      "correctAnswer": "Sofá"
+      "question": "What does 'practice' mean?",
+      "options": [
+        "Jogo oficial",
+        "Treino / Praticar",
+        "Campeonato",
+        "Descanso"
+      ],
+      "correctAnswer": "Treino / Praticar"
     },
     {
       "id": 5,
       "type": "vocabulary",
-      "question": "What does 'furniture' mean?",
-      "options": ["Eletrodomésticos", "Decoração", "Móveis / Mobília", "Utensílios"],
-      "correctAnswer": "Móveis / Mobília"
+      "question": "What does 'soccer' mean?",
+      "options": [
+        "Basquete",
+        "Volei",
+        "Futebol",
+        "Tenis"
+      ],
+      "correctAnswer": "Futebol"
     },
     {
       "id": 6,
       "type": "vocabulary",
-      "question": "What does 'rent' mean?",
-      "options": ["Comprar", "Alugar / Aluguel", "Reformar", "Vender"],
-      "correctAnswer": "Alugar / Aluguel"
+      "question": "What does 'frequently' mean?",
+      "options": [
+        "Raramente",
+        "Com frequencia",
+        "Nunca",
+        "As vezes"
+      ],
+      "correctAnswer": "Com frequencia"
     },
     {
       "id": 7,
-      "type": "vocabulary",
-      "question": "What does 'apartment' mean?",
-      "options": ["Casa", "Apartamento", "Condomínio", "Mansão"],
-      "correctAnswer": "Apartamento"
+      "type": "multiple-choice",
+      "question": "Which verb is correct? '___ yoga is good for the body.'",
+      "options": [
+        "Play",
+        "Go",
+        "Do",
+        "Make"
+      ],
+      "correctAnswer": "Do"
     },
     {
       "id": 8,
-      "type": "vocabulary",
-      "question": "What does 'ceiling' mean?",
-      "options": ["Parede", "Piso / Chão", "Teto", "Porta"],
-      "correctAnswer": "Teto"
+      "type": "multiple-choice",
+      "question": "Which verb is correct? 'I ___ soccer on weekends.'",
+      "options": [
+        "go",
+        "do",
+        "make",
+        "play"
+      ],
+      "correctAnswer": "play"
     },
     {
       "id": 9,
-      "type": "vocabulary",
-      "question": "What does 'curtain' mean?",
-      "options": ["Cortina", "Tapete", "Almofada", "Lâmpada"],
-      "correctAnswer": "Cortina"
+      "type": "multiple-choice",
+      "question": "Which verb is correct? 'She ___ running every morning.'",
+      "options": [
+        "plays",
+        "does",
+        "goes",
+        "makes"
+      ],
+      "correctAnswer": "goes"
     },
     {
       "id": 10,
-      "type": "vocabulary",
-      "question": "What does 'shelf' mean?",
-      "options": ["Gaveta", "Armário", "Prateleira", "Cabide"],
-      "correctAnswer": "Prateleira"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I like play basketball.",
+        "I like playing basketball.",
+        "I like to playing basketball.",
+        "I likes playing basketball."
+      ],
+      "correctAnswer": "I like playing basketball."
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Choose the correct sentence about a room:",
+      "question": "He ___ exercise at the gym three times a week.",
       "options": [
-        "There are a big sofa in the living room.",
-        "There is a big sofa in the living room.",
-        "There be a big sofa in the living room.",
-        "There has a big sofa in the living room."
+        "do",
+        "play",
+        "goes",
+        "does"
       ],
-      "correctAnswer": "There is a big sofa in the living room."
+      "correctAnswer": "does"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "The picture is _____ the wall.",
-      "options": ["in", "on", "at", "above"],
-      "correctAnswer": "on"
+      "type": "fill-blank",
+      "question": "Complete: 'She ___ swimming every weekend.' (go — correct form for she)",
+      "correctAnswer": "goes"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "The sofa is _____ the TV and the bookshelf.",
-      "options": ["above", "behind", "between", "in front of"],
-      "correctAnswer": "between"
+      "type": "fill-blank",
+      "question": "Complete: 'They ___ soccer on Friday afternoons.'",
+      "correctAnswer": "play"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "What does 'in front of' mean in Portuguese?",
-      "options": ["Atrás de", "Do lado de", "Na frente de", "Em cima de"],
-      "correctAnswer": "Na frente de"
+      "type": "fill-blank",
+      "question": "Complete: 'I ___ exercise at home every morning.'",
+      "correctAnswer": "do"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "Which sentence is INCORRECT?",
-      "options": [
-        "There is a lamp above the desk.",
-        "There are two chairs in the kitchen.",
-        "There is a sofa between the TV and the table.",
-        "There are a window in the bedroom."
-      ],
-      "correctAnswer": "There are a window in the bedroom."
+      "type": "fill-blank",
+      "question": "Complete: 'He often ___ to the gym after work.'",
+      "correctAnswer": "goes"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: 'There _____ a sofa and two chairs in the living room.'",
-      "correctAnswer": "is"
+      "type": "complete",
+      "question": "Complete: 'I like ___ basketball with my friends on weekends.'",
+      "correctAnswer": "playing"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'The microwave is _____ the fridge and the sink.'",
-      "correctAnswer": "between"
+      "type": "complete",
+      "question": "Complete: 'She likes ___ run before work every day.'",
+      "correctAnswer": "to"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'She _____ a small apartment near the city center.'",
-      "correctAnswer": "rents"
+      "type": "complete",
+      "question": "Complete: 'Our ___ practices together twice a week.'",
+      "correctAnswer": "team"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Há uma grande mesa na cozinha.'",
-      "correctAnswer": "there is a big table in the kitchen"
+      "question": "Translate to English: 'Ela frequentemente joga basquete depois do trabalho.'",
+      "correctAnswer": "she frequently plays basketball after work"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'O sofá está na frente da televisão.'",
-      "correctAnswer": "the sofa is in front of the tv"
+      "question": "Translate to English: 'Eu gosto de nadar de manha.'",
+      "correctAnswer": "i like swimming in the morning|i like to swim in the morning"
     }
   ],
   "tuesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'computer' mean?",
-      "options": ["Celular", "Computador", "Televisão", "Rádio"],
-      "correctAnswer": "Computador"
+      "question": "What does 'nature' mean?",
+      "options": [
+        "Clima",
+        "Natureza",
+        "Paisagem",
+        "Territorio"
+      ],
+      "correctAnswer": "Natureza"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'email' mean?",
-      "options": ["Carta física", "Mensagem de texto", "E-mail / Correio eletrônico", "Ligação telefônica"],
-      "correctAnswer": "E-mail / Correio eletrônico"
+      "question": "What does 'river' mean?",
+      "options": [
+        "Lago",
+        "Mar",
+        "Rio",
+        "Oceano"
+      ],
+      "correctAnswer": "Rio"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'app' mean?",
-      "options": ["Aplicativo", "Aparelho eletrônico", "Atualização", "Arquivo"],
-      "correctAnswer": "Aplicativo"
+      "question": "What does 'pollution' mean?",
+      "options": [
+        "Reciclagem",
+        "Meio ambiente",
+        "Poluicao",
+        "Natureza"
+      ],
+      "correctAnswer": "Poluicao"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'website' mean?",
-      "options": ["Rede social", "Provedor de internet", "Site / Página na internet", "Servidor"],
-      "correctAnswer": "Site / Página na internet"
+      "question": "What does 'recycle' mean?",
+      "options": [
+        "Desperdicar",
+        "Reciclar",
+        "Poluir",
+        "Jogar fora"
+      ],
+      "correctAnswer": "Reciclar"
     },
     {
       "id": 5,
       "type": "vocabulary",
-      "question": "What does 'message' mean?",
-      "options": ["Ligação", "Mensagem", "Notificação", "Aviso"],
-      "correctAnswer": "Mensagem"
+      "question": "What does 'environment' mean?",
+      "options": [
+        "Natureza selvagem",
+        "Biodiversidade",
+        "Meio ambiente",
+        "Recursos naturais"
+      ],
+      "correctAnswer": "Meio ambiente"
     },
     {
       "id": 6,
       "type": "vocabulary",
-      "question": "What does 'social media' mean?",
-      "options": ["Mídia impressa", "Redes sociais", "Notícias online", "Comunicação corporativa"],
-      "correctAnswer": "Redes sociais"
+      "question": "What does 'hardly ever' mean?",
+      "options": [
+        "Sempre",
+        "As vezes",
+        "Com frequencia",
+        "Quase nunca"
+      ],
+      "correctAnswer": "Quase nunca"
     },
     {
       "id": 7,
-      "type": "vocabulary",
-      "question": "What does 'download' mean?",
-      "options": ["Enviar arquivos para a nuvem", "Baixar / Fazer download", "Deletar um arquivo", "Compartilhar um link"],
-      "correctAnswer": "Baixar / Fazer download"
+      "type": "multiple-choice",
+      "question": "She ___ ever swims in winter — it's too cold for her.",
+      "options": [
+        "hard",
+        "hardly",
+        "rarely",
+        "never"
+      ],
+      "correctAnswer": "hardly"
     },
     {
       "id": 8,
-      "type": "vocabulary",
-      "question": "What does 'upload' mean?",
-      "options": ["Baixar um arquivo", "Enviar / Fazer upload (para a nuvem)", "Salvar localmente", "Imprimir"],
-      "correctAnswer": "Enviar / Fazer upload (para a nuvem)"
+      "type": "multiple-choice",
+      "question": "Where does the adverb go in this sentence? 'I ___ go to the gym.'",
+      "options": [
+        "After the object",
+        "Before the main verb",
+        "After the subject AND before the verb",
+        "At the end of the sentence"
+      ],
+      "correctAnswer": "Before the main verb"
     },
     {
       "id": 9,
-      "type": "vocabulary",
-      "question": "What does 'password' mean?",
-      "options": ["Nome de usuário", "Senha", "Código de acesso numérico", "Apelido online"],
-      "correctAnswer": "Senha"
+      "type": "multiple-choice",
+      "question": "She is ___ active after work — she never sits still.",
+      "options": [
+        "often",
+        "always",
+        "usually",
+        "sometimes"
+      ],
+      "correctAnswer": "always"
     },
     {
       "id": 10,
-      "type": "vocabulary",
-      "question": "What does 'screen' mean?",
-      "options": ["Teclado", "Mouse", "Tela", "Alto-falante"],
-      "correctAnswer": "Tela"
+      "type": "multiple-choice",
+      "question": "Which adverb means 'quase nunca' in English?",
+      "options": [
+        "rarely",
+        "never",
+        "hardly ever",
+        "sometimes"
+      ],
+      "correctAnswer": "hardly ever"
     },
     {
       "id": 11,
       "type": "multiple-choice",
-      "question": "Which technology verb means 'ligar dois dispositivos'?",
-      "options": ["download", "upload", "connect", "receive"],
-      "correctAnswer": "connect"
+      "question": "They ___ go running together every Tuesday and Thursday.",
+      "options": [
+        "always",
+        "frequently",
+        "hardly ever",
+        "rarely"
+      ],
+      "correctAnswer": "frequently"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Which sentence uses Present Perfect correctly?",
-      "options": [
-        "I used this app before.",
-        "I have use this app before.",
-        "I have used this app before.",
-        "I am using this app before."
-      ],
-      "correctAnswer": "I have used this app before."
+      "type": "fill-blank",
+      "question": "Complete: 'I ___ ever eat fast food. It's not healthy.' (quase nunca)",
+      "correctAnswer": "hardly"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Choose the correct question in Present Perfect:",
-      "options": [
-        "Have you ever tried this app?",
-        "Did you ever tried this app?",
-        "Have you ever try this app?",
-        "Are you ever tried this app?"
-      ],
-      "correctAnswer": "Have you ever tried this app?"
+      "type": "fill-blank",
+      "question": "Complete: '___ is a serious problem in many cities around the world.'",
+      "correctAnswer": "Pollution"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Which sentence is correct?",
-      "options": [
-        "She has already sended the email.",
-        "She has already send the email.",
-        "She has already sent the email.",
-        "She already sent the email yesterday (Present Perfect context)."
-      ],
-      "correctAnswer": "She has already sent the email."
+      "type": "fill-blank",
+      "question": "Complete: 'We should ___ paper, plastic, and glass at home.'",
+      "correctAnswer": "recycle"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "I can _____ files from the internet to my computer.",
-      "options": ["upload", "download", "connect", "receive"],
-      "correctAnswer": "download"
+      "type": "fill-blank",
+      "question": "Complete: 'Many ___ live in the forest and need our protection.'",
+      "correctAnswer": "animals"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: 'Have you _____ used this social media platform?'",
-      "correctAnswer": "ever"
+      "type": "complete",
+      "question": "Complete: 'Trees keep the air ___.'",
+      "correctAnswer": "clean"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'I need to _____ my phone to the Wi-Fi network.'",
-      "correctAnswer": "connect"
+      "type": "complete",
+      "question": "Complete: 'She is ___ late for team practice.' (0% — she's very punctual)",
+      "correctAnswer": "never"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'She has _____ me a message on the app.'",
-      "correctAnswer": "sent"
+      "type": "complete",
+      "question": "Complete: 'Rivers ___ water to many places and cities.'",
+      "correctAnswer": "carry"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Você já usou esse aplicativo?'",
-      "correctAnswer": "have you ever used this app?"
+      "question": "Translate to English: 'Ela quase nunca joga esportes coletivos.'",
+      "correctAnswer": "she hardly ever plays team sports"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Eu posso enviar arquivos pelo email.'",
-      "correctAnswer": "i can send files by email"
+      "question": "Translate to English: 'Precisamos proteger o meio ambiente.'",
+      "correctAnswer": "we need to protect the environment"
     }
   ],
   "wednesday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'job' mean?",
-      "options": ["Passatempo", "Emprego / Trabalho", "Escola", "Projeto"],
-      "correctAnswer": "Emprego / Trabalho"
+      "question": "What does 'tree' mean?",
+      "options": [
+        "Arbusto",
+        "Arvore",
+        "Flor",
+        "Grama"
+      ],
+      "correctAnswer": "Arvore"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'career' mean?",
-      "options": ["Salário", "Carreira profissional", "Tarefa diária", "Contrato"],
-      "correctAnswer": "Carreira profissional"
+      "question": "What does 'mountain' mean?",
+      "options": [
+        "Vale",
+        "Colina",
+        "Montanha",
+        "Planalto"
+      ],
+      "correctAnswer": "Montanha"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'salary' mean?",
-      "options": ["Benefício", "Salário", "Bônus", "Imposto"],
-      "correctAnswer": "Salário"
+      "question": "What does 'animal' mean?",
+      "options": [
+        "Planta",
+        "Animal",
+        "Habitat",
+        "Especie"
+      ],
+      "correctAnswer": "Animal"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'boss' mean?",
-      "options": ["Funcionário", "Estagiário", "Chefe", "Cliente"],
-      "correctAnswer": "Chefe"
+      "question": "What does 'plant' mean as a NOUN?",
+      "options": [
+        "Semear",
+        "Plantar",
+        "Planta",
+        "Jardinagem"
+      ],
+      "correctAnswer": "Planta"
     },
     {
       "id": 5,
       "type": "vocabulary",
-      "question": "What does 'employee' mean?",
-      "options": ["Chefe", "Dono da empresa", "Funcionário / Empregado", "Investidor"],
-      "correctAnswer": "Funcionário / Empregado"
+      "question": "What does 'often' mean?",
+      "options": [
+        "Raramente",
+        "Nunca",
+        "Com frequencia / Frequentemente",
+        "Quase nunca"
+      ],
+      "correctAnswer": "Com frequencia / Frequentemente"
     },
     {
       "id": 6,
-      "type": "vocabulary",
-      "question": "What does 'interview' mean?",
-      "options": ["Contrato de trabalho", "Entrevista", "Reunião de equipe", "Avaliação de desempenho"],
-      "correctAnswer": "Entrevista"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "We should to recycle more.",
+        "We should recycling more.",
+        "We should recycle more.",
+        "We shoulds recycle more."
+      ],
+      "correctAnswer": "We should recycle more."
     },
     {
       "id": 7,
-      "type": "vocabulary",
-      "question": "What does 'profession' mean?",
-      "options": ["Profissão", "Salário", "Empresa", "Turno de trabalho"],
-      "correctAnswer": "Profissão"
+      "type": "multiple-choice",
+      "question": "People should ___ forests and rivers.",
+      "options": [
+        "protects",
+        "protecting",
+        "to protect",
+        "protect"
+      ],
+      "correctAnswer": "protect"
     },
     {
       "id": 8,
-      "type": "vocabulary",
-      "question": "What does 'office' mean?",
-      "options": ["Fábrica", "Loja", "Escritório", "Laboratório"],
-      "correctAnswer": "Escritório"
+      "type": "multiple-choice",
+      "question": "It's ___ to save water every day.",
+      "options": [
+        "importance",
+        "importantly",
+        "important",
+        "importing"
+      ],
+      "correctAnswer": "important"
     },
     {
       "id": 9,
-      "type": "vocabulary",
-      "question": "What does 'hire' mean?",
-      "options": ["Demitir", "Contratar", "Promover", "Transferir"],
-      "correctAnswer": "Contratar"
+      "type": "multiple-choice",
+      "question": "Which structure gives advice or a recommendation?",
+      "options": [
+        "It is + adjective",
+        "should + base verb",
+        "Present Simple + always",
+        "go + verb-ing"
+      ],
+      "correctAnswer": "should + base verb"
     },
     {
       "id": 10,
-      "type": "vocabulary",
-      "question": "What does 'resign' mean?",
-      "options": ["Ser contratado", "Pedir demissão / Demitir-se", "Ser promovido", "Receber aumento"],
-      "correctAnswer": "Pedir demissão / Demitir-se"
+      "type": "multiple-choice",
+      "question": "Which sentence is CORRECT?",
+      "options": [
+        "Pollution are a problem.",
+        "Pollution is a problem.",
+        "Pollutions is a problem.",
+        "A pollution is problem."
+      ],
+      "correctAnswer": "Pollution is a problem."
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Which question is used to ask about someone's profession?",
-      "options": [
-        "What do you do?",
-        "What are you doing?",
-        "What did you do?",
-        "What will you do?"
-      ],
-      "correctAnswer": "What do you do?"
+      "type": "fill-blank",
+      "question": "Complete: 'We ___ protect animals from pollution and habitat loss.'",
+      "correctAnswer": "should"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Which is the correct way to describe your job?",
-      "options": [
-        "I work like a teacher.",
-        "I work as a teacher.",
-        "I work for teacher.",
-        "I working as teacher."
-      ],
-      "correctAnswer": "I work as a teacher."
+      "type": "fill-blank",
+      "question": "Complete: 'It's important ___ keep rivers clean for future generations.'",
+      "correctAnswer": "to"
     },
     {
       "id": 13,
-      "type": "multiple-choice",
-      "question": "Choose the correct option: 'I have worked here _____ 2018.'",
-      "options": ["for", "since", "during", "from"],
-      "correctAnswer": "since"
+      "type": "fill-blank",
+      "question": "Complete: 'We ___ throw trash in rivers or on the streets.' (negative advice)",
+      "correctAnswer": "shouldn't"
     },
     {
       "id": 14,
-      "type": "multiple-choice",
-      "question": "Choose the correct option: 'She has been the manager _____ three years.'",
-      "options": ["since", "during", "for", "from"],
-      "correctAnswer": "for"
+      "type": "fill-blank",
+      "question": "Complete: 'Cities ___ reduce pollution to protect citizens' health.'",
+      "correctAnswer": "should"
     },
     {
       "id": 15,
-      "type": "multiple-choice",
-      "question": "What is the best response to 'What do you do for a living?'",
-      "options": [
-        "I am doing fine, thanks.",
-        "I work as a software developer.",
-        "I do a lot of things.",
-        "I am working now."
-      ],
-      "correctAnswer": "I work as a software developer."
+      "type": "complete",
+      "question": "Complete: 'Plants ___ water and sunlight to grow.'",
+      "correctAnswer": "need"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: 'He works _____ a software developer at a tech company.'",
-      "correctAnswer": "as"
+      "type": "complete",
+      "question": "Complete: 'It's important to ___ more trees in cities and parks.'",
+      "correctAnswer": "plant"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'She has been an employee _____ she graduated from college.'",
-      "correctAnswer": "since"
+      "type": "complete",
+      "question": "Complete: 'We ___ use less plastic in our daily lives.'",
+      "correctAnswer": "should"
     },
     {
       "id": 18,
-      "type": "fill-blank",
-      "question": "Complete: 'How long _____ you worked here?'",
-      "correctAnswer": "have"
+      "type": "complete",
+      "question": "Complete: 'Pollution ___ the environment and harms animals.'",
+      "correctAnswer": "affects|harms|hurts"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Ele trabalha como chef num restaurante famoso.'",
-      "correctAnswer": "he works as a chef at a famous restaurant"
+      "question": "Translate to English: 'Nos devemos reciclar papel e plastico em casa.'",
+      "correctAnswer": "we should recycle paper and plastic at home"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Há quanto tempo você trabalha aqui?'",
-      "correctAnswer": "how long have you worked here?"
+      "question": "Translate to English: 'E importante salvar agua.'",
+      "correctAnswer": "it's important to save water|it is important to save water"
     }
   ],
   "thursday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'wardrobe' mean?",
-      "options": ["Gaveta", "Guarda-roupa", "Armário de cozinha", "Cabideiro"],
-      "correctAnswer": "Guarda-roupa"
+      "question": "What does 'run' mean?",
+      "options": [
+        "Pular",
+        "Caminhar",
+        "Correr",
+        "Pedalar"
+      ],
+      "correctAnswer": "Correr"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'balcony' mean?",
-      "options": ["Jardim", "Varanda", "Terraço coberto", "Quintal"],
-      "correctAnswer": "Varanda"
+      "question": "What does 'basketball' mean?",
+      "options": [
+        "Futebol",
+        "Volei",
+        "Basquete",
+        "Handebol"
+      ],
+      "correctAnswer": "Basquete"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'internet' mean?",
-      "options": ["Rede interna de computadores", "Internet / Rede mundial de computadores", "Servidor local", "Sistema de satélite"],
-      "correctAnswer": "Internet / Rede mundial de computadores"
+      "question": "What does 'swim' mean?",
+      "options": [
+        "Correr",
+        "Pedalar",
+        "Escalar",
+        "Nadar"
+      ],
+      "correctAnswer": "Nadar"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'network' mean?",
-      "options": ["Sinal de celular", "Rede (de computadores ou internet)", "Provedor de internet", "Antena"],
-      "correctAnswer": "Rede (de computadores ou internet)"
+      "question": "What does 'rarely' mean?",
+      "options": [
+        "Geralmente",
+        "Frequentemente",
+        "Raramente",
+        "Sempre"
+      ],
+      "correctAnswer": "Raramente"
     },
     {
       "id": 5,
       "type": "vocabulary",
-      "question": "What does 'deadline' mean in a work context?",
-      "options": ["Reunião de equipe", "Prazo / Data limite", "Horário de almoço", "Meta de vendas"],
-      "correctAnswer": "Prazo / Data limite"
+      "question": "What does 'protect' mean?",
+      "options": [
+        "Destruir",
+        "Ignorar",
+        "Proteger",
+        "Explorar"
+      ],
+      "correctAnswer": "Proteger"
     },
     {
       "id": 6,
-      "type": "vocabulary",
-      "question": "What does 'promotion' mean in a work context?",
-      "options": ["Demissão", "Transferência", "Promoção / Avanço de cargo", "Aviso prévio"],
-      "correctAnswer": "Promoção / Avanço de cargo"
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She goes swim every day.",
+        "She goes swimming every day.",
+        "She go swimming every day.",
+        "She going swimming every day."
+      ],
+      "correctAnswer": "She goes swimming every day."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Choose the correct sentence about a bedroom:",
+      "question": "Which sentence is correct?",
       "options": [
-        "There are two windows in the bedroom.",
-        "There is two windows in the bedroom.",
-        "There have two windows in the bedroom.",
-        "There be two windows in the bedroom."
+        "He do exercise at night.",
+        "He does exercise at night.",
+        "He exercises exercise at night.",
+        "He is do exercise at night."
       ],
-      "correctAnswer": "There are two windows in the bedroom."
+      "correctAnswer": "He does exercise at night."
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "What does 'behind' mean?",
-      "options": ["Na frente de", "Do lado de", "Atrás de", "Em cima de"],
-      "correctAnswer": "Atrás de"
+      "question": "We should ___ the environment for future generations.",
+      "options": [
+        "protects",
+        "protecting",
+        "protect",
+        "to protect"
+      ],
+      "correctAnswer": "protect"
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "Which sentence uses Present Perfect correctly?",
+      "question": "Trees ___ the air and help reduce pollution.",
       "options": [
-        "I downloaded this app yesterday (present perfect context).",
-        "I have downloaded this app.",
-        "I have download this app.",
-        "I am downloaded this app."
+        "cleans",
+        "is cleaning",
+        "clean",
+        "are cleans"
       ],
-      "correctAnswer": "I have downloaded this app."
+      "correctAnswer": "clean"
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Which of these is NOT a technology verb?",
-      "options": ["send", "receive", "connect", "sleep"],
-      "correctAnswer": "sleep"
+      "question": "She ___ ever goes to the pool — she prefers the gym.",
+      "options": [
+        "hard",
+        "hardly",
+        "never",
+        "rarely"
+      ],
+      "correctAnswer": "hardly"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Choose the correct sentence with the article:",
-      "options": [
-        "He is a engineer.",
-        "He is an engineer.",
-        "He is engineering.",
-        "He is engineer."
-      ],
-      "correctAnswer": "He is an engineer."
+      "type": "fill-blank",
+      "question": "Complete: 'It's important ___ protect animals and their natural habitats.'",
+      "correctAnswer": "to"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "What is the difference between 'for' and 'since' in Present Perfect?",
-      "options": [
-        "'For' is used with a point in time; 'since' is used with a duration.",
-        "'For' is used with a duration; 'since' is used with a point in time.",
-        "They mean the same thing.",
-        "'For' is for the past; 'since' is for the future."
-      ],
-      "correctAnswer": "'For' is used with a duration; 'since' is used with a point in time."
+      "type": "fill-blank",
+      "question": "Complete: 'She ___ plays basketball after school with her friends.' (often)",
+      "correctAnswer": "often"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Complete: 'The bed is _____ the wardrobe and the window.'",
-      "correctAnswer": "between"
+      "question": "Complete: 'We shouldn't ___ trash in rivers or forests.'",
+      "correctAnswer": "throw"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'I have _____ all my photos to the cloud.'",
-      "correctAnswer": "uploaded"
+      "question": "Complete: 'He ___ exercise twice a week to stay healthy.'",
+      "correctAnswer": "does"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: '_____ you ever used a smart TV?'",
-      "correctAnswer": "Have"
+      "type": "complete",
+      "question": "Complete: 'I often ___ running in the park before breakfast.'",
+      "correctAnswer": "go"
     },
     {
       "id": 16,
-      "type": "fill-blank",
-      "question": "Complete: 'My sister works _____ a journalist for a big newspaper.'",
-      "correctAnswer": "as"
+      "type": "complete",
+      "question": "Complete: 'Animals need ___ habitats to survive.'",
+      "correctAnswer": "clean|safe"
     },
     {
       "id": 17,
-      "type": "fill-blank",
-      "question": "Complete: 'He has been the boss _____ January.'",
-      "correctAnswer": "since"
+      "type": "complete",
+      "question": "Complete: 'We ___ not waste water or electricity.'",
+      "correctAnswer": "should"
     },
     {
       "id": 18,
       "type": "complete",
-      "question": "'Where is the sofa?' — 'It is _____ the TV and the bookshelf.'",
-      "correctAnswer": "between"
+      "question": "Complete: 'She likes ___ soccer on weekends with her team.'",
+      "correctAnswer": "playing"
     },
     {
       "id": 19,
-      "type": "complete",
-      "question": "'Can I _____ this app for free?' — 'Yes, you can download it from the store.'",
-      "correctAnswer": "download"
+      "type": "translate",
+      "question": "Translate to English: 'Ele raramente vai ao ginasio durante a semana.'",
+      "correctAnswer": "he rarely goes to the gym during the week"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Ela mora num apartamento com dois quartos.'",
-      "correctAnswer": "she lives in an apartment with two bedrooms"
+      "question": "Translate to English: 'As arvores limpam o ar e ajudam o planeta.'",
+      "correctAnswer": "trees clean the air and help the planet"
     }
   ],
   "friday": [
     {
       "id": 1,
       "type": "vocabulary",
-      "question": "What does 'colleague' mean?",
-      "options": ["Gerente", "Colega de trabalho", "Diretor", "Sócio"],
-      "correctAnswer": "Colega de trabalho"
+      "question": "What does 'practice' mean as a NOUN?",
+      "options": [
+        "Jogo oficial",
+        "Torneio",
+        "Treino / Pratica",
+        "Resultado"
+      ],
+      "correctAnswer": "Treino / Pratica"
     },
     {
       "id": 2,
       "type": "vocabulary",
-      "question": "What does 'remote work' mean?",
-      "options": ["Trabalho presencial", "Trabalho em turno noturno", "Trabalho remoto / home office", "Trabalho temporário"],
-      "correctAnswer": "Trabalho remoto / home office"
+      "question": "What does 'recycle' mean?",
+      "options": [
+        "Desperdicar",
+        "Reciclar",
+        "Comprar de novo",
+        "Reutilizar sem separar"
+      ],
+      "correctAnswer": "Reciclar"
     },
     {
       "id": 3,
       "type": "vocabulary",
-      "question": "What does 'charger' mean in a technology context?",
-      "options": ["Cabo de dados", "Carregador (de celular/tablet)", "Bateria extra", "Adaptador de tomada"],
-      "correctAnswer": "Carregador (de celular/tablet)"
+      "question": "What does 'pollution' mean?",
+      "options": [
+        "Natureza",
+        "Biodiversidade",
+        "Poluicao",
+        "Clima"
+      ],
+      "correctAnswer": "Poluicao"
     },
     {
       "id": 4,
       "type": "vocabulary",
-      "question": "What does 'notification' mean?",
-      "options": ["Mensagem privada", "Notificação / Aviso do sistema", "Chamada de vídeo", "Atualização de software"],
-      "correctAnswer": "Notificação / Aviso do sistema"
+      "question": "What does 'frequently' mean?",
+      "options": [
+        "Raramente",
+        "Com frequencia",
+        "Quase nunca",
+        "De vez em quando"
+      ],
+      "correctAnswer": "Com frequencia"
     },
     {
       "id": 5,
       "type": "vocabulary",
-      "question": "What does 'above' mean?",
-      "options": ["Abaixo de", "Do lado de", "Atrás de", "Acima de / Por cima de"],
-      "correctAnswer": "Acima de / Por cima de"
+      "question": "What does 'mountain' mean?",
+      "options": [
+        "Deserto",
+        "Floresta",
+        "Montanha",
+        "Planicie"
+      ],
+      "correctAnswer": "Montanha"
     },
     {
       "id": 6,
-      "type": "vocabulary",
-      "question": "What does 'full-time' mean in a work context?",
-      "options": ["Trabalho de meio período", "Trabalho temporário", "Trabalho em tempo integral", "Trabalho freelancer"],
-      "correctAnswer": "Trabalho em tempo integral"
+      "type": "multiple-choice",
+      "question": "Which sentence corrects the mistake 'I play gym'?",
+      "options": [
+        "I do gym.",
+        "I go to the gym.",
+        "I practice gym.",
+        "I make gym."
+      ],
+      "correctAnswer": "I go to the gym."
     },
     {
       "id": 7,
       "type": "multiple-choice",
-      "question": "Which word describes a piece of furniture you sleep on?",
-      "options": ["sofa", "shelf", "bed", "curtain"],
-      "correctAnswer": "bed"
+      "question": "She should ___ more trees in her neighborhood.",
+      "options": [
+        "recycling",
+        "recycles",
+        "recycle",
+        "to recycle"
+      ],
+      "correctAnswer": "recycle"
     },
     {
       "id": 8,
       "type": "multiple-choice",
-      "question": "Which room is typically used for cooking?",
-      "options": ["bedroom", "living room", "bathroom", "kitchen"],
-      "correctAnswer": "kitchen"
+      "question": "Which sentence shows a general preference for a sport?",
+      "options": [
+        "I playing soccer often.",
+        "I likes soccer playing.",
+        "I like playing soccer.",
+        "I like to playing soccer."
+      ],
+      "correctAnswer": "I like playing soccer."
     },
     {
       "id": 9,
       "type": "multiple-choice",
-      "question": "What does 'I have used this app' mean in Portuguese?",
+      "question": "Which sentence about nature is INCORRECT?",
       "options": [
-        "Eu uso esse aplicativo.",
-        "Eu usarei esse aplicativo.",
-        "Eu já usei esse aplicativo.",
-        "Eu estava usando esse aplicativo."
+        "We should recycle more.",
+        "Trees help the air.",
+        "Pollution are a serious problem.",
+        "It's important to save water."
       ],
-      "correctAnswer": "Eu já usei esse aplicativo."
+      "correctAnswer": "Pollution are a serious problem."
     },
     {
       "id": 10,
       "type": "multiple-choice",
-      "question": "Which sentence uses 'since' correctly?",
+      "question": "He never ___ team practice — he's always on time.",
       "options": [
-        "I have lived here since five years.",
-        "I have lived here since 2015.",
-        "I have lived here since a long time.",
-        "I have lived here since three months."
+        "miss",
+        "missing",
+        "to miss",
+        "misses"
       ],
-      "correctAnswer": "I have lived here since 2015."
+      "correctAnswer": "misses"
     },
     {
       "id": 11,
-      "type": "multiple-choice",
-      "question": "Which sentence correctly uses Present Perfect to talk about work experience?",
-      "options": [
-        "She has worked at this company for five years.",
-        "She worked at this company for five years.",
-        "She is working at this company since five years.",
-        "She works at this company since five years."
-      ],
-      "correctAnswer": "She has worked at this company for five years."
+      "type": "fill-blank",
+      "question": "Complete: 'She ___ ever plays sports at home — she prefers going out.' (quase nunca)",
+      "correctAnswer": "hardly"
     },
     {
       "id": 12,
-      "type": "multiple-choice",
-      "question": "Which question is correct to ask at a job interview?",
-      "options": [
-        "What do you work?",
-        "What is your work?",
-        "Can you tell me about your work experience?",
-        "Where is your job?"
-      ],
-      "correctAnswer": "Can you tell me about your work experience?"
+      "type": "fill-blank",
+      "question": "Complete: 'We should not ___ electricity or water at home.'",
+      "correctAnswer": "waste"
     },
     {
       "id": 13,
       "type": "fill-blank",
-      "question": "Complete: 'There _____ no furniture in the room yet.'",
-      "correctAnswer": "is"
+      "question": "Complete: 'He often ___ soccer with his friends on Saturday mornings.'",
+      "correctAnswer": "plays"
     },
     {
       "id": 14,
       "type": "fill-blank",
-      "question": "Complete: 'She _____ received the message yet.'",
-      "correctAnswer": "hasn't"
+      "question": "Complete: 'It's important ___ keep forests clean and protected.'",
+      "correctAnswer": "to"
     },
     {
       "id": 15,
-      "type": "fill-blank",
-      "question": "Complete: 'He got the job after a successful _____.'",
-      "correctAnswer": "interview"
+      "type": "complete",
+      "question": "Complete: 'I like ___ to the gym before work in the morning.'",
+      "correctAnswer": "going"
     },
     {
       "id": 16,
       "type": "complete",
-      "question": "'Have you _____ sent an email to your boss?' — 'Yes, I have.'",
-      "correctAnswer": "ever"
+      "question": "Complete: 'Animals ___ safe places to live and raise their young.'",
+      "correctAnswer": "need"
     },
     {
       "id": 17,
       "type": "complete",
-      "question": "'How long have you been a nurse?' — 'I have been a nurse _____ ten years.'",
-      "correctAnswer": "for"
+      "question": "Complete: 'They ___ practice twice a week to prepare for the tournament.'",
+      "correctAnswer": "frequently|often"
     },
     {
       "id": 18,
-      "type": "translate",
-      "question": "Translate to English: 'O banheiro fica atrás do quarto.'",
-      "correctAnswer": "the bathroom is behind the bedroom"
+      "type": "complete",
+      "question": "Complete: 'We ___ use less plastic to help the environment.'",
+      "correctAnswer": "should"
     },
     {
       "id": 19,
       "type": "translate",
-      "question": "Translate to English: 'Você pode me enviar o arquivo por email?'",
-      "correctAnswer": "can you send me the file by email?"
+      "question": "Translate to English: 'Eu frequentemente corro no parque de manha.'",
+      "correctAnswer": "i frequently run in the park in the morning"
     },
     {
       "id": 20,
       "type": "translate",
-      "question": "Translate to English: 'Ela trabalha como professora há cinco anos.'",
-      "correctAnswer": "she has worked as a teacher for five years"
+      "question": "Translate to English: 'Devemos plantar mais arvores nas cidades.'",
+      "correctAnswer": "we should plant more trees in cities"
     }
   ]
 }

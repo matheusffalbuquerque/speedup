@@ -1,0 +1,764 @@
+{
+  "lessons": [6, 7, 8],
+  "level": "root",
+  "topic": "Home & Furniture | Technology & Communication | Work & Professions",
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'living room' mean?",
+      "options": ["Cozinha", "Sala de estar", "Quarto", "Banheiro"],
+      "correctAnswer": "Sala de estar"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'bedroom' mean?",
+      "options": ["Sala de jantar", "Escritório", "Quarto", "Corredor"],
+      "correctAnswer": "Quarto"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'kitchen' mean?",
+      "options": ["Cozinha", "Garagem", "Lavanderia", "Depósito"],
+      "correctAnswer": "Cozinha"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'sofa' mean?",
+      "options": ["Cadeira", "Sofá", "Cama", "Mesa"],
+      "correctAnswer": "Sofá"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'furniture' mean?",
+      "options": ["Eletrodomésticos", "Decoração", "Móveis / Mobília", "Utensílios"],
+      "correctAnswer": "Móveis / Mobília"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'rent' mean?",
+      "options": ["Comprar", "Alugar / Aluguel", "Reformar", "Vender"],
+      "correctAnswer": "Alugar / Aluguel"
+    },
+    {
+      "id": 7,
+      "type": "vocabulary",
+      "question": "What does 'apartment' mean?",
+      "options": ["Casa", "Apartamento", "Condomínio", "Mansão"],
+      "correctAnswer": "Apartamento"
+    },
+    {
+      "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'ceiling' mean?",
+      "options": ["Parede", "Piso / Chão", "Teto", "Porta"],
+      "correctAnswer": "Teto"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'curtain' mean?",
+      "options": ["Cortina", "Tapete", "Almofada", "Lâmpada"],
+      "correctAnswer": "Cortina"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "What does 'shelf' mean?",
+      "options": ["Gaveta", "Armário", "Prateleira", "Cabide"],
+      "correctAnswer": "Prateleira"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about a room:",
+      "options": [
+        "There are a big sofa in the living room.",
+        "There is a big sofa in the living room.",
+        "There be a big sofa in the living room.",
+        "There has a big sofa in the living room."
+      ],
+      "correctAnswer": "There is a big sofa in the living room."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "The picture is _____ the wall.",
+      "options": ["in", "on", "at", "above"],
+      "correctAnswer": "on"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "The sofa is _____ the TV and the bookshelf.",
+      "options": ["above", "behind", "between", "in front of"],
+      "correctAnswer": "between"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "What does 'in front of' mean in Portuguese?",
+      "options": ["Atrás de", "Do lado de", "Na frente de", "Em cima de"],
+      "correctAnswer": "Na frente de"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence is INCORRECT?",
+      "options": [
+        "There is a lamp above the desk.",
+        "There are two chairs in the kitchen.",
+        "There is a sofa between the TV and the table.",
+        "There are a window in the bedroom."
+      ],
+      "correctAnswer": "There are a window in the bedroom."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ a sofa and two chairs in the living room.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'The microwave is _____ the fridge and the sink.'",
+      "correctAnswer": "between"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ a small apartment near the city center.'",
+      "correctAnswer": "rents"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Há uma grande mesa na cozinha.'",
+      "correctAnswer": "there is a big table in the kitchen"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'O sofá está na frente da televisão.'",
+      "correctAnswer": "the sofa is in front of the tv"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'computer' mean?",
+      "options": ["Celular", "Computador", "Televisão", "Rádio"],
+      "correctAnswer": "Computador"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'email' mean?",
+      "options": ["Carta física", "Mensagem de texto", "E-mail / Correio eletrônico", "Ligação telefônica"],
+      "correctAnswer": "E-mail / Correio eletrônico"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'app' mean?",
+      "options": ["Aplicativo", "Aparelho eletrônico", "Atualização", "Arquivo"],
+      "correctAnswer": "Aplicativo"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'website' mean?",
+      "options": ["Rede social", "Provedor de internet", "Site / Página na internet", "Servidor"],
+      "correctAnswer": "Site / Página na internet"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'message' mean?",
+      "options": ["Ligação", "Mensagem", "Notificação", "Aviso"],
+      "correctAnswer": "Mensagem"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'social media' mean?",
+      "options": ["Mídia impressa", "Redes sociais", "Notícias online", "Comunicação corporativa"],
+      "correctAnswer": "Redes sociais"
+    },
+    {
+      "id": 7,
+      "type": "vocabulary",
+      "question": "What does 'download' mean?",
+      "options": ["Enviar arquivos para a nuvem", "Baixar / Fazer download", "Deletar um arquivo", "Compartilhar um link"],
+      "correctAnswer": "Baixar / Fazer download"
+    },
+    {
+      "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'upload' mean?",
+      "options": ["Baixar um arquivo", "Enviar / Fazer upload (para a nuvem)", "Salvar localmente", "Imprimir"],
+      "correctAnswer": "Enviar / Fazer upload (para a nuvem)"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'password' mean?",
+      "options": ["Nome de usuário", "Senha", "Código de acesso numérico", "Apelido online"],
+      "correctAnswer": "Senha"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "What does 'screen' mean?",
+      "options": ["Teclado", "Mouse", "Tela", "Alto-falante"],
+      "correctAnswer": "Tela"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which technology verb means 'ligar dois dispositivos'?",
+      "options": ["download", "upload", "connect", "receive"],
+      "correctAnswer": "connect"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "I used this app before.",
+        "I have use this app before.",
+        "I have used this app before.",
+        "I am using this app before."
+      ],
+      "correctAnswer": "I have used this app before."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Choose the correct question in Present Perfect:",
+      "options": [
+        "Have you ever tried this app?",
+        "Did you ever tried this app?",
+        "Have you ever try this app?",
+        "Are you ever tried this app?"
+      ],
+      "correctAnswer": "Have you ever tried this app?"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She has already sended the email.",
+        "She has already send the email.",
+        "She has already sent the email.",
+        "She already sent the email yesterday (Present Perfect context)."
+      ],
+      "correctAnswer": "She has already sent the email."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "I can _____ files from the internet to my computer.",
+      "options": ["upload", "download", "connect", "receive"],
+      "correctAnswer": "download"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'Have you _____ used this social media platform?'",
+      "correctAnswer": "ever"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'I need to _____ my phone to the Wi-Fi network.'",
+      "correctAnswer": "connect"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: 'She has _____ me a message on the app.'",
+      "correctAnswer": "sent"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Você já usou esse aplicativo?'",
+      "correctAnswer": "have you ever used this app?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Eu posso enviar arquivos pelo email.'",
+      "correctAnswer": "i can send files by email"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'job' mean?",
+      "options": ["Passatempo", "Emprego / Trabalho", "Escola", "Projeto"],
+      "correctAnswer": "Emprego / Trabalho"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'career' mean?",
+      "options": ["Salário", "Carreira profissional", "Tarefa diária", "Contrato"],
+      "correctAnswer": "Carreira profissional"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'salary' mean?",
+      "options": ["Benefício", "Salário", "Bônus", "Imposto"],
+      "correctAnswer": "Salário"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'boss' mean?",
+      "options": ["Funcionário", "Estagiário", "Chefe", "Cliente"],
+      "correctAnswer": "Chefe"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'employee' mean?",
+      "options": ["Chefe", "Dono da empresa", "Funcionário / Empregado", "Investidor"],
+      "correctAnswer": "Funcionário / Empregado"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'interview' mean?",
+      "options": ["Contrato de trabalho", "Entrevista", "Reunião de equipe", "Avaliação de desempenho"],
+      "correctAnswer": "Entrevista"
+    },
+    {
+      "id": 7,
+      "type": "vocabulary",
+      "question": "What does 'profession' mean?",
+      "options": ["Profissão", "Salário", "Empresa", "Turno de trabalho"],
+      "correctAnswer": "Profissão"
+    },
+    {
+      "id": 8,
+      "type": "vocabulary",
+      "question": "What does 'office' mean?",
+      "options": ["Fábrica", "Loja", "Escritório", "Laboratório"],
+      "correctAnswer": "Escritório"
+    },
+    {
+      "id": 9,
+      "type": "vocabulary",
+      "question": "What does 'hire' mean?",
+      "options": ["Demitir", "Contratar", "Promover", "Transferir"],
+      "correctAnswer": "Contratar"
+    },
+    {
+      "id": 10,
+      "type": "vocabulary",
+      "question": "What does 'resign' mean?",
+      "options": ["Ser contratado", "Pedir demissão / Demitir-se", "Ser promovido", "Receber aumento"],
+      "correctAnswer": "Pedir demissão / Demitir-se"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which question is used to ask about someone's profession?",
+      "options": [
+        "What do you do?",
+        "What are you doing?",
+        "What did you do?",
+        "What will you do?"
+      ],
+      "correctAnswer": "What do you do?"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which is the correct way to describe your job?",
+      "options": [
+        "I work like a teacher.",
+        "I work as a teacher.",
+        "I work for teacher.",
+        "I working as teacher."
+      ],
+      "correctAnswer": "I work as a teacher."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Choose the correct option: 'I have worked here _____ 2018.'",
+      "options": ["for", "since", "during", "from"],
+      "correctAnswer": "since"
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Choose the correct option: 'She has been the manager _____ three years.'",
+      "options": ["since", "during", "for", "from"],
+      "correctAnswer": "for"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the best response to 'What do you do for a living?'",
+      "options": [
+        "I am doing fine, thanks.",
+        "I work as a software developer.",
+        "I do a lot of things.",
+        "I am working now."
+      ],
+      "correctAnswer": "I work as a software developer."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'He works _____ a software developer at a tech company.'",
+      "correctAnswer": "as"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'She has been an employee _____ she graduated from college.'",
+      "correctAnswer": "since"
+    },
+    {
+      "id": 18,
+      "type": "fill-blank",
+      "question": "Complete: 'How long _____ you worked here?'",
+      "correctAnswer": "have"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Ele trabalha como chef num restaurante famoso.'",
+      "correctAnswer": "he works as a chef at a famous restaurant"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Há quanto tempo você trabalha aqui?'",
+      "correctAnswer": "how long have you worked here?"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'wardrobe' mean?",
+      "options": ["Gaveta", "Guarda-roupa", "Armário de cozinha", "Cabideiro"],
+      "correctAnswer": "Guarda-roupa"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'balcony' mean?",
+      "options": ["Jardim", "Varanda", "Terraço coberto", "Quintal"],
+      "correctAnswer": "Varanda"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'internet' mean?",
+      "options": ["Rede interna de computadores", "Internet / Rede mundial de computadores", "Servidor local", "Sistema de satélite"],
+      "correctAnswer": "Internet / Rede mundial de computadores"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'network' mean?",
+      "options": ["Sinal de celular", "Rede (de computadores ou internet)", "Provedor de internet", "Antena"],
+      "correctAnswer": "Rede (de computadores ou internet)"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'deadline' mean in a work context?",
+      "options": ["Reunião de equipe", "Prazo / Data limite", "Horário de almoço", "Meta de vendas"],
+      "correctAnswer": "Prazo / Data limite"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'promotion' mean in a work context?",
+      "options": ["Demissão", "Transferência", "Promoção / Avanço de cargo", "Aviso prévio"],
+      "correctAnswer": "Promoção / Avanço de cargo"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about a bedroom:",
+      "options": [
+        "There are two windows in the bedroom.",
+        "There is two windows in the bedroom.",
+        "There have two windows in the bedroom.",
+        "There be two windows in the bedroom."
+      ],
+      "correctAnswer": "There are two windows in the bedroom."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "What does 'behind' mean?",
+      "options": ["Na frente de", "Do lado de", "Atrás de", "Em cima de"],
+      "correctAnswer": "Atrás de"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "I downloaded this app yesterday (present perfect context).",
+        "I have downloaded this app.",
+        "I have download this app.",
+        "I am downloaded this app."
+      ],
+      "correctAnswer": "I have downloaded this app."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which of these is NOT a technology verb?",
+      "options": ["send", "receive", "connect", "sleep"],
+      "correctAnswer": "sleep"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with the article:",
+      "options": [
+        "He is a engineer.",
+        "He is an engineer.",
+        "He is engineering.",
+        "He is engineer."
+      ],
+      "correctAnswer": "He is an engineer."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What is the difference between 'for' and 'since' in Present Perfect?",
+      "options": [
+        "'For' is used with a point in time; 'since' is used with a duration.",
+        "'For' is used with a duration; 'since' is used with a point in time.",
+        "They mean the same thing.",
+        "'For' is for the past; 'since' is for the future."
+      ],
+      "correctAnswer": "'For' is used with a duration; 'since' is used with a point in time."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'The bed is _____ the wardrobe and the window.'",
+      "correctAnswer": "between"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'I have _____ all my photos to the cloud.'",
+      "correctAnswer": "uploaded"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: '_____ you ever used a smart TV?'",
+      "correctAnswer": "Have"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'My sister works _____ a journalist for a big newspaper.'",
+      "correctAnswer": "as"
+    },
+    {
+      "id": 17,
+      "type": "fill-blank",
+      "question": "Complete: 'He has been the boss _____ January.'",
+      "correctAnswer": "since"
+    },
+    {
+      "id": 18,
+      "type": "complete",
+      "question": "'Where is the sofa?' — 'It is _____ the TV and the bookshelf.'",
+      "correctAnswer": "between"
+    },
+    {
+      "id": 19,
+      "type": "complete",
+      "question": "'Can I _____ this app for free?' — 'Yes, you can download it from the store.'",
+      "correctAnswer": "download"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela mora num apartamento com dois quartos.'",
+      "correctAnswer": "she lives in an apartment with two bedrooms"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'colleague' mean?",
+      "options": ["Gerente", "Colega de trabalho", "Diretor", "Sócio"],
+      "correctAnswer": "Colega de trabalho"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'remote work' mean?",
+      "options": ["Trabalho presencial", "Trabalho em turno noturno", "Trabalho remoto / home office", "Trabalho temporário"],
+      "correctAnswer": "Trabalho remoto / home office"
+    },
+    {
+      "id": 3,
+      "type": "vocabulary",
+      "question": "What does 'charger' mean in a technology context?",
+      "options": ["Cabo de dados", "Carregador (de celular/tablet)", "Bateria extra", "Adaptador de tomada"],
+      "correctAnswer": "Carregador (de celular/tablet)"
+    },
+    {
+      "id": 4,
+      "type": "vocabulary",
+      "question": "What does 'notification' mean?",
+      "options": ["Mensagem privada", "Notificação / Aviso do sistema", "Chamada de vídeo", "Atualização de software"],
+      "correctAnswer": "Notificação / Aviso do sistema"
+    },
+    {
+      "id": 5,
+      "type": "vocabulary",
+      "question": "What does 'above' mean?",
+      "options": ["Abaixo de", "Do lado de", "Atrás de", "Acima de / Por cima de"],
+      "correctAnswer": "Acima de / Por cima de"
+    },
+    {
+      "id": 6,
+      "type": "vocabulary",
+      "question": "What does 'full-time' mean in a work context?",
+      "options": ["Trabalho de meio período", "Trabalho temporário", "Trabalho em tempo integral", "Trabalho freelancer"],
+      "correctAnswer": "Trabalho em tempo integral"
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which word describes a piece of furniture you sleep on?",
+      "options": ["sofa", "shelf", "bed", "curtain"],
+      "correctAnswer": "bed"
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which room is typically used for cooking?",
+      "options": ["bedroom", "living room", "bathroom", "kitchen"],
+      "correctAnswer": "kitchen"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does 'I have used this app' mean in Portuguese?",
+      "options": [
+        "Eu uso esse aplicativo.",
+        "Eu usarei esse aplicativo.",
+        "Eu já usei esse aplicativo.",
+        "Eu estava usando esse aplicativo."
+      ],
+      "correctAnswer": "Eu já usei esse aplicativo."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'since' correctly?",
+      "options": [
+        "I have lived here since five years.",
+        "I have lived here since 2015.",
+        "I have lived here since a long time.",
+        "I have lived here since three months."
+      ],
+      "correctAnswer": "I have lived here since 2015."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence correctly uses Present Perfect to talk about work experience?",
+      "options": [
+        "She has worked at this company for five years.",
+        "She worked at this company for five years.",
+        "She is working at this company since five years.",
+        "She works at this company since five years."
+      ],
+      "correctAnswer": "She has worked at this company for five years."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which question is correct to ask at a job interview?",
+      "options": [
+        "What do you work?",
+        "What is your work?",
+        "Can you tell me about your work experience?",
+        "Where is your job?"
+      ],
+      "correctAnswer": "Can you tell me about your work experience?"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ no furniture in the room yet.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 14,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ received the message yet.'",
+      "correctAnswer": "hasn't"
+    },
+    {
+      "id": 15,
+      "type": "fill-blank",
+      "question": "Complete: 'He got the job after a successful _____.'",
+      "correctAnswer": "interview"
+    },
+    {
+      "id": 16,
+      "type": "complete",
+      "question": "'Have you _____ sent an email to your boss?' — 'Yes, I have.'",
+      "correctAnswer": "ever"
+    },
+    {
+      "id": 17,
+      "type": "complete",
+      "question": "'How long have you been a nurse?' — 'I have been a nurse _____ ten years.'",
+      "correctAnswer": "for"
+    },
+    {
+      "id": 18,
+      "type": "translate",
+      "question": "Translate to English: 'O banheiro fica atrás do quarto.'",
+      "correctAnswer": "the bathroom is behind the bedroom"
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Você pode me enviar o arquivo por email?'",
+      "correctAnswer": "can you send me the file by email?"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Translate to English: 'Ela trabalha como professora há cinco anos.'",
+      "correctAnswer": "she has worked as a teacher for five years"
+    }
+  ]
+}
