@@ -755,135 +755,44 @@ const podcastsList = {
 
 let currentPodcast = null;
 
-// Lista de slides disponíveis por nível
+// Lista de slides disponíveis por nível (atualizada automaticamente)
 const slidesList = {
     seed: [
-        {
-            id: 2,
-            title: 'Lesson 02 - Numbers & Age',
-            description: 'Learn numbers, ages, and how to talk about age in English',
-            pdfFile: 'aulas/Seed/slide/Seed_Lesson02.pdf'
-        },
-        {
-            id: 3,
-            title: 'Lesson 03 - Family & Relationships',
-            description: 'Vocabulary and expressions about family members and relationships',
-            pdfFile: 'aulas/Seed/slide/Seed_Lesson03.pdf'
-        },
-        {
-            id: 4,
-            title: 'Lesson 04 - Daily Routines',
-            description: 'Present simple tense and daily routine vocabulary',
-            pdfFile: 'aulas/Seed/slide/Seed_Lesson04.pdf'
-        },
-        {
-            id: 5,
-            title: 'Lesson 05 - Foods & Meals',
-            description: 'Present continuous and food vocabulary',
-            pdfFile: 'aulas/Seed/slide/Seed_Lesson05.pdf'
-        },
-        {
-            id: 6,
-            title: 'Lesson 06 - Places in the City',
-            description: 'Vocabulary for places in the city and giving directions',
-            pdfFile: 'aulas/Seed/slide/Seed - Lesson06.pdf'
-        },
-        {
-            id: 7,
-            title: 'Lesson 07 - Free Time & Hobbies',
-            description: 'Talking about free time activities and hobbies',
-            pdfFile: 'aulas/Seed/slide/Seed - Lesson07.pdf'
-        },
-        {
-            id: 8,
-            title: 'Lesson 08 - Clothes & Shopping',
-            description: 'Clothing vocabulary and shopping expressions',
-            pdfFile: 'aulas/Seed/slide/Seed - Lesson08.pdf'
-        },
-        {
-            id: 9,
-            title: 'Lesson 09 - Weather & Seasons',
-            description: 'Weather vocabulary and describing seasons',
-            pdfFile: 'aulas/Seed/slide/Seed - Lesson09.pdf'
-        }
+        { id: 2, title: 'Lesson 02 - Numbers & Age', description: 'Learn numbers, ages, and how to talk about age in English', pdfFile: 'aulas/Seed/slide/Seed_Lesson02.pdf' },
+        { id: 3, title: 'Lesson 03 - Family & Relationships', description: 'Vocabulary and expressions about family members and relationships', pdfFile: 'aulas/Seed/slide/Seed_Lesson03.pdf' },
+        { id: 4, title: 'Lesson 04 - Daily Routines', description: 'Present simple tense and daily routine vocabulary', pdfFile: 'aulas/Seed/slide/Seed_Lesson04.pdf' },
+        { id: 5, title: 'Lesson 05 - Foods & Meals', description: 'Present continuous and food vocabulary', pdfFile: 'aulas/Seed/slide/Seed_Lesson05.pdf' },
+        { id: 6, title: 'Lesson 06 - Places in the City', description: 'Vocabulary for places in the city and giving directions', pdfFile: 'aulas/Seed/slide/Seed_Lesson06.pdf' },
+        { id: 7, title: 'Lesson 07 - Free Time & Hobbies', description: 'Talking about free time activities and hobbies', pdfFile: 'aulas/Seed/slide/Seed_Lesson07.pdf' },
+        { id: 8, title: 'Lesson 08 - Clothes & Shopping', description: 'Clothing vocabulary and shopping expressions', pdfFile: 'aulas/Seed/slide/Seed_Lesson08.pdf' },
+        { id: 9, title: 'Lesson 09 - Weather & Seasons', description: 'Weather vocabulary and describing seasons', pdfFile: 'aulas/Seed/slide/Seed_Lesson09.pdf' },
+        { id: 10, title: 'Lesson 10 - Health & Habits', description: 'Health vocabulary and talking about routines', pdfFile: 'aulas/Seed/slide/Seed_Lesson10.pdf' },
+        { id: 11, title: 'Lesson 11 - Review & Practice', description: 'Consolidation activities and review', pdfFile: 'aulas/Seed/slide/Seed_Lesson11.pdf' }
     ],
     root: [
-        {
-            id: 2,
-            title: 'Lesson 02 - Past Experiences',
-            description: 'Simple past tense and talking about past events',
-            pdfFile: 'aulas/Root/slide/Root_Lesson02.pdf'
-        },
-        {
-            id: 3,
-            title: 'Lesson 03 - Travel & Adventures',
-            description: 'Travel vocabulary and past experiences with irregular verbs',
-            pdfFile: 'aulas/Root/slide/Root_Lesson03.pdf'
-        },
-        {
-            id: 4,
-            title: 'Lesson 04 - Technology & Communication',
-            description: 'Technology vocabulary and present perfect tense',
-            pdfFile: 'aulas/Root/slide/Root _Lesson04.pdf'
-        },
-        {
-            id: 5,
-            title: 'Lesson 05 - Appearance & Personality',
-            description: 'Vocabulary related to appearance and personality traits',
-            pdfFile: 'aulas/Root/slide/Root_Lesson05.pdf'
-        },
-        {
-            id: 6,
-            title: 'Lesson 06 - Future Plans',
-            description: 'Future tenses and expressions for talking about plans',
-            pdfFile: 'aulas/Root/slide/Root - Lesson06.pdf'
-        },
-        {
-            id: 7,
-            title: 'Lesson 07 - Health & Lifestyle',
-            description: 'Health vocabulary and talking about habits and lifestyle',
-            pdfFile: 'aulas/Root/slide/Root - Lesson07.pdf'
-        },
-        {
-            id: 8,
-            title: 'Lesson 08 - Shopping & Money',
-            description: 'Shopping vocabulary and expressions for buying and selling',
-            pdfFile: 'aulas/Root/slide/Root - Lesson08.pdf'
-        }
+        { id: 2, title: 'Lesson 02 - Past Experiences', description: 'Simple past tense and talking about past events', pdfFile: 'aulas/Root/slide/Root_Lesson02.pdf' },
+        { id: 3, title: 'Lesson 03 - Travel & Adventures', description: 'Travel vocabulary and past experiences with irregular verbs', pdfFile: 'aulas/Root/slide/Root_Lesson03.pdf' },
+        { id: 4, title: 'Lesson 04 - Technology & Communication', description: 'Technology vocabulary and present perfect tense', pdfFile: 'aulas/Root/slide/Root_Lesson04.pdf' },
+        { id: 5, title: 'Lesson 05 - Appearance & Personality', description: 'Vocabulary related to appearance and personality traits', pdfFile: 'aulas/Root/slide/Root_Lesson05.pdf' },
+        { id: 6, title: 'Lesson 06 - Future Plans', description: 'Future tenses and expressions for talking about plans', pdfFile: 'aulas/Root/slide/Root_Lesson06.pdf' },
+        { id: 7, title: 'Lesson 07 - Health & Lifestyle', description: 'Health vocabulary and talking about habits and lifestyle', pdfFile: 'aulas/Root/slide/Root_Lesson07.pdf' },
+        { id: 8, title: 'Lesson 08 - Shopping & Money', description: 'Shopping vocabulary and expressions for buying and selling', pdfFile: 'aulas/Root/slide/Root_Lesson08.pdf' },
+        { id: 9, title: 'Lesson 09 - Media & Entertainment', description: 'Talking about media, films and entertainment', pdfFile: 'aulas/Root/slide/Root_Lesson09.pdf' },
+        { id: 10, title: 'Lesson 10 - Work & Jobs', description: 'Work vocabulary and talking about jobs', pdfFile: 'aulas/Root/slide/Root_Lesson10.pdf' },
+        { id: 11, title: 'Lesson 11 - Society & Culture', description: 'Discussing social topics and cultural differences', pdfFile: 'aulas/Root/slide/Root_Lesson11.pdf' }
     ],
     leaf: [
-        {
-            id: 1,
-            title: 'Lesson 01 - Career Advice & Modal Verbs',
-            description: 'Introduction to career advice vocabulary and modal verbs usage',
-            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01.pdf'
-        },
-        {
-            id: 2,
-            title: 'Lesson 02 - Advanced Conversations',
-            description: 'Complex sentence structures and conversational expressions',
-            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson02.pdf'
-        },
-        {
-            id: 3,
-            title: 'Lesson 03 - Comparisons and connectors',
-            description: 'Comparative forms, and connectors for complex sentences',
-            pdfFile: 'aulas/Leaf/slide/Leaf_Lesson03.pdf'
-        }
+        { id: 1, title: 'Lesson 01 - Career Advice & Modal Verbs', description: 'Introduction to career advice vocabulary and modal verbs usage', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01.pdf' },
+        { id: 2, title: 'Lesson 02 - Advanced Conversations', description: 'Complex sentence structures and conversational expressions', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson02.pdf' },
+        { id: 3, title: 'Lesson 03 - Comparisons and connectors', description: 'Comparative forms, and connectors for complex sentences', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson03.pdf' },
+        { id: 4, title: 'Lesson 04 - Debates & Discussion', description: 'Techniques for debating and structuring arguments', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson04.pdf' },
+        { id: 5, title: 'Lesson 05 - Idioms & Expressions', description: 'Common idioms and useful expressions', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson05.pdf' },
+        { id: 6, title: 'Lesson 06 - Listening Practice', description: 'Listening strategies and practice activities', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson06.pdf' },
+        { id: 7, title: 'Lesson 07 - Fluency Boosters', description: 'Exercises to improve speaking fluency', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson07.pdf' }
     ],
     fruit: [
-        {
-            id: 1,
-            title: 'Lesson 01 - Advanced Topics',
-            description: 'Complex grammatical structures and advanced vocabulary',
-            pdfFile: 'aulas/Fruit/slide/Fruit_Lesson01.pdf'
-        },
-        {
-            id: 2,
-            title: 'Lesson 02 - Professional Communication',
-            description: 'Business English and formal communication skills',
-            pdfFile: 'aulas/Fruit/slide/Fruit _Lesson02.pdf'
-        }
+        { id: 1, title: 'Lesson 01 - Advanced Topics', description: 'Complex grammatical structures and advanced vocabulary', pdfFile: 'aulas/Fruit/slide/Fruit_Lesson01.pdf' },
+        { id: 2, title: 'Lesson 02 - Professional Communication', description: 'Business English and formal communication skills', pdfFile: 'aulas/Fruit/slide/Fruit_Lesson02.pdf' }
     ]
 };
 
