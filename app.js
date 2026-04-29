@@ -32,12 +32,12 @@ const exerciseFilesByLevel = {
 const testFilesByLevel = {
     seed: {
         file: 'test-seed.json',
-        key: 'test-seed',
+        key: 'monday',
         label: 'Seed Test'
     },
     root: {
         file: 'test-root.json',
-        key: 'test-root',
+        key: 'monday',
         label: 'Root Test'
     }
 };
@@ -255,7 +255,7 @@ async function loadLevelTest() {
         dataFile: testConfig.file,
         entryKey: testConfig.key,
         activityLabel: testConfig.label,
-        worksheetId: `${currentLevel}_${testConfig.key}`
+        worksheetId: `${currentLevel}_test`
     });
 }
 
