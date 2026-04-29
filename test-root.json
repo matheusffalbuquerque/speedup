@@ -1,0 +1,175 @@
+{
+  "lessons": [1, 2, 3, 4, 5, 6, 7, 8],
+  "level": "root",
+  "topic": "Final Review Test",
+  "notes": "20-question final review. Question 20 is an open writing task and should be corrected manually.",
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "We travelled by plane and arrived last night.",
+        "We travelled on plane and arrived in last night.",
+        "We travel by plane and arrived last night.",
+        "We were travel by plane and arrived last night."
+      ],
+      "correctAnswer": "We travelled by plane and arrived last night."
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Complete: 'She didn't _____ the email because her internet was down.'",
+      "correctAnswer": "send"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Translate to English: 'Eu fiz uma reserva para duas pessoas ontem à noite.'",
+      "correctAnswer": "i made a reservation for two people last night"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about personality:",
+      "options": [
+        "My boss is very kind, but he is also shy in meetings.",
+        "My boss is very kindness, but he is also shy on meetings.",
+        "My boss very kind, but he also shy in meetings.",
+        "My boss is very kind, but he also is shy at meetings always."
+      ],
+      "correctAnswer": "My boss is very kind, but he is also shy in meetings."
+    },
+    {
+      "id": 5,
+      "type": "complete",
+      "question": "Complete: 'There _____ two shelves above the desk in my home office.'",
+      "correctAnswer": "are"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which option completes the sentence correctly? 'I'd love to go to the barbecue, but I can't _____.",
+      "options": ["make it", "made it", "making it", "to make it"],
+      "correctAnswer": "make it"
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'He works _____ a designer in a small office downtown.'",
+      "correctAnswer": "as"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Ela estava no aeroporto com a bagagem dela.'",
+      "correctAnswer": "she was at the airport with her luggage|she was at the airport with her baggage"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Did you went to the interview yesterday?",
+        "Did you go to the interview yesterday?",
+        "Were you go to the interview yesterday?",
+        "Do you went to the interview yesterday?"
+      ],
+      "correctAnswer": "Did you go to the interview yesterday?"
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: 'The router is _____ the computer and the printer.'",
+      "correctAnswer": "between"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "What does 'promotion' mean in a work context?",
+      "options": [
+        "Demissão",
+        "Mudança de casa",
+        "Promoção no trabalho",
+        "Entrevista online"
+      ],
+      "correctAnswer": "Promoção no trabalho"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Translate to English: 'Nós baixamos o aplicativo e enviamos a mensagem.'",
+      "correctAnswer": "we downloaded the app and sent the message|we downloaded the application and sent the message"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which sentence about the house is correct?",
+      "options": [
+        "There is a sofa in front of the TV.",
+        "There are a sofa in front of the TV.",
+        "There is sofa in the front of TV.",
+        "There are sofa in front of the TV."
+      ],
+      "correctAnswer": "There is a sofa in front of the TV."
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'My colleague _____ late to work yesterday because he missed the bus.'",
+      "correctAnswer": "was"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Which sentence is the best invitation?",
+      "options": [
+        "Would you like to come to dinner on Friday?",
+        "Do you like come to dinner on Friday?",
+        "Would you like coming to dinner on Friday?",
+        "You would like to come dinner on Friday?"
+      ],
+      "correctAnswer": "Would you like to come to dinner on Friday?"
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'I usually check my _____ before I start working every morning.'",
+      "correctAnswer": "email|emails"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Ele é amigável, inteligente e muito bom com clientes.'",
+      "correctAnswer": "he is friendly, smart, and very good with clients|he's friendly, smart, and very good with clients|he is friendly, intelligent, and very good with clients"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I am going to upload the file after lunch.",
+        "I going to upload the file after lunch.",
+        "I am go to upload the file after lunch.",
+        "I am going upload the file after lunch."
+      ],
+      "correctAnswer": "I am going to upload the file after lunch."
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'No fim de semana, eu gosto de descansar em casa e assistir filmes.'",
+      "correctAnswer": "on the weekend, i like to relax at home and watch movies|on weekends, i like to relax at home and watch movies|at the weekend, i like to relax at home and watch movies"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Write a short paragraph in English about your daily routine and work or study habits. Use 4 to 6 sentences and include at least 3 of these ideas: wake up time, transportation, work/study, technology, lunch, evening routine. (Manual correction)",
+      "correctAnswer": "manual correction"
+    }
+  ],
+  "tuesday": [],
+  "wednesday": [],
+  "thursday": [],
+  "friday": []
+}

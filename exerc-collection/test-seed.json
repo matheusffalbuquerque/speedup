@@ -1,0 +1,175 @@
+{
+  "lessons": [1, 2, 3, 4, 5, 6, 7, 8],
+  "level": "seed",
+  "topic": "Final Review Test",
+  "notes": "20-question final review. Question 20 is an open writing task and should be corrected manually.",
+  "monday": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "She is my sister and she is 18 years old.",
+        "She are my sister and she have 18 years old.",
+        "She is my sister and she have 18 years old.",
+        "She am my sister and she is 18 years old."
+      ],
+      "correctAnswer": "She is my sister and she is 18 years old."
+    },
+    {
+      "id": 2,
+      "type": "fill-blank",
+      "question": "Complete: 'My father _____ coffee in the morning, but my mother doesn't.'",
+      "correctAnswer": "likes"
+    },
+    {
+      "id": 3,
+      "type": "translate",
+      "question": "Translate to English: 'Eu acordo às 6 da manhã e tomo café da manhã às 7.'",
+      "correctAnswer": "i wake up at 6 in the morning and have breakfast at 7|i wake up at 6 a.m. and have breakfast at 7|i wake up at 6 in the morning and eat breakfast at 7"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which question is correct to ask about food preference?",
+      "options": [
+        "Does you like bread?",
+        "Do you likes bread?",
+        "Do you like bread?",
+        "Are you like bread?"
+      ],
+      "correctAnswer": "Do you like bread?"
+    },
+    {
+      "id": 5,
+      "type": "complete",
+      "question": "Complete: 'My brother is wearing a blue _____ and black shoes.'",
+      "correctAnswer": "shirt"
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about the city:",
+      "options": [
+        "There are a pharmacy next to the bank.",
+        "There is a pharmacy next to the bank.",
+        "There is pharmacy next the bank.",
+        "There are pharmacy next to bank."
+      ],
+      "correctAnswer": "There is a pharmacy next to the bank."
+    },
+    {
+      "id": 7,
+      "type": "fill-blank",
+      "question": "Complete: 'In winter, it is usually very _____ and sometimes snowy.'",
+      "correctAnswer": "cold"
+    },
+    {
+      "id": 8,
+      "type": "translate",
+      "question": "Translate to English: 'Ela tem dois filhos e um cachorro.'",
+      "correctAnswer": "she has two children and a dog|she's got two children and a dog|she has two kids and a dog"
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He study at night and watches TV in the afternoon.",
+        "He studies at night and watches TV in the afternoon.",
+        "He studies at night and watch TV in the afternoon.",
+        "He studying at night and watches TV in the afternoon."
+      ],
+      "correctAnswer": "He studies at night and watches TV in the afternoon."
+    },
+    {
+      "id": 10,
+      "type": "fill-blank",
+      "question": "Complete: '_____ she like juice or water?'",
+      "correctAnswer": "Does"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "What does 'foggy' mean?",
+      "options": ["Ensolarado", "Ventoso", "Com neblina", "Chuvoso"],
+      "correctAnswer": "Com neblina"
+    },
+    {
+      "id": 12,
+      "type": "translate",
+      "question": "Translate to English: 'O supermercado fica entre a escola e o hospital.'",
+      "correctAnswer": "the supermarket is between the school and the hospital"
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the possessive adjective correctly?",
+      "options": [
+        "I am with she mother.",
+        "This is her mother.",
+        "This is hers mother.",
+        "She is mys sister."
+      ],
+      "correctAnswer": "This is her mother."
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'We _____ lunch at noon.'",
+      "correctAnswer": "have"
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "Choose the best answer: 'What's the weather like today?'",
+      "options": [
+        "It's wearing a coat.",
+        "It's sunny and warm.",
+        "It's near the park.",
+        "It's a blue shirt."
+      ],
+      "correctAnswer": "It's sunny and warm."
+    },
+    {
+      "id": 16,
+      "type": "fill-blank",
+      "question": "Complete: 'They _____ from Brazil.'",
+      "correctAnswer": "are"
+    },
+    {
+      "id": 17,
+      "type": "translate",
+      "question": "Translate to English: 'Eu não gosto de café, mas gosto de chá.'",
+      "correctAnswer": "i don't like coffee, but i like tea|i do not like coffee, but i like tea"
+    },
+    {
+      "id": 18,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "The park is on Main Street, near the bank.",
+        "The park are on Main Street, near the bank.",
+        "The park is in Main Street, near bank.",
+        "The park near the bank on Main Street is."
+      ],
+      "correctAnswer": "The park is on Main Street, near the bank."
+    },
+    {
+      "id": 19,
+      "type": "translate",
+      "question": "Translate to English: 'Ele está usando uma jaqueta preta porque está frio.'",
+      "correctAnswer": "he is wearing a black jacket because it is cold|he's wearing a black jacket because it's cold"
+    },
+    {
+      "id": 20,
+      "type": "translate",
+      "question": "Write a short paragraph in English about your daily routine. Use 4 to 6 sentences and include at least 3 of these ideas: wake up, have breakfast, work/study, lunch, dinner, at night. (Manual correction)",
+      "correctAnswer": "manual correction"
+    }
+  ],
+  "tuesday": [],
+  "wednesday": [],
+  "thursday": [],
+  "friday": []
+}

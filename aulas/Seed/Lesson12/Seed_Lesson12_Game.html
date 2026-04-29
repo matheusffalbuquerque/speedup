@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seed Review Roulette | SpeakUp</title>
+  <style>
+    :root {
+      --bg: #10131f;
+      --panel: #171c2c;
+      --panel-2: #20283e;
+      --text: #f7f9ff;
+      --muted: #aeb8ce;
+      --line: rgba(255, 255, 255, .12);
+      --accent: #ffd166;
+      --accent-2: #5ad7ff;
+      --good: #68e391;
+      --danger: #ff7b7b;
+      --shadow: 0 18px 48px rgba(0, 0, 0, .34);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow: hidden;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(90, 215, 255, .2), transparent 27%),
+        radial-gradient(circle at 84% 12%, rgba(255, 209, 102, .18), transparent 24%),
+        linear-gradient(140deg, #0b0e17, #12172a 48%, #0e1722);
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .app {
+      height: 100dvh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 12px;
+      padding: clamp(10px, 1.6vw, 18px);
+      min-height: 0;
+    }
+
+    .topbar {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(23, 28, 44, .82);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-size: clamp(.64rem, 1.2vw, .74rem);
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: clamp(1.16rem, 2.4vw, 1.85rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .status-pill {
+      flex-shrink: 0;
+      min-width: 126px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 999px;
+      padding: 9px 13px;
+      background: rgba(255, 255, 255, .07);
+      font-size: clamp(.75rem, 1.4vw, .9rem);
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .layout {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(360px, .88fr) minmax(420px, 1.12fr);
+      gap: 12px;
+    }
+
+    .wheel-panel,
+    .topic-panel {
+      min-height: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(23, 28, 44, .88);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .wheel-panel {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(10px, 1.6vw, 16px);
+    }
+
+    .wheel-stage {
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 8px;
+    }
+
+    .wheel-wrap {
+      width: min(100%, 58vh, 560px);
+      aspect-ratio: 1;
+      position: relative;
+      border-radius: 50%;
+      filter: drop-shadow(0 22px 30px rgba(0, 0, 0, .28));
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .pointer {
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 17px solid transparent;
+      border-right: 17px solid transparent;
+      border-top: 32px solid #ffffff;
+      z-index: 3;
+      filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .4));
+    }
+
+    .hub {
+      position: absolute;
+      inset: 38%;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .34);
+      background:
+        radial-gradient(circle, #fff6c9, #ffd166 68%, #bc7d18);
+      color: #201a08;
+      font-weight: 900;
+      font-size: clamp(.72rem, 1.9vw, 1rem);
+      text-align: center;
+      box-shadow: inset 0 0 22px rgba(255, 255, 255, .38), 0 10px 30px rgba(0, 0, 0, .25);
+      z-index: 2;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding-top: 10px;
+    }
+
+    .btn {
+      min-height: 42px;
+      border: 0;
+      border-radius: 12px;
+      padding: 10px 14px;
+      cursor: pointer;
+      font-weight: 900;
+      color: #0f1421;
+      transition: transform .16s ease, opacity .16s ease, filter .16s ease;
+    }
+
+    .btn:hover:not(:disabled) {
+      transform: translateY(-1px);
+      filter: brightness(1.06);
+    }
+
+    .btn:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .btn:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+
+    .btn-spin {
+      background: linear-gradient(135deg, #ffd166, #ffb347);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .topic-panel {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-width: 0;
+    }
+
+    .result-head {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: clamp(14px, 2vw, 18px);
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, .08), transparent),
+        rgba(255, 255, 255, .03);
+    }
+
+    .lesson-badge {
+      width: clamp(48px, 7vw, 62px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--topic-color, var(--accent-2));
+      color: #09111f;
+      font-weight: 950;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35);
+    }
+
+    .result-title {
+      min-width: 0;
+    }
+
+    .result-title h2 {
+      font-size: clamp(1.28rem, 3.1vw, 2rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+      margin-bottom: 5px;
+    }
+
+    .result-title p {
+      color: var(--muted);
+      font-size: clamp(.82rem, 1.5vw, .96rem);
+      line-height: 1.35;
+    }
+
+    .content-grid {
+      min-height: 0;
+      overflow: auto;
+      padding: clamp(12px, 1.8vw, 16px);
+      display: grid;
+      grid-template-columns: .94fr 1.06fr;
+      gap: 12px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, .24) transparent;
+    }
+
+    .block {
+      min-width: 0;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255, 255, 255, .055);
+    }
+
+    .block h3 {
+      color: #ffffff;
+      font-size: clamp(.78rem, 1.4vw, .9rem);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 9px;
+    }
+
+    .prompt {
+      font-size: clamp(1rem, 2.2vw, 1.4rem);
+      line-height: 1.22;
+      font-weight: 850;
+      color: #ffffff;
+    }
+
+    .tips {
+      display: grid;
+      gap: 8px;
+    }
+
+    .tip {
+      border-left: 3px solid var(--topic-color, var(--accent));
+      background: rgba(0, 0, 0, .15);
+      border-radius: 10px;
+      padding: 9px 10px;
+      color: #e9eefc;
+      font-size: clamp(.82rem, 1.45vw, .94rem);
+      line-height: 1.36;
+    }
+
+    .chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: rgba(255, 255, 255, .07);
+      color: #f7f9ff;
+      font-size: clamp(.76rem, 1.35vw, .88rem);
+      font-weight: 750;
+    }
+
+    .questions {
+      display: grid;
+      gap: 8px;
+    }
+
+    .question {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+      align-items: start;
+      line-height: 1.35;
+      color: #eef3ff;
+      font-size: clamp(.82rem, 1.45vw, .94rem);
+    }
+
+    .q-num {
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--topic-color, var(--accent-2));
+      color: #07111d;
+      font-size: .72rem;
+      font-weight: 950;
+    }
+
+    .frames {
+      display: grid;
+      gap: 7px;
+      font-size: clamp(.8rem, 1.4vw, .92rem);
+      line-height: 1.34;
+      color: #eaf0ff;
+    }
+
+    .frame {
+      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 8px 9px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, .16);
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .panel-footer {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 14px;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .035);
+    }
+
+    .history {
+      min-width: 0;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .history-label {
+      flex-shrink: 0;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .history-items {
+      min-width: 0;
+      display: flex;
+      gap: 6px;
+      overflow: hidden;
+    }
+
+    .history-item {
+      flex-shrink: 0;
+      max-width: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-radius: 999px;
+      padding: 6px 9px;
+      background: rgba(255, 255, 255, .08);
+      color: #e9eefc;
+      font-size: .76rem;
+      font-weight: 800;
+    }
+
+    .mini-action {
+      flex-shrink: 0;
+      min-height: 32px;
+      border-radius: 999px;
+      padding: 6px 11px;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(255, 255, 255, .08);
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 850;
+    }
+
+    .spin-flash {
+      animation: flash .46s ease;
+    }
+
+    @keyframes flash {
+      0% { transform: scale(.98); filter: brightness(.8); }
+      65% { transform: scale(1.02); filter: brightness(1.18); }
+      100% { transform: scale(1); filter: brightness(1); }
+    }
+
+    @media (max-width: 900px) {
+      .app {
+        gap: 9px;
+        padding: 9px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(230px, 42dvh) 1fr;
+        gap: 9px;
+      }
+
+      .wheel-panel {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .wheel-stage {
+        padding: 2px;
+      }
+
+      .wheel-wrap {
+        width: min(100%, 38dvh, 78vw);
+      }
+
+      .controls {
+        width: min(156px, 30vw);
+        align-self: center;
+        grid-template-columns: 1fr;
+        padding-top: 0;
+      }
+
+      .btn {
+        min-height: 44px;
+        padding: 9px 10px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .topbar {
+        min-height: 52px;
+        padding: 10px 11px;
+      }
+
+      .status-pill {
+        min-width: 84px;
+        padding: 8px 10px;
+      }
+
+      .layout {
+        grid-template-rows: minmax(204px, 37dvh) 1fr;
+      }
+
+      .wheel-panel {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+      }
+
+      .wheel-wrap {
+        width: min(78vw, 31dvh);
+      }
+
+      .controls {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .result-head {
+        padding: 10px;
+        gap: 9px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 9px;
+      }
+
+      .wide {
+        grid-column: auto;
+      }
+
+      .panel-footer {
+        padding: 8px 10px;
+      }
+
+      .history-label {
+        display: none;
+      }
+    }
+
+    @media (max-height: 680px) and (min-width: 901px) {
+      .app {
+        gap: 8px;
+        padding: 8px;
+      }
+
+      .topbar {
+        min-height: 50px;
+        padding: 9px 14px;
+      }
+
+      .wheel-panel {
+        padding: 10px;
+      }
+
+      .controls {
+        padding-top: 7px;
+      }
+
+      .result-head {
+        padding: 12px;
+      }
+
+      .content-grid {
+        padding: 10px;
+        gap: 9px;
+      }
+
+      .block {
+        padding: 10px;
+      }
+
+      .panel-footer {
+        min-height: 42px;
+        padding: 7px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="kicker">SpeakUp Seed Review</div>
+        <h1>Conversation Roulette</h1>
+      </div>
+      <div class="status-pill" id="roundStatus">Ready</div>
+    </header>
+
+    <section class="layout" aria-label="Seed review conversation roulette">
+      <div class="wheel-panel">
+        <div class="wheel-stage">
+          <div class="wheel-wrap" id="wheelWrap">
+            <div class="pointer" aria-hidden="true"></div>
+            <canvas id="wheelCanvas" aria-label="Seed lesson topics roulette"></canvas>
+            <div class="hub">SPIN</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="btn btn-spin" id="spinButton" type="button">Spin</button>
+          <button class="btn btn-secondary" id="resetButton" type="button">Reset</button>
+        </div>
+      </div>
+
+      <article class="topic-panel" id="topicPanel" style="--topic-color: #5ad7ff;">
+        <div class="result-head">
+          <div class="lesson-badge" id="lessonBadge">L1</div>
+          <div class="result-title">
+            <h2 id="topicTitle">Greetings & Introductions</h2>
+            <p id="topicSubtitle">Say hello, introduce yourself, and ask simple personal questions.</p>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="block">
+            <h3>Conversation topic</h3>
+            <p class="prompt" id="topicPrompt">Introduce yourself and ask another person two basic questions.</p>
+          </section>
+
+          <section class="block">
+            <h3>Tips</h3>
+            <div class="tips" id="tipsList"></div>
+          </section>
+
+          <section class="block">
+            <h3>Useful words</h3>
+            <div class="chip-list" id="wordList"></div>
+          </section>
+
+          <section class="block">
+            <h3>Questions</h3>
+            <div class="questions" id="questionList"></div>
+          </section>
+
+          <section class="block wide">
+            <h3>Sentence frames</h3>
+            <div class="frames" id="frameList"></div>
+          </section>
+        </div>
+
+        <footer class="panel-footer">
+          <div class="history">
+            <span class="history-label">History</span>
+            <div class="history-items" id="historyItems"></div>
+          </div>
+          <button class="mini-action" id="newPromptButton" type="button">New prompt</button>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const topics = [
+      {
+        lesson: 1,
+        label: "Greetings",
+        title: "Greetings & Introductions",
+        subtitle: "Say hello, introduce yourself, and ask simple personal questions.",
+        prompt: "Introduce yourself and ask another person two basic questions.",
+        color: "#5ad7ff",
+        words: ["hello", "hi", "goodbye", "name", "nice to meet you", "how are you"],
+        tips: [
+          "Start with a greeting before asking a question.",
+          "Use the verb to be: I am, you are, he is, she is.",
+          "Answer with short, clear sentences."
+        ],
+        questions: [
+          "What is your name?",
+          "How are you today?",
+          "Where are you from?"
+        ],
+        frames: [
+          "Hello. My name is ____.",
+          "I am ____.",
+          "Nice to meet you.",
+          "How are you?"
+        ]
+      },
+      {
+        lesson: 2,
+        label: "Numbers",
+        title: "Numbers & Age",
+        subtitle: "Talk about numbers, age, birthdays, and simple prices.",
+        prompt: "Talk about your age, birthday, and three important numbers in your life.",
+        color: "#ffd166",
+        words: ["numbers", "age", "birthday", "year", "old", "young"],
+        tips: [
+          "Use I am + number + years old.",
+          "Say numbers slowly and clearly.",
+          "Use plus and minus for simple math."
+        ],
+        questions: [
+          "How old are you?",
+          "When is your birthday?",
+          "What is your favorite number?"
+        ],
+        frames: [
+          "I am ____ years old.",
+          "My birthday is in ____.",
+          "My favorite number is ____.",
+          "Ten plus five is fifteen."
+        ]
+      },
+      {
+        lesson: 3,
+        label: "Family",
+        title: "Family & Relationships",
+        subtitle: "Describe your family using possessives and simple sentences.",
+        prompt: "Describe your family and say who is important to you.",
+        color: "#ff8fab",
+        words: ["father", "mother", "brother", "sister", "parents", "family"],
+        tips: [
+          "Use my, your, his, her, our, and their.",
+          "Use This is my... for one person.",
+          "Use plural -s for more than one person."
+        ],
+        questions: [
+          "Do you have brothers or sisters?",
+          "Who is in your family?",
+          "Is your family big or small?"
+        ],
+        frames: [
+          "This is my ____.",
+          "I have ____ brother(s).",
+          "My family is ____.",
+          "Her name is ____."
+        ]
+      },
+      {
+        lesson: 4,
+        label: "Routine",
+        title: "Daily Routine",
+        subtitle: "Talk about what you do every day and when you do it.",
+        prompt: "Describe a normal day from morning to night.",
+        color: "#95d5b2",
+        words: ["wake up", "breakfast", "lunch", "dinner", "sleep", "work", "study"],
+        tips: [
+          "Use Simple Present for routines.",
+          "Use in the morning, in the afternoon, and at night.",
+          "Remember he/she + verb with -s."
+        ],
+        questions: [
+          "What time do you wake up?",
+          "What do you do in the morning?",
+          "Do you study or work at night?"
+        ],
+        frames: [
+          "I wake up at ____.",
+          "I work/study in the ____.",
+          "I have lunch at ____.",
+          "She sleeps at ____."
+        ]
+      },
+      {
+        lesson: 5,
+        label: "Food",
+        title: "Food & Drinks",
+        subtitle: "Talk about likes, dislikes, food, drinks, and meals.",
+        prompt: "Talk about three foods you like and one food you do not like.",
+        color: "#f4a261",
+        words: ["apple", "bread", "water", "juice", "coffee", "chicken", "rice"],
+        tips: [
+          "Use I like and I don't like.",
+          "Use Do you like...? to ask a question.",
+          "Use some with food and drinks when it sounds natural."
+        ],
+        questions: [
+          "What food do you like?",
+          "Do you like coffee?",
+          "What do you eat for breakfast?"
+        ],
+        frames: [
+          "I like ____.",
+          "I don't like ____.",
+          "Do you like ____?",
+          "Yes, I do. / No, I don't."
+        ]
+      },
+      {
+        lesson: 6,
+        label: "Clothes",
+        title: "Colors & Clothes",
+        subtitle: "Describe clothes, colors, and what people are wearing.",
+        prompt: "Describe what you are wearing today using colors.",
+        color: "#bdb2ff",
+        words: ["red", "blue", "green", "shirt", "pants", "dress", "shoes"],
+        tips: [
+          "Put the color before the noun: a blue shirt.",
+          "Use I am wearing for clothes now.",
+          "Use is for one item and are for plural items."
+        ],
+        questions: [
+          "What are you wearing today?",
+          "What is your favorite color?",
+          "Are your shoes black, white, or another color?"
+        ],
+        frames: [
+          "I am wearing ____.",
+          "She is wearing a ____.",
+          "My shoes are ____.",
+          "The ____ is red."
+        ]
+      },
+      {
+        lesson: 7,
+        label: "City",
+        title: "Places in the City",
+        subtitle: "Talk about locations using places and prepositions.",
+        prompt: "Describe your neighborhood and say where important places are.",
+        color: "#70d6ff",
+        words: ["school", "hospital", "supermarket", "restaurant", "park", "bank"],
+        tips: [
+          "Use There is for one place.",
+          "Use There are for two or more places.",
+          "Use near, next to, in, on, and at."
+        ],
+        questions: [
+          "Where is the nearest supermarket?",
+          "Is there a park near your house?",
+          "What places are on your street?"
+        ],
+        frames: [
+          "There is a ____ near my house.",
+          "There are two ____.",
+          "The bank is next to the ____.",
+          "It is on ____ street."
+        ]
+      },
+      {
+        lesson: 8,
+        label: "Weather",
+        title: "Weather & Seasons",
+        subtitle: "Describe the weather and talk about seasons.",
+        prompt: "Talk about today's weather and your favorite season.",
+        color: "#caffbf",
+        words: ["sunny", "rainy", "cold", "hot", "winter", "summer", "spring"],
+        tips: [
+          "Use It's + weather adjective.",
+          "Use in + season: in winter, in summer.",
+          "Connect weather and clothes when possible."
+        ],
+        questions: [
+          "What's the weather like today?",
+          "Do you prefer hot or cold weather?",
+          "What is your favorite season?"
+        ],
+        frames: [
+          "It's ____ today.",
+          "In summer, it is ____.",
+          "I like ____ weather.",
+          "I wear ____ when it is cold."
+        ]
+      },
+      {
+        lesson: 9,
+        label: "Hobbies",
+        title: "Hobbies & Free Time",
+        subtitle: "Talk about hobbies, free time, and frequency.",
+        prompt: "Talk about what you like to do in your free time.",
+        color: "#ffadad",
+        words: ["play", "watch", "listen", "read", "music", "movie", "sport"],
+        tips: [
+          "Use I like to + verb.",
+          "Use I enjoy + verb-ing.",
+          "Add always, sometimes, or never."
+        ],
+        questions: [
+          "What do you do in your free time?",
+          "Do you enjoy watching movies?",
+          "How often do you listen to music?"
+        ],
+        frames: [
+          "I like to ____.",
+          "I enjoy ____ing.",
+          "I sometimes ____.",
+          "I never ____ at work."
+        ]
+      },
+      {
+        lesson: 10,
+        label: "Shopping",
+        title: "Shopping & Money",
+        subtitle: "Talk about buying things, prices, and simple requests.",
+        prompt: "Choose something you want to buy and talk about the price.",
+        color: "#f7d794",
+        words: ["buy", "sell", "price", "cheap", "expensive", "money", "store"],
+        tips: [
+          "Use How much is it? for price.",
+          "Use Can I have...? for a polite request.",
+          "Use dollars after numbers: ten dollars."
+        ],
+        questions: [
+          "How much is this shirt?",
+          "Is it cheap or expensive?",
+          "What do you want to buy?"
+        ],
+        frames: [
+          "How much is this ____?",
+          "It is ____ dollars.",
+          "Can I have this ____, please?",
+          "This ____ is expensive."
+        ]
+      },
+      {
+        lesson: 11,
+        label: "Health",
+        title: "Body Parts & Health",
+        subtitle: "Talk about body parts, pain, and how you feel.",
+        prompt: "Explain a simple health problem and say how you feel.",
+        color: "#80ed99",
+        words: ["head", "arm", "leg", "hand", "foot", "sick", "doctor"],
+        tips: [
+          "Use My body part hurts for one part.",
+          "Use My eyes/feet/legs hurt for plural parts.",
+          "Use I have a... for illness."
+        ],
+        questions: [
+          "How do you feel today?",
+          "Does your head hurt?",
+          "When do you need a doctor?"
+        ],
+        frames: [
+          "My ____ hurts.",
+          "My ____ hurt.",
+          "I have a headache.",
+          "I don't feel well."
+        ]
+      },
+      {
+        lesson: 12,
+        label: "Goals",
+        title: "Review & Future Goals",
+        subtitle: "Talk about what you can do now and what you want to do next.",
+        prompt: "Talk about your English goal and one thing you will do to improve.",
+        color: "#9bf6ff",
+        words: ["future", "goal", "learn", "practice", "study", "improve", "speak"],
+        tips: [
+          "Use I want to + base verb.",
+          "Use I will + base verb.",
+          "Say one present habit and one future goal."
+        ],
+        questions: [
+          "What is your English goal?",
+          "What do you want to learn next?",
+          "What will you practice this week?"
+        ],
+        frames: [
+          "My goal is to ____.",
+          "I want to ____.",
+          "I will practice ____.",
+          "I won't give up."
+        ]
+      }
+    ];
+
+    const canvas = document.getElementById("wheelCanvas");
+    const ctx = canvas.getContext("2d");
+    const wheelWrap = document.getElementById("wheelWrap");
+    const spinButton = document.getElementById("spinButton");
+    const resetButton = document.getElementById("resetButton");
+    const newPromptButton = document.getElementById("newPromptButton");
+    const topicPanel = document.getElementById("topicPanel");
+    const lessonBadge = document.getElementById("lessonBadge");
+    const topicTitle = document.getElementById("topicTitle");
+    const topicSubtitle = document.getElementById("topicSubtitle");
+    const topicPrompt = document.getElementById("topicPrompt");
+    const tipsList = document.getElementById("tipsList");
+    const wordList = document.getElementById("wordList");
+    const questionList = document.getElementById("questionList");
+    const frameList = document.getElementById("frameList");
+    const historyItems = document.getElementById("historyItems");
+    const roundStatus = document.getElementById("roundStatus");
+
+    const twoPi = Math.PI * 2;
+    const arc = twoPi / topics.length;
+    let rotation = 0;
+    let spinning = false;
+    let selectedIndex = 0;
+    let round = 0;
+    let history = [];
+    let promptOffset = 0;
+
+    function easeOutCubic(value) {
+      return 1 - Math.pow(1 - value, 3);
+    }
+
+    function resizeCanvas() {
+      const size = Math.max(220, Math.floor(wheelWrap.getBoundingClientRect().width));
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(size * ratio);
+      canvas.height = Math.floor(size * ratio);
+      canvas.style.width = `${size}px`;
+      canvas.style.height = `${size}px`;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      drawWheel();
+    }
+
+    function drawWheel() {
+      const size = canvas.clientWidth || 420;
+      const center = size / 2;
+      const radius = center - 8;
+
+      ctx.clearRect(0, 0, size, size);
+      ctx.save();
+      ctx.translate(center, center);
+
+      topics.forEach((topic, index) => {
+        const start = rotation + index * arc - Math.PI / 2;
+        const end = start + arc;
+
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.arc(0, 0, radius, start, end);
+        ctx.closePath();
+        ctx.fillStyle = topic.color;
+        ctx.fill();
+
+        ctx.strokeStyle = "rgba(10, 16, 28, .55)";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        const middle = start + arc / 2;
+        const textRadius = radius * .66;
+        ctx.save();
+        ctx.rotate(middle);
+        ctx.translate(textRadius, 0);
+        if (middle > Math.PI / 2 && middle < Math.PI * 1.5) {
+          ctx.rotate(Math.PI);
+        }
+
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = "#0b1220";
+        ctx.font = `900 ${Math.max(11, size * .032)}px Arial, sans-serif`;
+        ctx.fillText(`L${topic.lesson}`, 0, -9);
+        ctx.font = `800 ${Math.max(10, size * .028)}px Arial, sans-serif`;
+        ctx.fillText(topic.label, 0, 9);
+        ctx.restore();
+      });
+
+      ctx.beginPath();
+      ctx.arc(0, 0, radius, 0, twoPi);
+      ctx.strokeStyle = "rgba(255, 255, 255, .65)";
+      ctx.lineWidth = 4;
+      ctx.stroke();
+
+      ctx.restore();
+    }
+
+    function renderTopic(index) {
+      const topic = topics[index];
+      const rotatedQuestions = rotateList(topic.questions, promptOffset);
+      const rotatedTips = rotateList(topic.tips, promptOffset);
+
+      topicPanel.style.setProperty("--topic-color", topic.color);
+      lessonBadge.textContent = `L${topic.lesson}`;
+      topicTitle.textContent = topic.title;
+      topicSubtitle.textContent = topic.subtitle;
+      topicPrompt.textContent = topic.prompt;
+
+      tipsList.innerHTML = rotatedTips.map((tip) => `<div class="tip">${tip}</div>`).join("");
+      wordList.innerHTML = topic.words.map((word) => `<span class="chip">${word}</span>`).join("");
+      questionList.innerHTML = rotatedQuestions
+        .map((question, index) => `
+          <div class="question">
+            <span class="q-num">${index + 1}</span>
+            <span>${question}</span>
+          </div>
+        `)
+        .join("");
+      frameList.innerHTML = topic.frames.map((frame) => `<div class="frame">${frame}</div>`).join("");
+
+      topicPanel.classList.remove("spin-flash");
+      window.requestAnimationFrame(() => topicPanel.classList.add("spin-flash"));
+    }
+
+    function rotateList(list, amount) {
+      return list.map((_, index) => list[(index + amount) % list.length]);
+    }
+
+    function updateHistory(topic) {
+      history = [topic, ...history.filter((item) => item.lesson !== topic.lesson)].slice(0, 6);
+      historyItems.innerHTML = history
+        .map((item) => `<span class="history-item" style="border-left: 4px solid ${item.color}">L${item.lesson} ${item.label}</span>`)
+        .join("");
+    }
+
+    function pickNextIndex() {
+      if (topics.length <= 1) return 0;
+      let next = Math.floor(Math.random() * topics.length);
+      while (next === selectedIndex) {
+        next = Math.floor(Math.random() * topics.length);
+      }
+      return next;
+    }
+
+    function spinWheel() {
+      if (spinning) return;
+
+      spinning = true;
+      spinButton.disabled = true;
+      newPromptButton.disabled = true;
+
+      const targetIndex = pickNextIndex();
+      const startRotation = rotation;
+      const baseTarget = -(targetIndex + .5) * arc;
+      const current = ((rotation % twoPi) + twoPi) % twoPi;
+      const normalizedTarget = ((baseTarget % twoPi) + twoPi) % twoPi;
+      const delta = (normalizedTarget - current + twoPi) % twoPi;
+      const spins = 5 + Math.floor(Math.random() * 3);
+      const finalRotation = rotation + spins * twoPi + delta;
+      const duration = 4300;
+      const startTime = performance.now();
+
+      function animate(now) {
+        const progress = Math.min(1, (now - startTime) / duration);
+        const eased = easeOutCubic(progress);
+        rotation = startRotation + (finalRotation - startRotation) * eased;
+        drawWheel();
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+          return;
+        }
+
+        rotation = finalRotation;
+        selectedIndex = targetIndex;
+        promptOffset = 0;
+        round += 1;
+        roundStatus.textContent = `Round ${round}`;
+        renderTopic(selectedIndex);
+        updateHistory(topics[selectedIndex]);
+        spinning = false;
+        spinButton.disabled = false;
+        newPromptButton.disabled = false;
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    function resetGame() {
+      if (spinning) return;
+      rotation = 0;
+      selectedIndex = 0;
+      round = 0;
+      promptOffset = 0;
+      history = [];
+      roundStatus.textContent = "Ready";
+      historyItems.innerHTML = "";
+      renderTopic(selectedIndex);
+      drawWheel();
+    }
+
+    function newPrompt() {
+      if (spinning) return;
+      promptOffset = (promptOffset + 1) % topics[selectedIndex].questions.length;
+      renderTopic(selectedIndex);
+    }
+
+    spinButton.addEventListener("click", spinWheel);
+    resetButton.addEventListener("click", resetGame);
+    newPromptButton.addEventListener("click", newPrompt);
+
+    window.addEventListener("resize", resizeCanvas);
+
+    renderTopic(selectedIndex);
+    resizeCanvas();
+  </script>
+</body>
+</html>

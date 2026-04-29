@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaf Conversation Roulette | SpeakUp</title>
+  <style>
+    :root {
+      --bg: #101612;
+      --panel: #f8fbf7;
+      --panel-strong: #ffffff;
+      --ink: #16221b;
+      --muted: #63736a;
+      --line: rgba(30, 58, 42, .16);
+      --leaf: #2f6b4f;
+      --leaf-dark: #173c2c;
+      --gold: #f3c852;
+      --blue: #4277d5;
+      --red: #d45d5d;
+      --shadow: 0 18px 42px rgba(16, 38, 25, .16);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow: hidden;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(135deg, #eef6ef 0%, #f8f6ec 45%, #e9f1f8 100%);
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .app {
+      height: 100dvh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 10px;
+      padding: clamp(9px, 1.4vw, 16px);
+      min-height: 0;
+    }
+
+    .topbar {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .84);
+      box-shadow: var(--shadow);
+      padding: 11px 14px;
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .kicker {
+      color: var(--leaf);
+      font-size: clamp(.64rem, 1.1vw, .74rem);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 850;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: clamp(1.12rem, 2.4vw, 1.85rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .status {
+      flex-shrink: 0;
+      min-width: 118px;
+      border-radius: 999px;
+      border: 1px solid rgba(47, 107, 79, .24);
+      background: #ecf6ef;
+      color: var(--leaf-dark);
+      text-align: center;
+      padding: 8px 12px;
+      font-size: clamp(.75rem, 1.35vw, .9rem);
+      font-weight: 850;
+    }
+
+    .layout {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(360px, .9fr) minmax(430px, 1.1fr);
+      gap: 10px;
+    }
+
+    .wheel-panel,
+    .topic-panel {
+      min-height: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .84);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .wheel-panel {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(9px, 1.4vw, 14px);
+    }
+
+    .wheel-stage {
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 6px;
+    }
+
+    .wheel-wrap {
+      width: min(100%, 57vh, 555px);
+      aspect-ratio: 1;
+      position: relative;
+      border-radius: 50%;
+      filter: drop-shadow(0 20px 28px rgba(21, 56, 37, .22));
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .pointer {
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-top: 31px solid var(--leaf-dark);
+      z-index: 4;
+      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, .28));
+    }
+
+    .hub {
+      position: absolute;
+      inset: 37.5%;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fff7ca, var(--gold));
+      border: 1px solid rgba(92, 68, 12, .22);
+      color: #3a2a05;
+      font-size: clamp(.7rem, 1.8vw, 1rem);
+      font-weight: 950;
+      text-align: center;
+      box-shadow: inset 0 0 18px rgba(255, 255, 255, .45), 0 10px 24px rgba(36, 28, 6, .17);
+      z-index: 3;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      padding-top: 9px;
+    }
+
+    .btn {
+      min-height: 42px;
+      border: 0;
+      border-radius: 12px;
+      padding: 9px 13px;
+      cursor: pointer;
+      font-weight: 900;
+      transition: transform .15s ease, opacity .15s ease, filter .15s ease;
+    }
+
+    .btn:hover:not(:disabled) {
+      transform: translateY(-1px);
+      filter: brightness(1.04);
+    }
+
+    .btn:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .btn:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+
+    .btn-spin {
+      color: #fff;
+      background: linear-gradient(135deg, var(--leaf), var(--leaf-dark));
+    }
+
+    .btn-secondary {
+      color: var(--leaf-dark);
+      border: 1px solid rgba(47, 107, 79, .2);
+      background: #edf6ef;
+    }
+
+    .topic-panel {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-width: 0;
+    }
+
+    .result-head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 11px;
+      align-items: center;
+      padding: clamp(12px, 1.8vw, 17px);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(47, 107, 79, .09), transparent);
+    }
+
+    .lesson-badge {
+      width: clamp(48px, 7vw, 62px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: var(--topic-color, var(--leaf));
+      color: #0e1a13;
+      font-weight: 950;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .42);
+    }
+
+    .result-title {
+      min-width: 0;
+    }
+
+    .result-title h2 {
+      font-size: clamp(1.18rem, 2.8vw, 1.86rem);
+      line-height: 1.06;
+      letter-spacing: 0;
+      margin-bottom: 4px;
+    }
+
+    .result-title p {
+      color: var(--muted);
+      font-size: clamp(.8rem, 1.45vw, .95rem);
+      line-height: 1.34;
+    }
+
+    .focus-tag {
+      align-self: start;
+      border-radius: 999px;
+      border: 1px solid rgba(47, 107, 79, .2);
+      padding: 7px 10px;
+      background: #f2f8f3;
+      color: var(--leaf-dark);
+      font-size: clamp(.68rem, 1.1vw, .78rem);
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .focus-tag.hot {
+      border-color: rgba(194, 130, 0, .34);
+      background: #fff6d8;
+      color: #725107;
+    }
+
+    .content-grid {
+      min-height: 0;
+      overflow: auto;
+      padding: clamp(10px, 1.55vw, 14px);
+      display: grid;
+      grid-template-columns: .94fr 1.06fr;
+      gap: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(47, 107, 79, .35) transparent;
+    }
+
+    .block {
+      min-width: 0;
+      border: 1px solid rgba(47, 107, 79, .13);
+      border-radius: 14px;
+      padding: 11px;
+      background: rgba(255, 255, 255, .74);
+    }
+
+    .block h3 {
+      color: var(--leaf);
+      font-size: clamp(.76rem, 1.35vw, .88rem);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .prompt {
+      font-size: clamp(.98rem, 2.05vw, 1.34rem);
+      line-height: 1.23;
+      font-weight: 850;
+      color: var(--ink);
+    }
+
+    .tips,
+    .questions,
+    .frames {
+      display: grid;
+      gap: 7px;
+    }
+
+    .tip {
+      border-left: 3px solid var(--topic-color, var(--leaf));
+      border-radius: 10px;
+      background: #f3f8f5;
+      padding: 8px 9px;
+      color: #26352c;
+      font-size: clamp(.8rem, 1.38vw, .91rem);
+      line-height: 1.35;
+    }
+
+    .chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .chip {
+      border: 1px solid rgba(47, 107, 79, .16);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: #edf6ef;
+      color: var(--leaf-dark);
+      font-size: clamp(.75rem, 1.3vw, .86rem);
+      font-weight: 800;
+    }
+
+    .question {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      gap: 8px;
+      color: #24332a;
+      font-size: clamp(.8rem, 1.38vw, .91rem);
+      line-height: 1.34;
+    }
+
+    .q-num {
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--topic-color, var(--leaf));
+      color: #0d1811;
+      font-size: .72rem;
+      font-weight: 950;
+    }
+
+    .frame {
+      border-radius: 10px;
+      padding: 8px 9px;
+      background: #f6f5ea;
+      color: #253128;
+      font-size: clamp(.8rem, 1.38vw, .91rem);
+      line-height: 1.34;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .footer {
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 9px;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .5);
+      padding: 8px 12px;
+    }
+
+    .history {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow: hidden;
+    }
+
+    .history-label {
+      flex-shrink: 0;
+      color: var(--muted);
+      font-size: .76rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .history-items {
+      min-width: 0;
+      display: flex;
+      gap: 6px;
+      overflow: hidden;
+    }
+
+    .history-item {
+      max-width: 130px;
+      flex-shrink: 0;
+      border-radius: 999px;
+      border-left: 4px solid var(--topic-color, var(--leaf));
+      padding: 6px 9px;
+      background: #eff6f1;
+      color: #223129;
+      font-size: .76rem;
+      font-weight: 800;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .mini-action {
+      flex-shrink: 0;
+      min-height: 32px;
+      border: 1px solid rgba(47, 107, 79, .2);
+      border-radius: 999px;
+      background: var(--leaf);
+      color: #fff;
+      padding: 6px 11px;
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 850;
+    }
+
+    .flash {
+      animation: flash .42s ease;
+    }
+
+    @keyframes flash {
+      0% { transform: scale(.985); filter: brightness(.94); }
+      65% { transform: scale(1.012); filter: brightness(1.05); }
+      100% { transform: scale(1); filter: brightness(1); }
+    }
+
+    @media (max-width: 930px) {
+      .app {
+        gap: 8px;
+        padding: 8px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(228px, 41dvh) 1fr;
+        gap: 8px;
+      }
+
+      .wheel-panel {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        gap: 9px;
+        padding: 9px;
+      }
+
+      .wheel-stage {
+        padding: 2px;
+      }
+
+      .wheel-wrap {
+        width: min(100%, 37dvh, 78vw);
+      }
+
+      .controls {
+        width: min(150px, 30vw);
+        grid-template-columns: 1fr;
+        align-self: center;
+        padding-top: 0;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        min-height: 52px;
+        padding: 9px 10px;
+      }
+
+      .status {
+        min-width: 82px;
+        padding: 7px 9px;
+      }
+
+      .layout {
+        grid-template-rows: minmax(198px, 35dvh) 1fr;
+      }
+
+      .wheel-panel {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+      }
+
+      .wheel-wrap {
+        width: min(78vw, 29dvh);
+      }
+
+      .controls {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .result-head {
+        grid-template-columns: auto 1fr;
+        padding: 10px;
+      }
+
+      .focus-tag {
+        grid-column: 1 / -1;
+        justify-self: start;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+        padding: 9px;
+        gap: 8px;
+      }
+
+      .wide {
+        grid-column: auto;
+      }
+
+      .footer {
+        padding: 7px 9px;
+      }
+
+      .history-label {
+        display: none;
+      }
+    }
+
+    @media (max-height: 680px) and (min-width: 931px) {
+      .app {
+        gap: 7px;
+        padding: 7px;
+      }
+
+      .topbar {
+        min-height: 48px;
+        padding: 8px 12px;
+      }
+
+      .wheel-panel {
+        padding: 9px;
+      }
+
+      .controls {
+        padding-top: 7px;
+      }
+
+      .result-head {
+        padding: 10px 12px;
+      }
+
+      .content-grid {
+        padding: 9px;
+        gap: 8px;
+      }
+
+      .block {
+        padding: 9px;
+      }
+
+      .footer {
+        min-height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="kicker">SpeakUp Leaf Review</div>
+        <h1>Conversation Roulette</h1>
+      </div>
+      <div class="status" id="roundStatus">Ready</div>
+    </header>
+
+    <section class="layout" aria-label="Leaf conversation roulette">
+      <div class="wheel-panel">
+        <div class="wheel-stage">
+          <div class="wheel-wrap" id="wheelWrap">
+            <div class="pointer" aria-hidden="true"></div>
+            <canvas id="wheelCanvas" aria-label="Leaf lesson topics roulette"></canvas>
+            <div class="hub">SPIN</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="btn btn-spin" id="spinButton" type="button">Spin</button>
+          <button class="btn btn-secondary" id="resetButton" type="button">Reset</button>
+        </div>
+      </div>
+
+      <article class="topic-panel" id="topicPanel" style="--topic-color: #5fae82;">
+        <div class="result-head">
+          <div class="lesson-badge" id="lessonBadge">L1</div>
+          <div class="result-title">
+            <h2 id="topicTitle">Making Suggestions & Giving Advice</h2>
+            <p id="topicSubtitle">Give advice, suggest solutions, and respond naturally.</p>
+          </div>
+          <div class="focus-tag" id="focusTag">Review</div>
+        </div>
+
+        <div class="content-grid">
+          <section class="block">
+            <h3>Conversation topic</h3>
+            <p class="prompt" id="topicPrompt">Give advice to someone who wants to improve their English.</p>
+          </section>
+
+          <section class="block">
+            <h3>Tips</h3>
+            <div class="tips" id="tipsList"></div>
+          </section>
+
+          <section class="block">
+            <h3>Useful language</h3>
+            <div class="chip-list" id="wordList"></div>
+          </section>
+
+          <section class="block">
+            <h3>Questions</h3>
+            <div class="questions" id="questionList"></div>
+          </section>
+
+          <section class="block wide">
+            <h3>Sentence frames</h3>
+            <div class="frames" id="frameList"></div>
+          </section>
+        </div>
+
+        <footer class="footer">
+          <div class="history">
+            <span class="history-label">History</span>
+            <div class="history-items" id="historyItems"></div>
+          </div>
+          <button class="mini-action" id="newPromptButton" type="button">New angle</button>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const topics = [
+      {
+        lesson: 1,
+        label: "Advice",
+        title: "Making Suggestions & Giving Advice",
+        subtitle: "Give advice, suggest solutions, and respond naturally.",
+        focus: "Review",
+        prompt: "Give advice to someone who wants to improve their English but has little time.",
+        color: "#73c69b",
+        words: ["should", "ought to", "had better", "could", "How about...?", "If I were you..."],
+        tips: [
+          "Use should for general advice and had better for stronger advice.",
+          "Use How about + -ing for a friendly suggestion.",
+          "Add a reason after your advice to sound more natural."
+        ],
+        questions: [
+          "What should this person do first?",
+          "What habit could help them improve faster?",
+          "What advice would you give if you were their teacher?"
+        ],
+        frames: [
+          "If I were you, I would ____.",
+          "You should ____ because ____.",
+          "How about ____ing after work?",
+          "You had better ____ if you want to improve."
+        ]
+      },
+      {
+        lesson: 2,
+        label: "Past Actions",
+        title: "Past Continuous & Interrupted Actions",
+        subtitle: "Describe actions in progress and interruptions in the past.",
+        focus: "Review",
+        prompt: "Tell a short story about something unexpected that happened yesterday.",
+        color: "#8fc8f2",
+        words: ["while", "when", "during", "suddenly", "meanwhile", "at that time"],
+        tips: [
+          "Use Past Continuous for the action in progress.",
+          "Use Simple Past for the interruption.",
+          "Add suddenly to make the story more vivid."
+        ],
+        questions: [
+          "What were you doing when it happened?",
+          "Who was with you at that time?",
+          "What happened next?"
+        ],
+        frames: [
+          "I was ____ing when ____.",
+          "While I was ____ing, ____.",
+          "At that time, my friend was ____ing.",
+          "Suddenly, ____ happened."
+        ]
+      },
+      {
+        lesson: 3,
+        label: "Compare",
+        title: "Comparing & Contrasting",
+        subtitle: "Compare people, places, habits, and ideas.",
+        focus: "Review",
+        prompt: "Compare online classes and in-person classes.",
+        color: "#ffd166",
+        words: ["similar", "different", "whereas", "unlike", "although", "however"],
+        tips: [
+          "Use comparative adjectives for direct differences.",
+          "Use whereas or while to contrast two ideas.",
+          "Use although to show a surprising contrast."
+        ],
+        questions: [
+          "Which option is more practical?",
+          "What are the biggest differences?",
+          "Which one do you prefer and why?"
+        ],
+        frames: [
+          "Online classes are more ____ than ____.",
+          "In-person classes are as ____ as ____.",
+          "Although ____, I think ____.",
+          "____, whereas ____."
+        ]
+      },
+      {
+        lesson: 4,
+        label: "Experience",
+        title: "Experiences & Present Perfect",
+        subtitle: "Talk about life experiences with ever, never, already, and yet.",
+        focus: "Review",
+        prompt: "Talk about three things you have already done and one thing you haven't done yet.",
+        color: "#f4a261",
+        words: ["experience", "already", "yet", "never", "ever", "recently", "so far"],
+        tips: [
+          "Use have/has + past participle.",
+          "Use ever in questions and never in negative life experiences.",
+          "Use yet mainly in questions and negative sentences."
+        ],
+        questions: [
+          "Have you ever traveled alone?",
+          "What have you already learned this year?",
+          "What haven't you done yet?"
+        ],
+        frames: [
+          "I have already ____.",
+          "I haven't ____ yet.",
+          "Have you ever ____?",
+          "I have never ____."
+        ]
+      },
+      {
+        lesson: 5,
+        label: "Opinions",
+        title: "Expressing Opinions",
+        subtitle: "Share opinions, agree, disagree, and support your point.",
+        focus: "Review",
+        prompt: "Give your opinion: should students use phones during class?",
+        color: "#cdb4db",
+        words: ["opinion", "believe", "agree", "disagree", "point of view", "perspective"],
+        tips: [
+          "Start with a clear opinion phrase.",
+          "Use because to support your point.",
+          "Disagree politely with I see your point, but..."
+        ],
+        questions: [
+          "What is your opinion about this topic?",
+          "What is one strong reason for your opinion?",
+          "What could someone on the other side say?"
+        ],
+        frames: [
+          "In my opinion, ____.",
+          "From my perspective, ____.",
+          "I agree with ____ because ____.",
+          "I see your point, but ____."
+        ]
+      },
+      {
+        lesson: 6,
+        label: "Future",
+        title: "Future Predictions & Possibilities",
+        subtitle: "Make predictions and express different levels of certainty.",
+        focus: "Review",
+        prompt: "Predict how work, study, or communication will change in the next five years.",
+        color: "#9bf6ff",
+        words: ["predict", "probably", "possibly", "likely", "unlikely", "chance", "expect"],
+        tips: [
+          "Use will for confident predictions.",
+          "Use might, may, or could when you are not sure.",
+          "Use probably or likely to show a medium-high chance."
+        ],
+        questions: [
+          "What will probably change soon?",
+          "What might happen in your career or studies?",
+          "What is unlikely to change?"
+        ],
+        frames: [
+          "I think ____ will ____.",
+          "It is likely that ____.",
+          "____ might become more common.",
+          "There is a chance that ____."
+        ]
+      },
+      {
+        lesson: 7,
+        label: "Requests",
+        title: "Polite Requests",
+        subtitle: "Ask someone to do something in a polite way.",
+        focus: "Last classes",
+        prompt: "You need help from a classmate or coworker. Ask politely and explain why.",
+        color: "#b7e4c7",
+        words: ["Could you...?", "Would you mind...?", "favor", "possibly", "I was wondering if..."],
+        tips: [
+          "The longer and more indirect request is usually more polite.",
+          "After Would you mind, use the -ing form.",
+          "Add please, a short reason, and a thank-you."
+        ],
+        questions: [
+          "What do you need the person to do?",
+          "How formal is the situation?",
+          "How can you refuse this request politely?"
+        ],
+        frames: [
+          "Could you possibly ____?",
+          "Would you mind ____ing ____?",
+          "I was wondering if you could ____.",
+          "I'm afraid I won't be able to ____."
+        ]
+      },
+      {
+        lesson: 7,
+        label: "Offers",
+        title: "Offers & Help",
+        subtitle: "Offer help and respond naturally to offers.",
+        focus: "Last classes",
+        prompt: "Someone has a problem at work, school, or home. Offer help naturally.",
+        color: "#95d5b2",
+        words: ["Shall I...?", "Would you like me to...?", "Let me...", "I'll...", "I can manage"],
+        tips: [
+          "Use I'll when you are confident and ready to help.",
+          "Use Would you like me to...? when you want to sound polite.",
+          "Always acknowledge an offer before refusing it."
+        ],
+        questions: [
+          "What problem does the person have?",
+          "What help can you offer?",
+          "How can the person accept or refuse politely?"
+        ],
+        frames: [
+          "Would you like me to ____?",
+          "Let me ____ for you.",
+          "I'll ____ right away.",
+          "That's very kind, but I can manage."
+        ]
+      },
+      {
+        lesson: 7,
+        label: "Permission",
+        title: "Permission in Real Situations",
+        subtitle: "Ask for permission and respond clearly.",
+        focus: "Last classes",
+        prompt: "Ask for permission in a formal or semi-formal situation.",
+        color: "#74c0fc",
+        words: ["May I...?", "Could I...?", "Is it OK if...?", "Do you mind if...?", "Feel free"],
+        tips: [
+          "Use May I for formal situations.",
+          "Use Is it OK if I...? in everyday situations.",
+          "Answer Do you mind carefully: No, not at all means permission is OK."
+        ],
+        questions: [
+          "What do you want permission to do?",
+          "Who are you asking?",
+          "What answer would be polite but firm?"
+        ],
+        frames: [
+          "May I ____?",
+          "Would it be all right if I ____?",
+          "Do you mind if I ____?",
+          "Sorry, I'd rather you didn't."
+        ]
+      },
+      {
+        lesson: 8,
+        label: "Phrasals",
+        title: "Phrasal Verbs in Daily Life",
+        subtitle: "Use common phrasal verbs naturally in conversation.",
+        focus: "Last classes",
+        prompt: "Tell a short story using at least three phrasal verbs.",
+        color: "#f9c74f",
+        words: ["give up", "look after", "turn on/off", "find out", "put off", "run into"],
+        tips: [
+          "Learn phrasal verbs in full sentences, not isolated pairs.",
+          "Check if the phrasal verb is separable or inseparable.",
+          "Use context to make the meaning clear."
+        ],
+        questions: [
+          "What did you find out recently?",
+          "Have you ever run into an old friend?",
+          "What task do people often put off?"
+        ],
+        frames: [
+          "I found out that ____.",
+          "I ran into ____ when I was ____.",
+          "I usually put off ____ because ____.",
+          "I had to look after ____."
+        ]
+      },
+      {
+        lesson: 8,
+        label: "Separable",
+        title: "Separable Phrasal Verbs",
+        subtitle: "Practice word order with nouns and pronouns.",
+        focus: "Last classes",
+        prompt: "Talk about devices, plans, or tasks using separable phrasal verbs.",
+        color: "#ffb703",
+        words: ["turn it on", "turn it off", "put it off", "find it out", "pick it up"],
+        tips: [
+          "With a noun, both positions can be correct: turn off the TV / turn the TV off.",
+          "With a pronoun, put it in the middle: turn it off.",
+          "Avoid putting the pronoun after the particle."
+        ],
+        questions: [
+          "What do you need to turn off before sleeping?",
+          "What have you put off recently?",
+          "What information did you find out this week?"
+        ],
+        frames: [
+          "Please turn it off.",
+          "I put the meeting off.",
+          "I put it off until ____.",
+          "I found it out yesterday."
+        ]
+      },
+      {
+        lesson: 8,
+        label: "Inseparable",
+        title: "Inseparable Phrasal Verbs",
+        subtitle: "Keep the phrasal verb together with the object after it.",
+        focus: "Last classes",
+        prompt: "Talk about relationships, responsibilities, or future plans using inseparable phrasal verbs.",
+        color: "#90be6d",
+        words: ["look after", "run into", "get along with", "look forward to"],
+        tips: [
+          "Do not split look after, run into, get along with, or look forward to.",
+          "After look forward to, use a noun or verb-ing.",
+          "Use get along with for relationships."
+        ],
+        questions: [
+          "Who do you get along with well?",
+          "What are you looking forward to?",
+          "Who do you sometimes look after?"
+        ],
+        frames: [
+          "I get along well with ____.",
+          "I'm looking forward to ____ing ____.",
+          "I need to look after ____.",
+          "I ran into ____ last week."
+        ]
+      },
+      {
+        lesson: 8,
+        label: "Meanings",
+        title: "Phrasal Verbs with Multiple Meanings",
+        subtitle: "Use context to choose the right meaning.",
+        focus: "Last classes",
+        prompt: "Choose a phrasal verb with two meanings and create two short examples.",
+        color: "#f28482",
+        words: ["give up", "put off", "turn on", "turn off", "run into"],
+        tips: [
+          "The object often helps you identify the meaning.",
+          "Put off can mean postpone or discourage.",
+          "Run into can mean meet by chance or experience a problem."
+        ],
+        questions: [
+          "What is something you should not give up?",
+          "What kind of attitude puts you off?",
+          "What problem can a team run into?"
+        ],
+        frames: [
+          "I gave up ____ last year.",
+          "His/her attitude put me off.",
+          "We ran into a problem with ____.",
+          "The crowd turned on ____."
+        ]
+      },
+      {
+        lesson: 9,
+        label: "Stories",
+        title: "Telling Stories & Narrative Tenses",
+        subtitle: "Connect events and tell a clear story.",
+        focus: "Preview",
+        prompt: "Tell a short story about a surprising day.",
+        color: "#bde0fe",
+        words: ["once", "then", "after that", "suddenly", "finally", "eventually"],
+        tips: [
+          "Use sequencers to organize the story.",
+          "Use Past Simple for main events.",
+          "Use Past Continuous for background actions."
+        ],
+        questions: [
+          "Where did the story happen?",
+          "What was happening at the beginning?",
+          "What was the twist or ending?"
+        ],
+        frames: [
+          "At first, ____.",
+          "Then, ____.",
+          "While I was ____ing, ____.",
+          "Finally, ____."
+        ]
+      },
+      {
+        lesson: 10,
+        label: "Conditionals",
+        title: "Conditional Sentences",
+        subtitle: "Talk about real possibilities and hypothetical situations.",
+        focus: "Preview",
+        prompt: "Talk about what you will do if you have more free time.",
+        color: "#c8b6ff",
+        words: ["if", "unless", "condition", "result", "possibility", "imagine"],
+        tips: [
+          "Use First Conditional for real future possibilities.",
+          "Use Second Conditional for imaginary situations.",
+          "Use unless to mean if not."
+        ],
+        questions: [
+          "What will you do if you have more free time?",
+          "What would you do if you could live anywhere?",
+          "What will happen unless you practice?"
+        ],
+        frames: [
+          "If I have time, I will ____.",
+          "If I were rich, I would ____.",
+          "Unless I practice, I won't ____.",
+          "As long as ____, I will ____."
+        ]
+      },
+      {
+        lesson: 11,
+        label: "Passive",
+        title: "Passive Voice & Formal Language",
+        subtitle: "Describe processes and formal information.",
+        focus: "Preview",
+        prompt: "Describe how something is made, organized, or delivered.",
+        color: "#a2d2ff",
+        words: ["passive", "active", "formal", "official", "document", "report", "process"],
+        tips: [
+          "Use passive when the action is more important than the person.",
+          "Form passive with be + past participle.",
+          "Passive sounds common in reports and formal explanations."
+        ],
+        questions: [
+          "What process can you describe?",
+          "Who does the action in the active sentence?",
+          "Is the person or the action more important?"
+        ],
+        frames: [
+          "The document is sent by email.",
+          "The report was prepared yesterday.",
+          "The product is made in ____.",
+          "The room is cleaned every day."
+        ]
+      },
+      {
+        lesson: 12,
+        label: "Real World",
+        title: "Review & Real-World Communication",
+        subtitle: "Combine Leaf structures in practical communication.",
+        focus: "Preview",
+        prompt: "Handle a real-world situation using advice, politeness, and clear reasons.",
+        color: "#f6bd60",
+        words: ["review", "fluency", "confidence", "communicate", "interact", "real-world"],
+        tips: [
+          "Combine structures from different lessons.",
+          "Start clearly, add details, and finish with a natural closing.",
+          "Choose formal or informal language based on the situation."
+        ],
+        questions: [
+          "What is the situation?",
+          "What structure from Leaf can help you communicate?",
+          "How can you sound polite and clear?"
+        ],
+        frames: [
+          "In this situation, I would ____.",
+          "Could you possibly ____?",
+          "I think we should ____ because ____.",
+          "I'm looking forward to ____ing ____."
+        ]
+      }
+    ];
+
+    const canvas = document.getElementById("wheelCanvas");
+    const ctx = canvas.getContext("2d");
+    const wheelWrap = document.getElementById("wheelWrap");
+    const spinButton = document.getElementById("spinButton");
+    const resetButton = document.getElementById("resetButton");
+    const newPromptButton = document.getElementById("newPromptButton");
+    const topicPanel = document.getElementById("topicPanel");
+    const lessonBadge = document.getElementById("lessonBadge");
+    const topicTitle = document.getElementById("topicTitle");
+    const topicSubtitle = document.getElementById("topicSubtitle");
+    const topicPrompt = document.getElementById("topicPrompt");
+    const focusTag = document.getElementById("focusTag");
+    const tipsList = document.getElementById("tipsList");
+    const wordList = document.getElementById("wordList");
+    const questionList = document.getElementById("questionList");
+    const frameList = document.getElementById("frameList");
+    const historyItems = document.getElementById("historyItems");
+    const roundStatus = document.getElementById("roundStatus");
+
+    const twoPi = Math.PI * 2;
+    const arc = twoPi / topics.length;
+    let rotation = 0;
+    let selectedIndex = 0;
+    let spinning = false;
+    let round = 0;
+    let history = [];
+    let angleOffset = 0;
+
+    function easeOutCubic(value) {
+      return 1 - Math.pow(1 - value, 3);
+    }
+
+    function resizeCanvas() {
+      const size = Math.max(220, Math.floor(wheelWrap.getBoundingClientRect().width));
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(size * ratio);
+      canvas.height = Math.floor(size * ratio);
+      canvas.style.width = `${size}px`;
+      canvas.style.height = `${size}px`;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      drawWheel();
+    }
+
+    function drawWheel() {
+      const size = canvas.clientWidth || 420;
+      const center = size / 2;
+      const radius = center - 8;
+
+      ctx.clearRect(0, 0, size, size);
+      ctx.save();
+      ctx.translate(center, center);
+
+      topics.forEach((topic, index) => {
+        const start = rotation + index * arc - Math.PI / 2;
+        const end = start + arc;
+
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.arc(0, 0, radius, start, end);
+        ctx.closePath();
+        ctx.fillStyle = topic.color;
+        ctx.fill();
+
+        ctx.strokeStyle = "rgba(20, 40, 28, .48)";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        const middle = start + arc / 2;
+        const textRadius = radius * .66;
+        ctx.save();
+        ctx.rotate(middle);
+        ctx.translate(textRadius, 0);
+        if (middle > Math.PI / 2 && middle < Math.PI * 1.5) {
+          ctx.rotate(Math.PI);
+        }
+
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = "#102017";
+        ctx.font = `900 ${Math.max(10, size * .027)}px Arial, sans-serif`;
+        ctx.fillText(`L${topic.lesson}`, 0, -8);
+        ctx.font = `800 ${Math.max(9, size * .023)}px Arial, sans-serif`;
+        ctx.fillText(topic.label, 0, 8);
+        ctx.restore();
+      });
+
+      ctx.beginPath();
+      ctx.arc(0, 0, radius, 0, twoPi);
+      ctx.strokeStyle = "rgba(255, 255, 255, .86)";
+      ctx.lineWidth = 4;
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function renderTopic(index) {
+      const topic = topics[index];
+      const shiftedTips = rotateList(topic.tips, angleOffset);
+      const shiftedQuestions = rotateList(topic.questions, angleOffset);
+
+      topicPanel.style.setProperty("--topic-color", topic.color);
+      lessonBadge.textContent = `L${topic.lesson}`;
+      topicTitle.textContent = topic.title;
+      topicSubtitle.textContent = topic.subtitle;
+      topicPrompt.textContent = topic.prompt;
+      focusTag.textContent = topic.focus;
+      focusTag.classList.toggle("hot", topic.focus === "Last classes");
+
+      tipsList.innerHTML = shiftedTips.map((tip) => `<div class="tip">${tip}</div>`).join("");
+      wordList.innerHTML = topic.words.map((word) => `<span class="chip">${word}</span>`).join("");
+      questionList.innerHTML = shiftedQuestions
+        .map((question, index) => `
+          <div class="question">
+            <span class="q-num">${index + 1}</span>
+            <span>${question}</span>
+          </div>
+        `)
+        .join("");
+      frameList.innerHTML = topic.frames.map((frame) => `<div class="frame">${frame}</div>`).join("");
+
+      topicPanel.classList.remove("flash");
+      window.requestAnimationFrame(() => topicPanel.classList.add("flash"));
+    }
+
+    function rotateList(list, amount) {
+      return list.map((_, index) => list[(index + amount) % list.length]);
+    }
+
+    function updateHistory(topic) {
+      history = [topic, ...history.filter((item) => item.title !== topic.title)].slice(0, 6);
+      historyItems.innerHTML = history
+        .map((item) => `<span class="history-item" style="--topic-color: ${item.color}">L${item.lesson} ${item.label}</span>`)
+        .join("");
+    }
+
+    function pickNextIndex() {
+      if (topics.length <= 1) return 0;
+      let next = Math.floor(Math.random() * topics.length);
+      while (next === selectedIndex) {
+        next = Math.floor(Math.random() * topics.length);
+      }
+      return next;
+    }
+
+    function spinWheel() {
+      if (spinning) return;
+
+      spinning = true;
+      spinButton.disabled = true;
+      newPromptButton.disabled = true;
+
+      const targetIndex = pickNextIndex();
+      const startRotation = rotation;
+      const baseTarget = -(targetIndex + .5) * arc;
+      const current = ((rotation % twoPi) + twoPi) % twoPi;
+      const normalizedTarget = ((baseTarget % twoPi) + twoPi) % twoPi;
+      const delta = (normalizedTarget - current + twoPi) % twoPi;
+      const spins = 5 + Math.floor(Math.random() * 3);
+      const finalRotation = rotation + spins * twoPi + delta;
+      const duration = 4300;
+      const startTime = performance.now();
+
+      function animate(now) {
+        const progress = Math.min(1, (now - startTime) / duration);
+        const eased = easeOutCubic(progress);
+        rotation = startRotation + (finalRotation - startRotation) * eased;
+        drawWheel();
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+          return;
+        }
+
+        rotation = finalRotation;
+        selectedIndex = targetIndex;
+        angleOffset = 0;
+        round += 1;
+        roundStatus.textContent = `Round ${round}`;
+        renderTopic(selectedIndex);
+        updateHistory(topics[selectedIndex]);
+        spinning = false;
+        spinButton.disabled = false;
+        newPromptButton.disabled = false;
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    function resetGame() {
+      if (spinning) return;
+      rotation = 0;
+      selectedIndex = 0;
+      round = 0;
+      angleOffset = 0;
+      history = [];
+      roundStatus.textContent = "Ready";
+      historyItems.innerHTML = "";
+      renderTopic(selectedIndex);
+      drawWheel();
+    }
+
+    function newAngle() {
+      if (spinning) return;
+      angleOffset = (angleOffset + 1) % topics[selectedIndex].questions.length;
+      renderTopic(selectedIndex);
+    }
+
+    spinButton.addEventListener("click", spinWheel);
+    resetButton.addEventListener("click", resetGame);
+    newPromptButton.addEventListener("click", newAngle);
+    window.addEventListener("resize", resizeCanvas);
+
+    renderTopic(selectedIndex);
+    resizeCanvas();
+  </script>
+</body>
+</html>

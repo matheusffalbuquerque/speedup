@@ -7,6 +7,8 @@ let userAnswers = {};
 let originalMenuHTML = ''; // Armazenar HTML original do menu
 let currentLevel = ''; // Nível atual (seed ou root)
 let turmasCodes = {}; // Códigos das turmas
+let currentActivityLabel = '';
+let currentWorksheetId = '';
 
 // URL da API - VOCÊ DEVE SUBSTITUIR PELA SUA API
 const API_URL = 'https://script.google.com/macros/s/AKfycbzaWH3Z7zyfSTVtyTlNKmJvCCNMWTpD379nQ2EJ6hEef8elI1HWr9jOjjufJ-_x_ibE/exec';
@@ -18,6 +20,26 @@ const dayNames = {
     'wednesday': 'Quarta-feira',
     'thursday': 'Quinta-feira',
     'friday': 'Sexta-feira'
+};
+
+const exerciseFilesByLevel = {
+    seed: 'exercises-seed.json',
+    root: 'exercises-root.json',
+    leaf: 'exercises-leaf.json',
+    fruit: 'exercises-fruit.json'
+};
+
+const testFilesByLevel = {
+    seed: {
+        file: 'test-seed.json',
+        key: 'test-seed',
+        label: 'Seed Test'
+    },
+    root: {
+        file: 'test-root.json',
+        key: 'test-root',
+        label: 'Root Test'
+    }
 };
 
 // Carregar códigos das turmas
@@ -105,19 +127,8 @@ async function selectLevel(level) {
 }
 
 // Carregar exercícios do JSON
-async function loadExercises() {
+async function loadExercisesFromFile(exerciseFile) {
     try {
-        // Determinar arquivo baseado no nível
-        let exerciseFile = 'exercises-seed.json'; // padrão para seed
-        
-        if (currentLevel === 'root') {
-            exerciseFile = 'exercises-root.json';
-        } else if (currentLevel === 'leaf') {
-            exerciseFile = 'exercises-leaf.json';
-        } else if (currentLevel === 'fruit') {
-            exerciseFile = 'exercises-fruit.json';
-        }
-
         // Tentar diferentes caminhos para compatibilidade com GitHub Pages
         const paths = [
             `./${exerciseFile}`,
@@ -150,11 +161,15 @@ async function loadExercises() {
     }
 }
 
-// Carregar exercícios do dia
-async function loadDay(day) {
-    console.log(`🔵 loadDay('${day}') chamado`);
+async function loadExercises() {
+    const exerciseFile = exerciseFilesByLevel[currentLevel] || exerciseFilesByLevel.seed;
+    return loadExercisesFromFile(exerciseFile);
+}
+
+async function loadExerciseSet(options) {
+    const { dataFile, entryKey, activityLabel, worksheetId } = options;
+    console.log(`🔵 loadExerciseSet('${entryKey}') chamado`);
     
-    // Verificar se os elementos da interface existem
     const menuScreen = document.getElementById('menu-screen');
     const exerciseScreen = document.getElementById('exercise-screen');
     
@@ -162,13 +177,11 @@ async function loadDay(day) {
         console.warn('⚠️ Elementos de interface não encontrados. Carregando apenas dados...');
     }
     
-    // Salvar HTML original do menu (se ainda não salvou)
     if (menuScreen && !originalMenuHTML) {
         originalMenuHTML = menuScreen.innerHTML;
         console.log('💾 HTML original do menu salvo');
     }
     
-    // Mostrar loading (se interface existir)
     if (menuScreen) {
         menuScreen.innerHTML = `
             <div style="text-align: center; padding: 60px 20px;">
@@ -178,59 +191,72 @@ async function loadDay(day) {
             </div>
         `;
     }
-    
-    currentDay = day;
-    const allExercises = await loadExercises();
+
+    currentDay = entryKey;
+    currentActivityLabel = activityLabel;
+    currentWorksheetId = worksheetId;
+
+    const allExercises = await loadExercisesFromFile(dataFile);
     
     if (!allExercises) {
         if (menuScreen && originalMenuHTML) menuScreen.innerHTML = originalMenuHTML;
-        return; // Erro já foi mostrado em loadExercises
+        return;
     }
     
-    if (!allExercises[day]) {
+    if (!allExercises[entryKey]) {
         if (menuScreen && originalMenuHTML) menuScreen.innerHTML = originalMenuHTML;
-        alert('❌ Exercícios do dia "' + dayNames[day] + '" não encontrados!');
+        alert(`❌ Exercícios de "${activityLabel}" não encontrados!`);
         return;
     }
 
-    currentExercises = allExercises[day];
+    currentExercises = allExercises[entryKey];
     userAnswers = {};
 
-    console.log(`✅ ${currentExercises.length} exercícios carregados para ${dayNames[day]}`);
+    console.log(`✅ ${currentExercises.length} exercícios carregados para ${activityLabel}`);
 
-    // Atualizar interface (apenas se elementos existirem)
     if (menuScreen && exerciseScreen) {
-        console.log('🎨 Atualizando interface...');
-        console.log('Menu screen classes antes:', menuScreen.className);
-        console.log('Exercise screen classes antes:', exerciseScreen.className);
-        
-        // Esconder menu e mostrar exercícios
         menuScreen.classList.add('hidden');
         menuScreen.style.display = 'none';
         
         exerciseScreen.classList.remove('hidden');
         exerciseScreen.style.display = 'block';
         
-        console.log('Menu screen classes depois:', menuScreen.className);
-        console.log('Exercise screen classes depois:', exerciseScreen.className);
-        
         const dayNameElement = document.getElementById('current-day-name');
         const totalExercisesElement = document.getElementById('total-exercises');
         
-        console.log('Elementos encontrados:', {
-            dayNameElement: !!dayNameElement,
-            totalExercisesElement: !!totalExercisesElement
-        });
-        
-        if (dayNameElement) dayNameElement.textContent = dayNames[day];
+        if (dayNameElement) dayNameElement.textContent = activityLabel;
         if (totalExercisesElement) totalExercisesElement.textContent = currentExercises.length;
 
-        console.log('🎯 Chamando renderExercises()...');
         renderExercises();
-        console.log('✅ renderExercises() concluído');
     } else {
         console.log('✅ Exercícios carregados (modo teste - sem interface)');
     }
+}
+
+// Carregar exercícios do dia
+async function loadDay(day) {
+    return loadExerciseSet({
+        dataFile: exerciseFilesByLevel[currentLevel] || exerciseFilesByLevel.seed,
+        entryKey: day,
+        activityLabel: dayNames[day] || day,
+        worksheetId: `${currentLevel || 'seed'}_${day}`
+    });
+}
+
+async function loadLevelTest() {
+    const testConfig = testFilesByLevel[currentLevel];
+
+    if (!testConfig) {
+        alert(`❌ Não há teste disponível para o nível ${currentLevel.toUpperCase()}.`);
+        return;
+    }
+
+    return loadExerciseSet({
+        dataFile: testConfig.file,
+        entryKey: testConfig.key,
+        activityLabel: testConfig.label,
+        worksheetId: `${currentLevel}_${testConfig.key}`
+    });
 }
 
 // Renderizar exercícios
@@ -379,10 +405,10 @@ async function submitExercises() {
     // Preparar dados completos para backup local
     const fullData = {
         day: currentDay,
-        dayName: dayNames[currentDay],
+        dayName: currentActivityLabel || dayNames[currentDay] || currentDay,
         timestamp: new Date().toISOString(),
         studentName: prompt('Digite seu nome:') || 'Anônimo',
-        lesson: 'Seed - Lesson 01',
+        lesson: currentActivityLabel || 'Practice Set',
         exercises: currentExercises.map((exercise, index) => ({
             exerciseNumber: index + 1,
             type: exercise.type,
@@ -401,7 +427,7 @@ async function submitExercises() {
     const apiData = {
         timestamp: fullData.timestamp,
         student: fullData.studentName,
-        worksheetId: `${currentDay}_lesson01_seed`,
+        worksheetId: currentWorksheetId || `${currentLevel || 'seed'}_${currentDay}`,
         total: score.total,
         correct: score.correct,
         payload: fullData.exercises
@@ -517,6 +543,8 @@ function backToMenu() {
     currentDay = '';
     currentExercises = [];
     userAnswers = {};
+    currentActivityLabel = '';
+    currentWorksheetId = '';
 }
 
 // Inicialização
@@ -566,6 +594,7 @@ window.saveAnswer = saveAnswer;
 window.selectOption = selectOption;
 window.showVideos = showVideos;
 window.backToMenuFromVideos = backToMenuFromVideos;
+window.loadLevelTest = loadLevelTest;
 
 console.log('🌍 Funções exportadas para window:', {
     loadDay: typeof window.loadDay,
@@ -767,19 +796,21 @@ const slidesList = {
         { id: 8, title: 'Lesson 08 - Clothes & Shopping', description: 'Clothing vocabulary and shopping expressions', pdfFile: 'aulas/Seed/slide/Seed_Lesson08.pdf' },
         { id: 9, title: 'Lesson 09 - Weather & Seasons', description: 'Weather vocabulary and describing seasons', pdfFile: 'aulas/Seed/slide/Seed_Lesson09.pdf' },
         { id: 10, title: 'Lesson 10 - Health & Habits', description: 'Health vocabulary and talking about routines', pdfFile: 'aulas/Seed/slide/Seed_Lesson10.pdf' },
-        { id: 11, title: 'Lesson 11 - Review & Practice', description: 'Consolidation activities and review', pdfFile: 'aulas/Seed/slide/Seed_Lesson11.pdf' }
+        { id: 11, title: 'Lesson 11 - Review & Practice', description: 'Consolidation activities and review', pdfFile: 'aulas/Seed/slide/Seed_Lesson11.pdf' },
+        { id: 12, title: 'Lesson 12 - Final Review', description: 'Final review and consolidation for the Seed level', pdfFile: 'aulas/Seed/slide/Seed_Lesson12.pdf' }
     ],
     root: [
         { id: 2, title: 'Lesson 02 - Past Experiences', description: 'Simple past tense and talking about past events', pdfFile: 'aulas/Root/slide/Root_Lesson02.pdf' },
         { id: 3, title: 'Lesson 03 - Travel & Adventures', description: 'Travel vocabulary and past experiences with irregular verbs', pdfFile: 'aulas/Root/slide/Root_Lesson03.pdf' },
-        { id: 4, title: 'Lesson 04 - Technology & Communication', description: 'Technology vocabulary and present perfect tense', pdfFile: 'aulas/Root/slide/Root_Lesson04.pdf' },
+        { id: 4, title: 'Lesson 04 - Technology & Communication', description: 'Technology vocabulary and present perfect tense', pdfFile: 'aulas/Root/slide/Root _Lesson04.pdf' },
         { id: 5, title: 'Lesson 05 - Appearance & Personality', description: 'Vocabulary related to appearance and personality traits', pdfFile: 'aulas/Root/slide/Root_Lesson05.pdf' },
         { id: 6, title: 'Lesson 06 - Future Plans', description: 'Future tenses and expressions for talking about plans', pdfFile: 'aulas/Root/slide/Root_Lesson06.pdf' },
         { id: 7, title: 'Lesson 07 - Health & Lifestyle', description: 'Health vocabulary and talking about habits and lifestyle', pdfFile: 'aulas/Root/slide/Root_Lesson07.pdf' },
         { id: 8, title: 'Lesson 08 - Shopping & Money', description: 'Shopping vocabulary and expressions for buying and selling', pdfFile: 'aulas/Root/slide/Root_Lesson08.pdf' },
-        { id: 9, title: 'Lesson 09 - Media & Entertainment', description: 'Talking about media, films and entertainment', pdfFile: 'aulas/Root/slide/Root_Lesson09.pdf' },
-        { id: 10, title: 'Lesson 10 - Work & Jobs', description: 'Work vocabulary and talking about jobs', pdfFile: 'aulas/Root/slide/Root_Lesson10.pdf' },
-        { id: 11, title: 'Lesson 11 - Society & Culture', description: 'Discussing social topics and cultural differences', pdfFile: 'aulas/Root/slide/Root_Lesson11.pdf' }
+        { id: 9, title: 'Lesson 09 - Media & Entertainment', description: 'Talking about media, films and entertainment', pdfFile: 'aulas/Root/slide/Root _Lesson09.pdf' },
+        { id: 10, title: 'Lesson 10 - Work & Jobs', description: 'Work vocabulary and talking about jobs', pdfFile: 'aulas/Root/slide/Root _Lesson10.pdf' },
+        { id: 11, title: 'Lesson 11 - Society & Culture', description: 'Discussing social topics and cultural differences', pdfFile: 'aulas/Root/slide/Root _Lesson11.pdf' },
+        { id: 12, title: 'Lesson 12 - Exam Practice', description: 'Practice materials and mock tasks', pdfFile: 'aulas/Root/slide/Root_Lesson12.pdf' }
     ],
     leaf: [
         { id: 1, title: 'Lesson 01 - Career Advice & Modal Verbs', description: 'Introduction to career advice vocabulary and modal verbs usage', pdfFile: 'aulas/Leaf/slide/Leaf_Lesson01.pdf' },
