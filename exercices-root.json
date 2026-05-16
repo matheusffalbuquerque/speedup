@@ -1,0 +1,599 @@
+{
+  "lessons": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "level": "root",
+  "topics": [
+    "Shopping, Money & Quantities",
+    "Travel, Transport & Accommodation",
+    "Past Events & Life Stories",
+    "Restaurants, Cooking & Service Encounters",
+    "Education, Study & Learning Habits",
+    "Describing People, Personality & Relationships",
+    "Home, Neighbourhood & Services",
+    "Technology, Communication & Online Basics",
+    "Work, Jobs & Daily Responsibilities",
+    "Sports, Entertainment & Events",
+    "Nature, Animals & Environment Basics",
+    "A2 Integration: Everyday Problem Solving"
+  ],
+  "notes": "75 exercises for Root level. 15 exercises per day from Monday to Friday, following the course outline with weekly progression and review.",
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'receipt' mean?",
+      "options": ["Recibo", "Desconto", "Etiqueta", "Troco"],
+      "correctAnswer": "Recibo"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'platform' mean in a travel context?",
+      "options": ["Bagagem", "Plataforma", "Bilhete", "Escala"],
+      "correctAnswer": "Plataforma"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which question is correct for asking the price?",
+      "options": [
+        "How much is this T-shirt?",
+        "How many is this T-shirt?",
+        "How much are this T-shirt?",
+        "How many are this T-shirt?"
+      ],
+      "correctAnswer": "How much is this T-shirt?"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the best sentence for a polite request in a store.",
+      "options": [
+        "Could I try this on, please?",
+        "I try this on, please?",
+        "Can to try this on, please?",
+        "Could I trying this on, please?"
+      ],
+      "correctAnswer": "Could I try this on, please?"
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'I need _____ bottles of water for the trip.'",
+      "correctAnswer": "two|2"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'The bus is going _____ the airport.'",
+      "correctAnswer": "to"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'These shoes are _____ than the black ones.'",
+      "correctAnswer": "cheaper"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'We are going to _____ a hotel room for two nights.'",
+      "correctAnswer": "book"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Eu preciso de uma passagem para o centro da cidade.'",
+      "correctAnswer": "i need a ticket to downtown|i need a ticket to the city center|i need a ticket to the town center"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Quanto custam estas calças azuis?'",
+      "correctAnswer": "how much are these blue pants|how much are these blue trousers"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "We are going to travel by train tomorrow morning.",
+        "We going to travel by train tomorrow morning.",
+        "We are go to travel by train tomorrow morning.",
+        "We are going travel by train tomorrow morning."
+      ],
+      "correctAnswer": "We are going to travel by train tomorrow morning."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct answer: 'Excuse me, where _____ the ticket office?'",
+      "options": ["is", "are", "do", "does"],
+      "correctAnswer": "is"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'Can I pay _____ cash?'",
+      "correctAnswer": "in|with"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'The red suitcase is _____ than my backpack.'",
+      "correctAnswer": "bigger"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Nós vamos fazer o check-in às oito da noite.'",
+      "correctAnswer": "we are going to check in at eight at night|we are going to check in at eight in the evening|we're going to check in at eight at night"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'waiter' mean?",
+      "options": ["Cozinheiro", "Garcom", "Cliente", "Gerente"],
+      "correctAnswer": "Garcom"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'missed' mean in the sentence 'I missed the bus'?",
+      "options": ["Peguei", "Perdi", "Esperei", "Consertei"],
+      "correctAnswer": "Perdi"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the correct past form.",
+      "options": ["goes", "went", "goed", "going"],
+      "correctAnswer": "went"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct for ordering food?",
+      "options": [
+        "I'd like the grilled chicken, please.",
+        "I like the grilled chicken, please now.",
+        "I'd like order the grilled chicken, please.",
+        "I would like ordering the grilled chicken, please."
+      ],
+      "correctAnswer": "I'd like the grilled chicken, please."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'She _____ dinner with her family last night.'",
+      "correctAnswer": "cooked|made"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'We _____ at a small restaurant near the beach yesterday.'",
+      "correctAnswer": "ate"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'The soup is too cold. Could you _____ it, please?'",
+      "correctAnswer": "heat"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'He was tired because he _____ very late on Saturday.'",
+      "correctAnswer": "slept|went to bed"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Eu pedi uma salada e um copo de água.'",
+      "correctAnswer": "i ordered a salad and a glass of water|i asked for a salad and a glass of water"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Eles estavam no hotel na semana passada.'",
+      "correctAnswer": "they were at the hotel last week"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Did you enjoy the concert yesterday?",
+        "Did you enjoyed the concert yesterday?",
+        "Were you enjoy the concert yesterday?",
+        "Do you enjoyed the concert yesterday?"
+      ],
+      "correctAnswer": "Did you enjoy the concert yesterday?"
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the best complaint in a restaurant.",
+      "options": [
+        "Excuse me, this order isn't what I asked for.",
+        "Excuse me, this order not what I asked for.",
+        "Excuse me, this order don't what I asked for.",
+        "Excuse me, this order wasn't what I ask for now."
+      ],
+      "correctAnswer": "Excuse me, this order isn't what I asked for."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'Last year, we _____ to Salvador for our vacation.'",
+      "correctAnswer": "went|traveled|travelled"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'Would you like _____ dessert after the main course?'",
+      "correctAnswer": "some"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Ontem eu contei para meus amigos uma história sobre minha infância.'",
+      "correctAnswer": "yesterday i told my friends a story about my childhood"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'assignment' mean?",
+      "options": ["Ferias", "Trabalho escolar", "Intervalo", "Biblioteca"],
+      "correctAnswer": "Trabalho escolar"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'neighbourhood' mean?",
+      "options": ["Vizinhanca", "Garagem", "Escada", "Portaria"],
+      "correctAnswer": "Vizinhanca"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence shows a study habit?",
+      "options": [
+        "I usually review my notes after class.",
+        "I am review my notes after class.",
+        "I usually reviewing my notes after class.",
+        "I review usually my notes after class every."
+      ],
+      "correctAnswer": "I usually review my notes after class."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct comparison.",
+      "options": [
+        "My sister is more outgoing than my brother.",
+        "My sister is outgoinger than my brother.",
+        "My sister more outgoing than my brother.",
+        "My sister is most outgoing than my brother."
+      ],
+      "correctAnswer": "My sister is more outgoing than my brother."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ a pharmacy next to my apartment building.'",
+      "correctAnswer": "is"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'She is good _____ math and science.'",
+      "correctAnswer": "at"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'I am studying English _____ get a better job.'",
+      "correctAnswer": "to"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'Our neighbors are very _____. They always help us.'",
+      "correctAnswer": "friendly|kind"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Meu professor está explicando a atividade agora.'",
+      "correctAnswer": "my teacher is explaining the activity now"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Há duas padarias e um banco no meu bairro.'",
+      "correctAnswer": "there are two bakeries and a bank in my neighborhood|there are two bakeries and a bank in my neighbourhood"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He has to call the plumber because the sink is leaking.",
+        "He have to call the plumber because the sink is leaking.",
+        "He has call the plumber because the sink is leaking.",
+        "He having to call the plumber because the sink is leaking."
+      ],
+      "correctAnswer": "He has to call the plumber because the sink is leaking."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence about personality.",
+      "options": [
+        "Laura is quieter than Ana, but Ana is more confident.",
+        "Laura is more quiet than Ana, but Ana is confidente.",
+        "Laura quieter than Ana, but Ana more confident.",
+        "Laura is quietest than Ana, but Ana is more confidence."
+      ],
+      "correctAnswer": "Laura is quieter than Ana, but Ana is more confident."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'There _____ many people at the library yesterday afternoon.'",
+      "correctAnswer": "were"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'I am interested _____ photography and design.'",
+      "correctAnswer": "in"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Precisamos limpar a casa antes da visita chegar.'",
+      "correctAnswer": "we need to clean the house before the visitors arrive|we need to clean the house before the visit arrives|we need to clean the house before our visitors arrive"
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'password' mean?",
+      "options": ["Arquivo", "Senha", "Anexo", "Pasta"],
+      "correctAnswer": "Senha"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'shift' mean in a work context?",
+      "options": ["Mudanca de endereco", "Turno", "Ferias", "Pagamento"],
+      "correctAnswer": "Turno"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the correct instruction.",
+      "options": [
+        "Click on the link and open the file.",
+        "Clicks on the link and open the file.",
+        "Click in the link and opens the file.",
+        "Click on the link and opening the file."
+      ],
+      "correctAnswer": "Click on the link and open the file."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct about work routine?",
+      "options": [
+        "She has to answer emails every morning.",
+        "She has answer emails every morning.",
+        "She have to answers emails every morning.",
+        "She has to answers emails every morning."
+      ],
+      "correctAnswer": "She has to answer emails every morning."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'Can you send _____ the document by email?'",
+      "correctAnswer": "me"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'We are going to _____ tickets for the game tonight.'",
+      "correctAnswer": "buy|get"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'Would you like to _____ us for dinner after the movie?'",
+      "correctAnswer": "join"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'My manager doesn't have to work on Sundays, but I _____ sometimes.'",
+      "correctAnswer": "do"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Eu baixei o aplicativo e criei uma nova conta.'",
+      "correctAnswer": "i downloaded the app and created a new account|i downloaded the application and created a new account"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Você gostaria de ir ao show comigo no sábado?'",
+      "correctAnswer": "would you like to go to the concert with me on saturday|would you like to go to the show with me on saturday"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Let's meet outside the cinema at seven.",
+        "Let's to meet outside the cinema at seven.",
+        "Let's meeting outside the cinema at seven.",
+        "Let meet outside the cinema at seven."
+      ],
+      "correctAnswer": "Let's meet outside the cinema at seven."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct question for a job interview.",
+      "options": [
+        "What do you do at your current job?",
+        "What you do at your current job?",
+        "What are you do at your current job?",
+        "What does you do at your current job?"
+      ],
+      "correctAnswer": "What do you do at your current job?"
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'Please turn _____ your camera during the meeting.'",
+      "correctAnswer": "on"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'He usually works the night _____ at the hospital.'",
+      "correctAnswer": "shift"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Nós vamos nos encontrar depois do trabalho para assistir ao jogo.'",
+      "correctAnswer": "we are going to meet after work to watch the game|we're going to meet after work to watch the game"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'recycle' mean?",
+      "options": ["Reciclar", "Queimar", "Poluir", "Cortar"],
+      "correctAnswer": "Reciclar"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'storm' mean?",
+      "options": ["Seca", "Nuvem", "Tempestade", "Brisa"],
+      "correctAnswer": "Tempestade"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the best environmental advice.",
+      "options": [
+        "We should save water and recycle more.",
+        "We should to save water and recycle more.",
+        "We should saving water and recycle more.",
+        "We should save water and recycles more."
+      ],
+      "correctAnswer": "We should save water and recycle more."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence uses the zero conditional correctly?",
+      "options": [
+        "If it rains a lot, the river rises.",
+        "If it will rain a lot, the river rises.",
+        "If it rains a lot, the river will rises.",
+        "If it raining a lot, the river rises."
+      ],
+      "correctAnswer": "If it rains a lot, the river rises."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'This park is _____ than the one near my house.'",
+      "correctAnswer": "cleaner"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'You _____ throw trash on the street.'",
+      "correctAnswer": "shouldn't|should not"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'If people plant more trees, the city becomes _____.'",
+      "correctAnswer": "greener"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'I need to call the hotel because there is a problem _____ my reservation.'",
+      "correctAnswer": "with"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Se faz muito calor, nós ficamos em casa à tarde.'",
+      "correctAnswer": "if it is very hot, we stay at home in the afternoon|if it's very hot, we stay at home in the afternoon"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Ela precisa explicar o problema para o atendente.'",
+      "correctAnswer": "she needs to explain the problem to the clerk|she needs to explain the problem to the attendant|she needs to explain the problem to the staff member"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct for solving an everyday problem?",
+      "options": [
+        "Could you help me? My card isn't working.",
+        "Could you help me? My card don't working.",
+        "Could you help me? My card isn't work.",
+        "Could you help me? My card not is working."
+      ],
+      "correctAnswer": "Could you help me? My card isn't working."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence.",
+      "options": [
+        "The bus was late, so we took a taxi.",
+        "The bus late, so we took a taxi.",
+        "The bus was late, so we take a taxi.",
+        "The bus were late, so we took a taxi."
+      ],
+      "correctAnswer": "The bus was late, so we took a taxi."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'The lake is _____ the mountains.'",
+      "correctAnswer": "between|near"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'At the end of the week, we review old topics and solve everyday _____.'",
+      "correctAnswer": "problems"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Write a short message in English asking for help with a travel or booking problem. Use 2 to 4 sentences. (Manual correction)",
+      "correctAnswer": "manual correction"
+    }
+  ]
+}

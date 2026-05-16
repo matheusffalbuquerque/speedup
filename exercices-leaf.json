@@ -1,0 +1,609 @@
+{
+  "lessons": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "level": "leaf",
+  "topics": [
+    "Requests, Offers, Permission & Politeness",
+    "Past Continuous & Interrupted Actions",
+    "Experiences & Present Perfect",
+    "Comparing, Contrasting & Choosing",
+    "Opinions, Agreement & Disagreement",
+    "Future Plans, Predictions & Possibilities",
+    "Advice, Obligation & Rules",
+    "Phrasal Verbs & Everyday Actions",
+    "Stories, Sequencing & Simple Narratives",
+    "Real and Hypothetical Conditions",
+    "Passive Voice & Public Information",
+    "A2+ Integration: Functional Fluency"
+  ],
+  "notes": "75 exercises for Leaf level. 15 exercises per day from Monday to Friday, following the course outline with controlled progression and weekly review.",
+  "monday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'borrow' mean?",
+      "options": ["Emprestar para alguem", "Pegar emprestado", "Devolver", "Comprar"],
+      "correctAnswer": "Pegar emprestado"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'interrupt' mean?",
+      "options": ["Continuar", "Interromper", "Explicar", "Lembrar"],
+      "correctAnswer": "Interromper"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the most polite request.",
+      "options": [
+        "Could you open the window, please?",
+        "Open the window now.",
+        "You open the window?",
+        "Can opening the window?"
+      ],
+      "correctAnswer": "Could you open the window, please?"
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "I was studying when the lights went out.",
+        "I studied when the lights were going out.",
+        "I was study when the lights went out.",
+        "I studying when the lights went out."
+      ],
+      "correctAnswer": "I was studying when the lights went out."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'Would you mind _____ me with this form?'",
+      "correctAnswer": "helping"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'While we _____ dinner, the phone rang.'",
+      "correctAnswer": "were having|were eating"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'May I _____ your pen for a minute?'",
+      "correctAnswer": "borrow"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'She was walking home when she _____ her old teacher.'",
+      "correctAnswer": "saw|met"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Você poderia me mostrar onde fica a estação?'",
+      "correctAnswer": "could you show me where the station is?|could you show me where the train station is?"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Eu estava tomando banho quando você ligou.'",
+      "correctAnswer": "i was taking a shower when you called"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Choose the best response to: 'Would you like some coffee?'",
+      "options": [
+        "Yes, please. That would be great.",
+        "Yes, I like.",
+        "Yes, I would liking.",
+        "Yes, give me."
+      ],
+      "correctAnswer": "Yes, please. That would be great."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which sentence uses 'while' correctly?",
+      "options": [
+        "While I was doing homework, my brother was watching TV.",
+        "While I did homework, my brother watched TV yesterday at 8.",
+        "While I was do homework, my brother watched TV.",
+        "While I doing homework, my brother was watching TV."
+      ],
+      "correctAnswer": "While I was doing homework, my brother was watching TV."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: '_____ I use your phone for a moment?'",
+      "correctAnswer": "may|could|can"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'The teacher was explaining the task when a student _____ her.'",
+      "correctAnswer": "interrupted"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Desculpe incomodar, mas você poderia repetir isso?'",
+      "correctAnswer": "sorry to bother you, but could you repeat that?|sorry to disturb you, but could you repeat that?"
+    }
+  ],
+  "tuesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'achievement' mean?",
+      "options": ["Fracasso", "Conquista", "Tentativa", "Mudanca"],
+      "correctAnswer": "Conquista"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'affordable' mean?",
+      "options": ["Perigoso", "Barulhento", "Acessivel financeiramente", "Desnecessario"],
+      "correctAnswer": "Acessivel financeiramente"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence uses Present Perfect correctly?",
+      "options": [
+        "She has just finished her project.",
+        "She has finished her project yesterday.",
+        "She just finish her project.",
+        "She has just finish her project."
+      ],
+      "correctAnswer": "She has just finished her project."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct comparison.",
+      "options": [
+        "This hotel is more comfortable than the other one.",
+        "This hotel is comfortabler than the other one.",
+        "This hotel more comfortable than the other one.",
+        "This hotel is most comfortable than the other one."
+      ],
+      "correctAnswer": "This hotel is more comfortable than the other one."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'Have you _____ tried Korean food?'",
+      "correctAnswer": "ever"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'This backpack isn't big _____ for a weekend trip.'",
+      "correctAnswer": "enough"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'I haven't called her _____ because I've been busy.'",
+      "correctAnswer": "yet"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'My town is not as _____ as the capital city.'",
+      "correctAnswer": "crowded|busy"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Eu já visitei três países este ano.'",
+      "correctAnswer": "i have already visited three countries this year|i've already visited three countries this year"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Este celular é mais barato do que aquele, mas não é tão bom.'",
+      "correctAnswer": "this phone is cheaper than that one, but it isn't as good|this cell phone is cheaper than that one, but it isn't as good"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He has never flown on a plane.",
+        "He never has flown on a plane yesterday.",
+        "He has never fly on a plane.",
+        "He never flew on a plane in his life."
+      ],
+      "correctAnswer": "He has never flown on a plane."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the best sentence.",
+      "options": [
+        "This exercise is too difficult for beginners.",
+        "This exercise is too much difficult for beginners.",
+        "This exercise too difficult for beginners.",
+        "This exercise is difficult enough too for beginners."
+      ],
+      "correctAnswer": "This exercise is too difficult for beginners."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'She has _____ arrived, so we can start the meeting.'",
+      "correctAnswer": "just"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'The blue jacket is the _____ stylish one in the store.'",
+      "correctAnswer": "most"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Na sua opinião, qual opção é melhor e por quê?'",
+      "correctAnswer": "in your opinion, which option is better and why?"
+    }
+  ],
+  "wednesday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'disagree' mean?",
+      "options": ["Concordar", "Discordar", "Explicar", "Decidir"],
+      "correctAnswer": "Discordar"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'probably' mean?",
+      "options": ["Com certeza nao", "Talvez nunca", "Provavelmente", "Agora mesmo"],
+      "correctAnswer": "Provavelmente"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Choose the sentence that expresses an opinion clearly.",
+      "options": [
+        "I think online classes are useful because they are flexible.",
+        "I think online classes because useful flexible.",
+        "I am think online classes are useful because they are flexible.",
+        "Online classes useful because I think."
+      ],
+      "correctAnswer": "I think online classes are useful because they are flexible."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct for a future plan?",
+      "options": [
+        "We are meeting our friends on Friday night.",
+        "We meeting our friends on Friday night.",
+        "We are meet our friends on Friday night.",
+        "We will meeting our friends on Friday night."
+      ],
+      "correctAnswer": "We are meeting our friends on Friday night."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'I agree _____ you up to a point.'",
+      "correctAnswer": "with"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'It _____ rain later, so take an umbrella.'",
+      "correctAnswer": "might|may|could"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'I don't really agree, _____ I understand your idea.'",
+      "correctAnswer": "although|but"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'She is _____ going to apply for that course next month.'",
+      "correctAnswer": "probably|definitely"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Eu acho que morar sozinho é mais difícil, mas também é melhor para aprender independência.'",
+      "correctAnswer": "i think living alone is more difficult, but it is also better for learning independence|i think living alone is more difficult, but it is also better for becoming independent"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Nós vamos visitar meus avós no próximo fim de semana.'",
+      "correctAnswer": "we are going to visit my grandparents next weekend|we're going to visit my grandparents next weekend"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence shows polite disagreement?",
+      "options": [
+        "I'm not sure I agree with that.",
+        "You are wrong completely.",
+        "No, that's bad idea.",
+        "I disagree and that's it."
+      ],
+      "correctAnswer": "I'm not sure I agree with that."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct prediction.",
+      "options": [
+        "I think people will use less cash in the future.",
+        "I think people use less cash in the future.",
+        "I think people will using less cash in the future.",
+        "I think people are use less cash in the future."
+      ],
+      "correctAnswer": "I think people will use less cash in the future."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'In my opinion, this app is _____ useful than the old one.'",
+      "correctAnswer": "more"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'Maybe we can leave early, _____ it depends on the traffic.'",
+      "correctAnswer": "but"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'Você concorda ou discorda desta ideia? Explique brevemente.'",
+      "correctAnswer": "do you agree or disagree with this idea? explain briefly."
+    }
+  ],
+  "thursday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'forbid' mean?",
+      "options": ["Permitir", "Proibir", "Lembrar", "Recomendar"],
+      "correctAnswer": "Proibir"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'turn off' mean?",
+      "options": ["Ligar", "Desligar", "Anotar", "Procurar"],
+      "correctAnswer": "Desligar"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence gives advice correctly?",
+      "options": [
+        "You should talk to your teacher about the problem.",
+        "You should to talk to your teacher about the problem.",
+        "You should talking to your teacher about the problem.",
+        "You should talks to your teacher about the problem."
+      ],
+      "correctAnswer": "You should talk to your teacher about the problem."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence with a phrasal verb.",
+      "options": [
+        "Please turn off the lights before you leave.",
+        "Please turn the lights off before you leave it.",
+        "Please turn off it before you leave.",
+        "Please turn the lights before you leave off."
+      ],
+      "correctAnswer": "Please turn off the lights before you leave."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'Students _____ wear their ID cards at school.'",
+      "correctAnswer": "must|have to"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'Can you pick _____ the kids after class?'",
+      "correctAnswer": "up"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'You _____ smoke here. It's forbidden.'",
+      "correctAnswer": "mustn't|must not"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'I wrote the number down so I wouldn't _____ it.'",
+      "correctAnswer": "forget"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Você não precisa trazer comida; nós já compramos tudo.'",
+      "correctAnswer": "you don't have to bring food; we have already bought everything|you don't need to bring food; we have already bought everything"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Por favor, desligue o computador e guarde seus materiais.'",
+      "correctAnswer": "please turn off the computer and put away your materials|please switch off the computer and put away your materials"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct?",
+      "options": [
+        "We don't have to stay until the end of the event.",
+        "We don't have stay until the end of the event.",
+        "We mustn't to stay until the end of the event.",
+        "We don't have to staying until the end of the event."
+      ],
+      "correctAnswer": "We don't have to stay until the end of the event."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the correct use of an object pronoun.",
+      "options": [
+        "Turn it on, please.",
+        "Turn on it, please.",
+        "Turn please it on.",
+        "Turn on please it."
+      ],
+      "correctAnswer": "Turn it on, please."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'You _____ see a doctor if the pain gets worse.'",
+      "correctAnswer": "should"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'My train was canceled, so I had to _____ up a new plan quickly.'",
+      "correctAnswer": "come"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Translate to English: 'As regras foram explicadas claramente no começo da reunião.'",
+      "correctAnswer": "the rules were explained clearly at the beginning of the meeting"
+    }
+  ],
+  "friday": [
+    {
+      "id": 1,
+      "type": "vocabulary",
+      "question": "What does 'notice' mean in a public information context?",
+      "options": ["Conversa", "Aviso", "Discussao", "Resposta"],
+      "correctAnswer": "Aviso"
+    },
+    {
+      "id": 2,
+      "type": "vocabulary",
+      "question": "What does 'unless' mean?",
+      "options": ["Enquanto", "Mesmo que", "A menos que", "Depois que"],
+      "correctAnswer": "A menos que"
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which sentence is a correct first conditional?",
+      "options": [
+        "If it rains tomorrow, we'll stay home.",
+        "If it will rain tomorrow, we'll stay home.",
+        "If it rains tomorrow, we stay home yesterday.",
+        "If it raining tomorrow, we'll stay home."
+      ],
+      "correctAnswer": "If it rains tomorrow, we'll stay home."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Choose the correct passive sentence.",
+      "options": [
+        "The museum is closed on Mondays.",
+        "The museum closes on Mondays by staff.",
+        "The museum is close on Mondays.",
+        "The museum was close on Mondays every week."
+      ],
+      "correctAnswer": "The museum is closed on Mondays."
+    },
+    {
+      "id": 5,
+      "type": "fill-blank",
+      "question": "Complete: 'If I had more free time, I _____ learn Italian.'",
+      "correctAnswer": "would"
+    },
+    {
+      "id": 6,
+      "type": "fill-blank",
+      "question": "Complete: 'Tickets are sold _____ the entrance.'",
+      "correctAnswer": "at"
+    },
+    {
+      "id": 7,
+      "type": "complete",
+      "question": "Complete: 'You can't enter this area _____ you have a special pass.'",
+      "correctAnswer": "unless"
+    },
+    {
+      "id": 8,
+      "type": "complete",
+      "question": "Complete: 'The message was sent _____ email this morning.'",
+      "correctAnswer": "by"
+    },
+    {
+      "id": 9,
+      "type": "translate",
+      "question": "Translate to English: 'Se eu perder o ônibus, vou ligar para você.'",
+      "correctAnswer": "if i miss the bus, i'll call you|if i miss the bus, i will call you"
+    },
+    {
+      "id": 10,
+      "type": "translate",
+      "question": "Translate to English: 'Este produto é usado por milhares de pessoas todos os dias.'",
+      "correctAnswer": "this product is used by thousands of people every day"
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which sentence is correct for a hypothetical situation?",
+      "options": [
+        "If I were you, I'd take the earlier train.",
+        "If I was you, I'd took the earlier train.",
+        "If I were you, I take the earlier train.",
+        "If I am you, I'd take the earlier train."
+      ],
+      "correctAnswer": "If I were you, I'd take the earlier train."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Choose the best public notice.",
+      "options": [
+        "Visitors are not allowed to take photos.",
+        "Visitors not allow to take photos.",
+        "Visitors are not allow taking photos.",
+        "Visitors don't allowed to take photos."
+      ],
+      "correctAnswer": "Visitors are not allowed to take photos."
+    },
+    {
+      "id": 13,
+      "type": "fill-blank",
+      "question": "Complete: 'If water reaches 100°C, it _____.'",
+      "correctAnswer": "boils"
+    },
+    {
+      "id": 14,
+      "type": "complete",
+      "question": "Complete: 'At the hotel, guests can ask for help if something goes _____.'",
+      "correctAnswer": "wrong"
+    },
+    {
+      "id": 15,
+      "type": "translate",
+      "question": "Write a short message in English explaining a problem and asking for help politely. Use 2 to 4 sentences. (Manual correction)",
+      "correctAnswer": "manual correction"
+    }
+  ]
+}
