@@ -1,21 +1,26 @@
 {
   "seed": {
-    "code": "seed01",
+    "code": "seed01duma",
     "name": "Seed - Lesson 01",
     "description": "Greetings & Introductions"
   },
   "root": {
-    "code": "root02",
+    "code": "root02duma",
     "name": "Root - Lesson 01",
-    "description": "Basic Conversations"
+    "description": "Elementary Conversations"
   },
   "leaf": {
-    "code": "leaf03",
+    "code": "leaf03duma",
     "name": "Leaf - Lesson 01",
     "description": "Intermediate Conversations"
   },
+  "branch": {
+    "code": "branch04duma",
+    "name": "Branch - Lesson 01",
+    "description": "Better Conversations"
+  },
   "fruit": {
-    "code": "fruit04",
+    "code": "fruit04duma",
     "name": "Fruit - Lesson 01",
     "description": "Advanced Conversations"
   }

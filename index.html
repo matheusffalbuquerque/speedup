@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedUp - Exercícios de Fixação</title>
+    <title>Duma - Exercícios de Fixação</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -15,8 +15,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, rgba(48, 94, 188, 0.25) 0%, rgba(242, 100, 88, 0.85) 100%),
-                        url('resources/fundomapa.jpg') center/cover no-repeat fixed;
+            background-color: #1c1c1c;
             min-height: 100vh;
             padding: 20px;
         }
@@ -31,7 +30,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, #305EBC 0%, #f26458 100%);
+            background-color: #EDAA12;
             color: white;
             padding: 30px;
             text-align: center;
@@ -608,7 +607,7 @@
 <body>
     <div class="container">
         <header>
-            <h1><i class="fas fa-graduation-cap"></i> SpeedUp Exercises</h1>
+            <h1><i class="fas fa-graduation-cap"></i> Duma Exercises</h1>
         </header>
 
         <div class="content">
@@ -618,16 +617,20 @@
                     Selecione seu Nível
                 </h2>
                 <div class="week-menu">
-                    <button class="day-button" onclick="selectLevel('seed')" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <button class="day-button" onclick="selectLevel('seed')" style="background: linear-gradient(135deg, #EDAA12 0%, #e7c36f 100%);">
                         <span class="day-name"><i class="fas fa-seedling"></i> Seed</span>
                         <span class="day-info">Iniciante</span>
                     </button>
-                    <button class="day-button" onclick="selectLevel('root')" style="background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);">
-                        <span class="day-name"><i class="fas fa-tree"></i> Root</span>
+                    <button class="day-button" onclick="selectLevel('root')" style="background: linear-gradient(135deg, #855024 0%, #88664a 100%);">
+                        <span class="day-name"><i class="fas fa-carrot"></i> Root</span>
                         <span class="day-info">Elementar</span>
                     </button>
-                    <button class="day-button" onclick="selectLevel('leaf')" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                    <button class="day-button" onclick="selectLevel('leaf')" style="background: linear-gradient(135deg, #0b6860 0%, #2eb662 100%);">
                         <span class="day-name"><i class="fas fa-leaf"></i> Leaf</span>
+                        <span class="day-info">Pré-Inter</span>
+                    </button>
+                    <button class="day-button" onclick="selectLevel('branch')" style="background: linear-gradient(135deg, #7e3c06 0%, #794e2b 100%);">
+                        <span class="day-name"><i class="fas fa-tree"></i> Branch</span>
                         <span class="day-info">Pré-Inter</span>
                     </button>
                     <button class="day-button" onclick="selectLevel('fruit')" style="background: linear-gradient(135deg, #FC9E16 0%, #FFC837 100%);">
@@ -675,10 +678,10 @@
                         <span class="day-name"><i class="fas fa-presentation"></i> Slides</span>
                         <span class="day-info">Lesson Materials</span>
                     </button>
-                    <button class="day-button" onclick="loadLevelTest()" style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);">
+                    <!-- <button class="day-button" onclick="loadLevelTest()" style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);">
                         <span class="day-name"><i class="fas fa-flask"></i> Tests</span>
                         <span class="day-info">Assessment</span>
-                    </button>
+                    </button> -->
                 </div>
             </div>
 

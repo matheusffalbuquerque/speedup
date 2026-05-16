@@ -45,7 +45,7 @@ const testFilesByLevel = {
 // Carregar códigos das turmas
 async function loadTurmasCodes() {
     try {
-        const paths = ['./turmas.json', 'turmas.json', '/speedup/turmas.json'];
+        const paths = ['./turmas.json', 'turmas.json', '/duma/turmas.json'];
         
         for (const path of paths) {
             try {
@@ -133,7 +133,7 @@ async function loadExercisesFromFile(exerciseFile) {
         const paths = [
             `./${exerciseFile}`,
             exerciseFile,
-            `/speedup/${exerciseFile}`
+            `/duma/${exerciseFile}`
         ];
         
         let data = null;
